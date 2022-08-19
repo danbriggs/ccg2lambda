@@ -1,0 +1,6 @@
+candc-1.00/**
+*.vo
+*.vok
+*.vos
+__pycache__
+ja/jigg-v-0.4/**
