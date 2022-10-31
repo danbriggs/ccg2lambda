@@ -1,0 +1,580 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1991 is declared
+
+Coq < _1992 is declared
+
+Coq < _discover is declared
+
+Coq < _in is declared
+
+Coq < _new is declared
+
+Coq < _smith is declared
+
+Coq < _species is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+(((_new z2 /\ _species z2) /\
+(exists z1 : Entity, (_1991 z1 /\ True) /\ _in z2 z1)) /\ True) /\
+_discover _smith z2)) ->
+exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_1992 z2 /\ True) /\ _in _smith z2) /\
+(exists z1 : Entity,
+((_new z1 /\ _species z1) /\ True) /\ _discover _smith z1))
+
+
+Toplevel input, characters 393-397:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_new z2) (_species z2)) (exists z1, (and (and (_1991 z1) True) (_in z2 z1)))) True) (_discover _smith z2))))) -> (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_1992 z2) True) (_in _smith z2)) (exists z1, (and (and (and (_new z1) (_species z1)) True) (_discover _smith z1))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1991 is declared
+
+Coq < _1992 is declared
+
+Coq < _discover is declared
+
+Coq < _in is declared
+
+Coq < _new is declared
+
+Coq < _smith is declared
+
+Coq < _species is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+(((_new z2 /\ _species z2) /\
+(exists z1 : Entity, (_1991 z1 /\ True) /\ _in z2 z1)) /\ True) /\
+_discover _smith z2)) ->
+~
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_1992 z2 /\ True) /\ _in _smith z2) /\
+(exists z1 : Entity,
+((_new z1 /\ _species z1) /\ True) /\ _discover _smith z1)))
+
+
+Toplevel input, characters 399-403:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_new z2) (_species z2)) (exists z1, (and (and (_1991 z1) True) (_in z2 z1)))) True) (_discover _smith z2))))) -> (not (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_1992 z2) True) (_in _smith z2)) (exists z1, (and (and (and (_new z1) (_species z1)) True) (_discover _smith z1)))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1991 is declared
+
+Coq < _1992 is declared
+
+Coq < _discover is declared
+
+Coq < _in is declared
+
+Coq < _new is declared
+
+Coq < _smith is declared
+
+Coq < _species is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+(((_new z2 /\ _species z2) /\
+(exists z1 : Entity, (_1991 z1 /\ True) /\ _in z2 z1)) /\ True) /\
+_discover _smith z2)) ->
+exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_1992 z2 /\ True) /\ _in _smith z2) /\
+(exists z1 : Entity,
+((_new z1 /\ _species z1) /\ True) /\ _discover _smith z1))
+
+2 focused goals (shelved: 1)
+
+H1 : True
+x0 : Entity
+H2 : _discover _smith x0
+H3 : True
+H0 : _new x0
+H5 : _species x0
+x1 : Entity
+H6 : _in x0 x1
+H4 : _1991 x1
+H7 : True
+============================
+_1992 ?z2
+
+goal 2 is:
+_in _smith ?z2
+
+Toplevel input, characters 409-421:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_new z2) (_species z2)) (exists z1, (and (and (_1991 z1) True) (_in z2 z1)))) True) (_discover _smith z2))))) -> (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_1992 z2) True) (_in _smith z2)) (exists z1, (and (and (and (_new z1) (_species z1)) True) (_discover _smith z1))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 423-427:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_new z2) (_species z2)) (exists z1, (and (and (_1991 z1) True) (_in z2 z1)))) True) (_discover _smith z2))))) -> (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_1992 z2) True) (_in _smith z2)) (exists z1, (and (and (and (_new z1) (_species z1)) True) (_discover _smith z1))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1991 is declared
+
+Coq < _1992 is declared
+
+Coq < _discover is declared
+
+Coq < _in is declared
+
+Coq < _new is declared
+
+Coq < _smith is declared
+
+Coq < _species is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+(((_new z2 /\ _species z2) /\
+(exists z1 : Entity, (_1991 z1 /\ True) /\ _in z2 z1)) /\ True) /\
+_discover _smith z2)) ->
+exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_1992 z2 /\ True) /\ _in _smith z2) /\
+(exists z1 : Entity,
+((_new z1 /\ _species z1) /\ True) /\ _discover _smith z1))
+
+
+Toplevel input, characters 393-397:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_new z2) (_species z2)) (exists z1, (and (and (_1991 z1) True) (_in z2 z1)))) True) (_discover _smith z2))))) -> (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_1992 z2) True) (_in _smith z2)) (exists z1, (and (and (and (_new z1) (_species z1)) True) (_discover _smith z1))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1991 is declared
+
+Coq < _1992 is declared
+
+Coq < _discover is declared
+
+Coq < _in is declared
+
+Coq < _new is declared
+
+Coq < _smith is declared
+
+Coq < _species is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+(((_new z2 /\ _species z2) /\
+(exists z1 : Entity, (_1991 z1 /\ True) /\ _in z2 z1)) /\ True) /\
+_discover _smith z2)) ->
+~
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_1992 z2 /\ True) /\ _in _smith z2) /\
+(exists z1 : Entity,
+((_new z1 /\ _species z1) /\ True) /\ _discover _smith z1)))
+
+1 goal
+
+H2 : True
+x0 : Entity
+H4 : _in _smith x0
+H1 : _1992 x0
+H5 : True
+x1 : Entity
+H6 : _discover _smith x1
+H7 : True
+H3 : _new x1
+H8 : _species x1
+H10 : True
+x3 : Entity
+H11 : _discover _smith x3
+H12 : True
+H9 : _new x3
+H14 : _species x3
+x4 : Entity
+H15 : _in x3 x4
+H13 : _1991 x4
+H16 : True
+============================
+False
+
+Toplevel input, characters 415-427:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_new z2) (_species z2)) (exists z1, (and (and (_1991 z1) True) (_in z2 z1)))) True) (_discover _smith z2))))) -> (not (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_1992 z2) True) (_in _smith z2)) (exists z1, (and (and (and (_new z1) (_species z1)) True) (_discover _smith z1)))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 429-433:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_new z2) (_species z2)) (exists z1, (and (and (_1991 z1) True) (_in z2 z1)))) True) (_discover _smith z2))))) -> (not (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_1992 z2) True) (_in _smith z2)) (exists z1, (and (and (and (_new z1) (_species z1)) True) (_discover _smith z1)))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                              ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1991 is declared
+
+Coq < _1992 is declared
+
+Coq < _discover is declared
+
+Coq < _in is declared
+
+Coq < _new is declared
+
+Coq < _smith is declared
+
+Coq < _species is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+(((_new z2 /\ _species z2) /\
+(exists z1 : Entity, (_1991 z1 /\ True) /\ _in z2 z1)) /\ True) /\
+_discover _smith z2)) ->
+~
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_1992 z2 /\ True) /\ _in _smith z2) /\
+(exists z1 : Entity,
+((_new z1 /\ _species z1) /\ True) /\ _discover _smith z1)))
+
+
+Toplevel input, characters 399-403:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_new z2) (_species z2)) (exists z1, (and (and (_1991 z1) True) (_in z2 z1)))) True) (_discover _smith z2))))) -> (not (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_1992 z2) True) (_in _smith z2)) (exists z1, (and (and (and (_new z1) (_species z1)) True) (_discover _smith z1)))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1991 is declared
+
+Coq < _1992 is declared
+
+Coq < _discover is declared
+
+Coq < _in is declared
+
+Coq < _new is declared
+
+Coq < _smith is declared
+
+Coq < _species is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+(((_new z2 /\ _species z2) /\
+(exists z1 : Entity, (_1991 z1 /\ True) /\ _in z2 z1)) /\ True) /\
+_discover _smith z2)) ->
+exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_1992 z2 /\ True) /\ _in _smith z2) /\
+(exists z1 : Entity,
+((_new z1 /\ _species z1) /\ True) /\ _discover _smith z1))
+
+2 focused goals (shelved: 1)
+
+H1 : True
+x0 : Entity
+H2 : _discover _smith x0
+H3 : True
+H0 : _new x0
+H5 : _species x0
+x1 : Entity
+H6 : _in x0 x1
+H4 : _1991 x1
+H7 : True
+============================
+_1992 ?z2
+
+goal 2 is:
+_in _smith ?z2
+
+Toplevel input, characters 409-421:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_new z2) (_species z2)) (exists z1, (and (and (_1991 z1) True) (_in z2 z1)))) True) (_discover _smith z2))))) -> (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_1992 z2) True) (_in _smith z2)) (exists z1, (and (and (and (_new z1) (_species z1)) True) (_discover _smith z1))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 423-427:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_new z2) (_species z2)) (exists z1, (and (and (_1991 z1) True) (_in z2 z1)))) True) (_discover _smith z2))))) -> (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_1992 z2) True) (_in _smith z2)) (exists z1, (and (and (and (_new z1) (_species z1)) True) (_discover _smith z1))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1991 is declared
+
+Coq < _1992 is declared
+
+Coq < _discover is declared
+
+Coq < _in is declared
+
+Coq < _new is declared
+
+Coq < _smith is declared
+
+Coq < _species is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+(((_new z2 /\ _species z2) /\
+(exists z1 : Entity, (_1991 z1 /\ True) /\ _in z2 z1)) /\ True) /\
+_discover _smith z2)) ->
+~
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_1992 z2 /\ True) /\ _in _smith z2) /\
+(exists z1 : Entity,
+((_new z1 /\ _species z1) /\ True) /\ _discover _smith z1)))
+
+1 goal
+
+H2 : True
+x0 : Entity
+H4 : _in _smith x0
+H1 : _1992 x0
+H5 : True
+x1 : Entity
+H6 : _discover _smith x1
+H7 : True
+H3 : _new x1
+H8 : _species x1
+H10 : True
+x3 : Entity
+H11 : _discover _smith x3
+H12 : True
+H9 : _new x3
+H14 : _species x3
+x4 : Entity
+H15 : _in x3 x4
+H13 : _1991 x4
+H16 : True
+============================
+False
+
+Toplevel input, characters 415-427:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_new z2) (_species z2)) (exists z1, (and (and (_1991 z1) True) (_in z2 z1)))) True) (_discover _smith z2))))) -> (not (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_1992 z2) True) (_in _smith z2)) (exists z1, (and (and (and (_new z1) (_species z1)) True) (_discover _smith z1)))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 429-433:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_new z2) (_species z2)) (exists z1, (and (and (_1991 z1) True) (_in z2 z1)))) True) (_discover _smith z2))))) -> (not (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_1992 z2) True) (_in _smith z2)) (exists z1, (and (and (and (_new z1) (_species z1)) True) (_discover _smith z1)))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                              ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1991 is declared
+
+Coq < _1992 is declared
+
+Coq < _discover is declared
+
+Coq < _in is declared
+
+Coq < _new is declared
+
+Coq < _smith is declared
+
+Coq < _species is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+(((_new z2 /\ _species z2) /\
+(exists z1 : Entity, (_1991 z1 /\ True) /\ _in z2 z1)) /\ True) /\
+_discover _smith z2)) ->
+exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_1992 z2 /\ True) /\ _in _smith z2) /\
+(exists z1 : Entity,
+((_new z1 /\ _species z1) /\ True) /\ _discover _smith z1))
+
+2 focused goals (shelved: 1)
+
+H1 : True
+x0 : Entity
+H2 : _discover _smith x0
+H3 : True
+H0 : _new x0
+H5 : _species x0
+x1 : Entity
+H6 : _in x0 x1
+H4 : _1991 x1
+H7 : True
+============================
+_1992 ?z2
+
+goal 2 is:
+_in _smith ?z2
+
+Toplevel input, characters 409-421:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_new z2) (_species z2)) (exists z1, (and (and (_1991 z1) True) (_in z2 z1)))) True) (_discover _smith z2))))) -> (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_1992 z2) True) (_in _smith z2)) (exists z1, (and (and (and (_new z1) (_species z1)) True) (_discover _smith z1))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 423-427:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_new z2) (_species z2)) (exists z1, (and (and (_1991 z1) True) (_in z2 z1)))) True) (_discover _smith z2))))) -> (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_1992 z2) True) (_in _smith z2)) (exists z1, (and (and (and (_new z1) (_species z1)) True) (_discover _smith z1))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1991 is declared
+
+Coq < _1992 is declared
+
+Coq < _discover is declared
+
+Coq < _in is declared
+
+Coq < _new is declared
+
+Coq < _smith is declared
+
+Coq < _species is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+(((_new z2 /\ _species z2) /\
+(exists z1 : Entity, (_1991 z1 /\ True) /\ _in z2 z1)) /\ True) /\
+_discover _smith z2)) ->
+~
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_1992 z2 /\ True) /\ _in _smith z2) /\
+(exists z1 : Entity,
+((_new z1 /\ _species z1) /\ True) /\ _discover _smith z1)))
+
+1 goal
+
+H2 : True
+x0 : Entity
+H4 : _in _smith x0
+H1 : _1992 x0
+H5 : True
+x1 : Entity
+H6 : _discover _smith x1
+H7 : True
+H3 : _new x1
+H8 : _species x1
+H10 : True
+x3 : Entity
+H11 : _discover _smith x3
+H12 : True
+H9 : _new x3
+H14 : _species x3
+x4 : Entity
+H15 : _in x3 x4
+H13 : _1991 x4
+H16 : True
+============================
+False
+
+Toplevel input, characters 415-427:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_new z2) (_species z2)) (exists z1, (and (and (_1991 z1) True) (_in z2 z1)))) True) (_discover _smith z2))))) -> (not (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_1992 z2) True) (_in _smith z2)) (exists z1, (and (and (and (_new z1) (_species z1)) True) (_discover _smith z1)))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 429-433:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_new z2) (_species z2)) (exists z1, (and (and (_1991 z1) True) (_in z2 z1)))) True) (_discover _smith z2))))) -> (not (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_1992 z2) True) (_in _smith z2)) (exists z1, (and (and (and (_new z1) (_species z1)) True) (_discover _smith z1)))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                              ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

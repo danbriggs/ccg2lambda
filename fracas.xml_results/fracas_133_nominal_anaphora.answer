@@ -1,0 +1,564 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _computer is declared
+
+Coq < _gfi is declared
+
+Coq < _itel is declared
+
+Coq < _maintain is declared
+
+Coq < _own is declared
+
+Coq < _several is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _gfi /\ True) /\
+(exists z1 : Entity,
+((_several z1 /\ _computer z1) /\ True) /\ _own _gfi z1)) ->
+(exists x : Entity,
+(x = _itel /\ True) /\ (exists z1 : Entity, True /\ _maintain _itel z1)) ->
+exists x : Entity,
+(x = _itel /\ True) /\
+(forall z3 : Entity,
+(exists z1 : Entity,
+(((_computer z1 /\ True) /\ z3 = z1) /\
+(exists z2 : Entity, (z2 = _gfi /\ True) /\ _own _gfi z1)) /\ True) ->
+_maintain _itel z3)
+
+
+Toplevel input, characters 441-445:
+> Theorem t1: (exists x, (and (and (x = _gfi) True) (exists z1, (and (and (and (_several z1) (_computer z1)) True) (_own _gfi z1))))) -> (exists x, (and (and (x = _itel) True) (exists z1, (and True (_maintain _itel z1))))) -> (exists x, (and (and (x = _itel) True) (forall z3, ((exists z1, (and (and (and (and (_computer z1) True) (z3 = z1)) (exists z2, (and (and (z2 = _gfi) True) (_own _gfi z1)))) True)) -> (_maintain _itel z3))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _computer is declared
+
+Coq < _gfi is declared
+
+Coq < _itel is declared
+
+Coq < _maintain is declared
+
+Coq < _own is declared
+
+Coq < _several is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _gfi /\ True) /\
+(exists z1 : Entity,
+((_several z1 /\ _computer z1) /\ True) /\ _own _gfi z1)) ->
+(exists x : Entity,
+(x = _itel /\ True) /\ (exists z1 : Entity, True /\ _maintain _itel z1)) ->
+~
+(exists x : Entity,
+(x = _itel /\ True) /\
+(forall z3 : Entity,
+(exists z1 : Entity,
+(((_computer z1 /\ True) /\ z3 = z1) /\
+(exists z2 : Entity, (z2 = _gfi /\ True) /\ _own _gfi z1)) /\ True) ->
+_maintain _itel z3))
+
+
+Toplevel input, characters 447-451:
+> Theorem t1: (exists x, (and (and (x = _gfi) True) (exists z1, (and (and (and (_several z1) (_computer z1)) True) (_own _gfi z1))))) -> (exists x, (and (and (x = _itel) True) (exists z1, (and True (_maintain _itel z1))))) -> (not (exists x, (and (and (x = _itel) True) (forall z3, ((exists z1, (and (and (and (and (_computer z1) True) (z3 = z1)) (exists z2, (and (and (z2 = _gfi) True) (_own _gfi z1)))) True)) -> (_maintain _itel z3)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _computer is declared
+
+Coq < _gfi is declared
+
+Coq < _itel is declared
+
+Coq < _maintain is declared
+
+Coq < _own is declared
+
+Coq < _several is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _gfi /\ True) /\
+(exists z1 : Entity,
+((_several z1 /\ _computer z1) /\ True) /\ _own _gfi z1)) ->
+(exists x : Entity,
+(x = _itel /\ True) /\ (exists z1 : Entity, True /\ _maintain _itel z1)) ->
+exists x : Entity,
+(x = _itel /\ True) /\
+(forall z3 : Entity,
+(exists z1 : Entity,
+(((_computer z1 /\ True) /\ z3 = z1) /\
+(exists z2 : Entity, (z2 = _gfi /\ True) /\ _own _gfi z1)) /\ True) ->
+_maintain _itel z3)
+
+1 goal
+
+H2 : True
+x0 : Entity
+H1 : True
+H3 : _maintain _itel x0
+H5 : True
+x2 : Entity
+H6 : _own _gfi x2
+H7 : True
+H4 : _several x2
+H8 : _computer x2
+x : Entity
+H0 : True
+H : _computer x
+H11 : True
+H12 : _own _gfi x
+H13 : True
+============================
+_maintain _itel x
+
+Toplevel input, characters 457-469:
+> Theorem t1: (exists x, (and (and (x = _gfi) True) (exists z1, (and (and (and (_several z1) (_computer z1)) True) (_own _gfi z1))))) -> (exists x, (and (and (x = _itel) True) (exists z1, (and True (_maintain _itel z1))))) -> (exists x, (and (and (x = _itel) True) (forall z3, ((exists z1, (and (and (and (and (_computer z1) True) (z3 = z1)) (exists z2, (and (and (z2 = _gfi) True) (_own _gfi z1)))) True)) -> (_maintain _itel z3))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 471-475:
+> Theorem t1: (exists x, (and (and (x = _gfi) True) (exists z1, (and (and (and (_several z1) (_computer z1)) True) (_own _gfi z1))))) -> (exists x, (and (and (x = _itel) True) (exists z1, (and True (_maintain _itel z1))))) -> (exists x, (and (and (x = _itel) True) (forall z3, ((exists z1, (and (and (and (and (_computer z1) True) (z3 = z1)) (exists z2, (and (and (z2 = _gfi) True) (_own _gfi z1)))) True)) -> (_maintain _itel z3))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _computer is declared
+
+Coq < _gfi is declared
+
+Coq < _itel is declared
+
+Coq < _maintain is declared
+
+Coq < _own is declared
+
+Coq < _several is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _gfi /\ True) /\
+(exists z1 : Entity,
+((_several z1 /\ _computer z1) /\ True) /\ _own _gfi z1)) ->
+(exists x : Entity,
+(x = _itel /\ True) /\ (exists z1 : Entity, True /\ _maintain _itel z1)) ->
+exists x : Entity,
+(x = _itel /\ True) /\
+(forall z3 : Entity,
+(exists z1 : Entity,
+(((_computer z1 /\ True) /\ z3 = z1) /\
+(exists z2 : Entity, (z2 = _gfi /\ True) /\ _own _gfi z1)) /\ True) ->
+_maintain _itel z3)
+
+
+Toplevel input, characters 441-445:
+> Theorem t1: (exists x, (and (and (x = _gfi) True) (exists z1, (and (and (and (_several z1) (_computer z1)) True) (_own _gfi z1))))) -> (exists x, (and (and (x = _itel) True) (exists z1, (and True (_maintain _itel z1))))) -> (exists x, (and (and (x = _itel) True) (forall z3, ((exists z1, (and (and (and (and (_computer z1) True) (z3 = z1)) (exists z2, (and (and (z2 = _gfi) True) (_own _gfi z1)))) True)) -> (_maintain _itel z3))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _computer is declared
+
+Coq < _gfi is declared
+
+Coq < _itel is declared
+
+Coq < _maintain is declared
+
+Coq < _own is declared
+
+Coq < _several is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _gfi /\ True) /\
+(exists z1 : Entity,
+((_several z1 /\ _computer z1) /\ True) /\ _own _gfi z1)) ->
+(exists x : Entity,
+(x = _itel /\ True) /\ (exists z1 : Entity, True /\ _maintain _itel z1)) ->
+~
+(exists x : Entity,
+(x = _itel /\ True) /\
+(forall z3 : Entity,
+(exists z1 : Entity,
+(((_computer z1 /\ True) /\ z3 = z1) /\
+(exists z2 : Entity, (z2 = _gfi /\ True) /\ _own _gfi z1)) /\ True) ->
+_maintain _itel z3))
+
+1 goal
+
+H2 : forall z3 : Entity,
+(exists z1 : Entity,
+(((_computer z1 /\ True) /\ z3 = z1) /\
+(exists z2 : Entity, (z2 = _gfi /\ True) /\ _own _gfi z1)) /\ True) ->
+_maintain _itel z3
+H3, H5 : True
+x1 : Entity
+H4 : True
+H6 : _maintain _itel x1
+H8 : True
+x3 : Entity
+H9 : _own _gfi x3
+H10 : True
+H7 : _several x3
+H11 : _computer x3
+============================
+False
+
+Toplevel input, characters 463-475:
+> Theorem t1: (exists x, (and (and (x = _gfi) True) (exists z1, (and (and (and (_several z1) (_computer z1)) True) (_own _gfi z1))))) -> (exists x, (and (and (x = _itel) True) (exists z1, (and True (_maintain _itel z1))))) -> (not (exists x, (and (and (x = _itel) True) (forall z3, ((exists z1, (and (and (and (and (_computer z1) True) (z3 = z1)) (exists z2, (and (and (z2 = _gfi) True) (_own _gfi z1)))) True)) -> (_maintain _itel z3)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 477-481:
+> Theorem t1: (exists x, (and (and (x = _gfi) True) (exists z1, (and (and (and (_several z1) (_computer z1)) True) (_own _gfi z1))))) -> (exists x, (and (and (x = _itel) True) (exists z1, (and True (_maintain _itel z1))))) -> (not (exists x, (and (and (x = _itel) True) (forall z3, ((exists z1, (and (and (and (and (_computer z1) True) (z3 = z1)) (exists z2, (and (and (z2 = _gfi) True) (_own _gfi z1)))) True)) -> (_maintain _itel z3)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _computer is declared
+
+Coq < _gfi is declared
+
+Coq < _itel is declared
+
+Coq < _maintain is declared
+
+Coq < _own is declared
+
+Coq < _several is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _gfi /\ True) /\
+(exists z1 : Entity,
+((_several z1 /\ _computer z1) /\ True) /\ _own _gfi z1)) ->
+(exists x : Entity,
+(x = _itel /\ True) /\ (exists z1 : Entity, True /\ _maintain _itel z1)) ->
+~
+(exists x : Entity,
+(x = _itel /\ True) /\
+(forall z3 : Entity,
+(exists z1 : Entity,
+(((_computer z1 /\ True) /\ z3 = z1) /\
+(exists z2 : Entity, (z2 = _gfi /\ True) /\ _own _gfi z1)) /\ True) ->
+_maintain _itel z3))
+
+
+Toplevel input, characters 447-451:
+> Theorem t1: (exists x, (and (and (x = _gfi) True) (exists z1, (and (and (and (_several z1) (_computer z1)) True) (_own _gfi z1))))) -> (exists x, (and (and (x = _itel) True) (exists z1, (and True (_maintain _itel z1))))) -> (not (exists x, (and (and (x = _itel) True) (forall z3, ((exists z1, (and (and (and (and (_computer z1) True) (z3 = z1)) (exists z2, (and (and (z2 = _gfi) True) (_own _gfi z1)))) True)) -> (_maintain _itel z3)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _computer is declared
+
+Coq < _gfi is declared
+
+Coq < _itel is declared
+
+Coq < _maintain is declared
+
+Coq < _own is declared
+
+Coq < _several is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _gfi /\ True) /\
+(exists z1 : Entity,
+((_several z1 /\ _computer z1) /\ True) /\ _own _gfi z1)) ->
+(exists x : Entity,
+(x = _itel /\ True) /\ (exists z1 : Entity, True /\ _maintain _itel z1)) ->
+exists x : Entity,
+(x = _itel /\ True) /\
+(forall z3 : Entity,
+(exists z1 : Entity,
+(((_computer z1 /\ True) /\ z3 = z1) /\
+(exists z2 : Entity, (z2 = _gfi /\ True) /\ _own _gfi z1)) /\ True) ->
+_maintain _itel z3)
+
+1 goal
+
+H2 : True
+x0 : Entity
+H1 : True
+H3 : _maintain _itel x0
+H5 : True
+x2 : Entity
+H6 : _own _gfi x2
+H7 : True
+H4 : _several x2
+H8 : _computer x2
+x : Entity
+H0 : True
+H : _computer x
+H11 : True
+H12 : _own _gfi x
+H13 : True
+============================
+_maintain _itel x
+
+Toplevel input, characters 457-469:
+> Theorem t1: (exists x, (and (and (x = _gfi) True) (exists z1, (and (and (and (_several z1) (_computer z1)) True) (_own _gfi z1))))) -> (exists x, (and (and (x = _itel) True) (exists z1, (and True (_maintain _itel z1))))) -> (exists x, (and (and (x = _itel) True) (forall z3, ((exists z1, (and (and (and (and (_computer z1) True) (z3 = z1)) (exists z2, (and (and (z2 = _gfi) True) (_own _gfi z1)))) True)) -> (_maintain _itel z3))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 471-475:
+> Theorem t1: (exists x, (and (and (x = _gfi) True) (exists z1, (and (and (and (_several z1) (_computer z1)) True) (_own _gfi z1))))) -> (exists x, (and (and (x = _itel) True) (exists z1, (and True (_maintain _itel z1))))) -> (exists x, (and (and (x = _itel) True) (forall z3, ((exists z1, (and (and (and (and (_computer z1) True) (z3 = z1)) (exists z2, (and (and (z2 = _gfi) True) (_own _gfi z1)))) True)) -> (_maintain _itel z3))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _computer is declared
+
+Coq < _gfi is declared
+
+Coq < _itel is declared
+
+Coq < _maintain is declared
+
+Coq < _own is declared
+
+Coq < _several is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _gfi /\ True) /\
+(exists z1 : Entity,
+((_several z1 /\ _computer z1) /\ True) /\ _own _gfi z1)) ->
+(exists x : Entity,
+(x = _itel /\ True) /\ (exists z1 : Entity, True /\ _maintain _itel z1)) ->
+~
+(exists x : Entity,
+(x = _itel /\ True) /\
+(forall z3 : Entity,
+(exists z1 : Entity,
+(((_computer z1 /\ True) /\ z3 = z1) /\
+(exists z2 : Entity, (z2 = _gfi /\ True) /\ _own _gfi z1)) /\ True) ->
+_maintain _itel z3))
+
+1 goal
+
+H2 : forall z3 : Entity,
+(exists z1 : Entity,
+(((_computer z1 /\ True) /\ z3 = z1) /\
+(exists z2 : Entity, (z2 = _gfi /\ True) /\ _own _gfi z1)) /\ True) ->
+_maintain _itel z3
+H3, H5 : True
+x1 : Entity
+H4 : True
+H6 : _maintain _itel x1
+H8 : True
+x3 : Entity
+H9 : _own _gfi x3
+H10 : True
+H7 : _several x3
+H11 : _computer x3
+============================
+False
+
+Toplevel input, characters 463-475:
+> Theorem t1: (exists x, (and (and (x = _gfi) True) (exists z1, (and (and (and (_several z1) (_computer z1)) True) (_own _gfi z1))))) -> (exists x, (and (and (x = _itel) True) (exists z1, (and True (_maintain _itel z1))))) -> (not (exists x, (and (and (x = _itel) True) (forall z3, ((exists z1, (and (and (and (and (_computer z1) True) (z3 = z1)) (exists z2, (and (and (z2 = _gfi) True) (_own _gfi z1)))) True)) -> (_maintain _itel z3)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 477-481:
+> Theorem t1: (exists x, (and (and (x = _gfi) True) (exists z1, (and (and (and (_several z1) (_computer z1)) True) (_own _gfi z1))))) -> (exists x, (and (and (x = _itel) True) (exists z1, (and True (_maintain _itel z1))))) -> (not (exists x, (and (and (x = _itel) True) (forall z3, ((exists z1, (and (and (and (and (_computer z1) True) (z3 = z1)) (exists z2, (and (and (z2 = _gfi) True) (_own _gfi z1)))) True)) -> (_maintain _itel z3)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _computer is declared
+
+Coq < _gfi is declared
+
+Coq < _itel is declared
+
+Coq < _maintain is declared
+
+Coq < _own is declared
+
+Coq < _several is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _gfi /\ True) /\
+(exists z1 : Entity,
+((_several z1 /\ _computer z1) /\ True) /\ _own _gfi z1)) ->
+(exists x : Entity,
+(x = _itel /\ True) /\ (exists z1 : Entity, True /\ _maintain _itel z1)) ->
+exists x : Entity,
+(x = _itel /\ True) /\
+(forall z3 : Entity,
+(exists z1 : Entity,
+(((_computer z1 /\ True) /\ z3 = z1) /\
+(exists z2 : Entity, (z2 = _gfi /\ True) /\ _own _gfi z1)) /\ True) ->
+_maintain _itel z3)
+
+1 goal
+
+H2 : True
+x0 : Entity
+H1 : True
+H3 : _maintain _itel x0
+H5 : True
+x2 : Entity
+H6 : _own _gfi x2
+H7 : True
+H4 : _several x2
+H8 : _computer x2
+x : Entity
+H0 : True
+H : _computer x
+H11 : True
+H12 : _own _gfi x
+H13 : True
+============================
+_maintain _itel x
+
+Toplevel input, characters 457-469:
+> Theorem t1: (exists x, (and (and (x = _gfi) True) (exists z1, (and (and (and (_several z1) (_computer z1)) True) (_own _gfi z1))))) -> (exists x, (and (and (x = _itel) True) (exists z1, (and True (_maintain _itel z1))))) -> (exists x, (and (and (x = _itel) True) (forall z3, ((exists z1, (and (and (and (and (_computer z1) True) (z3 = z1)) (exists z2, (and (and (z2 = _gfi) True) (_own _gfi z1)))) True)) -> (_maintain _itel z3))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 471-475:
+> Theorem t1: (exists x, (and (and (x = _gfi) True) (exists z1, (and (and (and (_several z1) (_computer z1)) True) (_own _gfi z1))))) -> (exists x, (and (and (x = _itel) True) (exists z1, (and True (_maintain _itel z1))))) -> (exists x, (and (and (x = _itel) True) (forall z3, ((exists z1, (and (and (and (and (_computer z1) True) (z3 = z1)) (exists z2, (and (and (z2 = _gfi) True) (_own _gfi z1)))) True)) -> (_maintain _itel z3))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _computer is declared
+
+Coq < _gfi is declared
+
+Coq < _itel is declared
+
+Coq < _maintain is declared
+
+Coq < _own is declared
+
+Coq < _several is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _gfi /\ True) /\
+(exists z1 : Entity,
+((_several z1 /\ _computer z1) /\ True) /\ _own _gfi z1)) ->
+(exists x : Entity,
+(x = _itel /\ True) /\ (exists z1 : Entity, True /\ _maintain _itel z1)) ->
+~
+(exists x : Entity,
+(x = _itel /\ True) /\
+(forall z3 : Entity,
+(exists z1 : Entity,
+(((_computer z1 /\ True) /\ z3 = z1) /\
+(exists z2 : Entity, (z2 = _gfi /\ True) /\ _own _gfi z1)) /\ True) ->
+_maintain _itel z3))
+
+1 goal
+
+H2 : forall z3 : Entity,
+(exists z1 : Entity,
+(((_computer z1 /\ True) /\ z3 = z1) /\
+(exists z2 : Entity, (z2 = _gfi /\ True) /\ _own _gfi z1)) /\ True) ->
+_maintain _itel z3
+H3, H5 : True
+x1 : Entity
+H4 : True
+H6 : _maintain _itel x1
+H8 : True
+x3 : Entity
+H9 : _own _gfi x3
+H10 : True
+H7 : _several x3
+H11 : _computer x3
+============================
+False
+
+Toplevel input, characters 463-475:
+> Theorem t1: (exists x, (and (and (x = _gfi) True) (exists z1, (and (and (and (_several z1) (_computer z1)) True) (_own _gfi z1))))) -> (exists x, (and (and (x = _itel) True) (exists z1, (and True (_maintain _itel z1))))) -> (not (exists x, (and (and (x = _itel) True) (forall z3, ((exists z1, (and (and (and (and (_computer z1) True) (z3 = z1)) (exists z2, (and (and (z2 = _gfi) True) (_own _gfi z1)))) True)) -> (_maintain _itel z3)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 477-481:
+> Theorem t1: (exists x, (and (and (x = _gfi) True) (exists z1, (and (and (and (_several z1) (_computer z1)) True) (_own _gfi z1))))) -> (exists x, (and (and (x = _itel) True) (exists z1, (and True (_maintain _itel z1))))) -> (not (exists x, (and (and (x = _itel) True) (forall z3, ((exists z1, (and (and (and (and (_computer z1) True) (z3 = z1)) (exists z2, (and (and (z2 = _gfi) True) (_own _gfi z1)))) True)) -> (_maintain _itel z3)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

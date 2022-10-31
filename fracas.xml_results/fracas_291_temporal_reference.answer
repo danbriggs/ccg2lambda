@@ -1,0 +1,502 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _discover is declared
+
+Coq < _hour is declared
+
+Coq < _in is declared
+
+Coq < _many is declared
+
+Coq < _new is declared
+
+Coq < _smith is declared
+
+Coq < _species is declared
+
+Coq < _spend is declared
+
+Coq < _two is declared
+
+Coq < Toplevel input, characters 291-426:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_two z2) (_hour z2)) True) (_in _smith z2)) (exists z1, (and (and (and (and (_many z1) (_new z1)) (_species z1)) True) (_discover _smith z1))))))) -> (exists x, (and (and (x = _smith) True) (_spend _smith (exists x, (and (and (and (_two x) (_hour x)) True) (exists z1, (and (and (and (_new z1) (_species z1)) True) (Prog (_discover x z1))))))))).
+>                                                                                                                                                                                                                                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error:
+In environment
+x : Entity
+The term
+"exists x : Entity,
+((_two x /\ _hour x) /\ True) /\
+(exists z1 : Entity,
+((_new z1 /\ _species z1) /\ True) /\ Prog (_discover x z1))" has type
+"Prop" while it is expected to have type "Entity".
+
+Toplevel input, characters 432-437:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_two z2) (_hour z2)) True) (_in _smith z2)) (exists z1, (and (and (and (and (_many z1) (_new z1)) (_species z1)) True) (_discover _smith z1))))))) -> (exists x, (and (and (x = _smith) True) (_spend _smith (exists x, (and (and (and (_two x) (_hour x)) True) (exists z1, (and (and (and (_new z1) (_species z1)) True) (Prog (_discover x z1))))))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 439-443:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_two z2) (_hour z2)) True) (_in _smith z2)) (exists z1, (and (and (and (and (_many z1) (_new z1)) (_species z1)) True) (_discover _smith z1))))))) -> (exists x, (and (and (x = _smith) True) (_spend _smith (exists x, (and (and (and (_two x) (_hour x)) True) (exists z1, (and (and (and (_new z1) (_species z1)) True) (Prog (_discover x z1))))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _discover is declared
+
+Coq < _hour is declared
+
+Coq < _in is declared
+
+Coq < _many is declared
+
+Coq < _new is declared
+
+Coq < _smith is declared
+
+Coq < _species is declared
+
+Coq < _spend is declared
+
+Coq < _two is declared
+
+Coq < Toplevel input, characters 296-431:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_two z2) (_hour z2)) True) (_in _smith z2)) (exists z1, (and (and (and (and (_many z1) (_new z1)) (_species z1)) True) (_discover _smith z1))))))) -> (not (exists x, (and (and (x = _smith) True) (_spend _smith (exists x, (and (and (and (_two x) (_hour x)) True) (exists z1, (and (and (and (_new z1) (_species z1)) True) (Prog (_discover x z1)))))))))).
+>                                                                                                                                                                                                                                                                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error:
+In environment
+x : Entity
+The term
+"exists x : Entity,
+((_two x /\ _hour x) /\ True) /\
+(exists z1 : Entity,
+((_new z1 /\ _species z1) /\ True) /\ Prog (_discover x z1))" has type
+"Prop" while it is expected to have type "Entity".
+
+Toplevel input, characters 438-443:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_two z2) (_hour z2)) True) (_in _smith z2)) (exists z1, (and (and (and (and (_many z1) (_new z1)) (_species z1)) True) (_discover _smith z1))))))) -> (not (exists x, (and (and (x = _smith) True) (_spend _smith (exists x, (and (and (and (_two x) (_hour x)) True) (exists z1, (and (and (and (_new z1) (_species z1)) True) (Prog (_discover x z1)))))))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 445-449:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_two z2) (_hour z2)) True) (_in _smith z2)) (exists z1, (and (and (and (and (_many z1) (_new z1)) (_species z1)) True) (_discover _smith z1))))))) -> (not (exists x, (and (and (x = _smith) True) (_spend _smith (exists x, (and (and (and (_two x) (_hour x)) True) (exists z1, (and (and (and (_new z1) (_species z1)) True) (Prog (_discover x z1)))))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _discover is declared
+
+Coq < _hour is declared
+
+Coq < _in is declared
+
+Coq < _many is declared
+
+Coq < _new is declared
+
+Coq < _smith is declared
+
+Coq < _species is declared
+
+Coq < _spend is declared
+
+Coq < _two is declared
+
+Coq < Toplevel input, characters 291-426:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_two z2) (_hour z2)) True) (_in _smith z2)) (exists z1, (and (and (and (and (_many z1) (_new z1)) (_species z1)) True) (_discover _smith z1))))))) -> (exists x, (and (and (x = _smith) True) (_spend _smith (exists x, (and (and (and (_two x) (_hour x)) True) (exists z1, (and (and (and (_new z1) (_species z1)) True) (Prog (_discover x z1))))))))).
+>                                                                                                                                                                                                                                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error:
+In environment
+x : Entity
+The term
+"exists x : Entity,
+((_two x /\ _hour x) /\ True) /\
+(exists z1 : Entity,
+((_new z1 /\ _species z1) /\ True) /\ Prog (_discover x z1))" has type
+"Prop" while it is expected to have type "Entity".
+
+Toplevel input, characters 432-438:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_two z2) (_hour z2)) True) (_in _smith z2)) (exists z1, (and (and (and (and (_many z1) (_new z1)) (_species z1)) True) (_discover _smith z1))))))) -> (exists x, (and (and (x = _smith) True) (_spend _smith (exists x, (and (and (and (_two x) (_hour x)) True) (exists z1, (and (and (and (_new z1) (_species z1)) True) (Prog (_discover x z1))))))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 451-454:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_two z2) (_hour z2)) True) (_in _smith z2)) (exists z1, (and (and (and (and (_many z1) (_new z1)) (_species z1)) True) (_discover _smith z1))))))) -> (exists x, (and (and (x = _smith) True) (_spend _smith (exists x, (and (and (and (_two x) (_hour x)) True) (exists z1, (and (and (and (_new z1) (_species z1)) True) (Prog (_discover x z1))))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 469-473:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_two z2) (_hour z2)) True) (_in _smith z2)) (exists z1, (and (and (and (and (_many z1) (_new z1)) (_species z1)) True) (_discover _smith z1))))))) -> (exists x, (and (and (x = _smith) True) (_spend _smith (exists x, (and (and (and (_two x) (_hour x)) True) (exists z1, (and (and (and (_new z1) (_species z1)) True) (Prog (_discover x z1))))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _discover is declared
+
+Coq < _hour is declared
+
+Coq < _in is declared
+
+Coq < _many is declared
+
+Coq < _new is declared
+
+Coq < _smith is declared
+
+Coq < _species is declared
+
+Coq < _spend is declared
+
+Coq < _two is declared
+
+Coq < Toplevel input, characters 291-426:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_two z2) (_hour z2)) True) (_in _smith z2)) (exists z1, (and (and (and (and (_many z1) (_new z1)) (_species z1)) True) (_discover _smith z1))))))) -> (exists x, (and (and (x = _smith) True) (_spend _smith (exists x, (and (and (and (_two x) (_hour x)) True) (exists z1, (and (and (and (_new z1) (_species z1)) True) (Prog (_discover x z1))))))))).
+>                                                                                                                                                                                                                                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error:
+In environment
+x : Entity
+The term
+"exists x : Entity,
+((_two x /\ _hour x) /\ True) /\
+(exists z1 : Entity,
+((_new z1 /\ _species z1) /\ True) /\ Prog (_discover x z1))" has type
+"Prop" while it is expected to have type "Entity".
+
+Toplevel input, characters 432-437:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_two z2) (_hour z2)) True) (_in _smith z2)) (exists z1, (and (and (and (and (_many z1) (_new z1)) (_species z1)) True) (_discover _smith z1))))))) -> (exists x, (and (and (x = _smith) True) (_spend _smith (exists x, (and (and (and (_two x) (_hour x)) True) (exists z1, (and (and (and (_new z1) (_species z1)) True) (Prog (_discover x z1))))))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 439-443:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_two z2) (_hour z2)) True) (_in _smith z2)) (exists z1, (and (and (and (and (_many z1) (_new z1)) (_species z1)) True) (_discover _smith z1))))))) -> (exists x, (and (and (x = _smith) True) (_spend _smith (exists x, (and (and (and (_two x) (_hour x)) True) (exists z1, (and (and (and (_new z1) (_species z1)) True) (Prog (_discover x z1))))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _discover is declared
+
+Coq < _hour is declared
+
+Coq < _in is declared
+
+Coq < _many is declared
+
+Coq < _new is declared
+
+Coq < _smith is declared
+
+Coq < _species is declared
+
+Coq < _spend is declared
+
+Coq < _two is declared
+
+Coq < Toplevel input, characters 296-431:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_two z2) (_hour z2)) True) (_in _smith z2)) (exists z1, (and (and (and (and (_many z1) (_new z1)) (_species z1)) True) (_discover _smith z1))))))) -> (not (exists x, (and (and (x = _smith) True) (_spend _smith (exists x, (and (and (and (_two x) (_hour x)) True) (exists z1, (and (and (and (_new z1) (_species z1)) True) (Prog (_discover x z1)))))))))).
+>                                                                                                                                                                                                                                                                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error:
+In environment
+x : Entity
+The term
+"exists x : Entity,
+((_two x /\ _hour x) /\ True) /\
+(exists z1 : Entity,
+((_new z1 /\ _species z1) /\ True) /\ Prog (_discover x z1))" has type
+"Prop" while it is expected to have type "Entity".
+
+Toplevel input, characters 438-444:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_two z2) (_hour z2)) True) (_in _smith z2)) (exists z1, (and (and (and (and (_many z1) (_new z1)) (_species z1)) True) (_discover _smith z1))))))) -> (not (exists x, (and (and (x = _smith) True) (_spend _smith (exists x, (and (and (and (_two x) (_hour x)) True) (exists z1, (and (and (and (_new z1) (_species z1)) True) (Prog (_discover x z1)))))))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 457-460:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_two z2) (_hour z2)) True) (_in _smith z2)) (exists z1, (and (and (and (and (_many z1) (_new z1)) (_species z1)) True) (_discover _smith z1))))))) -> (not (exists x, (and (and (x = _smith) True) (_spend _smith (exists x, (and (and (and (_two x) (_hour x)) True) (exists z1, (and (and (and (_new z1) (_species z1)) True) (Prog (_discover x z1)))))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 475-479:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_two z2) (_hour z2)) True) (_in _smith z2)) (exists z1, (and (and (and (and (_many z1) (_new z1)) (_species z1)) True) (_discover _smith z1))))))) -> (not (exists x, (and (and (x = _smith) True) (_spend _smith (exists x, (and (and (and (_two x) (_hour x)) True) (exists z1, (and (and (and (_new z1) (_species z1)) True) (Prog (_discover x z1)))))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _discover is declared
+
+Coq < _hour is declared
+
+Coq < _in is declared
+
+Coq < _many is declared
+
+Coq < _new is declared
+
+Coq < _smith is declared
+
+Coq < _species is declared
+
+Coq < _spend is declared
+
+Coq < _two is declared
+
+Coq < Toplevel input, characters 296-431:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_two z2) (_hour z2)) True) (_in _smith z2)) (exists z1, (and (and (and (and (_many z1) (_new z1)) (_species z1)) True) (_discover _smith z1))))))) -> (not (exists x, (and (and (x = _smith) True) (_spend _smith (exists x, (and (and (and (_two x) (_hour x)) True) (exists z1, (and (and (and (_new z1) (_species z1)) True) (Prog (_discover x z1)))))))))).
+>                                                                                                                                                                                                                                                                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error:
+In environment
+x : Entity
+The term
+"exists x : Entity,
+((_two x /\ _hour x) /\ True) /\
+(exists z1 : Entity,
+((_new z1 /\ _species z1) /\ True) /\ Prog (_discover x z1))" has type
+"Prop" while it is expected to have type "Entity".
+
+Toplevel input, characters 438-443:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_two z2) (_hour z2)) True) (_in _smith z2)) (exists z1, (and (and (and (and (_many z1) (_new z1)) (_species z1)) True) (_discover _smith z1))))))) -> (not (exists x, (and (and (x = _smith) True) (_spend _smith (exists x, (and (and (and (_two x) (_hour x)) True) (exists z1, (and (and (and (_new z1) (_species z1)) True) (Prog (_discover x z1)))))))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 445-449:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_two z2) (_hour z2)) True) (_in _smith z2)) (exists z1, (and (and (and (and (_many z1) (_new z1)) (_species z1)) True) (_discover _smith z1))))))) -> (not (exists x, (and (and (x = _smith) True) (_spend _smith (exists x, (and (and (and (_two x) (_hour x)) True) (exists z1, (and (and (and (_new z1) (_species z1)) True) (Prog (_discover x z1)))))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _discover is declared
+
+Coq < _hour is declared
+
+Coq < _in is declared
+
+Coq < _many is declared
+
+Coq < _new is declared
+
+Coq < _smith is declared
+
+Coq < _species is declared
+
+Coq < _spend is declared
+
+Coq < _two is declared
+
+Coq < Toplevel input, characters 291-426:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_two z2) (_hour z2)) True) (_in _smith z2)) (exists z1, (and (and (and (and (_many z1) (_new z1)) (_species z1)) True) (_discover _smith z1))))))) -> (exists x, (and (and (x = _smith) True) (_spend _smith (exists x, (and (and (and (_two x) (_hour x)) True) (exists z1, (and (and (and (_new z1) (_species z1)) True) (Prog (_discover x z1))))))))).
+>                                                                                                                                                                                                                                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error:
+In environment
+x : Entity
+The term
+"exists x : Entity,
+((_two x /\ _hour x) /\ True) /\
+(exists z1 : Entity,
+((_new z1 /\ _species z1) /\ True) /\ Prog (_discover x z1))" has type
+"Prop" while it is expected to have type "Entity".
+
+Toplevel input, characters 432-438:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_two z2) (_hour z2)) True) (_in _smith z2)) (exists z1, (and (and (and (and (_many z1) (_new z1)) (_species z1)) True) (_discover _smith z1))))))) -> (exists x, (and (and (x = _smith) True) (_spend _smith (exists x, (and (and (and (_two x) (_hour x)) True) (exists z1, (and (and (and (_new z1) (_species z1)) True) (Prog (_discover x z1))))))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 451-454:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_two z2) (_hour z2)) True) (_in _smith z2)) (exists z1, (and (and (and (and (_many z1) (_new z1)) (_species z1)) True) (_discover _smith z1))))))) -> (exists x, (and (and (x = _smith) True) (_spend _smith (exists x, (and (and (and (_two x) (_hour x)) True) (exists z1, (and (and (and (_new z1) (_species z1)) True) (Prog (_discover x z1))))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 469-473:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_two z2) (_hour z2)) True) (_in _smith z2)) (exists z1, (and (and (and (and (_many z1) (_new z1)) (_species z1)) True) (_discover _smith z1))))))) -> (exists x, (and (and (x = _smith) True) (_spend _smith (exists x, (and (and (and (_two x) (_hour x)) True) (exists z1, (and (and (and (_new z1) (_species z1)) True) (Prog (_discover x z1))))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _discover is declared
+
+Coq < _hour is declared
+
+Coq < _in is declared
+
+Coq < _many is declared
+
+Coq < _new is declared
+
+Coq < _smith is declared
+
+Coq < _species is declared
+
+Coq < _spend is declared
+
+Coq < _two is declared
+
+Coq < Toplevel input, characters 296-431:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_two z2) (_hour z2)) True) (_in _smith z2)) (exists z1, (and (and (and (and (_many z1) (_new z1)) (_species z1)) True) (_discover _smith z1))))))) -> (not (exists x, (and (and (x = _smith) True) (_spend _smith (exists x, (and (and (and (_two x) (_hour x)) True) (exists z1, (and (and (and (_new z1) (_species z1)) True) (Prog (_discover x z1)))))))))).
+>                                                                                                                                                                                                                                                                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error:
+In environment
+x : Entity
+The term
+"exists x : Entity,
+((_two x /\ _hour x) /\ True) /\
+(exists z1 : Entity,
+((_new z1 /\ _species z1) /\ True) /\ Prog (_discover x z1))" has type
+"Prop" while it is expected to have type "Entity".
+
+Toplevel input, characters 438-444:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_two z2) (_hour z2)) True) (_in _smith z2)) (exists z1, (and (and (and (and (_many z1) (_new z1)) (_species z1)) True) (_discover _smith z1))))))) -> (not (exists x, (and (and (x = _smith) True) (_spend _smith (exists x, (and (and (and (_two x) (_hour x)) True) (exists z1, (and (and (and (_new z1) (_species z1)) True) (Prog (_discover x z1)))))))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 457-460:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_two z2) (_hour z2)) True) (_in _smith z2)) (exists z1, (and (and (and (and (_many z1) (_new z1)) (_species z1)) True) (_discover _smith z1))))))) -> (not (exists x, (and (and (x = _smith) True) (_spend _smith (exists x, (and (and (and (_two x) (_hour x)) True) (exists z1, (and (and (and (_new z1) (_species z1)) True) (Prog (_discover x z1)))))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 475-479:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_two z2) (_hour z2)) True) (_in _smith z2)) (exists z1, (and (and (and (and (_many z1) (_new z1)) (_species z1)) True) (_discover _smith z1))))))) -> (not (exists x, (and (and (x = _smith) True) (_spend _smith (exists x, (and (and (and (_two x) (_hour x)) True) (exists z1, (and (and (and (_new z1) (_species z1)) True) (Prog (_discover x z1)))))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _discover is declared
+
+Coq < _hour is declared
+
+Coq < _in is declared
+
+Coq < _many is declared
+
+Coq < _new is declared
+
+Coq < _smith is declared
+
+Coq < _species is declared
+
+Coq < _spend is declared
+
+Coq < _two is declared
+
+Coq < Toplevel input, characters 291-426:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_two z2) (_hour z2)) True) (_in _smith z2)) (exists z1, (and (and (and (and (_many z1) (_new z1)) (_species z1)) True) (_discover _smith z1))))))) -> (exists x, (and (and (x = _smith) True) (_spend _smith (exists x, (and (and (and (_two x) (_hour x)) True) (exists z1, (and (and (and (_new z1) (_species z1)) True) (Prog (_discover x z1))))))))).
+>                                                                                                                                                                                                                                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error:
+In environment
+x : Entity
+The term
+"exists x : Entity,
+((_two x /\ _hour x) /\ True) /\
+(exists z1 : Entity,
+((_new z1 /\ _species z1) /\ True) /\ Prog (_discover x z1))" has type
+"Prop" while it is expected to have type "Entity".
+
+Toplevel input, characters 432-438:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_two z2) (_hour z2)) True) (_in _smith z2)) (exists z1, (and (and (and (and (_many z1) (_new z1)) (_species z1)) True) (_discover _smith z1))))))) -> (exists x, (and (and (x = _smith) True) (_spend _smith (exists x, (and (and (and (_two x) (_hour x)) True) (exists z1, (and (and (and (_new z1) (_species z1)) True) (Prog (_discover x z1))))))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 451-454:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_two z2) (_hour z2)) True) (_in _smith z2)) (exists z1, (and (and (and (and (_many z1) (_new z1)) (_species z1)) True) (_discover _smith z1))))))) -> (exists x, (and (and (x = _smith) True) (_spend _smith (exists x, (and (and (and (_two x) (_hour x)) True) (exists z1, (and (and (and (_new z1) (_species z1)) True) (Prog (_discover x z1))))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 469-473:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_two z2) (_hour z2)) True) (_in _smith z2)) (exists z1, (and (and (and (and (_many z1) (_new z1)) (_species z1)) True) (_discover _smith z1))))))) -> (exists x, (and (and (x = _smith) True) (_spend _smith (exists x, (and (and (and (_two x) (_hour x)) True) (exists z1, (and (and (and (_new z1) (_species z1)) True) (Prog (_discover x z1))))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _discover is declared
+
+Coq < _hour is declared
+
+Coq < _in is declared
+
+Coq < _many is declared
+
+Coq < _new is declared
+
+Coq < _smith is declared
+
+Coq < _species is declared
+
+Coq < _spend is declared
+
+Coq < _two is declared
+
+Coq < Toplevel input, characters 296-431:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_two z2) (_hour z2)) True) (_in _smith z2)) (exists z1, (and (and (and (and (_many z1) (_new z1)) (_species z1)) True) (_discover _smith z1))))))) -> (not (exists x, (and (and (x = _smith) True) (_spend _smith (exists x, (and (and (and (_two x) (_hour x)) True) (exists z1, (and (and (and (_new z1) (_species z1)) True) (Prog (_discover x z1)))))))))).
+>                                                                                                                                                                                                                                                                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error:
+In environment
+x : Entity
+The term
+"exists x : Entity,
+((_two x /\ _hour x) /\ True) /\
+(exists z1 : Entity,
+((_new z1 /\ _species z1) /\ True) /\ Prog (_discover x z1))" has type
+"Prop" while it is expected to have type "Entity".
+
+Toplevel input, characters 438-444:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_two z2) (_hour z2)) True) (_in _smith z2)) (exists z1, (and (and (and (and (_many z1) (_new z1)) (_species z1)) True) (_discover _smith z1))))))) -> (not (exists x, (and (and (x = _smith) True) (_spend _smith (exists x, (and (and (and (_two x) (_hour x)) True) (exists z1, (and (and (and (_new z1) (_species z1)) True) (Prog (_discover x z1)))))))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 457-460:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_two z2) (_hour z2)) True) (_in _smith z2)) (exists z1, (and (and (and (and (_many z1) (_new z1)) (_species z1)) True) (_discover _smith z1))))))) -> (not (exists x, (and (and (x = _smith) True) (_spend _smith (exists x, (and (and (and (_two x) (_hour x)) True) (exists z1, (and (and (and (_new z1) (_species z1)) True) (Prog (_discover x z1)))))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 475-479:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_two z2) (_hour z2)) True) (_in _smith z2)) (exists z1, (and (and (and (and (_many z1) (_new z1)) (_species z1)) True) (_discover _smith z1))))))) -> (not (exists x, (and (and (x = _smith) True) (_spend _smith (exists x, (and (and (and (_two x) (_hour x)) True) (exists z1, (and (and (and (_new z1) (_species z1)) True) (Prog (_discover x z1)))))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+unknown
+

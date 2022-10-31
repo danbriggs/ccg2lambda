@@ -1,0 +1,482 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _charity is declared
+
+Coq < _contribute is declared
+
+Coq < _fee is declared
+
+Coq < _tenor is declared
+
+Coq < _to is declared
+
+Coq < _two is declared
+
+Coq < _will is declared
+
+Coq < Toplevel input, characters 13-242:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_two x) (_tenor x)) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute x z1))) (exists z2, (and (and (_charity z2) True) (_to x z2)))))) True)) (fun w => True)) S) S)) -> (exists x z5, (and (and (and (_tenor z5) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute z5 z1))) (exists z2, (and (and (_charity z2) True) (_to z5 z2)))))) True) (x = z5))).
+>              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun S : Prop =>
+_at
+(most x;
+((_two x /\ _tenor x) /\
+_will
+((exists z1 : Entity, (_fee z1 /\ True) /\ _contribute x z1) /\
+(exists z2 : Entity, (_charity z2 /\ True) /\ _to x z2))) /\ True,
+True) S /\ S" has type "Prop -> Prop" which should be Set, Prop or Type.
+
+Toplevel input, characters 437-442:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_two x) (_tenor x)) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute x z1))) (exists z2, (and (and (_charity z2) True) (_to x z2)))))) True)) (fun w => True)) S) S)) -> (exists x z5, (and (and (and (_tenor z5) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute z5 z1))) (exists z2, (and (and (_charity z2) True) (_to z5 z2)))))) True) (x = z5))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 444-448:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_two x) (_tenor x)) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute x z1))) (exists z2, (and (and (_charity z2) True) (_to x z2)))))) True)) (fun w => True)) S) S)) -> (exists x z5, (and (and (and (_tenor z5) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute z5 z1))) (exists z2, (and (and (_charity z2) True) (_to z5 z2)))))) True) (x = z5))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _charity is declared
+
+Coq < _contribute is declared
+
+Coq < _fee is declared
+
+Coq < _tenor is declared
+
+Coq < _to is declared
+
+Coq < _two is declared
+
+Coq < _will is declared
+
+Coq < Toplevel input, characters 13-242:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_two x) (_tenor x)) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute x z1))) (exists z2, (and (and (_charity z2) True) (_to x z2)))))) True)) (fun w => True)) S) S)) -> (not (exists x z5, (and (and (and (_tenor z5) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute z5 z1))) (exists z2, (and (and (_charity z2) True) (_to z5 z2)))))) True) (x = z5)))).
+>              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun S : Prop =>
+_at
+(most x;
+((_two x /\ _tenor x) /\
+_will
+((exists z1 : Entity, (_fee z1 /\ True) /\ _contribute x z1) /\
+(exists z2 : Entity, (_charity z2 /\ True) /\ _to x z2))) /\ True,
+True) S /\ S" has type "Prop -> Prop" which should be Set, Prop or Type.
+
+Toplevel input, characters 443-448:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_two x) (_tenor x)) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute x z1))) (exists z2, (and (and (_charity z2) True) (_to x z2)))))) True)) (fun w => True)) S) S)) -> (not (exists x z5, (and (and (and (_tenor z5) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute z5 z1))) (exists z2, (and (and (_charity z2) True) (_to z5 z2)))))) True) (x = z5)))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 450-454:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_two x) (_tenor x)) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute x z1))) (exists z2, (and (and (_charity z2) True) (_to x z2)))))) True)) (fun w => True)) S) S)) -> (not (exists x z5, (and (and (and (_tenor z5) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute z5 z1))) (exists z2, (and (and (_charity z2) True) (_to z5 z2)))))) True) (x = z5)))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _charity is declared
+
+Coq < _contribute is declared
+
+Coq < _fee is declared
+
+Coq < _tenor is declared
+
+Coq < _to is declared
+
+Coq < _two is declared
+
+Coq < _will is declared
+
+Coq < Toplevel input, characters 13-242:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_two x) (_tenor x)) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute x z1))) (exists z2, (and (and (_charity z2) True) (_to x z2)))))) True)) (fun w => True)) S) S)) -> (exists x z5, (and (and (and (_tenor z5) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute z5 z1))) (exists z2, (and (and (_charity z2) True) (_to z5 z2)))))) True) (x = z5))).
+>              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun S : Prop =>
+_at
+(most x;
+((_two x /\ _tenor x) /\
+_will
+((exists z1 : Entity, (_fee z1 /\ True) /\ _contribute x z1) /\
+(exists z2 : Entity, (_charity z2 /\ True) /\ _to x z2))) /\ True,
+True) S /\ S" has type "Prop -> Prop" which should be Set, Prop or Type.
+
+Toplevel input, characters 437-443:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_two x) (_tenor x)) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute x z1))) (exists z2, (and (and (_charity z2) True) (_to x z2)))))) True)) (fun w => True)) S) S)) -> (exists x z5, (and (and (and (_tenor z5) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute z5 z1))) (exists z2, (and (and (_charity z2) True) (_to z5 z2)))))) True) (x = z5))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 456-459:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_two x) (_tenor x)) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute x z1))) (exists z2, (and (and (_charity z2) True) (_to x z2)))))) True)) (fun w => True)) S) S)) -> (exists x z5, (and (and (and (_tenor z5) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute z5 z1))) (exists z2, (and (and (_charity z2) True) (_to z5 z2)))))) True) (x = z5))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 474-478:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_two x) (_tenor x)) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute x z1))) (exists z2, (and (and (_charity z2) True) (_to x z2)))))) True)) (fun w => True)) S) S)) -> (exists x z5, (and (and (and (_tenor z5) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute z5 z1))) (exists z2, (and (and (_charity z2) True) (_to z5 z2)))))) True) (x = z5))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _charity is declared
+
+Coq < _contribute is declared
+
+Coq < _fee is declared
+
+Coq < _tenor is declared
+
+Coq < _to is declared
+
+Coq < _two is declared
+
+Coq < _will is declared
+
+Coq < Toplevel input, characters 13-242:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_two x) (_tenor x)) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute x z1))) (exists z2, (and (and (_charity z2) True) (_to x z2)))))) True)) (fun w => True)) S) S)) -> (exists x z5, (and (and (and (_tenor z5) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute z5 z1))) (exists z2, (and (and (_charity z2) True) (_to z5 z2)))))) True) (x = z5))).
+>              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun S : Prop =>
+_at
+(most x;
+((_two x /\ _tenor x) /\
+_will
+((exists z1 : Entity, (_fee z1 /\ True) /\ _contribute x z1) /\
+(exists z2 : Entity, (_charity z2 /\ True) /\ _to x z2))) /\ True,
+True) S /\ S" has type "Prop -> Prop" which should be Set, Prop or Type.
+
+Toplevel input, characters 437-442:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_two x) (_tenor x)) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute x z1))) (exists z2, (and (and (_charity z2) True) (_to x z2)))))) True)) (fun w => True)) S) S)) -> (exists x z5, (and (and (and (_tenor z5) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute z5 z1))) (exists z2, (and (and (_charity z2) True) (_to z5 z2)))))) True) (x = z5))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 444-448:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_two x) (_tenor x)) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute x z1))) (exists z2, (and (and (_charity z2) True) (_to x z2)))))) True)) (fun w => True)) S) S)) -> (exists x z5, (and (and (and (_tenor z5) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute z5 z1))) (exists z2, (and (and (_charity z2) True) (_to z5 z2)))))) True) (x = z5))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _charity is declared
+
+Coq < _contribute is declared
+
+Coq < _fee is declared
+
+Coq < _tenor is declared
+
+Coq < _to is declared
+
+Coq < _two is declared
+
+Coq < _will is declared
+
+Coq < Toplevel input, characters 13-242:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_two x) (_tenor x)) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute x z1))) (exists z2, (and (and (_charity z2) True) (_to x z2)))))) True)) (fun w => True)) S) S)) -> (not (exists x z5, (and (and (and (_tenor z5) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute z5 z1))) (exists z2, (and (and (_charity z2) True) (_to z5 z2)))))) True) (x = z5)))).
+>              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun S : Prop =>
+_at
+(most x;
+((_two x /\ _tenor x) /\
+_will
+((exists z1 : Entity, (_fee z1 /\ True) /\ _contribute x z1) /\
+(exists z2 : Entity, (_charity z2 /\ True) /\ _to x z2))) /\ True,
+True) S /\ S" has type "Prop -> Prop" which should be Set, Prop or Type.
+
+Toplevel input, characters 443-449:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_two x) (_tenor x)) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute x z1))) (exists z2, (and (and (_charity z2) True) (_to x z2)))))) True)) (fun w => True)) S) S)) -> (not (exists x z5, (and (and (and (_tenor z5) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute z5 z1))) (exists z2, (and (and (_charity z2) True) (_to z5 z2)))))) True) (x = z5)))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 462-465:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_two x) (_tenor x)) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute x z1))) (exists z2, (and (and (_charity z2) True) (_to x z2)))))) True)) (fun w => True)) S) S)) -> (not (exists x z5, (and (and (and (_tenor z5) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute z5 z1))) (exists z2, (and (and (_charity z2) True) (_to z5 z2)))))) True) (x = z5)))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 480-484:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_two x) (_tenor x)) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute x z1))) (exists z2, (and (and (_charity z2) True) (_to x z2)))))) True)) (fun w => True)) S) S)) -> (not (exists x z5, (and (and (and (_tenor z5) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute z5 z1))) (exists z2, (and (and (_charity z2) True) (_to z5 z2)))))) True) (x = z5)))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _charity is declared
+
+Coq < _contribute is declared
+
+Coq < _fee is declared
+
+Coq < _tenor is declared
+
+Coq < _to is declared
+
+Coq < _two is declared
+
+Coq < _will is declared
+
+Coq < Toplevel input, characters 13-242:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_two x) (_tenor x)) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute x z1))) (exists z2, (and (and (_charity z2) True) (_to x z2)))))) True)) (fun w => True)) S) S)) -> (not (exists x z5, (and (and (and (_tenor z5) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute z5 z1))) (exists z2, (and (and (_charity z2) True) (_to z5 z2)))))) True) (x = z5)))).
+>              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun S : Prop =>
+_at
+(most x;
+((_two x /\ _tenor x) /\
+_will
+((exists z1 : Entity, (_fee z1 /\ True) /\ _contribute x z1) /\
+(exists z2 : Entity, (_charity z2 /\ True) /\ _to x z2))) /\ True,
+True) S /\ S" has type "Prop -> Prop" which should be Set, Prop or Type.
+
+Toplevel input, characters 443-448:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_two x) (_tenor x)) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute x z1))) (exists z2, (and (and (_charity z2) True) (_to x z2)))))) True)) (fun w => True)) S) S)) -> (not (exists x z5, (and (and (and (_tenor z5) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute z5 z1))) (exists z2, (and (and (_charity z2) True) (_to z5 z2)))))) True) (x = z5)))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 450-454:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_two x) (_tenor x)) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute x z1))) (exists z2, (and (and (_charity z2) True) (_to x z2)))))) True)) (fun w => True)) S) S)) -> (not (exists x z5, (and (and (and (_tenor z5) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute z5 z1))) (exists z2, (and (and (_charity z2) True) (_to z5 z2)))))) True) (x = z5)))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _charity is declared
+
+Coq < _contribute is declared
+
+Coq < _fee is declared
+
+Coq < _tenor is declared
+
+Coq < _to is declared
+
+Coq < _two is declared
+
+Coq < _will is declared
+
+Coq < Toplevel input, characters 13-242:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_two x) (_tenor x)) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute x z1))) (exists z2, (and (and (_charity z2) True) (_to x z2)))))) True)) (fun w => True)) S) S)) -> (exists x z5, (and (and (and (_tenor z5) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute z5 z1))) (exists z2, (and (and (_charity z2) True) (_to z5 z2)))))) True) (x = z5))).
+>              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun S : Prop =>
+_at
+(most x;
+((_two x /\ _tenor x) /\
+_will
+((exists z1 : Entity, (_fee z1 /\ True) /\ _contribute x z1) /\
+(exists z2 : Entity, (_charity z2 /\ True) /\ _to x z2))) /\ True,
+True) S /\ S" has type "Prop -> Prop" which should be Set, Prop or Type.
+
+Toplevel input, characters 437-443:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_two x) (_tenor x)) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute x z1))) (exists z2, (and (and (_charity z2) True) (_to x z2)))))) True)) (fun w => True)) S) S)) -> (exists x z5, (and (and (and (_tenor z5) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute z5 z1))) (exists z2, (and (and (_charity z2) True) (_to z5 z2)))))) True) (x = z5))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 456-459:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_two x) (_tenor x)) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute x z1))) (exists z2, (and (and (_charity z2) True) (_to x z2)))))) True)) (fun w => True)) S) S)) -> (exists x z5, (and (and (and (_tenor z5) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute z5 z1))) (exists z2, (and (and (_charity z2) True) (_to z5 z2)))))) True) (x = z5))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 474-478:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_two x) (_tenor x)) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute x z1))) (exists z2, (and (and (_charity z2) True) (_to x z2)))))) True)) (fun w => True)) S) S)) -> (exists x z5, (and (and (and (_tenor z5) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute z5 z1))) (exists z2, (and (and (_charity z2) True) (_to z5 z2)))))) True) (x = z5))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _charity is declared
+
+Coq < _contribute is declared
+
+Coq < _fee is declared
+
+Coq < _tenor is declared
+
+Coq < _to is declared
+
+Coq < _two is declared
+
+Coq < _will is declared
+
+Coq < Toplevel input, characters 13-242:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_two x) (_tenor x)) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute x z1))) (exists z2, (and (and (_charity z2) True) (_to x z2)))))) True)) (fun w => True)) S) S)) -> (not (exists x z5, (and (and (and (_tenor z5) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute z5 z1))) (exists z2, (and (and (_charity z2) True) (_to z5 z2)))))) True) (x = z5)))).
+>              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun S : Prop =>
+_at
+(most x;
+((_two x /\ _tenor x) /\
+_will
+((exists z1 : Entity, (_fee z1 /\ True) /\ _contribute x z1) /\
+(exists z2 : Entity, (_charity z2 /\ True) /\ _to x z2))) /\ True,
+True) S /\ S" has type "Prop -> Prop" which should be Set, Prop or Type.
+
+Toplevel input, characters 443-449:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_two x) (_tenor x)) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute x z1))) (exists z2, (and (and (_charity z2) True) (_to x z2)))))) True)) (fun w => True)) S) S)) -> (not (exists x z5, (and (and (and (_tenor z5) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute z5 z1))) (exists z2, (and (and (_charity z2) True) (_to z5 z2)))))) True) (x = z5)))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 462-465:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_two x) (_tenor x)) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute x z1))) (exists z2, (and (and (_charity z2) True) (_to x z2)))))) True)) (fun w => True)) S) S)) -> (not (exists x z5, (and (and (and (_tenor z5) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute z5 z1))) (exists z2, (and (and (_charity z2) True) (_to z5 z2)))))) True) (x = z5)))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 480-484:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_two x) (_tenor x)) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute x z1))) (exists z2, (and (and (_charity z2) True) (_to x z2)))))) True)) (fun w => True)) S) S)) -> (not (exists x z5, (and (and (and (_tenor z5) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute z5 z1))) (exists z2, (and (and (_charity z2) True) (_to z5 z2)))))) True) (x = z5)))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _charity is declared
+
+Coq < _contribute is declared
+
+Coq < _fee is declared
+
+Coq < _tenor is declared
+
+Coq < _to is declared
+
+Coq < _two is declared
+
+Coq < _will is declared
+
+Coq < Toplevel input, characters 13-242:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_two x) (_tenor x)) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute x z1))) (exists z2, (and (and (_charity z2) True) (_to x z2)))))) True)) (fun w => True)) S) S)) -> (exists x z5, (and (and (and (_tenor z5) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute z5 z1))) (exists z2, (and (and (_charity z2) True) (_to z5 z2)))))) True) (x = z5))).
+>              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun S : Prop =>
+_at
+(most x;
+((_two x /\ _tenor x) /\
+_will
+((exists z1 : Entity, (_fee z1 /\ True) /\ _contribute x z1) /\
+(exists z2 : Entity, (_charity z2 /\ True) /\ _to x z2))) /\ True,
+True) S /\ S" has type "Prop -> Prop" which should be Set, Prop or Type.
+
+Toplevel input, characters 437-443:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_two x) (_tenor x)) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute x z1))) (exists z2, (and (and (_charity z2) True) (_to x z2)))))) True)) (fun w => True)) S) S)) -> (exists x z5, (and (and (and (_tenor z5) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute z5 z1))) (exists z2, (and (and (_charity z2) True) (_to z5 z2)))))) True) (x = z5))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 456-459:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_two x) (_tenor x)) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute x z1))) (exists z2, (and (and (_charity z2) True) (_to x z2)))))) True)) (fun w => True)) S) S)) -> (exists x z5, (and (and (and (_tenor z5) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute z5 z1))) (exists z2, (and (and (_charity z2) True) (_to z5 z2)))))) True) (x = z5))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 474-478:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_two x) (_tenor x)) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute x z1))) (exists z2, (and (and (_charity z2) True) (_to x z2)))))) True)) (fun w => True)) S) S)) -> (exists x z5, (and (and (and (_tenor z5) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute z5 z1))) (exists z2, (and (and (_charity z2) True) (_to z5 z2)))))) True) (x = z5))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _charity is declared
+
+Coq < _contribute is declared
+
+Coq < _fee is declared
+
+Coq < _tenor is declared
+
+Coq < _to is declared
+
+Coq < _two is declared
+
+Coq < _will is declared
+
+Coq < Toplevel input, characters 13-242:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_two x) (_tenor x)) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute x z1))) (exists z2, (and (and (_charity z2) True) (_to x z2)))))) True)) (fun w => True)) S) S)) -> (not (exists x z5, (and (and (and (_tenor z5) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute z5 z1))) (exists z2, (and (and (_charity z2) True) (_to z5 z2)))))) True) (x = z5)))).
+>              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun S : Prop =>
+_at
+(most x;
+((_two x /\ _tenor x) /\
+_will
+((exists z1 : Entity, (_fee z1 /\ True) /\ _contribute x z1) /\
+(exists z2 : Entity, (_charity z2 /\ True) /\ _to x z2))) /\ True,
+True) S /\ S" has type "Prop -> Prop" which should be Set, Prop or Type.
+
+Toplevel input, characters 443-449:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_two x) (_tenor x)) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute x z1))) (exists z2, (and (and (_charity z2) True) (_to x z2)))))) True)) (fun w => True)) S) S)) -> (not (exists x z5, (and (and (and (_tenor z5) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute z5 z1))) (exists z2, (and (and (_charity z2) True) (_to z5 z2)))))) True) (x = z5)))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 462-465:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_two x) (_tenor x)) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute x z1))) (exists z2, (and (and (_charity z2) True) (_to x z2)))))) True)) (fun w => True)) S) S)) -> (not (exists x z5, (and (and (and (_tenor z5) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute z5 z1))) (exists z2, (and (and (_charity z2) True) (_to z5 z2)))))) True) (x = z5)))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 480-484:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_two x) (_tenor x)) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute x z1))) (exists z2, (and (and (_charity z2) True) (_to x z2)))))) True)) (fun w => True)) S) S)) -> (not (exists x z5, (and (and (and (_tenor z5) (_will (and (exists z1, (and (and (_fee z1) True) (_contribute z5 z1))) (exists z2, (and (and (_charity z2) True) (_to z5 z2)))))) True) (x = z5)))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+unknown
+

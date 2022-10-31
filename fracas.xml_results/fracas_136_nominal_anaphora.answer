@@ -1,0 +1,237 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _bring is declared
+
+Coq < _computer is declared
+
+Coq < _different is declared
+
+Coq < _executive is declared
+
+Coq < _five is declared
+
+Coq < _have is declared
+
+Coq < _laptop is declared
+
+Coq < _meeting is declared
+
+Coq < _note is declared
+
+Coq < _own is declared
+
+Coq < _smith is declared
+
+Coq < _take is declared
+
+Coq < _to is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_executive x ->
+(exists z1 : Entity, ((_laptop z1 /\ _computer z1) /\ True) /\ _have x z1) /\
+True ->
+_bring x
+(exists x0 : Entity,
+True /\
+(exists z4 : Entity,
+((_meeting z4 /\ True) /\ _at x0 z4) /\
+(exists z3 : Entity, (_note z3 /\ True) /\ _take x0 z3)))) ->
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z3 : Entity,
+((_executive z3 /\
+(exists z1 : Entity,
+((((_five z1 /\ _different z1) /\ _laptop z1) /\ _computer z1) /\
+True) /\ _own z3 z1)) /\ True) /\ _smith = z3)) ->
+exists x : Entity,
+((x = _smith /\ True) /\
+(exists z1 : Entity,
+(((_five z1 /\ _laptop z1) /\ _computer z1) /\ True) /\
+_take _smith z1)) /\
+(exists z2 : Entity, (_meeting z2 /\ True) /\ _to _smith z2)
+
+
+Toplevel input, characters 731-735:
+> Theorem t1: (forall x, ((_executive x) -> ((and (exists z1, (and (and (and (_laptop z1) (_computer z1)) True) (_have x z1))) True) -> (_bring x (exists x, (and True (exists z4, (and (and (and (_meeting z4) True) (_at x z4)) (exists z3, (and (and (_note z3) True) (_take x z3))))))))))) -> (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (_executive z3) (exists z1, (and (and (and (and (and (_five z1) (_different z1)) (_laptop z1)) (_computer z1)) True) (_own z3 z1)))) True) (_smith = z3))))) -> (exists x, (and (and (and (x = _smith) True) (exists z1, (and (and (and (and (_five z1) (_laptop z1)) (_computer z1)) True) (_take _smith z1)))) (exists z2, (and (and (_meeting z2) True) (_to _smith z2))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _bring is declared
+
+Coq < _computer is declared
+
+Coq < _different is declared
+
+Coq < _executive is declared
+
+Coq < _five is declared
+
+Coq < _have is declared
+
+Coq < _laptop is declared
+
+Coq < _meeting is declared
+
+Coq < _note is declared
+
+Coq < _own is declared
+
+Coq < _smith is declared
+
+Coq < _take is declared
+
+Coq < _to is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_executive x ->
+(exists z1 : Entity, ((_laptop z1 /\ _computer z1) /\ True) /\ _have x z1) /\
+True ->
+_bring x
+(exists x0 : Entity,
+True /\
+(exists z4 : Entity,
+((_meeting z4 /\ True) /\ _at x0 z4) /\
+(exists z3 : Entity, (_note z3 /\ True) /\ _take x0 z3)))) ->
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z3 : Entity,
+((_executive z3 /\
+(exists z1 : Entity,
+((((_five z1 /\ _different z1) /\ _laptop z1) /\ _computer z1) /\
+True) /\ _own z3 z1)) /\ True) /\ _smith = z3)) ->
+~
+(exists x : Entity,
+((x = _smith /\ True) /\
+(exists z1 : Entity,
+(((_five z1 /\ _laptop z1) /\ _computer z1) /\ True) /\
+_take _smith z1)) /\
+(exists z2 : Entity, (_meeting z2 /\ True) /\ _to _smith z2))
+
+
+Toplevel input, characters 737-741:
+> Theorem t1: (forall x, ((_executive x) -> ((and (exists z1, (and (and (and (_laptop z1) (_computer z1)) True) (_have x z1))) True) -> (_bring x (exists x, (and True (exists z4, (and (and (and (_meeting z4) True) (_at x z4)) (exists z3, (and (and (_note z3) True) (_take x z3))))))))))) -> (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (_executive z3) (exists z1, (and (and (and (and (and (_five z1) (_different z1)) (_laptop z1)) (_computer z1)) True) (_own z3 z1)))) True) (_smith = z3))))) -> (not (exists x, (and (and (and (x = _smith) True) (exists z1, (and (and (and (and (_five z1) (_laptop z1)) (_computer z1)) True) (_take _smith z1)))) (exists z2, (and (and (_meeting z2) True) (_to _smith z2)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _bring is declared
+
+Coq < _computer is declared
+
+Coq < _different is declared
+
+Coq < _executive is declared
+
+Coq < _five is declared
+
+Coq < _have is declared
+
+Coq < _laptop is declared
+
+Coq < _meeting is declared
+
+Coq < _note is declared
+
+Coq < _own is declared
+
+Coq < _smith is declared
+
+Coq < _take is declared
+
+Coq < _to is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_executive x ->
+(exists z1 : Entity, ((_laptop z1 /\ _computer z1) /\ True) /\ _have x z1) /\
+True ->
+_bring x
+(exists x0 : Entity,
+True /\
+(exists z4 : Entity,
+((_meeting z4 /\ True) /\ _at x0 z4) /\
+(exists z3 : Entity, (_note z3 /\ True) /\ _take x0 z3)))) ->
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z3 : Entity,
+((_executive z3 /\
+(exists z1 : Entity,
+((((_five z1 /\ _different z1) /\ _laptop z1) /\ _computer z1) /\
+True) /\ _own z3 z1)) /\ True) /\ _smith = z3)) ->
+exists x : Entity,
+((x = _smith /\ True) /\
+(exists z1 : Entity,
+(((_five z1 /\ _laptop z1) /\ _computer z1) /\ True) /\
+_take _smith z1)) /\
+(exists z2 : Entity, (_meeting z2 /\ True) /\ _to _smith z2)
+
+3 focused goals (shelved: 1)
+
+H : forall x : Entity,
+_executive x ->
+(exists z1 : Entity,
+((_laptop z1 /\ _computer z1) /\ True) /\ _have x z1) /\ True ->
+_bring x
+(exists x0 : Entity,
+True /\
+(exists z4 : Entity,
+((_meeting z4 /\ True) /\ _at x0 z4) /\
+(exists z3 : Entity, (_note z3 /\ True) /\ _take x0 z3)))
+H2, H4 : True
+H1 : _executive _smith
+x1 : Entity
+H6 : _own _smith x1
+H7 : True
+H8 : _computer x1
+H9 : _laptop x1
+H5 : _five x1
+H10 : _different x1
+============================
+_take _smith x1
+
+goal 2 is:
+_meeting ?z2
+goal 3 is:
+_to _smith ?z2
+
+Toplevel input, characters 747-759:
+> Theorem t1: (forall x, ((_executive x) -> ((and (exists z1, (and (and (and (_laptop z1) (_computer z1)) True) (_have x z1))) True) -> (_bring x (exists x, (and True (exists z4, (and (and (and (_meeting z4) True) (_at x z4)) (exists z3, (and (and (_note z3) True) (_take x z3))))))))))) -> (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (_executive z3) (exists z1, (and (and (and (and (and (_five z1) (_different z1)) (_laptop z1)) (_computer z1)) True) (_own z3 z1)))) True) (_smith = z3))))) -> (exists x, (and (and (and (x = _smith) True) (exists z1, (and (and (and (and (_five z1) (_laptop z1)) (_computer z1)) True) (_take _smith z1)))) (exists z2, (and (and (_meeting z2) True) (_to _smith z2))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 761-765:
+> Theorem t1: (forall x, ((_executive x) -> ((and (exists z1, (and (and (and (_laptop z1) (_computer z1)) True) (_have x z1))) True) -> (_bring x (exists x, (and True (exists z4, (and (and (and (_meeting z4) True) (_at x z4)) (exists z3, (and (and (_note z3) True) (_take x z3))))))))))) -> (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (_executive z3) (exists z1, (and (and (and (and (and (_five z1) (_different z1)) (_laptop z1)) (_computer z1)) True) (_own z3 z1)))) True) (_smith = z3))))) -> (exists x, (and (and (and (x = _smith) True) (exists z1, (and (and (and (and (_five z1) (_laptop z1)) (_computer z1)) True) (_take _smith z1)))) (exists z2, (and (and (_meeting z2) True) (_to _smith z2))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

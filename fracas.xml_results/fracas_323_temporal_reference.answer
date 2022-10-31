@@ -1,0 +1,522 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _be is declared
+
+Coq < _break is declared
+
+Coq < _can is declared
+
+Coq < _gamble is declared
+
+Coq < _gambling is declared
+
+Coq < _moment is declared
+
+Coq < _one is declared
+
+Coq < _seriously is declared
+
+Coq < _start is declared
+
+Coq < _stop is declared
+
+Coq < _stop_e2 is declared
+
+Coq < _stop_e3 is declared
+
+Coq < _until is declared
+
+Coq < _when is declared
+
+Coq < Toplevel input, characters 353-360:
+> Theorem t1: (fun X0 => (forall x, ((and (_one x) (_gambling x)) -> ((and (and (and (_seriously x) (_stop_e2 x)) (exists z1, (and True (_until x z1)))) True) -> (not (and (_break x) (X0 (fun F1 F2 => (F2 x))))))))) -> (forall x, ((_one x) -> (True -> (not (_when (exists z2, (and (and True (_break z2)) (_be z2))) (_can (_gamble x))))))) -> (forall x, ((_people x) -> ((and (and (and (and (_start x) (Prog (_gamble x))) (_seriously x)) (exists z4, (and (and (and (_moment z4) (exists z3, (and True (z3 = z4)))) True) (_stop_e3 x z4)))) True) -> (_break x)))).
+>                                                                                                                                                                                                                                                                                                                                                                  ^^^^^^^
+Error: The reference _people was not found in the current environment.
+
+Toplevel input, characters 559-564:
+> Theorem t1: (fun X0 => (forall x, ((and (_one x) (_gambling x)) -> ((and (and (and (_seriously x) (_stop_e2 x)) (exists z1, (and True (_until x z1)))) True) -> (not (and (_break x) (X0 (fun F1 F2 => (F2 x))))))))) -> (forall x, ((_one x) -> (True -> (not (_when (exists z2, (and (and True (_break z2)) (_be z2))) (_can (_gamble x))))))) -> (forall x, ((_people x) -> ((and (and (and (and (_start x) (Prog (_gamble x))) (_seriously x)) (exists z4, (and (and (and (_moment z4) (exists z3, (and True (z3 = z4)))) True) (_stop_e3 x z4)))) True) -> (_break x)))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 566-570:
+> Theorem t1: (fun X0 => (forall x, ((and (_one x) (_gambling x)) -> ((and (and (and (_seriously x) (_stop_e2 x)) (exists z1, (and True (_until x z1)))) True) -> (not (and (_break x) (X0 (fun F1 F2 => (F2 x))))))))) -> (forall x, ((_one x) -> (True -> (not (_when (exists z2, (and (and True (_break z2)) (_be z2))) (_can (_gamble x))))))) -> (forall x, ((_people x) -> ((and (and (and (and (_start x) (Prog (_gamble x))) (_seriously x)) (exists z4, (and (and (and (_moment z4) (exists z3, (and True (z3 = z4)))) True) (_stop_e3 x z4)))) True) -> (_break x)))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _be is declared
+
+Coq < _break is declared
+
+Coq < _can is declared
+
+Coq < _gamble is declared
+
+Coq < _gambling is declared
+
+Coq < _moment is declared
+
+Coq < _one is declared
+
+Coq < _seriously is declared
+
+Coq < _start is declared
+
+Coq < _stop is declared
+
+Coq < _stop_e2 is declared
+
+Coq < _stop_e3 is declared
+
+Coq < _until is declared
+
+Coq < _when is declared
+
+Coq < Toplevel input, characters 358-365:
+> Theorem t1: (fun X0 => (forall x, ((and (_one x) (_gambling x)) -> ((and (and (and (_seriously x) (_stop_e2 x)) (exists z1, (and True (_until x z1)))) True) -> (not (and (_break x) (X0 (fun F1 F2 => (F2 x))))))))) -> (forall x, ((_one x) -> (True -> (not (_when (exists z2, (and (and True (_break z2)) (_be z2))) (_can (_gamble x))))))) -> (not (forall x, ((_people x) -> ((and (and (and (and (_start x) (Prog (_gamble x))) (_seriously x)) (exists z4, (and (and (and (_moment z4) (exists z3, (and True (z3 = z4)))) True) (_stop_e3 x z4)))) True) -> (_break x))))).
+>                                                                                                                                                                                                                                                                                                                                                                       ^^^^^^^
+Error: The reference _people was not found in the current environment.
+
+Toplevel input, characters 565-570:
+> Theorem t1: (fun X0 => (forall x, ((and (_one x) (_gambling x)) -> ((and (and (and (_seriously x) (_stop_e2 x)) (exists z1, (and True (_until x z1)))) True) -> (not (and (_break x) (X0 (fun F1 F2 => (F2 x))))))))) -> (forall x, ((_one x) -> (True -> (not (_when (exists z2, (and (and True (_break z2)) (_be z2))) (_can (_gamble x))))))) -> (not (forall x, ((_people x) -> ((and (and (and (and (_start x) (Prog (_gamble x))) (_seriously x)) (exists z4, (and (and (and (_moment z4) (exists z3, (and True (z3 = z4)))) True) (_stop_e3 x z4)))) True) -> (_break x))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 572-576:
+> Theorem t1: (fun X0 => (forall x, ((and (_one x) (_gambling x)) -> ((and (and (and (_seriously x) (_stop_e2 x)) (exists z1, (and True (_until x z1)))) True) -> (not (and (_break x) (X0 (fun F1 F2 => (F2 x))))))))) -> (forall x, ((_one x) -> (True -> (not (_when (exists z2, (and (and True (_break z2)) (_be z2))) (_can (_gamble x))))))) -> (not (forall x, ((_people x) -> ((and (and (and (and (_start x) (Prog (_gamble x))) (_seriously x)) (exists z4, (and (and (and (_moment z4) (exists z3, (and True (z3 = z4)))) True) (_stop_e3 x z4)))) True) -> (_break x))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _be is declared
+
+Coq < _break is declared
+
+Coq < _can is declared
+
+Coq < _gamble is declared
+
+Coq < _gambling is declared
+
+Coq < _moment is declared
+
+Coq < _one is declared
+
+Coq < _seriously is declared
+
+Coq < _start is declared
+
+Coq < _stop is declared
+
+Coq < _stop_e2 is declared
+
+Coq < _stop_e3 is declared
+
+Coq < _until is declared
+
+Coq < _when is declared
+
+Coq < Toplevel input, characters 353-360:
+> Theorem t1: (fun X0 => (forall x, ((and (_one x) (_gambling x)) -> ((and (and (and (_seriously x) (_stop_e2 x)) (exists z1, (and True (_until x z1)))) True) -> (not (and (_break x) (X0 (fun F1 F2 => (F2 x))))))))) -> (forall x, ((_one x) -> (True -> (not (_when (exists z2, (and (and True (_break z2)) (_be z2))) (_can (_gamble x))))))) -> (forall x, ((_people x) -> ((and (and (and (and (_start x) (Prog (_gamble x))) (_seriously x)) (exists z4, (and (and (and (_moment z4) (exists z3, (and True (z3 = z4)))) True) (_stop_e3 x z4)))) True) -> (_break x)))).
+>                                                                                                                                                                                                                                                                                                                                                                  ^^^^^^^
+Error: The reference _people was not found in the current environment.
+
+Toplevel input, characters 559-565:
+> Theorem t1: (fun X0 => (forall x, ((and (_one x) (_gambling x)) -> ((and (and (and (_seriously x) (_stop_e2 x)) (exists z1, (and True (_until x z1)))) True) -> (not (and (_break x) (X0 (fun F1 F2 => (F2 x))))))))) -> (forall x, ((_one x) -> (True -> (not (_when (exists z2, (and (and True (_break z2)) (_be z2))) (_can (_gamble x))))))) -> (forall x, ((_people x) -> ((and (and (and (and (_start x) (Prog (_gamble x))) (_seriously x)) (exists z4, (and (and (and (_moment z4) (exists z3, (and True (z3 = z4)))) True) (_stop_e3 x z4)))) True) -> (_break x)))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 578-581:
+> Theorem t1: (fun X0 => (forall x, ((and (_one x) (_gambling x)) -> ((and (and (and (_seriously x) (_stop_e2 x)) (exists z1, (and True (_until x z1)))) True) -> (not (and (_break x) (X0 (fun F1 F2 => (F2 x))))))))) -> (forall x, ((_one x) -> (True -> (not (_when (exists z2, (and (and True (_break z2)) (_be z2))) (_can (_gamble x))))))) -> (forall x, ((_people x) -> ((and (and (and (and (_start x) (Prog (_gamble x))) (_seriously x)) (exists z4, (and (and (and (_moment z4) (exists z3, (and True (z3 = z4)))) True) (_stop_e3 x z4)))) True) -> (_break x)))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 596-600:
+> Theorem t1: (fun X0 => (forall x, ((and (_one x) (_gambling x)) -> ((and (and (and (_seriously x) (_stop_e2 x)) (exists z1, (and True (_until x z1)))) True) -> (not (and (_break x) (X0 (fun F1 F2 => (F2 x))))))))) -> (forall x, ((_one x) -> (True -> (not (_when (exists z2, (and (and True (_break z2)) (_be z2))) (_can (_gamble x))))))) -> (forall x, ((_people x) -> ((and (and (and (and (_start x) (Prog (_gamble x))) (_seriously x)) (exists z4, (and (and (and (_moment z4) (exists z3, (and True (z3 = z4)))) True) (_stop_e3 x z4)))) True) -> (_break x)))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _be is declared
+
+Coq < _break is declared
+
+Coq < _can is declared
+
+Coq < _gamble is declared
+
+Coq < _gambling is declared
+
+Coq < _moment is declared
+
+Coq < _one is declared
+
+Coq < _seriously is declared
+
+Coq < _start is declared
+
+Coq < _stop is declared
+
+Coq < _stop_e2 is declared
+
+Coq < _stop_e3 is declared
+
+Coq < _until is declared
+
+Coq < _when is declared
+
+Coq < Toplevel input, characters 353-360:
+> Theorem t1: (fun X0 => (forall x, ((and (_one x) (_gambling x)) -> ((and (and (and (_seriously x) (_stop_e2 x)) (exists z1, (and True (_until x z1)))) True) -> (not (and (_break x) (X0 (fun F1 F2 => (F2 x))))))))) -> (forall x, ((_one x) -> (True -> (not (_when (exists z2, (and (and True (_break z2)) (_be z2))) (_can (_gamble x))))))) -> (forall x, ((_people x) -> ((and (and (and (and (_start x) (Prog (_gamble x))) (_seriously x)) (exists z4, (and (and (and (_moment z4) (exists z3, (and True (z3 = z4)))) True) (_stop_e3 x z4)))) True) -> (_break x)))).
+>                                                                                                                                                                                                                                                                                                                                                                  ^^^^^^^
+Error: The reference _people was not found in the current environment.
+
+Toplevel input, characters 559-564:
+> Theorem t1: (fun X0 => (forall x, ((and (_one x) (_gambling x)) -> ((and (and (and (_seriously x) (_stop_e2 x)) (exists z1, (and True (_until x z1)))) True) -> (not (and (_break x) (X0 (fun F1 F2 => (F2 x))))))))) -> (forall x, ((_one x) -> (True -> (not (_when (exists z2, (and (and True (_break z2)) (_be z2))) (_can (_gamble x))))))) -> (forall x, ((_people x) -> ((and (and (and (and (_start x) (Prog (_gamble x))) (_seriously x)) (exists z4, (and (and (and (_moment z4) (exists z3, (and True (z3 = z4)))) True) (_stop_e3 x z4)))) True) -> (_break x)))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 566-570:
+> Theorem t1: (fun X0 => (forall x, ((and (_one x) (_gambling x)) -> ((and (and (and (_seriously x) (_stop_e2 x)) (exists z1, (and True (_until x z1)))) True) -> (not (and (_break x) (X0 (fun F1 F2 => (F2 x))))))))) -> (forall x, ((_one x) -> (True -> (not (_when (exists z2, (and (and True (_break z2)) (_be z2))) (_can (_gamble x))))))) -> (forall x, ((_people x) -> ((and (and (and (and (_start x) (Prog (_gamble x))) (_seriously x)) (exists z4, (and (and (and (_moment z4) (exists z3, (and True (z3 = z4)))) True) (_stop_e3 x z4)))) True) -> (_break x)))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _be is declared
+
+Coq < _break is declared
+
+Coq < _can is declared
+
+Coq < _gamble is declared
+
+Coq < _gambling is declared
+
+Coq < _moment is declared
+
+Coq < _one is declared
+
+Coq < _seriously is declared
+
+Coq < _start is declared
+
+Coq < _stop is declared
+
+Coq < _stop_e2 is declared
+
+Coq < _stop_e3 is declared
+
+Coq < _until is declared
+
+Coq < _when is declared
+
+Coq < Toplevel input, characters 358-365:
+> Theorem t1: (fun X0 => (forall x, ((and (_one x) (_gambling x)) -> ((and (and (and (_seriously x) (_stop_e2 x)) (exists z1, (and True (_until x z1)))) True) -> (not (and (_break x) (X0 (fun F1 F2 => (F2 x))))))))) -> (forall x, ((_one x) -> (True -> (not (_when (exists z2, (and (and True (_break z2)) (_be z2))) (_can (_gamble x))))))) -> (not (forall x, ((_people x) -> ((and (and (and (and (_start x) (Prog (_gamble x))) (_seriously x)) (exists z4, (and (and (and (_moment z4) (exists z3, (and True (z3 = z4)))) True) (_stop_e3 x z4)))) True) -> (_break x))))).
+>                                                                                                                                                                                                                                                                                                                                                                       ^^^^^^^
+Error: The reference _people was not found in the current environment.
+
+Toplevel input, characters 565-571:
+> Theorem t1: (fun X0 => (forall x, ((and (_one x) (_gambling x)) -> ((and (and (and (_seriously x) (_stop_e2 x)) (exists z1, (and True (_until x z1)))) True) -> (not (and (_break x) (X0 (fun F1 F2 => (F2 x))))))))) -> (forall x, ((_one x) -> (True -> (not (_when (exists z2, (and (and True (_break z2)) (_be z2))) (_can (_gamble x))))))) -> (not (forall x, ((_people x) -> ((and (and (and (and (_start x) (Prog (_gamble x))) (_seriously x)) (exists z4, (and (and (and (_moment z4) (exists z3, (and True (z3 = z4)))) True) (_stop_e3 x z4)))) True) -> (_break x))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 584-587:
+> Theorem t1: (fun X0 => (forall x, ((and (_one x) (_gambling x)) -> ((and (and (and (_seriously x) (_stop_e2 x)) (exists z1, (and True (_until x z1)))) True) -> (not (and (_break x) (X0 (fun F1 F2 => (F2 x))))))))) -> (forall x, ((_one x) -> (True -> (not (_when (exists z2, (and (and True (_break z2)) (_be z2))) (_can (_gamble x))))))) -> (not (forall x, ((_people x) -> ((and (and (and (and (_start x) (Prog (_gamble x))) (_seriously x)) (exists z4, (and (and (and (_moment z4) (exists z3, (and True (z3 = z4)))) True) (_stop_e3 x z4)))) True) -> (_break x))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 602-606:
+> Theorem t1: (fun X0 => (forall x, ((and (_one x) (_gambling x)) -> ((and (and (and (_seriously x) (_stop_e2 x)) (exists z1, (and True (_until x z1)))) True) -> (not (and (_break x) (X0 (fun F1 F2 => (F2 x))))))))) -> (forall x, ((_one x) -> (True -> (not (_when (exists z2, (and (and True (_break z2)) (_be z2))) (_can (_gamble x))))))) -> (not (forall x, ((_people x) -> ((and (and (and (and (_start x) (Prog (_gamble x))) (_seriously x)) (exists z4, (and (and (and (_moment z4) (exists z3, (and True (z3 = z4)))) True) (_stop_e3 x z4)))) True) -> (_break x))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _be is declared
+
+Coq < _break is declared
+
+Coq < _can is declared
+
+Coq < _gamble is declared
+
+Coq < _gambling is declared
+
+Coq < _moment is declared
+
+Coq < _one is declared
+
+Coq < _seriously is declared
+
+Coq < _start is declared
+
+Coq < _stop is declared
+
+Coq < _stop_e2 is declared
+
+Coq < _stop_e3 is declared
+
+Coq < _until is declared
+
+Coq < _when is declared
+
+Coq < Toplevel input, characters 358-365:
+> Theorem t1: (fun X0 => (forall x, ((and (_one x) (_gambling x)) -> ((and (and (and (_seriously x) (_stop_e2 x)) (exists z1, (and True (_until x z1)))) True) -> (not (and (_break x) (X0 (fun F1 F2 => (F2 x))))))))) -> (forall x, ((_one x) -> (True -> (not (_when (exists z2, (and (and True (_break z2)) (_be z2))) (_can (_gamble x))))))) -> (not (forall x, ((_people x) -> ((and (and (and (and (_start x) (Prog (_gamble x))) (_seriously x)) (exists z4, (and (and (and (_moment z4) (exists z3, (and True (z3 = z4)))) True) (_stop_e3 x z4)))) True) -> (_break x))))).
+>                                                                                                                                                                                                                                                                                                                                                                       ^^^^^^^
+Error: The reference _people was not found in the current environment.
+
+Toplevel input, characters 565-570:
+> Theorem t1: (fun X0 => (forall x, ((and (_one x) (_gambling x)) -> ((and (and (and (_seriously x) (_stop_e2 x)) (exists z1, (and True (_until x z1)))) True) -> (not (and (_break x) (X0 (fun F1 F2 => (F2 x))))))))) -> (forall x, ((_one x) -> (True -> (not (_when (exists z2, (and (and True (_break z2)) (_be z2))) (_can (_gamble x))))))) -> (not (forall x, ((_people x) -> ((and (and (and (and (_start x) (Prog (_gamble x))) (_seriously x)) (exists z4, (and (and (and (_moment z4) (exists z3, (and True (z3 = z4)))) True) (_stop_e3 x z4)))) True) -> (_break x))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 572-576:
+> Theorem t1: (fun X0 => (forall x, ((and (_one x) (_gambling x)) -> ((and (and (and (_seriously x) (_stop_e2 x)) (exists z1, (and True (_until x z1)))) True) -> (not (and (_break x) (X0 (fun F1 F2 => (F2 x))))))))) -> (forall x, ((_one x) -> (True -> (not (_when (exists z2, (and (and True (_break z2)) (_be z2))) (_can (_gamble x))))))) -> (not (forall x, ((_people x) -> ((and (and (and (and (_start x) (Prog (_gamble x))) (_seriously x)) (exists z4, (and (and (and (_moment z4) (exists z3, (and True (z3 = z4)))) True) (_stop_e3 x z4)))) True) -> (_break x))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _be is declared
+
+Coq < _break is declared
+
+Coq < _can is declared
+
+Coq < _gamble is declared
+
+Coq < _gambling is declared
+
+Coq < _moment is declared
+
+Coq < _one is declared
+
+Coq < _seriously is declared
+
+Coq < _start is declared
+
+Coq < _stop is declared
+
+Coq < _stop_e2 is declared
+
+Coq < _stop_e3 is declared
+
+Coq < _until is declared
+
+Coq < _when is declared
+
+Coq < Toplevel input, characters 353-360:
+> Theorem t1: (fun X0 => (forall x, ((and (_one x) (_gambling x)) -> ((and (and (and (_seriously x) (_stop_e2 x)) (exists z1, (and True (_until x z1)))) True) -> (not (and (_break x) (X0 (fun F1 F2 => (F2 x))))))))) -> (forall x, ((_one x) -> (True -> (not (_when (exists z2, (and (and True (_break z2)) (_be z2))) (_can (_gamble x))))))) -> (forall x, ((_people x) -> ((and (and (and (and (_start x) (Prog (_gamble x))) (_seriously x)) (exists z4, (and (and (and (_moment z4) (exists z3, (and True (z3 = z4)))) True) (_stop_e3 x z4)))) True) -> (_break x)))).
+>                                                                                                                                                                                                                                                                                                                                                                  ^^^^^^^
+Error: The reference _people was not found in the current environment.
+
+Toplevel input, characters 559-565:
+> Theorem t1: (fun X0 => (forall x, ((and (_one x) (_gambling x)) -> ((and (and (and (_seriously x) (_stop_e2 x)) (exists z1, (and True (_until x z1)))) True) -> (not (and (_break x) (X0 (fun F1 F2 => (F2 x))))))))) -> (forall x, ((_one x) -> (True -> (not (_when (exists z2, (and (and True (_break z2)) (_be z2))) (_can (_gamble x))))))) -> (forall x, ((_people x) -> ((and (and (and (and (_start x) (Prog (_gamble x))) (_seriously x)) (exists z4, (and (and (and (_moment z4) (exists z3, (and True (z3 = z4)))) True) (_stop_e3 x z4)))) True) -> (_break x)))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 578-581:
+> Theorem t1: (fun X0 => (forall x, ((and (_one x) (_gambling x)) -> ((and (and (and (_seriously x) (_stop_e2 x)) (exists z1, (and True (_until x z1)))) True) -> (not (and (_break x) (X0 (fun F1 F2 => (F2 x))))))))) -> (forall x, ((_one x) -> (True -> (not (_when (exists z2, (and (and True (_break z2)) (_be z2))) (_can (_gamble x))))))) -> (forall x, ((_people x) -> ((and (and (and (and (_start x) (Prog (_gamble x))) (_seriously x)) (exists z4, (and (and (and (_moment z4) (exists z3, (and True (z3 = z4)))) True) (_stop_e3 x z4)))) True) -> (_break x)))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 596-600:
+> Theorem t1: (fun X0 => (forall x, ((and (_one x) (_gambling x)) -> ((and (and (and (_seriously x) (_stop_e2 x)) (exists z1, (and True (_until x z1)))) True) -> (not (and (_break x) (X0 (fun F1 F2 => (F2 x))))))))) -> (forall x, ((_one x) -> (True -> (not (_when (exists z2, (and (and True (_break z2)) (_be z2))) (_can (_gamble x))))))) -> (forall x, ((_people x) -> ((and (and (and (and (_start x) (Prog (_gamble x))) (_seriously x)) (exists z4, (and (and (and (_moment z4) (exists z3, (and True (z3 = z4)))) True) (_stop_e3 x z4)))) True) -> (_break x)))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _be is declared
+
+Coq < _break is declared
+
+Coq < _can is declared
+
+Coq < _gamble is declared
+
+Coq < _gambling is declared
+
+Coq < _moment is declared
+
+Coq < _one is declared
+
+Coq < _seriously is declared
+
+Coq < _start is declared
+
+Coq < _stop is declared
+
+Coq < _stop_e2 is declared
+
+Coq < _stop_e3 is declared
+
+Coq < _until is declared
+
+Coq < _when is declared
+
+Coq < Toplevel input, characters 358-365:
+> Theorem t1: (fun X0 => (forall x, ((and (_one x) (_gambling x)) -> ((and (and (and (_seriously x) (_stop_e2 x)) (exists z1, (and True (_until x z1)))) True) -> (not (and (_break x) (X0 (fun F1 F2 => (F2 x))))))))) -> (forall x, ((_one x) -> (True -> (not (_when (exists z2, (and (and True (_break z2)) (_be z2))) (_can (_gamble x))))))) -> (not (forall x, ((_people x) -> ((and (and (and (and (_start x) (Prog (_gamble x))) (_seriously x)) (exists z4, (and (and (and (_moment z4) (exists z3, (and True (z3 = z4)))) True) (_stop_e3 x z4)))) True) -> (_break x))))).
+>                                                                                                                                                                                                                                                                                                                                                                       ^^^^^^^
+Error: The reference _people was not found in the current environment.
+
+Toplevel input, characters 565-571:
+> Theorem t1: (fun X0 => (forall x, ((and (_one x) (_gambling x)) -> ((and (and (and (_seriously x) (_stop_e2 x)) (exists z1, (and True (_until x z1)))) True) -> (not (and (_break x) (X0 (fun F1 F2 => (F2 x))))))))) -> (forall x, ((_one x) -> (True -> (not (_when (exists z2, (and (and True (_break z2)) (_be z2))) (_can (_gamble x))))))) -> (not (forall x, ((_people x) -> ((and (and (and (and (_start x) (Prog (_gamble x))) (_seriously x)) (exists z4, (and (and (and (_moment z4) (exists z3, (and True (z3 = z4)))) True) (_stop_e3 x z4)))) True) -> (_break x))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 584-587:
+> Theorem t1: (fun X0 => (forall x, ((and (_one x) (_gambling x)) -> ((and (and (and (_seriously x) (_stop_e2 x)) (exists z1, (and True (_until x z1)))) True) -> (not (and (_break x) (X0 (fun F1 F2 => (F2 x))))))))) -> (forall x, ((_one x) -> (True -> (not (_when (exists z2, (and (and True (_break z2)) (_be z2))) (_can (_gamble x))))))) -> (not (forall x, ((_people x) -> ((and (and (and (and (_start x) (Prog (_gamble x))) (_seriously x)) (exists z4, (and (and (and (_moment z4) (exists z3, (and True (z3 = z4)))) True) (_stop_e3 x z4)))) True) -> (_break x))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 602-606:
+> Theorem t1: (fun X0 => (forall x, ((and (_one x) (_gambling x)) -> ((and (and (and (_seriously x) (_stop_e2 x)) (exists z1, (and True (_until x z1)))) True) -> (not (and (_break x) (X0 (fun F1 F2 => (F2 x))))))))) -> (forall x, ((_one x) -> (True -> (not (_when (exists z2, (and (and True (_break z2)) (_be z2))) (_can (_gamble x))))))) -> (not (forall x, ((_people x) -> ((and (and (and (and (_start x) (Prog (_gamble x))) (_seriously x)) (exists z4, (and (and (and (_moment z4) (exists z3, (and True (z3 = z4)))) True) (_stop_e3 x z4)))) True) -> (_break x))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _be is declared
+
+Coq < _break is declared
+
+Coq < _can is declared
+
+Coq < _gamble is declared
+
+Coq < _gambling is declared
+
+Coq < _moment is declared
+
+Coq < _one is declared
+
+Coq < _seriously is declared
+
+Coq < _start is declared
+
+Coq < _stop is declared
+
+Coq < _stop_e2 is declared
+
+Coq < _stop_e3 is declared
+
+Coq < _until is declared
+
+Coq < _when is declared
+
+Coq < Toplevel input, characters 353-360:
+> Theorem t1: (fun X0 => (forall x, ((and (_one x) (_gambling x)) -> ((and (and (and (_seriously x) (_stop_e2 x)) (exists z1, (and True (_until x z1)))) True) -> (not (and (_break x) (X0 (fun F1 F2 => (F2 x))))))))) -> (forall x, ((_one x) -> (True -> (not (_when (exists z2, (and (and True (_break z2)) (_be z2))) (_can (_gamble x))))))) -> (forall x, ((_people x) -> ((and (and (and (and (_start x) (Prog (_gamble x))) (_seriously x)) (exists z4, (and (and (and (_moment z4) (exists z3, (and True (z3 = z4)))) True) (_stop_e3 x z4)))) True) -> (_break x)))).
+>                                                                                                                                                                                                                                                                                                                                                                  ^^^^^^^
+Error: The reference _people was not found in the current environment.
+
+Toplevel input, characters 559-565:
+> Theorem t1: (fun X0 => (forall x, ((and (_one x) (_gambling x)) -> ((and (and (and (_seriously x) (_stop_e2 x)) (exists z1, (and True (_until x z1)))) True) -> (not (and (_break x) (X0 (fun F1 F2 => (F2 x))))))))) -> (forall x, ((_one x) -> (True -> (not (_when (exists z2, (and (and True (_break z2)) (_be z2))) (_can (_gamble x))))))) -> (forall x, ((_people x) -> ((and (and (and (and (_start x) (Prog (_gamble x))) (_seriously x)) (exists z4, (and (and (and (_moment z4) (exists z3, (and True (z3 = z4)))) True) (_stop_e3 x z4)))) True) -> (_break x)))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 578-581:
+> Theorem t1: (fun X0 => (forall x, ((and (_one x) (_gambling x)) -> ((and (and (and (_seriously x) (_stop_e2 x)) (exists z1, (and True (_until x z1)))) True) -> (not (and (_break x) (X0 (fun F1 F2 => (F2 x))))))))) -> (forall x, ((_one x) -> (True -> (not (_when (exists z2, (and (and True (_break z2)) (_be z2))) (_can (_gamble x))))))) -> (forall x, ((_people x) -> ((and (and (and (and (_start x) (Prog (_gamble x))) (_seriously x)) (exists z4, (and (and (and (_moment z4) (exists z3, (and True (z3 = z4)))) True) (_stop_e3 x z4)))) True) -> (_break x)))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 596-600:
+> Theorem t1: (fun X0 => (forall x, ((and (_one x) (_gambling x)) -> ((and (and (and (_seriously x) (_stop_e2 x)) (exists z1, (and True (_until x z1)))) True) -> (not (and (_break x) (X0 (fun F1 F2 => (F2 x))))))))) -> (forall x, ((_one x) -> (True -> (not (_when (exists z2, (and (and True (_break z2)) (_be z2))) (_can (_gamble x))))))) -> (forall x, ((_people x) -> ((and (and (and (and (_start x) (Prog (_gamble x))) (_seriously x)) (exists z4, (and (and (and (_moment z4) (exists z3, (and True (z3 = z4)))) True) (_stop_e3 x z4)))) True) -> (_break x)))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _be is declared
+
+Coq < _break is declared
+
+Coq < _can is declared
+
+Coq < _gamble is declared
+
+Coq < _gambling is declared
+
+Coq < _moment is declared
+
+Coq < _one is declared
+
+Coq < _seriously is declared
+
+Coq < _start is declared
+
+Coq < _stop is declared
+
+Coq < _stop_e2 is declared
+
+Coq < _stop_e3 is declared
+
+Coq < _until is declared
+
+Coq < _when is declared
+
+Coq < Toplevel input, characters 358-365:
+> Theorem t1: (fun X0 => (forall x, ((and (_one x) (_gambling x)) -> ((and (and (and (_seriously x) (_stop_e2 x)) (exists z1, (and True (_until x z1)))) True) -> (not (and (_break x) (X0 (fun F1 F2 => (F2 x))))))))) -> (forall x, ((_one x) -> (True -> (not (_when (exists z2, (and (and True (_break z2)) (_be z2))) (_can (_gamble x))))))) -> (not (forall x, ((_people x) -> ((and (and (and (and (_start x) (Prog (_gamble x))) (_seriously x)) (exists z4, (and (and (and (_moment z4) (exists z3, (and True (z3 = z4)))) True) (_stop_e3 x z4)))) True) -> (_break x))))).
+>                                                                                                                                                                                                                                                                                                                                                                       ^^^^^^^
+Error: The reference _people was not found in the current environment.
+
+Toplevel input, characters 565-571:
+> Theorem t1: (fun X0 => (forall x, ((and (_one x) (_gambling x)) -> ((and (and (and (_seriously x) (_stop_e2 x)) (exists z1, (and True (_until x z1)))) True) -> (not (and (_break x) (X0 (fun F1 F2 => (F2 x))))))))) -> (forall x, ((_one x) -> (True -> (not (_when (exists z2, (and (and True (_break z2)) (_be z2))) (_can (_gamble x))))))) -> (not (forall x, ((_people x) -> ((and (and (and (and (_start x) (Prog (_gamble x))) (_seriously x)) (exists z4, (and (and (and (_moment z4) (exists z3, (and True (z3 = z4)))) True) (_stop_e3 x z4)))) True) -> (_break x))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 584-587:
+> Theorem t1: (fun X0 => (forall x, ((and (_one x) (_gambling x)) -> ((and (and (and (_seriously x) (_stop_e2 x)) (exists z1, (and True (_until x z1)))) True) -> (not (and (_break x) (X0 (fun F1 F2 => (F2 x))))))))) -> (forall x, ((_one x) -> (True -> (not (_when (exists z2, (and (and True (_break z2)) (_be z2))) (_can (_gamble x))))))) -> (not (forall x, ((_people x) -> ((and (and (and (and (_start x) (Prog (_gamble x))) (_seriously x)) (exists z4, (and (and (and (_moment z4) (exists z3, (and True (z3 = z4)))) True) (_stop_e3 x z4)))) True) -> (_break x))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 602-606:
+> Theorem t1: (fun X0 => (forall x, ((and (_one x) (_gambling x)) -> ((and (and (and (_seriously x) (_stop_e2 x)) (exists z1, (and True (_until x z1)))) True) -> (not (and (_break x) (X0 (fun F1 F2 => (F2 x))))))))) -> (forall x, ((_one x) -> (True -> (not (_when (exists z2, (and (and True (_break z2)) (_be z2))) (_can (_gamble x))))))) -> (not (forall x, ((_people x) -> ((and (and (and (and (_start x) (Prog (_gamble x))) (_seriously x)) (exists z4, (and (and (and (_moment z4) (exists z3, (and True (z3 = z4)))) True) (_stop_e3 x z4)))) True) -> (_break x))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+unknown
+

@@ -1,0 +1,866 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _five is declared
+
+Coq < _have is declared
+
+Coq < _house is declared
+
+Coq < _leave is declared
+
+Coq < _past is declared
+
+Coq < _quarter is declared
+
+Coq < _smith is declared
+
+Coq < _station is declared
+
+Coq < _take is declared
+
+Coq < _taxi is declared
+
+Coq < _to is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _smith /\ True) /\ _have _smith) /\
+(exists z4 : Entity,
+((_five z4 /\ True) /\ _past _smith z4) /\
+(exists z2 : Entity,
+((_quarter z2 /\ True) /\ _at _smith z2) /\
+(exists z1 : Entity, (_house z1 /\ True) /\ _leave _smith z1)))) ->
+(exists x : Entity,
+True /\
+(exists z2 : Entity,
+((_station z2 /\ True) /\ _to x z2) /\
+(exists z1 : Entity, (_taxi z1 /\ True) /\ _take x z1))) ->
+_before
+(exists x : Entity,
+True /\
+(exists z3 : Entity,
+((_station z3 /\ True) /\ _to x z3) /\
+(exists z2 : Entity, (_taxi z2 /\ True) /\ _take x z2)))
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity, (_house z1 /\ True) /\ _leave _smith z1))
+
+
+Toplevel input, characters 670-674:
+> Theorem t1: (exists x, (and (and (and (x = _smith) True) (_have _smith)) (exists z4, (and (and (and (_five z4) True) (_past _smith z4)) (exists z2, (and (and (and (_quarter z2) True) (_at _smith z2)) (exists z1, (and (and (_house z1) True) (_leave _smith z1))))))))) -> (exists x, (and True (exists z2, (and (and (and (_station z2) True) (_to x z2)) (exists z1, (and (and (_taxi z1) True) (_take x z1))))))) -> (_before (exists x, (and True (exists z3, (and (and (and (_station z3) True) (_to x z3)) (exists z2, (and (and (_taxi z2) True) (_take x z2))))))) (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_house z1) True) (_leave _smith z1)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _five is declared
+
+Coq < _have is declared
+
+Coq < _house is declared
+
+Coq < _leave is declared
+
+Coq < _past is declared
+
+Coq < _quarter is declared
+
+Coq < _smith is declared
+
+Coq < _station is declared
+
+Coq < _take is declared
+
+Coq < _taxi is declared
+
+Coq < _to is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _smith /\ True) /\ _have _smith) /\
+(exists z4 : Entity,
+((_five z4 /\ True) /\ _past _smith z4) /\
+(exists z2 : Entity,
+((_quarter z2 /\ True) /\ _at _smith z2) /\
+(exists z1 : Entity, (_house z1 /\ True) /\ _leave _smith z1)))) ->
+(exists x : Entity,
+True /\
+(exists z2 : Entity,
+((_station z2 /\ True) /\ _to x z2) /\
+(exists z1 : Entity, (_taxi z1 /\ True) /\ _take x z1))) ->
+~
+_before
+(exists x : Entity,
+True /\
+(exists z3 : Entity,
+((_station z3 /\ True) /\ _to x z3) /\
+(exists z2 : Entity, (_taxi z2 /\ True) /\ _take x z2)))
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity, (_house z1 /\ True) /\ _leave _smith z1))
+
+
+Toplevel input, characters 676-680:
+> Theorem t1: (exists x, (and (and (and (x = _smith) True) (_have _smith)) (exists z4, (and (and (and (_five z4) True) (_past _smith z4)) (exists z2, (and (and (and (_quarter z2) True) (_at _smith z2)) (exists z1, (and (and (_house z1) True) (_leave _smith z1))))))))) -> (exists x, (and True (exists z2, (and (and (and (_station z2) True) (_to x z2)) (exists z1, (and (and (_taxi z1) True) (_take x z1))))))) -> (not (_before (exists x, (and True (exists z3, (and (and (and (_station z3) True) (_to x z3)) (exists z2, (and (and (_taxi z2) True) (_take x z2))))))) (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_house z1) True) (_leave _smith z1))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _five is declared
+
+Coq < _have is declared
+
+Coq < _house is declared
+
+Coq < _leave is declared
+
+Coq < _past is declared
+
+Coq < _quarter is declared
+
+Coq < _smith is declared
+
+Coq < _station is declared
+
+Coq < _take is declared
+
+Coq < _taxi is declared
+
+Coq < _to is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _smith /\ True) /\ _have _smith) /\
+(exists z4 : Entity,
+((_five z4 /\ True) /\ _past _smith z4) /\
+(exists z2 : Entity,
+((_quarter z2 /\ True) /\ _at _smith z2) /\
+(exists z1 : Entity, (_house z1 /\ True) /\ _leave _smith z1)))) ->
+(exists x : Entity,
+True /\
+(exists z2 : Entity,
+((_station z2 /\ True) /\ _to x z2) /\
+(exists z1 : Entity, (_taxi z1 /\ True) /\ _take x z1))) ->
+_before
+(exists x : Entity,
+True /\
+(exists z3 : Entity,
+((_station z3 /\ True) /\ _to x z3) /\
+(exists z2 : Entity, (_taxi z2 /\ True) /\ _take x z2)))
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity, (_house z1 /\ True) /\ _leave _smith z1))
+
+1 goal
+
+x : Entity
+H0 : True
+x0 : Entity
+H3 : _to x x0
+H1 : _station x0
+H4 : True
+x1 : Entity
+H5 : _take x x1
+H2 : _taxi x1
+H6 : True
+H8 : _have _smith
+H9 : True
+x3 : Entity
+H11 : _past _smith x3
+H7 : _five x3
+H12 : True
+x4 : Entity
+H14 : _at _smith x4
+H10 : _quarter x4
+H15 : True
+x5 : Entity
+H16 : _leave _smith x5
+H13 : _house x5
+H17 : True
+============================
+_before
+(exists x2 : Entity,
+True /\
+(exists z3 : Entity,
+((_station z3 /\ True) /\ _to x2 z3) /\
+(exists z2 : Entity, (_taxi z2 /\ True) /\ _take x2 z2)))
+(exists x2 : Entity,
+(x2 = _smith /\ True) /\
+(exists z1 : Entity, (_house z1 /\ True) /\ _leave _smith z1))
+
+Toplevel input, characters 686-698:
+> Theorem t1: (exists x, (and (and (and (x = _smith) True) (_have _smith)) (exists z4, (and (and (and (_five z4) True) (_past _smith z4)) (exists z2, (and (and (and (_quarter z2) True) (_at _smith z2)) (exists z1, (and (and (_house z1) True) (_leave _smith z1))))))))) -> (exists x, (and True (exists z2, (and (and (and (_station z2) True) (_to x z2)) (exists z1, (and (and (_taxi z1) True) (_take x z1))))))) -> (_before (exists x, (and True (exists z3, (and (and (and (_station z3) True) (_to x z3)) (exists z2, (and (and (_taxi z2) True) (_take x z2))))))) (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_house z1) True) (_leave _smith z1)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 700-704:
+> Theorem t1: (exists x, (and (and (and (x = _smith) True) (_have _smith)) (exists z4, (and (and (and (_five z4) True) (_past _smith z4)) (exists z2, (and (and (and (_quarter z2) True) (_at _smith z2)) (exists z1, (and (and (_house z1) True) (_leave _smith z1))))))))) -> (exists x, (and True (exists z2, (and (and (and (_station z2) True) (_to x z2)) (exists z1, (and (and (_taxi z1) True) (_take x z1))))))) -> (_before (exists x, (and True (exists z3, (and (and (and (_station z3) True) (_to x z3)) (exists z2, (and (and (_taxi z2) True) (_take x z2))))))) (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_house z1) True) (_leave _smith z1)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _five is declared
+
+Coq < _have is declared
+
+Coq < _house is declared
+
+Coq < _leave is declared
+
+Coq < _past is declared
+
+Coq < _quarter is declared
+
+Coq < _smith is declared
+
+Coq < _station is declared
+
+Coq < _take is declared
+
+Coq < _taxi is declared
+
+Coq < _to is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _smith /\ True) /\ _have _smith) /\
+(exists z4 : Entity,
+((_five z4 /\ True) /\ _past _smith z4) /\
+(exists z2 : Entity,
+((_quarter z2 /\ True) /\ _at _smith z2) /\
+(exists z1 : Entity, (_house z1 /\ True) /\ _leave _smith z1)))) ->
+(exists x : Entity,
+True /\
+(exists z2 : Entity,
+((_station z2 /\ True) /\ _to x z2) /\
+(exists z1 : Entity, (_taxi z1 /\ True) /\ _take x z1))) ->
+_before
+(exists x : Entity,
+True /\
+(exists z3 : Entity,
+((_station z3 /\ True) /\ _to x z3) /\
+(exists z2 : Entity, (_taxi z2 /\ True) /\ _take x z2)))
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity, (_house z1 /\ True) /\ _leave _smith z1))
+
+
+Toplevel input, characters 670-674:
+> Theorem t1: (exists x, (and (and (and (x = _smith) True) (_have _smith)) (exists z4, (and (and (and (_five z4) True) (_past _smith z4)) (exists z2, (and (and (and (_quarter z2) True) (_at _smith z2)) (exists z1, (and (and (_house z1) True) (_leave _smith z1))))))))) -> (exists x, (and True (exists z2, (and (and (and (_station z2) True) (_to x z2)) (exists z1, (and (and (_taxi z1) True) (_take x z1))))))) -> (_before (exists x, (and True (exists z3, (and (and (and (_station z3) True) (_to x z3)) (exists z2, (and (and (_taxi z2) True) (_take x z2))))))) (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_house z1) True) (_leave _smith z1)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _five is declared
+
+Coq < _have is declared
+
+Coq < _house is declared
+
+Coq < _leave is declared
+
+Coq < _past is declared
+
+Coq < _quarter is declared
+
+Coq < _smith is declared
+
+Coq < _station is declared
+
+Coq < _take is declared
+
+Coq < _taxi is declared
+
+Coq < _to is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _smith /\ True) /\ _have _smith) /\
+(exists z4 : Entity,
+((_five z4 /\ True) /\ _past _smith z4) /\
+(exists z2 : Entity,
+((_quarter z2 /\ True) /\ _at _smith z2) /\
+(exists z1 : Entity, (_house z1 /\ True) /\ _leave _smith z1)))) ->
+(exists x : Entity,
+True /\
+(exists z2 : Entity,
+((_station z2 /\ True) /\ _to x z2) /\
+(exists z1 : Entity, (_taxi z1 /\ True) /\ _take x z1))) ->
+~
+_before
+(exists x : Entity,
+True /\
+(exists z3 : Entity,
+((_station z3 /\ True) /\ _to x z3) /\
+(exists z2 : Entity, (_taxi z2 /\ True) /\ _take x z2)))
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity, (_house z1 /\ True) /\ _leave _smith z1))
+
+1 goal
+
+H1 : _before
+(exists x : Entity,
+True /\
+(exists z3 : Entity,
+((_station z3 /\ True) /\ _to x z3) /\
+(exists z2 : Entity, (_taxi z2 /\ True) /\ _take x z2)))
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity, (_house z1 /\ True) /\ _leave _smith z1))
+x : Entity
+H0 : True
+x0 : Entity
+H4 : _to x x0
+H2 : _station x0
+H5 : True
+x1 : Entity
+H6 : _take x x1
+H3 : _taxi x1
+H7 : True
+H9 : _have _smith
+H10 : True
+x3 : Entity
+H12 : _past _smith x3
+H8 : _five x3
+H13 : True
+x4 : Entity
+H15 : _at _smith x4
+H11 : _quarter x4
+H16 : True
+x5 : Entity
+H17 : _leave _smith x5
+H14 : _house x5
+H18 : True
+============================
+False
+
+Toplevel input, characters 692-704:
+> Theorem t1: (exists x, (and (and (and (x = _smith) True) (_have _smith)) (exists z4, (and (and (and (_five z4) True) (_past _smith z4)) (exists z2, (and (and (and (_quarter z2) True) (_at _smith z2)) (exists z1, (and (and (_house z1) True) (_leave _smith z1))))))))) -> (exists x, (and True (exists z2, (and (and (and (_station z2) True) (_to x z2)) (exists z1, (and (and (_taxi z1) True) (_take x z1))))))) -> (not (_before (exists x, (and True (exists z3, (and (and (and (_station z3) True) (_to x z3)) (exists z2, (and (and (_taxi z2) True) (_take x z2))))))) (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_house z1) True) (_leave _smith z1))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 706-710:
+> Theorem t1: (exists x, (and (and (and (x = _smith) True) (_have _smith)) (exists z4, (and (and (and (_five z4) True) (_past _smith z4)) (exists z2, (and (and (and (_quarter z2) True) (_at _smith z2)) (exists z1, (and (and (_house z1) True) (_leave _smith z1))))))))) -> (exists x, (and True (exists z2, (and (and (and (_station z2) True) (_to x z2)) (exists z1, (and (and (_taxi z1) True) (_take x z1))))))) -> (not (_before (exists x, (and True (exists z3, (and (and (and (_station z3) True) (_to x z3)) (exists z2, (and (and (_taxi z2) True) (_take x z2))))))) (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_house z1) True) (_leave _smith z1))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _five is declared
+
+Coq < _have is declared
+
+Coq < _house is declared
+
+Coq < _leave is declared
+
+Coq < _past is declared
+
+Coq < _quarter is declared
+
+Coq < _smith is declared
+
+Coq < _station is declared
+
+Coq < _take is declared
+
+Coq < _taxi is declared
+
+Coq < _to is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _smith /\ True) /\ _have _smith) /\
+(exists z4 : Entity,
+((_five z4 /\ True) /\ _past _smith z4) /\
+(exists z2 : Entity,
+((_quarter z2 /\ True) /\ _at _smith z2) /\
+(exists z1 : Entity, (_house z1 /\ True) /\ _leave _smith z1)))) ->
+(exists x : Entity,
+True /\
+(exists z2 : Entity,
+((_station z2 /\ True) /\ _to x z2) /\
+(exists z1 : Entity, (_taxi z1 /\ True) /\ _take x z1))) ->
+~
+_before
+(exists x : Entity,
+True /\
+(exists z3 : Entity,
+((_station z3 /\ True) /\ _to x z3) /\
+(exists z2 : Entity, (_taxi z2 /\ True) /\ _take x z2)))
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity, (_house z1 /\ True) /\ _leave _smith z1))
+
+
+Toplevel input, characters 676-680:
+> Theorem t1: (exists x, (and (and (and (x = _smith) True) (_have _smith)) (exists z4, (and (and (and (_five z4) True) (_past _smith z4)) (exists z2, (and (and (and (_quarter z2) True) (_at _smith z2)) (exists z1, (and (and (_house z1) True) (_leave _smith z1))))))))) -> (exists x, (and True (exists z2, (and (and (and (_station z2) True) (_to x z2)) (exists z1, (and (and (_taxi z1) True) (_take x z1))))))) -> (not (_before (exists x, (and True (exists z3, (and (and (and (_station z3) True) (_to x z3)) (exists z2, (and (and (_taxi z2) True) (_take x z2))))))) (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_house z1) True) (_leave _smith z1))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _five is declared
+
+Coq < _have is declared
+
+Coq < _house is declared
+
+Coq < _leave is declared
+
+Coq < _past is declared
+
+Coq < _quarter is declared
+
+Coq < _smith is declared
+
+Coq < _station is declared
+
+Coq < _take is declared
+
+Coq < _taxi is declared
+
+Coq < _to is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _smith /\ True) /\ _have _smith) /\
+(exists z4 : Entity,
+((_five z4 /\ True) /\ _past _smith z4) /\
+(exists z2 : Entity,
+((_quarter z2 /\ True) /\ _at _smith z2) /\
+(exists z1 : Entity, (_house z1 /\ True) /\ _leave _smith z1)))) ->
+(exists x : Entity,
+True /\
+(exists z2 : Entity,
+((_station z2 /\ True) /\ _to x z2) /\
+(exists z1 : Entity, (_taxi z1 /\ True) /\ _take x z1))) ->
+_before
+(exists x : Entity,
+True /\
+(exists z3 : Entity,
+((_station z3 /\ True) /\ _to x z3) /\
+(exists z2 : Entity, (_taxi z2 /\ True) /\ _take x z2)))
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity, (_house z1 /\ True) /\ _leave _smith z1))
+
+1 goal
+
+x : Entity
+H0 : True
+x0 : Entity
+H3 : _to x x0
+H1 : _station x0
+H4 : True
+x1 : Entity
+H5 : _take x x1
+H2 : _taxi x1
+H6 : True
+H8 : _have _smith
+H9 : True
+x3 : Entity
+H11 : _past _smith x3
+H7 : _five x3
+H12 : True
+x4 : Entity
+H14 : _at _smith x4
+H10 : _quarter x4
+H15 : True
+x5 : Entity
+H16 : _leave _smith x5
+H13 : _house x5
+H17 : True
+============================
+_before
+(exists x2 : Entity,
+True /\
+(exists z3 : Entity,
+((_station z3 /\ True) /\ _to x2 z3) /\
+(exists z2 : Entity, (_taxi z2 /\ True) /\ _take x2 z2)))
+(exists x2 : Entity,
+(x2 = _smith /\ True) /\
+(exists z1 : Entity, (_house z1 /\ True) /\ _leave _smith z1))
+
+Toplevel input, characters 686-698:
+> Theorem t1: (exists x, (and (and (and (x = _smith) True) (_have _smith)) (exists z4, (and (and (and (_five z4) True) (_past _smith z4)) (exists z2, (and (and (and (_quarter z2) True) (_at _smith z2)) (exists z1, (and (and (_house z1) True) (_leave _smith z1))))))))) -> (exists x, (and True (exists z2, (and (and (and (_station z2) True) (_to x z2)) (exists z1, (and (and (_taxi z1) True) (_take x z1))))))) -> (_before (exists x, (and True (exists z3, (and (and (and (_station z3) True) (_to x z3)) (exists z2, (and (and (_taxi z2) True) (_take x z2))))))) (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_house z1) True) (_leave _smith z1)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 700-704:
+> Theorem t1: (exists x, (and (and (and (x = _smith) True) (_have _smith)) (exists z4, (and (and (and (_five z4) True) (_past _smith z4)) (exists z2, (and (and (and (_quarter z2) True) (_at _smith z2)) (exists z1, (and (and (_house z1) True) (_leave _smith z1))))))))) -> (exists x, (and True (exists z2, (and (and (and (_station z2) True) (_to x z2)) (exists z1, (and (and (_taxi z1) True) (_take x z1))))))) -> (_before (exists x, (and True (exists z3, (and (and (and (_station z3) True) (_to x z3)) (exists z2, (and (and (_taxi z2) True) (_take x z2))))))) (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_house z1) True) (_leave _smith z1)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _five is declared
+
+Coq < _have is declared
+
+Coq < _house is declared
+
+Coq < _leave is declared
+
+Coq < _past is declared
+
+Coq < _quarter is declared
+
+Coq < _smith is declared
+
+Coq < _station is declared
+
+Coq < _take is declared
+
+Coq < _taxi is declared
+
+Coq < _to is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _smith /\ True) /\ _have _smith) /\
+(exists z4 : Entity,
+((_five z4 /\ True) /\ _past _smith z4) /\
+(exists z2 : Entity,
+((_quarter z2 /\ True) /\ _at _smith z2) /\
+(exists z1 : Entity, (_house z1 /\ True) /\ _leave _smith z1)))) ->
+(exists x : Entity,
+True /\
+(exists z2 : Entity,
+((_station z2 /\ True) /\ _to x z2) /\
+(exists z1 : Entity, (_taxi z1 /\ True) /\ _take x z1))) ->
+~
+_before
+(exists x : Entity,
+True /\
+(exists z3 : Entity,
+((_station z3 /\ True) /\ _to x z3) /\
+(exists z2 : Entity, (_taxi z2 /\ True) /\ _take x z2)))
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity, (_house z1 /\ True) /\ _leave _smith z1))
+
+1 goal
+
+H1 : _before
+(exists x : Entity,
+True /\
+(exists z3 : Entity,
+((_station z3 /\ True) /\ _to x z3) /\
+(exists z2 : Entity, (_taxi z2 /\ True) /\ _take x z2)))
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity, (_house z1 /\ True) /\ _leave _smith z1))
+x : Entity
+H0 : True
+x0 : Entity
+H4 : _to x x0
+H2 : _station x0
+H5 : True
+x1 : Entity
+H6 : _take x x1
+H3 : _taxi x1
+H7 : True
+H9 : _have _smith
+H10 : True
+x3 : Entity
+H12 : _past _smith x3
+H8 : _five x3
+H13 : True
+x4 : Entity
+H15 : _at _smith x4
+H11 : _quarter x4
+H16 : True
+x5 : Entity
+H17 : _leave _smith x5
+H14 : _house x5
+H18 : True
+============================
+False
+
+Toplevel input, characters 692-704:
+> Theorem t1: (exists x, (and (and (and (x = _smith) True) (_have _smith)) (exists z4, (and (and (and (_five z4) True) (_past _smith z4)) (exists z2, (and (and (and (_quarter z2) True) (_at _smith z2)) (exists z1, (and (and (_house z1) True) (_leave _smith z1))))))))) -> (exists x, (and True (exists z2, (and (and (and (_station z2) True) (_to x z2)) (exists z1, (and (and (_taxi z1) True) (_take x z1))))))) -> (not (_before (exists x, (and True (exists z3, (and (and (and (_station z3) True) (_to x z3)) (exists z2, (and (and (_taxi z2) True) (_take x z2))))))) (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_house z1) True) (_leave _smith z1))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 706-710:
+> Theorem t1: (exists x, (and (and (and (x = _smith) True) (_have _smith)) (exists z4, (and (and (and (_five z4) True) (_past _smith z4)) (exists z2, (and (and (and (_quarter z2) True) (_at _smith z2)) (exists z1, (and (and (_house z1) True) (_leave _smith z1))))))))) -> (exists x, (and True (exists z2, (and (and (and (_station z2) True) (_to x z2)) (exists z1, (and (and (_taxi z1) True) (_take x z1))))))) -> (not (_before (exists x, (and True (exists z3, (and (and (and (_station z3) True) (_to x z3)) (exists z2, (and (and (_taxi z2) True) (_take x z2))))))) (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_house z1) True) (_leave _smith z1))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _five is declared
+
+Coq < _have is declared
+
+Coq < _house is declared
+
+Coq < _leave is declared
+
+Coq < _past is declared
+
+Coq < _quarter is declared
+
+Coq < _smith is declared
+
+Coq < _station is declared
+
+Coq < _take is declared
+
+Coq < _taxi is declared
+
+Coq < _to is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _smith /\ True) /\ _have _smith) /\
+(exists z4 : Entity,
+((_five z4 /\ True) /\ _past _smith z4) /\
+(exists z2 : Entity,
+((_quarter z2 /\ True) /\ _at _smith z2) /\
+(exists z1 : Entity, (_house z1 /\ True) /\ _leave _smith z1)))) ->
+(exists x : Entity,
+True /\
+(exists z2 : Entity,
+((_station z2 /\ True) /\ _to x z2) /\
+(exists z1 : Entity, (_taxi z1 /\ True) /\ _take x z1))) ->
+_before
+(exists x : Entity,
+True /\
+(exists z3 : Entity,
+((_station z3 /\ True) /\ _to x z3) /\
+(exists z2 : Entity, (_taxi z2 /\ True) /\ _take x z2)))
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity, (_house z1 /\ True) /\ _leave _smith z1))
+
+1 goal
+
+x : Entity
+H0 : True
+x0 : Entity
+H3 : _to x x0
+H1 : _station x0
+H4 : True
+x1 : Entity
+H5 : _take x x1
+H2 : _taxi x1
+H6 : True
+H8 : _have _smith
+H9 : True
+x3 : Entity
+H11 : _past _smith x3
+H7 : _five x3
+H12 : True
+x4 : Entity
+H14 : _at _smith x4
+H10 : _quarter x4
+H15 : True
+x5 : Entity
+H16 : _leave _smith x5
+H13 : _house x5
+H17 : True
+============================
+_before
+(exists x2 : Entity,
+True /\
+(exists z3 : Entity,
+((_station z3 /\ True) /\ _to x2 z3) /\
+(exists z2 : Entity, (_taxi z2 /\ True) /\ _take x2 z2)))
+(exists x2 : Entity,
+(x2 = _smith /\ True) /\
+(exists z1 : Entity, (_house z1 /\ True) /\ _leave _smith z1))
+
+Toplevel input, characters 686-698:
+> Theorem t1: (exists x, (and (and (and (x = _smith) True) (_have _smith)) (exists z4, (and (and (and (_five z4) True) (_past _smith z4)) (exists z2, (and (and (and (_quarter z2) True) (_at _smith z2)) (exists z1, (and (and (_house z1) True) (_leave _smith z1))))))))) -> (exists x, (and True (exists z2, (and (and (and (_station z2) True) (_to x z2)) (exists z1, (and (and (_taxi z1) True) (_take x z1))))))) -> (_before (exists x, (and True (exists z3, (and (and (and (_station z3) True) (_to x z3)) (exists z2, (and (and (_taxi z2) True) (_take x z2))))))) (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_house z1) True) (_leave _smith z1)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 700-704:
+> Theorem t1: (exists x, (and (and (and (x = _smith) True) (_have _smith)) (exists z4, (and (and (and (_five z4) True) (_past _smith z4)) (exists z2, (and (and (and (_quarter z2) True) (_at _smith z2)) (exists z1, (and (and (_house z1) True) (_leave _smith z1))))))))) -> (exists x, (and True (exists z2, (and (and (and (_station z2) True) (_to x z2)) (exists z1, (and (and (_taxi z1) True) (_take x z1))))))) -> (_before (exists x, (and True (exists z3, (and (and (and (_station z3) True) (_to x z3)) (exists z2, (and (and (_taxi z2) True) (_take x z2))))))) (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_house z1) True) (_leave _smith z1)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _five is declared
+
+Coq < _have is declared
+
+Coq < _house is declared
+
+Coq < _leave is declared
+
+Coq < _past is declared
+
+Coq < _quarter is declared
+
+Coq < _smith is declared
+
+Coq < _station is declared
+
+Coq < _take is declared
+
+Coq < _taxi is declared
+
+Coq < _to is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _smith /\ True) /\ _have _smith) /\
+(exists z4 : Entity,
+((_five z4 /\ True) /\ _past _smith z4) /\
+(exists z2 : Entity,
+((_quarter z2 /\ True) /\ _at _smith z2) /\
+(exists z1 : Entity, (_house z1 /\ True) /\ _leave _smith z1)))) ->
+(exists x : Entity,
+True /\
+(exists z2 : Entity,
+((_station z2 /\ True) /\ _to x z2) /\
+(exists z1 : Entity, (_taxi z1 /\ True) /\ _take x z1))) ->
+~
+_before
+(exists x : Entity,
+True /\
+(exists z3 : Entity,
+((_station z3 /\ True) /\ _to x z3) /\
+(exists z2 : Entity, (_taxi z2 /\ True) /\ _take x z2)))
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity, (_house z1 /\ True) /\ _leave _smith z1))
+
+1 goal
+
+H1 : _before
+(exists x : Entity,
+True /\
+(exists z3 : Entity,
+((_station z3 /\ True) /\ _to x z3) /\
+(exists z2 : Entity, (_taxi z2 /\ True) /\ _take x z2)))
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity, (_house z1 /\ True) /\ _leave _smith z1))
+x : Entity
+H0 : True
+x0 : Entity
+H4 : _to x x0
+H2 : _station x0
+H5 : True
+x1 : Entity
+H6 : _take x x1
+H3 : _taxi x1
+H7 : True
+H9 : _have _smith
+H10 : True
+x3 : Entity
+H12 : _past _smith x3
+H8 : _five x3
+H13 : True
+x4 : Entity
+H15 : _at _smith x4
+H11 : _quarter x4
+H16 : True
+x5 : Entity
+H17 : _leave _smith x5
+H14 : _house x5
+H18 : True
+============================
+False
+
+Toplevel input, characters 692-704:
+> Theorem t1: (exists x, (and (and (and (x = _smith) True) (_have _smith)) (exists z4, (and (and (and (_five z4) True) (_past _smith z4)) (exists z2, (and (and (and (_quarter z2) True) (_at _smith z2)) (exists z1, (and (and (_house z1) True) (_leave _smith z1))))))))) -> (exists x, (and True (exists z2, (and (and (and (_station z2) True) (_to x z2)) (exists z1, (and (and (_taxi z1) True) (_take x z1))))))) -> (not (_before (exists x, (and True (exists z3, (and (and (and (_station z3) True) (_to x z3)) (exists z2, (and (and (_taxi z2) True) (_take x z2))))))) (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_house z1) True) (_leave _smith z1))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 706-710:
+> Theorem t1: (exists x, (and (and (and (x = _smith) True) (_have _smith)) (exists z4, (and (and (and (_five z4) True) (_past _smith z4)) (exists z2, (and (and (and (_quarter z2) True) (_at _smith z2)) (exists z1, (and (and (_house z1) True) (_leave _smith z1))))))))) -> (exists x, (and True (exists z2, (and (and (and (_station z2) True) (_to x z2)) (exists z1, (and (and (_taxi z1) True) (_take x z1))))))) -> (not (_before (exists x, (and True (exists z3, (and (and (and (_station z3) True) (_to x z3)) (exists z2, (and (and (_taxi z2) True) (_take x z2))))))) (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_house z1) True) (_leave _smith z1))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

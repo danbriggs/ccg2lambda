@@ -1,0 +1,579 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _apcom is declared
+
+Coq < _be is declared
+
+Coq < _customer is declared
+
+Coq < _have is declared
+
+Coq < _important is declared
+
+Coq < _itel is declared
+
+Coq < _more is declared
+
+Coq < _than is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _apcom /\ True) /\
+(exists z2 : Entity,
+((((_more z2 /\ _important z2) /\ _customer z2) /\
+(exists z1 : Entity, (z1 = _itel /\ True) /\ _than z2 _itel)) /\
+True) /\ _have _apcom z2)) ->
+exists x : Entity,
+((x = _apcom /\ True) /\
+(exists z1 : Entity,
+(((_more z1 /\ _important z1) /\ _customer z1) /\ True) /\
+_have _apcom z1)) /\
+(exists z2 : Entity, (z2 = _itel /\ True) /\ _be _itel)
+
+
+Toplevel input, characters 438-442:
+> Theorem t1: (exists x, (and (and (x = _apcom) True) (exists z2, (and (and (and (and (and (_more z2) (_important z2)) (_customer z2)) (exists z1, (and (and (z1 = _itel) True) (_than z2 _itel)))) True) (_have _apcom z2))))) -> (exists x, (and (and (and (x = _apcom) True) (exists z1, (and (and (and (and (_more z1) (_important z1)) (_customer z1)) True) (_have _apcom z1)))) (exists z2, (and (and (z2 = _itel) True) (_be _itel))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _apcom is declared
+
+Coq < _be is declared
+
+Coq < _customer is declared
+
+Coq < _have is declared
+
+Coq < _important is declared
+
+Coq < _itel is declared
+
+Coq < _more is declared
+
+Coq < _than is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _apcom /\ True) /\
+(exists z2 : Entity,
+((((_more z2 /\ _important z2) /\ _customer z2) /\
+(exists z1 : Entity, (z1 = _itel /\ True) /\ _than z2 _itel)) /\
+True) /\ _have _apcom z2)) ->
+~
+(exists x : Entity,
+((x = _apcom /\ True) /\
+(exists z1 : Entity,
+(((_more z1 /\ _important z1) /\ _customer z1) /\ True) /\
+_have _apcom z1)) /\
+(exists z2 : Entity, (z2 = _itel /\ True) /\ _be _itel))
+
+
+Toplevel input, characters 444-448:
+> Theorem t1: (exists x, (and (and (x = _apcom) True) (exists z2, (and (and (and (and (and (_more z2) (_important z2)) (_customer z2)) (exists z1, (and (and (z1 = _itel) True) (_than z2 _itel)))) True) (_have _apcom z2))))) -> (not (exists x, (and (and (and (x = _apcom) True) (exists z1, (and (and (and (and (_more z1) (_important z1)) (_customer z1)) True) (_have _apcom z1)))) (exists z2, (and (and (z2 = _itel) True) (_be _itel)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _apcom is declared
+
+Coq < _be is declared
+
+Coq < _customer is declared
+
+Coq < _have is declared
+
+Coq < _important is declared
+
+Coq < _itel is declared
+
+Coq < _more is declared
+
+Coq < _than is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _apcom /\ True) /\
+(exists z2 : Entity,
+((((_more z2 /\ _important z2) /\ _customer z2) /\
+(exists z1 : Entity, (z1 = _itel /\ True) /\ _than z2 _itel)) /\
+True) /\ _have _apcom z2)) ->
+exists x : Entity,
+((x = _apcom /\ True) /\
+(exists z1 : Entity,
+(((_more z1 /\ _important z1) /\ _customer z1) /\ True) /\
+_have _apcom z1)) /\
+(exists z2 : Entity, (z2 = _itel /\ True) /\ _be _itel)
+
+1 goal
+
+H1 : True
+x0 : Entity
+H2 : _have _apcom x0
+H3 : True
+H5 : _customer x0
+H0 : _more x0
+H6 : _important x0
+H7 : _than x0 _itel
+H8 : True
+============================
+_be _itel
+
+Toplevel input, characters 454-466:
+> Theorem t1: (exists x, (and (and (x = _apcom) True) (exists z2, (and (and (and (and (and (_more z2) (_important z2)) (_customer z2)) (exists z1, (and (and (z1 = _itel) True) (_than z2 _itel)))) True) (_have _apcom z2))))) -> (exists x, (and (and (and (x = _apcom) True) (exists z1, (and (and (and (and (_more z1) (_important z1)) (_customer z1)) True) (_have _apcom z1)))) (exists z2, (and (and (z2 = _itel) True) (_be _itel))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 468-472:
+> Theorem t1: (exists x, (and (and (x = _apcom) True) (exists z2, (and (and (and (and (and (_more z2) (_important z2)) (_customer z2)) (exists z1, (and (and (z1 = _itel) True) (_than z2 _itel)))) True) (_have _apcom z2))))) -> (exists x, (and (and (and (x = _apcom) True) (exists z1, (and (and (and (and (_more z1) (_important z1)) (_customer z1)) True) (_have _apcom z1)))) (exists z2, (and (and (z2 = _itel) True) (_be _itel))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _apcom is declared
+
+Coq < _be is declared
+
+Coq < _customer is declared
+
+Coq < _have is declared
+
+Coq < _important is declared
+
+Coq < _itel is declared
+
+Coq < _more is declared
+
+Coq < _than is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _apcom /\ True) /\
+(exists z2 : Entity,
+((((_more z2 /\ _important z2) /\ _customer z2) /\
+(exists z1 : Entity, (z1 = _itel /\ True) /\ _than z2 _itel)) /\
+True) /\ _have _apcom z2)) ->
+exists x : Entity,
+((x = _apcom /\ True) /\
+(exists z1 : Entity,
+(((_more z1 /\ _important z1) /\ _customer z1) /\ True) /\
+_have _apcom z1)) /\
+(exists z2 : Entity, (z2 = _itel /\ True) /\ _be _itel)
+
+
+Toplevel input, characters 438-442:
+> Theorem t1: (exists x, (and (and (x = _apcom) True) (exists z2, (and (and (and (and (and (_more z2) (_important z2)) (_customer z2)) (exists z1, (and (and (z1 = _itel) True) (_than z2 _itel)))) True) (_have _apcom z2))))) -> (exists x, (and (and (and (x = _apcom) True) (exists z1, (and (and (and (and (_more z1) (_important z1)) (_customer z1)) True) (_have _apcom z1)))) (exists z2, (and (and (z2 = _itel) True) (_be _itel))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _apcom is declared
+
+Coq < _be is declared
+
+Coq < _customer is declared
+
+Coq < _have is declared
+
+Coq < _important is declared
+
+Coq < _itel is declared
+
+Coq < _more is declared
+
+Coq < _than is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _apcom /\ True) /\
+(exists z2 : Entity,
+((((_more z2 /\ _important z2) /\ _customer z2) /\
+(exists z1 : Entity, (z1 = _itel /\ True) /\ _than z2 _itel)) /\
+True) /\ _have _apcom z2)) ->
+~
+(exists x : Entity,
+((x = _apcom /\ True) /\
+(exists z1 : Entity,
+(((_more z1 /\ _important z1) /\ _customer z1) /\ True) /\
+_have _apcom z1)) /\
+(exists z2 : Entity, (z2 = _itel /\ True) /\ _be _itel))
+
+1 goal
+
+H3 : True
+x0 : Entity
+H4 : _have _apcom x0
+H5 : True
+H6 : _customer x0
+H2 : _more x0
+H7 : _important x0
+H8 : _be _itel
+H9, H11 : True
+x3 : Entity
+H12 : _have _apcom x3
+H13 : True
+H15 : _customer x3
+H10 : _more x3
+H16 : _important x3
+H17 : _than x3 _itel
+H18 : True
+============================
+False
+
+Toplevel input, characters 460-472:
+> Theorem t1: (exists x, (and (and (x = _apcom) True) (exists z2, (and (and (and (and (and (_more z2) (_important z2)) (_customer z2)) (exists z1, (and (and (z1 = _itel) True) (_than z2 _itel)))) True) (_have _apcom z2))))) -> (not (exists x, (and (and (and (x = _apcom) True) (exists z1, (and (and (and (and (_more z1) (_important z1)) (_customer z1)) True) (_have _apcom z1)))) (exists z2, (and (and (z2 = _itel) True) (_be _itel)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 474-478:
+> Theorem t1: (exists x, (and (and (x = _apcom) True) (exists z2, (and (and (and (and (and (_more z2) (_important z2)) (_customer z2)) (exists z1, (and (and (z1 = _itel) True) (_than z2 _itel)))) True) (_have _apcom z2))))) -> (not (exists x, (and (and (and (x = _apcom) True) (exists z1, (and (and (and (and (_more z1) (_important z1)) (_customer z1)) True) (_have _apcom z1)))) (exists z2, (and (and (z2 = _itel) True) (_be _itel)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _apcom is declared
+
+Coq < _be is declared
+
+Coq < _customer is declared
+
+Coq < _have is declared
+
+Coq < _important is declared
+
+Coq < _itel is declared
+
+Coq < _more is declared
+
+Coq < _than is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _apcom /\ True) /\
+(exists z2 : Entity,
+((((_more z2 /\ _important z2) /\ _customer z2) /\
+(exists z1 : Entity, (z1 = _itel /\ True) /\ _than z2 _itel)) /\
+True) /\ _have _apcom z2)) ->
+~
+(exists x : Entity,
+((x = _apcom /\ True) /\
+(exists z1 : Entity,
+(((_more z1 /\ _important z1) /\ _customer z1) /\ True) /\
+_have _apcom z1)) /\
+(exists z2 : Entity, (z2 = _itel /\ True) /\ _be _itel))
+
+
+Toplevel input, characters 444-448:
+> Theorem t1: (exists x, (and (and (x = _apcom) True) (exists z2, (and (and (and (and (and (_more z2) (_important z2)) (_customer z2)) (exists z1, (and (and (z1 = _itel) True) (_than z2 _itel)))) True) (_have _apcom z2))))) -> (not (exists x, (and (and (and (x = _apcom) True) (exists z1, (and (and (and (and (_more z1) (_important z1)) (_customer z1)) True) (_have _apcom z1)))) (exists z2, (and (and (z2 = _itel) True) (_be _itel)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _apcom is declared
+
+Coq < _be is declared
+
+Coq < _customer is declared
+
+Coq < _have is declared
+
+Coq < _important is declared
+
+Coq < _itel is declared
+
+Coq < _more is declared
+
+Coq < _than is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _apcom /\ True) /\
+(exists z2 : Entity,
+((((_more z2 /\ _important z2) /\ _customer z2) /\
+(exists z1 : Entity, (z1 = _itel /\ True) /\ _than z2 _itel)) /\
+True) /\ _have _apcom z2)) ->
+exists x : Entity,
+((x = _apcom /\ True) /\
+(exists z1 : Entity,
+(((_more z1 /\ _important z1) /\ _customer z1) /\ True) /\
+_have _apcom z1)) /\
+(exists z2 : Entity, (z2 = _itel /\ True) /\ _be _itel)
+
+1 goal
+
+H1 : True
+x0 : Entity
+H2 : _have _apcom x0
+H3 : True
+H5 : _customer x0
+H0 : _more x0
+H6 : _important x0
+H7 : _than x0 _itel
+H8 : True
+============================
+_be _itel
+
+Toplevel input, characters 454-466:
+> Theorem t1: (exists x, (and (and (x = _apcom) True) (exists z2, (and (and (and (and (and (_more z2) (_important z2)) (_customer z2)) (exists z1, (and (and (z1 = _itel) True) (_than z2 _itel)))) True) (_have _apcom z2))))) -> (exists x, (and (and (and (x = _apcom) True) (exists z1, (and (and (and (and (_more z1) (_important z1)) (_customer z1)) True) (_have _apcom z1)))) (exists z2, (and (and (z2 = _itel) True) (_be _itel))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 468-472:
+> Theorem t1: (exists x, (and (and (x = _apcom) True) (exists z2, (and (and (and (and (and (_more z2) (_important z2)) (_customer z2)) (exists z1, (and (and (z1 = _itel) True) (_than z2 _itel)))) True) (_have _apcom z2))))) -> (exists x, (and (and (and (x = _apcom) True) (exists z1, (and (and (and (and (_more z1) (_important z1)) (_customer z1)) True) (_have _apcom z1)))) (exists z2, (and (and (z2 = _itel) True) (_be _itel))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _apcom is declared
+
+Coq < _be is declared
+
+Coq < _customer is declared
+
+Coq < _have is declared
+
+Coq < _important is declared
+
+Coq < _itel is declared
+
+Coq < _more is declared
+
+Coq < _than is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _apcom /\ True) /\
+(exists z2 : Entity,
+((((_more z2 /\ _important z2) /\ _customer z2) /\
+(exists z1 : Entity, (z1 = _itel /\ True) /\ _than z2 _itel)) /\
+True) /\ _have _apcom z2)) ->
+~
+(exists x : Entity,
+((x = _apcom /\ True) /\
+(exists z1 : Entity,
+(((_more z1 /\ _important z1) /\ _customer z1) /\ True) /\
+_have _apcom z1)) /\
+(exists z2 : Entity, (z2 = _itel /\ True) /\ _be _itel))
+
+1 goal
+
+H3 : True
+x0 : Entity
+H4 : _have _apcom x0
+H5 : True
+H6 : _customer x0
+H2 : _more x0
+H7 : _important x0
+H8 : _be _itel
+H9, H11 : True
+x3 : Entity
+H12 : _have _apcom x3
+H13 : True
+H15 : _customer x3
+H10 : _more x3
+H16 : _important x3
+H17 : _than x3 _itel
+H18 : True
+============================
+False
+
+Toplevel input, characters 460-472:
+> Theorem t1: (exists x, (and (and (x = _apcom) True) (exists z2, (and (and (and (and (and (_more z2) (_important z2)) (_customer z2)) (exists z1, (and (and (z1 = _itel) True) (_than z2 _itel)))) True) (_have _apcom z2))))) -> (not (exists x, (and (and (and (x = _apcom) True) (exists z1, (and (and (and (and (_more z1) (_important z1)) (_customer z1)) True) (_have _apcom z1)))) (exists z2, (and (and (z2 = _itel) True) (_be _itel)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 474-478:
+> Theorem t1: (exists x, (and (and (x = _apcom) True) (exists z2, (and (and (and (and (and (_more z2) (_important z2)) (_customer z2)) (exists z1, (and (and (z1 = _itel) True) (_than z2 _itel)))) True) (_have _apcom z2))))) -> (not (exists x, (and (and (and (x = _apcom) True) (exists z1, (and (and (and (and (_more z1) (_important z1)) (_customer z1)) True) (_have _apcom z1)))) (exists z2, (and (and (z2 = _itel) True) (_be _itel)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _apcom is declared
+
+Coq < _be is declared
+
+Coq < _customer is declared
+
+Coq < _have is declared
+
+Coq < _important is declared
+
+Coq < _itel is declared
+
+Coq < _more is declared
+
+Coq < _than is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _apcom /\ True) /\
+(exists z2 : Entity,
+((((_more z2 /\ _important z2) /\ _customer z2) /\
+(exists z1 : Entity, (z1 = _itel /\ True) /\ _than z2 _itel)) /\
+True) /\ _have _apcom z2)) ->
+exists x : Entity,
+((x = _apcom /\ True) /\
+(exists z1 : Entity,
+(((_more z1 /\ _important z1) /\ _customer z1) /\ True) /\
+_have _apcom z1)) /\
+(exists z2 : Entity, (z2 = _itel /\ True) /\ _be _itel)
+
+1 goal
+
+H1 : True
+x0 : Entity
+H2 : _have _apcom x0
+H3 : True
+H5 : _customer x0
+H0 : _more x0
+H6 : _important x0
+H7 : _than x0 _itel
+H8 : True
+============================
+_be _itel
+
+Toplevel input, characters 454-466:
+> Theorem t1: (exists x, (and (and (x = _apcom) True) (exists z2, (and (and (and (and (and (_more z2) (_important z2)) (_customer z2)) (exists z1, (and (and (z1 = _itel) True) (_than z2 _itel)))) True) (_have _apcom z2))))) -> (exists x, (and (and (and (x = _apcom) True) (exists z1, (and (and (and (and (_more z1) (_important z1)) (_customer z1)) True) (_have _apcom z1)))) (exists z2, (and (and (z2 = _itel) True) (_be _itel))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 468-472:
+> Theorem t1: (exists x, (and (and (x = _apcom) True) (exists z2, (and (and (and (and (and (_more z2) (_important z2)) (_customer z2)) (exists z1, (and (and (z1 = _itel) True) (_than z2 _itel)))) True) (_have _apcom z2))))) -> (exists x, (and (and (and (x = _apcom) True) (exists z1, (and (and (and (and (_more z1) (_important z1)) (_customer z1)) True) (_have _apcom z1)))) (exists z2, (and (and (z2 = _itel) True) (_be _itel))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _apcom is declared
+
+Coq < _be is declared
+
+Coq < _customer is declared
+
+Coq < _have is declared
+
+Coq < _important is declared
+
+Coq < _itel is declared
+
+Coq < _more is declared
+
+Coq < _than is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _apcom /\ True) /\
+(exists z2 : Entity,
+((((_more z2 /\ _important z2) /\ _customer z2) /\
+(exists z1 : Entity, (z1 = _itel /\ True) /\ _than z2 _itel)) /\
+True) /\ _have _apcom z2)) ->
+~
+(exists x : Entity,
+((x = _apcom /\ True) /\
+(exists z1 : Entity,
+(((_more z1 /\ _important z1) /\ _customer z1) /\ True) /\
+_have _apcom z1)) /\
+(exists z2 : Entity, (z2 = _itel /\ True) /\ _be _itel))
+
+1 goal
+
+H3 : True
+x0 : Entity
+H4 : _have _apcom x0
+H5 : True
+H6 : _customer x0
+H2 : _more x0
+H7 : _important x0
+H8 : _be _itel
+H9, H11 : True
+x3 : Entity
+H12 : _have _apcom x3
+H13 : True
+H15 : _customer x3
+H10 : _more x3
+H16 : _important x3
+H17 : _than x3 _itel
+H18 : True
+============================
+False
+
+Toplevel input, characters 460-472:
+> Theorem t1: (exists x, (and (and (x = _apcom) True) (exists z2, (and (and (and (and (and (_more z2) (_important z2)) (_customer z2)) (exists z1, (and (and (z1 = _itel) True) (_than z2 _itel)))) True) (_have _apcom z2))))) -> (not (exists x, (and (and (and (x = _apcom) True) (exists z1, (and (and (and (and (_more z1) (_important z1)) (_customer z1)) True) (_have _apcom z1)))) (exists z2, (and (and (z2 = _itel) True) (_be _itel)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 474-478:
+> Theorem t1: (exists x, (and (and (x = _apcom) True) (exists z2, (and (and (and (and (and (_more z2) (_important z2)) (_customer z2)) (exists z1, (and (and (z1 = _itel) True) (_than z2 _itel)))) True) (_have _apcom z2))))) -> (not (exists x, (and (and (and (x = _apcom) True) (exists z1, (and (and (and (and (_more z1) (_important z1)) (_customer z1)) True) (_have _apcom z1)))) (exists z2, (and (and (z2 = _itel) True) (_be _itel)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

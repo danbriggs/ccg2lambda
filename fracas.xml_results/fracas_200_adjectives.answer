@@ -1,0 +1,377 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _john is declared
+
+Coq < _student is declared
+
+Coq < _successful is declared
+
+Coq < _university is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _john /\ True) /\
+(exists z1 : Entity,
+(_former ((_successful z1 /\ _university z1) /\ _student z1) /\ True) /\
+_john = z1)) ->
+exists x : Entity, (x = _john /\ True) /\ _successful _john
+
+
+Toplevel input, characters 238-242:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z1, (and (and (_former (and (and (_successful z1) (_university z1)) (_student z1))) True) (_john = z1))))) -> (exists x, (and (and (x = _john) True) (_successful _john))). nltac. Qed.
+>                                                                                                                                                                                                                                               ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _john is declared
+
+Coq < _student is declared
+
+Coq < _successful is declared
+
+Coq < _university is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _john /\ True) /\
+(exists z1 : Entity,
+(_former ((_successful z1 /\ _university z1) /\ _student z1) /\ True) /\
+_john = z1)) ->
+~ (exists x : Entity, (x = _john /\ True) /\ _successful _john)
+
+
+Toplevel input, characters 244-248:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z1, (and (and (_former (and (and (_successful z1) (_university z1)) (_student z1))) True) (_john = z1))))) -> (not (exists x, (and (and (x = _john) True) (_successful _john)))). nltac. Qed.
+>                                                                                                                                                                                                                                                     ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _john is declared
+
+Coq < _student is declared
+
+Coq < _successful is declared
+
+Coq < _university is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _john /\ True) /\
+(exists z1 : Entity,
+(_former ((_successful z1 /\ _university z1) /\ _student z1) /\ True) /\
+_john = z1)) ->
+exists x : Entity, (x = _john /\ True) /\ _successful _john
+
+1 goal
+
+H1 : True
+H0 : _former ((_successful _john /\ _university _john) /\ _student _john)
+H3 : True
+============================
+_successful _john
+
+Toplevel input, characters 254-266:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z1, (and (and (_former (and (and (_successful z1) (_university z1)) (_student z1))) True) (_john = z1))))) -> (exists x, (and (and (x = _john) True) (_successful _john))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                               ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 268-272:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z1, (and (and (_former (and (and (_successful z1) (_university z1)) (_student z1))) True) (_john = z1))))) -> (exists x, (and (and (x = _john) True) (_successful _john))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                             ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _john is declared
+
+Coq < _student is declared
+
+Coq < _successful is declared
+
+Coq < _university is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _john /\ True) /\
+(exists z1 : Entity,
+(_former ((_successful z1 /\ _university z1) /\ _student z1) /\ True) /\
+_john = z1)) ->
+exists x : Entity, (x = _john /\ True) /\ _successful _john
+
+
+Toplevel input, characters 238-242:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z1, (and (and (_former (and (and (_successful z1) (_university z1)) (_student z1))) True) (_john = z1))))) -> (exists x, (and (and (x = _john) True) (_successful _john))). nltac. Qed.
+>                                                                                                                                                                                                                                               ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _john is declared
+
+Coq < _student is declared
+
+Coq < _successful is declared
+
+Coq < _university is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _john /\ True) /\
+(exists z1 : Entity,
+(_former ((_successful z1 /\ _university z1) /\ _student z1) /\ True) /\
+_john = z1)) ->
+~ (exists x : Entity, (x = _john /\ True) /\ _successful _john)
+
+1 goal
+
+H1 : _successful _john
+H2, H4 : True
+H3 : _former ((_successful _john /\ _university _john) /\ _student _john)
+H6 : True
+============================
+False
+
+Toplevel input, characters 260-272:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z1, (and (and (_former (and (and (_successful z1) (_university z1)) (_student z1))) True) (_john = z1))))) -> (not (exists x, (and (and (x = _john) True) (_successful _john)))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                     ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 274-278:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z1, (and (and (_former (and (and (_successful z1) (_university z1)) (_student z1))) True) (_john = z1))))) -> (not (exists x, (and (and (x = _john) True) (_successful _john)))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                   ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _john is declared
+
+Coq < _student is declared
+
+Coq < _successful is declared
+
+Coq < _university is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _john /\ True) /\
+(exists z1 : Entity,
+(_former ((_successful z1 /\ _university z1) /\ _student z1) /\ True) /\
+_john = z1)) ->
+~ (exists x : Entity, (x = _john /\ True) /\ _successful _john)
+
+
+Toplevel input, characters 244-248:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z1, (and (and (_former (and (and (_successful z1) (_university z1)) (_student z1))) True) (_john = z1))))) -> (not (exists x, (and (and (x = _john) True) (_successful _john)))). nltac. Qed.
+>                                                                                                                                                                                                                                                     ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _john is declared
+
+Coq < _student is declared
+
+Coq < _successful is declared
+
+Coq < _university is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _john /\ True) /\
+(exists z1 : Entity,
+(_former ((_successful z1 /\ _university z1) /\ _student z1) /\ True) /\
+_john = z1)) ->
+exists x : Entity, (x = _john /\ True) /\ _successful _john
+
+1 goal
+
+H1 : True
+H0 : _former ((_successful _john /\ _university _john) /\ _student _john)
+H3 : True
+============================
+_successful _john
+
+Toplevel input, characters 254-266:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z1, (and (and (_former (and (and (_successful z1) (_university z1)) (_student z1))) True) (_john = z1))))) -> (exists x, (and (and (x = _john) True) (_successful _john))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                               ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 268-272:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z1, (and (and (_former (and (and (_successful z1) (_university z1)) (_student z1))) True) (_john = z1))))) -> (exists x, (and (and (x = _john) True) (_successful _john))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                             ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _john is declared
+
+Coq < _student is declared
+
+Coq < _successful is declared
+
+Coq < _university is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _john /\ True) /\
+(exists z1 : Entity,
+(_former ((_successful z1 /\ _university z1) /\ _student z1) /\ True) /\
+_john = z1)) ->
+~ (exists x : Entity, (x = _john /\ True) /\ _successful _john)
+
+1 goal
+
+H1 : _successful _john
+H2, H4 : True
+H3 : _former ((_successful _john /\ _university _john) /\ _student _john)
+H6 : True
+============================
+False
+
+Toplevel input, characters 260-272:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z1, (and (and (_former (and (and (_successful z1) (_university z1)) (_student z1))) True) (_john = z1))))) -> (not (exists x, (and (and (x = _john) True) (_successful _john)))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                     ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 274-278:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z1, (and (and (_former (and (and (_successful z1) (_university z1)) (_student z1))) True) (_john = z1))))) -> (not (exists x, (and (and (x = _john) True) (_successful _john)))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                   ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _john is declared
+
+Coq < _student is declared
+
+Coq < _successful is declared
+
+Coq < _university is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _john /\ True) /\
+(exists z1 : Entity,
+(_former ((_successful z1 /\ _university z1) /\ _student z1) /\ True) /\
+_john = z1)) ->
+exists x : Entity, (x = _john /\ True) /\ _successful _john
+
+1 goal
+
+H1 : True
+H0 : _former ((_successful _john /\ _university _john) /\ _student _john)
+H3 : True
+============================
+_successful _john
+
+Toplevel input, characters 254-266:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z1, (and (and (_former (and (and (_successful z1) (_university z1)) (_student z1))) True) (_john = z1))))) -> (exists x, (and (and (x = _john) True) (_successful _john))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                               ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 268-272:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z1, (and (and (_former (and (and (_successful z1) (_university z1)) (_student z1))) True) (_john = z1))))) -> (exists x, (and (and (x = _john) True) (_successful _john))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                             ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _john is declared
+
+Coq < _student is declared
+
+Coq < _successful is declared
+
+Coq < _university is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _john /\ True) /\
+(exists z1 : Entity,
+(_former ((_successful z1 /\ _university z1) /\ _student z1) /\ True) /\
+_john = z1)) ->
+~ (exists x : Entity, (x = _john /\ True) /\ _successful _john)
+
+1 goal
+
+H1 : _successful _john
+H2, H4 : True
+H3 : _former ((_successful _john /\ _university _john) /\ _student _john)
+H6 : True
+============================
+False
+
+Toplevel input, characters 260-272:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z1, (and (and (_former (and (and (_successful z1) (_university z1)) (_student z1))) True) (_john = z1))))) -> (not (exists x, (and (and (x = _john) True) (_successful _john)))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                     ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 274-278:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z1, (and (and (_former (and (and (_successful z1) (_university z1)) (_student z1))) True) (_john = z1))))) -> (not (exists x, (and (and (x = _john) True) (_successful _john)))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                   ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

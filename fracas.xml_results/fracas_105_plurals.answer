@@ -1,0 +1,402 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _accountant is declared
+
+Coq < _attend is declared
+
+Coq < _just is declared
+
+Coq < _meeting is declared
+
+Coq < _one is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((_just x /\ _one x) /\ _accountant x) /\ True) /\
+(exists z1 : Entity, (_meeting z1 /\ True) /\ _attend x z1)) ->
+forall x : Entity,
+_accountant x ->
+True -> ~ (exists z1 : Entity, (_meeting z1 /\ True) /\ _attend x z1)
+
+
+Toplevel input, characters 266-270:
+> Theorem t1: (exists x, (and (and (and (and (_just x) (_one x)) (_accountant x)) True) (exists z1, (and (and (_meeting z1) True) (_attend x z1))))) -> (forall x, ((_accountant x) -> (True -> (not (exists z1, (and (and (_meeting z1) True) (_attend x z1))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                           ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _accountant is declared
+
+Coq < _attend is declared
+
+Coq < _just is declared
+
+Coq < _meeting is declared
+
+Coq < _one is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((_just x /\ _one x) /\ _accountant x) /\ True) /\
+(exists z1 : Entity, (_meeting z1 /\ True) /\ _attend x z1)) ->
+~
+(forall x : Entity,
+_accountant x ->
+True -> ~ (exists z1 : Entity, (_meeting z1 /\ True) /\ _attend x z1))
+
+No more goals.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _accountant is declared
+
+Coq < _attend is declared
+
+Coq < _just is declared
+
+Coq < _meeting is declared
+
+Coq < _one is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((_just x /\ _one x) /\ _accountant x) /\ True) /\
+(exists z1 : Entity, (_meeting z1 /\ True) /\ _attend x z1)) ->
+forall x : Entity,
+_accountant x ->
+True -> ~ (exists z1 : Entity, (_meeting z1 /\ True) /\ _attend x z1)
+
+1 goal
+
+x : Entity
+H0 : _accountant x
+H1 : True
+x0 : Entity
+H3 : _attend x x0
+H2 : _meeting x0
+H4 : True
+x1 : Entity
+H6 : True
+H7 : _accountant x1
+H : _just x1
+H8 : _one x1
+x2 : Entity
+H9 : _attend x1 x2
+H5 : _meeting x2
+H10 : True
+============================
+False
+
+Toplevel input, characters 282-294:
+> Theorem t1: (exists x, (and (and (and (and (_just x) (_one x)) (_accountant x)) True) (exists z1, (and (and (_meeting z1) True) (_attend x z1))))) -> (forall x, ((_accountant x) -> (True -> (not (exists z1, (and (and (_meeting z1) True) (_attend x z1))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                           ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 296-300:
+> Theorem t1: (exists x, (and (and (and (and (_just x) (_one x)) (_accountant x)) True) (exists z1, (and (and (_meeting z1) True) (_attend x z1))))) -> (forall x, ((_accountant x) -> (True -> (not (exists z1, (and (and (_meeting z1) True) (_attend x z1))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                         ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _accountant is declared
+
+Coq < _attend is declared
+
+Coq < _just is declared
+
+Coq < _meeting is declared
+
+Coq < _one is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((_just x /\ _one x) /\ _accountant x) /\ True) /\
+(exists z1 : Entity, (_meeting z1 /\ True) /\ _attend x z1)) ->
+forall x : Entity,
+_accountant x ->
+True -> ~ (exists z1 : Entity, (_meeting z1 /\ True) /\ _attend x z1)
+
+
+Toplevel input, characters 266-270:
+> Theorem t1: (exists x, (and (and (and (and (_just x) (_one x)) (_accountant x)) True) (exists z1, (and (and (_meeting z1) True) (_attend x z1))))) -> (forall x, ((_accountant x) -> (True -> (not (exists z1, (and (and (_meeting z1) True) (_attend x z1))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                           ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _accountant is declared
+
+Coq < _attend is declared
+
+Coq < _just is declared
+
+Coq < _meeting is declared
+
+Coq < _one is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((_just x /\ _one x) /\ _accountant x) /\ True) /\
+(exists z1 : Entity, (_meeting z1 /\ True) /\ _attend x z1)) ->
+~
+(forall x : Entity,
+_accountant x ->
+True -> ~ (exists z1 : Entity, (_meeting z1 /\ True) /\ _attend x z1))
+
+No more goals.
+
+Toplevel input, characters 284-301:
+> Theorem t1: (exists x, (and (and (and (and (_just x) (_one x)) (_accountant x)) True) (exists z1, (and (and (_meeting z1) True) (_attend x z1))))) -> (not (forall x, ((_accountant x) -> (True -> (not (exists z1, (and (and (_meeting z1) True) (_attend x z1)))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                             ^^^^^^^^^^^^^^^^^
+Error: No such goal.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _accountant is declared
+
+Coq < _attend is declared
+
+Coq < _just is declared
+
+Coq < _meeting is declared
+
+Coq < _one is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((_just x /\ _one x) /\ _accountant x) /\ True) /\
+(exists z1 : Entity, (_meeting z1 /\ True) /\ _attend x z1)) ->
+~
+(forall x : Entity,
+_accountant x ->
+True -> ~ (exists z1 : Entity, (_meeting z1 /\ True) /\ _attend x z1))
+
+No more goals.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _accountant is declared
+
+Coq < _attend is declared
+
+Coq < _just is declared
+
+Coq < _meeting is declared
+
+Coq < _one is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((_just x /\ _one x) /\ _accountant x) /\ True) /\
+(exists z1 : Entity, (_meeting z1 /\ True) /\ _attend x z1)) ->
+forall x : Entity,
+_accountant x ->
+True -> ~ (exists z1 : Entity, (_meeting z1 /\ True) /\ _attend x z1)
+
+1 goal
+
+x : Entity
+H0 : _accountant x
+H1 : True
+x0 : Entity
+H3 : _attend x x0
+H2 : _meeting x0
+H4 : True
+x1 : Entity
+H6 : True
+H7 : _accountant x1
+H : _just x1
+H8 : _one x1
+x2 : Entity
+H9 : _attend x1 x2
+H5 : _meeting x2
+H10 : True
+============================
+False
+
+Toplevel input, characters 282-294:
+> Theorem t1: (exists x, (and (and (and (and (_just x) (_one x)) (_accountant x)) True) (exists z1, (and (and (_meeting z1) True) (_attend x z1))))) -> (forall x, ((_accountant x) -> (True -> (not (exists z1, (and (and (_meeting z1) True) (_attend x z1))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                           ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 296-300:
+> Theorem t1: (exists x, (and (and (and (and (_just x) (_one x)) (_accountant x)) True) (exists z1, (and (and (_meeting z1) True) (_attend x z1))))) -> (forall x, ((_accountant x) -> (True -> (not (exists z1, (and (and (_meeting z1) True) (_attend x z1))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                         ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _accountant is declared
+
+Coq < _attend is declared
+
+Coq < _just is declared
+
+Coq < _meeting is declared
+
+Coq < _one is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((_just x /\ _one x) /\ _accountant x) /\ True) /\
+(exists z1 : Entity, (_meeting z1 /\ True) /\ _attend x z1)) ->
+~
+(forall x : Entity,
+_accountant x ->
+True -> ~ (exists z1 : Entity, (_meeting z1 /\ True) /\ _attend x z1))
+
+No more goals.
+
+Toplevel input, characters 284-301:
+> Theorem t1: (exists x, (and (and (and (and (_just x) (_one x)) (_accountant x)) True) (exists z1, (and (and (_meeting z1) True) (_attend x z1))))) -> (not (forall x, ((_accountant x) -> (True -> (not (exists z1, (and (and (_meeting z1) True) (_attend x z1)))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                             ^^^^^^^^^^^^^^^^^
+Error: No such goal.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _accountant is declared
+
+Coq < _attend is declared
+
+Coq < _just is declared
+
+Coq < _meeting is declared
+
+Coq < _one is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((_just x /\ _one x) /\ _accountant x) /\ True) /\
+(exists z1 : Entity, (_meeting z1 /\ True) /\ _attend x z1)) ->
+forall x : Entity,
+_accountant x ->
+True -> ~ (exists z1 : Entity, (_meeting z1 /\ True) /\ _attend x z1)
+
+1 goal
+
+x : Entity
+H0 : _accountant x
+H1 : True
+x0 : Entity
+H3 : _attend x x0
+H2 : _meeting x0
+H4 : True
+x1 : Entity
+H6 : True
+H7 : _accountant x1
+H : _just x1
+H8 : _one x1
+x2 : Entity
+H9 : _attend x1 x2
+H5 : _meeting x2
+H10 : True
+============================
+False
+
+Toplevel input, characters 282-294:
+> Theorem t1: (exists x, (and (and (and (and (_just x) (_one x)) (_accountant x)) True) (exists z1, (and (and (_meeting z1) True) (_attend x z1))))) -> (forall x, ((_accountant x) -> (True -> (not (exists z1, (and (and (_meeting z1) True) (_attend x z1))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                           ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 296-300:
+> Theorem t1: (exists x, (and (and (and (and (_just x) (_one x)) (_accountant x)) True) (exists z1, (and (and (_meeting z1) True) (_attend x z1))))) -> (forall x, ((_accountant x) -> (True -> (not (exists z1, (and (and (_meeting z1) True) (_attend x z1))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                         ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _accountant is declared
+
+Coq < _attend is declared
+
+Coq < _just is declared
+
+Coq < _meeting is declared
+
+Coq < _one is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((_just x /\ _one x) /\ _accountant x) /\ True) /\
+(exists z1 : Entity, (_meeting z1 /\ True) /\ _attend x z1)) ->
+~
+(forall x : Entity,
+_accountant x ->
+True -> ~ (exists z1 : Entity, (_meeting z1 /\ True) /\ _attend x z1))
+
+No more goals.
+
+Toplevel input, characters 284-301:
+> Theorem t1: (exists x, (and (and (and (and (_just x) (_one x)) (_accountant x)) True) (exists z1, (and (and (_meeting z1) True) (_attend x z1))))) -> (not (forall x, ((_accountant x) -> (True -> (not (exists z1, (and (and (_meeting z1) True) (_attend x z1)))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                             ^^^^^^^^^^^^^^^^^
+Error: No such goal.
+
+
+Coq <
+
+Theorem is not defined!
+unknown
+

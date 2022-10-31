@@ -1,0 +1,504 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _crash is declared
+
+Coq < _destroy is declared
+
+Coq < _disk is declared
+
+Coq < _file is declared
+
+Coq < _hard is declared
+
+Coq < _lose is declared
+
+Coq < _smith is declared
+
+Coq < _when is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity, (_file z1 /\ True) /\ _lose _smith z1)) ->
+exists x : Entity,
+True /\
+_when (exists z1 : Entity, ((_hard z1 /\ _disk z1) /\ True) /\ _crash z1)
+(_destroy x)
+
+
+Toplevel input, characters 238-242:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_file z1) True) (_lose _smith z1))))) -> (exists x, (and True (_when (exists z1, (and (and (and (_hard z1) (_disk z1)) True) (_crash z1))) (_destroy x)))). nltac. Qed.
+>                                                                                                                                                                                                                                               ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _crash is declared
+
+Coq < _destroy is declared
+
+Coq < _disk is declared
+
+Coq < _file is declared
+
+Coq < _hard is declared
+
+Coq < _lose is declared
+
+Coq < _smith is declared
+
+Coq < _when is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity, (_file z1 /\ True) /\ _lose _smith z1)) ->
+~
+(exists x : Entity,
+True /\
+_when
+(exists z1 : Entity, ((_hard z1 /\ _disk z1) /\ True) /\ _crash z1)
+(_destroy x))
+
+
+Toplevel input, characters 244-248:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_file z1) True) (_lose _smith z1))))) -> (not (exists x, (and True (_when (exists z1, (and (and (and (_hard z1) (_disk z1)) True) (_crash z1))) (_destroy x))))). nltac. Qed.
+>                                                                                                                                                                                                                                                     ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _crash is declared
+
+Coq < _destroy is declared
+
+Coq < _disk is declared
+
+Coq < _file is declared
+
+Coq < _hard is declared
+
+Coq < _lose is declared
+
+Coq < _smith is declared
+
+Coq < _when is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity, (_file z1 /\ True) /\ _lose _smith z1)) ->
+exists x : Entity,
+True /\
+_when (exists z1 : Entity, ((_hard z1 /\ _disk z1) /\ True) /\ _crash z1)
+(_destroy x)
+
+1 focused goal (shelved: 1)
+
+H1 : True
+x0 : Entity
+H2 : _lose _smith x0
+H0 : _file x0
+H3 : True
+============================
+_when (exists z1 : Entity, ((_hard z1 /\ _disk z1) /\ True) /\ _crash z1)
+(_destroy ?x)
+
+Toplevel input, characters 254-266:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_file z1) True) (_lose _smith z1))))) -> (exists x, (and True (_when (exists z1, (and (and (and (_hard z1) (_disk z1)) True) (_crash z1))) (_destroy x)))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                               ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 268-272:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_file z1) True) (_lose _smith z1))))) -> (exists x, (and True (_when (exists z1, (and (and (and (_hard z1) (_disk z1)) True) (_crash z1))) (_destroy x)))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                             ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _crash is declared
+
+Coq < _destroy is declared
+
+Coq < _disk is declared
+
+Coq < _file is declared
+
+Coq < _hard is declared
+
+Coq < _lose is declared
+
+Coq < _smith is declared
+
+Coq < _when is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity, (_file z1 /\ True) /\ _lose _smith z1)) ->
+exists x : Entity,
+True /\
+_when (exists z1 : Entity, ((_hard z1 /\ _disk z1) /\ True) /\ _crash z1)
+(_destroy x)
+
+
+Toplevel input, characters 238-242:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_file z1) True) (_lose _smith z1))))) -> (exists x, (and True (_when (exists z1, (and (and (and (_hard z1) (_disk z1)) True) (_crash z1))) (_destroy x)))). nltac. Qed.
+>                                                                                                                                                                                                                                               ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _crash is declared
+
+Coq < _destroy is declared
+
+Coq < _disk is declared
+
+Coq < _file is declared
+
+Coq < _hard is declared
+
+Coq < _lose is declared
+
+Coq < _smith is declared
+
+Coq < _when is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity, (_file z1 /\ True) /\ _lose _smith z1)) ->
+~
+(exists x : Entity,
+True /\
+_when
+(exists z1 : Entity, ((_hard z1 /\ _disk z1) /\ True) /\ _crash z1)
+(_destroy x))
+
+1 goal
+
+x : Entity
+H0 : True
+H1 : _when
+(exists z1 : Entity, ((_hard z1 /\ _disk z1) /\ True) /\ _crash z1)
+(_destroy x)
+H3 : True
+x1 : Entity
+H4 : _lose _smith x1
+H2 : _file x1
+H5 : True
+============================
+False
+
+Toplevel input, characters 260-272:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_file z1) True) (_lose _smith z1))))) -> (not (exists x, (and True (_when (exists z1, (and (and (and (_hard z1) (_disk z1)) True) (_crash z1))) (_destroy x))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                     ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 274-278:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_file z1) True) (_lose _smith z1))))) -> (not (exists x, (and True (_when (exists z1, (and (and (and (_hard z1) (_disk z1)) True) (_crash z1))) (_destroy x))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                   ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _crash is declared
+
+Coq < _destroy is declared
+
+Coq < _disk is declared
+
+Coq < _file is declared
+
+Coq < _hard is declared
+
+Coq < _lose is declared
+
+Coq < _smith is declared
+
+Coq < _when is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity, (_file z1 /\ True) /\ _lose _smith z1)) ->
+~
+(exists x : Entity,
+True /\
+_when
+(exists z1 : Entity, ((_hard z1 /\ _disk z1) /\ True) /\ _crash z1)
+(_destroy x))
+
+
+Toplevel input, characters 244-248:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_file z1) True) (_lose _smith z1))))) -> (not (exists x, (and True (_when (exists z1, (and (and (and (_hard z1) (_disk z1)) True) (_crash z1))) (_destroy x))))). nltac. Qed.
+>                                                                                                                                                                                                                                                     ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _crash is declared
+
+Coq < _destroy is declared
+
+Coq < _disk is declared
+
+Coq < _file is declared
+
+Coq < _hard is declared
+
+Coq < _lose is declared
+
+Coq < _smith is declared
+
+Coq < _when is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity, (_file z1 /\ True) /\ _lose _smith z1)) ->
+exists x : Entity,
+True /\
+_when (exists z1 : Entity, ((_hard z1 /\ _disk z1) /\ True) /\ _crash z1)
+(_destroy x)
+
+1 focused goal (shelved: 1)
+
+H1 : True
+x0 : Entity
+H2 : _lose _smith x0
+H0 : _file x0
+H3 : True
+============================
+_when (exists z1 : Entity, ((_hard z1 /\ _disk z1) /\ True) /\ _crash z1)
+(_destroy ?x)
+
+Toplevel input, characters 254-266:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_file z1) True) (_lose _smith z1))))) -> (exists x, (and True (_when (exists z1, (and (and (and (_hard z1) (_disk z1)) True) (_crash z1))) (_destroy x)))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                               ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 268-272:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_file z1) True) (_lose _smith z1))))) -> (exists x, (and True (_when (exists z1, (and (and (and (_hard z1) (_disk z1)) True) (_crash z1))) (_destroy x)))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                             ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _crash is declared
+
+Coq < _destroy is declared
+
+Coq < _disk is declared
+
+Coq < _file is declared
+
+Coq < _hard is declared
+
+Coq < _lose is declared
+
+Coq < _smith is declared
+
+Coq < _when is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity, (_file z1 /\ True) /\ _lose _smith z1)) ->
+~
+(exists x : Entity,
+True /\
+_when
+(exists z1 : Entity, ((_hard z1 /\ _disk z1) /\ True) /\ _crash z1)
+(_destroy x))
+
+1 goal
+
+x : Entity
+H0 : True
+H1 : _when
+(exists z1 : Entity, ((_hard z1 /\ _disk z1) /\ True) /\ _crash z1)
+(_destroy x)
+H3 : True
+x1 : Entity
+H4 : _lose _smith x1
+H2 : _file x1
+H5 : True
+============================
+False
+
+Toplevel input, characters 260-272:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_file z1) True) (_lose _smith z1))))) -> (not (exists x, (and True (_when (exists z1, (and (and (and (_hard z1) (_disk z1)) True) (_crash z1))) (_destroy x))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                     ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 274-278:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_file z1) True) (_lose _smith z1))))) -> (not (exists x, (and True (_when (exists z1, (and (and (and (_hard z1) (_disk z1)) True) (_crash z1))) (_destroy x))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                   ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _crash is declared
+
+Coq < _destroy is declared
+
+Coq < _disk is declared
+
+Coq < _file is declared
+
+Coq < _hard is declared
+
+Coq < _lose is declared
+
+Coq < _smith is declared
+
+Coq < _when is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity, (_file z1 /\ True) /\ _lose _smith z1)) ->
+exists x : Entity,
+True /\
+_when (exists z1 : Entity, ((_hard z1 /\ _disk z1) /\ True) /\ _crash z1)
+(_destroy x)
+
+1 focused goal (shelved: 1)
+
+H1 : True
+x0 : Entity
+H2 : _lose _smith x0
+H0 : _file x0
+H3 : True
+============================
+_when (exists z1 : Entity, ((_hard z1 /\ _disk z1) /\ True) /\ _crash z1)
+(_destroy ?x)
+
+Toplevel input, characters 254-266:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_file z1) True) (_lose _smith z1))))) -> (exists x, (and True (_when (exists z1, (and (and (and (_hard z1) (_disk z1)) True) (_crash z1))) (_destroy x)))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                               ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 268-272:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_file z1) True) (_lose _smith z1))))) -> (exists x, (and True (_when (exists z1, (and (and (and (_hard z1) (_disk z1)) True) (_crash z1))) (_destroy x)))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                             ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _crash is declared
+
+Coq < _destroy is declared
+
+Coq < _disk is declared
+
+Coq < _file is declared
+
+Coq < _hard is declared
+
+Coq < _lose is declared
+
+Coq < _smith is declared
+
+Coq < _when is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity, (_file z1 /\ True) /\ _lose _smith z1)) ->
+~
+(exists x : Entity,
+True /\
+_when
+(exists z1 : Entity, ((_hard z1 /\ _disk z1) /\ True) /\ _crash z1)
+(_destroy x))
+
+1 goal
+
+x : Entity
+H0 : True
+H1 : _when
+(exists z1 : Entity, ((_hard z1 /\ _disk z1) /\ True) /\ _crash z1)
+(_destroy x)
+H3 : True
+x1 : Entity
+H4 : _lose _smith x1
+H2 : _file x1
+H5 : True
+============================
+False
+
+Toplevel input, characters 260-272:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_file z1) True) (_lose _smith z1))))) -> (not (exists x, (and True (_when (exists z1, (and (and (and (_hard z1) (_disk z1)) True) (_crash z1))) (_destroy x))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                     ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 274-278:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_file z1) True) (_lose _smith z1))))) -> (not (exists x, (and True (_when (exists z1, (and (and (and (_hard z1) (_disk z1)) True) (_crash z1))) (_destroy x))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                   ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

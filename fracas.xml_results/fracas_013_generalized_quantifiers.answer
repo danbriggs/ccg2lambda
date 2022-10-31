@@ -1,0 +1,114 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _excellent is declared
+
+Coq < _indispensable is declared
+
+Coq < _lead is declared
+
+Coq < _tenor is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((two x /\ _lead x) /\ _tenor x) /\ True) /\ _excellent x) ->
+(exists x : Entity,
+(((_lead x /\ _tenor x) /\ _excellent x) /\ True) /\ _indispensable x) ->
+exists x : Entity,
+(((two x /\ _lead x) /\ _tenor x) /\ True) /\ _indispensable x
+
+
+Toplevel input, characters 296-300:
+> Theorem t1: (exists x, (and (and (and (and (two x) (_lead x)) (_tenor x)) True) (_excellent x))) -> (exists x, (and (and (and (and (_lead x) (_tenor x)) (_excellent x)) True) (_indispensable x))) -> (exists x, (and (and (and (and (two x) (_lead x)) (_tenor x)) True) (_indispensable x))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                         ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _excellent is declared
+
+Coq < _indispensable is declared
+
+Coq < _lead is declared
+
+Coq < _tenor is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((two x /\ _lead x) /\ _tenor x) /\ True) /\ _excellent x) ->
+(exists x : Entity,
+(((_lead x /\ _tenor x) /\ _excellent x) /\ True) /\ _indispensable x) ->
+~
+(exists x : Entity,
+(((two x /\ _lead x) /\ _tenor x) /\ True) /\ _indispensable x)
+
+
+Toplevel input, characters 302-306:
+> Theorem t1: (exists x, (and (and (and (and (two x) (_lead x)) (_tenor x)) True) (_excellent x))) -> (exists x, (and (and (and (and (_lead x) (_tenor x)) (_excellent x)) True) (_indispensable x))) -> (not (exists x, (and (and (and (and (two x) (_lead x)) (_tenor x)) True) (_indispensable x)))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                               ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _excellent is declared
+
+Coq < _indispensable is declared
+
+Coq < _lead is declared
+
+Coq < _tenor is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((two x /\ _lead x) /\ _tenor x) /\ True) /\ _excellent x) ->
+(exists x : Entity,
+(((_lead x /\ _tenor x) /\ _excellent x) /\ True) /\ _indispensable x) ->
+exists x : Entity,
+(((two x /\ _lead x) /\ _tenor x) /\ True) /\ _indispensable x
+
+1 goal
+
+x : Entity
+H1 : _indispensable x
+H2 : True
+H3 : _excellent x
+H0 : _lead x
+H4 : _tenor x
+x0 : Entity
+H5 : _excellent x0
+H6 : True
+H7 : _tenor x0
+H : two x0
+H8 : _lead x0
+============================
+_indispensable x0
+
+Toplevel input, characters 312-324:
+> Theorem t1: (exists x, (and (and (and (and (two x) (_lead x)) (_tenor x)) True) (_excellent x))) -> (exists x, (and (and (and (and (_lead x) (_tenor x)) (_excellent x)) True) (_indispensable x))) -> (exists x, (and (and (and (and (two x) (_lead x)) (_tenor x)) True) (_indispensable x))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                         ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 326-330:
+> Theorem t1: (exists x, (and (and (and (and (two x) (_lead x)) (_tenor x)) True) (_excellent x))) -> (exists x, (and (and (and (and (_lead x) (_tenor x)) (_excellent x)) True) (_indispensable x))) -> (exists x, (and (and (and (and (two x) (_lead x)) (_tenor x)) True) (_indispensable x))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                       ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

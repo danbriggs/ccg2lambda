@@ -1,0 +1,362 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _nobel is declared
+
+Coq < _prize is declared
+
+Coq < _scandinavian is declared
+
+Coq < _swede is declared
+
+Coq < _win is declared
+
+Coq < _won is declared
+
+Coq < Toplevel input, characters 240-323:
+> Theorem t1: (exists x, (and (and (_swede x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1))))) -> (forall x, ((_swede x) -> (True -> (exists z1, (and (and (_scandinavian z1) True) (x = z1)))))) -> (and (_nobel (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))) (_prize (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x)))))).
+>                                                                                                                                                                                                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The type of this term is a product while it is expected to be Entity.
+
+Toplevel input, characters 423-428:
+> Theorem t1: (exists x, (and (and (_swede x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1))))) -> (forall x, ((_swede x) -> (True -> (exists z1, (and (and (_scandinavian z1) True) (x = z1)))))) -> (and (_nobel (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))) (_prize (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x)))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 430-434:
+> Theorem t1: (exists x, (and (and (_swede x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1))))) -> (forall x, ((_swede x) -> (True -> (exists z1, (and (and (_scandinavian z1) True) (x = z1)))))) -> (and (_nobel (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))) (_prize (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _nobel is declared
+
+Coq < _prize is declared
+
+Coq < _scandinavian is declared
+
+Coq < _swede is declared
+
+Coq < _win is declared
+
+Coq < _won is declared
+
+Coq < Toplevel input, characters 245-328:
+> Theorem t1: (exists x, (and (and (_swede x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1))))) -> (forall x, ((_swede x) -> (True -> (exists z1, (and (and (_scandinavian z1) True) (x = z1)))))) -> (not (and (_nobel (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))) (_prize (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))))).
+>                                                                                                                                                                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The type of this term is a product while it is expected to be Entity.
+
+Toplevel input, characters 429-434:
+> Theorem t1: (exists x, (and (and (_swede x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1))))) -> (forall x, ((_swede x) -> (True -> (exists z1, (and (and (_scandinavian z1) True) (x = z1)))))) -> (not (and (_nobel (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))) (_prize (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                              ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 436-440:
+> Theorem t1: (exists x, (and (and (_swede x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1))))) -> (forall x, ((_swede x) -> (True -> (exists z1, (and (and (_scandinavian z1) True) (x = z1)))))) -> (not (and (_nobel (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))) (_prize (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _nobel is declared
+
+Coq < _prize is declared
+
+Coq < _scandinavian is declared
+
+Coq < _swede is declared
+
+Coq < _win is declared
+
+Coq < _won is declared
+
+Coq < Toplevel input, characters 240-323:
+> Theorem t1: (exists x, (and (and (_swede x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1))))) -> (forall x, ((_swede x) -> (True -> (exists z1, (and (and (_scandinavian z1) True) (x = z1)))))) -> (and (_nobel (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))) (_prize (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x)))))).
+>                                                                                                                                                                                                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The type of this term is a product while it is expected to be Entity.
+
+Toplevel input, characters 423-429:
+> Theorem t1: (exists x, (and (and (_swede x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1))))) -> (forall x, ((_swede x) -> (True -> (exists z1, (and (and (_scandinavian z1) True) (x = z1)))))) -> (and (_nobel (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))) (_prize (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x)))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 442-445:
+> Theorem t1: (exists x, (and (and (_swede x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1))))) -> (forall x, ((_swede x) -> (True -> (exists z1, (and (and (_scandinavian z1) True) (x = z1)))))) -> (and (_nobel (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))) (_prize (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 460-464:
+> Theorem t1: (exists x, (and (and (_swede x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1))))) -> (forall x, ((_swede x) -> (True -> (exists z1, (and (and (_scandinavian z1) True) (x = z1)))))) -> (and (_nobel (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))) (_prize (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _nobel is declared
+
+Coq < _prize is declared
+
+Coq < _scandinavian is declared
+
+Coq < _swede is declared
+
+Coq < _win is declared
+
+Coq < _won is declared
+
+Coq < Toplevel input, characters 240-323:
+> Theorem t1: (exists x, (and (and (_swede x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1))))) -> (forall x, ((_swede x) -> (True -> (exists z1, (and (and (_scandinavian z1) True) (x = z1)))))) -> (and (_nobel (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))) (_prize (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x)))))).
+>                                                                                                                                                                                                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The type of this term is a product while it is expected to be Entity.
+
+Toplevel input, characters 423-428:
+> Theorem t1: (exists x, (and (and (_swede x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1))))) -> (forall x, ((_swede x) -> (True -> (exists z1, (and (and (_scandinavian z1) True) (x = z1)))))) -> (and (_nobel (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))) (_prize (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x)))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 430-434:
+> Theorem t1: (exists x, (and (and (_swede x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1))))) -> (forall x, ((_swede x) -> (True -> (exists z1, (and (and (_scandinavian z1) True) (x = z1)))))) -> (and (_nobel (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))) (_prize (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _nobel is declared
+
+Coq < _prize is declared
+
+Coq < _scandinavian is declared
+
+Coq < _swede is declared
+
+Coq < _win is declared
+
+Coq < _won is declared
+
+Coq < Toplevel input, characters 245-328:
+> Theorem t1: (exists x, (and (and (_swede x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1))))) -> (forall x, ((_swede x) -> (True -> (exists z1, (and (and (_scandinavian z1) True) (x = z1)))))) -> (not (and (_nobel (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))) (_prize (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))))).
+>                                                                                                                                                                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The type of this term is a product while it is expected to be Entity.
+
+Toplevel input, characters 429-435:
+> Theorem t1: (exists x, (and (and (_swede x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1))))) -> (forall x, ((_swede x) -> (True -> (exists z1, (and (and (_scandinavian z1) True) (x = z1)))))) -> (not (and (_nobel (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))) (_prize (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                              ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 448-451:
+> Theorem t1: (exists x, (and (and (_swede x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1))))) -> (forall x, ((_swede x) -> (True -> (exists z1, (and (and (_scandinavian z1) True) (x = z1)))))) -> (not (and (_nobel (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))) (_prize (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 466-470:
+> Theorem t1: (exists x, (and (and (_swede x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1))))) -> (forall x, ((_swede x) -> (True -> (exists z1, (and (and (_scandinavian z1) True) (x = z1)))))) -> (not (and (_nobel (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))) (_prize (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _nobel is declared
+
+Coq < _prize is declared
+
+Coq < _scandinavian is declared
+
+Coq < _swede is declared
+
+Coq < _win is declared
+
+Coq < _won is declared
+
+Coq < Toplevel input, characters 245-328:
+> Theorem t1: (exists x, (and (and (_swede x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1))))) -> (forall x, ((_swede x) -> (True -> (exists z1, (and (and (_scandinavian z1) True) (x = z1)))))) -> (not (and (_nobel (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))) (_prize (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))))).
+>                                                                                                                                                                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The type of this term is a product while it is expected to be Entity.
+
+Toplevel input, characters 429-434:
+> Theorem t1: (exists x, (and (and (_swede x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1))))) -> (forall x, ((_swede x) -> (True -> (exists z1, (and (and (_scandinavian z1) True) (x = z1)))))) -> (not (and (_nobel (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))) (_prize (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                              ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 436-440:
+> Theorem t1: (exists x, (and (and (_swede x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1))))) -> (forall x, ((_swede x) -> (True -> (exists z1, (and (and (_scandinavian z1) True) (x = z1)))))) -> (not (and (_nobel (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))) (_prize (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _nobel is declared
+
+Coq < _prize is declared
+
+Coq < _scandinavian is declared
+
+Coq < _swede is declared
+
+Coq < _win is declared
+
+Coq < _won is declared
+
+Coq < Toplevel input, characters 240-323:
+> Theorem t1: (exists x, (and (and (_swede x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1))))) -> (forall x, ((_swede x) -> (True -> (exists z1, (and (and (_scandinavian z1) True) (x = z1)))))) -> (and (_nobel (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))) (_prize (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x)))))).
+>                                                                                                                                                                                                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The type of this term is a product while it is expected to be Entity.
+
+Toplevel input, characters 423-429:
+> Theorem t1: (exists x, (and (and (_swede x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1))))) -> (forall x, ((_swede x) -> (True -> (exists z1, (and (and (_scandinavian z1) True) (x = z1)))))) -> (and (_nobel (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))) (_prize (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x)))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 442-445:
+> Theorem t1: (exists x, (and (and (_swede x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1))))) -> (forall x, ((_swede x) -> (True -> (exists z1, (and (and (_scandinavian z1) True) (x = z1)))))) -> (and (_nobel (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))) (_prize (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 460-464:
+> Theorem t1: (exists x, (and (and (_swede x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1))))) -> (forall x, ((_swede x) -> (True -> (exists z1, (and (and (_scandinavian z1) True) (x = z1)))))) -> (and (_nobel (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))) (_prize (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _nobel is declared
+
+Coq < _prize is declared
+
+Coq < _scandinavian is declared
+
+Coq < _swede is declared
+
+Coq < _win is declared
+
+Coq < _won is declared
+
+Coq < Toplevel input, characters 245-328:
+> Theorem t1: (exists x, (and (and (_swede x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1))))) -> (forall x, ((_swede x) -> (True -> (exists z1, (and (and (_scandinavian z1) True) (x = z1)))))) -> (not (and (_nobel (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))) (_prize (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))))).
+>                                                                                                                                                                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The type of this term is a product while it is expected to be Entity.
+
+Toplevel input, characters 429-435:
+> Theorem t1: (exists x, (and (and (_swede x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1))))) -> (forall x, ((_swede x) -> (True -> (exists z1, (and (and (_scandinavian z1) True) (x = z1)))))) -> (not (and (_nobel (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))) (_prize (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                              ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 448-451:
+> Theorem t1: (exists x, (and (and (_swede x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1))))) -> (forall x, ((_swede x) -> (True -> (exists z1, (and (and (_scandinavian z1) True) (x = z1)))))) -> (not (and (_nobel (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))) (_prize (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 466-470:
+> Theorem t1: (exists x, (and (and (_swede x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1))))) -> (forall x, ((_swede x) -> (True -> (exists z1, (and (and (_scandinavian z1) True) (x = z1)))))) -> (not (and (_nobel (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))) (_prize (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _nobel is declared
+
+Coq < _prize is declared
+
+Coq < _scandinavian is declared
+
+Coq < _swede is declared
+
+Coq < _win is declared
+
+Coq < _won is declared
+
+Coq < Toplevel input, characters 240-323:
+> Theorem t1: (exists x, (and (and (_swede x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1))))) -> (forall x, ((_swede x) -> (True -> (exists z1, (and (and (_scandinavian z1) True) (x = z1)))))) -> (and (_nobel (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))) (_prize (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x)))))).
+>                                                                                                                                                                                                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The type of this term is a product while it is expected to be Entity.
+
+Toplevel input, characters 423-429:
+> Theorem t1: (exists x, (and (and (_swede x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1))))) -> (forall x, ((_swede x) -> (True -> (exists z1, (and (and (_scandinavian z1) True) (x = z1)))))) -> (and (_nobel (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))) (_prize (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x)))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 442-445:
+> Theorem t1: (exists x, (and (and (_swede x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1))))) -> (forall x, ((_swede x) -> (True -> (exists z1, (and (and (_scandinavian z1) True) (x = z1)))))) -> (and (_nobel (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))) (_prize (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 460-464:
+> Theorem t1: (exists x, (and (and (_swede x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1))))) -> (forall x, ((_swede x) -> (True -> (exists z1, (and (and (_scandinavian z1) True) (x = z1)))))) -> (and (_nobel (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))) (_prize (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _nobel is declared
+
+Coq < _prize is declared
+
+Coq < _scandinavian is declared
+
+Coq < _swede is declared
+
+Coq < _win is declared
+
+Coq < _won is declared
+
+Coq < Toplevel input, characters 245-328:
+> Theorem t1: (exists x, (and (and (_swede x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1))))) -> (forall x, ((_swede x) -> (True -> (exists z1, (and (and (_scandinavian z1) True) (x = z1)))))) -> (not (and (_nobel (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))) (_prize (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))))).
+>                                                                                                                                                                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The type of this term is a product while it is expected to be Entity.
+
+Toplevel input, characters 429-435:
+> Theorem t1: (exists x, (and (and (_swede x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1))))) -> (forall x, ((_swede x) -> (True -> (exists z1, (and (and (_scandinavian z1) True) (x = z1)))))) -> (not (and (_nobel (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))) (_prize (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                              ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 448-451:
+> Theorem t1: (exists x, (and (and (_swede x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1))))) -> (forall x, ((_swede x) -> (True -> (exists z1, (and (and (_scandinavian z1) True) (x = z1)))))) -> (not (and (_nobel (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))) (_prize (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 466-470:
+> Theorem t1: (exists x, (and (and (_swede x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1))))) -> (forall x, ((_swede x) -> (True -> (exists z1, (and (and (_scandinavian z1) True) (x = z1)))))) -> (not (and (_nobel (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))) (_prize (fun F2 F3 => (exists x, (and (and (and (_scandinavian x) (_won x)) (F2 x)) (F3 x))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+unknown
+

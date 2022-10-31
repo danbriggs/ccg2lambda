@@ -1,0 +1,148 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _colleague is declared
+
+Coq < _go is declared
+
+Coq < _hate is declared
+
+Coq < _john is declared
+
+Coq < _meeting is declared
+
+Coq < _to is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _john /\ True) /\
+(exists z1 : Entity,
+((_meeting z1 /\ True) /\ _to _john z1) /\ _go _john)) /\
+(exists x : Entity,
+(_colleague x /\ True) /\
+(exists z1 : Entity, ((_meeting z1 /\ True) /\ _to x z1) /\ _go x)) ->
+(exists x : Entity, True /\ (exists z1 : Entity, True /\ _hate x z1)) ->
+exists x : Entity,
+(x = _john /\ True) /\
+(exists z1 : Entity, (_meeting z1 /\ True) /\ _hate _john z1)
+
+
+Toplevel input, characters 425-429:
+> Theorem t1: (and (exists x, (and (and (x = _john) True) (exists z1, (and (and (and (_meeting z1) True) (_to _john z1)) (_go _john))))) (exists x, (and (and (_colleague x) True) (exists z1, (and (and (and (_meeting z1) True) (_to x z1)) (_go x)))))) -> (exists x, (and True (exists z1, (and True (_hate x z1))))) -> (exists x, (and (and (x = _john) True) (exists z1, (and (and (_meeting z1) True) (_hate _john z1))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _colleague is declared
+
+Coq < _go is declared
+
+Coq < _hate is declared
+
+Coq < _john is declared
+
+Coq < _meeting is declared
+
+Coq < _to is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _john /\ True) /\
+(exists z1 : Entity,
+((_meeting z1 /\ True) /\ _to _john z1) /\ _go _john)) /\
+(exists x : Entity,
+(_colleague x /\ True) /\
+(exists z1 : Entity, ((_meeting z1 /\ True) /\ _to x z1) /\ _go x)) ->
+(exists x : Entity, True /\ (exists z1 : Entity, True /\ _hate x z1)) ->
+~
+(exists x : Entity,
+(x = _john /\ True) /\
+(exists z1 : Entity, (_meeting z1 /\ True) /\ _hate _john z1))
+
+
+Toplevel input, characters 431-435:
+> Theorem t1: (and (exists x, (and (and (x = _john) True) (exists z1, (and (and (and (_meeting z1) True) (_to _john z1)) (_go _john))))) (exists x, (and (and (_colleague x) True) (exists z1, (and (and (and (_meeting z1) True) (_to x z1)) (_go x)))))) -> (exists x, (and True (exists z1, (and True (_hate x z1))))) -> (not (exists x, (and (and (x = _john) True) (exists z1, (and (and (_meeting z1) True) (_hate _john z1)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _colleague is declared
+
+Coq < _go is declared
+
+Coq < _hate is declared
+
+Coq < _john is declared
+
+Coq < _meeting is declared
+
+Coq < _to is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _john /\ True) /\
+(exists z1 : Entity,
+((_meeting z1 /\ True) /\ _to _john z1) /\ _go _john)) /\
+(exists x : Entity,
+(_colleague x /\ True) /\
+(exists z1 : Entity, ((_meeting z1 /\ True) /\ _to x z1) /\ _go x)) ->
+(exists x : Entity, True /\ (exists z1 : Entity, True /\ _hate x z1)) ->
+exists x : Entity,
+(x = _john /\ True) /\
+(exists z1 : Entity, (_meeting z1 /\ True) /\ _hate _john z1)
+
+1 goal
+
+x : Entity
+H : _colleague x
+H3 : True
+x0 : Entity
+H4 : _go x
+H5 : _to x x0
+H2 : _meeting x0
+H6 : True
+x1 : Entity
+H0 : True
+x2 : Entity
+H7 : True
+H8 : _hate x1 x2
+H10 : True
+x4 : Entity
+H11 : _go _john
+H12 : _to _john x4
+H9 : _meeting x4
+H13 : True
+============================
+_hate _john x4
+
+Toplevel input, characters 441-453:
+> Theorem t1: (and (exists x, (and (and (x = _john) True) (exists z1, (and (and (and (_meeting z1) True) (_to _john z1)) (_go _john))))) (exists x, (and (and (_colleague x) True) (exists z1, (and (and (and (_meeting z1) True) (_to x z1)) (_go x)))))) -> (exists x, (and True (exists z1, (and True (_hate x z1))))) -> (exists x, (and (and (x = _john) True) (exists z1, (and (and (_meeting z1) True) (_hate _john z1))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 455-459:
+> Theorem t1: (and (exists x, (and (and (x = _john) True) (exists z1, (and (and (and (_meeting z1) True) (_to _john z1)) (_go _john))))) (exists x, (and (and (_colleague x) True) (exists z1, (and (and (and (_meeting z1) True) (_to x z1)) (_go x)))))) -> (exists x, (and True (exists z1, (and True (_hate x z1))))) -> (exists x, (and (and (x = _john) True) (exists z1, (and (and (_meeting z1) True) (_hate _john z1))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

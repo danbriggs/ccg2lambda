@@ -1,0 +1,532 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _five is declared
+
+Coq < _forty is declared
+
+Coq < _forty_e2 is declared
+
+Coq < _forty_e3 is declared
+
+Coq < _man is declared
+
+Coq < _part is declared
+
+Coq < _time is declared
+
+Coq < _woman is declared
+
+Coq < _work is declared
+
+Coq < Toplevel input, characters 141-258:
+> Theorem t1: (exists x, (and (and (and (_five x) (_man x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))) -> (fun X0 => (X0 (fun w => True) (fun x => (exists z1, (and (and (and (_five z1) (_woman z1)) True) (_forty_e3 x z1)))))) -> (exists x, (and (and (and (and (_forty_e2 x) (_five x)) (_woman x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))).
+>                                                                                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun X0 : forall (x : ?T -> Prop) (x0 : Entity -> Prop), ?T0 =>
+X0 (fun _ : ?T => True)
+(fun x : Entity =>
+exists z1 : Entity, ((_five z1 /\ _woman z1) /\ True) /\ _forty_e3 x z1)"
+has type
+"(forall (x : ?T -> Prop) (x0 : Entity -> Prop), ?T0) ->
+?T0@{x:=fun _ : ?T => True;
+x0:=fun x : Entity =>
+exists z1 : Entity,
+((_five z1 /\ _woman z1) /\ True) /\ _forty_e3 x z1}"
+which should be Set, Prop or Type.
+
+Toplevel input, characters 411-416:
+> Theorem t1: (exists x, (and (and (and (_five x) (_man x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))) -> (fun X0 => (X0 (fun w => True) (fun x => (exists z1, (and (and (and (_five z1) (_woman z1)) True) (_forty_e3 x z1)))))) -> (exists x, (and (and (and (and (_forty_e2 x) (_five x)) (_woman x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                            ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 418-422:
+> Theorem t1: (exists x, (and (and (and (_five x) (_man x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))) -> (fun X0 => (X0 (fun w => True) (fun x => (exists z1, (and (and (and (_five z1) (_woman z1)) True) (_forty_e3 x z1)))))) -> (exists x, (and (and (and (and (_forty_e2 x) (_five x)) (_woman x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _five is declared
+
+Coq < _forty is declared
+
+Coq < _forty_e2 is declared
+
+Coq < _forty_e3 is declared
+
+Coq < _man is declared
+
+Coq < _part is declared
+
+Coq < _time is declared
+
+Coq < _woman is declared
+
+Coq < _work is declared
+
+Coq < Toplevel input, characters 141-258:
+> Theorem t1: (exists x, (and (and (and (_five x) (_man x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))) -> (fun X0 => (X0 (fun w => True) (fun x => (exists z1, (and (and (and (_five z1) (_woman z1)) True) (_forty_e3 x z1)))))) -> (not (exists x, (and (and (and (and (_forty_e2 x) (_five x)) (_woman x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1)))))).
+>                                                                                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun X0 : forall (x : ?T -> Prop) (x0 : Entity -> Prop), ?T0 =>
+X0 (fun _ : ?T => True)
+(fun x : Entity =>
+exists z1 : Entity, ((_five z1 /\ _woman z1) /\ True) /\ _forty_e3 x z1)"
+has type
+"(forall (x : ?T -> Prop) (x0 : Entity -> Prop), ?T0) ->
+?T0@{x:=fun _ : ?T => True;
+x0:=fun x : Entity =>
+exists z1 : Entity,
+((_five z1 /\ _woman z1) /\ True) /\ _forty_e3 x z1}"
+which should be Set, Prop or Type.
+
+Toplevel input, characters 417-422:
+> Theorem t1: (exists x, (and (and (and (_five x) (_man x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))) -> (fun X0 => (X0 (fun w => True) (fun x => (exists z1, (and (and (and (_five z1) (_woman z1)) True) (_forty_e3 x z1)))))) -> (not (exists x, (and (and (and (and (_forty_e2 x) (_five x)) (_woman x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1)))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                  ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 424-428:
+> Theorem t1: (exists x, (and (and (and (_five x) (_man x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))) -> (fun X0 => (X0 (fun w => True) (fun x => (exists z1, (and (and (and (_five z1) (_woman z1)) True) (_forty_e3 x z1)))))) -> (not (exists x, (and (and (and (and (_forty_e2 x) (_five x)) (_woman x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                         ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _five is declared
+
+Coq < _forty is declared
+
+Coq < _forty_e2 is declared
+
+Coq < _forty_e3 is declared
+
+Coq < _man is declared
+
+Coq < _part is declared
+
+Coq < _time is declared
+
+Coq < _woman is declared
+
+Coq < _work is declared
+
+Coq < Toplevel input, characters 141-258:
+> Theorem t1: (exists x, (and (and (and (_five x) (_man x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))) -> (fun X0 => (X0 (fun w => True) (fun x => (exists z1, (and (and (and (_five z1) (_woman z1)) True) (_forty_e3 x z1)))))) -> (exists x, (and (and (and (and (_forty_e2 x) (_five x)) (_woman x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))).
+>                                                                                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun X0 : forall (x : ?T -> Prop) (x0 : Entity -> Prop), ?T0 =>
+X0 (fun _ : ?T => True)
+(fun x : Entity =>
+exists z1 : Entity, ((_five z1 /\ _woman z1) /\ True) /\ _forty_e3 x z1)"
+has type
+"(forall (x : ?T -> Prop) (x0 : Entity -> Prop), ?T0) ->
+?T0@{x:=fun _ : ?T => True;
+x0:=fun x : Entity =>
+exists z1 : Entity,
+((_five z1 /\ _woman z1) /\ True) /\ _forty_e3 x z1}"
+which should be Set, Prop or Type.
+
+Toplevel input, characters 411-417:
+> Theorem t1: (exists x, (and (and (and (_five x) (_man x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))) -> (fun X0 => (X0 (fun w => True) (fun x => (exists z1, (and (and (and (_five z1) (_woman z1)) True) (_forty_e3 x z1)))))) -> (exists x, (and (and (and (and (_forty_e2 x) (_five x)) (_woman x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                            ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 430-433:
+> Theorem t1: (exists x, (and (and (and (_five x) (_man x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))) -> (fun X0 => (X0 (fun w => True) (fun x => (exists z1, (and (and (and (_five z1) (_woman z1)) True) (_forty_e3 x z1)))))) -> (exists x, (and (and (and (and (_forty_e2 x) (_five x)) (_woman x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 448-452:
+> Theorem t1: (exists x, (and (and (and (_five x) (_man x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))) -> (fun X0 => (X0 (fun w => True) (fun x => (exists z1, (and (and (and (_five z1) (_woman z1)) True) (_forty_e3 x z1)))))) -> (exists x, (and (and (and (and (_forty_e2 x) (_five x)) (_woman x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _five is declared
+
+Coq < _forty is declared
+
+Coq < _forty_e2 is declared
+
+Coq < _forty_e3 is declared
+
+Coq < _man is declared
+
+Coq < _part is declared
+
+Coq < _time is declared
+
+Coq < _woman is declared
+
+Coq < _work is declared
+
+Coq < Toplevel input, characters 141-258:
+> Theorem t1: (exists x, (and (and (and (_five x) (_man x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))) -> (fun X0 => (X0 (fun w => True) (fun x => (exists z1, (and (and (and (_five z1) (_woman z1)) True) (_forty_e3 x z1)))))) -> (exists x, (and (and (and (and (_forty_e2 x) (_five x)) (_woman x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))).
+>                                                                                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun X0 : forall (x : ?T -> Prop) (x0 : Entity -> Prop), ?T0 =>
+X0 (fun _ : ?T => True)
+(fun x : Entity =>
+exists z1 : Entity, ((_five z1 /\ _woman z1) /\ True) /\ _forty_e3 x z1)"
+has type
+"(forall (x : ?T -> Prop) (x0 : Entity -> Prop), ?T0) ->
+?T0@{x:=fun _ : ?T => True;
+x0:=fun x : Entity =>
+exists z1 : Entity,
+((_five z1 /\ _woman z1) /\ True) /\ _forty_e3 x z1}"
+which should be Set, Prop or Type.
+
+Toplevel input, characters 411-416:
+> Theorem t1: (exists x, (and (and (and (_five x) (_man x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))) -> (fun X0 => (X0 (fun w => True) (fun x => (exists z1, (and (and (and (_five z1) (_woman z1)) True) (_forty_e3 x z1)))))) -> (exists x, (and (and (and (and (_forty_e2 x) (_five x)) (_woman x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                            ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 418-422:
+> Theorem t1: (exists x, (and (and (and (_five x) (_man x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))) -> (fun X0 => (X0 (fun w => True) (fun x => (exists z1, (and (and (and (_five z1) (_woman z1)) True) (_forty_e3 x z1)))))) -> (exists x, (and (and (and (and (_forty_e2 x) (_five x)) (_woman x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _five is declared
+
+Coq < _forty is declared
+
+Coq < _forty_e2 is declared
+
+Coq < _forty_e3 is declared
+
+Coq < _man is declared
+
+Coq < _part is declared
+
+Coq < _time is declared
+
+Coq < _woman is declared
+
+Coq < _work is declared
+
+Coq < Toplevel input, characters 141-258:
+> Theorem t1: (exists x, (and (and (and (_five x) (_man x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))) -> (fun X0 => (X0 (fun w => True) (fun x => (exists z1, (and (and (and (_five z1) (_woman z1)) True) (_forty_e3 x z1)))))) -> (not (exists x, (and (and (and (and (_forty_e2 x) (_five x)) (_woman x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1)))))).
+>                                                                                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun X0 : forall (x : ?T -> Prop) (x0 : Entity -> Prop), ?T0 =>
+X0 (fun _ : ?T => True)
+(fun x : Entity =>
+exists z1 : Entity, ((_five z1 /\ _woman z1) /\ True) /\ _forty_e3 x z1)"
+has type
+"(forall (x : ?T -> Prop) (x0 : Entity -> Prop), ?T0) ->
+?T0@{x:=fun _ : ?T => True;
+x0:=fun x : Entity =>
+exists z1 : Entity,
+((_five z1 /\ _woman z1) /\ True) /\ _forty_e3 x z1}"
+which should be Set, Prop or Type.
+
+Toplevel input, characters 417-423:
+> Theorem t1: (exists x, (and (and (and (_five x) (_man x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))) -> (fun X0 => (X0 (fun w => True) (fun x => (exists z1, (and (and (and (_five z1) (_woman z1)) True) (_forty_e3 x z1)))))) -> (not (exists x, (and (and (and (and (_forty_e2 x) (_five x)) (_woman x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1)))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                  ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 436-439:
+> Theorem t1: (exists x, (and (and (and (_five x) (_man x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))) -> (fun X0 => (X0 (fun w => True) (fun x => (exists z1, (and (and (and (_five z1) (_woman z1)) True) (_forty_e3 x z1)))))) -> (not (exists x, (and (and (and (and (_forty_e2 x) (_five x)) (_woman x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 454-458:
+> Theorem t1: (exists x, (and (and (and (_five x) (_man x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))) -> (fun X0 => (X0 (fun w => True) (fun x => (exists z1, (and (and (and (_five z1) (_woman z1)) True) (_forty_e3 x z1)))))) -> (not (exists x, (and (and (and (and (_forty_e2 x) (_five x)) (_woman x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _five is declared
+
+Coq < _forty is declared
+
+Coq < _forty_e2 is declared
+
+Coq < _forty_e3 is declared
+
+Coq < _man is declared
+
+Coq < _part is declared
+
+Coq < _time is declared
+
+Coq < _woman is declared
+
+Coq < _work is declared
+
+Coq < Toplevel input, characters 141-258:
+> Theorem t1: (exists x, (and (and (and (_five x) (_man x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))) -> (fun X0 => (X0 (fun w => True) (fun x => (exists z1, (and (and (and (_five z1) (_woman z1)) True) (_forty_e3 x z1)))))) -> (not (exists x, (and (and (and (and (_forty_e2 x) (_five x)) (_woman x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1)))))).
+>                                                                                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun X0 : forall (x : ?T -> Prop) (x0 : Entity -> Prop), ?T0 =>
+X0 (fun _ : ?T => True)
+(fun x : Entity =>
+exists z1 : Entity, ((_five z1 /\ _woman z1) /\ True) /\ _forty_e3 x z1)"
+has type
+"(forall (x : ?T -> Prop) (x0 : Entity -> Prop), ?T0) ->
+?T0@{x:=fun _ : ?T => True;
+x0:=fun x : Entity =>
+exists z1 : Entity,
+((_five z1 /\ _woman z1) /\ True) /\ _forty_e3 x z1}"
+which should be Set, Prop or Type.
+
+Toplevel input, characters 417-422:
+> Theorem t1: (exists x, (and (and (and (_five x) (_man x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))) -> (fun X0 => (X0 (fun w => True) (fun x => (exists z1, (and (and (and (_five z1) (_woman z1)) True) (_forty_e3 x z1)))))) -> (not (exists x, (and (and (and (and (_forty_e2 x) (_five x)) (_woman x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1)))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                  ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 424-428:
+> Theorem t1: (exists x, (and (and (and (_five x) (_man x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))) -> (fun X0 => (X0 (fun w => True) (fun x => (exists z1, (and (and (and (_five z1) (_woman z1)) True) (_forty_e3 x z1)))))) -> (not (exists x, (and (and (and (and (_forty_e2 x) (_five x)) (_woman x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                         ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _five is declared
+
+Coq < _forty is declared
+
+Coq < _forty_e2 is declared
+
+Coq < _forty_e3 is declared
+
+Coq < _man is declared
+
+Coq < _part is declared
+
+Coq < _time is declared
+
+Coq < _woman is declared
+
+Coq < _work is declared
+
+Coq < Toplevel input, characters 141-258:
+> Theorem t1: (exists x, (and (and (and (_five x) (_man x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))) -> (fun X0 => (X0 (fun w => True) (fun x => (exists z1, (and (and (and (_five z1) (_woman z1)) True) (_forty_e3 x z1)))))) -> (exists x, (and (and (and (and (_forty_e2 x) (_five x)) (_woman x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))).
+>                                                                                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun X0 : forall (x : ?T -> Prop) (x0 : Entity -> Prop), ?T0 =>
+X0 (fun _ : ?T => True)
+(fun x : Entity =>
+exists z1 : Entity, ((_five z1 /\ _woman z1) /\ True) /\ _forty_e3 x z1)"
+has type
+"(forall (x : ?T -> Prop) (x0 : Entity -> Prop), ?T0) ->
+?T0@{x:=fun _ : ?T => True;
+x0:=fun x : Entity =>
+exists z1 : Entity,
+((_five z1 /\ _woman z1) /\ True) /\ _forty_e3 x z1}"
+which should be Set, Prop or Type.
+
+Toplevel input, characters 411-417:
+> Theorem t1: (exists x, (and (and (and (_five x) (_man x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))) -> (fun X0 => (X0 (fun w => True) (fun x => (exists z1, (and (and (and (_five z1) (_woman z1)) True) (_forty_e3 x z1)))))) -> (exists x, (and (and (and (and (_forty_e2 x) (_five x)) (_woman x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                            ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 430-433:
+> Theorem t1: (exists x, (and (and (and (_five x) (_man x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))) -> (fun X0 => (X0 (fun w => True) (fun x => (exists z1, (and (and (and (_five z1) (_woman z1)) True) (_forty_e3 x z1)))))) -> (exists x, (and (and (and (and (_forty_e2 x) (_five x)) (_woman x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 448-452:
+> Theorem t1: (exists x, (and (and (and (_five x) (_man x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))) -> (fun X0 => (X0 (fun w => True) (fun x => (exists z1, (and (and (and (_five z1) (_woman z1)) True) (_forty_e3 x z1)))))) -> (exists x, (and (and (and (and (_forty_e2 x) (_five x)) (_woman x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _five is declared
+
+Coq < _forty is declared
+
+Coq < _forty_e2 is declared
+
+Coq < _forty_e3 is declared
+
+Coq < _man is declared
+
+Coq < _part is declared
+
+Coq < _time is declared
+
+Coq < _woman is declared
+
+Coq < _work is declared
+
+Coq < Toplevel input, characters 141-258:
+> Theorem t1: (exists x, (and (and (and (_five x) (_man x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))) -> (fun X0 => (X0 (fun w => True) (fun x => (exists z1, (and (and (and (_five z1) (_woman z1)) True) (_forty_e3 x z1)))))) -> (not (exists x, (and (and (and (and (_forty_e2 x) (_five x)) (_woman x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1)))))).
+>                                                                                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun X0 : forall (x : ?T -> Prop) (x0 : Entity -> Prop), ?T0 =>
+X0 (fun _ : ?T => True)
+(fun x : Entity =>
+exists z1 : Entity, ((_five z1 /\ _woman z1) /\ True) /\ _forty_e3 x z1)"
+has type
+"(forall (x : ?T -> Prop) (x0 : Entity -> Prop), ?T0) ->
+?T0@{x:=fun _ : ?T => True;
+x0:=fun x : Entity =>
+exists z1 : Entity,
+((_five z1 /\ _woman z1) /\ True) /\ _forty_e3 x z1}"
+which should be Set, Prop or Type.
+
+Toplevel input, characters 417-423:
+> Theorem t1: (exists x, (and (and (and (_five x) (_man x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))) -> (fun X0 => (X0 (fun w => True) (fun x => (exists z1, (and (and (and (_five z1) (_woman z1)) True) (_forty_e3 x z1)))))) -> (not (exists x, (and (and (and (and (_forty_e2 x) (_five x)) (_woman x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1)))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                  ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 436-439:
+> Theorem t1: (exists x, (and (and (and (_five x) (_man x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))) -> (fun X0 => (X0 (fun w => True) (fun x => (exists z1, (and (and (and (_five z1) (_woman z1)) True) (_forty_e3 x z1)))))) -> (not (exists x, (and (and (and (and (_forty_e2 x) (_five x)) (_woman x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 454-458:
+> Theorem t1: (exists x, (and (and (and (_five x) (_man x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))) -> (fun X0 => (X0 (fun w => True) (fun x => (exists z1, (and (and (and (_five z1) (_woman z1)) True) (_forty_e3 x z1)))))) -> (not (exists x, (and (and (and (and (_forty_e2 x) (_five x)) (_woman x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _five is declared
+
+Coq < _forty is declared
+
+Coq < _forty_e2 is declared
+
+Coq < _forty_e3 is declared
+
+Coq < _man is declared
+
+Coq < _part is declared
+
+Coq < _time is declared
+
+Coq < _woman is declared
+
+Coq < _work is declared
+
+Coq < Toplevel input, characters 141-258:
+> Theorem t1: (exists x, (and (and (and (_five x) (_man x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))) -> (fun X0 => (X0 (fun w => True) (fun x => (exists z1, (and (and (and (_five z1) (_woman z1)) True) (_forty_e3 x z1)))))) -> (exists x, (and (and (and (and (_forty_e2 x) (_five x)) (_woman x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))).
+>                                                                                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun X0 : forall (x : ?T -> Prop) (x0 : Entity -> Prop), ?T0 =>
+X0 (fun _ : ?T => True)
+(fun x : Entity =>
+exists z1 : Entity, ((_five z1 /\ _woman z1) /\ True) /\ _forty_e3 x z1)"
+has type
+"(forall (x : ?T -> Prop) (x0 : Entity -> Prop), ?T0) ->
+?T0@{x:=fun _ : ?T => True;
+x0:=fun x : Entity =>
+exists z1 : Entity,
+((_five z1 /\ _woman z1) /\ True) /\ _forty_e3 x z1}"
+which should be Set, Prop or Type.
+
+Toplevel input, characters 411-417:
+> Theorem t1: (exists x, (and (and (and (_five x) (_man x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))) -> (fun X0 => (X0 (fun w => True) (fun x => (exists z1, (and (and (and (_five z1) (_woman z1)) True) (_forty_e3 x z1)))))) -> (exists x, (and (and (and (and (_forty_e2 x) (_five x)) (_woman x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                            ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 430-433:
+> Theorem t1: (exists x, (and (and (and (_five x) (_man x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))) -> (fun X0 => (X0 (fun w => True) (fun x => (exists z1, (and (and (and (_five z1) (_woman z1)) True) (_forty_e3 x z1)))))) -> (exists x, (and (and (and (and (_forty_e2 x) (_five x)) (_woman x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 448-452:
+> Theorem t1: (exists x, (and (and (and (_five x) (_man x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))) -> (fun X0 => (X0 (fun w => True) (fun x => (exists z1, (and (and (and (_five z1) (_woman z1)) True) (_forty_e3 x z1)))))) -> (exists x, (and (and (and (and (_forty_e2 x) (_five x)) (_woman x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _five is declared
+
+Coq < _forty is declared
+
+Coq < _forty_e2 is declared
+
+Coq < _forty_e3 is declared
+
+Coq < _man is declared
+
+Coq < _part is declared
+
+Coq < _time is declared
+
+Coq < _woman is declared
+
+Coq < _work is declared
+
+Coq < Toplevel input, characters 141-258:
+> Theorem t1: (exists x, (and (and (and (_five x) (_man x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))) -> (fun X0 => (X0 (fun w => True) (fun x => (exists z1, (and (and (and (_five z1) (_woman z1)) True) (_forty_e3 x z1)))))) -> (not (exists x, (and (and (and (and (_forty_e2 x) (_five x)) (_woman x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1)))))).
+>                                                                                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun X0 : forall (x : ?T -> Prop) (x0 : Entity -> Prop), ?T0 =>
+X0 (fun _ : ?T => True)
+(fun x : Entity =>
+exists z1 : Entity, ((_five z1 /\ _woman z1) /\ True) /\ _forty_e3 x z1)"
+has type
+"(forall (x : ?T -> Prop) (x0 : Entity -> Prop), ?T0) ->
+?T0@{x:=fun _ : ?T => True;
+x0:=fun x : Entity =>
+exists z1 : Entity,
+((_five z1 /\ _woman z1) /\ True) /\ _forty_e3 x z1}"
+which should be Set, Prop or Type.
+
+Toplevel input, characters 417-423:
+> Theorem t1: (exists x, (and (and (and (_five x) (_man x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))) -> (fun X0 => (X0 (fun w => True) (fun x => (exists z1, (and (and (and (_five z1) (_woman z1)) True) (_forty_e3 x z1)))))) -> (not (exists x, (and (and (and (and (_forty_e2 x) (_five x)) (_woman x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1)))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                  ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 436-439:
+> Theorem t1: (exists x, (and (and (and (_five x) (_man x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))) -> (fun X0 => (X0 (fun w => True) (fun x => (exists z1, (and (and (and (_five z1) (_woman z1)) True) (_forty_e3 x z1)))))) -> (not (exists x, (and (and (and (and (_forty_e2 x) (_five x)) (_woman x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 454-458:
+> Theorem t1: (exists x, (and (and (and (_five x) (_man x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1))))) -> (fun X0 => (X0 (fun w => True) (fun x => (exists z1, (and (and (and (_five z1) (_woman z1)) True) (_forty_e3 x z1)))))) -> (not (exists x, (and (and (and (and (_forty_e2 x) (_five x)) (_woman x)) True) (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work x z1)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+unknown
+

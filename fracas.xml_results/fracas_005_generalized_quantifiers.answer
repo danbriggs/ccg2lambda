@@ -1,0 +1,370 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _ambitious is declared
+
+Coq < _italian is declared
+
+Coq < _really is declared
+
+Coq < _tenor is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((_really x /\ _ambitious x) /\ _tenor x) /\ True) /\ _italian x) ->
+exists x : Entity,
+_really x /\
+(exists z3 : Entity,
+(((_ambitious z3 /\ _tenor z3) /\ _italian z3) /\ True) /\ x = z3)
+
+No more goals.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _ambitious is declared
+
+Coq < _italian is declared
+
+Coq < _really is declared
+
+Coq < _tenor is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((_really x /\ _ambitious x) /\ _tenor x) /\ True) /\ _italian x) ->
+~
+(exists x : Entity,
+_really x /\
+(exists z3 : Entity,
+(((_ambitious z3 /\ _tenor z3) /\ _italian z3) /\ True) /\ x = z3))
+
+
+Toplevel input, characters 244-248:
+> Theorem t1: (exists x, (and (and (and (and (_really x) (_ambitious x)) (_tenor x)) True) (_italian x))) -> (not (exists x, (and (_really x) (exists z3, (and (and (and (and (_ambitious z3) (_tenor z3)) (_italian z3)) True) (x = z3)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                     ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _ambitious is declared
+
+Coq < _italian is declared
+
+Coq < _really is declared
+
+Coq < _tenor is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((_really x /\ _ambitious x) /\ _tenor x) /\ True) /\ _italian x) ->
+exists x : Entity,
+_really x /\
+(exists z3 : Entity,
+(((_ambitious z3 /\ _tenor z3) /\ _italian z3) /\ True) /\ x = z3)
+
+No more goals.
+
+Toplevel input, characters 250-267:
+> Theorem t1: (exists x, (and (and (and (and (_really x) (_ambitious x)) (_tenor x)) True) (_italian x))) -> (exists x, (and (_really x) (exists z3, (and (and (and (and (_ambitious z3) (_tenor z3)) (_italian z3)) True) (x = z3))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                           ^^^^^^^^^^^^^^^^^
+Error: No such goal.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _ambitious is declared
+
+Coq < _italian is declared
+
+Coq < _really is declared
+
+Coq < _tenor is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((_really x /\ _ambitious x) /\ _tenor x) /\ True) /\ _italian x) ->
+exists x : Entity,
+_really x /\
+(exists z3 : Entity,
+(((_ambitious z3 /\ _tenor z3) /\ _italian z3) /\ True) /\ x = z3)
+
+No more goals.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _ambitious is declared
+
+Coq < _italian is declared
+
+Coq < _really is declared
+
+Coq < _tenor is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((_really x /\ _ambitious x) /\ _tenor x) /\ True) /\ _italian x) ->
+~
+(exists x : Entity,
+_really x /\
+(exists z3 : Entity,
+(((_ambitious z3 /\ _tenor z3) /\ _italian z3) /\ True) /\ x = z3))
+
+1 goal
+
+x0 : Entity
+H0 : _really x0
+H3 : True
+H4 : _italian x0
+H1 : _ambitious x0
+H5 : _tenor x0
+x1 : Entity
+H6 : _italian x1
+H7 : True
+H8 : _tenor x1
+H : _really x1
+H9 : _ambitious x1
+============================
+False
+
+Toplevel input, characters 260-272:
+> Theorem t1: (exists x, (and (and (and (and (_really x) (_ambitious x)) (_tenor x)) True) (_italian x))) -> (not (exists x, (and (_really x) (exists z3, (and (and (and (and (_ambitious z3) (_tenor z3)) (_italian z3)) True) (x = z3)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                     ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 274-278:
+> Theorem t1: (exists x, (and (and (and (and (_really x) (_ambitious x)) (_tenor x)) True) (_italian x))) -> (not (exists x, (and (_really x) (exists z3, (and (and (and (and (_ambitious z3) (_tenor z3)) (_italian z3)) True) (x = z3)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                   ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _ambitious is declared
+
+Coq < _italian is declared
+
+Coq < _really is declared
+
+Coq < _tenor is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((_really x /\ _ambitious x) /\ _tenor x) /\ True) /\ _italian x) ->
+~
+(exists x : Entity,
+_really x /\
+(exists z3 : Entity,
+(((_ambitious z3 /\ _tenor z3) /\ _italian z3) /\ True) /\ x = z3))
+
+
+Toplevel input, characters 244-248:
+> Theorem t1: (exists x, (and (and (and (and (_really x) (_ambitious x)) (_tenor x)) True) (_italian x))) -> (not (exists x, (and (_really x) (exists z3, (and (and (and (and (_ambitious z3) (_tenor z3)) (_italian z3)) True) (x = z3)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                     ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _ambitious is declared
+
+Coq < _italian is declared
+
+Coq < _really is declared
+
+Coq < _tenor is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((_really x /\ _ambitious x) /\ _tenor x) /\ True) /\ _italian x) ->
+exists x : Entity,
+_really x /\
+(exists z3 : Entity,
+(((_ambitious z3 /\ _tenor z3) /\ _italian z3) /\ True) /\ x = z3)
+
+No more goals.
+
+Toplevel input, characters 250-267:
+> Theorem t1: (exists x, (and (and (and (and (_really x) (_ambitious x)) (_tenor x)) True) (_italian x))) -> (exists x, (and (_really x) (exists z3, (and (and (and (and (_ambitious z3) (_tenor z3)) (_italian z3)) True) (x = z3))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                           ^^^^^^^^^^^^^^^^^
+Error: No such goal.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _ambitious is declared
+
+Coq < _italian is declared
+
+Coq < _really is declared
+
+Coq < _tenor is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((_really x /\ _ambitious x) /\ _tenor x) /\ True) /\ _italian x) ->
+~
+(exists x : Entity,
+_really x /\
+(exists z3 : Entity,
+(((_ambitious z3 /\ _tenor z3) /\ _italian z3) /\ True) /\ x = z3))
+
+1 goal
+
+x0 : Entity
+H0 : _really x0
+H3 : True
+H4 : _italian x0
+H1 : _ambitious x0
+H5 : _tenor x0
+x1 : Entity
+H6 : _italian x1
+H7 : True
+H8 : _tenor x1
+H : _really x1
+H9 : _ambitious x1
+============================
+False
+
+Toplevel input, characters 260-272:
+> Theorem t1: (exists x, (and (and (and (and (_really x) (_ambitious x)) (_tenor x)) True) (_italian x))) -> (not (exists x, (and (_really x) (exists z3, (and (and (and (and (_ambitious z3) (_tenor z3)) (_italian z3)) True) (x = z3)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                     ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 274-278:
+> Theorem t1: (exists x, (and (and (and (and (_really x) (_ambitious x)) (_tenor x)) True) (_italian x))) -> (not (exists x, (and (_really x) (exists z3, (and (and (and (and (_ambitious z3) (_tenor z3)) (_italian z3)) True) (x = z3)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                   ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _ambitious is declared
+
+Coq < _italian is declared
+
+Coq < _really is declared
+
+Coq < _tenor is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((_really x /\ _ambitious x) /\ _tenor x) /\ True) /\ _italian x) ->
+exists x : Entity,
+_really x /\
+(exists z3 : Entity,
+(((_ambitious z3 /\ _tenor z3) /\ _italian z3) /\ True) /\ x = z3)
+
+No more goals.
+
+Toplevel input, characters 250-267:
+> Theorem t1: (exists x, (and (and (and (and (_really x) (_ambitious x)) (_tenor x)) True) (_italian x))) -> (exists x, (and (_really x) (exists z3, (and (and (and (and (_ambitious z3) (_tenor z3)) (_italian z3)) True) (x = z3))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                           ^^^^^^^^^^^^^^^^^
+Error: No such goal.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _ambitious is declared
+
+Coq < _italian is declared
+
+Coq < _really is declared
+
+Coq < _tenor is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((_really x /\ _ambitious x) /\ _tenor x) /\ True) /\ _italian x) ->
+~
+(exists x : Entity,
+_really x /\
+(exists z3 : Entity,
+(((_ambitious z3 /\ _tenor z3) /\ _italian z3) /\ True) /\ x = z3))
+
+1 goal
+
+x0 : Entity
+H0 : _really x0
+H3 : True
+H4 : _italian x0
+H1 : _ambitious x0
+H5 : _tenor x0
+x1 : Entity
+H6 : _italian x1
+H7 : True
+H8 : _tenor x1
+H : _really x1
+H9 : _ambitious x1
+============================
+False
+
+Toplevel input, characters 260-272:
+> Theorem t1: (exists x, (and (and (and (and (_really x) (_ambitious x)) (_tenor x)) True) (_italian x))) -> (not (exists x, (and (_really x) (exists z3, (and (and (and (and (_ambitious z3) (_tenor z3)) (_italian z3)) True) (x = z3)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                     ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 274-278:
+> Theorem t1: (exists x, (and (and (and (and (_really x) (_ambitious x)) (_tenor x)) True) (_italian x))) -> (not (exists x, (and (_really x) (exists z3, (and (and (and (and (_ambitious z3) (_tenor z3)) (_italian z3)) True) (x = z3)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                   ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

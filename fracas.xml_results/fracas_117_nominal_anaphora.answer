@@ -1,0 +1,452 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _her is declared
+
+Coq < _mary is declared
+
+Coq < _mary_e2 is declared
+
+Coq < _student is declared
+
+Coq < _use is declared
+
+Coq < _use_e2 is declared
+
+Coq < _use_e3 is declared
+
+Coq < _workstation is declared
+
+Coq < Toplevel input, characters 208-210:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use_e3 x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (fun x => (and (and (and (_mary_e2 x) (_use_e2 x)) (_her x)) (_workstation x))).
+>                                                                                                                                                                                                                 ^^
+Error:
+In environment
+x : Entity -> Prop
+z1 : Entity
+The term "z1" has type "Entity" while it is expected to have type
+"Entity -> Prop".
+
+Toplevel input, characters 300-305:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use_e3 x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (fun x => (and (and (and (_mary_e2 x) (_use_e2 x)) (_her x)) (_workstation x))). nltac.
+>                                                                                                                                                                                                                                                                                                             ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 307-311:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use_e3 x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (fun x => (and (and (and (_mary_e2 x) (_use_e2 x)) (_her x)) (_workstation x))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                    ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _her is declared
+
+Coq < _mary is declared
+
+Coq < _mary_e2 is declared
+
+Coq < _student is declared
+
+Coq < _use is declared
+
+Coq < _use_e2 is declared
+
+Coq < _use_e3 is declared
+
+Coq < _workstation is declared
+
+Coq < Toplevel input, characters 208-210:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use_e3 x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (not (fun x => (and (and (and (_mary_e2 x) (_use_e2 x)) (_her x)) (_workstation x)))).
+>                                                                                                                                                                                                                 ^^
+Error:
+In environment
+x : Entity -> Prop
+z1 : Entity
+The term "z1" has type "Entity" while it is expected to have type
+"Entity -> Prop".
+
+Toplevel input, characters 306-311:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use_e3 x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (not (fun x => (and (and (and (_mary_e2 x) (_use_e2 x)) (_her x)) (_workstation x)))). nltac.
+>                                                                                                                                                                                                                                                                                                                   ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 313-317:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use_e3 x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (not (fun x => (and (and (and (_mary_e2 x) (_use_e2 x)) (_her x)) (_workstation x)))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                          ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _her is declared
+
+Coq < _mary is declared
+
+Coq < _mary_e2 is declared
+
+Coq < _student is declared
+
+Coq < _use is declared
+
+Coq < _use_e2 is declared
+
+Coq < _use_e3 is declared
+
+Coq < _workstation is declared
+
+Coq < Toplevel input, characters 208-210:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use_e3 x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (fun x => (and (and (and (_mary_e2 x) (_use_e2 x)) (_her x)) (_workstation x))).
+>                                                                                                                                                                                                                 ^^
+Error:
+In environment
+x : Entity -> Prop
+z1 : Entity
+The term "z1" has type "Entity" while it is expected to have type
+"Entity -> Prop".
+
+Toplevel input, characters 300-306:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use_e3 x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (fun x => (and (and (and (_mary_e2 x) (_use_e2 x)) (_her x)) (_workstation x))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                             ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 319-322:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use_e3 x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (fun x => (and (and (and (_mary_e2 x) (_use_e2 x)) (_her x)) (_workstation x))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 337-341:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use_e3 x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (fun x => (and (and (and (_mary_e2 x) (_use_e2 x)) (_her x)) (_workstation x))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                  ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _her is declared
+
+Coq < _mary is declared
+
+Coq < _mary_e2 is declared
+
+Coq < _student is declared
+
+Coq < _use is declared
+
+Coq < _use_e2 is declared
+
+Coq < _use_e3 is declared
+
+Coq < _workstation is declared
+
+Coq < Toplevel input, characters 208-210:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use_e3 x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (fun x => (and (and (and (_mary_e2 x) (_use_e2 x)) (_her x)) (_workstation x))).
+>                                                                                                                                                                                                                 ^^
+Error:
+In environment
+x : Entity -> Prop
+z1 : Entity
+The term "z1" has type "Entity" while it is expected to have type
+"Entity -> Prop".
+
+Toplevel input, characters 300-305:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use_e3 x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (fun x => (and (and (and (_mary_e2 x) (_use_e2 x)) (_her x)) (_workstation x))). nltac.
+>                                                                                                                                                                                                                                                                                                             ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 307-311:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use_e3 x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (fun x => (and (and (and (_mary_e2 x) (_use_e2 x)) (_her x)) (_workstation x))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                    ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _her is declared
+
+Coq < _mary is declared
+
+Coq < _mary_e2 is declared
+
+Coq < _student is declared
+
+Coq < _use is declared
+
+Coq < _use_e2 is declared
+
+Coq < _use_e3 is declared
+
+Coq < _workstation is declared
+
+Coq < Toplevel input, characters 208-210:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use_e3 x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (not (fun x => (and (and (and (_mary_e2 x) (_use_e2 x)) (_her x)) (_workstation x)))).
+>                                                                                                                                                                                                                 ^^
+Error:
+In environment
+x : Entity -> Prop
+z1 : Entity
+The term "z1" has type "Entity" while it is expected to have type
+"Entity -> Prop".
+
+Toplevel input, characters 306-312:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use_e3 x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (not (fun x => (and (and (and (_mary_e2 x) (_use_e2 x)) (_her x)) (_workstation x)))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                   ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 325-328:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use_e3 x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (not (fun x => (and (and (and (_mary_e2 x) (_use_e2 x)) (_her x)) (_workstation x)))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                      ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 343-347:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use_e3 x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (not (fun x => (and (and (and (_mary_e2 x) (_use_e2 x)) (_her x)) (_workstation x)))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                        ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _her is declared
+
+Coq < _mary is declared
+
+Coq < _mary_e2 is declared
+
+Coq < _student is declared
+
+Coq < _use is declared
+
+Coq < _use_e2 is declared
+
+Coq < _use_e3 is declared
+
+Coq < _workstation is declared
+
+Coq < Toplevel input, characters 208-210:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use_e3 x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (not (fun x => (and (and (and (_mary_e2 x) (_use_e2 x)) (_her x)) (_workstation x)))).
+>                                                                                                                                                                                                                 ^^
+Error:
+In environment
+x : Entity -> Prop
+z1 : Entity
+The term "z1" has type "Entity" while it is expected to have type
+"Entity -> Prop".
+
+Toplevel input, characters 306-311:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use_e3 x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (not (fun x => (and (and (and (_mary_e2 x) (_use_e2 x)) (_her x)) (_workstation x)))). nltac.
+>                                                                                                                                                                                                                                                                                                                   ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 313-317:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use_e3 x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (not (fun x => (and (and (and (_mary_e2 x) (_use_e2 x)) (_her x)) (_workstation x)))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                          ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _her is declared
+
+Coq < _mary is declared
+
+Coq < _mary_e2 is declared
+
+Coq < _student is declared
+
+Coq < _use is declared
+
+Coq < _use_e2 is declared
+
+Coq < _use_e3 is declared
+
+Coq < _workstation is declared
+
+Coq < Toplevel input, characters 208-210:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use_e3 x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (fun x => (and (and (and (_mary_e2 x) (_use_e2 x)) (_her x)) (_workstation x))).
+>                                                                                                                                                                                                                 ^^
+Error:
+In environment
+x : Entity -> Prop
+z1 : Entity
+The term "z1" has type "Entity" while it is expected to have type
+"Entity -> Prop".
+
+Toplevel input, characters 300-306:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use_e3 x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (fun x => (and (and (and (_mary_e2 x) (_use_e2 x)) (_her x)) (_workstation x))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                             ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 319-322:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use_e3 x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (fun x => (and (and (and (_mary_e2 x) (_use_e2 x)) (_her x)) (_workstation x))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 337-341:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use_e3 x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (fun x => (and (and (and (_mary_e2 x) (_use_e2 x)) (_her x)) (_workstation x))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                  ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _her is declared
+
+Coq < _mary is declared
+
+Coq < _mary_e2 is declared
+
+Coq < _student is declared
+
+Coq < _use is declared
+
+Coq < _use_e2 is declared
+
+Coq < _use_e3 is declared
+
+Coq < _workstation is declared
+
+Coq < Toplevel input, characters 208-210:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use_e3 x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (not (fun x => (and (and (and (_mary_e2 x) (_use_e2 x)) (_her x)) (_workstation x)))).
+>                                                                                                                                                                                                                 ^^
+Error:
+In environment
+x : Entity -> Prop
+z1 : Entity
+The term "z1" has type "Entity" while it is expected to have type
+"Entity -> Prop".
+
+Toplevel input, characters 306-312:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use_e3 x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (not (fun x => (and (and (and (_mary_e2 x) (_use_e2 x)) (_her x)) (_workstation x)))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                   ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 325-328:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use_e3 x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (not (fun x => (and (and (and (_mary_e2 x) (_use_e2 x)) (_her x)) (_workstation x)))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                      ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 343-347:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use_e3 x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (not (fun x => (and (and (and (_mary_e2 x) (_use_e2 x)) (_her x)) (_workstation x)))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                        ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _her is declared
+
+Coq < _mary is declared
+
+Coq < _mary_e2 is declared
+
+Coq < _student is declared
+
+Coq < _use is declared
+
+Coq < _use_e2 is declared
+
+Coq < _use_e3 is declared
+
+Coq < _workstation is declared
+
+Coq < Toplevel input, characters 208-210:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use_e3 x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (fun x => (and (and (and (_mary_e2 x) (_use_e2 x)) (_her x)) (_workstation x))).
+>                                                                                                                                                                                                                 ^^
+Error:
+In environment
+x : Entity -> Prop
+z1 : Entity
+The term "z1" has type "Entity" while it is expected to have type
+"Entity -> Prop".
+
+Toplevel input, characters 300-306:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use_e3 x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (fun x => (and (and (and (_mary_e2 x) (_use_e2 x)) (_her x)) (_workstation x))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                             ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 319-322:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use_e3 x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (fun x => (and (and (and (_mary_e2 x) (_use_e2 x)) (_her x)) (_workstation x))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 337-341:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use_e3 x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (fun x => (and (and (and (_mary_e2 x) (_use_e2 x)) (_her x)) (_workstation x))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                  ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _her is declared
+
+Coq < _mary is declared
+
+Coq < _mary_e2 is declared
+
+Coq < _student is declared
+
+Coq < _use is declared
+
+Coq < _use_e2 is declared
+
+Coq < _use_e3 is declared
+
+Coq < _workstation is declared
+
+Coq < Toplevel input, characters 208-210:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use_e3 x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (not (fun x => (and (and (and (_mary_e2 x) (_use_e2 x)) (_her x)) (_workstation x)))).
+>                                                                                                                                                                                                                 ^^
+Error:
+In environment
+x : Entity -> Prop
+z1 : Entity
+The term "z1" has type "Entity" while it is expected to have type
+"Entity -> Prop".
+
+Toplevel input, characters 306-312:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use_e3 x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (not (fun x => (and (and (and (_mary_e2 x) (_use_e2 x)) (_her x)) (_workstation x)))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                   ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 325-328:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use_e3 x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (not (fun x => (and (and (and (_mary_e2 x) (_use_e2 x)) (_her x)) (_workstation x)))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                      ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 343-347:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use_e3 x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (not (fun x => (and (and (and (_mary_e2 x) (_use_e2 x)) (_her x)) (_workstation x)))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                        ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+unknown
+

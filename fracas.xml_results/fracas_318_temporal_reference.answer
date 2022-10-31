@@ -1,0 +1,722 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _'s is declared
+
+Coq < _about is declared
+
+Coq < _as_e2 is declared
+
+Coq < _as_e3 is declared
+
+Coq < _be is declared
+
+Coq < _board is declared
+
+Coq < _come is declared
+
+Coq < _do is declared
+
+Coq < _finish is declared
+
+Coq < _in is declared
+
+Coq < _jones is declared
+
+Coq < _jones_e2 is declared
+
+Coq < _last is declared
+
+Coq < _long is declared
+
+Coq < _mary is declared
+
+Coq < _mary_e2 is declared
+
+Coq < _meeting is declared
+
+Coq < _program is declared
+
+Coq < _story is declared
+
+Coq < _tell is declared
+
+Coq < _update is declared
+
+Coq < _while is declared
+
+Coq < Toplevel input, characters 72-78:
+> Theorem t1: (and (and (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary)))) (_while (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary))))) -> (_before (exists x, (and True (_do x))) (exists x, (and True (_finish x)))) -> (True (fun x => (and (and (and (_last x) (_as_e2 x)) (_long x)) (exists z1, (and (and (and (_jones_e2 z1) (_'s z1)) True) (_as_e3 x z1))))) (fun x => (exists z4, (and (and (_program z4) True) (Prog (_update x z4))))) (fun F1 F2 => (exists x, (and (and (and (and (_mary_e2 x) (_'s x)) (_story x)) (F1 x)) (F2 x))))).
+>                                                                         ^^^^^^
+Error:
+In environment
+x : Entity -> Prop
+The term "_jones" has type "Entity -> Prop" while it is expected to have type
+"Entity".
+
+Toplevel input, characters 1107-1112:
+> Theorem t1: (and (and (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary)))) (_while (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary))))) -> (_before (exists x, (and True (_do x))) (exists x, (and True (_finish x)))) -> (True (fun x => (and (and (and (_last x) (_as_e2 x)) (_long x)) (exists z1, (and (and (and (_jones_e2 z1) (_'s z1)) True) (_as_e3 x z1))))) (fun x => (exists z4, (and (and (_program z4) True) (Prog (_update x z4))))) (fun F1 F2 => (exists x, (and (and (and (and (_mary_e2 x) (_'s x)) (_story x)) (F1 x)) (F2 x))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 1114-1118:
+> Theorem t1: (and (and (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary)))) (_while (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary))))) -> (_before (exists x, (and True (_do x))) (exists x, (and True (_finish x)))) -> (True (fun x => (and (and (and (_last x) (_as_e2 x)) (_long x)) (exists z1, (and (and (and (_jones_e2 z1) (_'s z1)) True) (_as_e3 x z1))))) (fun x => (exists z4, (and (and (_program z4) True) (Prog (_update x z4))))) (fun F1 F2 => (exists x, (and (and (and (and (_mary_e2 x) (_'s x)) (_story x)) (F1 x)) (F2 x))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _'s is declared
+
+Coq < _about is declared
+
+Coq < _as_e2 is declared
+
+Coq < _as_e3 is declared
+
+Coq < _be is declared
+
+Coq < _board is declared
+
+Coq < _come is declared
+
+Coq < _do is declared
+
+Coq < _finish is declared
+
+Coq < _in is declared
+
+Coq < _jones is declared
+
+Coq < _jones_e2 is declared
+
+Coq < _last is declared
+
+Coq < _long is declared
+
+Coq < _mary is declared
+
+Coq < _mary_e2 is declared
+
+Coq < _meeting is declared
+
+Coq < _program is declared
+
+Coq < _story is declared
+
+Coq < _tell is declared
+
+Coq < _update is declared
+
+Coq < _while is declared
+
+Coq < Toplevel input, characters 72-78:
+> Theorem t1: (and (and (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary)))) (_while (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary))))) -> (_before (exists x, (and True (_do x))) (exists x, (and True (_finish x)))) -> (not (True (fun x => (and (and (and (_last x) (_as_e2 x)) (_long x)) (exists z1, (and (and (and (_jones_e2 z1) (_'s z1)) True) (_as_e3 x z1))))) (fun x => (exists z4, (and (and (_program z4) True) (Prog (_update x z4))))) (fun F1 F2 => (exists x, (and (and (and (and (_mary_e2 x) (_'s x)) (_story x)) (F1 x)) (F2 x)))))).
+>                                                                         ^^^^^^
+Error:
+In environment
+x : Entity -> Prop
+The term "_jones" has type "Entity -> Prop" while it is expected to have type
+"Entity".
+
+Toplevel input, characters 1113-1118:
+> Theorem t1: (and (and (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary)))) (_while (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary))))) -> (_before (exists x, (and True (_do x))) (exists x, (and True (_finish x)))) -> (not (True (fun x => (and (and (and (_last x) (_as_e2 x)) (_long x)) (exists z1, (and (and (and (_jones_e2 z1) (_'s z1)) True) (_as_e3 x z1))))) (fun x => (exists z4, (and (and (_program z4) True) (Prog (_update x z4))))) (fun F1 F2 => (exists x, (and (and (and (and (_mary_e2 x) (_'s x)) (_story x)) (F1 x)) (F2 x)))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 1120-1124:
+> Theorem t1: (and (and (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary)))) (_while (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary))))) -> (_before (exists x, (and True (_do x))) (exists x, (and True (_finish x)))) -> (not (True (fun x => (and (and (and (_last x) (_as_e2 x)) (_long x)) (exists z1, (and (and (and (_jones_e2 z1) (_'s z1)) True) (_as_e3 x z1))))) (fun x => (exists z4, (and (and (_program z4) True) (Prog (_update x z4))))) (fun F1 F2 => (exists x, (and (and (and (and (_mary_e2 x) (_'s x)) (_story x)) (F1 x)) (F2 x)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _'s is declared
+
+Coq < _about is declared
+
+Coq < _as_e2 is declared
+
+Coq < _as_e3 is declared
+
+Coq < _be is declared
+
+Coq < _board is declared
+
+Coq < _come is declared
+
+Coq < _do is declared
+
+Coq < _finish is declared
+
+Coq < _in is declared
+
+Coq < _jones is declared
+
+Coq < _jones_e2 is declared
+
+Coq < _last is declared
+
+Coq < _long is declared
+
+Coq < _mary is declared
+
+Coq < _mary_e2 is declared
+
+Coq < _meeting is declared
+
+Coq < _program is declared
+
+Coq < _story is declared
+
+Coq < _tell is declared
+
+Coq < _update is declared
+
+Coq < _while is declared
+
+Coq < Toplevel input, characters 72-78:
+> Theorem t1: (and (and (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary)))) (_while (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary))))) -> (_before (exists x, (and True (_do x))) (exists x, (and True (_finish x)))) -> (True (fun x => (and (and (and (_last x) (_as_e2 x)) (_long x)) (exists z1, (and (and (and (_jones_e2 z1) (_'s z1)) True) (_as_e3 x z1))))) (fun x => (exists z4, (and (and (_program z4) True) (Prog (_update x z4))))) (fun F1 F2 => (exists x, (and (and (and (and (_mary_e2 x) (_'s x)) (_story x)) (F1 x)) (F2 x))))).
+>                                                                         ^^^^^^
+Error:
+In environment
+x : Entity -> Prop
+The term "_jones" has type "Entity -> Prop" while it is expected to have type
+"Entity".
+
+Toplevel input, characters 1107-1113:
+> Theorem t1: (and (and (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary)))) (_while (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary))))) -> (_before (exists x, (and True (_do x))) (exists x, (and True (_finish x)))) -> (True (fun x => (and (and (and (_last x) (_as_e2 x)) (_long x)) (exists z1, (and (and (and (_jones_e2 z1) (_'s z1)) True) (_as_e3 x z1))))) (fun x => (exists z4, (and (and (_program z4) True) (Prog (_update x z4))))) (fun F1 F2 => (exists x, (and (and (and (and (_mary_e2 x) (_'s x)) (_story x)) (F1 x)) (F2 x))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 1126-1129:
+> Theorem t1: (and (and (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary)))) (_while (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary))))) -> (_before (exists x, (and True (_do x))) (exists x, (and True (_finish x)))) -> (True (fun x => (and (and (and (_last x) (_as_e2 x)) (_long x)) (exists z1, (and (and (and (_jones_e2 z1) (_'s z1)) True) (_as_e3 x z1))))) (fun x => (exists z4, (and (and (_program z4) True) (Prog (_update x z4))))) (fun F1 F2 => (exists x, (and (and (and (and (_mary_e2 x) (_'s x)) (_story x)) (F1 x)) (F2 x))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 1144-1148:
+> Theorem t1: (and (and (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary)))) (_while (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary))))) -> (_before (exists x, (and True (_do x))) (exists x, (and True (_finish x)))) -> (True (fun x => (and (and (and (_last x) (_as_e2 x)) (_long x)) (exists z1, (and (and (and (_jones_e2 z1) (_'s z1)) True) (_as_e3 x z1))))) (fun x => (exists z4, (and (and (_program z4) True) (Prog (_update x z4))))) (fun F1 F2 => (exists x, (and (and (and (and (_mary_e2 x) (_'s x)) (_story x)) (F1 x)) (F2 x))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _'s is declared
+
+Coq < _about is declared
+
+Coq < _as_e2 is declared
+
+Coq < _as_e3 is declared
+
+Coq < _be is declared
+
+Coq < _board is declared
+
+Coq < _come is declared
+
+Coq < _do is declared
+
+Coq < _finish is declared
+
+Coq < _in is declared
+
+Coq < _jones is declared
+
+Coq < _jones_e2 is declared
+
+Coq < _last is declared
+
+Coq < _long is declared
+
+Coq < _mary is declared
+
+Coq < _mary_e2 is declared
+
+Coq < _meeting is declared
+
+Coq < _program is declared
+
+Coq < _story is declared
+
+Coq < _tell is declared
+
+Coq < _update is declared
+
+Coq < _while is declared
+
+Coq < Toplevel input, characters 72-78:
+> Theorem t1: (and (and (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary)))) (_while (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary))))) -> (_before (exists x, (and True (_do x))) (exists x, (and True (_finish x)))) -> (True (fun x => (and (and (and (_last x) (_as_e2 x)) (_long x)) (exists z1, (and (and (and (_jones_e2 z1) (_'s z1)) True) (_as_e3 x z1))))) (fun x => (exists z4, (and (and (_program z4) True) (Prog (_update x z4))))) (fun F1 F2 => (exists x, (and (and (and (and (_mary_e2 x) (_'s x)) (_story x)) (F1 x)) (F2 x))))).
+>                                                                         ^^^^^^
+Error:
+In environment
+x : Entity -> Prop
+The term "_jones" has type "Entity -> Prop" while it is expected to have type
+"Entity".
+
+Toplevel input, characters 1107-1112:
+> Theorem t1: (and (and (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary)))) (_while (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary))))) -> (_before (exists x, (and True (_do x))) (exists x, (and True (_finish x)))) -> (True (fun x => (and (and (and (_last x) (_as_e2 x)) (_long x)) (exists z1, (and (and (and (_jones_e2 z1) (_'s z1)) True) (_as_e3 x z1))))) (fun x => (exists z4, (and (and (_program z4) True) (Prog (_update x z4))))) (fun F1 F2 => (exists x, (and (and (and (and (_mary_e2 x) (_'s x)) (_story x)) (F1 x)) (F2 x))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 1114-1118:
+> Theorem t1: (and (and (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary)))) (_while (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary))))) -> (_before (exists x, (and True (_do x))) (exists x, (and True (_finish x)))) -> (True (fun x => (and (and (and (_last x) (_as_e2 x)) (_long x)) (exists z1, (and (and (and (_jones_e2 z1) (_'s z1)) True) (_as_e3 x z1))))) (fun x => (exists z4, (and (and (_program z4) True) (Prog (_update x z4))))) (fun F1 F2 => (exists x, (and (and (and (and (_mary_e2 x) (_'s x)) (_story x)) (F1 x)) (F2 x))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _'s is declared
+
+Coq < _about is declared
+
+Coq < _as_e2 is declared
+
+Coq < _as_e3 is declared
+
+Coq < _be is declared
+
+Coq < _board is declared
+
+Coq < _come is declared
+
+Coq < _do is declared
+
+Coq < _finish is declared
+
+Coq < _in is declared
+
+Coq < _jones is declared
+
+Coq < _jones_e2 is declared
+
+Coq < _last is declared
+
+Coq < _long is declared
+
+Coq < _mary is declared
+
+Coq < _mary_e2 is declared
+
+Coq < _meeting is declared
+
+Coq < _program is declared
+
+Coq < _story is declared
+
+Coq < _tell is declared
+
+Coq < _update is declared
+
+Coq < _while is declared
+
+Coq < Toplevel input, characters 72-78:
+> Theorem t1: (and (and (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary)))) (_while (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary))))) -> (_before (exists x, (and True (_do x))) (exists x, (and True (_finish x)))) -> (not (True (fun x => (and (and (and (_last x) (_as_e2 x)) (_long x)) (exists z1, (and (and (and (_jones_e2 z1) (_'s z1)) True) (_as_e3 x z1))))) (fun x => (exists z4, (and (and (_program z4) True) (Prog (_update x z4))))) (fun F1 F2 => (exists x, (and (and (and (and (_mary_e2 x) (_'s x)) (_story x)) (F1 x)) (F2 x)))))).
+>                                                                         ^^^^^^
+Error:
+In environment
+x : Entity -> Prop
+The term "_jones" has type "Entity -> Prop" while it is expected to have type
+"Entity".
+
+Toplevel input, characters 1113-1119:
+> Theorem t1: (and (and (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary)))) (_while (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary))))) -> (_before (exists x, (and True (_do x))) (exists x, (and True (_finish x)))) -> (not (True (fun x => (and (and (and (_last x) (_as_e2 x)) (_long x)) (exists z1, (and (and (and (_jones_e2 z1) (_'s z1)) True) (_as_e3 x z1))))) (fun x => (exists z4, (and (and (_program z4) True) (Prog (_update x z4))))) (fun F1 F2 => (exists x, (and (and (and (and (_mary_e2 x) (_'s x)) (_story x)) (F1 x)) (F2 x)))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 1132-1135:
+> Theorem t1: (and (and (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary)))) (_while (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary))))) -> (_before (exists x, (and True (_do x))) (exists x, (and True (_finish x)))) -> (not (True (fun x => (and (and (and (_last x) (_as_e2 x)) (_long x)) (exists z1, (and (and (and (_jones_e2 z1) (_'s z1)) True) (_as_e3 x z1))))) (fun x => (exists z4, (and (and (_program z4) True) (Prog (_update x z4))))) (fun F1 F2 => (exists x, (and (and (and (and (_mary_e2 x) (_'s x)) (_story x)) (F1 x)) (F2 x)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 1150-1154:
+> Theorem t1: (and (and (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary)))) (_while (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary))))) -> (_before (exists x, (and True (_do x))) (exists x, (and True (_finish x)))) -> (not (True (fun x => (and (and (and (_last x) (_as_e2 x)) (_long x)) (exists z1, (and (and (and (_jones_e2 z1) (_'s z1)) True) (_as_e3 x z1))))) (fun x => (exists z4, (and (and (_program z4) True) (Prog (_update x z4))))) (fun F1 F2 => (exists x, (and (and (and (and (_mary_e2 x) (_'s x)) (_story x)) (F1 x)) (F2 x)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _'s is declared
+
+Coq < _about is declared
+
+Coq < _as_e2 is declared
+
+Coq < _as_e3 is declared
+
+Coq < _be is declared
+
+Coq < _board is declared
+
+Coq < _come is declared
+
+Coq < _do is declared
+
+Coq < _finish is declared
+
+Coq < _in is declared
+
+Coq < _jones is declared
+
+Coq < _jones_e2 is declared
+
+Coq < _last is declared
+
+Coq < _long is declared
+
+Coq < _mary is declared
+
+Coq < _mary_e2 is declared
+
+Coq < _meeting is declared
+
+Coq < _program is declared
+
+Coq < _story is declared
+
+Coq < _tell is declared
+
+Coq < _update is declared
+
+Coq < _while is declared
+
+Coq < Toplevel input, characters 72-78:
+> Theorem t1: (and (and (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary)))) (_while (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary))))) -> (_before (exists x, (and True (_do x))) (exists x, (and True (_finish x)))) -> (not (True (fun x => (and (and (and (_last x) (_as_e2 x)) (_long x)) (exists z1, (and (and (and (_jones_e2 z1) (_'s z1)) True) (_as_e3 x z1))))) (fun x => (exists z4, (and (and (_program z4) True) (Prog (_update x z4))))) (fun F1 F2 => (exists x, (and (and (and (and (_mary_e2 x) (_'s x)) (_story x)) (F1 x)) (F2 x)))))).
+>                                                                         ^^^^^^
+Error:
+In environment
+x : Entity -> Prop
+The term "_jones" has type "Entity -> Prop" while it is expected to have type
+"Entity".
+
+Toplevel input, characters 1113-1118:
+> Theorem t1: (and (and (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary)))) (_while (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary))))) -> (_before (exists x, (and True (_do x))) (exists x, (and True (_finish x)))) -> (not (True (fun x => (and (and (and (_last x) (_as_e2 x)) (_long x)) (exists z1, (and (and (and (_jones_e2 z1) (_'s z1)) True) (_as_e3 x z1))))) (fun x => (exists z4, (and (and (_program z4) True) (Prog (_update x z4))))) (fun F1 F2 => (exists x, (and (and (and (and (_mary_e2 x) (_'s x)) (_story x)) (F1 x)) (F2 x)))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 1120-1124:
+> Theorem t1: (and (and (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary)))) (_while (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary))))) -> (_before (exists x, (and True (_do x))) (exists x, (and True (_finish x)))) -> (not (True (fun x => (and (and (and (_last x) (_as_e2 x)) (_long x)) (exists z1, (and (and (and (_jones_e2 z1) (_'s z1)) True) (_as_e3 x z1))))) (fun x => (exists z4, (and (and (_program z4) True) (Prog (_update x z4))))) (fun F1 F2 => (exists x, (and (and (and (and (_mary_e2 x) (_'s x)) (_story x)) (F1 x)) (F2 x)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _'s is declared
+
+Coq < _about is declared
+
+Coq < _as_e2 is declared
+
+Coq < _as_e3 is declared
+
+Coq < _be is declared
+
+Coq < _board is declared
+
+Coq < _come is declared
+
+Coq < _do is declared
+
+Coq < _finish is declared
+
+Coq < _in is declared
+
+Coq < _jones is declared
+
+Coq < _jones_e2 is declared
+
+Coq < _last is declared
+
+Coq < _long is declared
+
+Coq < _mary is declared
+
+Coq < _mary_e2 is declared
+
+Coq < _meeting is declared
+
+Coq < _program is declared
+
+Coq < _story is declared
+
+Coq < _tell is declared
+
+Coq < _update is declared
+
+Coq < _while is declared
+
+Coq < Toplevel input, characters 72-78:
+> Theorem t1: (and (and (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary)))) (_while (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary))))) -> (_before (exists x, (and True (_do x))) (exists x, (and True (_finish x)))) -> (True (fun x => (and (and (and (_last x) (_as_e2 x)) (_long x)) (exists z1, (and (and (and (_jones_e2 z1) (_'s z1)) True) (_as_e3 x z1))))) (fun x => (exists z4, (and (and (_program z4) True) (Prog (_update x z4))))) (fun F1 F2 => (exists x, (and (and (and (and (_mary_e2 x) (_'s x)) (_story x)) (F1 x)) (F2 x))))).
+>                                                                         ^^^^^^
+Error:
+In environment
+x : Entity -> Prop
+The term "_jones" has type "Entity -> Prop" while it is expected to have type
+"Entity".
+
+Toplevel input, characters 1107-1113:
+> Theorem t1: (and (and (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary)))) (_while (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary))))) -> (_before (exists x, (and True (_do x))) (exists x, (and True (_finish x)))) -> (True (fun x => (and (and (and (_last x) (_as_e2 x)) (_long x)) (exists z1, (and (and (and (_jones_e2 z1) (_'s z1)) True) (_as_e3 x z1))))) (fun x => (exists z4, (and (and (_program z4) True) (Prog (_update x z4))))) (fun F1 F2 => (exists x, (and (and (and (and (_mary_e2 x) (_'s x)) (_story x)) (F1 x)) (F2 x))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 1126-1129:
+> Theorem t1: (and (and (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary)))) (_while (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary))))) -> (_before (exists x, (and True (_do x))) (exists x, (and True (_finish x)))) -> (True (fun x => (and (and (and (_last x) (_as_e2 x)) (_long x)) (exists z1, (and (and (and (_jones_e2 z1) (_'s z1)) True) (_as_e3 x z1))))) (fun x => (exists z4, (and (and (_program z4) True) (Prog (_update x z4))))) (fun F1 F2 => (exists x, (and (and (and (and (_mary_e2 x) (_'s x)) (_story x)) (F1 x)) (F2 x))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 1144-1148:
+> Theorem t1: (and (and (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary)))) (_while (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary))))) -> (_before (exists x, (and True (_do x))) (exists x, (and True (_finish x)))) -> (True (fun x => (and (and (and (_last x) (_as_e2 x)) (_long x)) (exists z1, (and (and (and (_jones_e2 z1) (_'s z1)) True) (_as_e3 x z1))))) (fun x => (exists z4, (and (and (_program z4) True) (Prog (_update x z4))))) (fun F1 F2 => (exists x, (and (and (and (and (_mary_e2 x) (_'s x)) (_story x)) (F1 x)) (F2 x))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _'s is declared
+
+Coq < _about is declared
+
+Coq < _as_e2 is declared
+
+Coq < _as_e3 is declared
+
+Coq < _be is declared
+
+Coq < _board is declared
+
+Coq < _come is declared
+
+Coq < _do is declared
+
+Coq < _finish is declared
+
+Coq < _in is declared
+
+Coq < _jones is declared
+
+Coq < _jones_e2 is declared
+
+Coq < _last is declared
+
+Coq < _long is declared
+
+Coq < _mary is declared
+
+Coq < _mary_e2 is declared
+
+Coq < _meeting is declared
+
+Coq < _program is declared
+
+Coq < _story is declared
+
+Coq < _tell is declared
+
+Coq < _update is declared
+
+Coq < _while is declared
+
+Coq < Toplevel input, characters 72-78:
+> Theorem t1: (and (and (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary)))) (_while (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary))))) -> (_before (exists x, (and True (_do x))) (exists x, (and True (_finish x)))) -> (not (True (fun x => (and (and (and (_last x) (_as_e2 x)) (_long x)) (exists z1, (and (and (and (_jones_e2 z1) (_'s z1)) True) (_as_e3 x z1))))) (fun x => (exists z4, (and (and (_program z4) True) (Prog (_update x z4))))) (fun F1 F2 => (exists x, (and (and (and (and (_mary_e2 x) (_'s x)) (_story x)) (F1 x)) (F2 x)))))).
+>                                                                         ^^^^^^
+Error:
+In environment
+x : Entity -> Prop
+The term "_jones" has type "Entity -> Prop" while it is expected to have type
+"Entity".
+
+Toplevel input, characters 1113-1119:
+> Theorem t1: (and (and (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary)))) (_while (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary))))) -> (_before (exists x, (and True (_do x))) (exists x, (and True (_finish x)))) -> (not (True (fun x => (and (and (and (_last x) (_as_e2 x)) (_long x)) (exists z1, (and (and (and (_jones_e2 z1) (_'s z1)) True) (_as_e3 x z1))))) (fun x => (exists z4, (and (and (_program z4) True) (Prog (_update x z4))))) (fun F1 F2 => (exists x, (and (and (and (and (_mary_e2 x) (_'s x)) (_story x)) (F1 x)) (F2 x)))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 1132-1135:
+> Theorem t1: (and (and (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary)))) (_while (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary))))) -> (_before (exists x, (and True (_do x))) (exists x, (and True (_finish x)))) -> (not (True (fun x => (and (and (and (_last x) (_as_e2 x)) (_long x)) (exists z1, (and (and (and (_jones_e2 z1) (_'s z1)) True) (_as_e3 x z1))))) (fun x => (exists z4, (and (and (_program z4) True) (Prog (_update x z4))))) (fun F1 F2 => (exists x, (and (and (and (and (_mary_e2 x) (_'s x)) (_story x)) (F1 x)) (F2 x)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 1150-1154:
+> Theorem t1: (and (and (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary)))) (_while (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary))))) -> (_before (exists x, (and True (_do x))) (exists x, (and True (_finish x)))) -> (not (True (fun x => (and (and (and (_last x) (_as_e2 x)) (_long x)) (exists z1, (and (and (and (_jones_e2 z1) (_'s z1)) True) (_as_e3 x z1))))) (fun x => (exists z4, (and (and (_program z4) True) (Prog (_update x z4))))) (fun F1 F2 => (exists x, (and (and (and (and (_mary_e2 x) (_'s x)) (_story x)) (F1 x)) (F2 x)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _'s is declared
+
+Coq < _about is declared
+
+Coq < _as_e2 is declared
+
+Coq < _as_e3 is declared
+
+Coq < _be is declared
+
+Coq < _board is declared
+
+Coq < _come is declared
+
+Coq < _do is declared
+
+Coq < _finish is declared
+
+Coq < _in is declared
+
+Coq < _jones is declared
+
+Coq < _jones_e2 is declared
+
+Coq < _last is declared
+
+Coq < _long is declared
+
+Coq < _mary is declared
+
+Coq < _mary_e2 is declared
+
+Coq < _meeting is declared
+
+Coq < _program is declared
+
+Coq < _story is declared
+
+Coq < _tell is declared
+
+Coq < _update is declared
+
+Coq < _while is declared
+
+Coq < Toplevel input, characters 72-78:
+> Theorem t1: (and (and (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary)))) (_while (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary))))) -> (_before (exists x, (and True (_do x))) (exists x, (and True (_finish x)))) -> (True (fun x => (and (and (and (_last x) (_as_e2 x)) (_long x)) (exists z1, (and (and (and (_jones_e2 z1) (_'s z1)) True) (_as_e3 x z1))))) (fun x => (exists z4, (and (and (_program z4) True) (Prog (_update x z4))))) (fun F1 F2 => (exists x, (and (and (and (and (_mary_e2 x) (_'s x)) (_story x)) (F1 x)) (F2 x))))).
+>                                                                         ^^^^^^
+Error:
+In environment
+x : Entity -> Prop
+The term "_jones" has type "Entity -> Prop" while it is expected to have type
+"Entity".
+
+Toplevel input, characters 1107-1113:
+> Theorem t1: (and (and (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary)))) (_while (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary))))) -> (_before (exists x, (and True (_do x))) (exists x, (and True (_finish x)))) -> (True (fun x => (and (and (and (_last x) (_as_e2 x)) (_long x)) (exists z1, (and (and (and (_jones_e2 z1) (_'s z1)) True) (_as_e3 x z1))))) (fun x => (exists z4, (and (and (_program z4) True) (Prog (_update x z4))))) (fun F1 F2 => (exists x, (and (and (and (and (_mary_e2 x) (_'s x)) (_story x)) (F1 x)) (F2 x))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 1126-1129:
+> Theorem t1: (and (and (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary)))) (_while (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary))))) -> (_before (exists x, (and True (_do x))) (exists x, (and True (_finish x)))) -> (True (fun x => (and (and (and (_last x) (_as_e2 x)) (_long x)) (exists z1, (and (and (and (_jones_e2 z1) (_'s z1)) True) (_as_e3 x z1))))) (fun x => (exists z4, (and (and (_program z4) True) (Prog (_update x z4))))) (fun F1 F2 => (exists x, (and (and (and (and (_mary_e2 x) (_'s x)) (_story x)) (F1 x)) (F2 x))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 1144-1148:
+> Theorem t1: (and (and (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary)))) (_while (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary))))) -> (_before (exists x, (and True (_do x))) (exists x, (and True (_finish x)))) -> (True (fun x => (and (and (and (_last x) (_as_e2 x)) (_long x)) (exists z1, (and (and (and (_jones_e2 z1) (_'s z1)) True) (_as_e3 x z1))))) (fun x => (exists z4, (and (and (_program z4) True) (Prog (_update x z4))))) (fun F1 F2 => (exists x, (and (and (and (and (_mary_e2 x) (_'s x)) (_story x)) (F1 x)) (F2 x))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _'s is declared
+
+Coq < _about is declared
+
+Coq < _as_e2 is declared
+
+Coq < _as_e3 is declared
+
+Coq < _be is declared
+
+Coq < _board is declared
+
+Coq < _come is declared
+
+Coq < _do is declared
+
+Coq < _finish is declared
+
+Coq < _in is declared
+
+Coq < _jones is declared
+
+Coq < _jones_e2 is declared
+
+Coq < _last is declared
+
+Coq < _long is declared
+
+Coq < _mary is declared
+
+Coq < _mary_e2 is declared
+
+Coq < _meeting is declared
+
+Coq < _program is declared
+
+Coq < _story is declared
+
+Coq < _tell is declared
+
+Coq < _update is declared
+
+Coq < _while is declared
+
+Coq < Toplevel input, characters 72-78:
+> Theorem t1: (and (and (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary)))) (_while (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary))))) -> (_before (exists x, (and True (_do x))) (exists x, (and True (_finish x)))) -> (not (True (fun x => (and (and (and (_last x) (_as_e2 x)) (_long x)) (exists z1, (and (and (and (_jones_e2 z1) (_'s z1)) True) (_as_e3 x z1))))) (fun x => (exists z4, (and (and (_program z4) True) (Prog (_update x z4))))) (fun F1 F2 => (exists x, (and (and (and (and (_mary_e2 x) (_'s x)) (_story x)) (F1 x)) (F2 x)))))).
+>                                                                         ^^^^^^
+Error:
+In environment
+x : Entity -> Prop
+The term "_jones" has type "Entity -> Prop" while it is expected to have type
+"Entity".
+
+Toplevel input, characters 1113-1119:
+> Theorem t1: (and (and (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary)))) (_while (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary))))) -> (_before (exists x, (and True (_do x))) (exists x, (and True (_finish x)))) -> (not (True (fun x => (and (and (and (_last x) (_as_e2 x)) (_long x)) (exists z1, (and (and (and (_jones_e2 z1) (_'s z1)) True) (_as_e3 x z1))))) (fun x => (exists z4, (and (and (_program z4) True) (Prog (_update x z4))))) (fun F1 F2 => (exists x, (and (and (and (and (_mary_e2 x) (_'s x)) (_story x)) (F1 x)) (F2 x)))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 1132-1135:
+> Theorem t1: (and (and (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary)))) (_while (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary))))) -> (_before (exists x, (and True (_do x))) (exists x, (and True (_finish x)))) -> (not (True (fun x => (and (and (and (_last x) (_as_e2 x)) (_long x)) (exists z1, (and (and (and (_jones_e2 z1) (_'s z1)) True) (_as_e3 x z1))))) (fun x => (exists z4, (and (and (_program z4) True) (Prog (_update x z4))))) (fun F1 F2 => (exists x, (and (and (and (and (_mary_e2 x) (_'s x)) (_story x)) (F1 x)) (F2 x)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 1150-1154:
+> Theorem t1: (and (and (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary)))) (_while (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_program z1) True) (Prog (_update _jones z1)))))) (exists x, (and (and (and (and (and (x = _mary) True) (exists z4, (and True (_tell _mary z4)))) (exists z5, (and (and (and (_board z5) (_meeting z5)) True) (_about _mary z5)))) (_in _mary)) (_come _mary))))) -> (_before (exists x, (and True (_do x))) (exists x, (and True (_finish x)))) -> (not (True (fun x => (and (and (and (_last x) (_as_e2 x)) (_long x)) (exists z1, (and (and (and (_jones_e2 z1) (_'s z1)) True) (_as_e3 x z1))))) (fun x => (exists z4, (and (and (_program z4) True) (Prog (_update x z4))))) (fun F1 F2 => (exists x, (and (and (and (and (_mary_e2 x) (_'s x)) (_story x)) (F1 x)) (F2 x)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+unknown
+

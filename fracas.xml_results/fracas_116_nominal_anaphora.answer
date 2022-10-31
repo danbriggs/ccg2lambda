@@ -1,0 +1,382 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _female is declared
+
+Coq < _her is declared
+
+Coq < _mary is declared
+
+Coq < _mary_e2 is declared
+
+Coq < _use is declared
+
+Coq < _workstation is declared
+
+Coq < Toplevel input, characters 13-87:
+> Theorem t1: (fun x => (and (and (and (_mary_e2 x) (_use x)) (_her x)) (_workstation x))) -> (exists x, (and (and (x = _mary) True) (_female _mary))).
+>              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun x : Entity => ((_mary_e2 x /\ _use x) /\ _her x) /\ _workstation x"
+has type "Entity -> Prop" which should be Set, Prop or Type.
+
+Toplevel input, characters 150-155:
+> Theorem t1: (fun x => (and (and (and (_mary_e2 x) (_use x)) (_her x)) (_workstation x))) -> (exists x, (and (and (x = _mary) True) (_female _mary))). nltac.
+>                                                                                                                                                       ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 157-161:
+> Theorem t1: (fun x => (and (and (and (_mary_e2 x) (_use x)) (_her x)) (_workstation x))) -> (exists x, (and (and (x = _mary) True) (_female _mary))). nltac. Qed.
+>                                                                                                                                                              ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _female is declared
+
+Coq < _her is declared
+
+Coq < _mary is declared
+
+Coq < _mary_e2 is declared
+
+Coq < _use is declared
+
+Coq < _workstation is declared
+
+Coq < Toplevel input, characters 13-87:
+> Theorem t1: (fun x => (and (and (and (_mary_e2 x) (_use x)) (_her x)) (_workstation x))) -> (not (exists x, (and (and (x = _mary) True) (_female _mary)))).
+>              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun x : Entity => ((_mary_e2 x /\ _use x) /\ _her x) /\ _workstation x"
+has type "Entity -> Prop" which should be Set, Prop or Type.
+
+Toplevel input, characters 156-161:
+> Theorem t1: (fun x => (and (and (and (_mary_e2 x) (_use x)) (_her x)) (_workstation x))) -> (not (exists x, (and (and (x = _mary) True) (_female _mary)))). nltac.
+>                                                                                                                                                             ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 163-167:
+> Theorem t1: (fun x => (and (and (and (_mary_e2 x) (_use x)) (_her x)) (_workstation x))) -> (not (exists x, (and (and (x = _mary) True) (_female _mary)))). nltac. Qed.
+>                                                                                                                                                                    ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _female is declared
+
+Coq < _her is declared
+
+Coq < _mary is declared
+
+Coq < _mary_e2 is declared
+
+Coq < _use is declared
+
+Coq < _workstation is declared
+
+Coq < Toplevel input, characters 13-87:
+> Theorem t1: (fun x => (and (and (and (_mary_e2 x) (_use x)) (_her x)) (_workstation x))) -> (exists x, (and (and (x = _mary) True) (_female _mary))).
+>              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun x : Entity => ((_mary_e2 x /\ _use x) /\ _her x) /\ _workstation x"
+has type "Entity -> Prop" which should be Set, Prop or Type.
+
+Toplevel input, characters 150-156:
+> Theorem t1: (fun x => (and (and (and (_mary_e2 x) (_use x)) (_her x)) (_workstation x))) -> (exists x, (and (and (x = _mary) True) (_female _mary))). repeat nltac_base.
+>                                                                                                                                                       ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 169-172:
+> Theorem t1: (fun x => (and (and (and (_mary_e2 x) (_use x)) (_her x)) (_workstation x))) -> (exists x, (and (and (x = _mary) True) (_female _mary))). repeat nltac_base. try substitution.
+>                                                                                                                                                                          ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 187-191:
+> Theorem t1: (fun x => (and (and (and (_mary_e2 x) (_use x)) (_her x)) (_workstation x))) -> (exists x, (and (and (x = _mary) True) (_female _mary))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                            ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _female is declared
+
+Coq < _her is declared
+
+Coq < _mary is declared
+
+Coq < _mary_e2 is declared
+
+Coq < _use is declared
+
+Coq < _workstation is declared
+
+Coq < Toplevel input, characters 13-87:
+> Theorem t1: (fun x => (and (and (and (_mary_e2 x) (_use x)) (_her x)) (_workstation x))) -> (exists x, (and (and (x = _mary) True) (_female _mary))).
+>              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun x : Entity => ((_mary_e2 x /\ _use x) /\ _her x) /\ _workstation x"
+has type "Entity -> Prop" which should be Set, Prop or Type.
+
+Toplevel input, characters 150-155:
+> Theorem t1: (fun x => (and (and (and (_mary_e2 x) (_use x)) (_her x)) (_workstation x))) -> (exists x, (and (and (x = _mary) True) (_female _mary))). nltac.
+>                                                                                                                                                       ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 157-161:
+> Theorem t1: (fun x => (and (and (and (_mary_e2 x) (_use x)) (_her x)) (_workstation x))) -> (exists x, (and (and (x = _mary) True) (_female _mary))). nltac. Qed.
+>                                                                                                                                                              ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _female is declared
+
+Coq < _her is declared
+
+Coq < _mary is declared
+
+Coq < _mary_e2 is declared
+
+Coq < _use is declared
+
+Coq < _workstation is declared
+
+Coq < Toplevel input, characters 13-87:
+> Theorem t1: (fun x => (and (and (and (_mary_e2 x) (_use x)) (_her x)) (_workstation x))) -> (not (exists x, (and (and (x = _mary) True) (_female _mary)))).
+>              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun x : Entity => ((_mary_e2 x /\ _use x) /\ _her x) /\ _workstation x"
+has type "Entity -> Prop" which should be Set, Prop or Type.
+
+Toplevel input, characters 156-162:
+> Theorem t1: (fun x => (and (and (and (_mary_e2 x) (_use x)) (_her x)) (_workstation x))) -> (not (exists x, (and (and (x = _mary) True) (_female _mary)))). repeat nltac_base.
+>                                                                                                                                                             ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 175-178:
+> Theorem t1: (fun x => (and (and (and (_mary_e2 x) (_use x)) (_her x)) (_workstation x))) -> (not (exists x, (and (and (x = _mary) True) (_female _mary)))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 193-197:
+> Theorem t1: (fun x => (and (and (and (_mary_e2 x) (_use x)) (_her x)) (_workstation x))) -> (not (exists x, (and (and (x = _mary) True) (_female _mary)))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                  ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _female is declared
+
+Coq < _her is declared
+
+Coq < _mary is declared
+
+Coq < _mary_e2 is declared
+
+Coq < _use is declared
+
+Coq < _workstation is declared
+
+Coq < Toplevel input, characters 13-87:
+> Theorem t1: (fun x => (and (and (and (_mary_e2 x) (_use x)) (_her x)) (_workstation x))) -> (not (exists x, (and (and (x = _mary) True) (_female _mary)))).
+>              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun x : Entity => ((_mary_e2 x /\ _use x) /\ _her x) /\ _workstation x"
+has type "Entity -> Prop" which should be Set, Prop or Type.
+
+Toplevel input, characters 156-161:
+> Theorem t1: (fun x => (and (and (and (_mary_e2 x) (_use x)) (_her x)) (_workstation x))) -> (not (exists x, (and (and (x = _mary) True) (_female _mary)))). nltac.
+>                                                                                                                                                             ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 163-167:
+> Theorem t1: (fun x => (and (and (and (_mary_e2 x) (_use x)) (_her x)) (_workstation x))) -> (not (exists x, (and (and (x = _mary) True) (_female _mary)))). nltac. Qed.
+>                                                                                                                                                                    ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _female is declared
+
+Coq < _her is declared
+
+Coq < _mary is declared
+
+Coq < _mary_e2 is declared
+
+Coq < _use is declared
+
+Coq < _workstation is declared
+
+Coq < Toplevel input, characters 13-87:
+> Theorem t1: (fun x => (and (and (and (_mary_e2 x) (_use x)) (_her x)) (_workstation x))) -> (exists x, (and (and (x = _mary) True) (_female _mary))).
+>              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun x : Entity => ((_mary_e2 x /\ _use x) /\ _her x) /\ _workstation x"
+has type "Entity -> Prop" which should be Set, Prop or Type.
+
+Toplevel input, characters 150-156:
+> Theorem t1: (fun x => (and (and (and (_mary_e2 x) (_use x)) (_her x)) (_workstation x))) -> (exists x, (and (and (x = _mary) True) (_female _mary))). repeat nltac_base.
+>                                                                                                                                                       ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 169-172:
+> Theorem t1: (fun x => (and (and (and (_mary_e2 x) (_use x)) (_her x)) (_workstation x))) -> (exists x, (and (and (x = _mary) True) (_female _mary))). repeat nltac_base. try substitution.
+>                                                                                                                                                                          ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 187-191:
+> Theorem t1: (fun x => (and (and (and (_mary_e2 x) (_use x)) (_her x)) (_workstation x))) -> (exists x, (and (and (x = _mary) True) (_female _mary))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                            ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _female is declared
+
+Coq < _her is declared
+
+Coq < _mary is declared
+
+Coq < _mary_e2 is declared
+
+Coq < _use is declared
+
+Coq < _workstation is declared
+
+Coq < Toplevel input, characters 13-87:
+> Theorem t1: (fun x => (and (and (and (_mary_e2 x) (_use x)) (_her x)) (_workstation x))) -> (not (exists x, (and (and (x = _mary) True) (_female _mary)))).
+>              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun x : Entity => ((_mary_e2 x /\ _use x) /\ _her x) /\ _workstation x"
+has type "Entity -> Prop" which should be Set, Prop or Type.
+
+Toplevel input, characters 156-162:
+> Theorem t1: (fun x => (and (and (and (_mary_e2 x) (_use x)) (_her x)) (_workstation x))) -> (not (exists x, (and (and (x = _mary) True) (_female _mary)))). repeat nltac_base.
+>                                                                                                                                                             ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 175-178:
+> Theorem t1: (fun x => (and (and (and (_mary_e2 x) (_use x)) (_her x)) (_workstation x))) -> (not (exists x, (and (and (x = _mary) True) (_female _mary)))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 193-197:
+> Theorem t1: (fun x => (and (and (and (_mary_e2 x) (_use x)) (_her x)) (_workstation x))) -> (not (exists x, (and (and (x = _mary) True) (_female _mary)))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                  ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _female is declared
+
+Coq < _her is declared
+
+Coq < _mary is declared
+
+Coq < _mary_e2 is declared
+
+Coq < _use is declared
+
+Coq < _workstation is declared
+
+Coq < Toplevel input, characters 13-87:
+> Theorem t1: (fun x => (and (and (and (_mary_e2 x) (_use x)) (_her x)) (_workstation x))) -> (exists x, (and (and (x = _mary) True) (_female _mary))).
+>              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun x : Entity => ((_mary_e2 x /\ _use x) /\ _her x) /\ _workstation x"
+has type "Entity -> Prop" which should be Set, Prop or Type.
+
+Toplevel input, characters 150-156:
+> Theorem t1: (fun x => (and (and (and (_mary_e2 x) (_use x)) (_her x)) (_workstation x))) -> (exists x, (and (and (x = _mary) True) (_female _mary))). repeat nltac_base.
+>                                                                                                                                                       ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 169-172:
+> Theorem t1: (fun x => (and (and (and (_mary_e2 x) (_use x)) (_her x)) (_workstation x))) -> (exists x, (and (and (x = _mary) True) (_female _mary))). repeat nltac_base. try substitution.
+>                                                                                                                                                                          ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 187-191:
+> Theorem t1: (fun x => (and (and (and (_mary_e2 x) (_use x)) (_her x)) (_workstation x))) -> (exists x, (and (and (x = _mary) True) (_female _mary))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                            ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _female is declared
+
+Coq < _her is declared
+
+Coq < _mary is declared
+
+Coq < _mary_e2 is declared
+
+Coq < _use is declared
+
+Coq < _workstation is declared
+
+Coq < Toplevel input, characters 13-87:
+> Theorem t1: (fun x => (and (and (and (_mary_e2 x) (_use x)) (_her x)) (_workstation x))) -> (not (exists x, (and (and (x = _mary) True) (_female _mary)))).
+>              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun x : Entity => ((_mary_e2 x /\ _use x) /\ _her x) /\ _workstation x"
+has type "Entity -> Prop" which should be Set, Prop or Type.
+
+Toplevel input, characters 156-162:
+> Theorem t1: (fun x => (and (and (and (_mary_e2 x) (_use x)) (_her x)) (_workstation x))) -> (not (exists x, (and (and (x = _mary) True) (_female _mary)))). repeat nltac_base.
+>                                                                                                                                                             ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 175-178:
+> Theorem t1: (fun x => (and (and (and (_mary_e2 x) (_use x)) (_her x)) (_workstation x))) -> (not (exists x, (and (and (x = _mary) True) (_female _mary)))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 193-197:
+> Theorem t1: (fun x => (and (and (and (_mary_e2 x) (_use x)) (_her x)) (_workstation x))) -> (not (exists x, (and (and (x = _mary) True) (_female _mary)))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                  ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+unknown
+

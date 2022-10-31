@@ -1,0 +1,225 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _11 is declared
+
+Coq < _8 is declared
+
+Coq < _am is declared
+
+Coq < _at is declared
+
+Coq < _by is declared
+
+Coq < _finish is declared
+
+Coq < _have is declared
+
+Coq < _hour is declared
+
+Coq < _in is declared
+
+Coq < _report is declared
+
+Coq < _smith is declared
+
+Coq < _start is declared
+
+Coq < _two is declared
+
+Coq < _write is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+(((_two z2 /\ _hour z2) /\ True) /\ _in _smith z2) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ _write _smith z1))) ->
+(exists x : Entity,
+((x = _smith /\ True) /\ _start _smith) /\
+(exists z2 : Entity,
+((_report z2 /\
+(exists z1 : Entity, ((_am z1 /\ _8 z1) /\ True) /\ _at z2 z1)) /\
+True) /\ Prog (_write _smith z2))) ->
+exists x : Entity,
+(((x = _smith /\ True) /\ _have _smith) /\ _finish _smith) /\
+(exists z2 : Entity,
+((_report z2 /\
+(exists z1 : Entity, ((_am z1 /\ _11 z1) /\ True) /\ _by z2 z1)) /\
+True) /\ Prog (_write _smith z2))
+
+
+Toplevel input, characters 640-644:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_two z2) (_hour z2)) True) (_in _smith z2)) (exists z1, (and (and (_report z1) True) (_write _smith z1))))))) -> (exists x, (and (and (and (x = _smith) True) (_start _smith)) (exists z2, (and (and (and (_report z2) (exists z1, (and (and (and (_am z1) (_8 z1)) True) (_at z2 z1)))) True) (Prog (_write _smith z2)))))) -> (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_finish _smith)) (exists z2, (and (and (and (_report z2) (exists z1, (and (and (and (_am z1) (_11 z1)) True) (_by z2 z1)))) True) (Prog (_write _smith z2)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _11 is declared
+
+Coq < _8 is declared
+
+Coq < _am is declared
+
+Coq < _at is declared
+
+Coq < _by is declared
+
+Coq < _finish is declared
+
+Coq < _have is declared
+
+Coq < _hour is declared
+
+Coq < _in is declared
+
+Coq < _report is declared
+
+Coq < _smith is declared
+
+Coq < _start is declared
+
+Coq < _two is declared
+
+Coq < _write is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+(((_two z2 /\ _hour z2) /\ True) /\ _in _smith z2) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ _write _smith z1))) ->
+(exists x : Entity,
+((x = _smith /\ True) /\ _start _smith) /\
+(exists z2 : Entity,
+((_report z2 /\
+(exists z1 : Entity, ((_am z1 /\ _8 z1) /\ True) /\ _at z2 z1)) /\
+True) /\ Prog (_write _smith z2))) ->
+~
+(exists x : Entity,
+(((x = _smith /\ True) /\ _have _smith) /\ _finish _smith) /\
+(exists z2 : Entity,
+((_report z2 /\
+(exists z1 : Entity, ((_am z1 /\ _11 z1) /\ True) /\ _by z2 z1)) /\
+True) /\ Prog (_write _smith z2)))
+
+
+Toplevel input, characters 646-650:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_two z2) (_hour z2)) True) (_in _smith z2)) (exists z1, (and (and (_report z1) True) (_write _smith z1))))))) -> (exists x, (and (and (and (x = _smith) True) (_start _smith)) (exists z2, (and (and (and (_report z2) (exists z1, (and (and (and (_am z1) (_8 z1)) True) (_at z2 z1)))) True) (Prog (_write _smith z2)))))) -> (not (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_finish _smith)) (exists z2, (and (and (and (_report z2) (exists z1, (and (and (and (_am z1) (_11 z1)) True) (_by z2 z1)))) True) (Prog (_write _smith z2))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _11 is declared
+
+Coq < _8 is declared
+
+Coq < _am is declared
+
+Coq < _at is declared
+
+Coq < _by is declared
+
+Coq < _finish is declared
+
+Coq < _have is declared
+
+Coq < _hour is declared
+
+Coq < _in is declared
+
+Coq < _report is declared
+
+Coq < _smith is declared
+
+Coq < _start is declared
+
+Coq < _two is declared
+
+Coq < _write is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+(((_two z2 /\ _hour z2) /\ True) /\ _in _smith z2) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ _write _smith z1))) ->
+(exists x : Entity,
+((x = _smith /\ True) /\ _start _smith) /\
+(exists z2 : Entity,
+((_report z2 /\
+(exists z1 : Entity, ((_am z1 /\ _8 z1) /\ True) /\ _at z2 z1)) /\
+True) /\ Prog (_write _smith z2))) ->
+exists x : Entity,
+(((x = _smith /\ True) /\ _have _smith) /\ _finish _smith) /\
+(exists z2 : Entity,
+((_report z2 /\
+(exists z1 : Entity, ((_am z1 /\ _11 z1) /\ True) /\ _by z2 z1)) /\
+True) /\ Prog (_write _smith z2))
+
+5 goals
+
+H2 : _start _smith
+H3 : True
+x0 : Entity
+H4 : Prog (_write _smith x0)
+H5 : True
+H1 : _report x0
+x1 : Entity
+H7 : _at x0 x1
+H8 : True
+H6 : _am x1
+H9 : _8 x1
+H11 : True
+x3 : Entity
+H13 : _in _smith x3
+H14 : True
+H10 : _two x3
+H15 : _hour x3
+x4 : Entity
+H16 : _write _smith x4
+H12 : _report x4
+H17 : True
+============================
+_have _smith
+
+goal 2 is:
+_finish _smith
+goal 3 is:
+_11 x1
+goal 4 is:
+_by x4 x1
+goal 5 is:
+Prog (_write _smith x4)
+
+Toplevel input, characters 656-668:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_two z2) (_hour z2)) True) (_in _smith z2)) (exists z1, (and (and (_report z1) True) (_write _smith z1))))))) -> (exists x, (and (and (and (x = _smith) True) (_start _smith)) (exists z2, (and (and (and (_report z2) (exists z1, (and (and (and (_am z1) (_8 z1)) True) (_at z2 z1)))) True) (Prog (_write _smith z2)))))) -> (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_finish _smith)) (exists z2, (and (and (and (_report z2) (exists z1, (and (and (and (_am z1) (_11 z1)) True) (_by z2 z1)))) True) (Prog (_write _smith z2)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 670-674:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (_two z2) (_hour z2)) True) (_in _smith z2)) (exists z1, (and (and (_report z1) True) (_write _smith z1))))))) -> (exists x, (and (and (and (x = _smith) True) (_start _smith)) (exists z2, (and (and (and (_report z2) (exists z1, (and (and (and (_am z1) (_8 z1)) True) (_at z2 z1)))) True) (Prog (_write _smith z2)))))) -> (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_finish _smith)) (exists z2, (and (and (and (_report z2) (exists z1, (and (and (and (_am z1) (_11 z1)) True) (_by z2 z1)))) True) (Prog (_write _smith z2)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

@@ -1,0 +1,629 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _by is declared
+
+Coq < _client is declared
+
+Coq < _demonstration is declared
+
+Coq < _impress is declared
+
+Coq < _performance is declared
+
+Coq < _smith is declared
+
+Coq < _system is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+(exists z7 : Entity,
+((_client z7 /\
+(exists z1 : Entity, (_demonstration z1 /\ True) /\ _at z7 z1)) /\
+True) /\ x = z7) ->
+exists z4 : Entity,
+((((exists z3 : Entity, (_system z3 /\ True) /\ Rel z4 z3) /\
+_performance z4) /\ True) /\ _by x z4) /\
+_impress x) ->
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_demonstration z2 /\ True) /\ _at _smith z2) /\
+(exists z1 : Entity, (_client z1 /\ True) /\ _smith = z1))) ->
+exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((((exists z1 : Entity, (_system z1 /\ True) /\ Rel z2 z1) /\
+_performance z2) /\ True) /\ _by _smith z2) /\
+_impress _smith)
+
+No more goals.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _by is declared
+
+Coq < _client is declared
+
+Coq < _demonstration is declared
+
+Coq < _impress is declared
+
+Coq < _performance is declared
+
+Coq < _smith is declared
+
+Coq < _system is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+(exists z7 : Entity,
+((_client z7 /\
+(exists z1 : Entity, (_demonstration z1 /\ True) /\ _at z7 z1)) /\
+True) /\ x = z7) ->
+exists z4 : Entity,
+((((exists z3 : Entity, (_system z3 /\ True) /\ Rel z4 z3) /\
+_performance z4) /\ True) /\ _by x z4) /\
+_impress x) ->
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_demonstration z2 /\ True) /\ _at _smith z2) /\
+(exists z1 : Entity, (_client z1 /\ True) /\ _smith = z1))) ->
+~
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((((exists z1 : Entity, (_system z1 /\ True) /\ Rel z2 z1) /\
+_performance z2) /\ True) /\ _by _smith z2) /\
+_impress _smith))
+
+
+Toplevel input, characters 670-674:
+> Theorem t1: (forall x, ((exists z7, (and (and (and (_client z7) (exists z1, (and (and (_demonstration z1) True) (_at z7 z1)))) True) (x = z7))) -> (exists z4, (and (and (and (and (exists z3, (and (and (_system z3) True) (Rel z4 z3))) (_performance z4)) True) (_by x z4)) (_impress x))))) -> (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_demonstration z2) True) (_at _smith z2)) (exists z1, (and (and (_client z1) True) (_smith = z1))))))) -> (not (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (exists z1, (and (and (_system z1) True) (Rel z2 z1))) (_performance z2)) True) (_by _smith z2)) (_impress _smith)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _by is declared
+
+Coq < _client is declared
+
+Coq < _demonstration is declared
+
+Coq < _impress is declared
+
+Coq < _performance is declared
+
+Coq < _smith is declared
+
+Coq < _system is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+(exists z7 : Entity,
+((_client z7 /\
+(exists z1 : Entity, (_demonstration z1 /\ True) /\ _at z7 z1)) /\
+True) /\ x = z7) ->
+exists z4 : Entity,
+((((exists z3 : Entity, (_system z3 /\ True) /\ Rel z4 z3) /\
+_performance z4) /\ True) /\ _by x z4) /\
+_impress x) ->
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_demonstration z2 /\ True) /\ _at _smith z2) /\
+(exists z1 : Entity, (_client z1 /\ True) /\ _smith = z1))) ->
+exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((((exists z1 : Entity, (_system z1 /\ True) /\ Rel z2 z1) /\
+_performance z2) /\ True) /\ _by _smith z2) /\
+_impress _smith)
+
+No more goals.
+
+Toplevel input, characters 676-693:
+> Theorem t1: (forall x, ((exists z7, (and (and (and (_client z7) (exists z1, (and (and (_demonstration z1) True) (_at z7 z1)))) True) (x = z7))) -> (exists z4, (and (and (and (and (exists z3, (and (and (_system z3) True) (Rel z4 z3))) (_performance z4)) True) (_by x z4)) (_impress x))))) -> (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_demonstration z2) True) (_at _smith z2)) (exists z1, (and (and (_client z1) True) (_smith = z1))))))) -> (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (exists z1, (and (and (_system z1) True) (Rel z2 z1))) (_performance z2)) True) (_by _smith z2)) (_impress _smith))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^^^^^^^^^^^^^^^^^
+Error: No such goal.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _by is declared
+
+Coq < _client is declared
+
+Coq < _demonstration is declared
+
+Coq < _impress is declared
+
+Coq < _performance is declared
+
+Coq < _smith is declared
+
+Coq < _system is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+(exists z7 : Entity,
+((_client z7 /\
+(exists z1 : Entity, (_demonstration z1 /\ True) /\ _at z7 z1)) /\
+True) /\ x = z7) ->
+exists z4 : Entity,
+((((exists z3 : Entity, (_system z3 /\ True) /\ Rel z4 z3) /\
+_performance z4) /\ True) /\ _by x z4) /\
+_impress x) ->
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_demonstration z2 /\ True) /\ _at _smith z2) /\
+(exists z1 : Entity, (_client z1 /\ True) /\ _smith = z1))) ->
+exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((((exists z1 : Entity, (_system z1 /\ True) /\ Rel z2 z1) /\
+_performance z2) /\ True) /\ _by _smith z2) /\
+_impress _smith)
+
+No more goals.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _by is declared
+
+Coq < _client is declared
+
+Coq < _demonstration is declared
+
+Coq < _impress is declared
+
+Coq < _performance is declared
+
+Coq < _smith is declared
+
+Coq < _system is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+(exists z7 : Entity,
+((_client z7 /\
+(exists z1 : Entity, (_demonstration z1 /\ True) /\ _at z7 z1)) /\
+True) /\ x = z7) ->
+exists z4 : Entity,
+((((exists z3 : Entity, (_system z3 /\ True) /\ Rel z4 z3) /\
+_performance z4) /\ True) /\ _by x z4) /\
+_impress x) ->
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_demonstration z2 /\ True) /\ _at _smith z2) /\
+(exists z1 : Entity, (_client z1 /\ True) /\ _smith = z1))) ->
+~
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((((exists z1 : Entity, (_system z1 /\ True) /\ Rel z2 z1) /\
+_performance z2) /\ True) /\ _by _smith z2) /\
+_impress _smith))
+
+1 goal
+
+H : forall x : Entity,
+(exists z7 : Entity,
+((_client z7 /\
+(exists z1 : Entity, (_demonstration z1 /\ True) /\ _at z7 z1)) /\
+True) /\ x = z7) ->
+exists z4 : Entity,
+((((exists z3 : Entity, (_system z3 /\ True) /\ Rel z4 z3) /\
+_performance z4) /\ True) /\ _by x z4) /\
+_impress x
+H3 : True
+x0 : Entity
+H4 : _impress _smith
+H5 : _by _smith x0
+H6 : True
+H7 : _performance x0
+x1 : Entity
+H8 : Rel x0 x1
+H2 : _system x1
+H9, H11 : True
+x3 : Entity
+H13 : _at _smith x3
+H10 : _demonstration x3
+H14 : True
+H12 : _client _smith
+H16 : True
+============================
+False
+
+Toplevel input, characters 686-698:
+> Theorem t1: (forall x, ((exists z7, (and (and (and (_client z7) (exists z1, (and (and (_demonstration z1) True) (_at z7 z1)))) True) (x = z7))) -> (exists z4, (and (and (and (and (exists z3, (and (and (_system z3) True) (Rel z4 z3))) (_performance z4)) True) (_by x z4)) (_impress x))))) -> (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_demonstration z2) True) (_at _smith z2)) (exists z1, (and (and (_client z1) True) (_smith = z1))))))) -> (not (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (exists z1, (and (and (_system z1) True) (Rel z2 z1))) (_performance z2)) True) (_by _smith z2)) (_impress _smith)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 700-704:
+> Theorem t1: (forall x, ((exists z7, (and (and (and (_client z7) (exists z1, (and (and (_demonstration z1) True) (_at z7 z1)))) True) (x = z7))) -> (exists z4, (and (and (and (and (exists z3, (and (and (_system z3) True) (Rel z4 z3))) (_performance z4)) True) (_by x z4)) (_impress x))))) -> (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_demonstration z2) True) (_at _smith z2)) (exists z1, (and (and (_client z1) True) (_smith = z1))))))) -> (not (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (exists z1, (and (and (_system z1) True) (Rel z2 z1))) (_performance z2)) True) (_by _smith z2)) (_impress _smith)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _by is declared
+
+Coq < _client is declared
+
+Coq < _demonstration is declared
+
+Coq < _impress is declared
+
+Coq < _performance is declared
+
+Coq < _smith is declared
+
+Coq < _system is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+(exists z7 : Entity,
+((_client z7 /\
+(exists z1 : Entity, (_demonstration z1 /\ True) /\ _at z7 z1)) /\
+True) /\ x = z7) ->
+exists z4 : Entity,
+((((exists z3 : Entity, (_system z3 /\ True) /\ Rel z4 z3) /\
+_performance z4) /\ True) /\ _by x z4) /\
+_impress x) ->
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_demonstration z2 /\ True) /\ _at _smith z2) /\
+(exists z1 : Entity, (_client z1 /\ True) /\ _smith = z1))) ->
+~
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((((exists z1 : Entity, (_system z1 /\ True) /\ Rel z2 z1) /\
+_performance z2) /\ True) /\ _by _smith z2) /\
+_impress _smith))
+
+
+Toplevel input, characters 670-674:
+> Theorem t1: (forall x, ((exists z7, (and (and (and (_client z7) (exists z1, (and (and (_demonstration z1) True) (_at z7 z1)))) True) (x = z7))) -> (exists z4, (and (and (and (and (exists z3, (and (and (_system z3) True) (Rel z4 z3))) (_performance z4)) True) (_by x z4)) (_impress x))))) -> (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_demonstration z2) True) (_at _smith z2)) (exists z1, (and (and (_client z1) True) (_smith = z1))))))) -> (not (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (exists z1, (and (and (_system z1) True) (Rel z2 z1))) (_performance z2)) True) (_by _smith z2)) (_impress _smith)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _by is declared
+
+Coq < _client is declared
+
+Coq < _demonstration is declared
+
+Coq < _impress is declared
+
+Coq < _performance is declared
+
+Coq < _smith is declared
+
+Coq < _system is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+(exists z7 : Entity,
+((_client z7 /\
+(exists z1 : Entity, (_demonstration z1 /\ True) /\ _at z7 z1)) /\
+True) /\ x = z7) ->
+exists z4 : Entity,
+((((exists z3 : Entity, (_system z3 /\ True) /\ Rel z4 z3) /\
+_performance z4) /\ True) /\ _by x z4) /\
+_impress x) ->
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_demonstration z2 /\ True) /\ _at _smith z2) /\
+(exists z1 : Entity, (_client z1 /\ True) /\ _smith = z1))) ->
+exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((((exists z1 : Entity, (_system z1 /\ True) /\ Rel z2 z1) /\
+_performance z2) /\ True) /\ _by _smith z2) /\
+_impress _smith)
+
+No more goals.
+
+Toplevel input, characters 676-693:
+> Theorem t1: (forall x, ((exists z7, (and (and (and (_client z7) (exists z1, (and (and (_demonstration z1) True) (_at z7 z1)))) True) (x = z7))) -> (exists z4, (and (and (and (and (exists z3, (and (and (_system z3) True) (Rel z4 z3))) (_performance z4)) True) (_by x z4)) (_impress x))))) -> (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_demonstration z2) True) (_at _smith z2)) (exists z1, (and (and (_client z1) True) (_smith = z1))))))) -> (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (exists z1, (and (and (_system z1) True) (Rel z2 z1))) (_performance z2)) True) (_by _smith z2)) (_impress _smith))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^^^^^^^^^^^^^^^^^
+Error: No such goal.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _by is declared
+
+Coq < _client is declared
+
+Coq < _demonstration is declared
+
+Coq < _impress is declared
+
+Coq < _performance is declared
+
+Coq < _smith is declared
+
+Coq < _system is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+(exists z7 : Entity,
+((_client z7 /\
+(exists z1 : Entity, (_demonstration z1 /\ True) /\ _at z7 z1)) /\
+True) /\ x = z7) ->
+exists z4 : Entity,
+((((exists z3 : Entity, (_system z3 /\ True) /\ Rel z4 z3) /\
+_performance z4) /\ True) /\ _by x z4) /\
+_impress x) ->
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_demonstration z2 /\ True) /\ _at _smith z2) /\
+(exists z1 : Entity, (_client z1 /\ True) /\ _smith = z1))) ->
+~
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((((exists z1 : Entity, (_system z1 /\ True) /\ Rel z2 z1) /\
+_performance z2) /\ True) /\ _by _smith z2) /\
+_impress _smith))
+
+1 goal
+
+H : forall x : Entity,
+(exists z7 : Entity,
+((_client z7 /\
+(exists z1 : Entity, (_demonstration z1 /\ True) /\ _at z7 z1)) /\
+True) /\ x = z7) ->
+exists z4 : Entity,
+((((exists z3 : Entity, (_system z3 /\ True) /\ Rel z4 z3) /\
+_performance z4) /\ True) /\ _by x z4) /\
+_impress x
+H3 : True
+x0 : Entity
+H4 : _impress _smith
+H5 : _by _smith x0
+H6 : True
+H7 : _performance x0
+x1 : Entity
+H8 : Rel x0 x1
+H2 : _system x1
+H9, H11 : True
+x3 : Entity
+H13 : _at _smith x3
+H10 : _demonstration x3
+H14 : True
+H12 : _client _smith
+H16 : True
+============================
+False
+
+Toplevel input, characters 686-698:
+> Theorem t1: (forall x, ((exists z7, (and (and (and (_client z7) (exists z1, (and (and (_demonstration z1) True) (_at z7 z1)))) True) (x = z7))) -> (exists z4, (and (and (and (and (exists z3, (and (and (_system z3) True) (Rel z4 z3))) (_performance z4)) True) (_by x z4)) (_impress x))))) -> (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_demonstration z2) True) (_at _smith z2)) (exists z1, (and (and (_client z1) True) (_smith = z1))))))) -> (not (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (exists z1, (and (and (_system z1) True) (Rel z2 z1))) (_performance z2)) True) (_by _smith z2)) (_impress _smith)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 700-704:
+> Theorem t1: (forall x, ((exists z7, (and (and (and (_client z7) (exists z1, (and (and (_demonstration z1) True) (_at z7 z1)))) True) (x = z7))) -> (exists z4, (and (and (and (and (exists z3, (and (and (_system z3) True) (Rel z4 z3))) (_performance z4)) True) (_by x z4)) (_impress x))))) -> (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_demonstration z2) True) (_at _smith z2)) (exists z1, (and (and (_client z1) True) (_smith = z1))))))) -> (not (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (exists z1, (and (and (_system z1) True) (Rel z2 z1))) (_performance z2)) True) (_by _smith z2)) (_impress _smith)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _by is declared
+
+Coq < _client is declared
+
+Coq < _demonstration is declared
+
+Coq < _impress is declared
+
+Coq < _performance is declared
+
+Coq < _smith is declared
+
+Coq < _system is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+(exists z7 : Entity,
+((_client z7 /\
+(exists z1 : Entity, (_demonstration z1 /\ True) /\ _at z7 z1)) /\
+True) /\ x = z7) ->
+exists z4 : Entity,
+((((exists z3 : Entity, (_system z3 /\ True) /\ Rel z4 z3) /\
+_performance z4) /\ True) /\ _by x z4) /\
+_impress x) ->
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_demonstration z2 /\ True) /\ _at _smith z2) /\
+(exists z1 : Entity, (_client z1 /\ True) /\ _smith = z1))) ->
+exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((((exists z1 : Entity, (_system z1 /\ True) /\ Rel z2 z1) /\
+_performance z2) /\ True) /\ _by _smith z2) /\
+_impress _smith)
+
+No more goals.
+
+Toplevel input, characters 676-693:
+> Theorem t1: (forall x, ((exists z7, (and (and (and (_client z7) (exists z1, (and (and (_demonstration z1) True) (_at z7 z1)))) True) (x = z7))) -> (exists z4, (and (and (and (and (exists z3, (and (and (_system z3) True) (Rel z4 z3))) (_performance z4)) True) (_by x z4)) (_impress x))))) -> (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_demonstration z2) True) (_at _smith z2)) (exists z1, (and (and (_client z1) True) (_smith = z1))))))) -> (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (exists z1, (and (and (_system z1) True) (Rel z2 z1))) (_performance z2)) True) (_by _smith z2)) (_impress _smith))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^^^^^^^^^^^^^^^^^
+Error: No such goal.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _by is declared
+
+Coq < _client is declared
+
+Coq < _demonstration is declared
+
+Coq < _impress is declared
+
+Coq < _performance is declared
+
+Coq < _smith is declared
+
+Coq < _system is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+(exists z7 : Entity,
+((_client z7 /\
+(exists z1 : Entity, (_demonstration z1 /\ True) /\ _at z7 z1)) /\
+True) /\ x = z7) ->
+exists z4 : Entity,
+((((exists z3 : Entity, (_system z3 /\ True) /\ Rel z4 z3) /\
+_performance z4) /\ True) /\ _by x z4) /\
+_impress x) ->
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_demonstration z2 /\ True) /\ _at _smith z2) /\
+(exists z1 : Entity, (_client z1 /\ True) /\ _smith = z1))) ->
+~
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((((exists z1 : Entity, (_system z1 /\ True) /\ Rel z2 z1) /\
+_performance z2) /\ True) /\ _by _smith z2) /\
+_impress _smith))
+
+1 goal
+
+H : forall x : Entity,
+(exists z7 : Entity,
+((_client z7 /\
+(exists z1 : Entity, (_demonstration z1 /\ True) /\ _at z7 z1)) /\
+True) /\ x = z7) ->
+exists z4 : Entity,
+((((exists z3 : Entity, (_system z3 /\ True) /\ Rel z4 z3) /\
+_performance z4) /\ True) /\ _by x z4) /\
+_impress x
+H3 : True
+x0 : Entity
+H4 : _impress _smith
+H5 : _by _smith x0
+H6 : True
+H7 : _performance x0
+x1 : Entity
+H8 : Rel x0 x1
+H2 : _system x1
+H9, H11 : True
+x3 : Entity
+H13 : _at _smith x3
+H10 : _demonstration x3
+H14 : True
+H12 : _client _smith
+H16 : True
+============================
+False
+
+Toplevel input, characters 686-698:
+> Theorem t1: (forall x, ((exists z7, (and (and (and (_client z7) (exists z1, (and (and (_demonstration z1) True) (_at z7 z1)))) True) (x = z7))) -> (exists z4, (and (and (and (and (exists z3, (and (and (_system z3) True) (Rel z4 z3))) (_performance z4)) True) (_by x z4)) (_impress x))))) -> (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_demonstration z2) True) (_at _smith z2)) (exists z1, (and (and (_client z1) True) (_smith = z1))))))) -> (not (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (exists z1, (and (and (_system z1) True) (Rel z2 z1))) (_performance z2)) True) (_by _smith z2)) (_impress _smith)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 700-704:
+> Theorem t1: (forall x, ((exists z7, (and (and (and (_client z7) (exists z1, (and (and (_demonstration z1) True) (_at z7 z1)))) True) (x = z7))) -> (exists z4, (and (and (and (and (exists z3, (and (and (_system z3) True) (Rel z4 z3))) (_performance z4)) True) (_by x z4)) (_impress x))))) -> (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_demonstration z2) True) (_at _smith z2)) (exists z1, (and (and (_client z1) True) (_smith = z1))))))) -> (not (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (and (exists z1, (and (and (_system z1) True) (Rel z2 z1))) (_performance z2)) True) (_by _smith z2)) (_impress _smith)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

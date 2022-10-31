@@ -1,0 +1,156 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _commissioner is declared
+
+Coq < _home is declared
+
+Coq < _lot is declared
+
+Coq < _of is declared
+
+Coq < _spend is declared
+
+Coq < _three is declared
+
+Coq < _time is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((_three x /\ _commissioner x) /\ True) /\
+(exists z2 : Entity,
+((_home z2 /\ True) /\ _at x z2) /\
+(exists z1 : Entity, (_time z1 /\ True) /\ _spend x z1))) ->
+exists x : Entity,
+(((_three x /\ _commissioner x) /\ True) /\
+(exists z2 : Entity,
+((_lot z2 /\ (exists z1 : Entity, (_time z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _spend x z2)) /\
+(exists z3 : Entity, (_home z3 /\ True) /\ _at x z3)
+
+
+Toplevel input, characters 435-439:
+> Theorem t1: (exists x, (and (and (and (_three x) (_commissioner x)) True) (exists z2, (and (and (and (_home z2) True) (_at x z2)) (exists z1, (and (and (_time z1) True) (_spend x z1))))))) -> (exists x, (and (and (and (and (_three x) (_commissioner x)) True) (exists z2, (and (and (and (_lot z2) (exists z1, (and (and (_time z1) True) (_of z2 z1)))) True) (_spend x z2)))) (exists z3, (and (and (_home z3) True) (_at x z3))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _commissioner is declared
+
+Coq < _home is declared
+
+Coq < _lot is declared
+
+Coq < _of is declared
+
+Coq < _spend is declared
+
+Coq < _three is declared
+
+Coq < _time is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((_three x /\ _commissioner x) /\ True) /\
+(exists z2 : Entity,
+((_home z2 /\ True) /\ _at x z2) /\
+(exists z1 : Entity, (_time z1 /\ True) /\ _spend x z1))) ->
+~
+(exists x : Entity,
+(((_three x /\ _commissioner x) /\ True) /\
+(exists z2 : Entity,
+((_lot z2 /\ (exists z1 : Entity, (_time z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _spend x z2)) /\
+(exists z3 : Entity, (_home z3 /\ True) /\ _at x z3))
+
+
+Toplevel input, characters 441-445:
+> Theorem t1: (exists x, (and (and (and (_three x) (_commissioner x)) True) (exists z2, (and (and (and (_home z2) True) (_at x z2)) (exists z1, (and (and (_time z1) True) (_spend x z1))))))) -> (not (exists x, (and (and (and (and (_three x) (_commissioner x)) True) (exists z2, (and (and (and (_lot z2) (exists z1, (and (and (_time z1) True) (_of z2 z1)))) True) (_spend x z2)))) (exists z3, (and (and (_home z3) True) (_at x z3)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _commissioner is declared
+
+Coq < _home is declared
+
+Coq < _lot is declared
+
+Coq < _of is declared
+
+Coq < _spend is declared
+
+Coq < _three is declared
+
+Coq < _time is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((_three x /\ _commissioner x) /\ True) /\
+(exists z2 : Entity,
+((_home z2 /\ True) /\ _at x z2) /\
+(exists z1 : Entity, (_time z1 /\ True) /\ _spend x z1))) ->
+exists x : Entity,
+(((_three x /\ _commissioner x) /\ True) /\
+(exists z2 : Entity,
+((_lot z2 /\ (exists z1 : Entity, (_time z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _spend x z2)) /\
+(exists z3 : Entity, (_home z3 /\ True) /\ _at x z3)
+
+2 goals
+
+x : Entity
+H1 : True
+H : _three x
+H2 : _commissioner x
+x0 : Entity
+H4 : _at x x0
+H0 : _home x0
+H5 : True
+x1 : Entity
+H6 : _spend x x1
+H3 : _time x1
+H7 : True
+============================
+_lot x1
+
+goal 2 is:
+_of x1 x1
+
+Toplevel input, characters 451-463:
+> Theorem t1: (exists x, (and (and (and (_three x) (_commissioner x)) True) (exists z2, (and (and (and (_home z2) True) (_at x z2)) (exists z1, (and (and (_time z1) True) (_spend x z1))))))) -> (exists x, (and (and (and (and (_three x) (_commissioner x)) True) (exists z2, (and (and (and (_lot z2) (exists z1, (and (and (_time z1) True) (_of z2 z1)))) True) (_spend x z2)))) (exists z3, (and (and (_home z3) True) (_at x z3))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 465-469:
+> Theorem t1: (exists x, (and (and (and (_three x) (_commissioner x)) True) (exists z2, (and (and (and (_home z2) True) (_at x z2)) (exists z1, (and (and (_time z1) True) (_spend x z1))))))) -> (exists x, (and (and (and (and (_three x) (_commissioner x)) True) (exists z2, (and (and (and (_lot z2) (exists z1, (and (and (_time z1) True) (_of z2 z1)))) True) (_spend x z2)))) (exists z3, (and (and (_home z3) True) (_at x z3))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

@@ -1,0 +1,461 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _bill is declared
+
+Coq < _car is declared
+
+Coq < _john is declared
+
+Coq < _one is declared
+
+Coq < _own is declared
+
+Coq < _too is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _john /\ True) /\
+(exists z1 : Entity, (_car z1 /\ True) /\ _own _john z1)) ->
+exists x : Entity,
+((x = _bill /\ True) /\ _too _bill) /\
+(exists z1 : Entity, (_one z1 /\ True) /\ _own _bill z1)
+
+
+Toplevel input, characters 236-240:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z1, (and (and (_car z1) True) (_own _john z1))))) -> (exists x, (and (and (and (x = _bill) True) (_too _bill)) (exists z1, (and (and (_one z1) True) (_own _bill z1))))). nltac. Qed.
+>                                                                                                                                                                                                                                             ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _bill is declared
+
+Coq < _car is declared
+
+Coq < _john is declared
+
+Coq < _one is declared
+
+Coq < _own is declared
+
+Coq < _too is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _john /\ True) /\
+(exists z1 : Entity, (_car z1 /\ True) /\ _own _john z1)) ->
+~
+(exists x : Entity,
+((x = _bill /\ True) /\ _too _bill) /\
+(exists z1 : Entity, (_one z1 /\ True) /\ _own _bill z1))
+
+
+Toplevel input, characters 242-246:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z1, (and (and (_car z1) True) (_own _john z1))))) -> (not (exists x, (and (and (and (x = _bill) True) (_too _bill)) (exists z1, (and (and (_one z1) True) (_own _bill z1)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                   ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _bill is declared
+
+Coq < _car is declared
+
+Coq < _john is declared
+
+Coq < _one is declared
+
+Coq < _own is declared
+
+Coq < _too is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _john /\ True) /\
+(exists z1 : Entity, (_car z1 /\ True) /\ _own _john z1)) ->
+exists x : Entity,
+((x = _bill /\ True) /\ _too _bill) /\
+(exists z1 : Entity, (_one z1 /\ True) /\ _own _bill z1)
+
+3 focused goals (shelved: 1)
+
+H1 : True
+x0 : Entity
+H2 : _own _john x0
+H0 : _car x0
+H3 : True
+============================
+_too _bill
+
+goal 2 is:
+_one ?z1
+goal 3 is:
+_own _bill ?z1
+
+Toplevel input, characters 252-264:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z1, (and (and (_car z1) True) (_own _john z1))))) -> (exists x, (and (and (and (x = _bill) True) (_too _bill)) (exists z1, (and (and (_one z1) True) (_own _bill z1))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                             ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 266-270:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z1, (and (and (_car z1) True) (_own _john z1))))) -> (exists x, (and (and (and (x = _bill) True) (_too _bill)) (exists z1, (and (and (_one z1) True) (_own _bill z1))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                           ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _bill is declared
+
+Coq < _car is declared
+
+Coq < _john is declared
+
+Coq < _one is declared
+
+Coq < _own is declared
+
+Coq < _too is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _john /\ True) /\
+(exists z1 : Entity, (_car z1 /\ True) /\ _own _john z1)) ->
+exists x : Entity,
+((x = _bill /\ True) /\ _too _bill) /\
+(exists z1 : Entity, (_one z1 /\ True) /\ _own _bill z1)
+
+
+Toplevel input, characters 236-240:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z1, (and (and (_car z1) True) (_own _john z1))))) -> (exists x, (and (and (and (x = _bill) True) (_too _bill)) (exists z1, (and (and (_one z1) True) (_own _bill z1))))). nltac. Qed.
+>                                                                                                                                                                                                                                             ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _bill is declared
+
+Coq < _car is declared
+
+Coq < _john is declared
+
+Coq < _one is declared
+
+Coq < _own is declared
+
+Coq < _too is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _john /\ True) /\
+(exists z1 : Entity, (_car z1 /\ True) /\ _own _john z1)) ->
+~
+(exists x : Entity,
+((x = _bill /\ True) /\ _too _bill) /\
+(exists z1 : Entity, (_one z1 /\ True) /\ _own _bill z1))
+
+1 goal
+
+H2 : _too _bill
+H3 : True
+x0 : Entity
+H4 : _own _bill x0
+H1 : _one x0
+H5, H7 : True
+x2 : Entity
+H8 : _own _john x2
+H6 : _car x2
+H9 : True
+============================
+False
+
+Toplevel input, characters 258-270:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z1, (and (and (_car z1) True) (_own _john z1))))) -> (not (exists x, (and (and (and (x = _bill) True) (_too _bill)) (exists z1, (and (and (_one z1) True) (_own _bill z1)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                   ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 272-276:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z1, (and (and (_car z1) True) (_own _john z1))))) -> (not (exists x, (and (and (and (x = _bill) True) (_too _bill)) (exists z1, (and (and (_one z1) True) (_own _bill z1)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                 ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _bill is declared
+
+Coq < _car is declared
+
+Coq < _john is declared
+
+Coq < _one is declared
+
+Coq < _own is declared
+
+Coq < _too is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _john /\ True) /\
+(exists z1 : Entity, (_car z1 /\ True) /\ _own _john z1)) ->
+~
+(exists x : Entity,
+((x = _bill /\ True) /\ _too _bill) /\
+(exists z1 : Entity, (_one z1 /\ True) /\ _own _bill z1))
+
+
+Toplevel input, characters 242-246:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z1, (and (and (_car z1) True) (_own _john z1))))) -> (not (exists x, (and (and (and (x = _bill) True) (_too _bill)) (exists z1, (and (and (_one z1) True) (_own _bill z1)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                   ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _bill is declared
+
+Coq < _car is declared
+
+Coq < _john is declared
+
+Coq < _one is declared
+
+Coq < _own is declared
+
+Coq < _too is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _john /\ True) /\
+(exists z1 : Entity, (_car z1 /\ True) /\ _own _john z1)) ->
+exists x : Entity,
+((x = _bill /\ True) /\ _too _bill) /\
+(exists z1 : Entity, (_one z1 /\ True) /\ _own _bill z1)
+
+3 focused goals (shelved: 1)
+
+H1 : True
+x0 : Entity
+H2 : _own _john x0
+H0 : _car x0
+H3 : True
+============================
+_too _bill
+
+goal 2 is:
+_one ?z1
+goal 3 is:
+_own _bill ?z1
+
+Toplevel input, characters 252-264:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z1, (and (and (_car z1) True) (_own _john z1))))) -> (exists x, (and (and (and (x = _bill) True) (_too _bill)) (exists z1, (and (and (_one z1) True) (_own _bill z1))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                             ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 266-270:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z1, (and (and (_car z1) True) (_own _john z1))))) -> (exists x, (and (and (and (x = _bill) True) (_too _bill)) (exists z1, (and (and (_one z1) True) (_own _bill z1))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                           ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _bill is declared
+
+Coq < _car is declared
+
+Coq < _john is declared
+
+Coq < _one is declared
+
+Coq < _own is declared
+
+Coq < _too is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _john /\ True) /\
+(exists z1 : Entity, (_car z1 /\ True) /\ _own _john z1)) ->
+~
+(exists x : Entity,
+((x = _bill /\ True) /\ _too _bill) /\
+(exists z1 : Entity, (_one z1 /\ True) /\ _own _bill z1))
+
+1 goal
+
+H2 : _too _bill
+H3 : True
+x0 : Entity
+H4 : _own _bill x0
+H1 : _one x0
+H5, H7 : True
+x2 : Entity
+H8 : _own _john x2
+H6 : _car x2
+H9 : True
+============================
+False
+
+Toplevel input, characters 258-270:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z1, (and (and (_car z1) True) (_own _john z1))))) -> (not (exists x, (and (and (and (x = _bill) True) (_too _bill)) (exists z1, (and (and (_one z1) True) (_own _bill z1)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                   ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 272-276:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z1, (and (and (_car z1) True) (_own _john z1))))) -> (not (exists x, (and (and (and (x = _bill) True) (_too _bill)) (exists z1, (and (and (_one z1) True) (_own _bill z1)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                 ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _bill is declared
+
+Coq < _car is declared
+
+Coq < _john is declared
+
+Coq < _one is declared
+
+Coq < _own is declared
+
+Coq < _too is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _john /\ True) /\
+(exists z1 : Entity, (_car z1 /\ True) /\ _own _john z1)) ->
+exists x : Entity,
+((x = _bill /\ True) /\ _too _bill) /\
+(exists z1 : Entity, (_one z1 /\ True) /\ _own _bill z1)
+
+3 focused goals (shelved: 1)
+
+H1 : True
+x0 : Entity
+H2 : _own _john x0
+H0 : _car x0
+H3 : True
+============================
+_too _bill
+
+goal 2 is:
+_one ?z1
+goal 3 is:
+_own _bill ?z1
+
+Toplevel input, characters 252-264:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z1, (and (and (_car z1) True) (_own _john z1))))) -> (exists x, (and (and (and (x = _bill) True) (_too _bill)) (exists z1, (and (and (_one z1) True) (_own _bill z1))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                             ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 266-270:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z1, (and (and (_car z1) True) (_own _john z1))))) -> (exists x, (and (and (and (x = _bill) True) (_too _bill)) (exists z1, (and (and (_one z1) True) (_own _bill z1))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                           ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _bill is declared
+
+Coq < _car is declared
+
+Coq < _john is declared
+
+Coq < _one is declared
+
+Coq < _own is declared
+
+Coq < _too is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _john /\ True) /\
+(exists z1 : Entity, (_car z1 /\ True) /\ _own _john z1)) ->
+~
+(exists x : Entity,
+((x = _bill /\ True) /\ _too _bill) /\
+(exists z1 : Entity, (_one z1 /\ True) /\ _own _bill z1))
+
+1 goal
+
+H2 : _too _bill
+H3 : True
+x0 : Entity
+H4 : _own _bill x0
+H1 : _one x0
+H5, H7 : True
+x2 : Entity
+H8 : _own _john x2
+H6 : _car x2
+H9 : True
+============================
+False
+
+Toplevel input, characters 258-270:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z1, (and (and (_car z1) True) (_own _john z1))))) -> (not (exists x, (and (and (and (x = _bill) True) (_too _bill)) (exists z1, (and (and (_one z1) True) (_own _bill z1)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                   ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 272-276:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z1, (and (and (_car z1) True) (_own _john z1))))) -> (not (exists x, (and (and (and (x = _bill) True) (_too _bill)) (exists z1, (and (and (_one z1) True) (_own _bill z1)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                 ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

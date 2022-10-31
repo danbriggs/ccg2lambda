@@ -1,0 +1,362 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _bill is declared
+
+Coq < _do is declared
+
+Coq < _john is declared
+
+Coq < _mary is declared
+
+Coq < _speak is declared
+
+Coq < _to is declared
+
+Coq < Toplevel input, characters 86-93:
+> Theorem t1: (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (forall z2, ((_people z2) -> ((and (exists z1, (and (and (z1 = _john) True) (_do _john z2))) True) -> (_to _bill z2)))))) -> (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (exists z1, (and (and (z1 = _mary) True) (_to _bill _mary))))) -> (exists x, (and (and (and (x = _john) True) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))).
+>                                                                                       ^^^^^^^
+Error: The reference _people was not found in the current environment.
+
+Toplevel input, characters 447-452:
+> Theorem t1: (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (forall z2, ((_people z2) -> ((and (exists z1, (and (and (z1 = _john) True) (_do _john z2))) True) -> (_to _bill z2)))))) -> (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (exists z1, (and (and (z1 = _mary) True) (_to _bill _mary))))) -> (exists x, (and (and (and (x = _john) True) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 454-458:
+> Theorem t1: (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (forall z2, ((_people z2) -> ((and (exists z1, (and (and (z1 = _john) True) (_do _john z2))) True) -> (_to _bill z2)))))) -> (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (exists z1, (and (and (z1 = _mary) True) (_to _bill _mary))))) -> (exists x, (and (and (and (x = _john) True) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _bill is declared
+
+Coq < _do is declared
+
+Coq < _john is declared
+
+Coq < _mary is declared
+
+Coq < _speak is declared
+
+Coq < _to is declared
+
+Coq < Toplevel input, characters 86-93:
+> Theorem t1: (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (forall z2, ((_people z2) -> ((and (exists z1, (and (and (z1 = _john) True) (_do _john z2))) True) -> (_to _bill z2)))))) -> (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (exists z1, (and (and (z1 = _mary) True) (_to _bill _mary))))) -> (not (exists x, (and (and (and (x = _john) True) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary)))))).
+>                                                                                       ^^^^^^^
+Error: The reference _people was not found in the current environment.
+
+Toplevel input, characters 453-458:
+> Theorem t1: (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (forall z2, ((_people z2) -> ((and (exists z1, (and (and (z1 = _john) True) (_do _john z2))) True) -> (_to _bill z2)))))) -> (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (exists z1, (and (and (z1 = _mary) True) (_to _bill _mary))))) -> (not (exists x, (and (and (and (x = _john) True) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary)))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 460-464:
+> Theorem t1: (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (forall z2, ((_people z2) -> ((and (exists z1, (and (and (z1 = _john) True) (_do _john z2))) True) -> (_to _bill z2)))))) -> (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (exists z1, (and (and (z1 = _mary) True) (_to _bill _mary))))) -> (not (exists x, (and (and (and (x = _john) True) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _bill is declared
+
+Coq < _do is declared
+
+Coq < _john is declared
+
+Coq < _mary is declared
+
+Coq < _speak is declared
+
+Coq < _to is declared
+
+Coq < Toplevel input, characters 86-93:
+> Theorem t1: (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (forall z2, ((_people z2) -> ((and (exists z1, (and (and (z1 = _john) True) (_do _john z2))) True) -> (_to _bill z2)))))) -> (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (exists z1, (and (and (z1 = _mary) True) (_to _bill _mary))))) -> (exists x, (and (and (and (x = _john) True) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))).
+>                                                                                       ^^^^^^^
+Error: The reference _people was not found in the current environment.
+
+Toplevel input, characters 447-453:
+> Theorem t1: (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (forall z2, ((_people z2) -> ((and (exists z1, (and (and (z1 = _john) True) (_do _john z2))) True) -> (_to _bill z2)))))) -> (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (exists z1, (and (and (z1 = _mary) True) (_to _bill _mary))))) -> (exists x, (and (and (and (x = _john) True) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 466-469:
+> Theorem t1: (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (forall z2, ((_people z2) -> ((and (exists z1, (and (and (z1 = _john) True) (_do _john z2))) True) -> (_to _bill z2)))))) -> (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (exists z1, (and (and (z1 = _mary) True) (_to _bill _mary))))) -> (exists x, (and (and (and (x = _john) True) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 484-488:
+> Theorem t1: (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (forall z2, ((_people z2) -> ((and (exists z1, (and (and (z1 = _john) True) (_do _john z2))) True) -> (_to _bill z2)))))) -> (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (exists z1, (and (and (z1 = _mary) True) (_to _bill _mary))))) -> (exists x, (and (and (and (x = _john) True) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _bill is declared
+
+Coq < _do is declared
+
+Coq < _john is declared
+
+Coq < _mary is declared
+
+Coq < _speak is declared
+
+Coq < _to is declared
+
+Coq < Toplevel input, characters 86-93:
+> Theorem t1: (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (forall z2, ((_people z2) -> ((and (exists z1, (and (and (z1 = _john) True) (_do _john z2))) True) -> (_to _bill z2)))))) -> (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (exists z1, (and (and (z1 = _mary) True) (_to _bill _mary))))) -> (exists x, (and (and (and (x = _john) True) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))).
+>                                                                                       ^^^^^^^
+Error: The reference _people was not found in the current environment.
+
+Toplevel input, characters 447-452:
+> Theorem t1: (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (forall z2, ((_people z2) -> ((and (exists z1, (and (and (z1 = _john) True) (_do _john z2))) True) -> (_to _bill z2)))))) -> (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (exists z1, (and (and (z1 = _mary) True) (_to _bill _mary))))) -> (exists x, (and (and (and (x = _john) True) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 454-458:
+> Theorem t1: (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (forall z2, ((_people z2) -> ((and (exists z1, (and (and (z1 = _john) True) (_do _john z2))) True) -> (_to _bill z2)))))) -> (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (exists z1, (and (and (z1 = _mary) True) (_to _bill _mary))))) -> (exists x, (and (and (and (x = _john) True) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _bill is declared
+
+Coq < _do is declared
+
+Coq < _john is declared
+
+Coq < _mary is declared
+
+Coq < _speak is declared
+
+Coq < _to is declared
+
+Coq < Toplevel input, characters 86-93:
+> Theorem t1: (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (forall z2, ((_people z2) -> ((and (exists z1, (and (and (z1 = _john) True) (_do _john z2))) True) -> (_to _bill z2)))))) -> (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (exists z1, (and (and (z1 = _mary) True) (_to _bill _mary))))) -> (not (exists x, (and (and (and (x = _john) True) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary)))))).
+>                                                                                       ^^^^^^^
+Error: The reference _people was not found in the current environment.
+
+Toplevel input, characters 453-459:
+> Theorem t1: (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (forall z2, ((_people z2) -> ((and (exists z1, (and (and (z1 = _john) True) (_do _john z2))) True) -> (_to _bill z2)))))) -> (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (exists z1, (and (and (z1 = _mary) True) (_to _bill _mary))))) -> (not (exists x, (and (and (and (x = _john) True) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary)))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 472-475:
+> Theorem t1: (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (forall z2, ((_people z2) -> ((and (exists z1, (and (and (z1 = _john) True) (_do _john z2))) True) -> (_to _bill z2)))))) -> (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (exists z1, (and (and (z1 = _mary) True) (_to _bill _mary))))) -> (not (exists x, (and (and (and (x = _john) True) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 490-494:
+> Theorem t1: (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (forall z2, ((_people z2) -> ((and (exists z1, (and (and (z1 = _john) True) (_do _john z2))) True) -> (_to _bill z2)))))) -> (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (exists z1, (and (and (z1 = _mary) True) (_to _bill _mary))))) -> (not (exists x, (and (and (and (x = _john) True) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _bill is declared
+
+Coq < _do is declared
+
+Coq < _john is declared
+
+Coq < _mary is declared
+
+Coq < _speak is declared
+
+Coq < _to is declared
+
+Coq < Toplevel input, characters 86-93:
+> Theorem t1: (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (forall z2, ((_people z2) -> ((and (exists z1, (and (and (z1 = _john) True) (_do _john z2))) True) -> (_to _bill z2)))))) -> (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (exists z1, (and (and (z1 = _mary) True) (_to _bill _mary))))) -> (not (exists x, (and (and (and (x = _john) True) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary)))))).
+>                                                                                       ^^^^^^^
+Error: The reference _people was not found in the current environment.
+
+Toplevel input, characters 453-458:
+> Theorem t1: (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (forall z2, ((_people z2) -> ((and (exists z1, (and (and (z1 = _john) True) (_do _john z2))) True) -> (_to _bill z2)))))) -> (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (exists z1, (and (and (z1 = _mary) True) (_to _bill _mary))))) -> (not (exists x, (and (and (and (x = _john) True) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary)))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 460-464:
+> Theorem t1: (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (forall z2, ((_people z2) -> ((and (exists z1, (and (and (z1 = _john) True) (_do _john z2))) True) -> (_to _bill z2)))))) -> (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (exists z1, (and (and (z1 = _mary) True) (_to _bill _mary))))) -> (not (exists x, (and (and (and (x = _john) True) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _bill is declared
+
+Coq < _do is declared
+
+Coq < _john is declared
+
+Coq < _mary is declared
+
+Coq < _speak is declared
+
+Coq < _to is declared
+
+Coq < Toplevel input, characters 86-93:
+> Theorem t1: (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (forall z2, ((_people z2) -> ((and (exists z1, (and (and (z1 = _john) True) (_do _john z2))) True) -> (_to _bill z2)))))) -> (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (exists z1, (and (and (z1 = _mary) True) (_to _bill _mary))))) -> (exists x, (and (and (and (x = _john) True) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))).
+>                                                                                       ^^^^^^^
+Error: The reference _people was not found in the current environment.
+
+Toplevel input, characters 447-453:
+> Theorem t1: (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (forall z2, ((_people z2) -> ((and (exists z1, (and (and (z1 = _john) True) (_do _john z2))) True) -> (_to _bill z2)))))) -> (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (exists z1, (and (and (z1 = _mary) True) (_to _bill _mary))))) -> (exists x, (and (and (and (x = _john) True) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 466-469:
+> Theorem t1: (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (forall z2, ((_people z2) -> ((and (exists z1, (and (and (z1 = _john) True) (_do _john z2))) True) -> (_to _bill z2)))))) -> (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (exists z1, (and (and (z1 = _mary) True) (_to _bill _mary))))) -> (exists x, (and (and (and (x = _john) True) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 484-488:
+> Theorem t1: (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (forall z2, ((_people z2) -> ((and (exists z1, (and (and (z1 = _john) True) (_do _john z2))) True) -> (_to _bill z2)))))) -> (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (exists z1, (and (and (z1 = _mary) True) (_to _bill _mary))))) -> (exists x, (and (and (and (x = _john) True) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _bill is declared
+
+Coq < _do is declared
+
+Coq < _john is declared
+
+Coq < _mary is declared
+
+Coq < _speak is declared
+
+Coq < _to is declared
+
+Coq < Toplevel input, characters 86-93:
+> Theorem t1: (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (forall z2, ((_people z2) -> ((and (exists z1, (and (and (z1 = _john) True) (_do _john z2))) True) -> (_to _bill z2)))))) -> (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (exists z1, (and (and (z1 = _mary) True) (_to _bill _mary))))) -> (not (exists x, (and (and (and (x = _john) True) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary)))))).
+>                                                                                       ^^^^^^^
+Error: The reference _people was not found in the current environment.
+
+Toplevel input, characters 453-459:
+> Theorem t1: (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (forall z2, ((_people z2) -> ((and (exists z1, (and (and (z1 = _john) True) (_do _john z2))) True) -> (_to _bill z2)))))) -> (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (exists z1, (and (and (z1 = _mary) True) (_to _bill _mary))))) -> (not (exists x, (and (and (and (x = _john) True) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary)))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 472-475:
+> Theorem t1: (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (forall z2, ((_people z2) -> ((and (exists z1, (and (and (z1 = _john) True) (_do _john z2))) True) -> (_to _bill z2)))))) -> (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (exists z1, (and (and (z1 = _mary) True) (_to _bill _mary))))) -> (not (exists x, (and (and (and (x = _john) True) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 490-494:
+> Theorem t1: (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (forall z2, ((_people z2) -> ((and (exists z1, (and (and (z1 = _john) True) (_do _john z2))) True) -> (_to _bill z2)))))) -> (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (exists z1, (and (and (z1 = _mary) True) (_to _bill _mary))))) -> (not (exists x, (and (and (and (x = _john) True) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _bill is declared
+
+Coq < _do is declared
+
+Coq < _john is declared
+
+Coq < _mary is declared
+
+Coq < _speak is declared
+
+Coq < _to is declared
+
+Coq < Toplevel input, characters 86-93:
+> Theorem t1: (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (forall z2, ((_people z2) -> ((and (exists z1, (and (and (z1 = _john) True) (_do _john z2))) True) -> (_to _bill z2)))))) -> (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (exists z1, (and (and (z1 = _mary) True) (_to _bill _mary))))) -> (exists x, (and (and (and (x = _john) True) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))).
+>                                                                                       ^^^^^^^
+Error: The reference _people was not found in the current environment.
+
+Toplevel input, characters 447-453:
+> Theorem t1: (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (forall z2, ((_people z2) -> ((and (exists z1, (and (and (z1 = _john) True) (_do _john z2))) True) -> (_to _bill z2)))))) -> (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (exists z1, (and (and (z1 = _mary) True) (_to _bill _mary))))) -> (exists x, (and (and (and (x = _john) True) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 466-469:
+> Theorem t1: (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (forall z2, ((_people z2) -> ((and (exists z1, (and (and (z1 = _john) True) (_do _john z2))) True) -> (_to _bill z2)))))) -> (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (exists z1, (and (and (z1 = _mary) True) (_to _bill _mary))))) -> (exists x, (and (and (and (x = _john) True) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 484-488:
+> Theorem t1: (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (forall z2, ((_people z2) -> ((and (exists z1, (and (and (z1 = _john) True) (_do _john z2))) True) -> (_to _bill z2)))))) -> (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (exists z1, (and (and (z1 = _mary) True) (_to _bill _mary))))) -> (exists x, (and (and (and (x = _john) True) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _bill is declared
+
+Coq < _do is declared
+
+Coq < _john is declared
+
+Coq < _mary is declared
+
+Coq < _speak is declared
+
+Coq < _to is declared
+
+Coq < Toplevel input, characters 86-93:
+> Theorem t1: (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (forall z2, ((_people z2) -> ((and (exists z1, (and (and (z1 = _john) True) (_do _john z2))) True) -> (_to _bill z2)))))) -> (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (exists z1, (and (and (z1 = _mary) True) (_to _bill _mary))))) -> (not (exists x, (and (and (and (x = _john) True) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary)))))).
+>                                                                                       ^^^^^^^
+Error: The reference _people was not found in the current environment.
+
+Toplevel input, characters 453-459:
+> Theorem t1: (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (forall z2, ((_people z2) -> ((and (exists z1, (and (and (z1 = _john) True) (_do _john z2))) True) -> (_to _bill z2)))))) -> (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (exists z1, (and (and (z1 = _mary) True) (_to _bill _mary))))) -> (not (exists x, (and (and (and (x = _john) True) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary)))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 472-475:
+> Theorem t1: (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (forall z2, ((_people z2) -> ((and (exists z1, (and (and (z1 = _john) True) (_do _john z2))) True) -> (_to _bill z2)))))) -> (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (exists z1, (and (and (z1 = _mary) True) (_to _bill _mary))))) -> (not (exists x, (and (and (and (x = _john) True) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 490-494:
+> Theorem t1: (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (forall z2, ((_people z2) -> ((and (exists z1, (and (and (z1 = _john) True) (_do _john z2))) True) -> (_to _bill z2)))))) -> (exists x, (and (and (and (x = _bill) True) (_speak _bill)) (exists z1, (and (and (z1 = _mary) True) (_to _bill _mary))))) -> (not (exists x, (and (and (and (x = _john) True) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+unknown
+

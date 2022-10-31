@@ -1,0 +1,127 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _animal is declared
+
+Coq < _dumbo is declared
+
+Coq < _elephant is declared
+
+Coq < _large is declared
+
+Coq < _small is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_elephant x ->
+True -> exists z1 : Entity, ((_large z1 /\ _animal z1) /\ True) /\ x = z1) ->
+(exists x : Entity,
+(x = _dumbo /\ True) /\
+(exists z1 : Entity,
+((_small z1 /\ _elephant z1) /\ True) /\ _dumbo = z1)) ->
+exists x : Entity,
+(x = _dumbo /\ True) /\
+(exists z1 : Entity, ((_small z1 /\ _animal z1) /\ True) /\ _dumbo = z1)
+
+
+Toplevel input, characters 373-377:
+> Theorem t1: (forall x, ((_elephant x) -> (True -> (exists z1, (and (and (and (_large z1) (_animal z1)) True) (x = z1)))))) -> (exists x, (and (and (x = _dumbo) True) (exists z1, (and (and (and (_small z1) (_elephant z1)) True) (_dumbo = z1))))) -> (exists x, (and (and (x = _dumbo) True) (exists z1, (and (and (and (_small z1) (_animal z1)) True) (_dumbo = z1))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                      ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _animal is declared
+
+Coq < _dumbo is declared
+
+Coq < _elephant is declared
+
+Coq < _large is declared
+
+Coq < _small is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_elephant x ->
+True -> exists z1 : Entity, ((_large z1 /\ _animal z1) /\ True) /\ x = z1) ->
+(exists x : Entity,
+(x = _dumbo /\ True) /\
+(exists z1 : Entity,
+((_small z1 /\ _elephant z1) /\ True) /\ _dumbo = z1)) ->
+~
+(exists x : Entity,
+(x = _dumbo /\ True) /\
+(exists z1 : Entity, ((_small z1 /\ _animal z1) /\ True) /\ _dumbo = z1))
+
+
+Toplevel input, characters 379-383:
+> Theorem t1: (forall x, ((_elephant x) -> (True -> (exists z1, (and (and (and (_large z1) (_animal z1)) True) (x = z1)))))) -> (exists x, (and (and (x = _dumbo) True) (exists z1, (and (and (and (_small z1) (_elephant z1)) True) (_dumbo = z1))))) -> (not (exists x, (and (and (x = _dumbo) True) (exists z1, (and (and (and (_small z1) (_animal z1)) True) (_dumbo = z1)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                            ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _animal is declared
+
+Coq < _dumbo is declared
+
+Coq < _elephant is declared
+
+Coq < _large is declared
+
+Coq < _small is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_elephant x ->
+True -> exists z1 : Entity, ((_large z1 /\ _animal z1) /\ True) /\ x = z1) ->
+(exists x : Entity,
+(x = _dumbo /\ True) /\
+(exists z1 : Entity,
+((_small z1 /\ _elephant z1) /\ True) /\ _dumbo = z1)) ->
+exists x : Entity,
+(x = _dumbo /\ True) /\
+(exists z1 : Entity, ((_small z1 /\ _animal z1) /\ True) /\ _dumbo = z1)
+
+1 goal
+
+H : forall x : Entity,
+_elephant x ->
+True ->
+exists z1 : Entity, ((_large z1 /\ _animal z1) /\ True) /\ x = z1
+H2, H4 : True
+H5 : _elephant _dumbo
+H1 : _small _dumbo
+============================
+_animal _dumbo
+
+Toplevel input, characters 389-401:
+> Theorem t1: (forall x, ((_elephant x) -> (True -> (exists z1, (and (and (and (_large z1) (_animal z1)) True) (x = z1)))))) -> (exists x, (and (and (x = _dumbo) True) (exists z1, (and (and (and (_small z1) (_elephant z1)) True) (_dumbo = z1))))) -> (exists x, (and (and (x = _dumbo) True) (exists z1, (and (and (and (_small z1) (_animal z1)) True) (_dumbo = z1))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 403-407:
+> Theorem t1: (forall x, ((_elephant x) -> (True -> (exists z1, (and (and (and (_large z1) (_animal z1)) True) (x = z1)))))) -> (exists x, (and (and (x = _dumbo) True) (exists z1, (and (and (and (_small z1) (_elephant z1)) True) (_dumbo = z1))))) -> (exists x, (and (and (x = _dumbo) True) (exists z1, (and (and (and (_small z1) (_animal z1)) True) (_dumbo = z1))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

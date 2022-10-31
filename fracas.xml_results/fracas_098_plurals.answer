@@ -1,0 +1,482 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < Toplevel input, characters 10-11:
+> Parameter _# : Entity -> Prop.
+>           ^
+Error:
+Syntax error: [inline] expected after [assumption_token] (in [gallina]).
+
+Coq < _32_dash_985 is declared
+
+Coq < _blame is declared
+
+Coq < _bug is declared
+
+Coq < _failure is declared
+
+Coq < _fault is declared
+
+Coq < _for is declared
+
+Coq < _known is declared
+
+Coq < _software is declared
+
+Coq < _system is declared
+
+Coq < Toplevel input, characters 209-210:
+> Theorem t1: (exists x, (and (and (and (and (_software x) (_fault x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))) -> (exists x, (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (exists z1, (and (and (and (and (_known z1) (_software z1)) (_fault z1)) True) (x = z1))))) -> (exists x, (and (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))).
+>                                                                                                                                                                                                                  ^
+Error: Syntax error: ',' or ')' expected after [term level 200] (in [term]).
+
+Toplevel input, characters 501-506:
+> Theorem t1: (exists x, (and (and (and (and (_software x) (_fault x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))) -> (exists x, (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (exists z1, (and (and (and (and (_known z1) (_software z1)) (_fault z1)) True) (x = z1))))) -> (exists x, (and (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 508-512:
+> Theorem t1: (exists x, (and (and (and (and (_software x) (_fault x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))) -> (exists x, (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (exists z1, (and (and (and (and (_known z1) (_software z1)) (_fault z1)) True) (x = z1))))) -> (exists x, (and (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < Toplevel input, characters 10-11:
+> Parameter _# : Entity -> Prop.
+>           ^
+Error:
+Syntax error: [inline] expected after [assumption_token] (in [gallina]).
+
+Coq < _32_dash_985 is declared
+
+Coq < _blame is declared
+
+Coq < _bug is declared
+
+Coq < _failure is declared
+
+Coq < _fault is declared
+
+Coq < _for is declared
+
+Coq < _known is declared
+
+Coq < _software is declared
+
+Coq < _system is declared
+
+Coq < Toplevel input, characters 209-210:
+> Theorem t1: (exists x, (and (and (and (and (_software x) (_fault x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))) -> (exists x, (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (exists z1, (and (and (and (and (_known z1) (_software z1)) (_fault z1)) True) (x = z1))))) -> (not (exists x, (and (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1)))))).
+>                                                                                                                                                                                                                  ^
+Error: Syntax error: ',' or ')' expected after [term level 200] (in [term]).
+
+Toplevel input, characters 507-512:
+> Theorem t1: (exists x, (and (and (and (and (_software x) (_fault x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))) -> (exists x, (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (exists z1, (and (and (and (and (_known z1) (_software z1)) (_fault z1)) True) (x = z1))))) -> (not (exists x, (and (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1)))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 514-518:
+> Theorem t1: (exists x, (and (and (and (and (_software x) (_fault x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))) -> (exists x, (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (exists z1, (and (and (and (and (_known z1) (_software z1)) (_fault z1)) True) (x = z1))))) -> (not (exists x, (and (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < Toplevel input, characters 10-11:
+> Parameter _# : Entity -> Prop.
+>           ^
+Error:
+Syntax error: [inline] expected after [assumption_token] (in [gallina]).
+
+Coq < _32_dash_985 is declared
+
+Coq < _blame is declared
+
+Coq < _bug is declared
+
+Coq < _failure is declared
+
+Coq < _fault is declared
+
+Coq < _for is declared
+
+Coq < _known is declared
+
+Coq < _software is declared
+
+Coq < _system is declared
+
+Coq < Toplevel input, characters 209-210:
+> Theorem t1: (exists x, (and (and (and (and (_software x) (_fault x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))) -> (exists x, (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (exists z1, (and (and (and (and (_known z1) (_software z1)) (_fault z1)) True) (x = z1))))) -> (exists x, (and (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))).
+>                                                                                                                                                                                                                  ^
+Error: Syntax error: ',' or ')' expected after [term level 200] (in [term]).
+
+Toplevel input, characters 501-507:
+> Theorem t1: (exists x, (and (and (and (and (_software x) (_fault x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))) -> (exists x, (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (exists z1, (and (and (and (and (_known z1) (_software z1)) (_fault z1)) True) (x = z1))))) -> (exists x, (and (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 520-523:
+> Theorem t1: (exists x, (and (and (and (and (_software x) (_fault x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))) -> (exists x, (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (exists z1, (and (and (and (and (_known z1) (_software z1)) (_fault z1)) True) (x = z1))))) -> (exists x, (and (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 538-542:
+> Theorem t1: (exists x, (and (and (and (and (_software x) (_fault x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))) -> (exists x, (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (exists z1, (and (and (and (and (_known z1) (_software z1)) (_fault z1)) True) (x = z1))))) -> (exists x, (and (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < Toplevel input, characters 10-11:
+> Parameter _# : Entity -> Prop.
+>           ^
+Error:
+Syntax error: [inline] expected after [assumption_token] (in [gallina]).
+
+Coq < _32_dash_985 is declared
+
+Coq < _blame is declared
+
+Coq < _bug is declared
+
+Coq < _failure is declared
+
+Coq < _fault is declared
+
+Coq < _for is declared
+
+Coq < _known is declared
+
+Coq < _software is declared
+
+Coq < _system is declared
+
+Coq < Toplevel input, characters 209-210:
+> Theorem t1: (exists x, (and (and (and (and (_software x) (_fault x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))) -> (exists x, (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (exists z1, (and (and (and (and (_known z1) (_software z1)) (_fault z1)) True) (x = z1))))) -> (exists x, (and (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))).
+>                                                                                                                                                                                                                  ^
+Error: Syntax error: ',' or ')' expected after [term level 200] (in [term]).
+
+Toplevel input, characters 501-506:
+> Theorem t1: (exists x, (and (and (and (and (_software x) (_fault x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))) -> (exists x, (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (exists z1, (and (and (and (and (_known z1) (_software z1)) (_fault z1)) True) (x = z1))))) -> (exists x, (and (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 508-512:
+> Theorem t1: (exists x, (and (and (and (and (_software x) (_fault x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))) -> (exists x, (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (exists z1, (and (and (and (and (_known z1) (_software z1)) (_fault z1)) True) (x = z1))))) -> (exists x, (and (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < Toplevel input, characters 10-11:
+> Parameter _# : Entity -> Prop.
+>           ^
+Error:
+Syntax error: [inline] expected after [assumption_token] (in [gallina]).
+
+Coq < _32_dash_985 is declared
+
+Coq < _blame is declared
+
+Coq < _bug is declared
+
+Coq < _failure is declared
+
+Coq < _fault is declared
+
+Coq < _for is declared
+
+Coq < _known is declared
+
+Coq < _software is declared
+
+Coq < _system is declared
+
+Coq < Toplevel input, characters 209-210:
+> Theorem t1: (exists x, (and (and (and (and (_software x) (_fault x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))) -> (exists x, (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (exists z1, (and (and (and (and (_known z1) (_software z1)) (_fault z1)) True) (x = z1))))) -> (not (exists x, (and (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1)))))).
+>                                                                                                                                                                                                                  ^
+Error: Syntax error: ',' or ')' expected after [term level 200] (in [term]).
+
+Toplevel input, characters 507-513:
+> Theorem t1: (exists x, (and (and (and (and (_software x) (_fault x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))) -> (exists x, (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (exists z1, (and (and (and (and (_known z1) (_software z1)) (_fault z1)) True) (x = z1))))) -> (not (exists x, (and (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1)))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 526-529:
+> Theorem t1: (exists x, (and (and (and (and (_software x) (_fault x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))) -> (exists x, (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (exists z1, (and (and (and (and (_known z1) (_software z1)) (_fault z1)) True) (x = z1))))) -> (not (exists x, (and (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 544-548:
+> Theorem t1: (exists x, (and (and (and (and (_software x) (_fault x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))) -> (exists x, (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (exists z1, (and (and (and (and (_known z1) (_software z1)) (_fault z1)) True) (x = z1))))) -> (not (exists x, (and (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < Toplevel input, characters 10-11:
+> Parameter _# : Entity -> Prop.
+>           ^
+Error:
+Syntax error: [inline] expected after [assumption_token] (in [gallina]).
+
+Coq < _32_dash_985 is declared
+
+Coq < _blame is declared
+
+Coq < _bug is declared
+
+Coq < _failure is declared
+
+Coq < _fault is declared
+
+Coq < _for is declared
+
+Coq < _known is declared
+
+Coq < _software is declared
+
+Coq < _system is declared
+
+Coq < Toplevel input, characters 209-210:
+> Theorem t1: (exists x, (and (and (and (and (_software x) (_fault x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))) -> (exists x, (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (exists z1, (and (and (and (and (_known z1) (_software z1)) (_fault z1)) True) (x = z1))))) -> (not (exists x, (and (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1)))))).
+>                                                                                                                                                                                                                  ^
+Error: Syntax error: ',' or ')' expected after [term level 200] (in [term]).
+
+Toplevel input, characters 507-512:
+> Theorem t1: (exists x, (and (and (and (and (_software x) (_fault x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))) -> (exists x, (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (exists z1, (and (and (and (and (_known z1) (_software z1)) (_fault z1)) True) (x = z1))))) -> (not (exists x, (and (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1)))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 514-518:
+> Theorem t1: (exists x, (and (and (and (and (_software x) (_fault x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))) -> (exists x, (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (exists z1, (and (and (and (and (_known z1) (_software z1)) (_fault z1)) True) (x = z1))))) -> (not (exists x, (and (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < Toplevel input, characters 10-11:
+> Parameter _# : Entity -> Prop.
+>           ^
+Error:
+Syntax error: [inline] expected after [assumption_token] (in [gallina]).
+
+Coq < _32_dash_985 is declared
+
+Coq < _blame is declared
+
+Coq < _bug is declared
+
+Coq < _failure is declared
+
+Coq < _fault is declared
+
+Coq < _for is declared
+
+Coq < _known is declared
+
+Coq < _software is declared
+
+Coq < _system is declared
+
+Coq < Toplevel input, characters 209-210:
+> Theorem t1: (exists x, (and (and (and (and (_software x) (_fault x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))) -> (exists x, (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (exists z1, (and (and (and (and (_known z1) (_software z1)) (_fault z1)) True) (x = z1))))) -> (exists x, (and (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))).
+>                                                                                                                                                                                                                  ^
+Error: Syntax error: ',' or ')' expected after [term level 200] (in [term]).
+
+Toplevel input, characters 501-507:
+> Theorem t1: (exists x, (and (and (and (and (_software x) (_fault x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))) -> (exists x, (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (exists z1, (and (and (and (and (_known z1) (_software z1)) (_fault z1)) True) (x = z1))))) -> (exists x, (and (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 520-523:
+> Theorem t1: (exists x, (and (and (and (and (_software x) (_fault x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))) -> (exists x, (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (exists z1, (and (and (and (and (_known z1) (_software z1)) (_fault z1)) True) (x = z1))))) -> (exists x, (and (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 538-542:
+> Theorem t1: (exists x, (and (and (and (and (_software x) (_fault x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))) -> (exists x, (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (exists z1, (and (and (and (and (_known z1) (_software z1)) (_fault z1)) True) (x = z1))))) -> (exists x, (and (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < Toplevel input, characters 10-11:
+> Parameter _# : Entity -> Prop.
+>           ^
+Error:
+Syntax error: [inline] expected after [assumption_token] (in [gallina]).
+
+Coq < _32_dash_985 is declared
+
+Coq < _blame is declared
+
+Coq < _bug is declared
+
+Coq < _failure is declared
+
+Coq < _fault is declared
+
+Coq < _for is declared
+
+Coq < _known is declared
+
+Coq < _software is declared
+
+Coq < _system is declared
+
+Coq < Toplevel input, characters 209-210:
+> Theorem t1: (exists x, (and (and (and (and (_software x) (_fault x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))) -> (exists x, (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (exists z1, (and (and (and (and (_known z1) (_software z1)) (_fault z1)) True) (x = z1))))) -> (not (exists x, (and (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1)))))).
+>                                                                                                                                                                                                                  ^
+Error: Syntax error: ',' or ')' expected after [term level 200] (in [term]).
+
+Toplevel input, characters 507-513:
+> Theorem t1: (exists x, (and (and (and (and (_software x) (_fault x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))) -> (exists x, (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (exists z1, (and (and (and (and (_known z1) (_software z1)) (_fault z1)) True) (x = z1))))) -> (not (exists x, (and (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1)))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 526-529:
+> Theorem t1: (exists x, (and (and (and (and (_software x) (_fault x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))) -> (exists x, (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (exists z1, (and (and (and (and (_known z1) (_software z1)) (_fault z1)) True) (x = z1))))) -> (not (exists x, (and (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 544-548:
+> Theorem t1: (exists x, (and (and (and (and (_software x) (_fault x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))) -> (exists x, (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (exists z1, (and (and (and (and (_known z1) (_software z1)) (_fault z1)) True) (x = z1))))) -> (not (exists x, (and (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < Toplevel input, characters 10-11:
+> Parameter _# : Entity -> Prop.
+>           ^
+Error:
+Syntax error: [inline] expected after [assumption_token] (in [gallina]).
+
+Coq < _32_dash_985 is declared
+
+Coq < _blame is declared
+
+Coq < _bug is declared
+
+Coq < _failure is declared
+
+Coq < _fault is declared
+
+Coq < _for is declared
+
+Coq < _known is declared
+
+Coq < _software is declared
+
+Coq < _system is declared
+
+Coq < Toplevel input, characters 209-210:
+> Theorem t1: (exists x, (and (and (and (and (_software x) (_fault x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))) -> (exists x, (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (exists z1, (and (and (and (and (_known z1) (_software z1)) (_fault z1)) True) (x = z1))))) -> (exists x, (and (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))).
+>                                                                                                                                                                                                                  ^
+Error: Syntax error: ',' or ')' expected after [term level 200] (in [term]).
+
+Toplevel input, characters 501-507:
+> Theorem t1: (exists x, (and (and (and (and (_software x) (_fault x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))) -> (exists x, (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (exists z1, (and (and (and (and (_known z1) (_software z1)) (_fault z1)) True) (x = z1))))) -> (exists x, (and (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 520-523:
+> Theorem t1: (exists x, (and (and (and (and (_software x) (_fault x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))) -> (exists x, (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (exists z1, (and (and (and (and (_known z1) (_software z1)) (_fault z1)) True) (x = z1))))) -> (exists x, (and (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 538-542:
+> Theorem t1: (exists x, (and (and (and (and (_software x) (_fault x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))) -> (exists x, (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (exists z1, (and (and (and (and (_known z1) (_software z1)) (_fault z1)) True) (x = z1))))) -> (exists x, (and (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < Toplevel input, characters 10-11:
+> Parameter _# : Entity -> Prop.
+>           ^
+Error:
+Syntax error: [inline] expected after [assumption_token] (in [gallina]).
+
+Coq < _32_dash_985 is declared
+
+Coq < _blame is declared
+
+Coq < _bug is declared
+
+Coq < _failure is declared
+
+Coq < _fault is declared
+
+Coq < _for is declared
+
+Coq < _known is declared
+
+Coq < _software is declared
+
+Coq < _system is declared
+
+Coq < Toplevel input, characters 209-210:
+> Theorem t1: (exists x, (and (and (and (and (_software x) (_fault x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))) -> (exists x, (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (exists z1, (and (and (and (and (_known z1) (_software z1)) (_fault z1)) True) (x = z1))))) -> (not (exists x, (and (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1)))))).
+>                                                                                                                                                                                                                  ^
+Error: Syntax error: ',' or ')' expected after [term level 200] (in [term]).
+
+Toplevel input, characters 507-513:
+> Theorem t1: (exists x, (and (and (and (and (_software x) (_fault x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))) -> (exists x, (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (exists z1, (and (and (and (and (_known z1) (_software z1)) (_fault z1)) True) (x = z1))))) -> (not (exists x, (and (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1)))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 526-529:
+> Theorem t1: (exists x, (and (and (and (and (_software x) (_fault x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))) -> (exists x, (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (exists z1, (and (and (and (and (_known z1) (_software z1)) (_fault z1)) True) (x = z1))))) -> (not (exists x, (and (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 544-548:
+> Theorem t1: (exists x, (and (and (and (and (_software x) (_fault x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1))))) -> (exists x, (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (exists z1, (and (and (and (and (_known z1) (_software z1)) (_fault z1)) True) (x = z1))))) -> (not (exists x, (and (and (and (and (and (_bug x) (_# x)) (_32_dash_985 x)) True) (_blame x)) (exists z1, (and (and (and (_system z1) (_failure z1)) True) (_for x z1)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+unknown
+

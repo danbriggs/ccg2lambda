@@ -1,0 +1,483 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _delegate is declared
+
+Coq < _finish is declared
+
+Coq < _irish is declared
+
+Coq < _on is declared
+
+Coq < _survey is declared
+
+Coq < _time is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((_irish x /\ _delegate x) /\ True) /\
+(exists z2 : Entity,
+((_time z2 /\ True) /\ _on x z2) /\
+(exists z1 : Entity, (_survey z1 /\ True) /\ _finish x z1))) ->
+exists x : Entity,
+(_delegate x /\ True) /\
+(exists z2 : Entity,
+((_time z2 /\ True) /\ _on x z2) /\
+(exists z1 : Entity, (_survey z1 /\ True) /\ _finish x z1))
+
+No more goals.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _delegate is declared
+
+Coq < _finish is declared
+
+Coq < _irish is declared
+
+Coq < _on is declared
+
+Coq < _survey is declared
+
+Coq < _time is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((_irish x /\ _delegate x) /\ True) /\
+(exists z2 : Entity,
+((_time z2 /\ True) /\ _on x z2) /\
+(exists z1 : Entity, (_survey z1 /\ True) /\ _finish x z1))) ->
+~
+(exists x : Entity,
+(_delegate x /\ True) /\
+(exists z2 : Entity,
+((_time z2 /\ True) /\ _on x z2) /\
+(exists z1 : Entity, (_survey z1 /\ True) /\ _finish x z1)))
+
+
+Toplevel input, characters 364-368:
+> Theorem t1: (exists x, (and (and (and (_irish x) (_delegate x)) True) (exists z2, (and (and (and (_time z2) True) (_on x z2)) (exists z1, (and (and (_survey z1) True) (_finish x z1))))))) -> (not (exists x, (and (and (_delegate x) True) (exists z2, (and (and (and (_time z2) True) (_on x z2)) (exists z1, (and (and (_survey z1) True) (_finish x z1)))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                             ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _delegate is declared
+
+Coq < _finish is declared
+
+Coq < _irish is declared
+
+Coq < _on is declared
+
+Coq < _survey is declared
+
+Coq < _time is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((_irish x /\ _delegate x) /\ True) /\
+(exists z2 : Entity,
+((_time z2 /\ True) /\ _on x z2) /\
+(exists z1 : Entity, (_survey z1 /\ True) /\ _finish x z1))) ->
+exists x : Entity,
+(_delegate x /\ True) /\
+(exists z2 : Entity,
+((_time z2 /\ True) /\ _on x z2) /\
+(exists z1 : Entity, (_survey z1 /\ True) /\ _finish x z1))
+
+No more goals.
+
+Toplevel input, characters 370-387:
+> Theorem t1: (exists x, (and (and (and (_irish x) (_delegate x)) True) (exists z2, (and (and (and (_time z2) True) (_on x z2)) (exists z1, (and (and (_survey z1) True) (_finish x z1))))))) -> (exists x, (and (and (_delegate x) True) (exists z2, (and (and (and (_time z2) True) (_on x z2)) (exists z1, (and (and (_survey z1) True) (_finish x z1))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                   ^^^^^^^^^^^^^^^^^
+Error: No such goal.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _delegate is declared
+
+Coq < _finish is declared
+
+Coq < _irish is declared
+
+Coq < _on is declared
+
+Coq < _survey is declared
+
+Coq < _time is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((_irish x /\ _delegate x) /\ True) /\
+(exists z2 : Entity,
+((_time z2 /\ True) /\ _on x z2) /\
+(exists z1 : Entity, (_survey z1 /\ True) /\ _finish x z1))) ->
+exists x : Entity,
+(_delegate x /\ True) /\
+(exists z2 : Entity,
+((_time z2 /\ True) /\ _on x z2) /\
+(exists z1 : Entity, (_survey z1 /\ True) /\ _finish x z1))
+
+No more goals.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _delegate is declared
+
+Coq < _finish is declared
+
+Coq < _irish is declared
+
+Coq < _on is declared
+
+Coq < _survey is declared
+
+Coq < _time is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((_irish x /\ _delegate x) /\ True) /\
+(exists z2 : Entity,
+((_time z2 /\ True) /\ _on x z2) /\
+(exists z1 : Entity, (_survey z1 /\ True) /\ _finish x z1))) ->
+~
+(exists x : Entity,
+(_delegate x /\ True) /\
+(exists z2 : Entity,
+((_time z2 /\ True) /\ _on x z2) /\
+(exists z1 : Entity, (_survey z1 /\ True) /\ _finish x z1)))
+
+1 goal
+
+x : Entity
+H0 : _delegate x
+H2 : True
+x0 : Entity
+H4 : _on x x0
+H1 : _time x0
+H5 : True
+x1 : Entity
+H6 : _finish x x1
+H3 : _survey x1
+H7 : True
+x2 : Entity
+H9 : True
+H : _irish x2
+H10 : _delegate x2
+x3 : Entity
+H12 : _on x2 x3
+H8 : _time x3
+H13 : True
+x4 : Entity
+H14 : _finish x2 x4
+H11 : _survey x4
+H15 : True
+============================
+False
+
+Toplevel input, characters 380-392:
+> Theorem t1: (exists x, (and (and (and (_irish x) (_delegate x)) True) (exists z2, (and (and (and (_time z2) True) (_on x z2)) (exists z1, (and (and (_survey z1) True) (_finish x z1))))))) -> (not (exists x, (and (and (_delegate x) True) (exists z2, (and (and (and (_time z2) True) (_on x z2)) (exists z1, (and (and (_survey z1) True) (_finish x z1)))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                             ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 394-398:
+> Theorem t1: (exists x, (and (and (and (_irish x) (_delegate x)) True) (exists z2, (and (and (and (_time z2) True) (_on x z2)) (exists z1, (and (and (_survey z1) True) (_finish x z1))))))) -> (not (exists x, (and (and (_delegate x) True) (exists z2, (and (and (and (_time z2) True) (_on x z2)) (exists z1, (and (and (_survey z1) True) (_finish x z1)))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _delegate is declared
+
+Coq < _finish is declared
+
+Coq < _irish is declared
+
+Coq < _on is declared
+
+Coq < _survey is declared
+
+Coq < _time is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((_irish x /\ _delegate x) /\ True) /\
+(exists z2 : Entity,
+((_time z2 /\ True) /\ _on x z2) /\
+(exists z1 : Entity, (_survey z1 /\ True) /\ _finish x z1))) ->
+~
+(exists x : Entity,
+(_delegate x /\ True) /\
+(exists z2 : Entity,
+((_time z2 /\ True) /\ _on x z2) /\
+(exists z1 : Entity, (_survey z1 /\ True) /\ _finish x z1)))
+
+
+Toplevel input, characters 364-368:
+> Theorem t1: (exists x, (and (and (and (_irish x) (_delegate x)) True) (exists z2, (and (and (and (_time z2) True) (_on x z2)) (exists z1, (and (and (_survey z1) True) (_finish x z1))))))) -> (not (exists x, (and (and (_delegate x) True) (exists z2, (and (and (and (_time z2) True) (_on x z2)) (exists z1, (and (and (_survey z1) True) (_finish x z1)))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                             ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _delegate is declared
+
+Coq < _finish is declared
+
+Coq < _irish is declared
+
+Coq < _on is declared
+
+Coq < _survey is declared
+
+Coq < _time is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((_irish x /\ _delegate x) /\ True) /\
+(exists z2 : Entity,
+((_time z2 /\ True) /\ _on x z2) /\
+(exists z1 : Entity, (_survey z1 /\ True) /\ _finish x z1))) ->
+exists x : Entity,
+(_delegate x /\ True) /\
+(exists z2 : Entity,
+((_time z2 /\ True) /\ _on x z2) /\
+(exists z1 : Entity, (_survey z1 /\ True) /\ _finish x z1))
+
+No more goals.
+
+Toplevel input, characters 370-387:
+> Theorem t1: (exists x, (and (and (and (_irish x) (_delegate x)) True) (exists z2, (and (and (and (_time z2) True) (_on x z2)) (exists z1, (and (and (_survey z1) True) (_finish x z1))))))) -> (exists x, (and (and (_delegate x) True) (exists z2, (and (and (and (_time z2) True) (_on x z2)) (exists z1, (and (and (_survey z1) True) (_finish x z1))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                   ^^^^^^^^^^^^^^^^^
+Error: No such goal.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _delegate is declared
+
+Coq < _finish is declared
+
+Coq < _irish is declared
+
+Coq < _on is declared
+
+Coq < _survey is declared
+
+Coq < _time is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((_irish x /\ _delegate x) /\ True) /\
+(exists z2 : Entity,
+((_time z2 /\ True) /\ _on x z2) /\
+(exists z1 : Entity, (_survey z1 /\ True) /\ _finish x z1))) ->
+~
+(exists x : Entity,
+(_delegate x /\ True) /\
+(exists z2 : Entity,
+((_time z2 /\ True) /\ _on x z2) /\
+(exists z1 : Entity, (_survey z1 /\ True) /\ _finish x z1)))
+
+1 goal
+
+x : Entity
+H0 : _delegate x
+H2 : True
+x0 : Entity
+H4 : _on x x0
+H1 : _time x0
+H5 : True
+x1 : Entity
+H6 : _finish x x1
+H3 : _survey x1
+H7 : True
+x2 : Entity
+H9 : True
+H : _irish x2
+H10 : _delegate x2
+x3 : Entity
+H12 : _on x2 x3
+H8 : _time x3
+H13 : True
+x4 : Entity
+H14 : _finish x2 x4
+H11 : _survey x4
+H15 : True
+============================
+False
+
+Toplevel input, characters 380-392:
+> Theorem t1: (exists x, (and (and (and (_irish x) (_delegate x)) True) (exists z2, (and (and (and (_time z2) True) (_on x z2)) (exists z1, (and (and (_survey z1) True) (_finish x z1))))))) -> (not (exists x, (and (and (_delegate x) True) (exists z2, (and (and (and (_time z2) True) (_on x z2)) (exists z1, (and (and (_survey z1) True) (_finish x z1)))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                             ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 394-398:
+> Theorem t1: (exists x, (and (and (and (_irish x) (_delegate x)) True) (exists z2, (and (and (and (_time z2) True) (_on x z2)) (exists z1, (and (and (_survey z1) True) (_finish x z1))))))) -> (not (exists x, (and (and (_delegate x) True) (exists z2, (and (and (and (_time z2) True) (_on x z2)) (exists z1, (and (and (_survey z1) True) (_finish x z1)))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _delegate is declared
+
+Coq < _finish is declared
+
+Coq < _irish is declared
+
+Coq < _on is declared
+
+Coq < _survey is declared
+
+Coq < _time is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((_irish x /\ _delegate x) /\ True) /\
+(exists z2 : Entity,
+((_time z2 /\ True) /\ _on x z2) /\
+(exists z1 : Entity, (_survey z1 /\ True) /\ _finish x z1))) ->
+exists x : Entity,
+(_delegate x /\ True) /\
+(exists z2 : Entity,
+((_time z2 /\ True) /\ _on x z2) /\
+(exists z1 : Entity, (_survey z1 /\ True) /\ _finish x z1))
+
+No more goals.
+
+Toplevel input, characters 370-387:
+> Theorem t1: (exists x, (and (and (and (_irish x) (_delegate x)) True) (exists z2, (and (and (and (_time z2) True) (_on x z2)) (exists z1, (and (and (_survey z1) True) (_finish x z1))))))) -> (exists x, (and (and (_delegate x) True) (exists z2, (and (and (and (_time z2) True) (_on x z2)) (exists z1, (and (and (_survey z1) True) (_finish x z1))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                   ^^^^^^^^^^^^^^^^^
+Error: No such goal.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _delegate is declared
+
+Coq < _finish is declared
+
+Coq < _irish is declared
+
+Coq < _on is declared
+
+Coq < _survey is declared
+
+Coq < _time is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((_irish x /\ _delegate x) /\ True) /\
+(exists z2 : Entity,
+((_time z2 /\ True) /\ _on x z2) /\
+(exists z1 : Entity, (_survey z1 /\ True) /\ _finish x z1))) ->
+~
+(exists x : Entity,
+(_delegate x /\ True) /\
+(exists z2 : Entity,
+((_time z2 /\ True) /\ _on x z2) /\
+(exists z1 : Entity, (_survey z1 /\ True) /\ _finish x z1)))
+
+1 goal
+
+x : Entity
+H0 : _delegate x
+H2 : True
+x0 : Entity
+H4 : _on x x0
+H1 : _time x0
+H5 : True
+x1 : Entity
+H6 : _finish x x1
+H3 : _survey x1
+H7 : True
+x2 : Entity
+H9 : True
+H : _irish x2
+H10 : _delegate x2
+x3 : Entity
+H12 : _on x2 x3
+H8 : _time x3
+H13 : True
+x4 : Entity
+H14 : _finish x2 x4
+H11 : _survey x4
+H15 : True
+============================
+False
+
+Toplevel input, characters 380-392:
+> Theorem t1: (exists x, (and (and (and (_irish x) (_delegate x)) True) (exists z2, (and (and (and (_time z2) True) (_on x z2)) (exists z1, (and (and (_survey z1) True) (_finish x z1))))))) -> (not (exists x, (and (and (_delegate x) True) (exists z2, (and (and (and (_time z2) True) (_on x z2)) (exists z1, (and (and (_survey z1) True) (_finish x z1)))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                             ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 394-398:
+> Theorem t1: (exists x, (and (and (and (_irish x) (_delegate x)) True) (exists z2, (and (and (and (_time z2) True) (_on x z2)) (exists z1, (and (and (_survey z1) True) (_finish x z1))))))) -> (not (exists x, (and (and (_delegate x) True) (exists z2, (and (and (and (_time z2) True) (_on x z2)) (exists z1, (and (and (_survey z1) True) (_finish x z1)))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

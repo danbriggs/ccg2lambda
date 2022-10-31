@@ -1,0 +1,745 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _arrive is declared
+
+Coq < _be is declared
+
+Coq < _day is declared
+
+Coq < _for is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _katmandu is declared
+
+Coq < _smith is declared
+
+Coq < _three is declared
+
+Coq < _travel is declared
+
+Coq < _travel_e2 is declared
+
+Coq < _travel_e3 is declared
+
+Coq < 1 goal
+
+============================
+((exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity,
+((z1 = _katmandu /\ True) /\ _in _smith _katmandu) /\ _arrive _smith)) ->
+exists x : Entity,
+((True /\ _have x) /\ _be x) /\
+(exists z3 : Entity,
+(((_three z3 /\ _day z3) /\ True) /\ _for x z3) /\
+Prog (_travel_e2 x))) ->
+exists x : Entity,
+(((x = _smith /\ True) /\ _have _smith) /\ _be _smith) /\
+_before
+(exists z4 : Entity,
+True /\
+(exists z2 : Entity,
+((z2 = _katmandu /\ True) /\ _in z4 _katmandu) /\ _arrive z4))
+(exists z1 : Entity, (_day z1 /\ True) /\ Prog (_travel_e3 _smith z1))
+
+
+Toplevel input, characters 585-589:
+> Theorem t1: ((exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (z1 = _katmandu) True) (_in _smith _katmandu)) (_arrive _smith))))) -> (exists x, (and (and (and True (_have x)) (_be x)) (exists z3, (and (and (and (and (_three z3) (_day z3)) True) (_for x z3)) (Prog (_travel_e2 x))))))) -> (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (_before (exists z4, (and True (exists z2, (and (and (and (z2 = _katmandu) True) (_in z4 _katmandu)) (_arrive z4))))) (exists z1, (and (and (_day z1) True) (Prog (_travel_e3 _smith z1))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _arrive is declared
+
+Coq < _be is declared
+
+Coq < _day is declared
+
+Coq < _for is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _katmandu is declared
+
+Coq < _smith is declared
+
+Coq < _three is declared
+
+Coq < _travel is declared
+
+Coq < _travel_e2 is declared
+
+Coq < _travel_e3 is declared
+
+Coq < 1 goal
+
+============================
+((exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity,
+((z1 = _katmandu /\ True) /\ _in _smith _katmandu) /\ _arrive _smith)) ->
+exists x : Entity,
+((True /\ _have x) /\ _be x) /\
+(exists z3 : Entity,
+(((_three z3 /\ _day z3) /\ True) /\ _for x z3) /\
+Prog (_travel_e2 x))) ->
+~
+(exists x : Entity,
+(((x = _smith /\ True) /\ _have _smith) /\ _be _smith) /\
+_before
+(exists z4 : Entity,
+True /\
+(exists z2 : Entity,
+((z2 = _katmandu /\ True) /\ _in z4 _katmandu) /\ _arrive z4))
+(exists z1 : Entity, (_day z1 /\ True) /\ Prog (_travel_e3 _smith z1)))
+
+
+Toplevel input, characters 591-595:
+> Theorem t1: ((exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (z1 = _katmandu) True) (_in _smith _katmandu)) (_arrive _smith))))) -> (exists x, (and (and (and True (_have x)) (_be x)) (exists z3, (and (and (and (and (_three z3) (_day z3)) True) (_for x z3)) (Prog (_travel_e2 x))))))) -> (not (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (_before (exists z4, (and True (exists z2, (and (and (and (z2 = _katmandu) True) (_in z4 _katmandu)) (_arrive z4))))) (exists z1, (and (and (_day z1) True) (Prog (_travel_e3 _smith z1)))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _arrive is declared
+
+Coq < _be is declared
+
+Coq < _day is declared
+
+Coq < _for is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _katmandu is declared
+
+Coq < _smith is declared
+
+Coq < _three is declared
+
+Coq < _travel is declared
+
+Coq < _travel_e2 is declared
+
+Coq < _travel_e3 is declared
+
+Coq < 1 goal
+
+============================
+((exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity,
+((z1 = _katmandu /\ True) /\ _in _smith _katmandu) /\ _arrive _smith)) ->
+exists x : Entity,
+((True /\ _have x) /\ _be x) /\
+(exists z3 : Entity,
+(((_three z3 /\ _day z3) /\ True) /\ _for x z3) /\
+Prog (_travel_e2 x))) ->
+exists x : Entity,
+(((x = _smith /\ True) /\ _have _smith) /\ _be _smith) /\
+_before
+(exists z4 : Entity,
+True /\
+(exists z2 : Entity,
+((z2 = _katmandu /\ True) /\ _in z4 _katmandu) /\ _arrive z4))
+(exists z1 : Entity, (_day z1 /\ True) /\ Prog (_travel_e3 _smith z1))
+
+3 goals
+
+H : forall x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity,
+((z1 = _katmandu /\ True) /\ _in _smith _katmandu) /\ _arrive _smith) ->
+exists x0 : Entity,
+((True /\ _have x0) /\ _be x0) /\
+(exists z3 : Entity,
+(((_three z3 /\ _day z3) /\ True) /\ _for x0 z3) /\
+Prog (_travel_e2 x0))
+============================
+_have _smith
+
+goal 2 is:
+_be _smith
+goal 3 is:
+_before
+(exists z4 : Entity,
+True /\
+(exists z2 : Entity,
+((z2 = _katmandu /\ True) /\ _in z4 _katmandu) /\ _arrive z4))
+(exists z1 : Entity, (_day z1 /\ True) /\ Prog (_travel_e3 _smith z1))
+
+Toplevel input, characters 601-613:
+> Theorem t1: ((exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (z1 = _katmandu) True) (_in _smith _katmandu)) (_arrive _smith))))) -> (exists x, (and (and (and True (_have x)) (_be x)) (exists z3, (and (and (and (and (_three z3) (_day z3)) True) (_for x z3)) (Prog (_travel_e2 x))))))) -> (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (_before (exists z4, (and True (exists z2, (and (and (and (z2 = _katmandu) True) (_in z4 _katmandu)) (_arrive z4))))) (exists z1, (and (and (_day z1) True) (Prog (_travel_e3 _smith z1))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 615-619:
+> Theorem t1: ((exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (z1 = _katmandu) True) (_in _smith _katmandu)) (_arrive _smith))))) -> (exists x, (and (and (and True (_have x)) (_be x)) (exists z3, (and (and (and (and (_three z3) (_day z3)) True) (_for x z3)) (Prog (_travel_e2 x))))))) -> (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (_before (exists z4, (and True (exists z2, (and (and (and (z2 = _katmandu) True) (_in z4 _katmandu)) (_arrive z4))))) (exists z1, (and (and (_day z1) True) (Prog (_travel_e3 _smith z1))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _arrive is declared
+
+Coq < _be is declared
+
+Coq < _day is declared
+
+Coq < _for is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _katmandu is declared
+
+Coq < _smith is declared
+
+Coq < _three is declared
+
+Coq < _travel is declared
+
+Coq < _travel_e2 is declared
+
+Coq < _travel_e3 is declared
+
+Coq < 1 goal
+
+============================
+((exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity,
+((z1 = _katmandu /\ True) /\ _in _smith _katmandu) /\ _arrive _smith)) ->
+exists x : Entity,
+((True /\ _have x) /\ _be x) /\
+(exists z3 : Entity,
+(((_three z3 /\ _day z3) /\ True) /\ _for x z3) /\
+Prog (_travel_e2 x))) ->
+exists x : Entity,
+(((x = _smith /\ True) /\ _have _smith) /\ _be _smith) /\
+_before
+(exists z4 : Entity,
+True /\
+(exists z2 : Entity,
+((z2 = _katmandu /\ True) /\ _in z4 _katmandu) /\ _arrive z4))
+(exists z1 : Entity, (_day z1 /\ True) /\ Prog (_travel_e3 _smith z1))
+
+
+Toplevel input, characters 585-589:
+> Theorem t1: ((exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (z1 = _katmandu) True) (_in _smith _katmandu)) (_arrive _smith))))) -> (exists x, (and (and (and True (_have x)) (_be x)) (exists z3, (and (and (and (and (_three z3) (_day z3)) True) (_for x z3)) (Prog (_travel_e2 x))))))) -> (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (_before (exists z4, (and True (exists z2, (and (and (and (z2 = _katmandu) True) (_in z4 _katmandu)) (_arrive z4))))) (exists z1, (and (and (_day z1) True) (Prog (_travel_e3 _smith z1))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _arrive is declared
+
+Coq < _be is declared
+
+Coq < _day is declared
+
+Coq < _for is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _katmandu is declared
+
+Coq < _smith is declared
+
+Coq < _three is declared
+
+Coq < _travel is declared
+
+Coq < _travel_e2 is declared
+
+Coq < _travel_e3 is declared
+
+Coq < 1 goal
+
+============================
+((exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity,
+((z1 = _katmandu /\ True) /\ _in _smith _katmandu) /\ _arrive _smith)) ->
+exists x : Entity,
+((True /\ _have x) /\ _be x) /\
+(exists z3 : Entity,
+(((_three z3 /\ _day z3) /\ True) /\ _for x z3) /\
+Prog (_travel_e2 x))) ->
+~
+(exists x : Entity,
+(((x = _smith /\ True) /\ _have _smith) /\ _be _smith) /\
+_before
+(exists z4 : Entity,
+True /\
+(exists z2 : Entity,
+((z2 = _katmandu /\ True) /\ _in z4 _katmandu) /\ _arrive z4))
+(exists z1 : Entity, (_day z1 /\ True) /\ Prog (_travel_e3 _smith z1)))
+
+1 goal
+
+H1 : _before
+(exists z4 : Entity,
+True /\
+(exists z2 : Entity,
+((z2 = _katmandu /\ True) /\ _in z4 _katmandu) /\ _arrive z4))
+(exists z1 : Entity,
+(_day z1 /\ True) /\ Prog (_travel_e3 _smith z1))
+H2 : _be _smith
+H3 : _have _smith
+H4 : True
+H : forall x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity,
+((z1 = _katmandu /\ True) /\ _in _smith _katmandu) /\ _arrive _smith) ->
+exists x0 : Entity,
+((True /\ _have x0) /\ _be x0) /\
+(exists z3 : Entity,
+(((_three z3 /\ _day z3) /\ True) /\ _for x0 z3) /\
+Prog (_travel_e2 x0))
+============================
+False
+
+Toplevel input, characters 607-619:
+> Theorem t1: ((exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (z1 = _katmandu) True) (_in _smith _katmandu)) (_arrive _smith))))) -> (exists x, (and (and (and True (_have x)) (_be x)) (exists z3, (and (and (and (and (_three z3) (_day z3)) True) (_for x z3)) (Prog (_travel_e2 x))))))) -> (not (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (_before (exists z4, (and True (exists z2, (and (and (and (z2 = _katmandu) True) (_in z4 _katmandu)) (_arrive z4))))) (exists z1, (and (and (_day z1) True) (Prog (_travel_e3 _smith z1)))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 621-625:
+> Theorem t1: ((exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (z1 = _katmandu) True) (_in _smith _katmandu)) (_arrive _smith))))) -> (exists x, (and (and (and True (_have x)) (_be x)) (exists z3, (and (and (and (and (_three z3) (_day z3)) True) (_for x z3)) (Prog (_travel_e2 x))))))) -> (not (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (_before (exists z4, (and True (exists z2, (and (and (and (z2 = _katmandu) True) (_in z4 _katmandu)) (_arrive z4))))) (exists z1, (and (and (_day z1) True) (Prog (_travel_e3 _smith z1)))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _arrive is declared
+
+Coq < _be is declared
+
+Coq < _day is declared
+
+Coq < _for is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _katmandu is declared
+
+Coq < _smith is declared
+
+Coq < _three is declared
+
+Coq < _travel is declared
+
+Coq < _travel_e2 is declared
+
+Coq < _travel_e3 is declared
+
+Coq < 1 goal
+
+============================
+((exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity,
+((z1 = _katmandu /\ True) /\ _in _smith _katmandu) /\ _arrive _smith)) ->
+exists x : Entity,
+((True /\ _have x) /\ _be x) /\
+(exists z3 : Entity,
+(((_three z3 /\ _day z3) /\ True) /\ _for x z3) /\
+Prog (_travel_e2 x))) ->
+~
+(exists x : Entity,
+(((x = _smith /\ True) /\ _have _smith) /\ _be _smith) /\
+_before
+(exists z4 : Entity,
+True /\
+(exists z2 : Entity,
+((z2 = _katmandu /\ True) /\ _in z4 _katmandu) /\ _arrive z4))
+(exists z1 : Entity, (_day z1 /\ True) /\ Prog (_travel_e3 _smith z1)))
+
+
+Toplevel input, characters 591-595:
+> Theorem t1: ((exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (z1 = _katmandu) True) (_in _smith _katmandu)) (_arrive _smith))))) -> (exists x, (and (and (and True (_have x)) (_be x)) (exists z3, (and (and (and (and (_three z3) (_day z3)) True) (_for x z3)) (Prog (_travel_e2 x))))))) -> (not (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (_before (exists z4, (and True (exists z2, (and (and (and (z2 = _katmandu) True) (_in z4 _katmandu)) (_arrive z4))))) (exists z1, (and (and (_day z1) True) (Prog (_travel_e3 _smith z1)))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _arrive is declared
+
+Coq < _be is declared
+
+Coq < _day is declared
+
+Coq < _for is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _katmandu is declared
+
+Coq < _smith is declared
+
+Coq < _three is declared
+
+Coq < _travel is declared
+
+Coq < _travel_e2 is declared
+
+Coq < _travel_e3 is declared
+
+Coq < 1 goal
+
+============================
+((exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity,
+((z1 = _katmandu /\ True) /\ _in _smith _katmandu) /\ _arrive _smith)) ->
+exists x : Entity,
+((True /\ _have x) /\ _be x) /\
+(exists z3 : Entity,
+(((_three z3 /\ _day z3) /\ True) /\ _for x z3) /\
+Prog (_travel_e2 x))) ->
+exists x : Entity,
+(((x = _smith /\ True) /\ _have _smith) /\ _be _smith) /\
+_before
+(exists z4 : Entity,
+True /\
+(exists z2 : Entity,
+((z2 = _katmandu /\ True) /\ _in z4 _katmandu) /\ _arrive z4))
+(exists z1 : Entity, (_day z1 /\ True) /\ Prog (_travel_e3 _smith z1))
+
+3 goals
+
+H : forall x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity,
+((z1 = _katmandu /\ True) /\ _in _smith _katmandu) /\ _arrive _smith) ->
+exists x0 : Entity,
+((True /\ _have x0) /\ _be x0) /\
+(exists z3 : Entity,
+(((_three z3 /\ _day z3) /\ True) /\ _for x0 z3) /\
+Prog (_travel_e2 x0))
+============================
+_have _smith
+
+goal 2 is:
+_be _smith
+goal 3 is:
+_before
+(exists z4 : Entity,
+True /\
+(exists z2 : Entity,
+((z2 = _katmandu /\ True) /\ _in z4 _katmandu) /\ _arrive z4))
+(exists z1 : Entity, (_day z1 /\ True) /\ Prog (_travel_e3 _smith z1))
+
+Toplevel input, characters 601-613:
+> Theorem t1: ((exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (z1 = _katmandu) True) (_in _smith _katmandu)) (_arrive _smith))))) -> (exists x, (and (and (and True (_have x)) (_be x)) (exists z3, (and (and (and (and (_three z3) (_day z3)) True) (_for x z3)) (Prog (_travel_e2 x))))))) -> (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (_before (exists z4, (and True (exists z2, (and (and (and (z2 = _katmandu) True) (_in z4 _katmandu)) (_arrive z4))))) (exists z1, (and (and (_day z1) True) (Prog (_travel_e3 _smith z1))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 615-619:
+> Theorem t1: ((exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (z1 = _katmandu) True) (_in _smith _katmandu)) (_arrive _smith))))) -> (exists x, (and (and (and True (_have x)) (_be x)) (exists z3, (and (and (and (and (_three z3) (_day z3)) True) (_for x z3)) (Prog (_travel_e2 x))))))) -> (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (_before (exists z4, (and True (exists z2, (and (and (and (z2 = _katmandu) True) (_in z4 _katmandu)) (_arrive z4))))) (exists z1, (and (and (_day z1) True) (Prog (_travel_e3 _smith z1))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _arrive is declared
+
+Coq < _be is declared
+
+Coq < _day is declared
+
+Coq < _for is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _katmandu is declared
+
+Coq < _smith is declared
+
+Coq < _three is declared
+
+Coq < _travel is declared
+
+Coq < _travel_e2 is declared
+
+Coq < _travel_e3 is declared
+
+Coq < 1 goal
+
+============================
+((exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity,
+((z1 = _katmandu /\ True) /\ _in _smith _katmandu) /\ _arrive _smith)) ->
+exists x : Entity,
+((True /\ _have x) /\ _be x) /\
+(exists z3 : Entity,
+(((_three z3 /\ _day z3) /\ True) /\ _for x z3) /\
+Prog (_travel_e2 x))) ->
+~
+(exists x : Entity,
+(((x = _smith /\ True) /\ _have _smith) /\ _be _smith) /\
+_before
+(exists z4 : Entity,
+True /\
+(exists z2 : Entity,
+((z2 = _katmandu /\ True) /\ _in z4 _katmandu) /\ _arrive z4))
+(exists z1 : Entity, (_day z1 /\ True) /\ Prog (_travel_e3 _smith z1)))
+
+1 goal
+
+H1 : _before
+(exists z4 : Entity,
+True /\
+(exists z2 : Entity,
+((z2 = _katmandu /\ True) /\ _in z4 _katmandu) /\ _arrive z4))
+(exists z1 : Entity,
+(_day z1 /\ True) /\ Prog (_travel_e3 _smith z1))
+H2 : _be _smith
+H3 : _have _smith
+H4 : True
+H : forall x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity,
+((z1 = _katmandu /\ True) /\ _in _smith _katmandu) /\ _arrive _smith) ->
+exists x0 : Entity,
+((True /\ _have x0) /\ _be x0) /\
+(exists z3 : Entity,
+(((_three z3 /\ _day z3) /\ True) /\ _for x0 z3) /\
+Prog (_travel_e2 x0))
+============================
+False
+
+Toplevel input, characters 607-619:
+> Theorem t1: ((exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (z1 = _katmandu) True) (_in _smith _katmandu)) (_arrive _smith))))) -> (exists x, (and (and (and True (_have x)) (_be x)) (exists z3, (and (and (and (and (_three z3) (_day z3)) True) (_for x z3)) (Prog (_travel_e2 x))))))) -> (not (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (_before (exists z4, (and True (exists z2, (and (and (and (z2 = _katmandu) True) (_in z4 _katmandu)) (_arrive z4))))) (exists z1, (and (and (_day z1) True) (Prog (_travel_e3 _smith z1)))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 621-625:
+> Theorem t1: ((exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (z1 = _katmandu) True) (_in _smith _katmandu)) (_arrive _smith))))) -> (exists x, (and (and (and True (_have x)) (_be x)) (exists z3, (and (and (and (and (_three z3) (_day z3)) True) (_for x z3)) (Prog (_travel_e2 x))))))) -> (not (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (_before (exists z4, (and True (exists z2, (and (and (and (z2 = _katmandu) True) (_in z4 _katmandu)) (_arrive z4))))) (exists z1, (and (and (_day z1) True) (Prog (_travel_e3 _smith z1)))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _arrive is declared
+
+Coq < _be is declared
+
+Coq < _day is declared
+
+Coq < _for is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _katmandu is declared
+
+Coq < _smith is declared
+
+Coq < _three is declared
+
+Coq < _travel is declared
+
+Coq < _travel_e2 is declared
+
+Coq < _travel_e3 is declared
+
+Coq < 1 goal
+
+============================
+((exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity,
+((z1 = _katmandu /\ True) /\ _in _smith _katmandu) /\ _arrive _smith)) ->
+exists x : Entity,
+((True /\ _have x) /\ _be x) /\
+(exists z3 : Entity,
+(((_three z3 /\ _day z3) /\ True) /\ _for x z3) /\
+Prog (_travel_e2 x))) ->
+exists x : Entity,
+(((x = _smith /\ True) /\ _have _smith) /\ _be _smith) /\
+_before
+(exists z4 : Entity,
+True /\
+(exists z2 : Entity,
+((z2 = _katmandu /\ True) /\ _in z4 _katmandu) /\ _arrive z4))
+(exists z1 : Entity, (_day z1 /\ True) /\ Prog (_travel_e3 _smith z1))
+
+3 goals
+
+H : forall x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity,
+((z1 = _katmandu /\ True) /\ _in _smith _katmandu) /\ _arrive _smith) ->
+exists x0 : Entity,
+((True /\ _have x0) /\ _be x0) /\
+(exists z3 : Entity,
+(((_three z3 /\ _day z3) /\ True) /\ _for x0 z3) /\
+Prog (_travel_e2 x0))
+============================
+_have _smith
+
+goal 2 is:
+_be _smith
+goal 3 is:
+_before
+(exists z4 : Entity,
+True /\
+(exists z2 : Entity,
+((z2 = _katmandu /\ True) /\ _in z4 _katmandu) /\ _arrive z4))
+(exists z1 : Entity, (_day z1 /\ True) /\ Prog (_travel_e3 _smith z1))
+
+Toplevel input, characters 601-613:
+> Theorem t1: ((exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (z1 = _katmandu) True) (_in _smith _katmandu)) (_arrive _smith))))) -> (exists x, (and (and (and True (_have x)) (_be x)) (exists z3, (and (and (and (and (_three z3) (_day z3)) True) (_for x z3)) (Prog (_travel_e2 x))))))) -> (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (_before (exists z4, (and True (exists z2, (and (and (and (z2 = _katmandu) True) (_in z4 _katmandu)) (_arrive z4))))) (exists z1, (and (and (_day z1) True) (Prog (_travel_e3 _smith z1))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 615-619:
+> Theorem t1: ((exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (z1 = _katmandu) True) (_in _smith _katmandu)) (_arrive _smith))))) -> (exists x, (and (and (and True (_have x)) (_be x)) (exists z3, (and (and (and (and (_three z3) (_day z3)) True) (_for x z3)) (Prog (_travel_e2 x))))))) -> (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (_before (exists z4, (and True (exists z2, (and (and (and (z2 = _katmandu) True) (_in z4 _katmandu)) (_arrive z4))))) (exists z1, (and (and (_day z1) True) (Prog (_travel_e3 _smith z1))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _arrive is declared
+
+Coq < _be is declared
+
+Coq < _day is declared
+
+Coq < _for is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _katmandu is declared
+
+Coq < _smith is declared
+
+Coq < _three is declared
+
+Coq < _travel is declared
+
+Coq < _travel_e2 is declared
+
+Coq < _travel_e3 is declared
+
+Coq < 1 goal
+
+============================
+((exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity,
+((z1 = _katmandu /\ True) /\ _in _smith _katmandu) /\ _arrive _smith)) ->
+exists x : Entity,
+((True /\ _have x) /\ _be x) /\
+(exists z3 : Entity,
+(((_three z3 /\ _day z3) /\ True) /\ _for x z3) /\
+Prog (_travel_e2 x))) ->
+~
+(exists x : Entity,
+(((x = _smith /\ True) /\ _have _smith) /\ _be _smith) /\
+_before
+(exists z4 : Entity,
+True /\
+(exists z2 : Entity,
+((z2 = _katmandu /\ True) /\ _in z4 _katmandu) /\ _arrive z4))
+(exists z1 : Entity, (_day z1 /\ True) /\ Prog (_travel_e3 _smith z1)))
+
+1 goal
+
+H1 : _before
+(exists z4 : Entity,
+True /\
+(exists z2 : Entity,
+((z2 = _katmandu /\ True) /\ _in z4 _katmandu) /\ _arrive z4))
+(exists z1 : Entity,
+(_day z1 /\ True) /\ Prog (_travel_e3 _smith z1))
+H2 : _be _smith
+H3 : _have _smith
+H4 : True
+H : forall x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity,
+((z1 = _katmandu /\ True) /\ _in _smith _katmandu) /\ _arrive _smith) ->
+exists x0 : Entity,
+((True /\ _have x0) /\ _be x0) /\
+(exists z3 : Entity,
+(((_three z3 /\ _day z3) /\ True) /\ _for x0 z3) /\
+Prog (_travel_e2 x0))
+============================
+False
+
+Toplevel input, characters 607-619:
+> Theorem t1: ((exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (z1 = _katmandu) True) (_in _smith _katmandu)) (_arrive _smith))))) -> (exists x, (and (and (and True (_have x)) (_be x)) (exists z3, (and (and (and (and (_three z3) (_day z3)) True) (_for x z3)) (Prog (_travel_e2 x))))))) -> (not (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (_before (exists z4, (and True (exists z2, (and (and (and (z2 = _katmandu) True) (_in z4 _katmandu)) (_arrive z4))))) (exists z1, (and (and (_day z1) True) (Prog (_travel_e3 _smith z1)))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 621-625:
+> Theorem t1: ((exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (z1 = _katmandu) True) (_in _smith _katmandu)) (_arrive _smith))))) -> (exists x, (and (and (and True (_have x)) (_be x)) (exists z3, (and (and (and (and (_three z3) (_day z3)) True) (_for x z3)) (Prog (_travel_e2 x))))))) -> (not (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (_before (exists z4, (and True (exists z2, (and (and (and (z2 = _katmandu) True) (_in z4 _katmandu)) (_arrive z4))))) (exists z1, (and (and (_day z1) True) (Prog (_travel_e3 _smith z1)))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

@@ -1,0 +1,769 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _computer is declared
+
+Coq < _contract is declared
+
+Coq < _customer is declared
+
+Coq < _exactly is declared
+
+Coq < _for is declared
+
+Coq < _have is declared
+
+Coq < _mfi is declared
+
+Coq < _one is declared
+
+Coq < _own is declared
+
+Coq < _service is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_customer x ->
+(exists z1 : Entity, (_computer z1 /\ True) /\ _own x z1) /\ True ->
+exists z4 : Entity,
+(((_service z4 /\ _contract z4) /\
+(exists z3 : Entity, True /\ _for z4 z3)) /\ True) /\
+_have x z4) ->
+(exists x : Entity,
+(x = _mfi /\ True) /\
+(exists z4 : Entity,
+(((_customer z4 /\ _exactly z4) /\
+(exists z2 : Entity,
+((_one z2 /\ _computer z2) /\ True) /\ _own z4 z2)) /\ True) /\
+_mfi = z4)) ->
+exists x : Entity,
+(x = _mfi /\ True) /\
+(exists z3 : Entity,
+(((_service z3 /\ _contract z3) /\
+(forall z2 : Entity,
+(exists z1 : Entity, ((_computer z1 /\ True) /\ z2 = z1) /\ True) ->
+_for z3 z2)) /\ True) /\ _have _mfi z3)
+
+
+Toplevel input, characters 672-676:
+> Theorem t1: (forall x, ((_customer x) -> ((and (exists z1, (and (and (_computer z1) True) (_own x z1))) True) -> (exists z4, (and (and (and (and (_service z4) (_contract z4)) (exists z3, (and True (_for z4 z3)))) True) (_have x z4)))))) -> (exists x, (and (and (x = _mfi) True) (exists z4, (and (and (and (and (_customer z4) (_exactly z4)) (exists z2, (and (and (and (_one z2) (_computer z2)) True) (_own z4 z2)))) True) (_mfi = z4))))) -> (exists x, (and (and (x = _mfi) True) (exists z3, (and (and (and (and (_service z3) (_contract z3)) (forall z2, ((exists z1, (and (and (and (_computer z1) True) (z2 = z1)) True)) -> (_for z3 z2)))) True) (_have _mfi z3))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _computer is declared
+
+Coq < _contract is declared
+
+Coq < _customer is declared
+
+Coq < _exactly is declared
+
+Coq < _for is declared
+
+Coq < _have is declared
+
+Coq < _mfi is declared
+
+Coq < _one is declared
+
+Coq < _own is declared
+
+Coq < _service is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_customer x ->
+(exists z1 : Entity, (_computer z1 /\ True) /\ _own x z1) /\ True ->
+exists z4 : Entity,
+(((_service z4 /\ _contract z4) /\
+(exists z3 : Entity, True /\ _for z4 z3)) /\ True) /\
+_have x z4) ->
+(exists x : Entity,
+(x = _mfi /\ True) /\
+(exists z4 : Entity,
+(((_customer z4 /\ _exactly z4) /\
+(exists z2 : Entity,
+((_one z2 /\ _computer z2) /\ True) /\ _own z4 z2)) /\ True) /\
+_mfi = z4)) ->
+~
+(exists x : Entity,
+(x = _mfi /\ True) /\
+(exists z3 : Entity,
+(((_service z3 /\ _contract z3) /\
+(forall z2 : Entity,
+(exists z1 : Entity, ((_computer z1 /\ True) /\ z2 = z1) /\ True) ->
+_for z3 z2)) /\ True) /\ _have _mfi z3))
+
+
+Toplevel input, characters 678-682:
+> Theorem t1: (forall x, ((_customer x) -> ((and (exists z1, (and (and (_computer z1) True) (_own x z1))) True) -> (exists z4, (and (and (and (and (_service z4) (_contract z4)) (exists z3, (and True (_for z4 z3)))) True) (_have x z4)))))) -> (exists x, (and (and (x = _mfi) True) (exists z4, (and (and (and (and (_customer z4) (_exactly z4)) (exists z2, (and (and (and (_one z2) (_computer z2)) True) (_own z4 z2)))) True) (_mfi = z4))))) -> (not (exists x, (and (and (x = _mfi) True) (exists z3, (and (and (and (and (_service z3) (_contract z3)) (forall z2, ((exists z1, (and (and (and (_computer z1) True) (z2 = z1)) True)) -> (_for z3 z2)))) True) (_have _mfi z3)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _computer is declared
+
+Coq < _contract is declared
+
+Coq < _customer is declared
+
+Coq < _exactly is declared
+
+Coq < _for is declared
+
+Coq < _have is declared
+
+Coq < _mfi is declared
+
+Coq < _one is declared
+
+Coq < _own is declared
+
+Coq < _service is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_customer x ->
+(exists z1 : Entity, (_computer z1 /\ True) /\ _own x z1) /\ True ->
+exists z4 : Entity,
+(((_service z4 /\ _contract z4) /\
+(exists z3 : Entity, True /\ _for z4 z3)) /\ True) /\
+_have x z4) ->
+(exists x : Entity,
+(x = _mfi /\ True) /\
+(exists z4 : Entity,
+(((_customer z4 /\ _exactly z4) /\
+(exists z2 : Entity,
+((_one z2 /\ _computer z2) /\ True) /\ _own z4 z2)) /\ True) /\
+_mfi = z4)) ->
+exists x : Entity,
+(x = _mfi /\ True) /\
+(exists z3 : Entity,
+(((_service z3 /\ _contract z3) /\
+(forall z2 : Entity,
+(exists z1 : Entity, ((_computer z1 /\ True) /\ z2 = z1) /\ True) ->
+_for z3 z2)) /\ True) /\ _have _mfi z3)
+
+4 focused goals (shelved: 1)
+
+H : forall x : Entity,
+_customer x ->
+(exists z1 : Entity, (_computer z1 /\ True) /\ _own x z1) /\ True ->
+exists z4 : Entity,
+(((_service z4 /\ _contract z4) /\
+(exists z3 : Entity, True /\ _for z4 z3)) /\ True) /\
+_have x z4
+H2, H4 : True
+H6 : _exactly _mfi
+H1 : _customer _mfi
+x1 : Entity
+H7 : _own _mfi x1
+H8 : True
+H5 : _one x1
+H9 : _computer x1
+============================
+_service ?z3
+
+goal 2 is:
+_contract ?z3
+goal 3 is:
+_for ?z3 x
+goal 4 is:
+_have _mfi ?z3
+
+Toplevel input, characters 688-700:
+> Theorem t1: (forall x, ((_customer x) -> ((and (exists z1, (and (and (_computer z1) True) (_own x z1))) True) -> (exists z4, (and (and (and (and (_service z4) (_contract z4)) (exists z3, (and True (_for z4 z3)))) True) (_have x z4)))))) -> (exists x, (and (and (x = _mfi) True) (exists z4, (and (and (and (and (_customer z4) (_exactly z4)) (exists z2, (and (and (and (_one z2) (_computer z2)) True) (_own z4 z2)))) True) (_mfi = z4))))) -> (exists x, (and (and (x = _mfi) True) (exists z3, (and (and (and (and (_service z3) (_contract z3)) (forall z2, ((exists z1, (and (and (and (_computer z1) True) (z2 = z1)) True)) -> (_for z3 z2)))) True) (_have _mfi z3))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 702-706:
+> Theorem t1: (forall x, ((_customer x) -> ((and (exists z1, (and (and (_computer z1) True) (_own x z1))) True) -> (exists z4, (and (and (and (and (_service z4) (_contract z4)) (exists z3, (and True (_for z4 z3)))) True) (_have x z4)))))) -> (exists x, (and (and (x = _mfi) True) (exists z4, (and (and (and (and (_customer z4) (_exactly z4)) (exists z2, (and (and (and (_one z2) (_computer z2)) True) (_own z4 z2)))) True) (_mfi = z4))))) -> (exists x, (and (and (x = _mfi) True) (exists z3, (and (and (and (and (_service z3) (_contract z3)) (forall z2, ((exists z1, (and (and (and (_computer z1) True) (z2 = z1)) True)) -> (_for z3 z2)))) True) (_have _mfi z3))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _computer is declared
+
+Coq < _contract is declared
+
+Coq < _customer is declared
+
+Coq < _exactly is declared
+
+Coq < _for is declared
+
+Coq < _have is declared
+
+Coq < _mfi is declared
+
+Coq < _one is declared
+
+Coq < _own is declared
+
+Coq < _service is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_customer x ->
+(exists z1 : Entity, (_computer z1 /\ True) /\ _own x z1) /\ True ->
+exists z4 : Entity,
+(((_service z4 /\ _contract z4) /\
+(exists z3 : Entity, True /\ _for z4 z3)) /\ True) /\
+_have x z4) ->
+(exists x : Entity,
+(x = _mfi /\ True) /\
+(exists z4 : Entity,
+(((_customer z4 /\ _exactly z4) /\
+(exists z2 : Entity,
+((_one z2 /\ _computer z2) /\ True) /\ _own z4 z2)) /\ True) /\
+_mfi = z4)) ->
+exists x : Entity,
+(x = _mfi /\ True) /\
+(exists z3 : Entity,
+(((_service z3 /\ _contract z3) /\
+(forall z2 : Entity,
+(exists z1 : Entity, ((_computer z1 /\ True) /\ z2 = z1) /\ True) ->
+_for z3 z2)) /\ True) /\ _have _mfi z3)
+
+
+Toplevel input, characters 672-676:
+> Theorem t1: (forall x, ((_customer x) -> ((and (exists z1, (and (and (_computer z1) True) (_own x z1))) True) -> (exists z4, (and (and (and (and (_service z4) (_contract z4)) (exists z3, (and True (_for z4 z3)))) True) (_have x z4)))))) -> (exists x, (and (and (x = _mfi) True) (exists z4, (and (and (and (and (_customer z4) (_exactly z4)) (exists z2, (and (and (and (_one z2) (_computer z2)) True) (_own z4 z2)))) True) (_mfi = z4))))) -> (exists x, (and (and (x = _mfi) True) (exists z3, (and (and (and (and (_service z3) (_contract z3)) (forall z2, ((exists z1, (and (and (and (_computer z1) True) (z2 = z1)) True)) -> (_for z3 z2)))) True) (_have _mfi z3))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _computer is declared
+
+Coq < _contract is declared
+
+Coq < _customer is declared
+
+Coq < _exactly is declared
+
+Coq < _for is declared
+
+Coq < _have is declared
+
+Coq < _mfi is declared
+
+Coq < _one is declared
+
+Coq < _own is declared
+
+Coq < _service is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_customer x ->
+(exists z1 : Entity, (_computer z1 /\ True) /\ _own x z1) /\ True ->
+exists z4 : Entity,
+(((_service z4 /\ _contract z4) /\
+(exists z3 : Entity, True /\ _for z4 z3)) /\ True) /\
+_have x z4) ->
+(exists x : Entity,
+(x = _mfi /\ True) /\
+(exists z4 : Entity,
+(((_customer z4 /\ _exactly z4) /\
+(exists z2 : Entity,
+((_one z2 /\ _computer z2) /\ True) /\ _own z4 z2)) /\ True) /\
+_mfi = z4)) ->
+~
+(exists x : Entity,
+(x = _mfi /\ True) /\
+(exists z3 : Entity,
+(((_service z3 /\ _contract z3) /\
+(forall z2 : Entity,
+(exists z1 : Entity, ((_computer z1 /\ True) /\ z2 = z1) /\ True) ->
+_for z3 z2)) /\ True) /\ _have _mfi z3))
+
+1 goal
+
+H : forall x : Entity,
+_customer x ->
+(exists z1 : Entity, (_computer z1 /\ True) /\ _own x z1) /\ True ->
+exists z4 : Entity,
+(((_service z4 /\ _contract z4) /\
+(exists z3 : Entity, True /\ _for z4 z3)) /\ True) /\
+_have x z4
+H3 : True
+x0 : Entity
+H4 : _have _mfi x0
+H5 : True
+H6 : forall z2 : Entity,
+(exists z1 : Entity, ((_computer z1 /\ True) /\ z2 = z1) /\ True) ->
+_for x0 z2
+H2 : _service x0
+H7 : _contract x0
+H9, H11 : True
+H13 : _exactly _mfi
+H8 : _customer _mfi
+x3 : Entity
+H14 : _own _mfi x3
+H15 : True
+H12 : _one x3
+H16 : _computer x3
+============================
+False
+
+Toplevel input, characters 694-706:
+> Theorem t1: (forall x, ((_customer x) -> ((and (exists z1, (and (and (_computer z1) True) (_own x z1))) True) -> (exists z4, (and (and (and (and (_service z4) (_contract z4)) (exists z3, (and True (_for z4 z3)))) True) (_have x z4)))))) -> (exists x, (and (and (x = _mfi) True) (exists z4, (and (and (and (and (_customer z4) (_exactly z4)) (exists z2, (and (and (and (_one z2) (_computer z2)) True) (_own z4 z2)))) True) (_mfi = z4))))) -> (not (exists x, (and (and (x = _mfi) True) (exists z3, (and (and (and (and (_service z3) (_contract z3)) (forall z2, ((exists z1, (and (and (and (_computer z1) True) (z2 = z1)) True)) -> (_for z3 z2)))) True) (_have _mfi z3)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 708-712:
+> Theorem t1: (forall x, ((_customer x) -> ((and (exists z1, (and (and (_computer z1) True) (_own x z1))) True) -> (exists z4, (and (and (and (and (_service z4) (_contract z4)) (exists z3, (and True (_for z4 z3)))) True) (_have x z4)))))) -> (exists x, (and (and (x = _mfi) True) (exists z4, (and (and (and (and (_customer z4) (_exactly z4)) (exists z2, (and (and (and (_one z2) (_computer z2)) True) (_own z4 z2)))) True) (_mfi = z4))))) -> (not (exists x, (and (and (x = _mfi) True) (exists z3, (and (and (and (and (_service z3) (_contract z3)) (forall z2, ((exists z1, (and (and (and (_computer z1) True) (z2 = z1)) True)) -> (_for z3 z2)))) True) (_have _mfi z3)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _computer is declared
+
+Coq < _contract is declared
+
+Coq < _customer is declared
+
+Coq < _exactly is declared
+
+Coq < _for is declared
+
+Coq < _have is declared
+
+Coq < _mfi is declared
+
+Coq < _one is declared
+
+Coq < _own is declared
+
+Coq < _service is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_customer x ->
+(exists z1 : Entity, (_computer z1 /\ True) /\ _own x z1) /\ True ->
+exists z4 : Entity,
+(((_service z4 /\ _contract z4) /\
+(exists z3 : Entity, True /\ _for z4 z3)) /\ True) /\
+_have x z4) ->
+(exists x : Entity,
+(x = _mfi /\ True) /\
+(exists z4 : Entity,
+(((_customer z4 /\ _exactly z4) /\
+(exists z2 : Entity,
+((_one z2 /\ _computer z2) /\ True) /\ _own z4 z2)) /\ True) /\
+_mfi = z4)) ->
+~
+(exists x : Entity,
+(x = _mfi /\ True) /\
+(exists z3 : Entity,
+(((_service z3 /\ _contract z3) /\
+(forall z2 : Entity,
+(exists z1 : Entity, ((_computer z1 /\ True) /\ z2 = z1) /\ True) ->
+_for z3 z2)) /\ True) /\ _have _mfi z3))
+
+
+Toplevel input, characters 678-682:
+> Theorem t1: (forall x, ((_customer x) -> ((and (exists z1, (and (and (_computer z1) True) (_own x z1))) True) -> (exists z4, (and (and (and (and (_service z4) (_contract z4)) (exists z3, (and True (_for z4 z3)))) True) (_have x z4)))))) -> (exists x, (and (and (x = _mfi) True) (exists z4, (and (and (and (and (_customer z4) (_exactly z4)) (exists z2, (and (and (and (_one z2) (_computer z2)) True) (_own z4 z2)))) True) (_mfi = z4))))) -> (not (exists x, (and (and (x = _mfi) True) (exists z3, (and (and (and (and (_service z3) (_contract z3)) (forall z2, ((exists z1, (and (and (and (_computer z1) True) (z2 = z1)) True)) -> (_for z3 z2)))) True) (_have _mfi z3)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _computer is declared
+
+Coq < _contract is declared
+
+Coq < _customer is declared
+
+Coq < _exactly is declared
+
+Coq < _for is declared
+
+Coq < _have is declared
+
+Coq < _mfi is declared
+
+Coq < _one is declared
+
+Coq < _own is declared
+
+Coq < _service is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_customer x ->
+(exists z1 : Entity, (_computer z1 /\ True) /\ _own x z1) /\ True ->
+exists z4 : Entity,
+(((_service z4 /\ _contract z4) /\
+(exists z3 : Entity, True /\ _for z4 z3)) /\ True) /\
+_have x z4) ->
+(exists x : Entity,
+(x = _mfi /\ True) /\
+(exists z4 : Entity,
+(((_customer z4 /\ _exactly z4) /\
+(exists z2 : Entity,
+((_one z2 /\ _computer z2) /\ True) /\ _own z4 z2)) /\ True) /\
+_mfi = z4)) ->
+exists x : Entity,
+(x = _mfi /\ True) /\
+(exists z3 : Entity,
+(((_service z3 /\ _contract z3) /\
+(forall z2 : Entity,
+(exists z1 : Entity, ((_computer z1 /\ True) /\ z2 = z1) /\ True) ->
+_for z3 z2)) /\ True) /\ _have _mfi z3)
+
+4 focused goals (shelved: 1)
+
+H : forall x : Entity,
+_customer x ->
+(exists z1 : Entity, (_computer z1 /\ True) /\ _own x z1) /\ True ->
+exists z4 : Entity,
+(((_service z4 /\ _contract z4) /\
+(exists z3 : Entity, True /\ _for z4 z3)) /\ True) /\
+_have x z4
+H2, H4 : True
+H6 : _exactly _mfi
+H1 : _customer _mfi
+x1 : Entity
+H7 : _own _mfi x1
+H8 : True
+H5 : _one x1
+H9 : _computer x1
+============================
+_service ?z3
+
+goal 2 is:
+_contract ?z3
+goal 3 is:
+_for ?z3 x
+goal 4 is:
+_have _mfi ?z3
+
+Toplevel input, characters 688-700:
+> Theorem t1: (forall x, ((_customer x) -> ((and (exists z1, (and (and (_computer z1) True) (_own x z1))) True) -> (exists z4, (and (and (and (and (_service z4) (_contract z4)) (exists z3, (and True (_for z4 z3)))) True) (_have x z4)))))) -> (exists x, (and (and (x = _mfi) True) (exists z4, (and (and (and (and (_customer z4) (_exactly z4)) (exists z2, (and (and (and (_one z2) (_computer z2)) True) (_own z4 z2)))) True) (_mfi = z4))))) -> (exists x, (and (and (x = _mfi) True) (exists z3, (and (and (and (and (_service z3) (_contract z3)) (forall z2, ((exists z1, (and (and (and (_computer z1) True) (z2 = z1)) True)) -> (_for z3 z2)))) True) (_have _mfi z3))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 702-706:
+> Theorem t1: (forall x, ((_customer x) -> ((and (exists z1, (and (and (_computer z1) True) (_own x z1))) True) -> (exists z4, (and (and (and (and (_service z4) (_contract z4)) (exists z3, (and True (_for z4 z3)))) True) (_have x z4)))))) -> (exists x, (and (and (x = _mfi) True) (exists z4, (and (and (and (and (_customer z4) (_exactly z4)) (exists z2, (and (and (and (_one z2) (_computer z2)) True) (_own z4 z2)))) True) (_mfi = z4))))) -> (exists x, (and (and (x = _mfi) True) (exists z3, (and (and (and (and (_service z3) (_contract z3)) (forall z2, ((exists z1, (and (and (and (_computer z1) True) (z2 = z1)) True)) -> (_for z3 z2)))) True) (_have _mfi z3))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _computer is declared
+
+Coq < _contract is declared
+
+Coq < _customer is declared
+
+Coq < _exactly is declared
+
+Coq < _for is declared
+
+Coq < _have is declared
+
+Coq < _mfi is declared
+
+Coq < _one is declared
+
+Coq < _own is declared
+
+Coq < _service is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_customer x ->
+(exists z1 : Entity, (_computer z1 /\ True) /\ _own x z1) /\ True ->
+exists z4 : Entity,
+(((_service z4 /\ _contract z4) /\
+(exists z3 : Entity, True /\ _for z4 z3)) /\ True) /\
+_have x z4) ->
+(exists x : Entity,
+(x = _mfi /\ True) /\
+(exists z4 : Entity,
+(((_customer z4 /\ _exactly z4) /\
+(exists z2 : Entity,
+((_one z2 /\ _computer z2) /\ True) /\ _own z4 z2)) /\ True) /\
+_mfi = z4)) ->
+~
+(exists x : Entity,
+(x = _mfi /\ True) /\
+(exists z3 : Entity,
+(((_service z3 /\ _contract z3) /\
+(forall z2 : Entity,
+(exists z1 : Entity, ((_computer z1 /\ True) /\ z2 = z1) /\ True) ->
+_for z3 z2)) /\ True) /\ _have _mfi z3))
+
+1 goal
+
+H : forall x : Entity,
+_customer x ->
+(exists z1 : Entity, (_computer z1 /\ True) /\ _own x z1) /\ True ->
+exists z4 : Entity,
+(((_service z4 /\ _contract z4) /\
+(exists z3 : Entity, True /\ _for z4 z3)) /\ True) /\
+_have x z4
+H3 : True
+x0 : Entity
+H4 : _have _mfi x0
+H5 : True
+H6 : forall z2 : Entity,
+(exists z1 : Entity, ((_computer z1 /\ True) /\ z2 = z1) /\ True) ->
+_for x0 z2
+H2 : _service x0
+H7 : _contract x0
+H9, H11 : True
+H13 : _exactly _mfi
+H8 : _customer _mfi
+x3 : Entity
+H14 : _own _mfi x3
+H15 : True
+H12 : _one x3
+H16 : _computer x3
+============================
+False
+
+Toplevel input, characters 694-706:
+> Theorem t1: (forall x, ((_customer x) -> ((and (exists z1, (and (and (_computer z1) True) (_own x z1))) True) -> (exists z4, (and (and (and (and (_service z4) (_contract z4)) (exists z3, (and True (_for z4 z3)))) True) (_have x z4)))))) -> (exists x, (and (and (x = _mfi) True) (exists z4, (and (and (and (and (_customer z4) (_exactly z4)) (exists z2, (and (and (and (_one z2) (_computer z2)) True) (_own z4 z2)))) True) (_mfi = z4))))) -> (not (exists x, (and (and (x = _mfi) True) (exists z3, (and (and (and (and (_service z3) (_contract z3)) (forall z2, ((exists z1, (and (and (and (_computer z1) True) (z2 = z1)) True)) -> (_for z3 z2)))) True) (_have _mfi z3)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 708-712:
+> Theorem t1: (forall x, ((_customer x) -> ((and (exists z1, (and (and (_computer z1) True) (_own x z1))) True) -> (exists z4, (and (and (and (and (_service z4) (_contract z4)) (exists z3, (and True (_for z4 z3)))) True) (_have x z4)))))) -> (exists x, (and (and (x = _mfi) True) (exists z4, (and (and (and (and (_customer z4) (_exactly z4)) (exists z2, (and (and (and (_one z2) (_computer z2)) True) (_own z4 z2)))) True) (_mfi = z4))))) -> (not (exists x, (and (and (x = _mfi) True) (exists z3, (and (and (and (and (_service z3) (_contract z3)) (forall z2, ((exists z1, (and (and (and (_computer z1) True) (z2 = z1)) True)) -> (_for z3 z2)))) True) (_have _mfi z3)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _computer is declared
+
+Coq < _contract is declared
+
+Coq < _customer is declared
+
+Coq < _exactly is declared
+
+Coq < _for is declared
+
+Coq < _have is declared
+
+Coq < _mfi is declared
+
+Coq < _one is declared
+
+Coq < _own is declared
+
+Coq < _service is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_customer x ->
+(exists z1 : Entity, (_computer z1 /\ True) /\ _own x z1) /\ True ->
+exists z4 : Entity,
+(((_service z4 /\ _contract z4) /\
+(exists z3 : Entity, True /\ _for z4 z3)) /\ True) /\
+_have x z4) ->
+(exists x : Entity,
+(x = _mfi /\ True) /\
+(exists z4 : Entity,
+(((_customer z4 /\ _exactly z4) /\
+(exists z2 : Entity,
+((_one z2 /\ _computer z2) /\ True) /\ _own z4 z2)) /\ True) /\
+_mfi = z4)) ->
+exists x : Entity,
+(x = _mfi /\ True) /\
+(exists z3 : Entity,
+(((_service z3 /\ _contract z3) /\
+(forall z2 : Entity,
+(exists z1 : Entity, ((_computer z1 /\ True) /\ z2 = z1) /\ True) ->
+_for z3 z2)) /\ True) /\ _have _mfi z3)
+
+4 focused goals (shelved: 1)
+
+H : forall x : Entity,
+_customer x ->
+(exists z1 : Entity, (_computer z1 /\ True) /\ _own x z1) /\ True ->
+exists z4 : Entity,
+(((_service z4 /\ _contract z4) /\
+(exists z3 : Entity, True /\ _for z4 z3)) /\ True) /\
+_have x z4
+H2, H4 : True
+H6 : _exactly _mfi
+H1 : _customer _mfi
+x1 : Entity
+H7 : _own _mfi x1
+H8 : True
+H5 : _one x1
+H9 : _computer x1
+============================
+_service ?z3
+
+goal 2 is:
+_contract ?z3
+goal 3 is:
+_for ?z3 x
+goal 4 is:
+_have _mfi ?z3
+
+Toplevel input, characters 688-700:
+> Theorem t1: (forall x, ((_customer x) -> ((and (exists z1, (and (and (_computer z1) True) (_own x z1))) True) -> (exists z4, (and (and (and (and (_service z4) (_contract z4)) (exists z3, (and True (_for z4 z3)))) True) (_have x z4)))))) -> (exists x, (and (and (x = _mfi) True) (exists z4, (and (and (and (and (_customer z4) (_exactly z4)) (exists z2, (and (and (and (_one z2) (_computer z2)) True) (_own z4 z2)))) True) (_mfi = z4))))) -> (exists x, (and (and (x = _mfi) True) (exists z3, (and (and (and (and (_service z3) (_contract z3)) (forall z2, ((exists z1, (and (and (and (_computer z1) True) (z2 = z1)) True)) -> (_for z3 z2)))) True) (_have _mfi z3))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 702-706:
+> Theorem t1: (forall x, ((_customer x) -> ((and (exists z1, (and (and (_computer z1) True) (_own x z1))) True) -> (exists z4, (and (and (and (and (_service z4) (_contract z4)) (exists z3, (and True (_for z4 z3)))) True) (_have x z4)))))) -> (exists x, (and (and (x = _mfi) True) (exists z4, (and (and (and (and (_customer z4) (_exactly z4)) (exists z2, (and (and (and (_one z2) (_computer z2)) True) (_own z4 z2)))) True) (_mfi = z4))))) -> (exists x, (and (and (x = _mfi) True) (exists z3, (and (and (and (and (_service z3) (_contract z3)) (forall z2, ((exists z1, (and (and (and (_computer z1) True) (z2 = z1)) True)) -> (_for z3 z2)))) True) (_have _mfi z3))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _computer is declared
+
+Coq < _contract is declared
+
+Coq < _customer is declared
+
+Coq < _exactly is declared
+
+Coq < _for is declared
+
+Coq < _have is declared
+
+Coq < _mfi is declared
+
+Coq < _one is declared
+
+Coq < _own is declared
+
+Coq < _service is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_customer x ->
+(exists z1 : Entity, (_computer z1 /\ True) /\ _own x z1) /\ True ->
+exists z4 : Entity,
+(((_service z4 /\ _contract z4) /\
+(exists z3 : Entity, True /\ _for z4 z3)) /\ True) /\
+_have x z4) ->
+(exists x : Entity,
+(x = _mfi /\ True) /\
+(exists z4 : Entity,
+(((_customer z4 /\ _exactly z4) /\
+(exists z2 : Entity,
+((_one z2 /\ _computer z2) /\ True) /\ _own z4 z2)) /\ True) /\
+_mfi = z4)) ->
+~
+(exists x : Entity,
+(x = _mfi /\ True) /\
+(exists z3 : Entity,
+(((_service z3 /\ _contract z3) /\
+(forall z2 : Entity,
+(exists z1 : Entity, ((_computer z1 /\ True) /\ z2 = z1) /\ True) ->
+_for z3 z2)) /\ True) /\ _have _mfi z3))
+
+1 goal
+
+H : forall x : Entity,
+_customer x ->
+(exists z1 : Entity, (_computer z1 /\ True) /\ _own x z1) /\ True ->
+exists z4 : Entity,
+(((_service z4 /\ _contract z4) /\
+(exists z3 : Entity, True /\ _for z4 z3)) /\ True) /\
+_have x z4
+H3 : True
+x0 : Entity
+H4 : _have _mfi x0
+H5 : True
+H6 : forall z2 : Entity,
+(exists z1 : Entity, ((_computer z1 /\ True) /\ z2 = z1) /\ True) ->
+_for x0 z2
+H2 : _service x0
+H7 : _contract x0
+H9, H11 : True
+H13 : _exactly _mfi
+H8 : _customer _mfi
+x3 : Entity
+H14 : _own _mfi x3
+H15 : True
+H12 : _one x3
+H16 : _computer x3
+============================
+False
+
+Toplevel input, characters 694-706:
+> Theorem t1: (forall x, ((_customer x) -> ((and (exists z1, (and (and (_computer z1) True) (_own x z1))) True) -> (exists z4, (and (and (and (and (_service z4) (_contract z4)) (exists z3, (and True (_for z4 z3)))) True) (_have x z4)))))) -> (exists x, (and (and (x = _mfi) True) (exists z4, (and (and (and (and (_customer z4) (_exactly z4)) (exists z2, (and (and (and (_one z2) (_computer z2)) True) (_own z4 z2)))) True) (_mfi = z4))))) -> (not (exists x, (and (and (x = _mfi) True) (exists z3, (and (and (and (and (_service z3) (_contract z3)) (forall z2, ((exists z1, (and (and (and (_computer z1) True) (z2 = z1)) True)) -> (_for z3 z2)))) True) (_have _mfi z3)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 708-712:
+> Theorem t1: (forall x, ((_customer x) -> ((and (exists z1, (and (and (_computer z1) True) (_own x z1))) True) -> (exists z4, (and (and (and (and (_service z4) (_contract z4)) (exists z3, (and True (_for z4 z3)))) True) (_have x z4)))))) -> (exists x, (and (and (x = _mfi) True) (exists z4, (and (and (and (and (_customer z4) (_exactly z4)) (exists z2, (and (and (and (_one z2) (_computer z2)) True) (_own z4 z2)))) True) (_mfi = z4))))) -> (not (exists x, (and (and (x = _mfi) True) (exists z3, (and (and (and (and (_service z3) (_contract z3)) (forall z2, ((exists z1, (and (and (and (_computer z1) True) (z2 = z1)) True)) -> (_for z3 z2)))) True) (_have _mfi z3)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

@@ -1,0 +1,108 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _great is declared
+
+Coq < _modest is declared
+
+Coq < _really is declared
+
+Coq < _tenor is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+(_really x /\ _great x) /\ _tenor x -> True -> ~ _modest x) ->
+exists x : Entity,
+_really x /\
+(exists z3 : Entity,
+(((_great z3 /\ _tenor z3) /\ _modest z3) /\ True) /\ x = z3)
+
+
+Toplevel input, characters 232-236:
+> Theorem t1: (forall x, ((and (and (_really x) (_great x)) (_tenor x)) -> (True -> (not (_modest x))))) -> (exists x, (and (_really x) (exists z3, (and (and (and (and (_great z3) (_tenor z3)) (_modest z3)) True) (x = z3))))). nltac. Qed.
+>                                                                                                                                                                                                                                         ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _great is declared
+
+Coq < _modest is declared
+
+Coq < _really is declared
+
+Coq < _tenor is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+(_really x /\ _great x) /\ _tenor x -> True -> ~ _modest x) ->
+~
+(exists x : Entity,
+_really x /\
+(exists z3 : Entity,
+(((_great z3 /\ _tenor z3) /\ _modest z3) /\ True) /\ x = z3))
+
+No more goals.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _great is declared
+
+Coq < _modest is declared
+
+Coq < _really is declared
+
+Coq < _tenor is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+(_really x /\ _great x) /\ _tenor x -> True -> ~ _modest x) ->
+exists x : Entity,
+_really x /\
+(exists z3 : Entity,
+(((_great z3 /\ _tenor z3) /\ _modest z3) /\ True) /\ x = z3)
+
+4 focused goals (shelved: 1)
+
+H : forall x : Entity,
+(_really x /\ _great x) /\ _tenor x -> True -> _modest x -> False
+============================
+_really ?x
+
+goal 2 is:
+_great ?x
+goal 3 is:
+_tenor ?x
+goal 4 is:
+_modest ?x
+
+Toplevel input, characters 248-260:
+> Theorem t1: (forall x, ((and (and (_really x) (_great x)) (_tenor x)) -> (True -> (not (_modest x))))) -> (exists x, (and (_really x) (exists z3, (and (and (and (and (_great z3) (_tenor z3)) (_modest z3)) True) (x = z3))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                         ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 262-266:
+> Theorem t1: (forall x, ((and (and (_really x) (_great x)) (_tenor x)) -> (True -> (not (_modest x))))) -> (exists x, (and (_really x) (exists z3, (and (and (and (and (_great z3) (_tenor z3)) (_modest z3)) True) (x = z3))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                       ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

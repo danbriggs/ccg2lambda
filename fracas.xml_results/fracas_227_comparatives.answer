@@ -1,0 +1,126 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _as_e2 is declared
+
+Coq < _as_e3 is declared
+
+Coq < _fast is declared
+
+Coq < _itel_dash_xz is declared
+
+Coq < _pc_dash_6082 is declared
+
+Coq < _slow is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((_pc_dash_6082 x /\ True) /\ _fast x) /\
+(exists z2 : Entity, (_itel_dash_xz z2 /\ True) /\ _as_e3 x z2)) /\
+_as_e2 x) ->
+(exists x : Entity, (_pc_dash_6082 x /\ True) /\ _slow x) ->
+exists x : Entity, (_itel_dash_xz x /\ True) /\ _fast x
+
+
+Toplevel input, characters 283-287:
+> Theorem t1: (exists x, (and (and (and (and (_pc_dash_6082 x) True) (_fast x)) (exists z2, (and (and (_itel_dash_xz z2) True) (_as_e3 x z2)))) (_as_e2 x))) -> (exists x, (and (and (_pc_dash_6082 x) True) (_slow x))) -> (exists x, (and (and (_itel_dash_xz x) True) (_fast x))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                            ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _as_e2 is declared
+
+Coq < _as_e3 is declared
+
+Coq < _fast is declared
+
+Coq < _itel_dash_xz is declared
+
+Coq < _pc_dash_6082 is declared
+
+Coq < _slow is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((_pc_dash_6082 x /\ True) /\ _fast x) /\
+(exists z2 : Entity, (_itel_dash_xz z2 /\ True) /\ _as_e3 x z2)) /\
+_as_e2 x) ->
+(exists x : Entity, (_pc_dash_6082 x /\ True) /\ _slow x) ->
+~ (exists x : Entity, (_itel_dash_xz x /\ True) /\ _fast x)
+
+
+Toplevel input, characters 289-293:
+> Theorem t1: (exists x, (and (and (and (and (_pc_dash_6082 x) True) (_fast x)) (exists z2, (and (and (_itel_dash_xz z2) True) (_as_e3 x z2)))) (_as_e2 x))) -> (exists x, (and (and (_pc_dash_6082 x) True) (_slow x))) -> (not (exists x, (and (and (_itel_dash_xz x) True) (_fast x)))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                  ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _as_e2 is declared
+
+Coq < _as_e3 is declared
+
+Coq < _fast is declared
+
+Coq < _itel_dash_xz is declared
+
+Coq < _pc_dash_6082 is declared
+
+Coq < _slow is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((_pc_dash_6082 x /\ True) /\ _fast x) /\
+(exists z2 : Entity, (_itel_dash_xz z2 /\ True) /\ _as_e3 x z2)) /\
+_as_e2 x) ->
+(exists x : Entity, (_pc_dash_6082 x /\ True) /\ _slow x) ->
+exists x : Entity, (_itel_dash_xz x /\ True) /\ _fast x
+
+1 goal
+
+x : Entity
+H1 : _slow x
+H0 : _pc_dash_6082 x
+H2 : True
+x0 : Entity
+H3 : _as_e2 x0
+H5 : _fast x0
+H : _pc_dash_6082 x0
+H6 : True
+x1 : Entity
+H7 : _as_e3 x0 x1
+H4 : _itel_dash_xz x1
+H8 : True
+============================
+_fast x1
+
+Toplevel input, characters 299-311:
+> Theorem t1: (exists x, (and (and (and (and (_pc_dash_6082 x) True) (_fast x)) (exists z2, (and (and (_itel_dash_xz z2) True) (_as_e3 x z2)))) (_as_e2 x))) -> (exists x, (and (and (_pc_dash_6082 x) True) (_slow x))) -> (exists x, (and (and (_itel_dash_xz x) True) (_fast x))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                            ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 313-317:
+> Theorem t1: (exists x, (and (and (and (and (_pc_dash_6082 x) True) (_fast x)) (exists z2, (and (and (_itel_dash_xz z2) True) (_as_e3 x z2)))) (_as_e2 x))) -> (exists x, (and (and (_pc_dash_6082 x) True) (_slow x))) -> (exists x, (and (and (_itel_dash_xz x) True) (_fast x))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                          ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

@@ -1,0 +1,1014 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _can is declared
+
+Coq < _europe is declared
+
+Coq < _freely is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _individual is declared
+
+Coq < _live is declared
+
+Coq < _member is declared
+
+Coq < _of is declared
+
+Coq < _resident is declared
+
+Coq < _right is declared
+
+Coq < _state is declared
+
+Coq < _travel is declared
+
+Coq < _within is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((_resident x /\
+(exists z1 : Entity, ((_member z1 /\ _state z1) /\ True) /\ _of x z1)) /\
+True) /\
+(exists z5 : Entity,
+(((exists z2 : Entity,
+((z2 = _europe /\ True) /\ _in z5 _europe) /\ _live z5) /\
+_right z5) /\ True) /\ _have x z5)) ->
+(forall x : Entity,
+_resident x ->
+(exists z1 : Entity, ((_member z1 /\ _state z1) /\ True) /\ _of x z1) /\
+True -> exists z2 : Entity, (_individual z2 /\ True) /\ x = z2) ->
+(forall x : Entity,
+_individual x ->
+(exists z4 : Entity,
+(((exists z1 : Entity,
+((z1 = _europe /\ True) /\ _in z4 _europe) /\ _live z4) /\
+_right z4) /\ True) /\ _have x z4) /\ True ->
+_can
+(exists z7 : Entity,
+(((z7 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)) ->
+exists x : Entity,
+((_resident x /\
+(exists z3 : Entity, ((_member z3 /\ _state z3) /\ True) /\ _of x z3)) /\
+True) /\
+_can
+(exists z5 : Entity,
+(((z5 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+
+No more goals.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _can is declared
+
+Coq < _europe is declared
+
+Coq < _freely is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _individual is declared
+
+Coq < _live is declared
+
+Coq < _member is declared
+
+Coq < _of is declared
+
+Coq < _resident is declared
+
+Coq < _right is declared
+
+Coq < _state is declared
+
+Coq < _travel is declared
+
+Coq < _within is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((_resident x /\
+(exists z1 : Entity, ((_member z1 /\ _state z1) /\ True) /\ _of x z1)) /\
+True) /\
+(exists z5 : Entity,
+(((exists z2 : Entity,
+((z2 = _europe /\ True) /\ _in z5 _europe) /\ _live z5) /\
+_right z5) /\ True) /\ _have x z5)) ->
+(forall x : Entity,
+_resident x ->
+(exists z1 : Entity, ((_member z1 /\ _state z1) /\ True) /\ _of x z1) /\
+True -> exists z2 : Entity, (_individual z2 /\ True) /\ x = z2) ->
+(forall x : Entity,
+_individual x ->
+(exists z4 : Entity,
+(((exists z1 : Entity,
+((z1 = _europe /\ True) /\ _in z4 _europe) /\ _live z4) /\
+_right z4) /\ True) /\ _have x z4) /\ True ->
+_can
+(exists z7 : Entity,
+(((z7 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)) ->
+~
+(exists x : Entity,
+((_resident x /\
+(exists z3 : Entity, ((_member z3 /\ _state z3) /\ True) /\ _of x z3)) /\
+True) /\
+_can
+(exists z5 : Entity,
+(((z5 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x))
+
+
+Toplevel input, characters 997-1001:
+> Theorem t1: (exists x, (and (and (and (_resident x) (exists z1, (and (and (and (_member z1) (_state z1)) True) (_of x z1)))) True) (exists z5, (and (and (and (exists z2, (and (and (and (z2 = _europe) True) (_in z5 _europe)) (_live z5))) (_right z5)) True) (_have x z5))))) -> (forall x, ((_resident x) -> ((and (exists z1, (and (and (and (_member z1) (_state z1)) True) (_of x z1))) True) -> (exists z2, (and (and (_individual z2) True) (x = z2)))))) -> (forall x, ((_individual x) -> ((and (exists z4, (and (and (and (exists z1, (and (and (and (z1 = _europe) True) (_in z4 _europe)) (_live z4))) (_right z4)) True) (_have x z4))) True) -> (_can (exists z7, (and (and (and (and (z7 = _europe) True) (_within x _europe)) (_freely x)) (_travel x))))))) -> (not (exists x, (and (and (and (_resident x) (exists z3, (and (and (and (_member z3) (_state z3)) True) (_of x z3)))) True) (_can (exists z5, (and (and (and (and (z5 = _europe) True) (_within x _europe)) (_freely x)) (_travel x))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _can is declared
+
+Coq < _europe is declared
+
+Coq < _freely is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _individual is declared
+
+Coq < _live is declared
+
+Coq < _member is declared
+
+Coq < _of is declared
+
+Coq < _resident is declared
+
+Coq < _right is declared
+
+Coq < _state is declared
+
+Coq < _travel is declared
+
+Coq < _within is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((_resident x /\
+(exists z1 : Entity, ((_member z1 /\ _state z1) /\ True) /\ _of x z1)) /\
+True) /\
+(exists z5 : Entity,
+(((exists z2 : Entity,
+((z2 = _europe /\ True) /\ _in z5 _europe) /\ _live z5) /\
+_right z5) /\ True) /\ _have x z5)) ->
+(forall x : Entity,
+_resident x ->
+(exists z1 : Entity, ((_member z1 /\ _state z1) /\ True) /\ _of x z1) /\
+True -> exists z2 : Entity, (_individual z2 /\ True) /\ x = z2) ->
+(forall x : Entity,
+_individual x ->
+(exists z4 : Entity,
+(((exists z1 : Entity,
+((z1 = _europe /\ True) /\ _in z4 _europe) /\ _live z4) /\
+_right z4) /\ True) /\ _have x z4) /\ True ->
+_can
+(exists z7 : Entity,
+(((z7 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)) ->
+exists x : Entity,
+((_resident x /\
+(exists z3 : Entity, ((_member z3 /\ _state z3) /\ True) /\ _of x z3)) /\
+True) /\
+_can
+(exists z5 : Entity,
+(((z5 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+
+1 goal
+
+H0 : forall x : Entity,
+_resident x ->
+(exists z1 : Entity, ((_member z1 /\ _state z1) /\ True) /\ _of x z1) /\
+True -> exists z2 : Entity, (_individual z2 /\ True) /\ x = z2
+H1 : forall x : Entity,
+_individual x ->
+(exists z4 : Entity,
+(((exists z1 : Entity,
+((z1 = _europe /\ True) /\ _in z4 _europe) /\ _live z4) /\
+_right z4) /\ True) /\ _have x z4) /\ True ->
+_can
+(exists z7 : Entity,
+(((z7 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+x : Entity
+H3 : True
+H : _resident x
+x0 : Entity
+H5 : _of x x0
+H6 : True
+H4 : _member x0
+H7 : _state x0
+x1 : Entity
+H8 : _have x x1
+H9 : True
+H10 : _right x1
+H11 : _live x1
+H12 : _in x1 _europe
+H13 : True
+============================
+_can
+(exists z5 : Entity,
+(((z5 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+
+Toplevel input, characters 1007-1019:
+> Theorem t1: (exists x, (and (and (and (_resident x) (exists z1, (and (and (and (_member z1) (_state z1)) True) (_of x z1)))) True) (exists z5, (and (and (and (exists z2, (and (and (and (z2 = _europe) True) (_in z5 _europe)) (_live z5))) (_right z5)) True) (_have x z5))))) -> (forall x, ((_resident x) -> ((and (exists z1, (and (and (and (_member z1) (_state z1)) True) (_of x z1))) True) -> (exists z2, (and (and (_individual z2) True) (x = z2)))))) -> (forall x, ((_individual x) -> ((and (exists z4, (and (and (and (exists z1, (and (and (and (z1 = _europe) True) (_in z4 _europe)) (_live z4))) (_right z4)) True) (_have x z4))) True) -> (_can (exists z7, (and (and (and (and (z7 = _europe) True) (_within x _europe)) (_freely x)) (_travel x))))))) -> (exists x, (and (and (and (_resident x) (exists z3, (and (and (and (_member z3) (_state z3)) True) (_of x z3)))) True) (_can (exists z5, (and (and (and (and (z5 = _europe) True) (_within x _europe)) (_freely x)) (_travel x)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 1021-1025:
+> Theorem t1: (exists x, (and (and (and (_resident x) (exists z1, (and (and (and (_member z1) (_state z1)) True) (_of x z1)))) True) (exists z5, (and (and (and (exists z2, (and (and (and (z2 = _europe) True) (_in z5 _europe)) (_live z5))) (_right z5)) True) (_have x z5))))) -> (forall x, ((_resident x) -> ((and (exists z1, (and (and (and (_member z1) (_state z1)) True) (_of x z1))) True) -> (exists z2, (and (and (_individual z2) True) (x = z2)))))) -> (forall x, ((_individual x) -> ((and (exists z4, (and (and (and (exists z1, (and (and (and (z1 = _europe) True) (_in z4 _europe)) (_live z4))) (_right z4)) True) (_have x z4))) True) -> (_can (exists z7, (and (and (and (and (z7 = _europe) True) (_within x _europe)) (_freely x)) (_travel x))))))) -> (exists x, (and (and (and (_resident x) (exists z3, (and (and (and (_member z3) (_state z3)) True) (_of x z3)))) True) (_can (exists z5, (and (and (and (and (z5 = _europe) True) (_within x _europe)) (_freely x)) (_travel x)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _can is declared
+
+Coq < _europe is declared
+
+Coq < _freely is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _individual is declared
+
+Coq < _live is declared
+
+Coq < _member is declared
+
+Coq < _of is declared
+
+Coq < _resident is declared
+
+Coq < _right is declared
+
+Coq < _state is declared
+
+Coq < _travel is declared
+
+Coq < _within is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((_resident x /\
+(exists z1 : Entity, ((_member z1 /\ _state z1) /\ True) /\ _of x z1)) /\
+True) /\
+(exists z5 : Entity,
+(((exists z2 : Entity,
+((z2 = _europe /\ True) /\ _in z5 _europe) /\ _live z5) /\
+_right z5) /\ True) /\ _have x z5)) ->
+(forall x : Entity,
+_resident x ->
+(exists z1 : Entity, ((_member z1 /\ _state z1) /\ True) /\ _of x z1) /\
+True -> exists z2 : Entity, (_individual z2 /\ True) /\ x = z2) ->
+(forall x : Entity,
+_individual x ->
+(exists z4 : Entity,
+(((exists z1 : Entity,
+((z1 = _europe /\ True) /\ _in z4 _europe) /\ _live z4) /\
+_right z4) /\ True) /\ _have x z4) /\ True ->
+_can
+(exists z7 : Entity,
+(((z7 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)) ->
+exists x : Entity,
+((_resident x /\
+(exists z3 : Entity, ((_member z3 /\ _state z3) /\ True) /\ _of x z3)) /\
+True) /\
+_can
+(exists z5 : Entity,
+(((z5 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+
+No more goals.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _can is declared
+
+Coq < _europe is declared
+
+Coq < _freely is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _individual is declared
+
+Coq < _live is declared
+
+Coq < _member is declared
+
+Coq < _of is declared
+
+Coq < _resident is declared
+
+Coq < _right is declared
+
+Coq < _state is declared
+
+Coq < _travel is declared
+
+Coq < _within is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((_resident x /\
+(exists z1 : Entity, ((_member z1 /\ _state z1) /\ True) /\ _of x z1)) /\
+True) /\
+(exists z5 : Entity,
+(((exists z2 : Entity,
+((z2 = _europe /\ True) /\ _in z5 _europe) /\ _live z5) /\
+_right z5) /\ True) /\ _have x z5)) ->
+(forall x : Entity,
+_resident x ->
+(exists z1 : Entity, ((_member z1 /\ _state z1) /\ True) /\ _of x z1) /\
+True -> exists z2 : Entity, (_individual z2 /\ True) /\ x = z2) ->
+(forall x : Entity,
+_individual x ->
+(exists z4 : Entity,
+(((exists z1 : Entity,
+((z1 = _europe /\ True) /\ _in z4 _europe) /\ _live z4) /\
+_right z4) /\ True) /\ _have x z4) /\ True ->
+_can
+(exists z7 : Entity,
+(((z7 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)) ->
+~
+(exists x : Entity,
+((_resident x /\
+(exists z3 : Entity, ((_member z3 /\ _state z3) /\ True) /\ _of x z3)) /\
+True) /\
+_can
+(exists z5 : Entity,
+(((z5 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x))
+
+1 goal
+
+H0 : forall x : Entity,
+_resident x ->
+(exists z1 : Entity, ((_member z1 /\ _state z1) /\ True) /\ _of x z1) /\
+True -> exists z2 : Entity, (_individual z2 /\ True) /\ x = z2
+H1 : forall x : Entity,
+_individual x ->
+(exists z4 : Entity,
+(((exists z1 : Entity,
+((z1 = _europe /\ True) /\ _in z4 _europe) /\ _live z4) /\
+_right z4) /\ True) /\ _have x z4) /\ True ->
+_can
+(exists z7 : Entity,
+(((z7 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+x : Entity
+H3 : _can
+(exists z5 : Entity,
+(((z5 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+H4 : True
+H2 : _resident x
+x0 : Entity
+H6 : _of x x0
+H7 : True
+H5 : _member x0
+H8 : _state x0
+x1 : Entity
+H10 : True
+H : _resident x1
+x2 : Entity
+H12 : _of x1 x2
+H13 : True
+H11 : _member x2
+H14 : _state x2
+x3 : Entity
+H15 : _have x1 x3
+H16 : True
+H17 : _right x3
+H18 : _live x3
+H19 : _in x3 _europe
+H20 : True
+============================
+False
+
+Toplevel input, characters 1013-1025:
+> Theorem t1: (exists x, (and (and (and (_resident x) (exists z1, (and (and (and (_member z1) (_state z1)) True) (_of x z1)))) True) (exists z5, (and (and (and (exists z2, (and (and (and (z2 = _europe) True) (_in z5 _europe)) (_live z5))) (_right z5)) True) (_have x z5))))) -> (forall x, ((_resident x) -> ((and (exists z1, (and (and (and (_member z1) (_state z1)) True) (_of x z1))) True) -> (exists z2, (and (and (_individual z2) True) (x = z2)))))) -> (forall x, ((_individual x) -> ((and (exists z4, (and (and (and (exists z1, (and (and (and (z1 = _europe) True) (_in z4 _europe)) (_live z4))) (_right z4)) True) (_have x z4))) True) -> (_can (exists z7, (and (and (and (and (z7 = _europe) True) (_within x _europe)) (_freely x)) (_travel x))))))) -> (not (exists x, (and (and (and (_resident x) (exists z3, (and (and (and (_member z3) (_state z3)) True) (_of x z3)))) True) (_can (exists z5, (and (and (and (and (z5 = _europe) True) (_within x _europe)) (_freely x)) (_travel x))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 1027-1031:
+> Theorem t1: (exists x, (and (and (and (_resident x) (exists z1, (and (and (and (_member z1) (_state z1)) True) (_of x z1)))) True) (exists z5, (and (and (and (exists z2, (and (and (and (z2 = _europe) True) (_in z5 _europe)) (_live z5))) (_right z5)) True) (_have x z5))))) -> (forall x, ((_resident x) -> ((and (exists z1, (and (and (and (_member z1) (_state z1)) True) (_of x z1))) True) -> (exists z2, (and (and (_individual z2) True) (x = z2)))))) -> (forall x, ((_individual x) -> ((and (exists z4, (and (and (and (exists z1, (and (and (and (z1 = _europe) True) (_in z4 _europe)) (_live z4))) (_right z4)) True) (_have x z4))) True) -> (_can (exists z7, (and (and (and (and (z7 = _europe) True) (_within x _europe)) (_freely x)) (_travel x))))))) -> (not (exists x, (and (and (and (_resident x) (exists z3, (and (and (and (_member z3) (_state z3)) True) (_of x z3)))) True) (_can (exists z5, (and (and (and (and (z5 = _europe) True) (_within x _europe)) (_freely x)) (_travel x))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _can is declared
+
+Coq < _europe is declared
+
+Coq < _freely is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _individual is declared
+
+Coq < _live is declared
+
+Coq < _member is declared
+
+Coq < _of is declared
+
+Coq < _resident is declared
+
+Coq < _right is declared
+
+Coq < _state is declared
+
+Coq < _travel is declared
+
+Coq < _within is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((_resident x /\
+(exists z1 : Entity, ((_member z1 /\ _state z1) /\ True) /\ _of x z1)) /\
+True) /\
+(exists z5 : Entity,
+(((exists z2 : Entity,
+((z2 = _europe /\ True) /\ _in z5 _europe) /\ _live z5) /\
+_right z5) /\ True) /\ _have x z5)) ->
+(forall x : Entity,
+_resident x ->
+(exists z1 : Entity, ((_member z1 /\ _state z1) /\ True) /\ _of x z1) /\
+True -> exists z2 : Entity, (_individual z2 /\ True) /\ x = z2) ->
+(forall x : Entity,
+_individual x ->
+(exists z4 : Entity,
+(((exists z1 : Entity,
+((z1 = _europe /\ True) /\ _in z4 _europe) /\ _live z4) /\
+_right z4) /\ True) /\ _have x z4) /\ True ->
+_can
+(exists z7 : Entity,
+(((z7 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)) ->
+~
+(exists x : Entity,
+((_resident x /\
+(exists z3 : Entity, ((_member z3 /\ _state z3) /\ True) /\ _of x z3)) /\
+True) /\
+_can
+(exists z5 : Entity,
+(((z5 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x))
+
+
+Toplevel input, characters 997-1001:
+> Theorem t1: (exists x, (and (and (and (_resident x) (exists z1, (and (and (and (_member z1) (_state z1)) True) (_of x z1)))) True) (exists z5, (and (and (and (exists z2, (and (and (and (z2 = _europe) True) (_in z5 _europe)) (_live z5))) (_right z5)) True) (_have x z5))))) -> (forall x, ((_resident x) -> ((and (exists z1, (and (and (and (_member z1) (_state z1)) True) (_of x z1))) True) -> (exists z2, (and (and (_individual z2) True) (x = z2)))))) -> (forall x, ((_individual x) -> ((and (exists z4, (and (and (and (exists z1, (and (and (and (z1 = _europe) True) (_in z4 _europe)) (_live z4))) (_right z4)) True) (_have x z4))) True) -> (_can (exists z7, (and (and (and (and (z7 = _europe) True) (_within x _europe)) (_freely x)) (_travel x))))))) -> (not (exists x, (and (and (and (_resident x) (exists z3, (and (and (and (_member z3) (_state z3)) True) (_of x z3)))) True) (_can (exists z5, (and (and (and (and (z5 = _europe) True) (_within x _europe)) (_freely x)) (_travel x))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _can is declared
+
+Coq < _europe is declared
+
+Coq < _freely is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _individual is declared
+
+Coq < _live is declared
+
+Coq < _member is declared
+
+Coq < _of is declared
+
+Coq < _resident is declared
+
+Coq < _right is declared
+
+Coq < _state is declared
+
+Coq < _travel is declared
+
+Coq < _within is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((_resident x /\
+(exists z1 : Entity, ((_member z1 /\ _state z1) /\ True) /\ _of x z1)) /\
+True) /\
+(exists z5 : Entity,
+(((exists z2 : Entity,
+((z2 = _europe /\ True) /\ _in z5 _europe) /\ _live z5) /\
+_right z5) /\ True) /\ _have x z5)) ->
+(forall x : Entity,
+_resident x ->
+(exists z1 : Entity, ((_member z1 /\ _state z1) /\ True) /\ _of x z1) /\
+True -> exists z2 : Entity, (_individual z2 /\ True) /\ x = z2) ->
+(forall x : Entity,
+_individual x ->
+(exists z4 : Entity,
+(((exists z1 : Entity,
+((z1 = _europe /\ True) /\ _in z4 _europe) /\ _live z4) /\
+_right z4) /\ True) /\ _have x z4) /\ True ->
+_can
+(exists z7 : Entity,
+(((z7 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)) ->
+exists x : Entity,
+((_resident x /\
+(exists z3 : Entity, ((_member z3 /\ _state z3) /\ True) /\ _of x z3)) /\
+True) /\
+_can
+(exists z5 : Entity,
+(((z5 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+
+1 goal
+
+H0 : forall x : Entity,
+_resident x ->
+(exists z1 : Entity, ((_member z1 /\ _state z1) /\ True) /\ _of x z1) /\
+True -> exists z2 : Entity, (_individual z2 /\ True) /\ x = z2
+H1 : forall x : Entity,
+_individual x ->
+(exists z4 : Entity,
+(((exists z1 : Entity,
+((z1 = _europe /\ True) /\ _in z4 _europe) /\ _live z4) /\
+_right z4) /\ True) /\ _have x z4) /\ True ->
+_can
+(exists z7 : Entity,
+(((z7 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+x : Entity
+H3 : True
+H : _resident x
+x0 : Entity
+H5 : _of x x0
+H6 : True
+H4 : _member x0
+H7 : _state x0
+x1 : Entity
+H8 : _have x x1
+H9 : True
+H10 : _right x1
+H11 : _live x1
+H12 : _in x1 _europe
+H13 : True
+============================
+_can
+(exists z5 : Entity,
+(((z5 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+
+Toplevel input, characters 1007-1019:
+> Theorem t1: (exists x, (and (and (and (_resident x) (exists z1, (and (and (and (_member z1) (_state z1)) True) (_of x z1)))) True) (exists z5, (and (and (and (exists z2, (and (and (and (z2 = _europe) True) (_in z5 _europe)) (_live z5))) (_right z5)) True) (_have x z5))))) -> (forall x, ((_resident x) -> ((and (exists z1, (and (and (and (_member z1) (_state z1)) True) (_of x z1))) True) -> (exists z2, (and (and (_individual z2) True) (x = z2)))))) -> (forall x, ((_individual x) -> ((and (exists z4, (and (and (and (exists z1, (and (and (and (z1 = _europe) True) (_in z4 _europe)) (_live z4))) (_right z4)) True) (_have x z4))) True) -> (_can (exists z7, (and (and (and (and (z7 = _europe) True) (_within x _europe)) (_freely x)) (_travel x))))))) -> (exists x, (and (and (and (_resident x) (exists z3, (and (and (and (_member z3) (_state z3)) True) (_of x z3)))) True) (_can (exists z5, (and (and (and (and (z5 = _europe) True) (_within x _europe)) (_freely x)) (_travel x)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 1021-1025:
+> Theorem t1: (exists x, (and (and (and (_resident x) (exists z1, (and (and (and (_member z1) (_state z1)) True) (_of x z1)))) True) (exists z5, (and (and (and (exists z2, (and (and (and (z2 = _europe) True) (_in z5 _europe)) (_live z5))) (_right z5)) True) (_have x z5))))) -> (forall x, ((_resident x) -> ((and (exists z1, (and (and (and (_member z1) (_state z1)) True) (_of x z1))) True) -> (exists z2, (and (and (_individual z2) True) (x = z2)))))) -> (forall x, ((_individual x) -> ((and (exists z4, (and (and (and (exists z1, (and (and (and (z1 = _europe) True) (_in z4 _europe)) (_live z4))) (_right z4)) True) (_have x z4))) True) -> (_can (exists z7, (and (and (and (and (z7 = _europe) True) (_within x _europe)) (_freely x)) (_travel x))))))) -> (exists x, (and (and (and (_resident x) (exists z3, (and (and (and (_member z3) (_state z3)) True) (_of x z3)))) True) (_can (exists z5, (and (and (and (and (z5 = _europe) True) (_within x _europe)) (_freely x)) (_travel x)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _can is declared
+
+Coq < _europe is declared
+
+Coq < _freely is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _individual is declared
+
+Coq < _live is declared
+
+Coq < _member is declared
+
+Coq < _of is declared
+
+Coq < _resident is declared
+
+Coq < _right is declared
+
+Coq < _state is declared
+
+Coq < _travel is declared
+
+Coq < _within is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((_resident x /\
+(exists z1 : Entity, ((_member z1 /\ _state z1) /\ True) /\ _of x z1)) /\
+True) /\
+(exists z5 : Entity,
+(((exists z2 : Entity,
+((z2 = _europe /\ True) /\ _in z5 _europe) /\ _live z5) /\
+_right z5) /\ True) /\ _have x z5)) ->
+(forall x : Entity,
+_resident x ->
+(exists z1 : Entity, ((_member z1 /\ _state z1) /\ True) /\ _of x z1) /\
+True -> exists z2 : Entity, (_individual z2 /\ True) /\ x = z2) ->
+(forall x : Entity,
+_individual x ->
+(exists z4 : Entity,
+(((exists z1 : Entity,
+((z1 = _europe /\ True) /\ _in z4 _europe) /\ _live z4) /\
+_right z4) /\ True) /\ _have x z4) /\ True ->
+_can
+(exists z7 : Entity,
+(((z7 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)) ->
+~
+(exists x : Entity,
+((_resident x /\
+(exists z3 : Entity, ((_member z3 /\ _state z3) /\ True) /\ _of x z3)) /\
+True) /\
+_can
+(exists z5 : Entity,
+(((z5 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x))
+
+1 goal
+
+H0 : forall x : Entity,
+_resident x ->
+(exists z1 : Entity, ((_member z1 /\ _state z1) /\ True) /\ _of x z1) /\
+True -> exists z2 : Entity, (_individual z2 /\ True) /\ x = z2
+H1 : forall x : Entity,
+_individual x ->
+(exists z4 : Entity,
+(((exists z1 : Entity,
+((z1 = _europe /\ True) /\ _in z4 _europe) /\ _live z4) /\
+_right z4) /\ True) /\ _have x z4) /\ True ->
+_can
+(exists z7 : Entity,
+(((z7 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+x : Entity
+H3 : _can
+(exists z5 : Entity,
+(((z5 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+H4 : True
+H2 : _resident x
+x0 : Entity
+H6 : _of x x0
+H7 : True
+H5 : _member x0
+H8 : _state x0
+x1 : Entity
+H10 : True
+H : _resident x1
+x2 : Entity
+H12 : _of x1 x2
+H13 : True
+H11 : _member x2
+H14 : _state x2
+x3 : Entity
+H15 : _have x1 x3
+H16 : True
+H17 : _right x3
+H18 : _live x3
+H19 : _in x3 _europe
+H20 : True
+============================
+False
+
+Toplevel input, characters 1013-1025:
+> Theorem t1: (exists x, (and (and (and (_resident x) (exists z1, (and (and (and (_member z1) (_state z1)) True) (_of x z1)))) True) (exists z5, (and (and (and (exists z2, (and (and (and (z2 = _europe) True) (_in z5 _europe)) (_live z5))) (_right z5)) True) (_have x z5))))) -> (forall x, ((_resident x) -> ((and (exists z1, (and (and (and (_member z1) (_state z1)) True) (_of x z1))) True) -> (exists z2, (and (and (_individual z2) True) (x = z2)))))) -> (forall x, ((_individual x) -> ((and (exists z4, (and (and (and (exists z1, (and (and (and (z1 = _europe) True) (_in z4 _europe)) (_live z4))) (_right z4)) True) (_have x z4))) True) -> (_can (exists z7, (and (and (and (and (z7 = _europe) True) (_within x _europe)) (_freely x)) (_travel x))))))) -> (not (exists x, (and (and (and (_resident x) (exists z3, (and (and (and (_member z3) (_state z3)) True) (_of x z3)))) True) (_can (exists z5, (and (and (and (and (z5 = _europe) True) (_within x _europe)) (_freely x)) (_travel x))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 1027-1031:
+> Theorem t1: (exists x, (and (and (and (_resident x) (exists z1, (and (and (and (_member z1) (_state z1)) True) (_of x z1)))) True) (exists z5, (and (and (and (exists z2, (and (and (and (z2 = _europe) True) (_in z5 _europe)) (_live z5))) (_right z5)) True) (_have x z5))))) -> (forall x, ((_resident x) -> ((and (exists z1, (and (and (and (_member z1) (_state z1)) True) (_of x z1))) True) -> (exists z2, (and (and (_individual z2) True) (x = z2)))))) -> (forall x, ((_individual x) -> ((and (exists z4, (and (and (and (exists z1, (and (and (and (z1 = _europe) True) (_in z4 _europe)) (_live z4))) (_right z4)) True) (_have x z4))) True) -> (_can (exists z7, (and (and (and (and (z7 = _europe) True) (_within x _europe)) (_freely x)) (_travel x))))))) -> (not (exists x, (and (and (and (_resident x) (exists z3, (and (and (and (_member z3) (_state z3)) True) (_of x z3)))) True) (_can (exists z5, (and (and (and (and (z5 = _europe) True) (_within x _europe)) (_freely x)) (_travel x))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _can is declared
+
+Coq < _europe is declared
+
+Coq < _freely is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _individual is declared
+
+Coq < _live is declared
+
+Coq < _member is declared
+
+Coq < _of is declared
+
+Coq < _resident is declared
+
+Coq < _right is declared
+
+Coq < _state is declared
+
+Coq < _travel is declared
+
+Coq < _within is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((_resident x /\
+(exists z1 : Entity, ((_member z1 /\ _state z1) /\ True) /\ _of x z1)) /\
+True) /\
+(exists z5 : Entity,
+(((exists z2 : Entity,
+((z2 = _europe /\ True) /\ _in z5 _europe) /\ _live z5) /\
+_right z5) /\ True) /\ _have x z5)) ->
+(forall x : Entity,
+_resident x ->
+(exists z1 : Entity, ((_member z1 /\ _state z1) /\ True) /\ _of x z1) /\
+True -> exists z2 : Entity, (_individual z2 /\ True) /\ x = z2) ->
+(forall x : Entity,
+_individual x ->
+(exists z4 : Entity,
+(((exists z1 : Entity,
+((z1 = _europe /\ True) /\ _in z4 _europe) /\ _live z4) /\
+_right z4) /\ True) /\ _have x z4) /\ True ->
+_can
+(exists z7 : Entity,
+(((z7 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)) ->
+exists x : Entity,
+((_resident x /\
+(exists z3 : Entity, ((_member z3 /\ _state z3) /\ True) /\ _of x z3)) /\
+True) /\
+_can
+(exists z5 : Entity,
+(((z5 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+
+1 goal
+
+H0 : forall x : Entity,
+_resident x ->
+(exists z1 : Entity, ((_member z1 /\ _state z1) /\ True) /\ _of x z1) /\
+True -> exists z2 : Entity, (_individual z2 /\ True) /\ x = z2
+H1 : forall x : Entity,
+_individual x ->
+(exists z4 : Entity,
+(((exists z1 : Entity,
+((z1 = _europe /\ True) /\ _in z4 _europe) /\ _live z4) /\
+_right z4) /\ True) /\ _have x z4) /\ True ->
+_can
+(exists z7 : Entity,
+(((z7 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+x : Entity
+H3 : True
+H : _resident x
+x0 : Entity
+H5 : _of x x0
+H6 : True
+H4 : _member x0
+H7 : _state x0
+x1 : Entity
+H8 : _have x x1
+H9 : True
+H10 : _right x1
+H11 : _live x1
+H12 : _in x1 _europe
+H13 : True
+============================
+_can
+(exists z5 : Entity,
+(((z5 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+
+Toplevel input, characters 1007-1019:
+> Theorem t1: (exists x, (and (and (and (_resident x) (exists z1, (and (and (and (_member z1) (_state z1)) True) (_of x z1)))) True) (exists z5, (and (and (and (exists z2, (and (and (and (z2 = _europe) True) (_in z5 _europe)) (_live z5))) (_right z5)) True) (_have x z5))))) -> (forall x, ((_resident x) -> ((and (exists z1, (and (and (and (_member z1) (_state z1)) True) (_of x z1))) True) -> (exists z2, (and (and (_individual z2) True) (x = z2)))))) -> (forall x, ((_individual x) -> ((and (exists z4, (and (and (and (exists z1, (and (and (and (z1 = _europe) True) (_in z4 _europe)) (_live z4))) (_right z4)) True) (_have x z4))) True) -> (_can (exists z7, (and (and (and (and (z7 = _europe) True) (_within x _europe)) (_freely x)) (_travel x))))))) -> (exists x, (and (and (and (_resident x) (exists z3, (and (and (and (_member z3) (_state z3)) True) (_of x z3)))) True) (_can (exists z5, (and (and (and (and (z5 = _europe) True) (_within x _europe)) (_freely x)) (_travel x)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 1021-1025:
+> Theorem t1: (exists x, (and (and (and (_resident x) (exists z1, (and (and (and (_member z1) (_state z1)) True) (_of x z1)))) True) (exists z5, (and (and (and (exists z2, (and (and (and (z2 = _europe) True) (_in z5 _europe)) (_live z5))) (_right z5)) True) (_have x z5))))) -> (forall x, ((_resident x) -> ((and (exists z1, (and (and (and (_member z1) (_state z1)) True) (_of x z1))) True) -> (exists z2, (and (and (_individual z2) True) (x = z2)))))) -> (forall x, ((_individual x) -> ((and (exists z4, (and (and (and (exists z1, (and (and (and (z1 = _europe) True) (_in z4 _europe)) (_live z4))) (_right z4)) True) (_have x z4))) True) -> (_can (exists z7, (and (and (and (and (z7 = _europe) True) (_within x _europe)) (_freely x)) (_travel x))))))) -> (exists x, (and (and (and (_resident x) (exists z3, (and (and (and (_member z3) (_state z3)) True) (_of x z3)))) True) (_can (exists z5, (and (and (and (and (z5 = _europe) True) (_within x _europe)) (_freely x)) (_travel x)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _can is declared
+
+Coq < _europe is declared
+
+Coq < _freely is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _individual is declared
+
+Coq < _live is declared
+
+Coq < _member is declared
+
+Coq < _of is declared
+
+Coq < _resident is declared
+
+Coq < _right is declared
+
+Coq < _state is declared
+
+Coq < _travel is declared
+
+Coq < _within is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((_resident x /\
+(exists z1 : Entity, ((_member z1 /\ _state z1) /\ True) /\ _of x z1)) /\
+True) /\
+(exists z5 : Entity,
+(((exists z2 : Entity,
+((z2 = _europe /\ True) /\ _in z5 _europe) /\ _live z5) /\
+_right z5) /\ True) /\ _have x z5)) ->
+(forall x : Entity,
+_resident x ->
+(exists z1 : Entity, ((_member z1 /\ _state z1) /\ True) /\ _of x z1) /\
+True -> exists z2 : Entity, (_individual z2 /\ True) /\ x = z2) ->
+(forall x : Entity,
+_individual x ->
+(exists z4 : Entity,
+(((exists z1 : Entity,
+((z1 = _europe /\ True) /\ _in z4 _europe) /\ _live z4) /\
+_right z4) /\ True) /\ _have x z4) /\ True ->
+_can
+(exists z7 : Entity,
+(((z7 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)) ->
+~
+(exists x : Entity,
+((_resident x /\
+(exists z3 : Entity, ((_member z3 /\ _state z3) /\ True) /\ _of x z3)) /\
+True) /\
+_can
+(exists z5 : Entity,
+(((z5 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x))
+
+1 goal
+
+H0 : forall x : Entity,
+_resident x ->
+(exists z1 : Entity, ((_member z1 /\ _state z1) /\ True) /\ _of x z1) /\
+True -> exists z2 : Entity, (_individual z2 /\ True) /\ x = z2
+H1 : forall x : Entity,
+_individual x ->
+(exists z4 : Entity,
+(((exists z1 : Entity,
+((z1 = _europe /\ True) /\ _in z4 _europe) /\ _live z4) /\
+_right z4) /\ True) /\ _have x z4) /\ True ->
+_can
+(exists z7 : Entity,
+(((z7 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+x : Entity
+H3 : _can
+(exists z5 : Entity,
+(((z5 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+H4 : True
+H2 : _resident x
+x0 : Entity
+H6 : _of x x0
+H7 : True
+H5 : _member x0
+H8 : _state x0
+x1 : Entity
+H10 : True
+H : _resident x1
+x2 : Entity
+H12 : _of x1 x2
+H13 : True
+H11 : _member x2
+H14 : _state x2
+x3 : Entity
+H15 : _have x1 x3
+H16 : True
+H17 : _right x3
+H18 : _live x3
+H19 : _in x3 _europe
+H20 : True
+============================
+False
+
+Toplevel input, characters 1013-1025:
+> Theorem t1: (exists x, (and (and (and (_resident x) (exists z1, (and (and (and (_member z1) (_state z1)) True) (_of x z1)))) True) (exists z5, (and (and (and (exists z2, (and (and (and (z2 = _europe) True) (_in z5 _europe)) (_live z5))) (_right z5)) True) (_have x z5))))) -> (forall x, ((_resident x) -> ((and (exists z1, (and (and (and (_member z1) (_state z1)) True) (_of x z1))) True) -> (exists z2, (and (and (_individual z2) True) (x = z2)))))) -> (forall x, ((_individual x) -> ((and (exists z4, (and (and (and (exists z1, (and (and (and (z1 = _europe) True) (_in z4 _europe)) (_live z4))) (_right z4)) True) (_have x z4))) True) -> (_can (exists z7, (and (and (and (and (z7 = _europe) True) (_within x _europe)) (_freely x)) (_travel x))))))) -> (not (exists x, (and (and (and (_resident x) (exists z3, (and (and (and (_member z3) (_state z3)) True) (_of x z3)))) True) (_can (exists z5, (and (and (and (and (z5 = _europe) True) (_within x _europe)) (_freely x)) (_travel x))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 1027-1031:
+> Theorem t1: (exists x, (and (and (and (_resident x) (exists z1, (and (and (and (_member z1) (_state z1)) True) (_of x z1)))) True) (exists z5, (and (and (and (exists z2, (and (and (and (z2 = _europe) True) (_in z5 _europe)) (_live z5))) (_right z5)) True) (_have x z5))))) -> (forall x, ((_resident x) -> ((and (exists z1, (and (and (and (_member z1) (_state z1)) True) (_of x z1))) True) -> (exists z2, (and (and (_individual z2) True) (x = z2)))))) -> (forall x, ((_individual x) -> ((and (exists z4, (and (and (and (exists z1, (and (and (and (z1 = _europe) True) (_in z4 _europe)) (_live z4))) (_right z4)) True) (_have x z4))) True) -> (_can (exists z7, (and (and (and (and (z7 = _europe) True) (_within x _europe)) (_freely x)) (_travel x))))))) -> (not (exists x, (and (and (and (_resident x) (exists z3, (and (and (and (_member z3) (_state z3)) True) (_of x z3)))) True) (_can (exists z5, (and (and (and (and (z5 = _europe) True) (_within x _europe)) (_freely x)) (_travel x))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

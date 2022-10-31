@@ -1,0 +1,617 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1992 is declared
+
+Coq < _believe is declared
+
+Coq < _contract is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _itel is declared
+
+Coq < _smith is declared
+
+Coq < _win is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+_believe _smith
+(exists x0 : Entity,
+((x0 = _itel /\ True) /\ _have _itel) /\
+(exists z2 : Entity,
+((_contract z2 /\
+(exists z1 : Entity, (_1992 z1 /\ True) /\ _in z2 z1)) /\ True) /\
+_win _itel z2))) ->
+exists x : Entity,
+(x = _itel /\ True) /\
+(exists z2 : Entity,
+((_1992 z2 /\ True) /\ _in _itel z2) /\
+(exists z1 : Entity, (_contract z1 /\ True) /\ _win _itel z1))
+
+
+Toplevel input, characters 428-432:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (_believe _smith (exists x, (and (and (and (x = _itel) True) (_have _itel)) (exists z2, (and (and (and (_contract z2) (exists z1, (and (and (_1992 z1) True) (_in z2 z1)))) True) (_win _itel z2)))))))) -> (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (_1992 z2) True) (_in _itel z2)) (exists z1, (and (and (_contract z1) True) (_win _itel z1))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1992 is declared
+
+Coq < _believe is declared
+
+Coq < _contract is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _itel is declared
+
+Coq < _smith is declared
+
+Coq < _win is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+_believe _smith
+(exists x0 : Entity,
+((x0 = _itel /\ True) /\ _have _itel) /\
+(exists z2 : Entity,
+((_contract z2 /\
+(exists z1 : Entity, (_1992 z1 /\ True) /\ _in z2 z1)) /\ True) /\
+_win _itel z2))) ->
+~
+(exists x : Entity,
+(x = _itel /\ True) /\
+(exists z2 : Entity,
+((_1992 z2 /\ True) /\ _in _itel z2) /\
+(exists z1 : Entity, (_contract z1 /\ True) /\ _win _itel z1)))
+
+
+Toplevel input, characters 434-438:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (_believe _smith (exists x, (and (and (and (x = _itel) True) (_have _itel)) (exists z2, (and (and (and (_contract z2) (exists z1, (and (and (_1992 z1) True) (_in z2 z1)))) True) (_win _itel z2)))))))) -> (not (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (_1992 z2) True) (_in _itel z2)) (exists z1, (and (and (_contract z1) True) (_win _itel z1)))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1992 is declared
+
+Coq < _believe is declared
+
+Coq < _contract is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _itel is declared
+
+Coq < _smith is declared
+
+Coq < _win is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+_believe _smith
+(exists x0 : Entity,
+((x0 = _itel /\ True) /\ _have _itel) /\
+(exists z2 : Entity,
+((_contract z2 /\
+(exists z1 : Entity, (_1992 z1 /\ True) /\ _in z2 z1)) /\ True) /\
+_win _itel z2))) ->
+exists x : Entity,
+(x = _itel /\ True) /\
+(exists z2 : Entity,
+((_1992 z2 /\ True) /\ _in _itel z2) /\
+(exists z1 : Entity, (_contract z1 /\ True) /\ _win _itel z1))
+
+4 focused goals (shelved: 2)
+
+H0 : _believe _smith
+(exists x : Entity,
+((x = _itel /\ True) /\ _have _itel) /\
+(exists z2 : Entity,
+((_contract z2 /\
+(exists z1 : Entity, (_1992 z1 /\ True) /\ _in z2 z1)) /\
+True) /\ _win _itel z2))
+H1 : True
+============================
+_1992 ?z2
+
+goal 2 is:
+_in _itel ?z2
+goal 3 is:
+_contract ?z1
+goal 4 is:
+_win _itel ?z1
+
+Toplevel input, characters 444-456:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (_believe _smith (exists x, (and (and (and (x = _itel) True) (_have _itel)) (exists z2, (and (and (and (_contract z2) (exists z1, (and (and (_1992 z1) True) (_in z2 z1)))) True) (_win _itel z2)))))))) -> (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (_1992 z2) True) (_in _itel z2)) (exists z1, (and (and (_contract z1) True) (_win _itel z1))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 458-462:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (_believe _smith (exists x, (and (and (and (x = _itel) True) (_have _itel)) (exists z2, (and (and (and (_contract z2) (exists z1, (and (and (_1992 z1) True) (_in z2 z1)))) True) (_win _itel z2)))))))) -> (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (_1992 z2) True) (_in _itel z2)) (exists z1, (and (and (_contract z1) True) (_win _itel z1))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1992 is declared
+
+Coq < _believe is declared
+
+Coq < _contract is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _itel is declared
+
+Coq < _smith is declared
+
+Coq < _win is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+_believe _smith
+(exists x0 : Entity,
+((x0 = _itel /\ True) /\ _have _itel) /\
+(exists z2 : Entity,
+((_contract z2 /\
+(exists z1 : Entity, (_1992 z1 /\ True) /\ _in z2 z1)) /\ True) /\
+_win _itel z2))) ->
+exists x : Entity,
+(x = _itel /\ True) /\
+(exists z2 : Entity,
+((_1992 z2 /\ True) /\ _in _itel z2) /\
+(exists z1 : Entity, (_contract z1 /\ True) /\ _win _itel z1))
+
+
+Toplevel input, characters 428-432:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (_believe _smith (exists x, (and (and (and (x = _itel) True) (_have _itel)) (exists z2, (and (and (and (_contract z2) (exists z1, (and (and (_1992 z1) True) (_in z2 z1)))) True) (_win _itel z2)))))))) -> (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (_1992 z2) True) (_in _itel z2)) (exists z1, (and (and (_contract z1) True) (_win _itel z1))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1992 is declared
+
+Coq < _believe is declared
+
+Coq < _contract is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _itel is declared
+
+Coq < _smith is declared
+
+Coq < _win is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+_believe _smith
+(exists x0 : Entity,
+((x0 = _itel /\ True) /\ _have _itel) /\
+(exists z2 : Entity,
+((_contract z2 /\
+(exists z1 : Entity, (_1992 z1 /\ True) /\ _in z2 z1)) /\ True) /\
+_win _itel z2))) ->
+~
+(exists x : Entity,
+(x = _itel /\ True) /\
+(exists z2 : Entity,
+((_1992 z2 /\ True) /\ _in _itel z2) /\
+(exists z1 : Entity, (_contract z1 /\ True) /\ _win _itel z1)))
+
+1 goal
+
+H2 : True
+x0 : Entity
+H4 : _in _itel x0
+H1 : _1992 x0
+H5 : True
+x1 : Entity
+H6 : _win _itel x1
+H3 : _contract x1
+H7 : True
+H8 : _believe _smith
+(exists x : Entity,
+((x = _itel /\ True) /\ _have _itel) /\
+(exists z2 : Entity,
+((_contract z2 /\
+(exists z1 : Entity, (_1992 z1 /\ True) /\ _in z2 z1)) /\
+True) /\ _win _itel z2))
+H9 : True
+============================
+False
+
+Toplevel input, characters 450-462:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (_believe _smith (exists x, (and (and (and (x = _itel) True) (_have _itel)) (exists z2, (and (and (and (_contract z2) (exists z1, (and (and (_1992 z1) True) (_in z2 z1)))) True) (_win _itel z2)))))))) -> (not (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (_1992 z2) True) (_in _itel z2)) (exists z1, (and (and (_contract z1) True) (_win _itel z1)))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 464-468:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (_believe _smith (exists x, (and (and (and (x = _itel) True) (_have _itel)) (exists z2, (and (and (and (_contract z2) (exists z1, (and (and (_1992 z1) True) (_in z2 z1)))) True) (_win _itel z2)))))))) -> (not (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (_1992 z2) True) (_in _itel z2)) (exists z1, (and (and (_contract z1) True) (_win _itel z1)))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1992 is declared
+
+Coq < _believe is declared
+
+Coq < _contract is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _itel is declared
+
+Coq < _smith is declared
+
+Coq < _win is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+_believe _smith
+(exists x0 : Entity,
+((x0 = _itel /\ True) /\ _have _itel) /\
+(exists z2 : Entity,
+((_contract z2 /\
+(exists z1 : Entity, (_1992 z1 /\ True) /\ _in z2 z1)) /\ True) /\
+_win _itel z2))) ->
+~
+(exists x : Entity,
+(x = _itel /\ True) /\
+(exists z2 : Entity,
+((_1992 z2 /\ True) /\ _in _itel z2) /\
+(exists z1 : Entity, (_contract z1 /\ True) /\ _win _itel z1)))
+
+
+Toplevel input, characters 434-438:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (_believe _smith (exists x, (and (and (and (x = _itel) True) (_have _itel)) (exists z2, (and (and (and (_contract z2) (exists z1, (and (and (_1992 z1) True) (_in z2 z1)))) True) (_win _itel z2)))))))) -> (not (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (_1992 z2) True) (_in _itel z2)) (exists z1, (and (and (_contract z1) True) (_win _itel z1)))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1992 is declared
+
+Coq < _believe is declared
+
+Coq < _contract is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _itel is declared
+
+Coq < _smith is declared
+
+Coq < _win is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+_believe _smith
+(exists x0 : Entity,
+((x0 = _itel /\ True) /\ _have _itel) /\
+(exists z2 : Entity,
+((_contract z2 /\
+(exists z1 : Entity, (_1992 z1 /\ True) /\ _in z2 z1)) /\ True) /\
+_win _itel z2))) ->
+exists x : Entity,
+(x = _itel /\ True) /\
+(exists z2 : Entity,
+((_1992 z2 /\ True) /\ _in _itel z2) /\
+(exists z1 : Entity, (_contract z1 /\ True) /\ _win _itel z1))
+
+4 focused goals (shelved: 2)
+
+H0 : _believe _smith
+(exists x : Entity,
+((x = _itel /\ True) /\ _have _itel) /\
+(exists z2 : Entity,
+((_contract z2 /\
+(exists z1 : Entity, (_1992 z1 /\ True) /\ _in z2 z1)) /\
+True) /\ _win _itel z2))
+H1 : True
+============================
+_1992 ?z2
+
+goal 2 is:
+_in _itel ?z2
+goal 3 is:
+_contract ?z1
+goal 4 is:
+_win _itel ?z1
+
+Toplevel input, characters 444-456:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (_believe _smith (exists x, (and (and (and (x = _itel) True) (_have _itel)) (exists z2, (and (and (and (_contract z2) (exists z1, (and (and (_1992 z1) True) (_in z2 z1)))) True) (_win _itel z2)))))))) -> (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (_1992 z2) True) (_in _itel z2)) (exists z1, (and (and (_contract z1) True) (_win _itel z1))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 458-462:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (_believe _smith (exists x, (and (and (and (x = _itel) True) (_have _itel)) (exists z2, (and (and (and (_contract z2) (exists z1, (and (and (_1992 z1) True) (_in z2 z1)))) True) (_win _itel z2)))))))) -> (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (_1992 z2) True) (_in _itel z2)) (exists z1, (and (and (_contract z1) True) (_win _itel z1))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1992 is declared
+
+Coq < _believe is declared
+
+Coq < _contract is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _itel is declared
+
+Coq < _smith is declared
+
+Coq < _win is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+_believe _smith
+(exists x0 : Entity,
+((x0 = _itel /\ True) /\ _have _itel) /\
+(exists z2 : Entity,
+((_contract z2 /\
+(exists z1 : Entity, (_1992 z1 /\ True) /\ _in z2 z1)) /\ True) /\
+_win _itel z2))) ->
+~
+(exists x : Entity,
+(x = _itel /\ True) /\
+(exists z2 : Entity,
+((_1992 z2 /\ True) /\ _in _itel z2) /\
+(exists z1 : Entity, (_contract z1 /\ True) /\ _win _itel z1)))
+
+1 goal
+
+H2 : True
+x0 : Entity
+H4 : _in _itel x0
+H1 : _1992 x0
+H5 : True
+x1 : Entity
+H6 : _win _itel x1
+H3 : _contract x1
+H7 : True
+H8 : _believe _smith
+(exists x : Entity,
+((x = _itel /\ True) /\ _have _itel) /\
+(exists z2 : Entity,
+((_contract z2 /\
+(exists z1 : Entity, (_1992 z1 /\ True) /\ _in z2 z1)) /\
+True) /\ _win _itel z2))
+H9 : True
+============================
+False
+
+Toplevel input, characters 450-462:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (_believe _smith (exists x, (and (and (and (x = _itel) True) (_have _itel)) (exists z2, (and (and (and (_contract z2) (exists z1, (and (and (_1992 z1) True) (_in z2 z1)))) True) (_win _itel z2)))))))) -> (not (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (_1992 z2) True) (_in _itel z2)) (exists z1, (and (and (_contract z1) True) (_win _itel z1)))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 464-468:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (_believe _smith (exists x, (and (and (and (x = _itel) True) (_have _itel)) (exists z2, (and (and (and (_contract z2) (exists z1, (and (and (_1992 z1) True) (_in z2 z1)))) True) (_win _itel z2)))))))) -> (not (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (_1992 z2) True) (_in _itel z2)) (exists z1, (and (and (_contract z1) True) (_win _itel z1)))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1992 is declared
+
+Coq < _believe is declared
+
+Coq < _contract is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _itel is declared
+
+Coq < _smith is declared
+
+Coq < _win is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+_believe _smith
+(exists x0 : Entity,
+((x0 = _itel /\ True) /\ _have _itel) /\
+(exists z2 : Entity,
+((_contract z2 /\
+(exists z1 : Entity, (_1992 z1 /\ True) /\ _in z2 z1)) /\ True) /\
+_win _itel z2))) ->
+exists x : Entity,
+(x = _itel /\ True) /\
+(exists z2 : Entity,
+((_1992 z2 /\ True) /\ _in _itel z2) /\
+(exists z1 : Entity, (_contract z1 /\ True) /\ _win _itel z1))
+
+4 focused goals (shelved: 2)
+
+H0 : _believe _smith
+(exists x : Entity,
+((x = _itel /\ True) /\ _have _itel) /\
+(exists z2 : Entity,
+((_contract z2 /\
+(exists z1 : Entity, (_1992 z1 /\ True) /\ _in z2 z1)) /\
+True) /\ _win _itel z2))
+H1 : True
+============================
+_1992 ?z2
+
+goal 2 is:
+_in _itel ?z2
+goal 3 is:
+_contract ?z1
+goal 4 is:
+_win _itel ?z1
+
+Toplevel input, characters 444-456:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (_believe _smith (exists x, (and (and (and (x = _itel) True) (_have _itel)) (exists z2, (and (and (and (_contract z2) (exists z1, (and (and (_1992 z1) True) (_in z2 z1)))) True) (_win _itel z2)))))))) -> (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (_1992 z2) True) (_in _itel z2)) (exists z1, (and (and (_contract z1) True) (_win _itel z1))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 458-462:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (_believe _smith (exists x, (and (and (and (x = _itel) True) (_have _itel)) (exists z2, (and (and (and (_contract z2) (exists z1, (and (and (_1992 z1) True) (_in z2 z1)))) True) (_win _itel z2)))))))) -> (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (_1992 z2) True) (_in _itel z2)) (exists z1, (and (and (_contract z1) True) (_win _itel z1))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1992 is declared
+
+Coq < _believe is declared
+
+Coq < _contract is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _itel is declared
+
+Coq < _smith is declared
+
+Coq < _win is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+_believe _smith
+(exists x0 : Entity,
+((x0 = _itel /\ True) /\ _have _itel) /\
+(exists z2 : Entity,
+((_contract z2 /\
+(exists z1 : Entity, (_1992 z1 /\ True) /\ _in z2 z1)) /\ True) /\
+_win _itel z2))) ->
+~
+(exists x : Entity,
+(x = _itel /\ True) /\
+(exists z2 : Entity,
+((_1992 z2 /\ True) /\ _in _itel z2) /\
+(exists z1 : Entity, (_contract z1 /\ True) /\ _win _itel z1)))
+
+1 goal
+
+H2 : True
+x0 : Entity
+H4 : _in _itel x0
+H1 : _1992 x0
+H5 : True
+x1 : Entity
+H6 : _win _itel x1
+H3 : _contract x1
+H7 : True
+H8 : _believe _smith
+(exists x : Entity,
+((x = _itel /\ True) /\ _have _itel) /\
+(exists z2 : Entity,
+((_contract z2 /\
+(exists z1 : Entity, (_1992 z1 /\ True) /\ _in z2 z1)) /\
+True) /\ _win _itel z2))
+H9 : True
+============================
+False
+
+Toplevel input, characters 450-462:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (_believe _smith (exists x, (and (and (and (x = _itel) True) (_have _itel)) (exists z2, (and (and (and (_contract z2) (exists z1, (and (and (_1992 z1) True) (_in z2 z1)))) True) (_win _itel z2)))))))) -> (not (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (_1992 z2) True) (_in _itel z2)) (exists z1, (and (and (_contract z1) True) (_win _itel z1)))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 464-468:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (_believe _smith (exists x, (and (and (and (x = _itel) True) (_have _itel)) (exists z2, (and (and (and (_contract z2) (exists z1, (and (and (_1992 z1) True) (_in z2 z1)))) True) (_win _itel z2)))))))) -> (not (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (_1992 z2) True) (_in _itel z2)) (exists z1, (and (and (_contract z1) True) (_win _itel z1)))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

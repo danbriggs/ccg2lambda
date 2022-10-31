@@ -1,0 +1,170 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _bt is declared
+
+Coq < _dedicated is declared
+
+Coq < _department is declared
+
+Coq < _from is declared
+
+Coq < _have is declared
+
+Coq < _line is declared
+
+Coq < _rend is declared
+
+Coq < _rent is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_department x ->
+True ->
+exists z1 : Entity, ((_dedicated z1 /\ _line z1) /\ True) /\ _have x z1) ->
+(exists x : Entity,
+True /\
+(exists z2 : Entity,
+((z2 = _bt /\ True) /\ _from x _bt) /\
+(exists z1 : Entity, True /\ _rend x z1))) ->
+forall x : Entity,
+_department x ->
+True ->
+exists z2 : Entity,
+((_line z2 /\ (exists z1 : Entity, (z1 = _bt /\ True) /\ _from z2 _bt)) /\
+True) /\ _rent x z2
+
+
+Toplevel input, characters 425-429:
+> Theorem t1: (forall x, ((_department x) -> (True -> (exists z1, (and (and (and (_dedicated z1) (_line z1)) True) (_have x z1)))))) -> (exists x, (and True (exists z2, (and (and (and (z2 = _bt) True) (_from x _bt)) (exists z1, (and True (_rend x z1))))))) -> (forall x, ((_department x) -> (True -> (exists z2, (and (and (and (_line z2) (exists z1, (and (and (z1 = _bt) True) (_from z2 _bt)))) True) (_rent x z2)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _bt is declared
+
+Coq < _dedicated is declared
+
+Coq < _department is declared
+
+Coq < _from is declared
+
+Coq < _have is declared
+
+Coq < _line is declared
+
+Coq < _rend is declared
+
+Coq < _rent is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_department x ->
+True ->
+exists z1 : Entity, ((_dedicated z1 /\ _line z1) /\ True) /\ _have x z1) ->
+(exists x : Entity,
+True /\
+(exists z2 : Entity,
+((z2 = _bt /\ True) /\ _from x _bt) /\
+(exists z1 : Entity, True /\ _rend x z1))) ->
+~
+(forall x : Entity,
+_department x ->
+True ->
+exists z2 : Entity,
+((_line z2 /\ (exists z1 : Entity, (z1 = _bt /\ True) /\ _from z2 _bt)) /\
+True) /\ _rent x z2)
+
+
+Toplevel input, characters 431-435:
+> Theorem t1: (forall x, ((_department x) -> (True -> (exists z1, (and (and (and (_dedicated z1) (_line z1)) True) (_have x z1)))))) -> (exists x, (and True (exists z2, (and (and (and (z2 = _bt) True) (_from x _bt)) (exists z1, (and True (_rend x z1))))))) -> (not (forall x, ((_department x) -> (True -> (exists z2, (and (and (and (_line z2) (exists z1, (and (and (z1 = _bt) True) (_from z2 _bt)))) True) (_rent x z2))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _bt is declared
+
+Coq < _dedicated is declared
+
+Coq < _department is declared
+
+Coq < _from is declared
+
+Coq < _have is declared
+
+Coq < _line is declared
+
+Coq < _rend is declared
+
+Coq < _rent is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_department x ->
+True ->
+exists z1 : Entity, ((_dedicated z1 /\ _line z1) /\ True) /\ _have x z1) ->
+(exists x : Entity,
+True /\
+(exists z2 : Entity,
+((z2 = _bt /\ True) /\ _from x _bt) /\
+(exists z1 : Entity, True /\ _rend x z1))) ->
+forall x : Entity,
+_department x ->
+True ->
+exists z2 : Entity,
+((_line z2 /\ (exists z1 : Entity, (z1 = _bt /\ True) /\ _from z2 _bt)) /\
+True) /\ _rent x z2
+
+2 goals
+
+H : forall x : Entity,
+_department x ->
+True ->
+exists z1 : Entity, ((_dedicated z1 /\ _line z1) /\ True) /\ _have x z1
+x : Entity
+H1 : _department x
+H2 : True
+x0 : Entity
+H0 : True
+H5 : _from x0 _bt
+H6 : True
+x2 : Entity
+H4 : True
+H7 : _rend x0 x2
+============================
+_line x0
+
+goal 2 is:
+_rent x x0
+
+Toplevel input, characters 441-453:
+> Theorem t1: (forall x, ((_department x) -> (True -> (exists z1, (and (and (and (_dedicated z1) (_line z1)) True) (_have x z1)))))) -> (exists x, (and True (exists z2, (and (and (and (z2 = _bt) True) (_from x _bt)) (exists z1, (and True (_rend x z1))))))) -> (forall x, ((_department x) -> (True -> (exists z2, (and (and (and (_line z2) (exists z1, (and (and (z1 = _bt) True) (_from z2 _bt)))) True) (_rent x z2)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 455-459:
+> Theorem t1: (forall x, ((_department x) -> (True -> (exists z1, (and (and (and (_dedicated z1) (_line z1)) True) (_have x z1)))))) -> (exists x, (and True (exists z2, (and (and (and (z2 = _bt) True) (_from x _bt)) (exists z1, (and True (_rend x z1))))))) -> (forall x, ((_department x) -> (True -> (exists z2, (and (and (and (_line z2) (exists z1, (and (and (z1 = _bt) True) (_from z2 _bt)))) True) (_rent x z2)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

@@ -1,0 +1,682 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _be is declared
+
+Coq < _coming is declared
+
+Coq < _florence is declared
+
+Coq < _florence_e2 is declared
+
+Coq < _four is declared
+
+Coq < _from is declared
+
+Coq < _go is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _now is declared
+
+Coq < _past is declared
+
+Coq < _smith is declared
+
+Coq < _smith_e2 is declared
+
+Coq < _time is declared
+
+Coq < _to is declared
+
+Coq < _twice is declared
+
+Coq < _two is declared
+
+Coq < _will is declared
+
+Coq < _year is declared
+
+Coq < Toplevel input, characters 415-424:
+> Theorem t1: (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (exists z2, (and (and (and (and (_past z2) True) (_in _smith z2)) (_twice _smith)) (_florence_e2 _smith))))) -> (exists x, (and (and (x = _smith) True) (_will (exists z4, (and (and (and (and (and (_coming z4) (_year z4)) True) (_in _smith z4)) (_twice _smith)) (exists z1, (and (and (and (z1 = _florence) True) (_to _smith _florence)) (_go _smith)))))))) -> (exists x, (and (and (and (and (_two x) (_year x)) (exists z1, (and (and (and (_now z1) (_smith_e2 z1)) True) (_from x z1)))) True) (_will (and (and (and (and (_have x) (_be x)) (_time x)) (_florence_e2 x)) (_four x))))).
+>                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^^^^^
+Error:
+In environment
+x : Entity
+z4 : Entity
+z1 : Entity -> Prop
+The term "_florence" has type "Entity -> Prop"
+while it is expected to have type "Entity".
+
+Toplevel input, characters 672-677:
+> Theorem t1: (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (exists z2, (and (and (and (and (_past z2) True) (_in _smith z2)) (_twice _smith)) (_florence_e2 _smith))))) -> (exists x, (and (and (x = _smith) True) (_will (exists z4, (and (and (and (and (and (_coming z4) (_year z4)) True) (_in _smith z4)) (_twice _smith)) (exists z1, (and (and (and (z1 = _florence) True) (_to _smith _florence)) (_go _smith)))))))) -> (exists x, (and (and (and (and (_two x) (_year x)) (exists z1, (and (and (and (_now z1) (_smith_e2 z1)) True) (_from x z1)))) True) (_will (and (and (and (and (_have x) (_be x)) (_time x)) (_florence_e2 x)) (_four x))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 679-683:
+> Theorem t1: (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (exists z2, (and (and (and (and (_past z2) True) (_in _smith z2)) (_twice _smith)) (_florence_e2 _smith))))) -> (exists x, (and (and (x = _smith) True) (_will (exists z4, (and (and (and (and (and (_coming z4) (_year z4)) True) (_in _smith z4)) (_twice _smith)) (exists z1, (and (and (and (z1 = _florence) True) (_to _smith _florence)) (_go _smith)))))))) -> (exists x, (and (and (and (and (_two x) (_year x)) (exists z1, (and (and (and (_now z1) (_smith_e2 z1)) True) (_from x z1)))) True) (_will (and (and (and (and (_have x) (_be x)) (_time x)) (_florence_e2 x)) (_four x))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _be is declared
+
+Coq < _coming is declared
+
+Coq < _florence is declared
+
+Coq < _florence_e2 is declared
+
+Coq < _four is declared
+
+Coq < _from is declared
+
+Coq < _go is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _now is declared
+
+Coq < _past is declared
+
+Coq < _smith is declared
+
+Coq < _smith_e2 is declared
+
+Coq < _time is declared
+
+Coq < _to is declared
+
+Coq < _twice is declared
+
+Coq < _two is declared
+
+Coq < _will is declared
+
+Coq < _year is declared
+
+Coq < Toplevel input, characters 415-424:
+> Theorem t1: (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (exists z2, (and (and (and (and (_past z2) True) (_in _smith z2)) (_twice _smith)) (_florence_e2 _smith))))) -> (exists x, (and (and (x = _smith) True) (_will (exists z4, (and (and (and (and (and (_coming z4) (_year z4)) True) (_in _smith z4)) (_twice _smith)) (exists z1, (and (and (and (z1 = _florence) True) (_to _smith _florence)) (_go _smith)))))))) -> (not (exists x, (and (and (and (and (_two x) (_year x)) (exists z1, (and (and (and (_now z1) (_smith_e2 z1)) True) (_from x z1)))) True) (_will (and (and (and (and (_have x) (_be x)) (_time x)) (_florence_e2 x)) (_four x)))))).
+>                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^^^^^
+Error:
+In environment
+x : Entity
+z4 : Entity
+z1 : Entity -> Prop
+The term "_florence" has type "Entity -> Prop"
+while it is expected to have type "Entity".
+
+Toplevel input, characters 678-683:
+> Theorem t1: (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (exists z2, (and (and (and (and (_past z2) True) (_in _smith z2)) (_twice _smith)) (_florence_e2 _smith))))) -> (exists x, (and (and (x = _smith) True) (_will (exists z4, (and (and (and (and (and (_coming z4) (_year z4)) True) (_in _smith z4)) (_twice _smith)) (exists z1, (and (and (and (z1 = _florence) True) (_to _smith _florence)) (_go _smith)))))))) -> (not (exists x, (and (and (and (and (_two x) (_year x)) (exists z1, (and (and (and (_now z1) (_smith_e2 z1)) True) (_from x z1)))) True) (_will (and (and (and (and (_have x) (_be x)) (_time x)) (_florence_e2 x)) (_four x)))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 685-689:
+> Theorem t1: (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (exists z2, (and (and (and (and (_past z2) True) (_in _smith z2)) (_twice _smith)) (_florence_e2 _smith))))) -> (exists x, (and (and (x = _smith) True) (_will (exists z4, (and (and (and (and (and (_coming z4) (_year z4)) True) (_in _smith z4)) (_twice _smith)) (exists z1, (and (and (and (z1 = _florence) True) (_to _smith _florence)) (_go _smith)))))))) -> (not (exists x, (and (and (and (and (_two x) (_year x)) (exists z1, (and (and (and (_now z1) (_smith_e2 z1)) True) (_from x z1)))) True) (_will (and (and (and (and (_have x) (_be x)) (_time x)) (_florence_e2 x)) (_four x)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _be is declared
+
+Coq < _coming is declared
+
+Coq < _florence is declared
+
+Coq < _florence_e2 is declared
+
+Coq < _four is declared
+
+Coq < _from is declared
+
+Coq < _go is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _now is declared
+
+Coq < _past is declared
+
+Coq < _smith is declared
+
+Coq < _smith_e2 is declared
+
+Coq < _time is declared
+
+Coq < _to is declared
+
+Coq < _twice is declared
+
+Coq < _two is declared
+
+Coq < _will is declared
+
+Coq < _year is declared
+
+Coq < Toplevel input, characters 415-424:
+> Theorem t1: (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (exists z2, (and (and (and (and (_past z2) True) (_in _smith z2)) (_twice _smith)) (_florence_e2 _smith))))) -> (exists x, (and (and (x = _smith) True) (_will (exists z4, (and (and (and (and (and (_coming z4) (_year z4)) True) (_in _smith z4)) (_twice _smith)) (exists z1, (and (and (and (z1 = _florence) True) (_to _smith _florence)) (_go _smith)))))))) -> (exists x, (and (and (and (and (_two x) (_year x)) (exists z1, (and (and (and (_now z1) (_smith_e2 z1)) True) (_from x z1)))) True) (_will (and (and (and (and (_have x) (_be x)) (_time x)) (_florence_e2 x)) (_four x))))).
+>                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^^^^^
+Error:
+In environment
+x : Entity
+z4 : Entity
+z1 : Entity -> Prop
+The term "_florence" has type "Entity -> Prop"
+while it is expected to have type "Entity".
+
+Toplevel input, characters 672-678:
+> Theorem t1: (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (exists z2, (and (and (and (and (_past z2) True) (_in _smith z2)) (_twice _smith)) (_florence_e2 _smith))))) -> (exists x, (and (and (x = _smith) True) (_will (exists z4, (and (and (and (and (and (_coming z4) (_year z4)) True) (_in _smith z4)) (_twice _smith)) (exists z1, (and (and (and (z1 = _florence) True) (_to _smith _florence)) (_go _smith)))))))) -> (exists x, (and (and (and (and (_two x) (_year x)) (exists z1, (and (and (and (_now z1) (_smith_e2 z1)) True) (_from x z1)))) True) (_will (and (and (and (and (_have x) (_be x)) (_time x)) (_florence_e2 x)) (_four x))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 691-694:
+> Theorem t1: (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (exists z2, (and (and (and (and (_past z2) True) (_in _smith z2)) (_twice _smith)) (_florence_e2 _smith))))) -> (exists x, (and (and (x = _smith) True) (_will (exists z4, (and (and (and (and (and (_coming z4) (_year z4)) True) (_in _smith z4)) (_twice _smith)) (exists z1, (and (and (and (z1 = _florence) True) (_to _smith _florence)) (_go _smith)))))))) -> (exists x, (and (and (and (and (_two x) (_year x)) (exists z1, (and (and (and (_now z1) (_smith_e2 z1)) True) (_from x z1)))) True) (_will (and (and (and (and (_have x) (_be x)) (_time x)) (_florence_e2 x)) (_four x))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 709-713:
+> Theorem t1: (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (exists z2, (and (and (and (and (_past z2) True) (_in _smith z2)) (_twice _smith)) (_florence_e2 _smith))))) -> (exists x, (and (and (x = _smith) True) (_will (exists z4, (and (and (and (and (and (_coming z4) (_year z4)) True) (_in _smith z4)) (_twice _smith)) (exists z1, (and (and (and (z1 = _florence) True) (_to _smith _florence)) (_go _smith)))))))) -> (exists x, (and (and (and (and (_two x) (_year x)) (exists z1, (and (and (and (_now z1) (_smith_e2 z1)) True) (_from x z1)))) True) (_will (and (and (and (and (_have x) (_be x)) (_time x)) (_florence_e2 x)) (_four x))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _be is declared
+
+Coq < _coming is declared
+
+Coq < _florence is declared
+
+Coq < _florence_e2 is declared
+
+Coq < _four is declared
+
+Coq < _from is declared
+
+Coq < _go is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _now is declared
+
+Coq < _past is declared
+
+Coq < _smith is declared
+
+Coq < _smith_e2 is declared
+
+Coq < _time is declared
+
+Coq < _to is declared
+
+Coq < _twice is declared
+
+Coq < _two is declared
+
+Coq < _will is declared
+
+Coq < _year is declared
+
+Coq < Toplevel input, characters 415-424:
+> Theorem t1: (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (exists z2, (and (and (and (and (_past z2) True) (_in _smith z2)) (_twice _smith)) (_florence_e2 _smith))))) -> (exists x, (and (and (x = _smith) True) (_will (exists z4, (and (and (and (and (and (_coming z4) (_year z4)) True) (_in _smith z4)) (_twice _smith)) (exists z1, (and (and (and (z1 = _florence) True) (_to _smith _florence)) (_go _smith)))))))) -> (exists x, (and (and (and (and (_two x) (_year x)) (exists z1, (and (and (and (_now z1) (_smith_e2 z1)) True) (_from x z1)))) True) (_will (and (and (and (and (_have x) (_be x)) (_time x)) (_florence_e2 x)) (_four x))))).
+>                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^^^^^
+Error:
+In environment
+x : Entity
+z4 : Entity
+z1 : Entity -> Prop
+The term "_florence" has type "Entity -> Prop"
+while it is expected to have type "Entity".
+
+Toplevel input, characters 672-677:
+> Theorem t1: (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (exists z2, (and (and (and (and (_past z2) True) (_in _smith z2)) (_twice _smith)) (_florence_e2 _smith))))) -> (exists x, (and (and (x = _smith) True) (_will (exists z4, (and (and (and (and (and (_coming z4) (_year z4)) True) (_in _smith z4)) (_twice _smith)) (exists z1, (and (and (and (z1 = _florence) True) (_to _smith _florence)) (_go _smith)))))))) -> (exists x, (and (and (and (and (_two x) (_year x)) (exists z1, (and (and (and (_now z1) (_smith_e2 z1)) True) (_from x z1)))) True) (_will (and (and (and (and (_have x) (_be x)) (_time x)) (_florence_e2 x)) (_four x))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 679-683:
+> Theorem t1: (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (exists z2, (and (and (and (and (_past z2) True) (_in _smith z2)) (_twice _smith)) (_florence_e2 _smith))))) -> (exists x, (and (and (x = _smith) True) (_will (exists z4, (and (and (and (and (and (_coming z4) (_year z4)) True) (_in _smith z4)) (_twice _smith)) (exists z1, (and (and (and (z1 = _florence) True) (_to _smith _florence)) (_go _smith)))))))) -> (exists x, (and (and (and (and (_two x) (_year x)) (exists z1, (and (and (and (_now z1) (_smith_e2 z1)) True) (_from x z1)))) True) (_will (and (and (and (and (_have x) (_be x)) (_time x)) (_florence_e2 x)) (_four x))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _be is declared
+
+Coq < _coming is declared
+
+Coq < _florence is declared
+
+Coq < _florence_e2 is declared
+
+Coq < _four is declared
+
+Coq < _from is declared
+
+Coq < _go is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _now is declared
+
+Coq < _past is declared
+
+Coq < _smith is declared
+
+Coq < _smith_e2 is declared
+
+Coq < _time is declared
+
+Coq < _to is declared
+
+Coq < _twice is declared
+
+Coq < _two is declared
+
+Coq < _will is declared
+
+Coq < _year is declared
+
+Coq < Toplevel input, characters 415-424:
+> Theorem t1: (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (exists z2, (and (and (and (and (_past z2) True) (_in _smith z2)) (_twice _smith)) (_florence_e2 _smith))))) -> (exists x, (and (and (x = _smith) True) (_will (exists z4, (and (and (and (and (and (_coming z4) (_year z4)) True) (_in _smith z4)) (_twice _smith)) (exists z1, (and (and (and (z1 = _florence) True) (_to _smith _florence)) (_go _smith)))))))) -> (not (exists x, (and (and (and (and (_two x) (_year x)) (exists z1, (and (and (and (_now z1) (_smith_e2 z1)) True) (_from x z1)))) True) (_will (and (and (and (and (_have x) (_be x)) (_time x)) (_florence_e2 x)) (_four x)))))).
+>                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^^^^^
+Error:
+In environment
+x : Entity
+z4 : Entity
+z1 : Entity -> Prop
+The term "_florence" has type "Entity -> Prop"
+while it is expected to have type "Entity".
+
+Toplevel input, characters 678-684:
+> Theorem t1: (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (exists z2, (and (and (and (and (_past z2) True) (_in _smith z2)) (_twice _smith)) (_florence_e2 _smith))))) -> (exists x, (and (and (x = _smith) True) (_will (exists z4, (and (and (and (and (and (_coming z4) (_year z4)) True) (_in _smith z4)) (_twice _smith)) (exists z1, (and (and (and (z1 = _florence) True) (_to _smith _florence)) (_go _smith)))))))) -> (not (exists x, (and (and (and (and (_two x) (_year x)) (exists z1, (and (and (and (_now z1) (_smith_e2 z1)) True) (_from x z1)))) True) (_will (and (and (and (and (_have x) (_be x)) (_time x)) (_florence_e2 x)) (_four x)))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 697-700:
+> Theorem t1: (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (exists z2, (and (and (and (and (_past z2) True) (_in _smith z2)) (_twice _smith)) (_florence_e2 _smith))))) -> (exists x, (and (and (x = _smith) True) (_will (exists z4, (and (and (and (and (and (_coming z4) (_year z4)) True) (_in _smith z4)) (_twice _smith)) (exists z1, (and (and (and (z1 = _florence) True) (_to _smith _florence)) (_go _smith)))))))) -> (not (exists x, (and (and (and (and (_two x) (_year x)) (exists z1, (and (and (and (_now z1) (_smith_e2 z1)) True) (_from x z1)))) True) (_will (and (and (and (and (_have x) (_be x)) (_time x)) (_florence_e2 x)) (_four x)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 715-719:
+> Theorem t1: (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (exists z2, (and (and (and (and (_past z2) True) (_in _smith z2)) (_twice _smith)) (_florence_e2 _smith))))) -> (exists x, (and (and (x = _smith) True) (_will (exists z4, (and (and (and (and (and (_coming z4) (_year z4)) True) (_in _smith z4)) (_twice _smith)) (exists z1, (and (and (and (z1 = _florence) True) (_to _smith _florence)) (_go _smith)))))))) -> (not (exists x, (and (and (and (and (_two x) (_year x)) (exists z1, (and (and (and (_now z1) (_smith_e2 z1)) True) (_from x z1)))) True) (_will (and (and (and (and (_have x) (_be x)) (_time x)) (_florence_e2 x)) (_four x)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _be is declared
+
+Coq < _coming is declared
+
+Coq < _florence is declared
+
+Coq < _florence_e2 is declared
+
+Coq < _four is declared
+
+Coq < _from is declared
+
+Coq < _go is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _now is declared
+
+Coq < _past is declared
+
+Coq < _smith is declared
+
+Coq < _smith_e2 is declared
+
+Coq < _time is declared
+
+Coq < _to is declared
+
+Coq < _twice is declared
+
+Coq < _two is declared
+
+Coq < _will is declared
+
+Coq < _year is declared
+
+Coq < Toplevel input, characters 415-424:
+> Theorem t1: (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (exists z2, (and (and (and (and (_past z2) True) (_in _smith z2)) (_twice _smith)) (_florence_e2 _smith))))) -> (exists x, (and (and (x = _smith) True) (_will (exists z4, (and (and (and (and (and (_coming z4) (_year z4)) True) (_in _smith z4)) (_twice _smith)) (exists z1, (and (and (and (z1 = _florence) True) (_to _smith _florence)) (_go _smith)))))))) -> (not (exists x, (and (and (and (and (_two x) (_year x)) (exists z1, (and (and (and (_now z1) (_smith_e2 z1)) True) (_from x z1)))) True) (_will (and (and (and (and (_have x) (_be x)) (_time x)) (_florence_e2 x)) (_four x)))))).
+>                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^^^^^
+Error:
+In environment
+x : Entity
+z4 : Entity
+z1 : Entity -> Prop
+The term "_florence" has type "Entity -> Prop"
+while it is expected to have type "Entity".
+
+Toplevel input, characters 678-683:
+> Theorem t1: (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (exists z2, (and (and (and (and (_past z2) True) (_in _smith z2)) (_twice _smith)) (_florence_e2 _smith))))) -> (exists x, (and (and (x = _smith) True) (_will (exists z4, (and (and (and (and (and (_coming z4) (_year z4)) True) (_in _smith z4)) (_twice _smith)) (exists z1, (and (and (and (z1 = _florence) True) (_to _smith _florence)) (_go _smith)))))))) -> (not (exists x, (and (and (and (and (_two x) (_year x)) (exists z1, (and (and (and (_now z1) (_smith_e2 z1)) True) (_from x z1)))) True) (_will (and (and (and (and (_have x) (_be x)) (_time x)) (_florence_e2 x)) (_four x)))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 685-689:
+> Theorem t1: (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (exists z2, (and (and (and (and (_past z2) True) (_in _smith z2)) (_twice _smith)) (_florence_e2 _smith))))) -> (exists x, (and (and (x = _smith) True) (_will (exists z4, (and (and (and (and (and (_coming z4) (_year z4)) True) (_in _smith z4)) (_twice _smith)) (exists z1, (and (and (and (z1 = _florence) True) (_to _smith _florence)) (_go _smith)))))))) -> (not (exists x, (and (and (and (and (_two x) (_year x)) (exists z1, (and (and (and (_now z1) (_smith_e2 z1)) True) (_from x z1)))) True) (_will (and (and (and (and (_have x) (_be x)) (_time x)) (_florence_e2 x)) (_four x)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _be is declared
+
+Coq < _coming is declared
+
+Coq < _florence is declared
+
+Coq < _florence_e2 is declared
+
+Coq < _four is declared
+
+Coq < _from is declared
+
+Coq < _go is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _now is declared
+
+Coq < _past is declared
+
+Coq < _smith is declared
+
+Coq < _smith_e2 is declared
+
+Coq < _time is declared
+
+Coq < _to is declared
+
+Coq < _twice is declared
+
+Coq < _two is declared
+
+Coq < _will is declared
+
+Coq < _year is declared
+
+Coq < Toplevel input, characters 415-424:
+> Theorem t1: (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (exists z2, (and (and (and (and (_past z2) True) (_in _smith z2)) (_twice _smith)) (_florence_e2 _smith))))) -> (exists x, (and (and (x = _smith) True) (_will (exists z4, (and (and (and (and (and (_coming z4) (_year z4)) True) (_in _smith z4)) (_twice _smith)) (exists z1, (and (and (and (z1 = _florence) True) (_to _smith _florence)) (_go _smith)))))))) -> (exists x, (and (and (and (and (_two x) (_year x)) (exists z1, (and (and (and (_now z1) (_smith_e2 z1)) True) (_from x z1)))) True) (_will (and (and (and (and (_have x) (_be x)) (_time x)) (_florence_e2 x)) (_four x))))).
+>                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^^^^^
+Error:
+In environment
+x : Entity
+z4 : Entity
+z1 : Entity -> Prop
+The term "_florence" has type "Entity -> Prop"
+while it is expected to have type "Entity".
+
+Toplevel input, characters 672-678:
+> Theorem t1: (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (exists z2, (and (and (and (and (_past z2) True) (_in _smith z2)) (_twice _smith)) (_florence_e2 _smith))))) -> (exists x, (and (and (x = _smith) True) (_will (exists z4, (and (and (and (and (and (_coming z4) (_year z4)) True) (_in _smith z4)) (_twice _smith)) (exists z1, (and (and (and (z1 = _florence) True) (_to _smith _florence)) (_go _smith)))))))) -> (exists x, (and (and (and (and (_two x) (_year x)) (exists z1, (and (and (and (_now z1) (_smith_e2 z1)) True) (_from x z1)))) True) (_will (and (and (and (and (_have x) (_be x)) (_time x)) (_florence_e2 x)) (_four x))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 691-694:
+> Theorem t1: (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (exists z2, (and (and (and (and (_past z2) True) (_in _smith z2)) (_twice _smith)) (_florence_e2 _smith))))) -> (exists x, (and (and (x = _smith) True) (_will (exists z4, (and (and (and (and (and (_coming z4) (_year z4)) True) (_in _smith z4)) (_twice _smith)) (exists z1, (and (and (and (z1 = _florence) True) (_to _smith _florence)) (_go _smith)))))))) -> (exists x, (and (and (and (and (_two x) (_year x)) (exists z1, (and (and (and (_now z1) (_smith_e2 z1)) True) (_from x z1)))) True) (_will (and (and (and (and (_have x) (_be x)) (_time x)) (_florence_e2 x)) (_four x))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 709-713:
+> Theorem t1: (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (exists z2, (and (and (and (and (_past z2) True) (_in _smith z2)) (_twice _smith)) (_florence_e2 _smith))))) -> (exists x, (and (and (x = _smith) True) (_will (exists z4, (and (and (and (and (and (_coming z4) (_year z4)) True) (_in _smith z4)) (_twice _smith)) (exists z1, (and (and (and (z1 = _florence) True) (_to _smith _florence)) (_go _smith)))))))) -> (exists x, (and (and (and (and (_two x) (_year x)) (exists z1, (and (and (and (_now z1) (_smith_e2 z1)) True) (_from x z1)))) True) (_will (and (and (and (and (_have x) (_be x)) (_time x)) (_florence_e2 x)) (_four x))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _be is declared
+
+Coq < _coming is declared
+
+Coq < _florence is declared
+
+Coq < _florence_e2 is declared
+
+Coq < _four is declared
+
+Coq < _from is declared
+
+Coq < _go is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _now is declared
+
+Coq < _past is declared
+
+Coq < _smith is declared
+
+Coq < _smith_e2 is declared
+
+Coq < _time is declared
+
+Coq < _to is declared
+
+Coq < _twice is declared
+
+Coq < _two is declared
+
+Coq < _will is declared
+
+Coq < _year is declared
+
+Coq < Toplevel input, characters 415-424:
+> Theorem t1: (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (exists z2, (and (and (and (and (_past z2) True) (_in _smith z2)) (_twice _smith)) (_florence_e2 _smith))))) -> (exists x, (and (and (x = _smith) True) (_will (exists z4, (and (and (and (and (and (_coming z4) (_year z4)) True) (_in _smith z4)) (_twice _smith)) (exists z1, (and (and (and (z1 = _florence) True) (_to _smith _florence)) (_go _smith)))))))) -> (not (exists x, (and (and (and (and (_two x) (_year x)) (exists z1, (and (and (and (_now z1) (_smith_e2 z1)) True) (_from x z1)))) True) (_will (and (and (and (and (_have x) (_be x)) (_time x)) (_florence_e2 x)) (_four x)))))).
+>                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^^^^^
+Error:
+In environment
+x : Entity
+z4 : Entity
+z1 : Entity -> Prop
+The term "_florence" has type "Entity -> Prop"
+while it is expected to have type "Entity".
+
+Toplevel input, characters 678-684:
+> Theorem t1: (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (exists z2, (and (and (and (and (_past z2) True) (_in _smith z2)) (_twice _smith)) (_florence_e2 _smith))))) -> (exists x, (and (and (x = _smith) True) (_will (exists z4, (and (and (and (and (and (_coming z4) (_year z4)) True) (_in _smith z4)) (_twice _smith)) (exists z1, (and (and (and (z1 = _florence) True) (_to _smith _florence)) (_go _smith)))))))) -> (not (exists x, (and (and (and (and (_two x) (_year x)) (exists z1, (and (and (and (_now z1) (_smith_e2 z1)) True) (_from x z1)))) True) (_will (and (and (and (and (_have x) (_be x)) (_time x)) (_florence_e2 x)) (_four x)))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 697-700:
+> Theorem t1: (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (exists z2, (and (and (and (and (_past z2) True) (_in _smith z2)) (_twice _smith)) (_florence_e2 _smith))))) -> (exists x, (and (and (x = _smith) True) (_will (exists z4, (and (and (and (and (and (_coming z4) (_year z4)) True) (_in _smith z4)) (_twice _smith)) (exists z1, (and (and (and (z1 = _florence) True) (_to _smith _florence)) (_go _smith)))))))) -> (not (exists x, (and (and (and (and (_two x) (_year x)) (exists z1, (and (and (and (_now z1) (_smith_e2 z1)) True) (_from x z1)))) True) (_will (and (and (and (and (_have x) (_be x)) (_time x)) (_florence_e2 x)) (_four x)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 715-719:
+> Theorem t1: (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (exists z2, (and (and (and (and (_past z2) True) (_in _smith z2)) (_twice _smith)) (_florence_e2 _smith))))) -> (exists x, (and (and (x = _smith) True) (_will (exists z4, (and (and (and (and (and (_coming z4) (_year z4)) True) (_in _smith z4)) (_twice _smith)) (exists z1, (and (and (and (z1 = _florence) True) (_to _smith _florence)) (_go _smith)))))))) -> (not (exists x, (and (and (and (and (_two x) (_year x)) (exists z1, (and (and (and (_now z1) (_smith_e2 z1)) True) (_from x z1)))) True) (_will (and (and (and (and (_have x) (_be x)) (_time x)) (_florence_e2 x)) (_four x)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _be is declared
+
+Coq < _coming is declared
+
+Coq < _florence is declared
+
+Coq < _florence_e2 is declared
+
+Coq < _four is declared
+
+Coq < _from is declared
+
+Coq < _go is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _now is declared
+
+Coq < _past is declared
+
+Coq < _smith is declared
+
+Coq < _smith_e2 is declared
+
+Coq < _time is declared
+
+Coq < _to is declared
+
+Coq < _twice is declared
+
+Coq < _two is declared
+
+Coq < _will is declared
+
+Coq < _year is declared
+
+Coq < Toplevel input, characters 415-424:
+> Theorem t1: (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (exists z2, (and (and (and (and (_past z2) True) (_in _smith z2)) (_twice _smith)) (_florence_e2 _smith))))) -> (exists x, (and (and (x = _smith) True) (_will (exists z4, (and (and (and (and (and (_coming z4) (_year z4)) True) (_in _smith z4)) (_twice _smith)) (exists z1, (and (and (and (z1 = _florence) True) (_to _smith _florence)) (_go _smith)))))))) -> (exists x, (and (and (and (and (_two x) (_year x)) (exists z1, (and (and (and (_now z1) (_smith_e2 z1)) True) (_from x z1)))) True) (_will (and (and (and (and (_have x) (_be x)) (_time x)) (_florence_e2 x)) (_four x))))).
+>                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^^^^^
+Error:
+In environment
+x : Entity
+z4 : Entity
+z1 : Entity -> Prop
+The term "_florence" has type "Entity -> Prop"
+while it is expected to have type "Entity".
+
+Toplevel input, characters 672-678:
+> Theorem t1: (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (exists z2, (and (and (and (and (_past z2) True) (_in _smith z2)) (_twice _smith)) (_florence_e2 _smith))))) -> (exists x, (and (and (x = _smith) True) (_will (exists z4, (and (and (and (and (and (_coming z4) (_year z4)) True) (_in _smith z4)) (_twice _smith)) (exists z1, (and (and (and (z1 = _florence) True) (_to _smith _florence)) (_go _smith)))))))) -> (exists x, (and (and (and (and (_two x) (_year x)) (exists z1, (and (and (and (_now z1) (_smith_e2 z1)) True) (_from x z1)))) True) (_will (and (and (and (and (_have x) (_be x)) (_time x)) (_florence_e2 x)) (_four x))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 691-694:
+> Theorem t1: (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (exists z2, (and (and (and (and (_past z2) True) (_in _smith z2)) (_twice _smith)) (_florence_e2 _smith))))) -> (exists x, (and (and (x = _smith) True) (_will (exists z4, (and (and (and (and (and (_coming z4) (_year z4)) True) (_in _smith z4)) (_twice _smith)) (exists z1, (and (and (and (z1 = _florence) True) (_to _smith _florence)) (_go _smith)))))))) -> (exists x, (and (and (and (and (_two x) (_year x)) (exists z1, (and (and (and (_now z1) (_smith_e2 z1)) True) (_from x z1)))) True) (_will (and (and (and (and (_have x) (_be x)) (_time x)) (_florence_e2 x)) (_four x))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 709-713:
+> Theorem t1: (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (exists z2, (and (and (and (and (_past z2) True) (_in _smith z2)) (_twice _smith)) (_florence_e2 _smith))))) -> (exists x, (and (and (x = _smith) True) (_will (exists z4, (and (and (and (and (and (_coming z4) (_year z4)) True) (_in _smith z4)) (_twice _smith)) (exists z1, (and (and (and (z1 = _florence) True) (_to _smith _florence)) (_go _smith)))))))) -> (exists x, (and (and (and (and (_two x) (_year x)) (exists z1, (and (and (and (_now z1) (_smith_e2 z1)) True) (_from x z1)))) True) (_will (and (and (and (and (_have x) (_be x)) (_time x)) (_florence_e2 x)) (_four x))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _be is declared
+
+Coq < _coming is declared
+
+Coq < _florence is declared
+
+Coq < _florence_e2 is declared
+
+Coq < _four is declared
+
+Coq < _from is declared
+
+Coq < _go is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _now is declared
+
+Coq < _past is declared
+
+Coq < _smith is declared
+
+Coq < _smith_e2 is declared
+
+Coq < _time is declared
+
+Coq < _to is declared
+
+Coq < _twice is declared
+
+Coq < _two is declared
+
+Coq < _will is declared
+
+Coq < _year is declared
+
+Coq < Toplevel input, characters 415-424:
+> Theorem t1: (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (exists z2, (and (and (and (and (_past z2) True) (_in _smith z2)) (_twice _smith)) (_florence_e2 _smith))))) -> (exists x, (and (and (x = _smith) True) (_will (exists z4, (and (and (and (and (and (_coming z4) (_year z4)) True) (_in _smith z4)) (_twice _smith)) (exists z1, (and (and (and (z1 = _florence) True) (_to _smith _florence)) (_go _smith)))))))) -> (not (exists x, (and (and (and (and (_two x) (_year x)) (exists z1, (and (and (and (_now z1) (_smith_e2 z1)) True) (_from x z1)))) True) (_will (and (and (and (and (_have x) (_be x)) (_time x)) (_florence_e2 x)) (_four x)))))).
+>                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^^^^^
+Error:
+In environment
+x : Entity
+z4 : Entity
+z1 : Entity -> Prop
+The term "_florence" has type "Entity -> Prop"
+while it is expected to have type "Entity".
+
+Toplevel input, characters 678-684:
+> Theorem t1: (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (exists z2, (and (and (and (and (_past z2) True) (_in _smith z2)) (_twice _smith)) (_florence_e2 _smith))))) -> (exists x, (and (and (x = _smith) True) (_will (exists z4, (and (and (and (and (and (_coming z4) (_year z4)) True) (_in _smith z4)) (_twice _smith)) (exists z1, (and (and (and (z1 = _florence) True) (_to _smith _florence)) (_go _smith)))))))) -> (not (exists x, (and (and (and (and (_two x) (_year x)) (exists z1, (and (and (and (_now z1) (_smith_e2 z1)) True) (_from x z1)))) True) (_will (and (and (and (and (_have x) (_be x)) (_time x)) (_florence_e2 x)) (_four x)))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 697-700:
+> Theorem t1: (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (exists z2, (and (and (and (and (_past z2) True) (_in _smith z2)) (_twice _smith)) (_florence_e2 _smith))))) -> (exists x, (and (and (x = _smith) True) (_will (exists z4, (and (and (and (and (and (_coming z4) (_year z4)) True) (_in _smith z4)) (_twice _smith)) (exists z1, (and (and (and (z1 = _florence) True) (_to _smith _florence)) (_go _smith)))))))) -> (not (exists x, (and (and (and (and (_two x) (_year x)) (exists z1, (and (and (and (_now z1) (_smith_e2 z1)) True) (_from x z1)))) True) (_will (and (and (and (and (_have x) (_be x)) (_time x)) (_florence_e2 x)) (_four x)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 715-719:
+> Theorem t1: (exists x, (and (and (and (and (x = _smith) True) (_have _smith)) (_be _smith)) (exists z2, (and (and (and (and (_past z2) True) (_in _smith z2)) (_twice _smith)) (_florence_e2 _smith))))) -> (exists x, (and (and (x = _smith) True) (_will (exists z4, (and (and (and (and (and (_coming z4) (_year z4)) True) (_in _smith z4)) (_twice _smith)) (exists z1, (and (and (and (z1 = _florence) True) (_to _smith _florence)) (_go _smith)))))))) -> (not (exists x, (and (and (and (and (_two x) (_year x)) (exists z1, (and (and (and (_now z1) (_smith_e2 z1)) True) (_from x z1)))) True) (_will (and (and (and (and (_have x) (_be x)) (_time x)) (_florence_e2 x)) (_four x)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+unknown
+

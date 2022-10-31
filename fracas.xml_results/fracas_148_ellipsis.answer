@@ -1,0 +1,135 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _bill is declared
+
+Coq < _has is declared
+
+Coq < _have is declared
+
+Coq < _john is declared
+
+Coq < _mary is declared
+
+Coq < _speak is declared
+
+Coq < _to is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((_has x /\ _john x) /\ True) /\ _speak x) /\
+(exists z1 : Entity, (z1 = _mary /\ True) /\ _to x _mary)) ->
+(exists x : Entity, (x = _bill /\ True) /\ _have _bill) ->
+exists x : Entity,
+(((x = _bill /\ True) /\ _have _bill) /\ _speak _bill) /\
+(exists z1 : Entity, (z1 = _mary /\ True) /\ _to _bill _mary)
+
+
+Toplevel input, characters 352-356:
+> Theorem t1: (exists x, (and (and (and (and (_has x) (_john x)) True) (_speak x)) (exists z1, (and (and (z1 = _mary) True) (_to x _mary))))) -> (exists x, (and (and (x = _bill) True) (_have _bill))) -> (exists x, (and (and (and (and (x = _bill) True) (_have _bill)) (_speak _bill)) (exists z1, (and (and (z1 = _mary) True) (_to _bill _mary))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _bill is declared
+
+Coq < _has is declared
+
+Coq < _have is declared
+
+Coq < _john is declared
+
+Coq < _mary is declared
+
+Coq < _speak is declared
+
+Coq < _to is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((_has x /\ _john x) /\ True) /\ _speak x) /\
+(exists z1 : Entity, (z1 = _mary /\ True) /\ _to x _mary)) ->
+(exists x : Entity, (x = _bill /\ True) /\ _have _bill) ->
+~
+(exists x : Entity,
+(((x = _bill /\ True) /\ _have _bill) /\ _speak _bill) /\
+(exists z1 : Entity, (z1 = _mary /\ True) /\ _to _bill _mary))
+
+
+Toplevel input, characters 358-362:
+> Theorem t1: (exists x, (and (and (and (and (_has x) (_john x)) True) (_speak x)) (exists z1, (and (and (z1 = _mary) True) (_to x _mary))))) -> (exists x, (and (and (x = _bill) True) (_have _bill))) -> (not (exists x, (and (and (and (and (x = _bill) True) (_have _bill)) (_speak _bill)) (exists z1, (and (and (z1 = _mary) True) (_to _bill _mary)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                       ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _bill is declared
+
+Coq < _has is declared
+
+Coq < _have is declared
+
+Coq < _john is declared
+
+Coq < _mary is declared
+
+Coq < _speak is declared
+
+Coq < _to is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((_has x /\ _john x) /\ True) /\ _speak x) /\
+(exists z1 : Entity, (z1 = _mary /\ True) /\ _to x _mary)) ->
+(exists x : Entity, (x = _bill /\ True) /\ _have _bill) ->
+exists x : Entity,
+(((x = _bill /\ True) /\ _have _bill) /\ _speak _bill) /\
+(exists z1 : Entity, (z1 = _mary /\ True) /\ _to _bill _mary)
+
+2 goals
+
+H1 : _have _bill
+H2 : True
+x0 : Entity
+H4 : _speak x0
+H5 : True
+H : _has x0
+H6 : _john x0
+H7 : _to x0 _mary
+H8 : True
+============================
+_speak _bill
+
+goal 2 is:
+_to _bill _mary
+
+Toplevel input, characters 368-380:
+> Theorem t1: (exists x, (and (and (and (and (_has x) (_john x)) True) (_speak x)) (exists z1, (and (and (z1 = _mary) True) (_to x _mary))))) -> (exists x, (and (and (x = _bill) True) (_have _bill))) -> (exists x, (and (and (and (and (x = _bill) True) (_have _bill)) (_speak _bill)) (exists z1, (and (and (z1 = _mary) True) (_to _bill _mary))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                 ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 382-386:
+> Theorem t1: (exists x, (and (and (and (and (_has x) (_john x)) True) (_speak x)) (exists z1, (and (and (z1 = _mary) True) (_to x _mary))))) -> (exists x, (and (and (x = _bill) True) (_have _bill))) -> (exists x, (and (and (and (and (x = _bill) True) (_have _bill)) (_speak _bill)) (exists z1, (and (and (z1 = _mary) True) (_to _bill _mary))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                               ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

@@ -1,0 +1,432 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _be is declared
+
+Coq < _business is declared
+
+Coq < _commissioner is declared
+
+Coq < _female is declared
+
+Coq < _in is declared
+
+Coq < _use is declared
+
+Coq < _use_e2 is declared
+
+Coq < _use_e3 is declared
+
+Coq < Toplevel input, characters 159-353:
+> Theorem t1: (exists x, (and (and (and (two x) (_commissioner x)) True) (_use_e3 x (and (_be x) (exists z1, (and (and (_business z1) True) (_in x z1))))))) -> (fun F1 F3 => (exists x, (and (and (and (and (and (and (and (two x) (_female x)) (_commissioner x)) (_use_e2 x)) (_be x)) (exists z1, (and (and (_business z1) True) (_in x z1)))) (F1 x)) (F3 x)))).
+>                                                                                                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun F1 F3 : Entity -> Prop =>
+exists x : Entity,
+((((((two x /\ _female x) /\ _commissioner x) /\ _use_e2 x) /\ _be x) /\
+(exists z1 : Entity, (_business z1 /\ True) /\ _in x z1)) /\
+F1 x) /\ F3 x" has type "(Entity -> Prop) -> (Entity -> Prop) -> Prop"
+which should be Set, Prop or Type.
+
+Toplevel input, characters 356-361:
+> Theorem t1: (exists x, (and (and (and (two x) (_commissioner x)) True) (_use_e3 x (and (_be x) (exists z1, (and (and (_business z1) True) (_in x z1))))))) -> (fun F1 F3 => (exists x, (and (and (and (and (and (and (and (two x) (_female x)) (_commissioner x)) (_use_e2 x)) (_be x)) (exists z1, (and (and (_business z1) True) (_in x z1)))) (F1 x)) (F3 x)))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                     ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 363-367:
+> Theorem t1: (exists x, (and (and (and (two x) (_commissioner x)) True) (_use_e3 x (and (_be x) (exists z1, (and (and (_business z1) True) (_in x z1))))))) -> (fun F1 F3 => (exists x, (and (and (and (and (and (and (and (two x) (_female x)) (_commissioner x)) (_use_e2 x)) (_be x)) (exists z1, (and (and (_business z1) True) (_in x z1)))) (F1 x)) (F3 x)))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                            ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _be is declared
+
+Coq < _business is declared
+
+Coq < _commissioner is declared
+
+Coq < _female is declared
+
+Coq < _in is declared
+
+Coq < _use is declared
+
+Coq < _use_e2 is declared
+
+Coq < _use_e3 is declared
+
+Coq < Toplevel input, characters 164-358:
+> Theorem t1: (exists x, (and (and (and (two x) (_commissioner x)) True) (_use_e3 x (and (_be x) (exists z1, (and (and (_business z1) True) (_in x z1))))))) -> (not (fun F1 F3 => (exists x, (and (and (and (and (and (and (and (two x) (_female x)) (_commissioner x)) (_use_e2 x)) (_be x)) (exists z1, (and (and (_business z1) True) (_in x z1)))) (F1 x)) (F3 x))))).
+>                                                                                                                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The type of this term is a product while it is expected to be Prop.
+
+Toplevel input, characters 362-367:
+> Theorem t1: (exists x, (and (and (and (two x) (_commissioner x)) True) (_use_e3 x (and (_be x) (exists z1, (and (and (_business z1) True) (_in x z1))))))) -> (not (fun F1 F3 => (exists x, (and (and (and (and (and (and (and (two x) (_female x)) (_commissioner x)) (_use_e2 x)) (_be x)) (exists z1, (and (and (_business z1) True) (_in x z1)))) (F1 x)) (F3 x))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                           ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 369-373:
+> Theorem t1: (exists x, (and (and (and (two x) (_commissioner x)) True) (_use_e3 x (and (_be x) (exists z1, (and (and (_business z1) True) (_in x z1))))))) -> (not (fun F1 F3 => (exists x, (and (and (and (and (and (and (and (two x) (_female x)) (_commissioner x)) (_use_e2 x)) (_be x)) (exists z1, (and (and (_business z1) True) (_in x z1)))) (F1 x)) (F3 x))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                  ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _be is declared
+
+Coq < _business is declared
+
+Coq < _commissioner is declared
+
+Coq < _female is declared
+
+Coq < _in is declared
+
+Coq < _use is declared
+
+Coq < _use_e2 is declared
+
+Coq < _use_e3 is declared
+
+Coq < Toplevel input, characters 159-353:
+> Theorem t1: (exists x, (and (and (and (two x) (_commissioner x)) True) (_use_e3 x (and (_be x) (exists z1, (and (and (_business z1) True) (_in x z1))))))) -> (fun F1 F3 => (exists x, (and (and (and (and (and (and (and (two x) (_female x)) (_commissioner x)) (_use_e2 x)) (_be x)) (exists z1, (and (and (_business z1) True) (_in x z1)))) (F1 x)) (F3 x)))).
+>                                                                                                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun F1 F3 : Entity -> Prop =>
+exists x : Entity,
+((((((two x /\ _female x) /\ _commissioner x) /\ _use_e2 x) /\ _be x) /\
+(exists z1 : Entity, (_business z1 /\ True) /\ _in x z1)) /\
+F1 x) /\ F3 x" has type "(Entity -> Prop) -> (Entity -> Prop) -> Prop"
+which should be Set, Prop or Type.
+
+Toplevel input, characters 356-362:
+> Theorem t1: (exists x, (and (and (and (two x) (_commissioner x)) True) (_use_e3 x (and (_be x) (exists z1, (and (and (_business z1) True) (_in x z1))))))) -> (fun F1 F3 => (exists x, (and (and (and (and (and (and (and (two x) (_female x)) (_commissioner x)) (_use_e2 x)) (_be x)) (exists z1, (and (and (_business z1) True) (_in x z1)))) (F1 x)) (F3 x)))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                     ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 375-378:
+> Theorem t1: (exists x, (and (and (and (two x) (_commissioner x)) True) (_use_e3 x (and (_be x) (exists z1, (and (and (_business z1) True) (_in x z1))))))) -> (fun F1 F3 => (exists x, (and (and (and (and (and (and (and (two x) (_female x)) (_commissioner x)) (_use_e2 x)) (_be x)) (exists z1, (and (and (_business z1) True) (_in x z1)))) (F1 x)) (F3 x)))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                        ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 393-397:
+> Theorem t1: (exists x, (and (and (and (two x) (_commissioner x)) True) (_use_e3 x (and (_be x) (exists z1, (and (and (_business z1) True) (_in x z1))))))) -> (fun F1 F3 => (exists x, (and (and (and (and (and (and (and (two x) (_female x)) (_commissioner x)) (_use_e2 x)) (_be x)) (exists z1, (and (and (_business z1) True) (_in x z1)))) (F1 x)) (F3 x)))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _be is declared
+
+Coq < _business is declared
+
+Coq < _commissioner is declared
+
+Coq < _female is declared
+
+Coq < _in is declared
+
+Coq < _use is declared
+
+Coq < _use_e2 is declared
+
+Coq < _use_e3 is declared
+
+Coq < Toplevel input, characters 159-353:
+> Theorem t1: (exists x, (and (and (and (two x) (_commissioner x)) True) (_use_e3 x (and (_be x) (exists z1, (and (and (_business z1) True) (_in x z1))))))) -> (fun F1 F3 => (exists x, (and (and (and (and (and (and (and (two x) (_female x)) (_commissioner x)) (_use_e2 x)) (_be x)) (exists z1, (and (and (_business z1) True) (_in x z1)))) (F1 x)) (F3 x)))).
+>                                                                                                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun F1 F3 : Entity -> Prop =>
+exists x : Entity,
+((((((two x /\ _female x) /\ _commissioner x) /\ _use_e2 x) /\ _be x) /\
+(exists z1 : Entity, (_business z1 /\ True) /\ _in x z1)) /\
+F1 x) /\ F3 x" has type "(Entity -> Prop) -> (Entity -> Prop) -> Prop"
+which should be Set, Prop or Type.
+
+Toplevel input, characters 356-361:
+> Theorem t1: (exists x, (and (and (and (two x) (_commissioner x)) True) (_use_e3 x (and (_be x) (exists z1, (and (and (_business z1) True) (_in x z1))))))) -> (fun F1 F3 => (exists x, (and (and (and (and (and (and (and (two x) (_female x)) (_commissioner x)) (_use_e2 x)) (_be x)) (exists z1, (and (and (_business z1) True) (_in x z1)))) (F1 x)) (F3 x)))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                     ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 363-367:
+> Theorem t1: (exists x, (and (and (and (two x) (_commissioner x)) True) (_use_e3 x (and (_be x) (exists z1, (and (and (_business z1) True) (_in x z1))))))) -> (fun F1 F3 => (exists x, (and (and (and (and (and (and (and (two x) (_female x)) (_commissioner x)) (_use_e2 x)) (_be x)) (exists z1, (and (and (_business z1) True) (_in x z1)))) (F1 x)) (F3 x)))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                            ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _be is declared
+
+Coq < _business is declared
+
+Coq < _commissioner is declared
+
+Coq < _female is declared
+
+Coq < _in is declared
+
+Coq < _use is declared
+
+Coq < _use_e2 is declared
+
+Coq < _use_e3 is declared
+
+Coq < Toplevel input, characters 164-358:
+> Theorem t1: (exists x, (and (and (and (two x) (_commissioner x)) True) (_use_e3 x (and (_be x) (exists z1, (and (and (_business z1) True) (_in x z1))))))) -> (not (fun F1 F3 => (exists x, (and (and (and (and (and (and (and (two x) (_female x)) (_commissioner x)) (_use_e2 x)) (_be x)) (exists z1, (and (and (_business z1) True) (_in x z1)))) (F1 x)) (F3 x))))).
+>                                                                                                                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The type of this term is a product while it is expected to be Prop.
+
+Toplevel input, characters 362-368:
+> Theorem t1: (exists x, (and (and (and (two x) (_commissioner x)) True) (_use_e3 x (and (_be x) (exists z1, (and (and (_business z1) True) (_in x z1))))))) -> (not (fun F1 F3 => (exists x, (and (and (and (and (and (and (and (two x) (_female x)) (_commissioner x)) (_use_e2 x)) (_be x)) (exists z1, (and (and (_business z1) True) (_in x z1)))) (F1 x)) (F3 x))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                           ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 381-384:
+> Theorem t1: (exists x, (and (and (and (two x) (_commissioner x)) True) (_use_e3 x (and (_be x) (exists z1, (and (and (_business z1) True) (_in x z1))))))) -> (not (fun F1 F3 => (exists x, (and (and (and (and (and (and (and (two x) (_female x)) (_commissioner x)) (_use_e2 x)) (_be x)) (exists z1, (and (and (_business z1) True) (_in x z1)))) (F1 x)) (F3 x))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                              ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 399-403:
+> Theorem t1: (exists x, (and (and (and (two x) (_commissioner x)) True) (_use_e3 x (and (_be x) (exists z1, (and (and (_business z1) True) (_in x z1))))))) -> (not (fun F1 F3 => (exists x, (and (and (and (and (and (and (and (two x) (_female x)) (_commissioner x)) (_use_e2 x)) (_be x)) (exists z1, (and (and (_business z1) True) (_in x z1)))) (F1 x)) (F3 x))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _be is declared
+
+Coq < _business is declared
+
+Coq < _commissioner is declared
+
+Coq < _female is declared
+
+Coq < _in is declared
+
+Coq < _use is declared
+
+Coq < _use_e2 is declared
+
+Coq < _use_e3 is declared
+
+Coq < Toplevel input, characters 164-358:
+> Theorem t1: (exists x, (and (and (and (two x) (_commissioner x)) True) (_use_e3 x (and (_be x) (exists z1, (and (and (_business z1) True) (_in x z1))))))) -> (not (fun F1 F3 => (exists x, (and (and (and (and (and (and (and (two x) (_female x)) (_commissioner x)) (_use_e2 x)) (_be x)) (exists z1, (and (and (_business z1) True) (_in x z1)))) (F1 x)) (F3 x))))).
+>                                                                                                                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The type of this term is a product while it is expected to be Prop.
+
+Toplevel input, characters 362-367:
+> Theorem t1: (exists x, (and (and (and (two x) (_commissioner x)) True) (_use_e3 x (and (_be x) (exists z1, (and (and (_business z1) True) (_in x z1))))))) -> (not (fun F1 F3 => (exists x, (and (and (and (and (and (and (and (two x) (_female x)) (_commissioner x)) (_use_e2 x)) (_be x)) (exists z1, (and (and (_business z1) True) (_in x z1)))) (F1 x)) (F3 x))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                           ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 369-373:
+> Theorem t1: (exists x, (and (and (and (two x) (_commissioner x)) True) (_use_e3 x (and (_be x) (exists z1, (and (and (_business z1) True) (_in x z1))))))) -> (not (fun F1 F3 => (exists x, (and (and (and (and (and (and (and (two x) (_female x)) (_commissioner x)) (_use_e2 x)) (_be x)) (exists z1, (and (and (_business z1) True) (_in x z1)))) (F1 x)) (F3 x))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                  ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _be is declared
+
+Coq < _business is declared
+
+Coq < _commissioner is declared
+
+Coq < _female is declared
+
+Coq < _in is declared
+
+Coq < _use is declared
+
+Coq < _use_e2 is declared
+
+Coq < _use_e3 is declared
+
+Coq < Toplevel input, characters 159-353:
+> Theorem t1: (exists x, (and (and (and (two x) (_commissioner x)) True) (_use_e3 x (and (_be x) (exists z1, (and (and (_business z1) True) (_in x z1))))))) -> (fun F1 F3 => (exists x, (and (and (and (and (and (and (and (two x) (_female x)) (_commissioner x)) (_use_e2 x)) (_be x)) (exists z1, (and (and (_business z1) True) (_in x z1)))) (F1 x)) (F3 x)))).
+>                                                                                                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun F1 F3 : Entity -> Prop =>
+exists x : Entity,
+((((((two x /\ _female x) /\ _commissioner x) /\ _use_e2 x) /\ _be x) /\
+(exists z1 : Entity, (_business z1 /\ True) /\ _in x z1)) /\
+F1 x) /\ F3 x" has type "(Entity -> Prop) -> (Entity -> Prop) -> Prop"
+which should be Set, Prop or Type.
+
+Toplevel input, characters 356-362:
+> Theorem t1: (exists x, (and (and (and (two x) (_commissioner x)) True) (_use_e3 x (and (_be x) (exists z1, (and (and (_business z1) True) (_in x z1))))))) -> (fun F1 F3 => (exists x, (and (and (and (and (and (and (and (two x) (_female x)) (_commissioner x)) (_use_e2 x)) (_be x)) (exists z1, (and (and (_business z1) True) (_in x z1)))) (F1 x)) (F3 x)))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                     ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 375-378:
+> Theorem t1: (exists x, (and (and (and (two x) (_commissioner x)) True) (_use_e3 x (and (_be x) (exists z1, (and (and (_business z1) True) (_in x z1))))))) -> (fun F1 F3 => (exists x, (and (and (and (and (and (and (and (two x) (_female x)) (_commissioner x)) (_use_e2 x)) (_be x)) (exists z1, (and (and (_business z1) True) (_in x z1)))) (F1 x)) (F3 x)))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                        ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 393-397:
+> Theorem t1: (exists x, (and (and (and (two x) (_commissioner x)) True) (_use_e3 x (and (_be x) (exists z1, (and (and (_business z1) True) (_in x z1))))))) -> (fun F1 F3 => (exists x, (and (and (and (and (and (and (and (two x) (_female x)) (_commissioner x)) (_use_e2 x)) (_be x)) (exists z1, (and (and (_business z1) True) (_in x z1)))) (F1 x)) (F3 x)))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _be is declared
+
+Coq < _business is declared
+
+Coq < _commissioner is declared
+
+Coq < _female is declared
+
+Coq < _in is declared
+
+Coq < _use is declared
+
+Coq < _use_e2 is declared
+
+Coq < _use_e3 is declared
+
+Coq < Toplevel input, characters 164-358:
+> Theorem t1: (exists x, (and (and (and (two x) (_commissioner x)) True) (_use_e3 x (and (_be x) (exists z1, (and (and (_business z1) True) (_in x z1))))))) -> (not (fun F1 F3 => (exists x, (and (and (and (and (and (and (and (two x) (_female x)) (_commissioner x)) (_use_e2 x)) (_be x)) (exists z1, (and (and (_business z1) True) (_in x z1)))) (F1 x)) (F3 x))))).
+>                                                                                                                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The type of this term is a product while it is expected to be Prop.
+
+Toplevel input, characters 362-368:
+> Theorem t1: (exists x, (and (and (and (two x) (_commissioner x)) True) (_use_e3 x (and (_be x) (exists z1, (and (and (_business z1) True) (_in x z1))))))) -> (not (fun F1 F3 => (exists x, (and (and (and (and (and (and (and (two x) (_female x)) (_commissioner x)) (_use_e2 x)) (_be x)) (exists z1, (and (and (_business z1) True) (_in x z1)))) (F1 x)) (F3 x))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                           ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 381-384:
+> Theorem t1: (exists x, (and (and (and (two x) (_commissioner x)) True) (_use_e3 x (and (_be x) (exists z1, (and (and (_business z1) True) (_in x z1))))))) -> (not (fun F1 F3 => (exists x, (and (and (and (and (and (and (and (two x) (_female x)) (_commissioner x)) (_use_e2 x)) (_be x)) (exists z1, (and (and (_business z1) True) (_in x z1)))) (F1 x)) (F3 x))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                              ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 399-403:
+> Theorem t1: (exists x, (and (and (and (two x) (_commissioner x)) True) (_use_e3 x (and (_be x) (exists z1, (and (and (_business z1) True) (_in x z1))))))) -> (not (fun F1 F3 => (exists x, (and (and (and (and (and (and (and (two x) (_female x)) (_commissioner x)) (_use_e2 x)) (_be x)) (exists z1, (and (and (_business z1) True) (_in x z1)))) (F1 x)) (F3 x))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _be is declared
+
+Coq < _business is declared
+
+Coq < _commissioner is declared
+
+Coq < _female is declared
+
+Coq < _in is declared
+
+Coq < _use is declared
+
+Coq < _use_e2 is declared
+
+Coq < _use_e3 is declared
+
+Coq < Toplevel input, characters 159-353:
+> Theorem t1: (exists x, (and (and (and (two x) (_commissioner x)) True) (_use_e3 x (and (_be x) (exists z1, (and (and (_business z1) True) (_in x z1))))))) -> (fun F1 F3 => (exists x, (and (and (and (and (and (and (and (two x) (_female x)) (_commissioner x)) (_use_e2 x)) (_be x)) (exists z1, (and (and (_business z1) True) (_in x z1)))) (F1 x)) (F3 x)))).
+>                                                                                                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun F1 F3 : Entity -> Prop =>
+exists x : Entity,
+((((((two x /\ _female x) /\ _commissioner x) /\ _use_e2 x) /\ _be x) /\
+(exists z1 : Entity, (_business z1 /\ True) /\ _in x z1)) /\
+F1 x) /\ F3 x" has type "(Entity -> Prop) -> (Entity -> Prop) -> Prop"
+which should be Set, Prop or Type.
+
+Toplevel input, characters 356-362:
+> Theorem t1: (exists x, (and (and (and (two x) (_commissioner x)) True) (_use_e3 x (and (_be x) (exists z1, (and (and (_business z1) True) (_in x z1))))))) -> (fun F1 F3 => (exists x, (and (and (and (and (and (and (and (two x) (_female x)) (_commissioner x)) (_use_e2 x)) (_be x)) (exists z1, (and (and (_business z1) True) (_in x z1)))) (F1 x)) (F3 x)))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                     ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 375-378:
+> Theorem t1: (exists x, (and (and (and (two x) (_commissioner x)) True) (_use_e3 x (and (_be x) (exists z1, (and (and (_business z1) True) (_in x z1))))))) -> (fun F1 F3 => (exists x, (and (and (and (and (and (and (and (two x) (_female x)) (_commissioner x)) (_use_e2 x)) (_be x)) (exists z1, (and (and (_business z1) True) (_in x z1)))) (F1 x)) (F3 x)))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                        ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 393-397:
+> Theorem t1: (exists x, (and (and (and (two x) (_commissioner x)) True) (_use_e3 x (and (_be x) (exists z1, (and (and (_business z1) True) (_in x z1))))))) -> (fun F1 F3 => (exists x, (and (and (and (and (and (and (and (two x) (_female x)) (_commissioner x)) (_use_e2 x)) (_be x)) (exists z1, (and (and (_business z1) True) (_in x z1)))) (F1 x)) (F3 x)))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _be is declared
+
+Coq < _business is declared
+
+Coq < _commissioner is declared
+
+Coq < _female is declared
+
+Coq < _in is declared
+
+Coq < _use is declared
+
+Coq < _use_e2 is declared
+
+Coq < _use_e3 is declared
+
+Coq < Toplevel input, characters 164-358:
+> Theorem t1: (exists x, (and (and (and (two x) (_commissioner x)) True) (_use_e3 x (and (_be x) (exists z1, (and (and (_business z1) True) (_in x z1))))))) -> (not (fun F1 F3 => (exists x, (and (and (and (and (and (and (and (two x) (_female x)) (_commissioner x)) (_use_e2 x)) (_be x)) (exists z1, (and (and (_business z1) True) (_in x z1)))) (F1 x)) (F3 x))))).
+>                                                                                                                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The type of this term is a product while it is expected to be Prop.
+
+Toplevel input, characters 362-368:
+> Theorem t1: (exists x, (and (and (and (two x) (_commissioner x)) True) (_use_e3 x (and (_be x) (exists z1, (and (and (_business z1) True) (_in x z1))))))) -> (not (fun F1 F3 => (exists x, (and (and (and (and (and (and (and (two x) (_female x)) (_commissioner x)) (_use_e2 x)) (_be x)) (exists z1, (and (and (_business z1) True) (_in x z1)))) (F1 x)) (F3 x))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                           ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 381-384:
+> Theorem t1: (exists x, (and (and (and (two x) (_commissioner x)) True) (_use_e3 x (and (_be x) (exists z1, (and (and (_business z1) True) (_in x z1))))))) -> (not (fun F1 F3 => (exists x, (and (and (and (and (and (and (and (two x) (_female x)) (_commissioner x)) (_use_e2 x)) (_be x)) (exists z1, (and (and (_business z1) True) (_in x z1)))) (F1 x)) (F3 x))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                              ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 399-403:
+> Theorem t1: (exists x, (and (and (and (two x) (_commissioner x)) True) (_use_e3 x (and (_be x) (exists z1, (and (and (_business z1) True) (_in x z1))))))) -> (not (fun F1 F3 => (exists x, (and (and (and (and (and (and (and (two x) (_female x)) (_commissioner x)) (_use_e2 x)) (_be x)) (exists z1, (and (and (_business z1) True) (_in x z1)))) (F1 x)) (F3 x))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+unknown
+

@@ -1,0 +1,442 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _few is declared
+
+Coq < _great is declared
+
+Coq < _like is declared
+
+Coq < _music is declared
+
+Coq < _popular is declared
+
+Coq < _sing is declared
+
+Coq < _tenor is declared
+
+Coq < Toplevel input, characters 163-322:
+> Theorem t1: (exists x, (and (and (and (and (_few x) (_great x)) (_tenor x)) True) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing x z1))))) -> (fun F1 F3 => (exists x, (and (and (and (and (_great x) (_tenor x)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_like x z1)))) (F1 x)) (F3 x)))) -> (exists x z3, (and (and (and (and (_great z3) (_tenor z3)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing z3 z1)))) True) (x = z3))).
+>                                                                                                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun F1 F3 : Entity -> Prop =>
+exists x : Entity,
+(((_great x /\ _tenor x) /\
+(exists z1 : Entity, ((_popular z1 /\ _music z1) /\ True) /\ _like x z1)) /\
+F1 x) /\ F3 x" has type "(Entity -> Prop) -> (Entity -> Prop) -> Prop"
+which should be Set, Prop or Type.
+
+Toplevel input, characters 481-486:
+> Theorem t1: (exists x, (and (and (and (and (_few x) (_great x)) (_tenor x)) True) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing x z1))))) -> (fun F1 F3 => (exists x, (and (and (and (and (_great x) (_tenor x)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_like x z1)))) (F1 x)) (F3 x)))) -> (exists x z3, (and (and (and (and (_great z3) (_tenor z3)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing z3 z1)))) True) (x = z3))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 488-492:
+> Theorem t1: (exists x, (and (and (and (and (_few x) (_great x)) (_tenor x)) True) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing x z1))))) -> (fun F1 F3 => (exists x, (and (and (and (and (_great x) (_tenor x)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_like x z1)))) (F1 x)) (F3 x)))) -> (exists x z3, (and (and (and (and (_great z3) (_tenor z3)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing z3 z1)))) True) (x = z3))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _few is declared
+
+Coq < _great is declared
+
+Coq < _like is declared
+
+Coq < _music is declared
+
+Coq < _popular is declared
+
+Coq < _sing is declared
+
+Coq < _tenor is declared
+
+Coq < Toplevel input, characters 163-322:
+> Theorem t1: (exists x, (and (and (and (and (_few x) (_great x)) (_tenor x)) True) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing x z1))))) -> (fun F1 F3 => (exists x, (and (and (and (and (_great x) (_tenor x)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_like x z1)))) (F1 x)) (F3 x)))) -> (not (exists x z3, (and (and (and (and (_great z3) (_tenor z3)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing z3 z1)))) True) (x = z3)))).
+>                                                                                                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun F1 F3 : Entity -> Prop =>
+exists x : Entity,
+(((_great x /\ _tenor x) /\
+(exists z1 : Entity, ((_popular z1 /\ _music z1) /\ True) /\ _like x z1)) /\
+F1 x) /\ F3 x" has type "(Entity -> Prop) -> (Entity -> Prop) -> Prop"
+which should be Set, Prop or Type.
+
+Toplevel input, characters 487-492:
+> Theorem t1: (exists x, (and (and (and (and (_few x) (_great x)) (_tenor x)) True) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing x z1))))) -> (fun F1 F3 => (exists x, (and (and (and (and (_great x) (_tenor x)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_like x z1)))) (F1 x)) (F3 x)))) -> (not (exists x z3, (and (and (and (and (_great z3) (_tenor z3)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing z3 z1)))) True) (x = z3)))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 494-498:
+> Theorem t1: (exists x, (and (and (and (and (_few x) (_great x)) (_tenor x)) True) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing x z1))))) -> (fun F1 F3 => (exists x, (and (and (and (and (_great x) (_tenor x)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_like x z1)))) (F1 x)) (F3 x)))) -> (not (exists x z3, (and (and (and (and (_great z3) (_tenor z3)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing z3 z1)))) True) (x = z3)))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _few is declared
+
+Coq < _great is declared
+
+Coq < _like is declared
+
+Coq < _music is declared
+
+Coq < _popular is declared
+
+Coq < _sing is declared
+
+Coq < _tenor is declared
+
+Coq < Toplevel input, characters 163-322:
+> Theorem t1: (exists x, (and (and (and (and (_few x) (_great x)) (_tenor x)) True) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing x z1))))) -> (fun F1 F3 => (exists x, (and (and (and (and (_great x) (_tenor x)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_like x z1)))) (F1 x)) (F3 x)))) -> (exists x z3, (and (and (and (and (_great z3) (_tenor z3)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing z3 z1)))) True) (x = z3))).
+>                                                                                                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun F1 F3 : Entity -> Prop =>
+exists x : Entity,
+(((_great x /\ _tenor x) /\
+(exists z1 : Entity, ((_popular z1 /\ _music z1) /\ True) /\ _like x z1)) /\
+F1 x) /\ F3 x" has type "(Entity -> Prop) -> (Entity -> Prop) -> Prop"
+which should be Set, Prop or Type.
+
+Toplevel input, characters 481-487:
+> Theorem t1: (exists x, (and (and (and (and (_few x) (_great x)) (_tenor x)) True) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing x z1))))) -> (fun F1 F3 => (exists x, (and (and (and (and (_great x) (_tenor x)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_like x z1)))) (F1 x)) (F3 x)))) -> (exists x z3, (and (and (and (and (_great z3) (_tenor z3)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing z3 z1)))) True) (x = z3))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 500-503:
+> Theorem t1: (exists x, (and (and (and (and (_few x) (_great x)) (_tenor x)) True) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing x z1))))) -> (fun F1 F3 => (exists x, (and (and (and (and (_great x) (_tenor x)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_like x z1)))) (F1 x)) (F3 x)))) -> (exists x z3, (and (and (and (and (_great z3) (_tenor z3)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing z3 z1)))) True) (x = z3))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 518-522:
+> Theorem t1: (exists x, (and (and (and (and (_few x) (_great x)) (_tenor x)) True) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing x z1))))) -> (fun F1 F3 => (exists x, (and (and (and (and (_great x) (_tenor x)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_like x z1)))) (F1 x)) (F3 x)))) -> (exists x z3, (and (and (and (and (_great z3) (_tenor z3)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing z3 z1)))) True) (x = z3))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _few is declared
+
+Coq < _great is declared
+
+Coq < _like is declared
+
+Coq < _music is declared
+
+Coq < _popular is declared
+
+Coq < _sing is declared
+
+Coq < _tenor is declared
+
+Coq < Toplevel input, characters 163-322:
+> Theorem t1: (exists x, (and (and (and (and (_few x) (_great x)) (_tenor x)) True) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing x z1))))) -> (fun F1 F3 => (exists x, (and (and (and (and (_great x) (_tenor x)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_like x z1)))) (F1 x)) (F3 x)))) -> (exists x z3, (and (and (and (and (_great z3) (_tenor z3)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing z3 z1)))) True) (x = z3))).
+>                                                                                                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun F1 F3 : Entity -> Prop =>
+exists x : Entity,
+(((_great x /\ _tenor x) /\
+(exists z1 : Entity, ((_popular z1 /\ _music z1) /\ True) /\ _like x z1)) /\
+F1 x) /\ F3 x" has type "(Entity -> Prop) -> (Entity -> Prop) -> Prop"
+which should be Set, Prop or Type.
+
+Toplevel input, characters 481-486:
+> Theorem t1: (exists x, (and (and (and (and (_few x) (_great x)) (_tenor x)) True) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing x z1))))) -> (fun F1 F3 => (exists x, (and (and (and (and (_great x) (_tenor x)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_like x z1)))) (F1 x)) (F3 x)))) -> (exists x z3, (and (and (and (and (_great z3) (_tenor z3)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing z3 z1)))) True) (x = z3))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 488-492:
+> Theorem t1: (exists x, (and (and (and (and (_few x) (_great x)) (_tenor x)) True) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing x z1))))) -> (fun F1 F3 => (exists x, (and (and (and (and (_great x) (_tenor x)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_like x z1)))) (F1 x)) (F3 x)))) -> (exists x z3, (and (and (and (and (_great z3) (_tenor z3)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing z3 z1)))) True) (x = z3))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _few is declared
+
+Coq < _great is declared
+
+Coq < _like is declared
+
+Coq < _music is declared
+
+Coq < _popular is declared
+
+Coq < _sing is declared
+
+Coq < _tenor is declared
+
+Coq < Toplevel input, characters 163-322:
+> Theorem t1: (exists x, (and (and (and (and (_few x) (_great x)) (_tenor x)) True) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing x z1))))) -> (fun F1 F3 => (exists x, (and (and (and (and (_great x) (_tenor x)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_like x z1)))) (F1 x)) (F3 x)))) -> (not (exists x z3, (and (and (and (and (_great z3) (_tenor z3)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing z3 z1)))) True) (x = z3)))).
+>                                                                                                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun F1 F3 : Entity -> Prop =>
+exists x : Entity,
+(((_great x /\ _tenor x) /\
+(exists z1 : Entity, ((_popular z1 /\ _music z1) /\ True) /\ _like x z1)) /\
+F1 x) /\ F3 x" has type "(Entity -> Prop) -> (Entity -> Prop) -> Prop"
+which should be Set, Prop or Type.
+
+Toplevel input, characters 487-493:
+> Theorem t1: (exists x, (and (and (and (and (_few x) (_great x)) (_tenor x)) True) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing x z1))))) -> (fun F1 F3 => (exists x, (and (and (and (and (_great x) (_tenor x)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_like x z1)))) (F1 x)) (F3 x)))) -> (not (exists x z3, (and (and (and (and (_great z3) (_tenor z3)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing z3 z1)))) True) (x = z3)))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 506-509:
+> Theorem t1: (exists x, (and (and (and (and (_few x) (_great x)) (_tenor x)) True) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing x z1))))) -> (fun F1 F3 => (exists x, (and (and (and (and (_great x) (_tenor x)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_like x z1)))) (F1 x)) (F3 x)))) -> (not (exists x z3, (and (and (and (and (_great z3) (_tenor z3)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing z3 z1)))) True) (x = z3)))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 524-528:
+> Theorem t1: (exists x, (and (and (and (and (_few x) (_great x)) (_tenor x)) True) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing x z1))))) -> (fun F1 F3 => (exists x, (and (and (and (and (_great x) (_tenor x)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_like x z1)))) (F1 x)) (F3 x)))) -> (not (exists x z3, (and (and (and (and (_great z3) (_tenor z3)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing z3 z1)))) True) (x = z3)))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _few is declared
+
+Coq < _great is declared
+
+Coq < _like is declared
+
+Coq < _music is declared
+
+Coq < _popular is declared
+
+Coq < _sing is declared
+
+Coq < _tenor is declared
+
+Coq < Toplevel input, characters 163-322:
+> Theorem t1: (exists x, (and (and (and (and (_few x) (_great x)) (_tenor x)) True) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing x z1))))) -> (fun F1 F3 => (exists x, (and (and (and (and (_great x) (_tenor x)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_like x z1)))) (F1 x)) (F3 x)))) -> (not (exists x z3, (and (and (and (and (_great z3) (_tenor z3)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing z3 z1)))) True) (x = z3)))).
+>                                                                                                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun F1 F3 : Entity -> Prop =>
+exists x : Entity,
+(((_great x /\ _tenor x) /\
+(exists z1 : Entity, ((_popular z1 /\ _music z1) /\ True) /\ _like x z1)) /\
+F1 x) /\ F3 x" has type "(Entity -> Prop) -> (Entity -> Prop) -> Prop"
+which should be Set, Prop or Type.
+
+Toplevel input, characters 487-492:
+> Theorem t1: (exists x, (and (and (and (and (_few x) (_great x)) (_tenor x)) True) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing x z1))))) -> (fun F1 F3 => (exists x, (and (and (and (and (_great x) (_tenor x)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_like x z1)))) (F1 x)) (F3 x)))) -> (not (exists x z3, (and (and (and (and (_great z3) (_tenor z3)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing z3 z1)))) True) (x = z3)))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 494-498:
+> Theorem t1: (exists x, (and (and (and (and (_few x) (_great x)) (_tenor x)) True) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing x z1))))) -> (fun F1 F3 => (exists x, (and (and (and (and (_great x) (_tenor x)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_like x z1)))) (F1 x)) (F3 x)))) -> (not (exists x z3, (and (and (and (and (_great z3) (_tenor z3)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing z3 z1)))) True) (x = z3)))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _few is declared
+
+Coq < _great is declared
+
+Coq < _like is declared
+
+Coq < _music is declared
+
+Coq < _popular is declared
+
+Coq < _sing is declared
+
+Coq < _tenor is declared
+
+Coq < Toplevel input, characters 163-322:
+> Theorem t1: (exists x, (and (and (and (and (_few x) (_great x)) (_tenor x)) True) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing x z1))))) -> (fun F1 F3 => (exists x, (and (and (and (and (_great x) (_tenor x)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_like x z1)))) (F1 x)) (F3 x)))) -> (exists x z3, (and (and (and (and (_great z3) (_tenor z3)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing z3 z1)))) True) (x = z3))).
+>                                                                                                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun F1 F3 : Entity -> Prop =>
+exists x : Entity,
+(((_great x /\ _tenor x) /\
+(exists z1 : Entity, ((_popular z1 /\ _music z1) /\ True) /\ _like x z1)) /\
+F1 x) /\ F3 x" has type "(Entity -> Prop) -> (Entity -> Prop) -> Prop"
+which should be Set, Prop or Type.
+
+Toplevel input, characters 481-487:
+> Theorem t1: (exists x, (and (and (and (and (_few x) (_great x)) (_tenor x)) True) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing x z1))))) -> (fun F1 F3 => (exists x, (and (and (and (and (_great x) (_tenor x)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_like x z1)))) (F1 x)) (F3 x)))) -> (exists x z3, (and (and (and (and (_great z3) (_tenor z3)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing z3 z1)))) True) (x = z3))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 500-503:
+> Theorem t1: (exists x, (and (and (and (and (_few x) (_great x)) (_tenor x)) True) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing x z1))))) -> (fun F1 F3 => (exists x, (and (and (and (and (_great x) (_tenor x)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_like x z1)))) (F1 x)) (F3 x)))) -> (exists x z3, (and (and (and (and (_great z3) (_tenor z3)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing z3 z1)))) True) (x = z3))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 518-522:
+> Theorem t1: (exists x, (and (and (and (and (_few x) (_great x)) (_tenor x)) True) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing x z1))))) -> (fun F1 F3 => (exists x, (and (and (and (and (_great x) (_tenor x)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_like x z1)))) (F1 x)) (F3 x)))) -> (exists x z3, (and (and (and (and (_great z3) (_tenor z3)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing z3 z1)))) True) (x = z3))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _few is declared
+
+Coq < _great is declared
+
+Coq < _like is declared
+
+Coq < _music is declared
+
+Coq < _popular is declared
+
+Coq < _sing is declared
+
+Coq < _tenor is declared
+
+Coq < Toplevel input, characters 163-322:
+> Theorem t1: (exists x, (and (and (and (and (_few x) (_great x)) (_tenor x)) True) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing x z1))))) -> (fun F1 F3 => (exists x, (and (and (and (and (_great x) (_tenor x)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_like x z1)))) (F1 x)) (F3 x)))) -> (not (exists x z3, (and (and (and (and (_great z3) (_tenor z3)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing z3 z1)))) True) (x = z3)))).
+>                                                                                                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun F1 F3 : Entity -> Prop =>
+exists x : Entity,
+(((_great x /\ _tenor x) /\
+(exists z1 : Entity, ((_popular z1 /\ _music z1) /\ True) /\ _like x z1)) /\
+F1 x) /\ F3 x" has type "(Entity -> Prop) -> (Entity -> Prop) -> Prop"
+which should be Set, Prop or Type.
+
+Toplevel input, characters 487-493:
+> Theorem t1: (exists x, (and (and (and (and (_few x) (_great x)) (_tenor x)) True) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing x z1))))) -> (fun F1 F3 => (exists x, (and (and (and (and (_great x) (_tenor x)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_like x z1)))) (F1 x)) (F3 x)))) -> (not (exists x z3, (and (and (and (and (_great z3) (_tenor z3)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing z3 z1)))) True) (x = z3)))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 506-509:
+> Theorem t1: (exists x, (and (and (and (and (_few x) (_great x)) (_tenor x)) True) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing x z1))))) -> (fun F1 F3 => (exists x, (and (and (and (and (_great x) (_tenor x)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_like x z1)))) (F1 x)) (F3 x)))) -> (not (exists x z3, (and (and (and (and (_great z3) (_tenor z3)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing z3 z1)))) True) (x = z3)))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 524-528:
+> Theorem t1: (exists x, (and (and (and (and (_few x) (_great x)) (_tenor x)) True) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing x z1))))) -> (fun F1 F3 => (exists x, (and (and (and (and (_great x) (_tenor x)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_like x z1)))) (F1 x)) (F3 x)))) -> (not (exists x z3, (and (and (and (and (_great z3) (_tenor z3)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing z3 z1)))) True) (x = z3)))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _few is declared
+
+Coq < _great is declared
+
+Coq < _like is declared
+
+Coq < _music is declared
+
+Coq < _popular is declared
+
+Coq < _sing is declared
+
+Coq < _tenor is declared
+
+Coq < Toplevel input, characters 163-322:
+> Theorem t1: (exists x, (and (and (and (and (_few x) (_great x)) (_tenor x)) True) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing x z1))))) -> (fun F1 F3 => (exists x, (and (and (and (and (_great x) (_tenor x)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_like x z1)))) (F1 x)) (F3 x)))) -> (exists x z3, (and (and (and (and (_great z3) (_tenor z3)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing z3 z1)))) True) (x = z3))).
+>                                                                                                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun F1 F3 : Entity -> Prop =>
+exists x : Entity,
+(((_great x /\ _tenor x) /\
+(exists z1 : Entity, ((_popular z1 /\ _music z1) /\ True) /\ _like x z1)) /\
+F1 x) /\ F3 x" has type "(Entity -> Prop) -> (Entity -> Prop) -> Prop"
+which should be Set, Prop or Type.
+
+Toplevel input, characters 481-487:
+> Theorem t1: (exists x, (and (and (and (and (_few x) (_great x)) (_tenor x)) True) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing x z1))))) -> (fun F1 F3 => (exists x, (and (and (and (and (_great x) (_tenor x)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_like x z1)))) (F1 x)) (F3 x)))) -> (exists x z3, (and (and (and (and (_great z3) (_tenor z3)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing z3 z1)))) True) (x = z3))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 500-503:
+> Theorem t1: (exists x, (and (and (and (and (_few x) (_great x)) (_tenor x)) True) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing x z1))))) -> (fun F1 F3 => (exists x, (and (and (and (and (_great x) (_tenor x)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_like x z1)))) (F1 x)) (F3 x)))) -> (exists x z3, (and (and (and (and (_great z3) (_tenor z3)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing z3 z1)))) True) (x = z3))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 518-522:
+> Theorem t1: (exists x, (and (and (and (and (_few x) (_great x)) (_tenor x)) True) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing x z1))))) -> (fun F1 F3 => (exists x, (and (and (and (and (_great x) (_tenor x)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_like x z1)))) (F1 x)) (F3 x)))) -> (exists x z3, (and (and (and (and (_great z3) (_tenor z3)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing z3 z1)))) True) (x = z3))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _few is declared
+
+Coq < _great is declared
+
+Coq < _like is declared
+
+Coq < _music is declared
+
+Coq < _popular is declared
+
+Coq < _sing is declared
+
+Coq < _tenor is declared
+
+Coq < Toplevel input, characters 163-322:
+> Theorem t1: (exists x, (and (and (and (and (_few x) (_great x)) (_tenor x)) True) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing x z1))))) -> (fun F1 F3 => (exists x, (and (and (and (and (_great x) (_tenor x)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_like x z1)))) (F1 x)) (F3 x)))) -> (not (exists x z3, (and (and (and (and (_great z3) (_tenor z3)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing z3 z1)))) True) (x = z3)))).
+>                                                                                                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun F1 F3 : Entity -> Prop =>
+exists x : Entity,
+(((_great x /\ _tenor x) /\
+(exists z1 : Entity, ((_popular z1 /\ _music z1) /\ True) /\ _like x z1)) /\
+F1 x) /\ F3 x" has type "(Entity -> Prop) -> (Entity -> Prop) -> Prop"
+which should be Set, Prop or Type.
+
+Toplevel input, characters 487-493:
+> Theorem t1: (exists x, (and (and (and (and (_few x) (_great x)) (_tenor x)) True) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing x z1))))) -> (fun F1 F3 => (exists x, (and (and (and (and (_great x) (_tenor x)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_like x z1)))) (F1 x)) (F3 x)))) -> (not (exists x z3, (and (and (and (and (_great z3) (_tenor z3)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing z3 z1)))) True) (x = z3)))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 506-509:
+> Theorem t1: (exists x, (and (and (and (and (_few x) (_great x)) (_tenor x)) True) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing x z1))))) -> (fun F1 F3 => (exists x, (and (and (and (and (_great x) (_tenor x)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_like x z1)))) (F1 x)) (F3 x)))) -> (not (exists x z3, (and (and (and (and (_great z3) (_tenor z3)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing z3 z1)))) True) (x = z3)))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 524-528:
+> Theorem t1: (exists x, (and (and (and (and (_few x) (_great x)) (_tenor x)) True) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing x z1))))) -> (fun F1 F3 => (exists x, (and (and (and (and (_great x) (_tenor x)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_like x z1)))) (F1 x)) (F3 x)))) -> (not (exists x z3, (and (and (and (and (_great z3) (_tenor z3)) (exists z1, (and (and (and (_popular z1) (_music z1)) True) (_sing z3 z1)))) True) (x = z3)))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+unknown
+

@@ -1,0 +1,472 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _cover is declared
+
+Coq < _have is declared
+
+Coq < _of is declared
+
+Coq < _page is declared
+
+Coq < _r_dash_95_dash_103 is declared
+
+Coq < _r_dash_95_dash_103_e2 is declared
+
+Coq < _report is declared
+
+Coq < _sign is declared
+
+Coq < _smith is declared
+
+Coq < Toplevel input, characters 243-245:
+> Theorem t1: (forall x, ((_report x) -> (True -> (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_have x z1)))))) -> (exists x, (and (and (x = _r_dash_95_dash_103) True) (exists z1, (and (and (_report z1) True) (_r_dash_95_dash_103 = z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_sign _smith z1))))) -> (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_cover z3) (_page z3)) (exists z2, (and (and (_r_dash_95_dash_103_e2 z2) True) (_of z3 z2)))) True) (_sign _smith z3))))).
+>                                                                                                                                                                                                                                                    ^^
+Error:
+In environment
+x : Entity -> Prop
+z1 : Entity
+The term "z1" has type "Entity" while it is expected to have type
+"Entity -> Prop".
+
+Toplevel input, characters 572-577:
+> Theorem t1: (forall x, ((_report x) -> (True -> (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_have x z1)))))) -> (exists x, (and (and (x = _r_dash_95_dash_103) True) (exists z1, (and (and (_report z1) True) (_r_dash_95_dash_103 = z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_sign _smith z1))))) -> (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_cover z3) (_page z3)) (exists z2, (and (and (_r_dash_95_dash_103_e2 z2) True) (_of z3 z2)))) True) (_sign _smith z3))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 579-583:
+> Theorem t1: (forall x, ((_report x) -> (True -> (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_have x z1)))))) -> (exists x, (and (and (x = _r_dash_95_dash_103) True) (exists z1, (and (and (_report z1) True) (_r_dash_95_dash_103 = z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_sign _smith z1))))) -> (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_cover z3) (_page z3)) (exists z2, (and (and (_r_dash_95_dash_103_e2 z2) True) (_of z3 z2)))) True) (_sign _smith z3))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _cover is declared
+
+Coq < _have is declared
+
+Coq < _of is declared
+
+Coq < _page is declared
+
+Coq < _r_dash_95_dash_103 is declared
+
+Coq < _r_dash_95_dash_103_e2 is declared
+
+Coq < _report is declared
+
+Coq < _sign is declared
+
+Coq < _smith is declared
+
+Coq < Toplevel input, characters 243-245:
+> Theorem t1: (forall x, ((_report x) -> (True -> (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_have x z1)))))) -> (exists x, (and (and (x = _r_dash_95_dash_103) True) (exists z1, (and (and (_report z1) True) (_r_dash_95_dash_103 = z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_sign _smith z1))))) -> (not (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_cover z3) (_page z3)) (exists z2, (and (and (_r_dash_95_dash_103_e2 z2) True) (_of z3 z2)))) True) (_sign _smith z3)))))).
+>                                                                                                                                                                                                                                                    ^^
+Error:
+In environment
+x : Entity -> Prop
+z1 : Entity
+The term "z1" has type "Entity" while it is expected to have type
+"Entity -> Prop".
+
+Toplevel input, characters 578-583:
+> Theorem t1: (forall x, ((_report x) -> (True -> (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_have x z1)))))) -> (exists x, (and (and (x = _r_dash_95_dash_103) True) (exists z1, (and (and (_report z1) True) (_r_dash_95_dash_103 = z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_sign _smith z1))))) -> (not (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_cover z3) (_page z3)) (exists z2, (and (and (_r_dash_95_dash_103_e2 z2) True) (_of z3 z2)))) True) (_sign _smith z3)))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 585-589:
+> Theorem t1: (forall x, ((_report x) -> (True -> (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_have x z1)))))) -> (exists x, (and (and (x = _r_dash_95_dash_103) True) (exists z1, (and (and (_report z1) True) (_r_dash_95_dash_103 = z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_sign _smith z1))))) -> (not (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_cover z3) (_page z3)) (exists z2, (and (and (_r_dash_95_dash_103_e2 z2) True) (_of z3 z2)))) True) (_sign _smith z3)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _cover is declared
+
+Coq < _have is declared
+
+Coq < _of is declared
+
+Coq < _page is declared
+
+Coq < _r_dash_95_dash_103 is declared
+
+Coq < _r_dash_95_dash_103_e2 is declared
+
+Coq < _report is declared
+
+Coq < _sign is declared
+
+Coq < _smith is declared
+
+Coq < Toplevel input, characters 243-245:
+> Theorem t1: (forall x, ((_report x) -> (True -> (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_have x z1)))))) -> (exists x, (and (and (x = _r_dash_95_dash_103) True) (exists z1, (and (and (_report z1) True) (_r_dash_95_dash_103 = z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_sign _smith z1))))) -> (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_cover z3) (_page z3)) (exists z2, (and (and (_r_dash_95_dash_103_e2 z2) True) (_of z3 z2)))) True) (_sign _smith z3))))).
+>                                                                                                                                                                                                                                                    ^^
+Error:
+In environment
+x : Entity -> Prop
+z1 : Entity
+The term "z1" has type "Entity" while it is expected to have type
+"Entity -> Prop".
+
+Toplevel input, characters 572-578:
+> Theorem t1: (forall x, ((_report x) -> (True -> (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_have x z1)))))) -> (exists x, (and (and (x = _r_dash_95_dash_103) True) (exists z1, (and (and (_report z1) True) (_r_dash_95_dash_103 = z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_sign _smith z1))))) -> (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_cover z3) (_page z3)) (exists z2, (and (and (_r_dash_95_dash_103_e2 z2) True) (_of z3 z2)))) True) (_sign _smith z3))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 591-594:
+> Theorem t1: (forall x, ((_report x) -> (True -> (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_have x z1)))))) -> (exists x, (and (and (x = _r_dash_95_dash_103) True) (exists z1, (and (and (_report z1) True) (_r_dash_95_dash_103 = z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_sign _smith z1))))) -> (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_cover z3) (_page z3)) (exists z2, (and (and (_r_dash_95_dash_103_e2 z2) True) (_of z3 z2)))) True) (_sign _smith z3))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 609-613:
+> Theorem t1: (forall x, ((_report x) -> (True -> (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_have x z1)))))) -> (exists x, (and (and (x = _r_dash_95_dash_103) True) (exists z1, (and (and (_report z1) True) (_r_dash_95_dash_103 = z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_sign _smith z1))))) -> (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_cover z3) (_page z3)) (exists z2, (and (and (_r_dash_95_dash_103_e2 z2) True) (_of z3 z2)))) True) (_sign _smith z3))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _cover is declared
+
+Coq < _have is declared
+
+Coq < _of is declared
+
+Coq < _page is declared
+
+Coq < _r_dash_95_dash_103 is declared
+
+Coq < _r_dash_95_dash_103_e2 is declared
+
+Coq < _report is declared
+
+Coq < _sign is declared
+
+Coq < _smith is declared
+
+Coq < Toplevel input, characters 243-245:
+> Theorem t1: (forall x, ((_report x) -> (True -> (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_have x z1)))))) -> (exists x, (and (and (x = _r_dash_95_dash_103) True) (exists z1, (and (and (_report z1) True) (_r_dash_95_dash_103 = z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_sign _smith z1))))) -> (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_cover z3) (_page z3)) (exists z2, (and (and (_r_dash_95_dash_103_e2 z2) True) (_of z3 z2)))) True) (_sign _smith z3))))).
+>                                                                                                                                                                                                                                                    ^^
+Error:
+In environment
+x : Entity -> Prop
+z1 : Entity
+The term "z1" has type "Entity" while it is expected to have type
+"Entity -> Prop".
+
+Toplevel input, characters 572-577:
+> Theorem t1: (forall x, ((_report x) -> (True -> (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_have x z1)))))) -> (exists x, (and (and (x = _r_dash_95_dash_103) True) (exists z1, (and (and (_report z1) True) (_r_dash_95_dash_103 = z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_sign _smith z1))))) -> (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_cover z3) (_page z3)) (exists z2, (and (and (_r_dash_95_dash_103_e2 z2) True) (_of z3 z2)))) True) (_sign _smith z3))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 579-583:
+> Theorem t1: (forall x, ((_report x) -> (True -> (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_have x z1)))))) -> (exists x, (and (and (x = _r_dash_95_dash_103) True) (exists z1, (and (and (_report z1) True) (_r_dash_95_dash_103 = z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_sign _smith z1))))) -> (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_cover z3) (_page z3)) (exists z2, (and (and (_r_dash_95_dash_103_e2 z2) True) (_of z3 z2)))) True) (_sign _smith z3))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _cover is declared
+
+Coq < _have is declared
+
+Coq < _of is declared
+
+Coq < _page is declared
+
+Coq < _r_dash_95_dash_103 is declared
+
+Coq < _r_dash_95_dash_103_e2 is declared
+
+Coq < _report is declared
+
+Coq < _sign is declared
+
+Coq < _smith is declared
+
+Coq < Toplevel input, characters 243-245:
+> Theorem t1: (forall x, ((_report x) -> (True -> (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_have x z1)))))) -> (exists x, (and (and (x = _r_dash_95_dash_103) True) (exists z1, (and (and (_report z1) True) (_r_dash_95_dash_103 = z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_sign _smith z1))))) -> (not (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_cover z3) (_page z3)) (exists z2, (and (and (_r_dash_95_dash_103_e2 z2) True) (_of z3 z2)))) True) (_sign _smith z3)))))).
+>                                                                                                                                                                                                                                                    ^^
+Error:
+In environment
+x : Entity -> Prop
+z1 : Entity
+The term "z1" has type "Entity" while it is expected to have type
+"Entity -> Prop".
+
+Toplevel input, characters 578-584:
+> Theorem t1: (forall x, ((_report x) -> (True -> (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_have x z1)))))) -> (exists x, (and (and (x = _r_dash_95_dash_103) True) (exists z1, (and (and (_report z1) True) (_r_dash_95_dash_103 = z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_sign _smith z1))))) -> (not (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_cover z3) (_page z3)) (exists z2, (and (and (_r_dash_95_dash_103_e2 z2) True) (_of z3 z2)))) True) (_sign _smith z3)))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 597-600:
+> Theorem t1: (forall x, ((_report x) -> (True -> (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_have x z1)))))) -> (exists x, (and (and (x = _r_dash_95_dash_103) True) (exists z1, (and (and (_report z1) True) (_r_dash_95_dash_103 = z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_sign _smith z1))))) -> (not (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_cover z3) (_page z3)) (exists z2, (and (and (_r_dash_95_dash_103_e2 z2) True) (_of z3 z2)))) True) (_sign _smith z3)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 615-619:
+> Theorem t1: (forall x, ((_report x) -> (True -> (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_have x z1)))))) -> (exists x, (and (and (x = _r_dash_95_dash_103) True) (exists z1, (and (and (_report z1) True) (_r_dash_95_dash_103 = z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_sign _smith z1))))) -> (not (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_cover z3) (_page z3)) (exists z2, (and (and (_r_dash_95_dash_103_e2 z2) True) (_of z3 z2)))) True) (_sign _smith z3)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _cover is declared
+
+Coq < _have is declared
+
+Coq < _of is declared
+
+Coq < _page is declared
+
+Coq < _r_dash_95_dash_103 is declared
+
+Coq < _r_dash_95_dash_103_e2 is declared
+
+Coq < _report is declared
+
+Coq < _sign is declared
+
+Coq < _smith is declared
+
+Coq < Toplevel input, characters 243-245:
+> Theorem t1: (forall x, ((_report x) -> (True -> (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_have x z1)))))) -> (exists x, (and (and (x = _r_dash_95_dash_103) True) (exists z1, (and (and (_report z1) True) (_r_dash_95_dash_103 = z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_sign _smith z1))))) -> (not (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_cover z3) (_page z3)) (exists z2, (and (and (_r_dash_95_dash_103_e2 z2) True) (_of z3 z2)))) True) (_sign _smith z3)))))).
+>                                                                                                                                                                                                                                                    ^^
+Error:
+In environment
+x : Entity -> Prop
+z1 : Entity
+The term "z1" has type "Entity" while it is expected to have type
+"Entity -> Prop".
+
+Toplevel input, characters 578-583:
+> Theorem t1: (forall x, ((_report x) -> (True -> (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_have x z1)))))) -> (exists x, (and (and (x = _r_dash_95_dash_103) True) (exists z1, (and (and (_report z1) True) (_r_dash_95_dash_103 = z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_sign _smith z1))))) -> (not (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_cover z3) (_page z3)) (exists z2, (and (and (_r_dash_95_dash_103_e2 z2) True) (_of z3 z2)))) True) (_sign _smith z3)))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 585-589:
+> Theorem t1: (forall x, ((_report x) -> (True -> (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_have x z1)))))) -> (exists x, (and (and (x = _r_dash_95_dash_103) True) (exists z1, (and (and (_report z1) True) (_r_dash_95_dash_103 = z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_sign _smith z1))))) -> (not (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_cover z3) (_page z3)) (exists z2, (and (and (_r_dash_95_dash_103_e2 z2) True) (_of z3 z2)))) True) (_sign _smith z3)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _cover is declared
+
+Coq < _have is declared
+
+Coq < _of is declared
+
+Coq < _page is declared
+
+Coq < _r_dash_95_dash_103 is declared
+
+Coq < _r_dash_95_dash_103_e2 is declared
+
+Coq < _report is declared
+
+Coq < _sign is declared
+
+Coq < _smith is declared
+
+Coq < Toplevel input, characters 243-245:
+> Theorem t1: (forall x, ((_report x) -> (True -> (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_have x z1)))))) -> (exists x, (and (and (x = _r_dash_95_dash_103) True) (exists z1, (and (and (_report z1) True) (_r_dash_95_dash_103 = z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_sign _smith z1))))) -> (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_cover z3) (_page z3)) (exists z2, (and (and (_r_dash_95_dash_103_e2 z2) True) (_of z3 z2)))) True) (_sign _smith z3))))).
+>                                                                                                                                                                                                                                                    ^^
+Error:
+In environment
+x : Entity -> Prop
+z1 : Entity
+The term "z1" has type "Entity" while it is expected to have type
+"Entity -> Prop".
+
+Toplevel input, characters 572-578:
+> Theorem t1: (forall x, ((_report x) -> (True -> (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_have x z1)))))) -> (exists x, (and (and (x = _r_dash_95_dash_103) True) (exists z1, (and (and (_report z1) True) (_r_dash_95_dash_103 = z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_sign _smith z1))))) -> (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_cover z3) (_page z3)) (exists z2, (and (and (_r_dash_95_dash_103_e2 z2) True) (_of z3 z2)))) True) (_sign _smith z3))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 591-594:
+> Theorem t1: (forall x, ((_report x) -> (True -> (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_have x z1)))))) -> (exists x, (and (and (x = _r_dash_95_dash_103) True) (exists z1, (and (and (_report z1) True) (_r_dash_95_dash_103 = z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_sign _smith z1))))) -> (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_cover z3) (_page z3)) (exists z2, (and (and (_r_dash_95_dash_103_e2 z2) True) (_of z3 z2)))) True) (_sign _smith z3))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 609-613:
+> Theorem t1: (forall x, ((_report x) -> (True -> (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_have x z1)))))) -> (exists x, (and (and (x = _r_dash_95_dash_103) True) (exists z1, (and (and (_report z1) True) (_r_dash_95_dash_103 = z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_sign _smith z1))))) -> (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_cover z3) (_page z3)) (exists z2, (and (and (_r_dash_95_dash_103_e2 z2) True) (_of z3 z2)))) True) (_sign _smith z3))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _cover is declared
+
+Coq < _have is declared
+
+Coq < _of is declared
+
+Coq < _page is declared
+
+Coq < _r_dash_95_dash_103 is declared
+
+Coq < _r_dash_95_dash_103_e2 is declared
+
+Coq < _report is declared
+
+Coq < _sign is declared
+
+Coq < _smith is declared
+
+Coq < Toplevel input, characters 243-245:
+> Theorem t1: (forall x, ((_report x) -> (True -> (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_have x z1)))))) -> (exists x, (and (and (x = _r_dash_95_dash_103) True) (exists z1, (and (and (_report z1) True) (_r_dash_95_dash_103 = z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_sign _smith z1))))) -> (not (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_cover z3) (_page z3)) (exists z2, (and (and (_r_dash_95_dash_103_e2 z2) True) (_of z3 z2)))) True) (_sign _smith z3)))))).
+>                                                                                                                                                                                                                                                    ^^
+Error:
+In environment
+x : Entity -> Prop
+z1 : Entity
+The term "z1" has type "Entity" while it is expected to have type
+"Entity -> Prop".
+
+Toplevel input, characters 578-584:
+> Theorem t1: (forall x, ((_report x) -> (True -> (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_have x z1)))))) -> (exists x, (and (and (x = _r_dash_95_dash_103) True) (exists z1, (and (and (_report z1) True) (_r_dash_95_dash_103 = z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_sign _smith z1))))) -> (not (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_cover z3) (_page z3)) (exists z2, (and (and (_r_dash_95_dash_103_e2 z2) True) (_of z3 z2)))) True) (_sign _smith z3)))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 597-600:
+> Theorem t1: (forall x, ((_report x) -> (True -> (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_have x z1)))))) -> (exists x, (and (and (x = _r_dash_95_dash_103) True) (exists z1, (and (and (_report z1) True) (_r_dash_95_dash_103 = z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_sign _smith z1))))) -> (not (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_cover z3) (_page z3)) (exists z2, (and (and (_r_dash_95_dash_103_e2 z2) True) (_of z3 z2)))) True) (_sign _smith z3)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 615-619:
+> Theorem t1: (forall x, ((_report x) -> (True -> (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_have x z1)))))) -> (exists x, (and (and (x = _r_dash_95_dash_103) True) (exists z1, (and (and (_report z1) True) (_r_dash_95_dash_103 = z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_sign _smith z1))))) -> (not (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_cover z3) (_page z3)) (exists z2, (and (and (_r_dash_95_dash_103_e2 z2) True) (_of z3 z2)))) True) (_sign _smith z3)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _cover is declared
+
+Coq < _have is declared
+
+Coq < _of is declared
+
+Coq < _page is declared
+
+Coq < _r_dash_95_dash_103 is declared
+
+Coq < _r_dash_95_dash_103_e2 is declared
+
+Coq < _report is declared
+
+Coq < _sign is declared
+
+Coq < _smith is declared
+
+Coq < Toplevel input, characters 243-245:
+> Theorem t1: (forall x, ((_report x) -> (True -> (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_have x z1)))))) -> (exists x, (and (and (x = _r_dash_95_dash_103) True) (exists z1, (and (and (_report z1) True) (_r_dash_95_dash_103 = z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_sign _smith z1))))) -> (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_cover z3) (_page z3)) (exists z2, (and (and (_r_dash_95_dash_103_e2 z2) True) (_of z3 z2)))) True) (_sign _smith z3))))).
+>                                                                                                                                                                                                                                                    ^^
+Error:
+In environment
+x : Entity -> Prop
+z1 : Entity
+The term "z1" has type "Entity" while it is expected to have type
+"Entity -> Prop".
+
+Toplevel input, characters 572-578:
+> Theorem t1: (forall x, ((_report x) -> (True -> (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_have x z1)))))) -> (exists x, (and (and (x = _r_dash_95_dash_103) True) (exists z1, (and (and (_report z1) True) (_r_dash_95_dash_103 = z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_sign _smith z1))))) -> (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_cover z3) (_page z3)) (exists z2, (and (and (_r_dash_95_dash_103_e2 z2) True) (_of z3 z2)))) True) (_sign _smith z3))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 591-594:
+> Theorem t1: (forall x, ((_report x) -> (True -> (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_have x z1)))))) -> (exists x, (and (and (x = _r_dash_95_dash_103) True) (exists z1, (and (and (_report z1) True) (_r_dash_95_dash_103 = z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_sign _smith z1))))) -> (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_cover z3) (_page z3)) (exists z2, (and (and (_r_dash_95_dash_103_e2 z2) True) (_of z3 z2)))) True) (_sign _smith z3))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 609-613:
+> Theorem t1: (forall x, ((_report x) -> (True -> (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_have x z1)))))) -> (exists x, (and (and (x = _r_dash_95_dash_103) True) (exists z1, (and (and (_report z1) True) (_r_dash_95_dash_103 = z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_sign _smith z1))))) -> (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_cover z3) (_page z3)) (exists z2, (and (and (_r_dash_95_dash_103_e2 z2) True) (_of z3 z2)))) True) (_sign _smith z3))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _cover is declared
+
+Coq < _have is declared
+
+Coq < _of is declared
+
+Coq < _page is declared
+
+Coq < _r_dash_95_dash_103 is declared
+
+Coq < _r_dash_95_dash_103_e2 is declared
+
+Coq < _report is declared
+
+Coq < _sign is declared
+
+Coq < _smith is declared
+
+Coq < Toplevel input, characters 243-245:
+> Theorem t1: (forall x, ((_report x) -> (True -> (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_have x z1)))))) -> (exists x, (and (and (x = _r_dash_95_dash_103) True) (exists z1, (and (and (_report z1) True) (_r_dash_95_dash_103 = z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_sign _smith z1))))) -> (not (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_cover z3) (_page z3)) (exists z2, (and (and (_r_dash_95_dash_103_e2 z2) True) (_of z3 z2)))) True) (_sign _smith z3)))))).
+>                                                                                                                                                                                                                                                    ^^
+Error:
+In environment
+x : Entity -> Prop
+z1 : Entity
+The term "z1" has type "Entity" while it is expected to have type
+"Entity -> Prop".
+
+Toplevel input, characters 578-584:
+> Theorem t1: (forall x, ((_report x) -> (True -> (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_have x z1)))))) -> (exists x, (and (and (x = _r_dash_95_dash_103) True) (exists z1, (and (and (_report z1) True) (_r_dash_95_dash_103 = z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_sign _smith z1))))) -> (not (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_cover z3) (_page z3)) (exists z2, (and (and (_r_dash_95_dash_103_e2 z2) True) (_of z3 z2)))) True) (_sign _smith z3)))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 597-600:
+> Theorem t1: (forall x, ((_report x) -> (True -> (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_have x z1)))))) -> (exists x, (and (and (x = _r_dash_95_dash_103) True) (exists z1, (and (and (_report z1) True) (_r_dash_95_dash_103 = z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_sign _smith z1))))) -> (not (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_cover z3) (_page z3)) (exists z2, (and (and (_r_dash_95_dash_103_e2 z2) True) (_of z3 z2)))) True) (_sign _smith z3)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 615-619:
+> Theorem t1: (forall x, ((_report x) -> (True -> (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_have x z1)))))) -> (exists x, (and (and (x = _r_dash_95_dash_103) True) (exists z1, (and (and (_report z1) True) (_r_dash_95_dash_103 = z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_cover z1) (_page z1)) True) (_sign _smith z1))))) -> (not (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_cover z3) (_page z3)) (exists z2, (and (and (_r_dash_95_dash_103_e2 z2) True) (_of z3 z2)))) True) (_sign _smith z3)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+unknown
+

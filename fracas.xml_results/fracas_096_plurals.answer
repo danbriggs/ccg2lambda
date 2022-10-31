@@ -1,0 +1,128 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _ancient is declared
+
+Coq < _greek is declared
+
+Coq < _greeks is declared
+
+Coq < _note is declared
+
+Coq < _noted is declared
+
+Coq < _philosopher is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_ancient x /\ _greeks x ->
+True -> forall z1 : Entity, _note z1 /\ _philosopher z1 -> True -> x = z1) ->
+forall x : Entity,
+_ancient x /\ _greek x ->
+True ->
+exists z1 : Entity, ((_noted z1 /\ _philosopher z1) /\ True) /\ x = z1
+
+
+Toplevel input, characters 285-289:
+> Theorem t1: (forall x, ((and (_ancient x) (_greeks x)) -> (True -> (forall z1, ((and (_note z1) (_philosopher z1)) -> (True -> (x = z1))))))) -> (forall x, ((and (_ancient x) (_greek x)) -> (True -> (exists z1, (and (and (and (_noted z1) (_philosopher z1)) True) (x = z1)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                              ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _ancient is declared
+
+Coq < _greek is declared
+
+Coq < _greeks is declared
+
+Coq < _note is declared
+
+Coq < _noted is declared
+
+Coq < _philosopher is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_ancient x /\ _greeks x ->
+True -> forall z1 : Entity, _note z1 /\ _philosopher z1 -> True -> x = z1) ->
+~
+(forall x : Entity,
+_ancient x /\ _greek x ->
+True ->
+exists z1 : Entity, ((_noted z1 /\ _philosopher z1) /\ True) /\ x = z1)
+
+
+Toplevel input, characters 291-295:
+> Theorem t1: (forall x, ((and (_ancient x) (_greeks x)) -> (True -> (forall z1, ((and (_note z1) (_philosopher z1)) -> (True -> (x = z1))))))) -> (not (forall x, ((and (_ancient x) (_greek x)) -> (True -> (exists z1, (and (and (and (_noted z1) (_philosopher z1)) True) (x = z1))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                    ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _ancient is declared
+
+Coq < _greek is declared
+
+Coq < _greeks is declared
+
+Coq < _note is declared
+
+Coq < _noted is declared
+
+Coq < _philosopher is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_ancient x /\ _greeks x ->
+True -> forall z1 : Entity, _note z1 /\ _philosopher z1 -> True -> x = z1) ->
+forall x : Entity,
+_ancient x /\ _greek x ->
+True ->
+exists z1 : Entity, ((_noted z1 /\ _philosopher z1) /\ True) /\ x = z1
+
+2 goals
+
+H : forall x : Entity,
+_ancient x /\ _greeks x ->
+True ->
+forall z1 : Entity, _note z1 /\ _philosopher z1 -> True -> x = z1
+x : Entity
+H1 : True
+H2 : _ancient x
+H3 : _greek x
+============================
+_noted x
+
+goal 2 is:
+_philosopher x
+
+Toplevel input, characters 301-313:
+> Theorem t1: (forall x, ((and (_ancient x) (_greeks x)) -> (True -> (forall z1, ((and (_note z1) (_philosopher z1)) -> (True -> (x = z1))))))) -> (forall x, ((and (_ancient x) (_greek x)) -> (True -> (exists z1, (and (and (and (_noted z1) (_philosopher z1)) True) (x = z1)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                              ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 315-319:
+> Theorem t1: (forall x, ((and (_ancient x) (_greeks x)) -> (True -> (forall z1, ((and (_note z1) (_philosopher z1)) -> (True -> (x = z1))))))) -> (forall x, ((and (_ancient x) (_greek x)) -> (True -> (exists z1, (and (and (and (_noted z1) (_philosopher z1)) True) (x = z1)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                            ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

@@ -1,0 +1,695 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _be is declared
+
+Coq < _jones is declared
+
+Coq < _report is declared
+
+Coq < _smith is declared
+
+Coq < _write is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _smith /\ True) /\ _be _smith) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ Prog (_write _smith z1))) ->
+(exists x : Entity,
+((x = _jones /\ True) /\ _be _jones) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ Prog (_write _jones z1))) ->
+(exists x : Entity,
+((x = _smith /\ True) /\ _be _smith) /\
+_after
+(exists z4 : Entity,
+((z4 = _jones /\ True) /\ _be _jones) /\
+(exists z2 : Entity,
+(_report z2 /\ True) /\ Prog (_write _jones z2)))
+(exists z1 : Entity, (_report z1 /\ True) /\ Prog (_write _smith z1))) ->
+exists x : Entity,
+((x = _jones /\ True) /\ _be _jones) /\
+_before
+(exists z6 : Entity,
+((z6 = _smith /\ True) /\ _be _smith) /\
+(exists z4 : Entity, (_report z4 /\ True) /\ Prog (_write _smith z4)))
+(exists z3 : Entity, (_report z3 /\ True) /\ Prog (_write _jones z3))
+
+
+Toplevel input, characters 832-836:
+> Theorem t1: (exists x, (and (and (and (x = _smith) True) (_be _smith)) (exists z1, (and (and (_report z1) True) (Prog (_write _smith z1)))))) -> (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_report z1) True) (Prog (_write _jones z1)))))) -> (exists x, (and (and (and (x = _smith) True) (_be _smith)) (_after (exists z4, (and (and (and (z4 = _jones) True) (_be _jones)) (exists z2, (and (and (_report z2) True) (Prog (_write _jones z2)))))) (exists z1, (and (and (_report z1) True) (Prog (_write _smith z1))))))) -> (exists x, (and (and (and (x = _jones) True) (_be _jones)) (_before (exists z6, (and (and (and (z6 = _smith) True) (_be _smith)) (exists z4, (and (and (_report z4) True) (Prog (_write _smith z4)))))) (exists z3, (and (and (_report z3) True) (Prog (_write _jones z3))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _be is declared
+
+Coq < _jones is declared
+
+Coq < _report is declared
+
+Coq < _smith is declared
+
+Coq < _write is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _smith /\ True) /\ _be _smith) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ Prog (_write _smith z1))) ->
+(exists x : Entity,
+((x = _jones /\ True) /\ _be _jones) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ Prog (_write _jones z1))) ->
+(exists x : Entity,
+((x = _smith /\ True) /\ _be _smith) /\
+_after
+(exists z4 : Entity,
+((z4 = _jones /\ True) /\ _be _jones) /\
+(exists z2 : Entity,
+(_report z2 /\ True) /\ Prog (_write _jones z2)))
+(exists z1 : Entity, (_report z1 /\ True) /\ Prog (_write _smith z1))) ->
+~
+(exists x : Entity,
+((x = _jones /\ True) /\ _be _jones) /\
+_before
+(exists z6 : Entity,
+((z6 = _smith /\ True) /\ _be _smith) /\
+(exists z4 : Entity,
+(_report z4 /\ True) /\ Prog (_write _smith z4)))
+(exists z3 : Entity, (_report z3 /\ True) /\ Prog (_write _jones z3)))
+
+
+Toplevel input, characters 838-842:
+> Theorem t1: (exists x, (and (and (and (x = _smith) True) (_be _smith)) (exists z1, (and (and (_report z1) True) (Prog (_write _smith z1)))))) -> (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_report z1) True) (Prog (_write _jones z1)))))) -> (exists x, (and (and (and (x = _smith) True) (_be _smith)) (_after (exists z4, (and (and (and (z4 = _jones) True) (_be _jones)) (exists z2, (and (and (_report z2) True) (Prog (_write _jones z2)))))) (exists z1, (and (and (_report z1) True) (Prog (_write _smith z1))))))) -> (not (exists x, (and (and (and (x = _jones) True) (_be _jones)) (_before (exists z6, (and (and (and (z6 = _smith) True) (_be _smith)) (exists z4, (and (and (_report z4) True) (Prog (_write _smith z4)))))) (exists z3, (and (and (_report z3) True) (Prog (_write _jones z3)))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _be is declared
+
+Coq < _jones is declared
+
+Coq < _report is declared
+
+Coq < _smith is declared
+
+Coq < _write is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _smith /\ True) /\ _be _smith) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ Prog (_write _smith z1))) ->
+(exists x : Entity,
+((x = _jones /\ True) /\ _be _jones) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ Prog (_write _jones z1))) ->
+(exists x : Entity,
+((x = _smith /\ True) /\ _be _smith) /\
+_after
+(exists z4 : Entity,
+((z4 = _jones /\ True) /\ _be _jones) /\
+(exists z2 : Entity,
+(_report z2 /\ True) /\ Prog (_write _jones z2)))
+(exists z1 : Entity, (_report z1 /\ True) /\ Prog (_write _smith z1))) ->
+exists x : Entity,
+((x = _jones /\ True) /\ _be _jones) /\
+_before
+(exists z6 : Entity,
+((z6 = _smith /\ True) /\ _be _smith) /\
+(exists z4 : Entity, (_report z4 /\ True) /\ Prog (_write _smith z4)))
+(exists z3 : Entity, (_report z3 /\ True) /\ Prog (_write _jones z3))
+
+1 goal
+
+H2 : _after
+(exists z4 : Entity,
+((z4 = _jones /\ True) /\ _be _jones) /\
+(exists z2 : Entity,
+(_report z2 /\ True) /\ Prog (_write _jones z2)))
+(exists z1 : Entity, (_report z1 /\ True) /\ Prog (_write _smith z1))
+H3 : _be _smith
+H4 : True
+H6 : _be _smith
+H7 : True
+x1 : Entity
+H8 : Prog (_write _smith x1)
+H5 : _report x1
+H9 : True
+H11 : _be _jones
+H12 : True
+x3 : Entity
+H13 : Prog (_write _jones x3)
+H10 : _report x3
+H14 : True
+============================
+_before
+(exists z6 : Entity,
+((z6 = _smith /\ True) /\ _be _smith) /\
+(exists z4 : Entity, (_report z4 /\ True) /\ Prog (_write _smith z4)))
+(exists z3 : Entity, (_report z3 /\ True) /\ Prog (_write _jones z3))
+
+Toplevel input, characters 848-860:
+> Theorem t1: (exists x, (and (and (and (x = _smith) True) (_be _smith)) (exists z1, (and (and (_report z1) True) (Prog (_write _smith z1)))))) -> (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_report z1) True) (Prog (_write _jones z1)))))) -> (exists x, (and (and (and (x = _smith) True) (_be _smith)) (_after (exists z4, (and (and (and (z4 = _jones) True) (_be _jones)) (exists z2, (and (and (_report z2) True) (Prog (_write _jones z2)))))) (exists z1, (and (and (_report z1) True) (Prog (_write _smith z1))))))) -> (exists x, (and (and (and (x = _jones) True) (_be _jones)) (_before (exists z6, (and (and (and (z6 = _smith) True) (_be _smith)) (exists z4, (and (and (_report z4) True) (Prog (_write _smith z4)))))) (exists z3, (and (and (_report z3) True) (Prog (_write _jones z3))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 862-866:
+> Theorem t1: (exists x, (and (and (and (x = _smith) True) (_be _smith)) (exists z1, (and (and (_report z1) True) (Prog (_write _smith z1)))))) -> (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_report z1) True) (Prog (_write _jones z1)))))) -> (exists x, (and (and (and (x = _smith) True) (_be _smith)) (_after (exists z4, (and (and (and (z4 = _jones) True) (_be _jones)) (exists z2, (and (and (_report z2) True) (Prog (_write _jones z2)))))) (exists z1, (and (and (_report z1) True) (Prog (_write _smith z1))))))) -> (exists x, (and (and (and (x = _jones) True) (_be _jones)) (_before (exists z6, (and (and (and (z6 = _smith) True) (_be _smith)) (exists z4, (and (and (_report z4) True) (Prog (_write _smith z4)))))) (exists z3, (and (and (_report z3) True) (Prog (_write _jones z3))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _be is declared
+
+Coq < _jones is declared
+
+Coq < _report is declared
+
+Coq < _smith is declared
+
+Coq < _write is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _smith /\ True) /\ _be _smith) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ Prog (_write _smith z1))) ->
+(exists x : Entity,
+((x = _jones /\ True) /\ _be _jones) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ Prog (_write _jones z1))) ->
+(exists x : Entity,
+((x = _smith /\ True) /\ _be _smith) /\
+_after
+(exists z4 : Entity,
+((z4 = _jones /\ True) /\ _be _jones) /\
+(exists z2 : Entity,
+(_report z2 /\ True) /\ Prog (_write _jones z2)))
+(exists z1 : Entity, (_report z1 /\ True) /\ Prog (_write _smith z1))) ->
+exists x : Entity,
+((x = _jones /\ True) /\ _be _jones) /\
+_before
+(exists z6 : Entity,
+((z6 = _smith /\ True) /\ _be _smith) /\
+(exists z4 : Entity, (_report z4 /\ True) /\ Prog (_write _smith z4)))
+(exists z3 : Entity, (_report z3 /\ True) /\ Prog (_write _jones z3))
+
+
+Toplevel input, characters 832-836:
+> Theorem t1: (exists x, (and (and (and (x = _smith) True) (_be _smith)) (exists z1, (and (and (_report z1) True) (Prog (_write _smith z1)))))) -> (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_report z1) True) (Prog (_write _jones z1)))))) -> (exists x, (and (and (and (x = _smith) True) (_be _smith)) (_after (exists z4, (and (and (and (z4 = _jones) True) (_be _jones)) (exists z2, (and (and (_report z2) True) (Prog (_write _jones z2)))))) (exists z1, (and (and (_report z1) True) (Prog (_write _smith z1))))))) -> (exists x, (and (and (and (x = _jones) True) (_be _jones)) (_before (exists z6, (and (and (and (z6 = _smith) True) (_be _smith)) (exists z4, (and (and (_report z4) True) (Prog (_write _smith z4)))))) (exists z3, (and (and (_report z3) True) (Prog (_write _jones z3))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _be is declared
+
+Coq < _jones is declared
+
+Coq < _report is declared
+
+Coq < _smith is declared
+
+Coq < _write is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _smith /\ True) /\ _be _smith) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ Prog (_write _smith z1))) ->
+(exists x : Entity,
+((x = _jones /\ True) /\ _be _jones) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ Prog (_write _jones z1))) ->
+(exists x : Entity,
+((x = _smith /\ True) /\ _be _smith) /\
+_after
+(exists z4 : Entity,
+((z4 = _jones /\ True) /\ _be _jones) /\
+(exists z2 : Entity,
+(_report z2 /\ True) /\ Prog (_write _jones z2)))
+(exists z1 : Entity, (_report z1 /\ True) /\ Prog (_write _smith z1))) ->
+~
+(exists x : Entity,
+((x = _jones /\ True) /\ _be _jones) /\
+_before
+(exists z6 : Entity,
+((z6 = _smith /\ True) /\ _be _smith) /\
+(exists z4 : Entity,
+(_report z4 /\ True) /\ Prog (_write _smith z4)))
+(exists z3 : Entity, (_report z3 /\ True) /\ Prog (_write _jones z3)))
+
+1 goal
+
+H3 : _before
+(exists z6 : Entity,
+((z6 = _smith /\ True) /\ _be _smith) /\
+(exists z4 : Entity,
+(_report z4 /\ True) /\ Prog (_write _smith z4)))
+(exists z3 : Entity, (_report z3 /\ True) /\ Prog (_write _jones z3))
+H4 : _be _jones
+H5 : True
+H7 : _be _jones
+H8 : True
+x1 : Entity
+H9 : Prog (_write _jones x1)
+H6 : _report x1
+H10 : True
+H11 : _after
+(exists z4 : Entity,
+((z4 = _jones /\ True) /\ _be _jones) /\
+(exists z2 : Entity,
+(_report z2 /\ True) /\ Prog (_write _jones z2)))
+(exists z1 : Entity,
+(_report z1 /\ True) /\ Prog (_write _smith z1))
+H12 : _be _smith
+H13 : True
+H15 : _be _smith
+H16 : True
+x4 : Entity
+H17 : Prog (_write _smith x4)
+H14 : _report x4
+H18 : True
+============================
+False
+
+Toplevel input, characters 854-866:
+> Theorem t1: (exists x, (and (and (and (x = _smith) True) (_be _smith)) (exists z1, (and (and (_report z1) True) (Prog (_write _smith z1)))))) -> (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_report z1) True) (Prog (_write _jones z1)))))) -> (exists x, (and (and (and (x = _smith) True) (_be _smith)) (_after (exists z4, (and (and (and (z4 = _jones) True) (_be _jones)) (exists z2, (and (and (_report z2) True) (Prog (_write _jones z2)))))) (exists z1, (and (and (_report z1) True) (Prog (_write _smith z1))))))) -> (not (exists x, (and (and (and (x = _jones) True) (_be _jones)) (_before (exists z6, (and (and (and (z6 = _smith) True) (_be _smith)) (exists z4, (and (and (_report z4) True) (Prog (_write _smith z4)))))) (exists z3, (and (and (_report z3) True) (Prog (_write _jones z3)))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 868-872:
+> Theorem t1: (exists x, (and (and (and (x = _smith) True) (_be _smith)) (exists z1, (and (and (_report z1) True) (Prog (_write _smith z1)))))) -> (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_report z1) True) (Prog (_write _jones z1)))))) -> (exists x, (and (and (and (x = _smith) True) (_be _smith)) (_after (exists z4, (and (and (and (z4 = _jones) True) (_be _jones)) (exists z2, (and (and (_report z2) True) (Prog (_write _jones z2)))))) (exists z1, (and (and (_report z1) True) (Prog (_write _smith z1))))))) -> (not (exists x, (and (and (and (x = _jones) True) (_be _jones)) (_before (exists z6, (and (and (and (z6 = _smith) True) (_be _smith)) (exists z4, (and (and (_report z4) True) (Prog (_write _smith z4)))))) (exists z3, (and (and (_report z3) True) (Prog (_write _jones z3)))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _be is declared
+
+Coq < _jones is declared
+
+Coq < _report is declared
+
+Coq < _smith is declared
+
+Coq < _write is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _smith /\ True) /\ _be _smith) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ Prog (_write _smith z1))) ->
+(exists x : Entity,
+((x = _jones /\ True) /\ _be _jones) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ Prog (_write _jones z1))) ->
+(exists x : Entity,
+((x = _smith /\ True) /\ _be _smith) /\
+_after
+(exists z4 : Entity,
+((z4 = _jones /\ True) /\ _be _jones) /\
+(exists z2 : Entity,
+(_report z2 /\ True) /\ Prog (_write _jones z2)))
+(exists z1 : Entity, (_report z1 /\ True) /\ Prog (_write _smith z1))) ->
+~
+(exists x : Entity,
+((x = _jones /\ True) /\ _be _jones) /\
+_before
+(exists z6 : Entity,
+((z6 = _smith /\ True) /\ _be _smith) /\
+(exists z4 : Entity,
+(_report z4 /\ True) /\ Prog (_write _smith z4)))
+(exists z3 : Entity, (_report z3 /\ True) /\ Prog (_write _jones z3)))
+
+
+Toplevel input, characters 838-842:
+> Theorem t1: (exists x, (and (and (and (x = _smith) True) (_be _smith)) (exists z1, (and (and (_report z1) True) (Prog (_write _smith z1)))))) -> (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_report z1) True) (Prog (_write _jones z1)))))) -> (exists x, (and (and (and (x = _smith) True) (_be _smith)) (_after (exists z4, (and (and (and (z4 = _jones) True) (_be _jones)) (exists z2, (and (and (_report z2) True) (Prog (_write _jones z2)))))) (exists z1, (and (and (_report z1) True) (Prog (_write _smith z1))))))) -> (not (exists x, (and (and (and (x = _jones) True) (_be _jones)) (_before (exists z6, (and (and (and (z6 = _smith) True) (_be _smith)) (exists z4, (and (and (_report z4) True) (Prog (_write _smith z4)))))) (exists z3, (and (and (_report z3) True) (Prog (_write _jones z3)))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _be is declared
+
+Coq < _jones is declared
+
+Coq < _report is declared
+
+Coq < _smith is declared
+
+Coq < _write is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _smith /\ True) /\ _be _smith) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ Prog (_write _smith z1))) ->
+(exists x : Entity,
+((x = _jones /\ True) /\ _be _jones) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ Prog (_write _jones z1))) ->
+(exists x : Entity,
+((x = _smith /\ True) /\ _be _smith) /\
+_after
+(exists z4 : Entity,
+((z4 = _jones /\ True) /\ _be _jones) /\
+(exists z2 : Entity,
+(_report z2 /\ True) /\ Prog (_write _jones z2)))
+(exists z1 : Entity, (_report z1 /\ True) /\ Prog (_write _smith z1))) ->
+exists x : Entity,
+((x = _jones /\ True) /\ _be _jones) /\
+_before
+(exists z6 : Entity,
+((z6 = _smith /\ True) /\ _be _smith) /\
+(exists z4 : Entity, (_report z4 /\ True) /\ Prog (_write _smith z4)))
+(exists z3 : Entity, (_report z3 /\ True) /\ Prog (_write _jones z3))
+
+1 goal
+
+H2 : _after
+(exists z4 : Entity,
+((z4 = _jones /\ True) /\ _be _jones) /\
+(exists z2 : Entity,
+(_report z2 /\ True) /\ Prog (_write _jones z2)))
+(exists z1 : Entity, (_report z1 /\ True) /\ Prog (_write _smith z1))
+H3 : _be _smith
+H4 : True
+H6 : _be _smith
+H7 : True
+x1 : Entity
+H8 : Prog (_write _smith x1)
+H5 : _report x1
+H9 : True
+H11 : _be _jones
+H12 : True
+x3 : Entity
+H13 : Prog (_write _jones x3)
+H10 : _report x3
+H14 : True
+============================
+_before
+(exists z6 : Entity,
+((z6 = _smith /\ True) /\ _be _smith) /\
+(exists z4 : Entity, (_report z4 /\ True) /\ Prog (_write _smith z4)))
+(exists z3 : Entity, (_report z3 /\ True) /\ Prog (_write _jones z3))
+
+Toplevel input, characters 848-860:
+> Theorem t1: (exists x, (and (and (and (x = _smith) True) (_be _smith)) (exists z1, (and (and (_report z1) True) (Prog (_write _smith z1)))))) -> (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_report z1) True) (Prog (_write _jones z1)))))) -> (exists x, (and (and (and (x = _smith) True) (_be _smith)) (_after (exists z4, (and (and (and (z4 = _jones) True) (_be _jones)) (exists z2, (and (and (_report z2) True) (Prog (_write _jones z2)))))) (exists z1, (and (and (_report z1) True) (Prog (_write _smith z1))))))) -> (exists x, (and (and (and (x = _jones) True) (_be _jones)) (_before (exists z6, (and (and (and (z6 = _smith) True) (_be _smith)) (exists z4, (and (and (_report z4) True) (Prog (_write _smith z4)))))) (exists z3, (and (and (_report z3) True) (Prog (_write _jones z3))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 862-866:
+> Theorem t1: (exists x, (and (and (and (x = _smith) True) (_be _smith)) (exists z1, (and (and (_report z1) True) (Prog (_write _smith z1)))))) -> (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_report z1) True) (Prog (_write _jones z1)))))) -> (exists x, (and (and (and (x = _smith) True) (_be _smith)) (_after (exists z4, (and (and (and (z4 = _jones) True) (_be _jones)) (exists z2, (and (and (_report z2) True) (Prog (_write _jones z2)))))) (exists z1, (and (and (_report z1) True) (Prog (_write _smith z1))))))) -> (exists x, (and (and (and (x = _jones) True) (_be _jones)) (_before (exists z6, (and (and (and (z6 = _smith) True) (_be _smith)) (exists z4, (and (and (_report z4) True) (Prog (_write _smith z4)))))) (exists z3, (and (and (_report z3) True) (Prog (_write _jones z3))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _be is declared
+
+Coq < _jones is declared
+
+Coq < _report is declared
+
+Coq < _smith is declared
+
+Coq < _write is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _smith /\ True) /\ _be _smith) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ Prog (_write _smith z1))) ->
+(exists x : Entity,
+((x = _jones /\ True) /\ _be _jones) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ Prog (_write _jones z1))) ->
+(exists x : Entity,
+((x = _smith /\ True) /\ _be _smith) /\
+_after
+(exists z4 : Entity,
+((z4 = _jones /\ True) /\ _be _jones) /\
+(exists z2 : Entity,
+(_report z2 /\ True) /\ Prog (_write _jones z2)))
+(exists z1 : Entity, (_report z1 /\ True) /\ Prog (_write _smith z1))) ->
+~
+(exists x : Entity,
+((x = _jones /\ True) /\ _be _jones) /\
+_before
+(exists z6 : Entity,
+((z6 = _smith /\ True) /\ _be _smith) /\
+(exists z4 : Entity,
+(_report z4 /\ True) /\ Prog (_write _smith z4)))
+(exists z3 : Entity, (_report z3 /\ True) /\ Prog (_write _jones z3)))
+
+1 goal
+
+H3 : _before
+(exists z6 : Entity,
+((z6 = _smith /\ True) /\ _be _smith) /\
+(exists z4 : Entity,
+(_report z4 /\ True) /\ Prog (_write _smith z4)))
+(exists z3 : Entity, (_report z3 /\ True) /\ Prog (_write _jones z3))
+H4 : _be _jones
+H5 : True
+H7 : _be _jones
+H8 : True
+x1 : Entity
+H9 : Prog (_write _jones x1)
+H6 : _report x1
+H10 : True
+H11 : _after
+(exists z4 : Entity,
+((z4 = _jones /\ True) /\ _be _jones) /\
+(exists z2 : Entity,
+(_report z2 /\ True) /\ Prog (_write _jones z2)))
+(exists z1 : Entity,
+(_report z1 /\ True) /\ Prog (_write _smith z1))
+H12 : _be _smith
+H13 : True
+H15 : _be _smith
+H16 : True
+x4 : Entity
+H17 : Prog (_write _smith x4)
+H14 : _report x4
+H18 : True
+============================
+False
+
+Toplevel input, characters 854-866:
+> Theorem t1: (exists x, (and (and (and (x = _smith) True) (_be _smith)) (exists z1, (and (and (_report z1) True) (Prog (_write _smith z1)))))) -> (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_report z1) True) (Prog (_write _jones z1)))))) -> (exists x, (and (and (and (x = _smith) True) (_be _smith)) (_after (exists z4, (and (and (and (z4 = _jones) True) (_be _jones)) (exists z2, (and (and (_report z2) True) (Prog (_write _jones z2)))))) (exists z1, (and (and (_report z1) True) (Prog (_write _smith z1))))))) -> (not (exists x, (and (and (and (x = _jones) True) (_be _jones)) (_before (exists z6, (and (and (and (z6 = _smith) True) (_be _smith)) (exists z4, (and (and (_report z4) True) (Prog (_write _smith z4)))))) (exists z3, (and (and (_report z3) True) (Prog (_write _jones z3)))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 868-872:
+> Theorem t1: (exists x, (and (and (and (x = _smith) True) (_be _smith)) (exists z1, (and (and (_report z1) True) (Prog (_write _smith z1)))))) -> (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_report z1) True) (Prog (_write _jones z1)))))) -> (exists x, (and (and (and (x = _smith) True) (_be _smith)) (_after (exists z4, (and (and (and (z4 = _jones) True) (_be _jones)) (exists z2, (and (and (_report z2) True) (Prog (_write _jones z2)))))) (exists z1, (and (and (_report z1) True) (Prog (_write _smith z1))))))) -> (not (exists x, (and (and (and (x = _jones) True) (_be _jones)) (_before (exists z6, (and (and (and (z6 = _smith) True) (_be _smith)) (exists z4, (and (and (_report z4) True) (Prog (_write _smith z4)))))) (exists z3, (and (and (_report z3) True) (Prog (_write _jones z3)))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _be is declared
+
+Coq < _jones is declared
+
+Coq < _report is declared
+
+Coq < _smith is declared
+
+Coq < _write is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _smith /\ True) /\ _be _smith) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ Prog (_write _smith z1))) ->
+(exists x : Entity,
+((x = _jones /\ True) /\ _be _jones) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ Prog (_write _jones z1))) ->
+(exists x : Entity,
+((x = _smith /\ True) /\ _be _smith) /\
+_after
+(exists z4 : Entity,
+((z4 = _jones /\ True) /\ _be _jones) /\
+(exists z2 : Entity,
+(_report z2 /\ True) /\ Prog (_write _jones z2)))
+(exists z1 : Entity, (_report z1 /\ True) /\ Prog (_write _smith z1))) ->
+exists x : Entity,
+((x = _jones /\ True) /\ _be _jones) /\
+_before
+(exists z6 : Entity,
+((z6 = _smith /\ True) /\ _be _smith) /\
+(exists z4 : Entity, (_report z4 /\ True) /\ Prog (_write _smith z4)))
+(exists z3 : Entity, (_report z3 /\ True) /\ Prog (_write _jones z3))
+
+1 goal
+
+H2 : _after
+(exists z4 : Entity,
+((z4 = _jones /\ True) /\ _be _jones) /\
+(exists z2 : Entity,
+(_report z2 /\ True) /\ Prog (_write _jones z2)))
+(exists z1 : Entity, (_report z1 /\ True) /\ Prog (_write _smith z1))
+H3 : _be _smith
+H4 : True
+H6 : _be _smith
+H7 : True
+x1 : Entity
+H8 : Prog (_write _smith x1)
+H5 : _report x1
+H9 : True
+H11 : _be _jones
+H12 : True
+x3 : Entity
+H13 : Prog (_write _jones x3)
+H10 : _report x3
+H14 : True
+============================
+_before
+(exists z6 : Entity,
+((z6 = _smith /\ True) /\ _be _smith) /\
+(exists z4 : Entity, (_report z4 /\ True) /\ Prog (_write _smith z4)))
+(exists z3 : Entity, (_report z3 /\ True) /\ Prog (_write _jones z3))
+
+Toplevel input, characters 848-860:
+> Theorem t1: (exists x, (and (and (and (x = _smith) True) (_be _smith)) (exists z1, (and (and (_report z1) True) (Prog (_write _smith z1)))))) -> (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_report z1) True) (Prog (_write _jones z1)))))) -> (exists x, (and (and (and (x = _smith) True) (_be _smith)) (_after (exists z4, (and (and (and (z4 = _jones) True) (_be _jones)) (exists z2, (and (and (_report z2) True) (Prog (_write _jones z2)))))) (exists z1, (and (and (_report z1) True) (Prog (_write _smith z1))))))) -> (exists x, (and (and (and (x = _jones) True) (_be _jones)) (_before (exists z6, (and (and (and (z6 = _smith) True) (_be _smith)) (exists z4, (and (and (_report z4) True) (Prog (_write _smith z4)))))) (exists z3, (and (and (_report z3) True) (Prog (_write _jones z3))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 862-866:
+> Theorem t1: (exists x, (and (and (and (x = _smith) True) (_be _smith)) (exists z1, (and (and (_report z1) True) (Prog (_write _smith z1)))))) -> (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_report z1) True) (Prog (_write _jones z1)))))) -> (exists x, (and (and (and (x = _smith) True) (_be _smith)) (_after (exists z4, (and (and (and (z4 = _jones) True) (_be _jones)) (exists z2, (and (and (_report z2) True) (Prog (_write _jones z2)))))) (exists z1, (and (and (_report z1) True) (Prog (_write _smith z1))))))) -> (exists x, (and (and (and (x = _jones) True) (_be _jones)) (_before (exists z6, (and (and (and (z6 = _smith) True) (_be _smith)) (exists z4, (and (and (_report z4) True) (Prog (_write _smith z4)))))) (exists z3, (and (and (_report z3) True) (Prog (_write _jones z3))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _be is declared
+
+Coq < _jones is declared
+
+Coq < _report is declared
+
+Coq < _smith is declared
+
+Coq < _write is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _smith /\ True) /\ _be _smith) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ Prog (_write _smith z1))) ->
+(exists x : Entity,
+((x = _jones /\ True) /\ _be _jones) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ Prog (_write _jones z1))) ->
+(exists x : Entity,
+((x = _smith /\ True) /\ _be _smith) /\
+_after
+(exists z4 : Entity,
+((z4 = _jones /\ True) /\ _be _jones) /\
+(exists z2 : Entity,
+(_report z2 /\ True) /\ Prog (_write _jones z2)))
+(exists z1 : Entity, (_report z1 /\ True) /\ Prog (_write _smith z1))) ->
+~
+(exists x : Entity,
+((x = _jones /\ True) /\ _be _jones) /\
+_before
+(exists z6 : Entity,
+((z6 = _smith /\ True) /\ _be _smith) /\
+(exists z4 : Entity,
+(_report z4 /\ True) /\ Prog (_write _smith z4)))
+(exists z3 : Entity, (_report z3 /\ True) /\ Prog (_write _jones z3)))
+
+1 goal
+
+H3 : _before
+(exists z6 : Entity,
+((z6 = _smith /\ True) /\ _be _smith) /\
+(exists z4 : Entity,
+(_report z4 /\ True) /\ Prog (_write _smith z4)))
+(exists z3 : Entity, (_report z3 /\ True) /\ Prog (_write _jones z3))
+H4 : _be _jones
+H5 : True
+H7 : _be _jones
+H8 : True
+x1 : Entity
+H9 : Prog (_write _jones x1)
+H6 : _report x1
+H10 : True
+H11 : _after
+(exists z4 : Entity,
+((z4 = _jones /\ True) /\ _be _jones) /\
+(exists z2 : Entity,
+(_report z2 /\ True) /\ Prog (_write _jones z2)))
+(exists z1 : Entity,
+(_report z1 /\ True) /\ Prog (_write _smith z1))
+H12 : _be _smith
+H13 : True
+H15 : _be _smith
+H16 : True
+x4 : Entity
+H17 : Prog (_write _smith x4)
+H14 : _report x4
+H18 : True
+============================
+False
+
+Toplevel input, characters 854-866:
+> Theorem t1: (exists x, (and (and (and (x = _smith) True) (_be _smith)) (exists z1, (and (and (_report z1) True) (Prog (_write _smith z1)))))) -> (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_report z1) True) (Prog (_write _jones z1)))))) -> (exists x, (and (and (and (x = _smith) True) (_be _smith)) (_after (exists z4, (and (and (and (z4 = _jones) True) (_be _jones)) (exists z2, (and (and (_report z2) True) (Prog (_write _jones z2)))))) (exists z1, (and (and (_report z1) True) (Prog (_write _smith z1))))))) -> (not (exists x, (and (and (and (x = _jones) True) (_be _jones)) (_before (exists z6, (and (and (and (z6 = _smith) True) (_be _smith)) (exists z4, (and (and (_report z4) True) (Prog (_write _smith z4)))))) (exists z3, (and (and (_report z3) True) (Prog (_write _jones z3)))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 868-872:
+> Theorem t1: (exists x, (and (and (and (x = _smith) True) (_be _smith)) (exists z1, (and (and (_report z1) True) (Prog (_write _smith z1)))))) -> (exists x, (and (and (and (x = _jones) True) (_be _jones)) (exists z1, (and (and (_report z1) True) (Prog (_write _jones z1)))))) -> (exists x, (and (and (and (x = _smith) True) (_be _smith)) (_after (exists z4, (and (and (and (z4 = _jones) True) (_be _jones)) (exists z2, (and (and (_report z2) True) (Prog (_write _jones z2)))))) (exists z1, (and (and (_report z1) True) (Prog (_write _smith z1))))))) -> (not (exists x, (and (and (and (x = _jones) True) (_be _jones)) (_before (exists z6, (and (and (and (z6 = _smith) True) (_be _smith)) (exists z4, (and (and (_report z4) True) (Prog (_write _smith z4)))))) (exists z3, (and (and (_report z3) True) (Prog (_write _jones z3)))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

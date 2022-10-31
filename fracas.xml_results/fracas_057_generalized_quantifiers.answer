@@ -1,0 +1,647 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _delegate is declared
+
+Coq < _get is declared
+
+Coq < _in is declared
+
+Coq < _major is declared
+
+Coq < _national is declared
+
+Coq < _newspaper is declared
+
+Coq < _portuguese is declared
+
+Coq < _publish is declared
+
+Coq < _result is declared
+
+Coq < _several is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((_several x /\ _portuguese x) /\ _delegate x) /\ True) /\
+(exists z4 : Entity,
+((_result z4 /\
+(exists z1 : Entity,
+((((_major z1 /\ _national z1) /\ _newspaper z1) /\ True) /\
+_in z4 z1) /\ _publish z4)) /\ True) /\
+_get x z4)) ->
+exists x : Entity,
+((_several x /\ _delegate x) /\ True) /\
+(exists z4 : Entity,
+((_result z4 /\
+(exists z1 : Entity,
+((((_major z1 /\ _national z1) /\ _newspaper z1) /\ True) /\
+_in z4 z1) /\ _publish z4)) /\ True) /\
+_get x z4)
+
+No more goals.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _delegate is declared
+
+Coq < _get is declared
+
+Coq < _in is declared
+
+Coq < _major is declared
+
+Coq < _national is declared
+
+Coq < _newspaper is declared
+
+Coq < _portuguese is declared
+
+Coq < _publish is declared
+
+Coq < _result is declared
+
+Coq < _several is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((_several x /\ _portuguese x) /\ _delegate x) /\ True) /\
+(exists z4 : Entity,
+((_result z4 /\
+(exists z1 : Entity,
+((((_major z1 /\ _national z1) /\ _newspaper z1) /\ True) /\
+_in z4 z1) /\ _publish z4)) /\ True) /\
+_get x z4)) ->
+~
+(exists x : Entity,
+((_several x /\ _delegate x) /\ True) /\
+(exists z4 : Entity,
+((_result z4 /\
+(exists z1 : Entity,
+((((_major z1 /\ _national z1) /\ _newspaper z1) /\ True) /\
+_in z4 z1) /\ _publish z4)) /\ True) /\
+_get x z4))
+
+
+Toplevel input, characters 531-535:
+> Theorem t1: (exists x, (and (and (and (and (_several x) (_portuguese x)) (_delegate x)) True) (exists z4, (and (and (and (_result z4) (exists z1, (and (and (and (and (and (_major z1) (_national z1)) (_newspaper z1)) True) (_in z4 z1)) (_publish z4)))) True) (_get x z4))))) -> (not (exists x, (and (and (and (_several x) (_delegate x)) True) (exists z4, (and (and (and (_result z4) (exists z1, (and (and (and (and (and (_major z1) (_national z1)) (_newspaper z1)) True) (_in z4 z1)) (_publish z4)))) True) (_get x z4)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _delegate is declared
+
+Coq < _get is declared
+
+Coq < _in is declared
+
+Coq < _major is declared
+
+Coq < _national is declared
+
+Coq < _newspaper is declared
+
+Coq < _portuguese is declared
+
+Coq < _publish is declared
+
+Coq < _result is declared
+
+Coq < _several is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((_several x /\ _portuguese x) /\ _delegate x) /\ True) /\
+(exists z4 : Entity,
+((_result z4 /\
+(exists z1 : Entity,
+((((_major z1 /\ _national z1) /\ _newspaper z1) /\ True) /\
+_in z4 z1) /\ _publish z4)) /\ True) /\
+_get x z4)) ->
+exists x : Entity,
+((_several x /\ _delegate x) /\ True) /\
+(exists z4 : Entity,
+((_result z4 /\
+(exists z1 : Entity,
+((((_major z1 /\ _national z1) /\ _newspaper z1) /\ True) /\
+_in z4 z1) /\ _publish z4)) /\ True) /\
+_get x z4)
+
+No more goals.
+
+Toplevel input, characters 537-554:
+> Theorem t1: (exists x, (and (and (and (and (_several x) (_portuguese x)) (_delegate x)) True) (exists z4, (and (and (and (_result z4) (exists z1, (and (and (and (and (and (_major z1) (_national z1)) (_newspaper z1)) True) (_in z4 z1)) (_publish z4)))) True) (_get x z4))))) -> (exists x, (and (and (and (_several x) (_delegate x)) True) (exists z4, (and (and (and (_result z4) (exists z1, (and (and (and (and (and (_major z1) (_national z1)) (_newspaper z1)) True) (_in z4 z1)) (_publish z4)))) True) (_get x z4))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^^^^^^^^^^^^^^
+Error: No such goal.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _delegate is declared
+
+Coq < _get is declared
+
+Coq < _in is declared
+
+Coq < _major is declared
+
+Coq < _national is declared
+
+Coq < _newspaper is declared
+
+Coq < _portuguese is declared
+
+Coq < _publish is declared
+
+Coq < _result is declared
+
+Coq < _several is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((_several x /\ _portuguese x) /\ _delegate x) /\ True) /\
+(exists z4 : Entity,
+((_result z4 /\
+(exists z1 : Entity,
+((((_major z1 /\ _national z1) /\ _newspaper z1) /\ True) /\
+_in z4 z1) /\ _publish z4)) /\ True) /\
+_get x z4)) ->
+exists x : Entity,
+((_several x /\ _delegate x) /\ True) /\
+(exists z4 : Entity,
+((_result z4 /\
+(exists z1 : Entity,
+((((_major z1 /\ _national z1) /\ _newspaper z1) /\ True) /\
+_in z4 z1) /\ _publish z4)) /\ True) /\
+_get x z4)
+
+No more goals.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _delegate is declared
+
+Coq < _get is declared
+
+Coq < _in is declared
+
+Coq < _major is declared
+
+Coq < _national is declared
+
+Coq < _newspaper is declared
+
+Coq < _portuguese is declared
+
+Coq < _publish is declared
+
+Coq < _result is declared
+
+Coq < _several is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((_several x /\ _portuguese x) /\ _delegate x) /\ True) /\
+(exists z4 : Entity,
+((_result z4 /\
+(exists z1 : Entity,
+((((_major z1 /\ _national z1) /\ _newspaper z1) /\ True) /\
+_in z4 z1) /\ _publish z4)) /\ True) /\
+_get x z4)) ->
+~
+(exists x : Entity,
+((_several x /\ _delegate x) /\ True) /\
+(exists z4 : Entity,
+((_result z4 /\
+(exists z1 : Entity,
+((((_major z1 /\ _national z1) /\ _newspaper z1) /\ True) /\
+_in z4 z1) /\ _publish z4)) /\ True) /\
+_get x z4))
+
+1 goal
+
+x : Entity
+H2 : True
+H0 : _several x
+H3 : _delegate x
+x0 : Entity
+H4 : _get x x0
+H5 : True
+H1 : _result x0
+x1 : Entity
+H7 : _publish x0
+H8 : _in x0 x1
+H9 : True
+H10 : _newspaper x1
+H6 : _major x1
+H11 : _national x1
+x2 : Entity
+H13 : True
+H14 : _delegate x2
+H : _several x2
+H15 : _portuguese x2
+x3 : Entity
+H16 : _get x2 x3
+H17 : True
+H12 : _result x3
+x4 : Entity
+H19 : _publish x3
+H20 : _in x3 x4
+H21 : True
+H22 : _newspaper x4
+H18 : _major x4
+H23 : _national x4
+============================
+False
+
+Toplevel input, characters 547-559:
+> Theorem t1: (exists x, (and (and (and (and (_several x) (_portuguese x)) (_delegate x)) True) (exists z4, (and (and (and (_result z4) (exists z1, (and (and (and (and (and (_major z1) (_national z1)) (_newspaper z1)) True) (_in z4 z1)) (_publish z4)))) True) (_get x z4))))) -> (not (exists x, (and (and (and (_several x) (_delegate x)) True) (exists z4, (and (and (and (_result z4) (exists z1, (and (and (and (and (and (_major z1) (_national z1)) (_newspaper z1)) True) (_in z4 z1)) (_publish z4)))) True) (_get x z4)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 561-565:
+> Theorem t1: (exists x, (and (and (and (and (_several x) (_portuguese x)) (_delegate x)) True) (exists z4, (and (and (and (_result z4) (exists z1, (and (and (and (and (and (_major z1) (_national z1)) (_newspaper z1)) True) (_in z4 z1)) (_publish z4)))) True) (_get x z4))))) -> (not (exists x, (and (and (and (_several x) (_delegate x)) True) (exists z4, (and (and (and (_result z4) (exists z1, (and (and (and (and (and (_major z1) (_national z1)) (_newspaper z1)) True) (_in z4 z1)) (_publish z4)))) True) (_get x z4)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _delegate is declared
+
+Coq < _get is declared
+
+Coq < _in is declared
+
+Coq < _major is declared
+
+Coq < _national is declared
+
+Coq < _newspaper is declared
+
+Coq < _portuguese is declared
+
+Coq < _publish is declared
+
+Coq < _result is declared
+
+Coq < _several is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((_several x /\ _portuguese x) /\ _delegate x) /\ True) /\
+(exists z4 : Entity,
+((_result z4 /\
+(exists z1 : Entity,
+((((_major z1 /\ _national z1) /\ _newspaper z1) /\ True) /\
+_in z4 z1) /\ _publish z4)) /\ True) /\
+_get x z4)) ->
+~
+(exists x : Entity,
+((_several x /\ _delegate x) /\ True) /\
+(exists z4 : Entity,
+((_result z4 /\
+(exists z1 : Entity,
+((((_major z1 /\ _national z1) /\ _newspaper z1) /\ True) /\
+_in z4 z1) /\ _publish z4)) /\ True) /\
+_get x z4))
+
+
+Toplevel input, characters 531-535:
+> Theorem t1: (exists x, (and (and (and (and (_several x) (_portuguese x)) (_delegate x)) True) (exists z4, (and (and (and (_result z4) (exists z1, (and (and (and (and (and (_major z1) (_national z1)) (_newspaper z1)) True) (_in z4 z1)) (_publish z4)))) True) (_get x z4))))) -> (not (exists x, (and (and (and (_several x) (_delegate x)) True) (exists z4, (and (and (and (_result z4) (exists z1, (and (and (and (and (and (_major z1) (_national z1)) (_newspaper z1)) True) (_in z4 z1)) (_publish z4)))) True) (_get x z4)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _delegate is declared
+
+Coq < _get is declared
+
+Coq < _in is declared
+
+Coq < _major is declared
+
+Coq < _national is declared
+
+Coq < _newspaper is declared
+
+Coq < _portuguese is declared
+
+Coq < _publish is declared
+
+Coq < _result is declared
+
+Coq < _several is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((_several x /\ _portuguese x) /\ _delegate x) /\ True) /\
+(exists z4 : Entity,
+((_result z4 /\
+(exists z1 : Entity,
+((((_major z1 /\ _national z1) /\ _newspaper z1) /\ True) /\
+_in z4 z1) /\ _publish z4)) /\ True) /\
+_get x z4)) ->
+exists x : Entity,
+((_several x /\ _delegate x) /\ True) /\
+(exists z4 : Entity,
+((_result z4 /\
+(exists z1 : Entity,
+((((_major z1 /\ _national z1) /\ _newspaper z1) /\ True) /\
+_in z4 z1) /\ _publish z4)) /\ True) /\
+_get x z4)
+
+No more goals.
+
+Toplevel input, characters 537-554:
+> Theorem t1: (exists x, (and (and (and (and (_several x) (_portuguese x)) (_delegate x)) True) (exists z4, (and (and (and (_result z4) (exists z1, (and (and (and (and (and (_major z1) (_national z1)) (_newspaper z1)) True) (_in z4 z1)) (_publish z4)))) True) (_get x z4))))) -> (exists x, (and (and (and (_several x) (_delegate x)) True) (exists z4, (and (and (and (_result z4) (exists z1, (and (and (and (and (and (_major z1) (_national z1)) (_newspaper z1)) True) (_in z4 z1)) (_publish z4)))) True) (_get x z4))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^^^^^^^^^^^^^^
+Error: No such goal.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _delegate is declared
+
+Coq < _get is declared
+
+Coq < _in is declared
+
+Coq < _major is declared
+
+Coq < _national is declared
+
+Coq < _newspaper is declared
+
+Coq < _portuguese is declared
+
+Coq < _publish is declared
+
+Coq < _result is declared
+
+Coq < _several is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((_several x /\ _portuguese x) /\ _delegate x) /\ True) /\
+(exists z4 : Entity,
+((_result z4 /\
+(exists z1 : Entity,
+((((_major z1 /\ _national z1) /\ _newspaper z1) /\ True) /\
+_in z4 z1) /\ _publish z4)) /\ True) /\
+_get x z4)) ->
+~
+(exists x : Entity,
+((_several x /\ _delegate x) /\ True) /\
+(exists z4 : Entity,
+((_result z4 /\
+(exists z1 : Entity,
+((((_major z1 /\ _national z1) /\ _newspaper z1) /\ True) /\
+_in z4 z1) /\ _publish z4)) /\ True) /\
+_get x z4))
+
+1 goal
+
+x : Entity
+H2 : True
+H0 : _several x
+H3 : _delegate x
+x0 : Entity
+H4 : _get x x0
+H5 : True
+H1 : _result x0
+x1 : Entity
+H7 : _publish x0
+H8 : _in x0 x1
+H9 : True
+H10 : _newspaper x1
+H6 : _major x1
+H11 : _national x1
+x2 : Entity
+H13 : True
+H14 : _delegate x2
+H : _several x2
+H15 : _portuguese x2
+x3 : Entity
+H16 : _get x2 x3
+H17 : True
+H12 : _result x3
+x4 : Entity
+H19 : _publish x3
+H20 : _in x3 x4
+H21 : True
+H22 : _newspaper x4
+H18 : _major x4
+H23 : _national x4
+============================
+False
+
+Toplevel input, characters 547-559:
+> Theorem t1: (exists x, (and (and (and (and (_several x) (_portuguese x)) (_delegate x)) True) (exists z4, (and (and (and (_result z4) (exists z1, (and (and (and (and (and (_major z1) (_national z1)) (_newspaper z1)) True) (_in z4 z1)) (_publish z4)))) True) (_get x z4))))) -> (not (exists x, (and (and (and (_several x) (_delegate x)) True) (exists z4, (and (and (and (_result z4) (exists z1, (and (and (and (and (and (_major z1) (_national z1)) (_newspaper z1)) True) (_in z4 z1)) (_publish z4)))) True) (_get x z4)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 561-565:
+> Theorem t1: (exists x, (and (and (and (and (_several x) (_portuguese x)) (_delegate x)) True) (exists z4, (and (and (and (_result z4) (exists z1, (and (and (and (and (and (_major z1) (_national z1)) (_newspaper z1)) True) (_in z4 z1)) (_publish z4)))) True) (_get x z4))))) -> (not (exists x, (and (and (and (_several x) (_delegate x)) True) (exists z4, (and (and (and (_result z4) (exists z1, (and (and (and (and (and (_major z1) (_national z1)) (_newspaper z1)) True) (_in z4 z1)) (_publish z4)))) True) (_get x z4)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _delegate is declared
+
+Coq < _get is declared
+
+Coq < _in is declared
+
+Coq < _major is declared
+
+Coq < _national is declared
+
+Coq < _newspaper is declared
+
+Coq < _portuguese is declared
+
+Coq < _publish is declared
+
+Coq < _result is declared
+
+Coq < _several is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((_several x /\ _portuguese x) /\ _delegate x) /\ True) /\
+(exists z4 : Entity,
+((_result z4 /\
+(exists z1 : Entity,
+((((_major z1 /\ _national z1) /\ _newspaper z1) /\ True) /\
+_in z4 z1) /\ _publish z4)) /\ True) /\
+_get x z4)) ->
+exists x : Entity,
+((_several x /\ _delegate x) /\ True) /\
+(exists z4 : Entity,
+((_result z4 /\
+(exists z1 : Entity,
+((((_major z1 /\ _national z1) /\ _newspaper z1) /\ True) /\
+_in z4 z1) /\ _publish z4)) /\ True) /\
+_get x z4)
+
+No more goals.
+
+Toplevel input, characters 537-554:
+> Theorem t1: (exists x, (and (and (and (and (_several x) (_portuguese x)) (_delegate x)) True) (exists z4, (and (and (and (_result z4) (exists z1, (and (and (and (and (and (_major z1) (_national z1)) (_newspaper z1)) True) (_in z4 z1)) (_publish z4)))) True) (_get x z4))))) -> (exists x, (and (and (and (_several x) (_delegate x)) True) (exists z4, (and (and (and (_result z4) (exists z1, (and (and (and (and (and (_major z1) (_national z1)) (_newspaper z1)) True) (_in z4 z1)) (_publish z4)))) True) (_get x z4))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^^^^^^^^^^^^^^
+Error: No such goal.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _delegate is declared
+
+Coq < _get is declared
+
+Coq < _in is declared
+
+Coq < _major is declared
+
+Coq < _national is declared
+
+Coq < _newspaper is declared
+
+Coq < _portuguese is declared
+
+Coq < _publish is declared
+
+Coq < _result is declared
+
+Coq < _several is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((_several x /\ _portuguese x) /\ _delegate x) /\ True) /\
+(exists z4 : Entity,
+((_result z4 /\
+(exists z1 : Entity,
+((((_major z1 /\ _national z1) /\ _newspaper z1) /\ True) /\
+_in z4 z1) /\ _publish z4)) /\ True) /\
+_get x z4)) ->
+~
+(exists x : Entity,
+((_several x /\ _delegate x) /\ True) /\
+(exists z4 : Entity,
+((_result z4 /\
+(exists z1 : Entity,
+((((_major z1 /\ _national z1) /\ _newspaper z1) /\ True) /\
+_in z4 z1) /\ _publish z4)) /\ True) /\
+_get x z4))
+
+1 goal
+
+x : Entity
+H2 : True
+H0 : _several x
+H3 : _delegate x
+x0 : Entity
+H4 : _get x x0
+H5 : True
+H1 : _result x0
+x1 : Entity
+H7 : _publish x0
+H8 : _in x0 x1
+H9 : True
+H10 : _newspaper x1
+H6 : _major x1
+H11 : _national x1
+x2 : Entity
+H13 : True
+H14 : _delegate x2
+H : _several x2
+H15 : _portuguese x2
+x3 : Entity
+H16 : _get x2 x3
+H17 : True
+H12 : _result x3
+x4 : Entity
+H19 : _publish x3
+H20 : _in x3 x4
+H21 : True
+H22 : _newspaper x4
+H18 : _major x4
+H23 : _national x4
+============================
+False
+
+Toplevel input, characters 547-559:
+> Theorem t1: (exists x, (and (and (and (and (_several x) (_portuguese x)) (_delegate x)) True) (exists z4, (and (and (and (_result z4) (exists z1, (and (and (and (and (and (_major z1) (_national z1)) (_newspaper z1)) True) (_in z4 z1)) (_publish z4)))) True) (_get x z4))))) -> (not (exists x, (and (and (and (_several x) (_delegate x)) True) (exists z4, (and (and (and (_result z4) (exists z1, (and (and (and (and (and (_major z1) (_national z1)) (_newspaper z1)) True) (_in z4 z1)) (_publish z4)))) True) (_get x z4)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 561-565:
+> Theorem t1: (exists x, (and (and (and (and (_several x) (_portuguese x)) (_delegate x)) True) (exists z4, (and (and (and (_result z4) (exists z1, (and (and (and (and (and (_major z1) (_national z1)) (_newspaper z1)) True) (_in z4 z1)) (_publish z4)))) True) (_get x z4))))) -> (not (exists x, (and (and (and (_several x) (_delegate x)) True) (exists z4, (and (and (and (_result z4) (exists z1, (and (and (and (and (and (_major z1) (_national z1)) (_newspaper z1)) True) (_in z4 z1)) (_publish z4)))) True) (_get x z4)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

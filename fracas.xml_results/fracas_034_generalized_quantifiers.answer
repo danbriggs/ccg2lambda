@@ -1,0 +1,746 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _can is declared
+
+Coq < _can_e2 is declared
+
+Coq < _can_t2 is declared
+
+Coq < _europe is declared
+
+Coq < _european is declared
+
+Coq < _freely is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _live is declared
+
+Coq < _person is declared
+
+Coq < _right is declared
+
+Coq < _travel is declared
+
+Coq < _within is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_european x /\ _can_e2 x ->
+True ->
+exists z2 : Entity,
+(((z2 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x) ->
+forall x : Entity,
+_person x ->
+(exists z4 : Entity,
+(((exists z1 : Entity,
+((z1 = _europe /\ True) /\ _in z4 _europe) /\ _live z4) /\
+_right z4) /\ True) /\ _have x z4) /\ True ->
+_can_t2
+(exists z7 : Entity,
+(((z7 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+
+
+Toplevel input, characters 479-483:
+> Theorem t1: (forall x, ((and (_european x) (_can_e2 x)) -> (True -> (exists z2, (and (and (and (and (z2 = _europe) True) (_within x _europe)) (_freely x)) (_travel x)))))) -> (forall x, ((_person x) -> ((and (exists z4, (and (and (and (exists z1, (and (and (and (z1 = _europe) True) (_in z4 _europe)) (_live z4))) (_right z4)) True) (_have x z4))) True) -> (_can_t2 (exists z7, (and (and (and (and (z7 = _europe) True) (_within x _europe)) (_freely x)) (_travel x))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _can is declared
+
+Coq < _can_e2 is declared
+
+Coq < _can_t2 is declared
+
+Coq < _europe is declared
+
+Coq < _european is declared
+
+Coq < _freely is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _live is declared
+
+Coq < _person is declared
+
+Coq < _right is declared
+
+Coq < _travel is declared
+
+Coq < _within is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_european x /\ _can_e2 x ->
+True ->
+exists z2 : Entity,
+(((z2 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x) ->
+~
+(forall x : Entity,
+_person x ->
+(exists z4 : Entity,
+(((exists z1 : Entity,
+((z1 = _europe /\ True) /\ _in z4 _europe) /\ _live z4) /\
+_right z4) /\ True) /\ _have x z4) /\ True ->
+_can_t2
+(exists z7 : Entity,
+(((z7 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x))
+
+
+Toplevel input, characters 485-489:
+> Theorem t1: (forall x, ((and (_european x) (_can_e2 x)) -> (True -> (exists z2, (and (and (and (and (z2 = _europe) True) (_within x _europe)) (_freely x)) (_travel x)))))) -> (not (forall x, ((_person x) -> ((and (exists z4, (and (and (and (exists z1, (and (and (and (z1 = _europe) True) (_in z4 _europe)) (_live z4))) (_right z4)) True) (_have x z4))) True) -> (_can_t2 (exists z7, (and (and (and (and (z7 = _europe) True) (_within x _europe)) (_freely x)) (_travel x)))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _can is declared
+
+Coq < _can_e2 is declared
+
+Coq < _can_t2 is declared
+
+Coq < _europe is declared
+
+Coq < _european is declared
+
+Coq < _freely is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _live is declared
+
+Coq < _person is declared
+
+Coq < _right is declared
+
+Coq < _travel is declared
+
+Coq < _within is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_european x /\ _can_e2 x ->
+True ->
+exists z2 : Entity,
+(((z2 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x) ->
+forall x : Entity,
+_person x ->
+(exists z4 : Entity,
+(((exists z1 : Entity,
+((z1 = _europe /\ True) /\ _in z4 _europe) /\ _live z4) /\
+_right z4) /\ True) /\ _have x z4) /\ True ->
+_can_t2
+(exists z7 : Entity,
+(((z7 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+
+1 goal
+
+H : forall x : Entity,
+_european x /\ _can_e2 x ->
+True ->
+exists z2 : Entity,
+(((z2 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x
+x : Entity
+H0 : _person x
+H3 : True
+x0 : Entity
+H2 : _have x x0
+H4 : True
+H5 : _right x0
+H6 : _live x0
+H7 : _in x0 _europe
+H8 : True
+============================
+_can_t2
+(exists z7 : Entity,
+(((z7 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+
+Toplevel input, characters 495-507:
+> Theorem t1: (forall x, ((and (_european x) (_can_e2 x)) -> (True -> (exists z2, (and (and (and (and (z2 = _europe) True) (_within x _europe)) (_freely x)) (_travel x)))))) -> (forall x, ((_person x) -> ((and (exists z4, (and (and (and (exists z1, (and (and (and (z1 = _europe) True) (_in z4 _europe)) (_live z4))) (_right z4)) True) (_have x z4))) True) -> (_can_t2 (exists z7, (and (and (and (and (z7 = _europe) True) (_within x _europe)) (_freely x)) (_travel x))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 509-513:
+> Theorem t1: (forall x, ((and (_european x) (_can_e2 x)) -> (True -> (exists z2, (and (and (and (and (z2 = _europe) True) (_within x _europe)) (_freely x)) (_travel x)))))) -> (forall x, ((_person x) -> ((and (exists z4, (and (and (and (exists z1, (and (and (and (z1 = _europe) True) (_in z4 _europe)) (_live z4))) (_right z4)) True) (_have x z4))) True) -> (_can_t2 (exists z7, (and (and (and (and (z7 = _europe) True) (_within x _europe)) (_freely x)) (_travel x))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _can is declared
+
+Coq < _can_e2 is declared
+
+Coq < _can_t2 is declared
+
+Coq < _europe is declared
+
+Coq < _european is declared
+
+Coq < _freely is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _live is declared
+
+Coq < _person is declared
+
+Coq < _right is declared
+
+Coq < _travel is declared
+
+Coq < _within is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_european x /\ _can_e2 x ->
+True ->
+exists z2 : Entity,
+(((z2 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x) ->
+forall x : Entity,
+_person x ->
+(exists z4 : Entity,
+(((exists z1 : Entity,
+((z1 = _europe /\ True) /\ _in z4 _europe) /\ _live z4) /\
+_right z4) /\ True) /\ _have x z4) /\ True ->
+_can_t2
+(exists z7 : Entity,
+(((z7 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+
+
+Toplevel input, characters 479-483:
+> Theorem t1: (forall x, ((and (_european x) (_can_e2 x)) -> (True -> (exists z2, (and (and (and (and (z2 = _europe) True) (_within x _europe)) (_freely x)) (_travel x)))))) -> (forall x, ((_person x) -> ((and (exists z4, (and (and (and (exists z1, (and (and (and (z1 = _europe) True) (_in z4 _europe)) (_live z4))) (_right z4)) True) (_have x z4))) True) -> (_can_t2 (exists z7, (and (and (and (and (z7 = _europe) True) (_within x _europe)) (_freely x)) (_travel x))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _can is declared
+
+Coq < _can_e2 is declared
+
+Coq < _can_t2 is declared
+
+Coq < _europe is declared
+
+Coq < _european is declared
+
+Coq < _freely is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _live is declared
+
+Coq < _person is declared
+
+Coq < _right is declared
+
+Coq < _travel is declared
+
+Coq < _within is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_european x /\ _can_e2 x ->
+True ->
+exists z2 : Entity,
+(((z2 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x) ->
+~
+(forall x : Entity,
+_person x ->
+(exists z4 : Entity,
+(((exists z1 : Entity,
+((z1 = _europe /\ True) /\ _in z4 _europe) /\ _live z4) /\
+_right z4) /\ True) /\ _have x z4) /\ True ->
+_can_t2
+(exists z7 : Entity,
+(((z7 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x))
+
+1 goal
+
+H : forall x : Entity,
+_european x /\ _can_e2 x ->
+True ->
+exists z2 : Entity,
+(((z2 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x
+H0 : forall x : Entity,
+_person x ->
+(exists z4 : Entity,
+(((exists z1 : Entity,
+((z1 = _europe /\ True) /\ _in z4 _europe) /\ _live z4) /\
+_right z4) /\ True) /\ _have x z4) /\ True ->
+_can_t2
+(exists z7 : Entity,
+(((z7 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+============================
+False
+
+Toplevel input, characters 501-513:
+> Theorem t1: (forall x, ((and (_european x) (_can_e2 x)) -> (True -> (exists z2, (and (and (and (and (z2 = _europe) True) (_within x _europe)) (_freely x)) (_travel x)))))) -> (not (forall x, ((_person x) -> ((and (exists z4, (and (and (and (exists z1, (and (and (and (z1 = _europe) True) (_in z4 _europe)) (_live z4))) (_right z4)) True) (_have x z4))) True) -> (_can_t2 (exists z7, (and (and (and (and (z7 = _europe) True) (_within x _europe)) (_freely x)) (_travel x)))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 515-519:
+> Theorem t1: (forall x, ((and (_european x) (_can_e2 x)) -> (True -> (exists z2, (and (and (and (and (z2 = _europe) True) (_within x _europe)) (_freely x)) (_travel x)))))) -> (not (forall x, ((_person x) -> ((and (exists z4, (and (and (and (exists z1, (and (and (and (z1 = _europe) True) (_in z4 _europe)) (_live z4))) (_right z4)) True) (_have x z4))) True) -> (_can_t2 (exists z7, (and (and (and (and (z7 = _europe) True) (_within x _europe)) (_freely x)) (_travel x)))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _can is declared
+
+Coq < _can_e2 is declared
+
+Coq < _can_t2 is declared
+
+Coq < _europe is declared
+
+Coq < _european is declared
+
+Coq < _freely is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _live is declared
+
+Coq < _person is declared
+
+Coq < _right is declared
+
+Coq < _travel is declared
+
+Coq < _within is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_european x /\ _can_e2 x ->
+True ->
+exists z2 : Entity,
+(((z2 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x) ->
+~
+(forall x : Entity,
+_person x ->
+(exists z4 : Entity,
+(((exists z1 : Entity,
+((z1 = _europe /\ True) /\ _in z4 _europe) /\ _live z4) /\
+_right z4) /\ True) /\ _have x z4) /\ True ->
+_can_t2
+(exists z7 : Entity,
+(((z7 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x))
+
+
+Toplevel input, characters 485-489:
+> Theorem t1: (forall x, ((and (_european x) (_can_e2 x)) -> (True -> (exists z2, (and (and (and (and (z2 = _europe) True) (_within x _europe)) (_freely x)) (_travel x)))))) -> (not (forall x, ((_person x) -> ((and (exists z4, (and (and (and (exists z1, (and (and (and (z1 = _europe) True) (_in z4 _europe)) (_live z4))) (_right z4)) True) (_have x z4))) True) -> (_can_t2 (exists z7, (and (and (and (and (z7 = _europe) True) (_within x _europe)) (_freely x)) (_travel x)))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _can is declared
+
+Coq < _can_e2 is declared
+
+Coq < _can_t2 is declared
+
+Coq < _europe is declared
+
+Coq < _european is declared
+
+Coq < _freely is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _live is declared
+
+Coq < _person is declared
+
+Coq < _right is declared
+
+Coq < _travel is declared
+
+Coq < _within is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_european x /\ _can_e2 x ->
+True ->
+exists z2 : Entity,
+(((z2 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x) ->
+forall x : Entity,
+_person x ->
+(exists z4 : Entity,
+(((exists z1 : Entity,
+((z1 = _europe /\ True) /\ _in z4 _europe) /\ _live z4) /\
+_right z4) /\ True) /\ _have x z4) /\ True ->
+_can_t2
+(exists z7 : Entity,
+(((z7 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+
+1 goal
+
+H : forall x : Entity,
+_european x /\ _can_e2 x ->
+True ->
+exists z2 : Entity,
+(((z2 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x
+x : Entity
+H0 : _person x
+H3 : True
+x0 : Entity
+H2 : _have x x0
+H4 : True
+H5 : _right x0
+H6 : _live x0
+H7 : _in x0 _europe
+H8 : True
+============================
+_can_t2
+(exists z7 : Entity,
+(((z7 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+
+Toplevel input, characters 495-507:
+> Theorem t1: (forall x, ((and (_european x) (_can_e2 x)) -> (True -> (exists z2, (and (and (and (and (z2 = _europe) True) (_within x _europe)) (_freely x)) (_travel x)))))) -> (forall x, ((_person x) -> ((and (exists z4, (and (and (and (exists z1, (and (and (and (z1 = _europe) True) (_in z4 _europe)) (_live z4))) (_right z4)) True) (_have x z4))) True) -> (_can_t2 (exists z7, (and (and (and (and (z7 = _europe) True) (_within x _europe)) (_freely x)) (_travel x))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 509-513:
+> Theorem t1: (forall x, ((and (_european x) (_can_e2 x)) -> (True -> (exists z2, (and (and (and (and (z2 = _europe) True) (_within x _europe)) (_freely x)) (_travel x)))))) -> (forall x, ((_person x) -> ((and (exists z4, (and (and (and (exists z1, (and (and (and (z1 = _europe) True) (_in z4 _europe)) (_live z4))) (_right z4)) True) (_have x z4))) True) -> (_can_t2 (exists z7, (and (and (and (and (z7 = _europe) True) (_within x _europe)) (_freely x)) (_travel x))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _can is declared
+
+Coq < _can_e2 is declared
+
+Coq < _can_t2 is declared
+
+Coq < _europe is declared
+
+Coq < _european is declared
+
+Coq < _freely is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _live is declared
+
+Coq < _person is declared
+
+Coq < _right is declared
+
+Coq < _travel is declared
+
+Coq < _within is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_european x /\ _can_e2 x ->
+True ->
+exists z2 : Entity,
+(((z2 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x) ->
+~
+(forall x : Entity,
+_person x ->
+(exists z4 : Entity,
+(((exists z1 : Entity,
+((z1 = _europe /\ True) /\ _in z4 _europe) /\ _live z4) /\
+_right z4) /\ True) /\ _have x z4) /\ True ->
+_can_t2
+(exists z7 : Entity,
+(((z7 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x))
+
+1 goal
+
+H : forall x : Entity,
+_european x /\ _can_e2 x ->
+True ->
+exists z2 : Entity,
+(((z2 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x
+H0 : forall x : Entity,
+_person x ->
+(exists z4 : Entity,
+(((exists z1 : Entity,
+((z1 = _europe /\ True) /\ _in z4 _europe) /\ _live z4) /\
+_right z4) /\ True) /\ _have x z4) /\ True ->
+_can_t2
+(exists z7 : Entity,
+(((z7 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+============================
+False
+
+Toplevel input, characters 501-513:
+> Theorem t1: (forall x, ((and (_european x) (_can_e2 x)) -> (True -> (exists z2, (and (and (and (and (z2 = _europe) True) (_within x _europe)) (_freely x)) (_travel x)))))) -> (not (forall x, ((_person x) -> ((and (exists z4, (and (and (and (exists z1, (and (and (and (z1 = _europe) True) (_in z4 _europe)) (_live z4))) (_right z4)) True) (_have x z4))) True) -> (_can_t2 (exists z7, (and (and (and (and (z7 = _europe) True) (_within x _europe)) (_freely x)) (_travel x)))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 515-519:
+> Theorem t1: (forall x, ((and (_european x) (_can_e2 x)) -> (True -> (exists z2, (and (and (and (and (z2 = _europe) True) (_within x _europe)) (_freely x)) (_travel x)))))) -> (not (forall x, ((_person x) -> ((and (exists z4, (and (and (and (exists z1, (and (and (and (z1 = _europe) True) (_in z4 _europe)) (_live z4))) (_right z4)) True) (_have x z4))) True) -> (_can_t2 (exists z7, (and (and (and (and (z7 = _europe) True) (_within x _europe)) (_freely x)) (_travel x)))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _can is declared
+
+Coq < _can_e2 is declared
+
+Coq < _can_t2 is declared
+
+Coq < _europe is declared
+
+Coq < _european is declared
+
+Coq < _freely is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _live is declared
+
+Coq < _person is declared
+
+Coq < _right is declared
+
+Coq < _travel is declared
+
+Coq < _within is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_european x /\ _can_e2 x ->
+True ->
+exists z2 : Entity,
+(((z2 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x) ->
+forall x : Entity,
+_person x ->
+(exists z4 : Entity,
+(((exists z1 : Entity,
+((z1 = _europe /\ True) /\ _in z4 _europe) /\ _live z4) /\
+_right z4) /\ True) /\ _have x z4) /\ True ->
+_can_t2
+(exists z7 : Entity,
+(((z7 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+
+1 goal
+
+H : forall x : Entity,
+_european x /\ _can_e2 x ->
+True ->
+exists z2 : Entity,
+(((z2 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x
+x : Entity
+H0 : _person x
+H3 : True
+x0 : Entity
+H2 : _have x x0
+H4 : True
+H5 : _right x0
+H6 : _live x0
+H7 : _in x0 _europe
+H8 : True
+============================
+_can_t2
+(exists z7 : Entity,
+(((z7 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+
+Toplevel input, characters 495-507:
+> Theorem t1: (forall x, ((and (_european x) (_can_e2 x)) -> (True -> (exists z2, (and (and (and (and (z2 = _europe) True) (_within x _europe)) (_freely x)) (_travel x)))))) -> (forall x, ((_person x) -> ((and (exists z4, (and (and (and (exists z1, (and (and (and (z1 = _europe) True) (_in z4 _europe)) (_live z4))) (_right z4)) True) (_have x z4))) True) -> (_can_t2 (exists z7, (and (and (and (and (z7 = _europe) True) (_within x _europe)) (_freely x)) (_travel x))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 509-513:
+> Theorem t1: (forall x, ((and (_european x) (_can_e2 x)) -> (True -> (exists z2, (and (and (and (and (z2 = _europe) True) (_within x _europe)) (_freely x)) (_travel x)))))) -> (forall x, ((_person x) -> ((and (exists z4, (and (and (and (exists z1, (and (and (and (z1 = _europe) True) (_in z4 _europe)) (_live z4))) (_right z4)) True) (_have x z4))) True) -> (_can_t2 (exists z7, (and (and (and (and (z7 = _europe) True) (_within x _europe)) (_freely x)) (_travel x))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _can is declared
+
+Coq < _can_e2 is declared
+
+Coq < _can_t2 is declared
+
+Coq < _europe is declared
+
+Coq < _european is declared
+
+Coq < _freely is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _live is declared
+
+Coq < _person is declared
+
+Coq < _right is declared
+
+Coq < _travel is declared
+
+Coq < _within is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_european x /\ _can_e2 x ->
+True ->
+exists z2 : Entity,
+(((z2 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x) ->
+~
+(forall x : Entity,
+_person x ->
+(exists z4 : Entity,
+(((exists z1 : Entity,
+((z1 = _europe /\ True) /\ _in z4 _europe) /\ _live z4) /\
+_right z4) /\ True) /\ _have x z4) /\ True ->
+_can_t2
+(exists z7 : Entity,
+(((z7 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x))
+
+1 goal
+
+H : forall x : Entity,
+_european x /\ _can_e2 x ->
+True ->
+exists z2 : Entity,
+(((z2 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x
+H0 : forall x : Entity,
+_person x ->
+(exists z4 : Entity,
+(((exists z1 : Entity,
+((z1 = _europe /\ True) /\ _in z4 _europe) /\ _live z4) /\
+_right z4) /\ True) /\ _have x z4) /\ True ->
+_can_t2
+(exists z7 : Entity,
+(((z7 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+============================
+False
+
+Toplevel input, characters 501-513:
+> Theorem t1: (forall x, ((and (_european x) (_can_e2 x)) -> (True -> (exists z2, (and (and (and (and (z2 = _europe) True) (_within x _europe)) (_freely x)) (_travel x)))))) -> (not (forall x, ((_person x) -> ((and (exists z4, (and (and (and (exists z1, (and (and (and (z1 = _europe) True) (_in z4 _europe)) (_live z4))) (_right z4)) True) (_have x z4))) True) -> (_can_t2 (exists z7, (and (and (and (and (z7 = _europe) True) (_within x _europe)) (_freely x)) (_travel x)))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 515-519:
+> Theorem t1: (forall x, ((and (_european x) (_can_e2 x)) -> (True -> (exists z2, (and (and (and (and (z2 = _europe) True) (_within x _europe)) (_freely x)) (_travel x)))))) -> (not (forall x, ((_person x) -> ((and (exists z4, (and (and (and (exists z1, (and (and (and (z1 = _europe) True) (_in z4 _europe)) (_live z4))) (_right z4)) True) (_have x z4))) True) -> (_can_t2 (exists z7, (and (and (and (and (z7 = _europe) True) (_within x _europe)) (_freely x)) (_travel x)))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

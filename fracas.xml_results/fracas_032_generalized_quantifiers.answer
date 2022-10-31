@@ -1,0 +1,512 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _commissioner is declared
+
+Coq < _home is declared
+
+Coq < _lot is declared
+
+Coq < _of is declared
+
+Coq < _spend is declared
+
+Coq < _ten is declared
+
+Coq < _time is declared
+
+Coq < Toplevel input, characters 33-285:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z3, (and (and (and (_home z3) True) (_at x z3)) (exists z2, (and (and (and (_lot z2) (exists z1, (and (and (_time z1) True) (_of z2 z1)))) True) (_spend x z2)))))) True)) (fun w => True)) S) S)) -> (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z2, (and (and (and (_home z2) True) (_at x z2)) (exists z1, (and (and (_time z1) True) (_spend x z1)))))) True)) (fun w => True)) S) S)).
+>                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error:
+In environment
+S : ?T
+The term
+"most x;
+((_ten x /\ _commissioner x) /\
+(exists z3 : Entity,
+((_home z3 /\ True) /\ _at x z3) /\
+(exists z2 : Entity,
+((_lot z2 /\ (exists z1 : Entity, (_time z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _spend x z2))) /\ True, True" has type
+"Prop" while it is expected to have type "Entity".
+
+Toplevel input, characters 522-527:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z3, (and (and (and (_home z3) True) (_at x z3)) (exists z2, (and (and (and (_lot z2) (exists z1, (and (and (_time z1) True) (_of z2 z1)))) True) (_spend x z2)))))) True)) (fun w => True)) S) S)) -> (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z2, (and (and (and (_home z2) True) (_at x z2)) (exists z1, (and (and (_time z1) True) (_spend x z1)))))) True)) (fun w => True)) S) S)). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 529-533:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z3, (and (and (and (_home z3) True) (_at x z3)) (exists z2, (and (and (and (_lot z2) (exists z1, (and (and (_time z1) True) (_of z2 z1)))) True) (_spend x z2)))))) True)) (fun w => True)) S) S)) -> (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z2, (and (and (and (_home z2) True) (_at x z2)) (exists z1, (and (and (_time z1) True) (_spend x z1)))))) True)) (fun w => True)) S) S)). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _commissioner is declared
+
+Coq < _home is declared
+
+Coq < _lot is declared
+
+Coq < _of is declared
+
+Coq < _spend is declared
+
+Coq < _ten is declared
+
+Coq < _time is declared
+
+Coq < Toplevel input, characters 33-285:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z3, (and (and (and (_home z3) True) (_at x z3)) (exists z2, (and (and (and (_lot z2) (exists z1, (and (and (_time z1) True) (_of z2 z1)))) True) (_spend x z2)))))) True)) (fun w => True)) S) S)) -> (not (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z2, (and (and (and (_home z2) True) (_at x z2)) (exists z1, (and (and (_time z1) True) (_spend x z1)))))) True)) (fun w => True)) S) S))).
+>                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error:
+In environment
+S : ?T
+The term
+"most x;
+((_ten x /\ _commissioner x) /\
+(exists z3 : Entity,
+((_home z3 /\ True) /\ _at x z3) /\
+(exists z2 : Entity,
+((_lot z2 /\ (exists z1 : Entity, (_time z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _spend x z2))) /\ True, True" has type
+"Prop" while it is expected to have type "Entity".
+
+Toplevel input, characters 528-533:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z3, (and (and (and (_home z3) True) (_at x z3)) (exists z2, (and (and (and (_lot z2) (exists z1, (and (and (_time z1) True) (_of z2 z1)))) True) (_spend x z2)))))) True)) (fun w => True)) S) S)) -> (not (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z2, (and (and (and (_home z2) True) (_at x z2)) (exists z1, (and (and (_time z1) True) (_spend x z1)))))) True)) (fun w => True)) S) S))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 535-539:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z3, (and (and (and (_home z3) True) (_at x z3)) (exists z2, (and (and (and (_lot z2) (exists z1, (and (and (_time z1) True) (_of z2 z1)))) True) (_spend x z2)))))) True)) (fun w => True)) S) S)) -> (not (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z2, (and (and (and (_home z2) True) (_at x z2)) (exists z1, (and (and (_time z1) True) (_spend x z1)))))) True)) (fun w => True)) S) S))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _commissioner is declared
+
+Coq < _home is declared
+
+Coq < _lot is declared
+
+Coq < _of is declared
+
+Coq < _spend is declared
+
+Coq < _ten is declared
+
+Coq < _time is declared
+
+Coq < Toplevel input, characters 33-285:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z3, (and (and (and (_home z3) True) (_at x z3)) (exists z2, (and (and (and (_lot z2) (exists z1, (and (and (_time z1) True) (_of z2 z1)))) True) (_spend x z2)))))) True)) (fun w => True)) S) S)) -> (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z2, (and (and (and (_home z2) True) (_at x z2)) (exists z1, (and (and (_time z1) True) (_spend x z1)))))) True)) (fun w => True)) S) S)).
+>                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error:
+In environment
+S : ?T
+The term
+"most x;
+((_ten x /\ _commissioner x) /\
+(exists z3 : Entity,
+((_home z3 /\ True) /\ _at x z3) /\
+(exists z2 : Entity,
+((_lot z2 /\ (exists z1 : Entity, (_time z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _spend x z2))) /\ True, True" has type
+"Prop" while it is expected to have type "Entity".
+
+Toplevel input, characters 522-528:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z3, (and (and (and (_home z3) True) (_at x z3)) (exists z2, (and (and (and (_lot z2) (exists z1, (and (and (_time z1) True) (_of z2 z1)))) True) (_spend x z2)))))) True)) (fun w => True)) S) S)) -> (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z2, (and (and (and (_home z2) True) (_at x z2)) (exists z1, (and (and (_time z1) True) (_spend x z1)))))) True)) (fun w => True)) S) S)). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 541-544:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z3, (and (and (and (_home z3) True) (_at x z3)) (exists z2, (and (and (and (_lot z2) (exists z1, (and (and (_time z1) True) (_of z2 z1)))) True) (_spend x z2)))))) True)) (fun w => True)) S) S)) -> (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z2, (and (and (and (_home z2) True) (_at x z2)) (exists z1, (and (and (_time z1) True) (_spend x z1)))))) True)) (fun w => True)) S) S)). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 559-563:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z3, (and (and (and (_home z3) True) (_at x z3)) (exists z2, (and (and (and (_lot z2) (exists z1, (and (and (_time z1) True) (_of z2 z1)))) True) (_spend x z2)))))) True)) (fun w => True)) S) S)) -> (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z2, (and (and (and (_home z2) True) (_at x z2)) (exists z1, (and (and (_time z1) True) (_spend x z1)))))) True)) (fun w => True)) S) S)). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _commissioner is declared
+
+Coq < _home is declared
+
+Coq < _lot is declared
+
+Coq < _of is declared
+
+Coq < _spend is declared
+
+Coq < _ten is declared
+
+Coq < _time is declared
+
+Coq < Toplevel input, characters 33-285:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z3, (and (and (and (_home z3) True) (_at x z3)) (exists z2, (and (and (and (_lot z2) (exists z1, (and (and (_time z1) True) (_of z2 z1)))) True) (_spend x z2)))))) True)) (fun w => True)) S) S)) -> (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z2, (and (and (and (_home z2) True) (_at x z2)) (exists z1, (and (and (_time z1) True) (_spend x z1)))))) True)) (fun w => True)) S) S)).
+>                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error:
+In environment
+S : ?T
+The term
+"most x;
+((_ten x /\ _commissioner x) /\
+(exists z3 : Entity,
+((_home z3 /\ True) /\ _at x z3) /\
+(exists z2 : Entity,
+((_lot z2 /\ (exists z1 : Entity, (_time z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _spend x z2))) /\ True, True" has type
+"Prop" while it is expected to have type "Entity".
+
+Toplevel input, characters 522-527:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z3, (and (and (and (_home z3) True) (_at x z3)) (exists z2, (and (and (and (_lot z2) (exists z1, (and (and (_time z1) True) (_of z2 z1)))) True) (_spend x z2)))))) True)) (fun w => True)) S) S)) -> (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z2, (and (and (and (_home z2) True) (_at x z2)) (exists z1, (and (and (_time z1) True) (_spend x z1)))))) True)) (fun w => True)) S) S)). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 529-533:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z3, (and (and (and (_home z3) True) (_at x z3)) (exists z2, (and (and (and (_lot z2) (exists z1, (and (and (_time z1) True) (_of z2 z1)))) True) (_spend x z2)))))) True)) (fun w => True)) S) S)) -> (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z2, (and (and (and (_home z2) True) (_at x z2)) (exists z1, (and (and (_time z1) True) (_spend x z1)))))) True)) (fun w => True)) S) S)). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _commissioner is declared
+
+Coq < _home is declared
+
+Coq < _lot is declared
+
+Coq < _of is declared
+
+Coq < _spend is declared
+
+Coq < _ten is declared
+
+Coq < _time is declared
+
+Coq < Toplevel input, characters 33-285:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z3, (and (and (and (_home z3) True) (_at x z3)) (exists z2, (and (and (and (_lot z2) (exists z1, (and (and (_time z1) True) (_of z2 z1)))) True) (_spend x z2)))))) True)) (fun w => True)) S) S)) -> (not (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z2, (and (and (and (_home z2) True) (_at x z2)) (exists z1, (and (and (_time z1) True) (_spend x z1)))))) True)) (fun w => True)) S) S))).
+>                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error:
+In environment
+S : ?T
+The term
+"most x;
+((_ten x /\ _commissioner x) /\
+(exists z3 : Entity,
+((_home z3 /\ True) /\ _at x z3) /\
+(exists z2 : Entity,
+((_lot z2 /\ (exists z1 : Entity, (_time z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _spend x z2))) /\ True, True" has type
+"Prop" while it is expected to have type "Entity".
+
+Toplevel input, characters 528-534:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z3, (and (and (and (_home z3) True) (_at x z3)) (exists z2, (and (and (and (_lot z2) (exists z1, (and (and (_time z1) True) (_of z2 z1)))) True) (_spend x z2)))))) True)) (fun w => True)) S) S)) -> (not (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z2, (and (and (and (_home z2) True) (_at x z2)) (exists z1, (and (and (_time z1) True) (_spend x z1)))))) True)) (fun w => True)) S) S))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 547-550:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z3, (and (and (and (_home z3) True) (_at x z3)) (exists z2, (and (and (and (_lot z2) (exists z1, (and (and (_time z1) True) (_of z2 z1)))) True) (_spend x z2)))))) True)) (fun w => True)) S) S)) -> (not (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z2, (and (and (and (_home z2) True) (_at x z2)) (exists z1, (and (and (_time z1) True) (_spend x z1)))))) True)) (fun w => True)) S) S))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 565-569:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z3, (and (and (and (_home z3) True) (_at x z3)) (exists z2, (and (and (and (_lot z2) (exists z1, (and (and (_time z1) True) (_of z2 z1)))) True) (_spend x z2)))))) True)) (fun w => True)) S) S)) -> (not (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z2, (and (and (and (_home z2) True) (_at x z2)) (exists z1, (and (and (_time z1) True) (_spend x z1)))))) True)) (fun w => True)) S) S))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _commissioner is declared
+
+Coq < _home is declared
+
+Coq < _lot is declared
+
+Coq < _of is declared
+
+Coq < _spend is declared
+
+Coq < _ten is declared
+
+Coq < _time is declared
+
+Coq < Toplevel input, characters 33-285:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z3, (and (and (and (_home z3) True) (_at x z3)) (exists z2, (and (and (and (_lot z2) (exists z1, (and (and (_time z1) True) (_of z2 z1)))) True) (_spend x z2)))))) True)) (fun w => True)) S) S)) -> (not (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z2, (and (and (and (_home z2) True) (_at x z2)) (exists z1, (and (and (_time z1) True) (_spend x z1)))))) True)) (fun w => True)) S) S))).
+>                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error:
+In environment
+S : ?T
+The term
+"most x;
+((_ten x /\ _commissioner x) /\
+(exists z3 : Entity,
+((_home z3 /\ True) /\ _at x z3) /\
+(exists z2 : Entity,
+((_lot z2 /\ (exists z1 : Entity, (_time z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _spend x z2))) /\ True, True" has type
+"Prop" while it is expected to have type "Entity".
+
+Toplevel input, characters 528-533:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z3, (and (and (and (_home z3) True) (_at x z3)) (exists z2, (and (and (and (_lot z2) (exists z1, (and (and (_time z1) True) (_of z2 z1)))) True) (_spend x z2)))))) True)) (fun w => True)) S) S)) -> (not (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z2, (and (and (and (_home z2) True) (_at x z2)) (exists z1, (and (and (_time z1) True) (_spend x z1)))))) True)) (fun w => True)) S) S))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 535-539:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z3, (and (and (and (_home z3) True) (_at x z3)) (exists z2, (and (and (and (_lot z2) (exists z1, (and (and (_time z1) True) (_of z2 z1)))) True) (_spend x z2)))))) True)) (fun w => True)) S) S)) -> (not (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z2, (and (and (and (_home z2) True) (_at x z2)) (exists z1, (and (and (_time z1) True) (_spend x z1)))))) True)) (fun w => True)) S) S))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _commissioner is declared
+
+Coq < _home is declared
+
+Coq < _lot is declared
+
+Coq < _of is declared
+
+Coq < _spend is declared
+
+Coq < _ten is declared
+
+Coq < _time is declared
+
+Coq < Toplevel input, characters 33-285:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z3, (and (and (and (_home z3) True) (_at x z3)) (exists z2, (and (and (and (_lot z2) (exists z1, (and (and (_time z1) True) (_of z2 z1)))) True) (_spend x z2)))))) True)) (fun w => True)) S) S)) -> (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z2, (and (and (and (_home z2) True) (_at x z2)) (exists z1, (and (and (_time z1) True) (_spend x z1)))))) True)) (fun w => True)) S) S)).
+>                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error:
+In environment
+S : ?T
+The term
+"most x;
+((_ten x /\ _commissioner x) /\
+(exists z3 : Entity,
+((_home z3 /\ True) /\ _at x z3) /\
+(exists z2 : Entity,
+((_lot z2 /\ (exists z1 : Entity, (_time z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _spend x z2))) /\ True, True" has type
+"Prop" while it is expected to have type "Entity".
+
+Toplevel input, characters 522-528:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z3, (and (and (and (_home z3) True) (_at x z3)) (exists z2, (and (and (and (_lot z2) (exists z1, (and (and (_time z1) True) (_of z2 z1)))) True) (_spend x z2)))))) True)) (fun w => True)) S) S)) -> (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z2, (and (and (and (_home z2) True) (_at x z2)) (exists z1, (and (and (_time z1) True) (_spend x z1)))))) True)) (fun w => True)) S) S)). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 541-544:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z3, (and (and (and (_home z3) True) (_at x z3)) (exists z2, (and (and (and (_lot z2) (exists z1, (and (and (_time z1) True) (_of z2 z1)))) True) (_spend x z2)))))) True)) (fun w => True)) S) S)) -> (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z2, (and (and (and (_home z2) True) (_at x z2)) (exists z1, (and (and (_time z1) True) (_spend x z1)))))) True)) (fun w => True)) S) S)). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 559-563:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z3, (and (and (and (_home z3) True) (_at x z3)) (exists z2, (and (and (and (_lot z2) (exists z1, (and (and (_time z1) True) (_of z2 z1)))) True) (_spend x z2)))))) True)) (fun w => True)) S) S)) -> (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z2, (and (and (and (_home z2) True) (_at x z2)) (exists z1, (and (and (_time z1) True) (_spend x z1)))))) True)) (fun w => True)) S) S)). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _commissioner is declared
+
+Coq < _home is declared
+
+Coq < _lot is declared
+
+Coq < _of is declared
+
+Coq < _spend is declared
+
+Coq < _ten is declared
+
+Coq < _time is declared
+
+Coq < Toplevel input, characters 33-285:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z3, (and (and (and (_home z3) True) (_at x z3)) (exists z2, (and (and (and (_lot z2) (exists z1, (and (and (_time z1) True) (_of z2 z1)))) True) (_spend x z2)))))) True)) (fun w => True)) S) S)) -> (not (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z2, (and (and (and (_home z2) True) (_at x z2)) (exists z1, (and (and (_time z1) True) (_spend x z1)))))) True)) (fun w => True)) S) S))).
+>                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error:
+In environment
+S : ?T
+The term
+"most x;
+((_ten x /\ _commissioner x) /\
+(exists z3 : Entity,
+((_home z3 /\ True) /\ _at x z3) /\
+(exists z2 : Entity,
+((_lot z2 /\ (exists z1 : Entity, (_time z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _spend x z2))) /\ True, True" has type
+"Prop" while it is expected to have type "Entity".
+
+Toplevel input, characters 528-534:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z3, (and (and (and (_home z3) True) (_at x z3)) (exists z2, (and (and (and (_lot z2) (exists z1, (and (and (_time z1) True) (_of z2 z1)))) True) (_spend x z2)))))) True)) (fun w => True)) S) S)) -> (not (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z2, (and (and (and (_home z2) True) (_at x z2)) (exists z1, (and (and (_time z1) True) (_spend x z1)))))) True)) (fun w => True)) S) S))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 547-550:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z3, (and (and (and (_home z3) True) (_at x z3)) (exists z2, (and (and (and (_lot z2) (exists z1, (and (and (_time z1) True) (_of z2 z1)))) True) (_spend x z2)))))) True)) (fun w => True)) S) S)) -> (not (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z2, (and (and (and (_home z2) True) (_at x z2)) (exists z1, (and (and (_time z1) True) (_spend x z1)))))) True)) (fun w => True)) S) S))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 565-569:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z3, (and (and (and (_home z3) True) (_at x z3)) (exists z2, (and (and (and (_lot z2) (exists z1, (and (and (_time z1) True) (_of z2 z1)))) True) (_spend x z2)))))) True)) (fun w => True)) S) S)) -> (not (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z2, (and (and (and (_home z2) True) (_at x z2)) (exists z1, (and (and (_time z1) True) (_spend x z1)))))) True)) (fun w => True)) S) S))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _commissioner is declared
+
+Coq < _home is declared
+
+Coq < _lot is declared
+
+Coq < _of is declared
+
+Coq < _spend is declared
+
+Coq < _ten is declared
+
+Coq < _time is declared
+
+Coq < Toplevel input, characters 33-285:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z3, (and (and (and (_home z3) True) (_at x z3)) (exists z2, (and (and (and (_lot z2) (exists z1, (and (and (_time z1) True) (_of z2 z1)))) True) (_spend x z2)))))) True)) (fun w => True)) S) S)) -> (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z2, (and (and (and (_home z2) True) (_at x z2)) (exists z1, (and (and (_time z1) True) (_spend x z1)))))) True)) (fun w => True)) S) S)).
+>                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error:
+In environment
+S : ?T
+The term
+"most x;
+((_ten x /\ _commissioner x) /\
+(exists z3 : Entity,
+((_home z3 /\ True) /\ _at x z3) /\
+(exists z2 : Entity,
+((_lot z2 /\ (exists z1 : Entity, (_time z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _spend x z2))) /\ True, True" has type
+"Prop" while it is expected to have type "Entity".
+
+Toplevel input, characters 522-528:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z3, (and (and (and (_home z3) True) (_at x z3)) (exists z2, (and (and (and (_lot z2) (exists z1, (and (and (_time z1) True) (_of z2 z1)))) True) (_spend x z2)))))) True)) (fun w => True)) S) S)) -> (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z2, (and (and (and (_home z2) True) (_at x z2)) (exists z1, (and (and (_time z1) True) (_spend x z1)))))) True)) (fun w => True)) S) S)). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 541-544:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z3, (and (and (and (_home z3) True) (_at x z3)) (exists z2, (and (and (and (_lot z2) (exists z1, (and (and (_time z1) True) (_of z2 z1)))) True) (_spend x z2)))))) True)) (fun w => True)) S) S)) -> (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z2, (and (and (and (_home z2) True) (_at x z2)) (exists z1, (and (and (_time z1) True) (_spend x z1)))))) True)) (fun w => True)) S) S)). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 559-563:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z3, (and (and (and (_home z3) True) (_at x z3)) (exists z2, (and (and (and (_lot z2) (exists z1, (and (and (_time z1) True) (_of z2 z1)))) True) (_spend x z2)))))) True)) (fun w => True)) S) S)) -> (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z2, (and (and (and (_home z2) True) (_at x z2)) (exists z1, (and (and (_time z1) True) (_spend x z1)))))) True)) (fun w => True)) S) S)). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _commissioner is declared
+
+Coq < _home is declared
+
+Coq < _lot is declared
+
+Coq < _of is declared
+
+Coq < _spend is declared
+
+Coq < _ten is declared
+
+Coq < _time is declared
+
+Coq < Toplevel input, characters 33-285:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z3, (and (and (and (_home z3) True) (_at x z3)) (exists z2, (and (and (and (_lot z2) (exists z1, (and (and (_time z1) True) (_of z2 z1)))) True) (_spend x z2)))))) True)) (fun w => True)) S) S)) -> (not (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z2, (and (and (and (_home z2) True) (_at x z2)) (exists z1, (and (and (_time z1) True) (_spend x z1)))))) True)) (fun w => True)) S) S))).
+>                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error:
+In environment
+S : ?T
+The term
+"most x;
+((_ten x /\ _commissioner x) /\
+(exists z3 : Entity,
+((_home z3 /\ True) /\ _at x z3) /\
+(exists z2 : Entity,
+((_lot z2 /\ (exists z1 : Entity, (_time z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _spend x z2))) /\ True, True" has type
+"Prop" while it is expected to have type "Entity".
+
+Toplevel input, characters 528-534:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z3, (and (and (and (_home z3) True) (_at x z3)) (exists z2, (and (and (and (_lot z2) (exists z1, (and (and (_time z1) True) (_of z2 z1)))) True) (_spend x z2)))))) True)) (fun w => True)) S) S)) -> (not (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z2, (and (and (and (_home z2) True) (_at x z2)) (exists z1, (and (and (_time z1) True) (_spend x z1)))))) True)) (fun w => True)) S) S))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 547-550:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z3, (and (and (and (_home z3) True) (_at x z3)) (exists z2, (and (and (and (_lot z2) (exists z1, (and (and (_time z1) True) (_of z2 z1)))) True) (_spend x z2)))))) True)) (fun w => True)) S) S)) -> (not (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z2, (and (and (and (_home z2) True) (_at x z2)) (exists z1, (and (and (_time z1) True) (_spend x z1)))))) True)) (fun w => True)) S) S))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 565-569:
+> Theorem t1: (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z3, (and (and (and (_home z3) True) (_at x z3)) (exists z2, (and (and (and (_lot z2) (exists z1, (and (and (_time z1) True) (_of z2 z1)))) True) (_spend x z2)))))) True)) (fun w => True)) S) S)) -> (not (fun S => (and (_at (Most (fun x => (and (and (and (_ten x) (_commissioner x)) (exists z2, (and (and (and (_home z2) True) (_at x z2)) (exists z1, (and (and (_time z1) True) (_spend x z1)))))) True)) (fun w => True)) S) S))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+unknown
+

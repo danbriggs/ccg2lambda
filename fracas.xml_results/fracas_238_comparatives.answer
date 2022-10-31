@@ -1,0 +1,196 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _apcom is declared
+
+Coq < _as is declared
+
+Coq < _itel is declared
+
+Coq < _many is declared
+
+Coq < _order is declared
+
+Coq < _ten is declared
+
+Coq < _than is declared
+
+Coq < _twenty is declared
+
+Coq < _twice is declared
+
+Coq < _win is declared
+
+Coq < _win_e2 is declared
+
+Coq < _win_e3 is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _itel /\ True) /\
+(exists z3 : Entity,
+(((((_many z3 /\ _order z3) /\
+(exists z2 : Entity, (z2 = _apcom /\ True) /\ _than z3 _apcom)) /\
+True) /\ _as _itel z3) /\ _twice _itel) /\
+_win_e2 _itel)) ->
+(exists x : Entity,
+(x = _apcom /\ True) /\
+(exists z1 : Entity,
+((_ten z1 /\ _order z1) /\ True) /\ _win_e3 _apcom z1)) ->
+exists x : Entity,
+(x = _itel /\ True) /\
+(exists z1 : Entity,
+((_twenty z1 /\ _order z1) /\ True) /\ _win_e3 _itel z1)
+
+
+Toplevel input, characters 493-497:
+> Theorem t1: (exists x, (and (and (x = _itel) True) (exists z3, (and (and (and (and (and (and (_many z3) (_order z3)) (exists z2, (and (and (z2 = _apcom) True) (_than z3 _apcom)))) True) (_as _itel z3)) (_twice _itel)) (_win_e2 _itel))))) -> (exists x, (and (and (x = _apcom) True) (exists z1, (and (and (and (_ten z1) (_order z1)) True) (_win_e3 _apcom z1))))) -> (exists x, (and (and (x = _itel) True) (exists z1, (and (and (and (_twenty z1) (_order z1)) True) (_win_e3 _itel z1))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _apcom is declared
+
+Coq < _as is declared
+
+Coq < _itel is declared
+
+Coq < _many is declared
+
+Coq < _order is declared
+
+Coq < _ten is declared
+
+Coq < _than is declared
+
+Coq < _twenty is declared
+
+Coq < _twice is declared
+
+Coq < _win is declared
+
+Coq < _win_e2 is declared
+
+Coq < _win_e3 is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _itel /\ True) /\
+(exists z3 : Entity,
+(((((_many z3 /\ _order z3) /\
+(exists z2 : Entity, (z2 = _apcom /\ True) /\ _than z3 _apcom)) /\
+True) /\ _as _itel z3) /\ _twice _itel) /\
+_win_e2 _itel)) ->
+(exists x : Entity,
+(x = _apcom /\ True) /\
+(exists z1 : Entity,
+((_ten z1 /\ _order z1) /\ True) /\ _win_e3 _apcom z1)) ->
+~
+(exists x : Entity,
+(x = _itel /\ True) /\
+(exists z1 : Entity,
+((_twenty z1 /\ _order z1) /\ True) /\ _win_e3 _itel z1))
+
+
+Toplevel input, characters 499-503:
+> Theorem t1: (exists x, (and (and (x = _itel) True) (exists z3, (and (and (and (and (and (and (_many z3) (_order z3)) (exists z2, (and (and (z2 = _apcom) True) (_than z3 _apcom)))) True) (_as _itel z3)) (_twice _itel)) (_win_e2 _itel))))) -> (exists x, (and (and (x = _apcom) True) (exists z1, (and (and (and (_ten z1) (_order z1)) True) (_win_e3 _apcom z1))))) -> (not (exists x, (and (and (x = _itel) True) (exists z1, (and (and (and (_twenty z1) (_order z1)) True) (_win_e3 _itel z1)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _apcom is declared
+
+Coq < _as is declared
+
+Coq < _itel is declared
+
+Coq < _many is declared
+
+Coq < _order is declared
+
+Coq < _ten is declared
+
+Coq < _than is declared
+
+Coq < _twenty is declared
+
+Coq < _twice is declared
+
+Coq < _win is declared
+
+Coq < _win_e2 is declared
+
+Coq < _win_e3 is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _itel /\ True) /\
+(exists z3 : Entity,
+(((((_many z3 /\ _order z3) /\
+(exists z2 : Entity, (z2 = _apcom /\ True) /\ _than z3 _apcom)) /\
+True) /\ _as _itel z3) /\ _twice _itel) /\
+_win_e2 _itel)) ->
+(exists x : Entity,
+(x = _apcom /\ True) /\
+(exists z1 : Entity,
+((_ten z1 /\ _order z1) /\ True) /\ _win_e3 _apcom z1)) ->
+exists x : Entity,
+(x = _itel /\ True) /\
+(exists z1 : Entity,
+((_twenty z1 /\ _order z1) /\ True) /\ _win_e3 _itel z1)
+
+2 goals
+
+H2 : True
+x0 : Entity
+H3 : _win_e3 _apcom x0
+H4 : True
+H1 : _ten x0
+H5 : _order x0
+H7 : True
+x2 : Entity
+H8 : _win_e2 _itel
+H9 : _twice _itel
+H10 : _as _itel x2
+H11 : True
+H6 : _many x2
+H13 : _order x2
+H14 : _than x2 _apcom
+H15 : True
+============================
+_twenty x2
+
+goal 2 is:
+_win_e3 _itel x2
+
+Toplevel input, characters 509-521:
+> Theorem t1: (exists x, (and (and (x = _itel) True) (exists z3, (and (and (and (and (and (and (_many z3) (_order z3)) (exists z2, (and (and (z2 = _apcom) True) (_than z3 _apcom)))) True) (_as _itel z3)) (_twice _itel)) (_win_e2 _itel))))) -> (exists x, (and (and (x = _apcom) True) (exists z1, (and (and (and (_ten z1) (_order z1)) True) (_win_e3 _apcom z1))))) -> (exists x, (and (and (x = _itel) True) (exists z1, (and (and (and (_twenty z1) (_order z1)) True) (_win_e3 _itel z1))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 523-527:
+> Theorem t1: (exists x, (and (and (x = _itel) True) (exists z3, (and (and (and (and (and (and (_many z3) (_order z3)) (exists z2, (and (and (z2 = _apcom) True) (_than z3 _apcom)))) True) (_as _itel z3)) (_twice _itel)) (_win_e2 _itel))))) -> (exists x, (and (and (x = _apcom) True) (exists z1, (and (and (and (_ten z1) (_order z1)) True) (_win_e3 _apcom z1))))) -> (exists x, (and (and (x = _itel) True) (exists z1, (and (and (and (_twenty z1) (_order z1)) True) (_win_e3 _itel z1))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

@@ -1,0 +1,490 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _delegate is declared
+
+Coq < _finish is declared
+
+Coq < _on is declared
+
+Coq < _report is declared
+
+Coq < _time is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_delegate x ->
+True ->
+~
+(exists z2 : Entity,
+((_time z2 /\ True) /\ _on x z2) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ _finish x z1))) ->
+forall x : Entity,
+_delegate x ->
+True -> ~ (exists z1 : Entity, (_report z1 /\ True) /\ _finish x z1)
+
+
+Toplevel input, characters 291-295:
+> Theorem t1: (forall x, ((_delegate x) -> (True -> (not (exists z2, (and (and (and (_time z2) True) (_on x z2)) (exists z1, (and (and (_report z1) True) (_finish x z1))))))))) -> (forall x, ((_delegate x) -> (True -> (not (exists z1, (and (and (_report z1) True) (_finish x z1))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                    ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _delegate is declared
+
+Coq < _finish is declared
+
+Coq < _on is declared
+
+Coq < _report is declared
+
+Coq < _time is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_delegate x ->
+True ->
+~
+(exists z2 : Entity,
+((_time z2 /\ True) /\ _on x z2) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ _finish x z1))) ->
+~
+(forall x : Entity,
+_delegate x ->
+True -> ~ (exists z1 : Entity, (_report z1 /\ True) /\ _finish x z1))
+
+
+Toplevel input, characters 297-301:
+> Theorem t1: (forall x, ((_delegate x) -> (True -> (not (exists z2, (and (and (and (_time z2) True) (_on x z2)) (exists z1, (and (and (_report z1) True) (_finish x z1))))))))) -> (not (forall x, ((_delegate x) -> (True -> (not (exists z1, (and (and (_report z1) True) (_finish x z1)))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                          ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _delegate is declared
+
+Coq < _finish is declared
+
+Coq < _on is declared
+
+Coq < _report is declared
+
+Coq < _time is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_delegate x ->
+True ->
+~
+(exists z2 : Entity,
+((_time z2 /\ True) /\ _on x z2) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ _finish x z1))) ->
+forall x : Entity,
+_delegate x ->
+True -> ~ (exists z1 : Entity, (_report z1 /\ True) /\ _finish x z1)
+
+1 goal
+
+H : forall x : Entity,
+_delegate x ->
+True ->
+(exists z2 : Entity,
+((_time z2 /\ True) /\ _on x z2) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ _finish x z1)) -> False
+x : Entity
+H0 : _delegate x
+H1 : True
+x0 : Entity
+H3 : _finish x x0
+H2 : _report x0
+H4 : True
+============================
+False
+
+Toplevel input, characters 307-319:
+> Theorem t1: (forall x, ((_delegate x) -> (True -> (not (exists z2, (and (and (and (_time z2) True) (_on x z2)) (exists z1, (and (and (_report z1) True) (_finish x z1))))))))) -> (forall x, ((_delegate x) -> (True -> (not (exists z1, (and (and (_report z1) True) (_finish x z1))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                    ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 321-325:
+> Theorem t1: (forall x, ((_delegate x) -> (True -> (not (exists z2, (and (and (and (_time z2) True) (_on x z2)) (exists z1, (and (and (_report z1) True) (_finish x z1))))))))) -> (forall x, ((_delegate x) -> (True -> (not (exists z1, (and (and (_report z1) True) (_finish x z1))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                  ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _delegate is declared
+
+Coq < _finish is declared
+
+Coq < _on is declared
+
+Coq < _report is declared
+
+Coq < _time is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_delegate x ->
+True ->
+~
+(exists z2 : Entity,
+((_time z2 /\ True) /\ _on x z2) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ _finish x z1))) ->
+forall x : Entity,
+_delegate x ->
+True -> ~ (exists z1 : Entity, (_report z1 /\ True) /\ _finish x z1)
+
+
+Toplevel input, characters 291-295:
+> Theorem t1: (forall x, ((_delegate x) -> (True -> (not (exists z2, (and (and (and (_time z2) True) (_on x z2)) (exists z1, (and (and (_report z1) True) (_finish x z1))))))))) -> (forall x, ((_delegate x) -> (True -> (not (exists z1, (and (and (_report z1) True) (_finish x z1))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                    ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _delegate is declared
+
+Coq < _finish is declared
+
+Coq < _on is declared
+
+Coq < _report is declared
+
+Coq < _time is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_delegate x ->
+True ->
+~
+(exists z2 : Entity,
+((_time z2 /\ True) /\ _on x z2) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ _finish x z1))) ->
+~
+(forall x : Entity,
+_delegate x ->
+True -> ~ (exists z1 : Entity, (_report z1 /\ True) /\ _finish x z1))
+
+1 goal
+
+H : forall x : Entity,
+_delegate x ->
+True ->
+(exists z2 : Entity,
+((_time z2 /\ True) /\ _on x z2) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ _finish x z1)) -> False
+H0 : forall x : Entity,
+_delegate x ->
+True ->
+(exists z1 : Entity, (_report z1 /\ True) /\ _finish x z1) -> False
+============================
+False
+
+Toplevel input, characters 313-325:
+> Theorem t1: (forall x, ((_delegate x) -> (True -> (not (exists z2, (and (and (and (_time z2) True) (_on x z2)) (exists z1, (and (and (_report z1) True) (_finish x z1))))))))) -> (not (forall x, ((_delegate x) -> (True -> (not (exists z1, (and (and (_report z1) True) (_finish x z1)))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                          ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 327-331:
+> Theorem t1: (forall x, ((_delegate x) -> (True -> (not (exists z2, (and (and (and (_time z2) True) (_on x z2)) (exists z1, (and (and (_report z1) True) (_finish x z1))))))))) -> (not (forall x, ((_delegate x) -> (True -> (not (exists z1, (and (and (_report z1) True) (_finish x z1)))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                        ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _delegate is declared
+
+Coq < _finish is declared
+
+Coq < _on is declared
+
+Coq < _report is declared
+
+Coq < _time is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_delegate x ->
+True ->
+~
+(exists z2 : Entity,
+((_time z2 /\ True) /\ _on x z2) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ _finish x z1))) ->
+~
+(forall x : Entity,
+_delegate x ->
+True -> ~ (exists z1 : Entity, (_report z1 /\ True) /\ _finish x z1))
+
+
+Toplevel input, characters 297-301:
+> Theorem t1: (forall x, ((_delegate x) -> (True -> (not (exists z2, (and (and (and (_time z2) True) (_on x z2)) (exists z1, (and (and (_report z1) True) (_finish x z1))))))))) -> (not (forall x, ((_delegate x) -> (True -> (not (exists z1, (and (and (_report z1) True) (_finish x z1)))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                          ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _delegate is declared
+
+Coq < _finish is declared
+
+Coq < _on is declared
+
+Coq < _report is declared
+
+Coq < _time is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_delegate x ->
+True ->
+~
+(exists z2 : Entity,
+((_time z2 /\ True) /\ _on x z2) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ _finish x z1))) ->
+forall x : Entity,
+_delegate x ->
+True -> ~ (exists z1 : Entity, (_report z1 /\ True) /\ _finish x z1)
+
+1 goal
+
+H : forall x : Entity,
+_delegate x ->
+True ->
+(exists z2 : Entity,
+((_time z2 /\ True) /\ _on x z2) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ _finish x z1)) -> False
+x : Entity
+H0 : _delegate x
+H1 : True
+x0 : Entity
+H3 : _finish x x0
+H2 : _report x0
+H4 : True
+============================
+False
+
+Toplevel input, characters 307-319:
+> Theorem t1: (forall x, ((_delegate x) -> (True -> (not (exists z2, (and (and (and (_time z2) True) (_on x z2)) (exists z1, (and (and (_report z1) True) (_finish x z1))))))))) -> (forall x, ((_delegate x) -> (True -> (not (exists z1, (and (and (_report z1) True) (_finish x z1))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                    ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 321-325:
+> Theorem t1: (forall x, ((_delegate x) -> (True -> (not (exists z2, (and (and (and (_time z2) True) (_on x z2)) (exists z1, (and (and (_report z1) True) (_finish x z1))))))))) -> (forall x, ((_delegate x) -> (True -> (not (exists z1, (and (and (_report z1) True) (_finish x z1))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                  ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _delegate is declared
+
+Coq < _finish is declared
+
+Coq < _on is declared
+
+Coq < _report is declared
+
+Coq < _time is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_delegate x ->
+True ->
+~
+(exists z2 : Entity,
+((_time z2 /\ True) /\ _on x z2) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ _finish x z1))) ->
+~
+(forall x : Entity,
+_delegate x ->
+True -> ~ (exists z1 : Entity, (_report z1 /\ True) /\ _finish x z1))
+
+1 goal
+
+H : forall x : Entity,
+_delegate x ->
+True ->
+(exists z2 : Entity,
+((_time z2 /\ True) /\ _on x z2) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ _finish x z1)) -> False
+H0 : forall x : Entity,
+_delegate x ->
+True ->
+(exists z1 : Entity, (_report z1 /\ True) /\ _finish x z1) -> False
+============================
+False
+
+Toplevel input, characters 313-325:
+> Theorem t1: (forall x, ((_delegate x) -> (True -> (not (exists z2, (and (and (and (_time z2) True) (_on x z2)) (exists z1, (and (and (_report z1) True) (_finish x z1))))))))) -> (not (forall x, ((_delegate x) -> (True -> (not (exists z1, (and (and (_report z1) True) (_finish x z1)))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                          ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 327-331:
+> Theorem t1: (forall x, ((_delegate x) -> (True -> (not (exists z2, (and (and (and (_time z2) True) (_on x z2)) (exists z1, (and (and (_report z1) True) (_finish x z1))))))))) -> (not (forall x, ((_delegate x) -> (True -> (not (exists z1, (and (and (_report z1) True) (_finish x z1)))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                        ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _delegate is declared
+
+Coq < _finish is declared
+
+Coq < _on is declared
+
+Coq < _report is declared
+
+Coq < _time is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_delegate x ->
+True ->
+~
+(exists z2 : Entity,
+((_time z2 /\ True) /\ _on x z2) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ _finish x z1))) ->
+forall x : Entity,
+_delegate x ->
+True -> ~ (exists z1 : Entity, (_report z1 /\ True) /\ _finish x z1)
+
+1 goal
+
+H : forall x : Entity,
+_delegate x ->
+True ->
+(exists z2 : Entity,
+((_time z2 /\ True) /\ _on x z2) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ _finish x z1)) -> False
+x : Entity
+H0 : _delegate x
+H1 : True
+x0 : Entity
+H3 : _finish x x0
+H2 : _report x0
+H4 : True
+============================
+False
+
+Toplevel input, characters 307-319:
+> Theorem t1: (forall x, ((_delegate x) -> (True -> (not (exists z2, (and (and (and (_time z2) True) (_on x z2)) (exists z1, (and (and (_report z1) True) (_finish x z1))))))))) -> (forall x, ((_delegate x) -> (True -> (not (exists z1, (and (and (_report z1) True) (_finish x z1))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                    ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 321-325:
+> Theorem t1: (forall x, ((_delegate x) -> (True -> (not (exists z2, (and (and (and (_time z2) True) (_on x z2)) (exists z1, (and (and (_report z1) True) (_finish x z1))))))))) -> (forall x, ((_delegate x) -> (True -> (not (exists z1, (and (and (_report z1) True) (_finish x z1))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                  ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _delegate is declared
+
+Coq < _finish is declared
+
+Coq < _on is declared
+
+Coq < _report is declared
+
+Coq < _time is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_delegate x ->
+True ->
+~
+(exists z2 : Entity,
+((_time z2 /\ True) /\ _on x z2) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ _finish x z1))) ->
+~
+(forall x : Entity,
+_delegate x ->
+True -> ~ (exists z1 : Entity, (_report z1 /\ True) /\ _finish x z1))
+
+1 goal
+
+H : forall x : Entity,
+_delegate x ->
+True ->
+(exists z2 : Entity,
+((_time z2 /\ True) /\ _on x z2) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ _finish x z1)) -> False
+H0 : forall x : Entity,
+_delegate x ->
+True ->
+(exists z1 : Entity, (_report z1 /\ True) /\ _finish x z1) -> False
+============================
+False
+
+Toplevel input, characters 313-325:
+> Theorem t1: (forall x, ((_delegate x) -> (True -> (not (exists z2, (and (and (and (_time z2) True) (_on x z2)) (exists z1, (and (and (_report z1) True) (_finish x z1))))))))) -> (not (forall x, ((_delegate x) -> (True -> (not (exists z1, (and (and (_report z1) True) (_finish x z1)))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                          ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 327-331:
+> Theorem t1: (forall x, ((_delegate x) -> (True -> (not (exists z2, (and (and (and (_time z2) True) (_on x z2)) (exists z1, (and (and (_report z1) True) (_finish x z1))))))))) -> (not (forall x, ((_delegate x) -> (True -> (not (exists z1, (and (and (_report z1) True) (_finish x z1)))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                        ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

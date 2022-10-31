@@ -1,0 +1,463 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _apcom is declared
+
+Coq < _car is declared
+
+Coq < _company is declared
+
+Coq < _have is declared
+
+Coq < _jones is declared
+
+Coq < _manager is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_apcom x /\ _manager x ->
+True ->
+exists z1 : Entity, ((_company z1 /\ _car z1) /\ True) /\ _have x z1) ->
+(exists x : Entity,
+(x = _jones /\ True) /\
+(exists z1 : Entity, ((_apcom z1 /\ _manager z1) /\ True) /\ _jones = z1)) ->
+exists x : Entity,
+(x = _jones /\ True) /\
+(exists z1 : Entity,
+((_company z1 /\ _car z1) /\ True) /\ _have _jones z1)
+
+No more goals.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _apcom is declared
+
+Coq < _car is declared
+
+Coq < _company is declared
+
+Coq < _have is declared
+
+Coq < _jones is declared
+
+Coq < _manager is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_apcom x /\ _manager x ->
+True ->
+exists z1 : Entity, ((_company z1 /\ _car z1) /\ True) /\ _have x z1) ->
+(exists x : Entity,
+(x = _jones /\ True) /\
+(exists z1 : Entity, ((_apcom z1 /\ _manager z1) /\ True) /\ _jones = z1)) ->
+~
+(exists x : Entity,
+(x = _jones /\ True) /\
+(exists z1 : Entity,
+((_company z1 /\ _car z1) /\ True) /\ _have _jones z1))
+
+
+Toplevel input, characters 400-404:
+> Theorem t1: (forall x, ((and (_apcom x) (_manager x)) -> (True -> (exists z1, (and (and (and (_company z1) (_car z1)) True) (_have x z1)))))) -> (exists x, (and (and (x = _jones) True) (exists z1, (and (and (and (_apcom z1) (_manager z1)) True) (_jones = z1))))) -> (not (exists x, (and (and (x = _jones) True) (exists z1, (and (and (and (_company z1) (_car z1)) True) (_have _jones z1)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _apcom is declared
+
+Coq < _car is declared
+
+Coq < _company is declared
+
+Coq < _have is declared
+
+Coq < _jones is declared
+
+Coq < _manager is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_apcom x /\ _manager x ->
+True ->
+exists z1 : Entity, ((_company z1 /\ _car z1) /\ True) /\ _have x z1) ->
+(exists x : Entity,
+(x = _jones /\ True) /\
+(exists z1 : Entity, ((_apcom z1 /\ _manager z1) /\ True) /\ _jones = z1)) ->
+exists x : Entity,
+(x = _jones /\ True) /\
+(exists z1 : Entity,
+((_company z1 /\ _car z1) /\ True) /\ _have _jones z1)
+
+No more goals.
+
+Toplevel input, characters 406-423:
+> Theorem t1: (forall x, ((and (_apcom x) (_manager x)) -> (True -> (exists z1, (and (and (and (_company z1) (_car z1)) True) (_have x z1)))))) -> (exists x, (and (and (x = _jones) True) (exists z1, (and (and (and (_apcom z1) (_manager z1)) True) (_jones = z1))))) -> (exists x, (and (and (x = _jones) True) (exists z1, (and (and (and (_company z1) (_car z1)) True) (_have _jones z1))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^^^^^^^^^^^^^^^
+Error: No such goal.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _apcom is declared
+
+Coq < _car is declared
+
+Coq < _company is declared
+
+Coq < _have is declared
+
+Coq < _jones is declared
+
+Coq < _manager is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_apcom x /\ _manager x ->
+True ->
+exists z1 : Entity, ((_company z1 /\ _car z1) /\ True) /\ _have x z1) ->
+(exists x : Entity,
+(x = _jones /\ True) /\
+(exists z1 : Entity, ((_apcom z1 /\ _manager z1) /\ True) /\ _jones = z1)) ->
+exists x : Entity,
+(x = _jones /\ True) /\
+(exists z1 : Entity,
+((_company z1 /\ _car z1) /\ True) /\ _have _jones z1)
+
+No more goals.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _apcom is declared
+
+Coq < _car is declared
+
+Coq < _company is declared
+
+Coq < _have is declared
+
+Coq < _jones is declared
+
+Coq < _manager is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_apcom x /\ _manager x ->
+True ->
+exists z1 : Entity, ((_company z1 /\ _car z1) /\ True) /\ _have x z1) ->
+(exists x : Entity,
+(x = _jones /\ True) /\
+(exists z1 : Entity, ((_apcom z1 /\ _manager z1) /\ True) /\ _jones = z1)) ->
+~
+(exists x : Entity,
+(x = _jones /\ True) /\
+(exists z1 : Entity,
+((_company z1 /\ _car z1) /\ True) /\ _have _jones z1))
+
+1 goal
+
+H : forall x : Entity,
+_apcom x /\ _manager x ->
+True ->
+exists z1 : Entity, ((_company z1 /\ _car z1) /\ True) /\ _have x z1
+H3 : True
+x0 : Entity
+H4 : _have _jones x0
+H5 : True
+H2 : _company x0
+H6 : _car x0
+H8, H10 : True
+H11 : _manager _jones
+H7 : _apcom _jones
+============================
+False
+
+Toplevel input, characters 416-428:
+> Theorem t1: (forall x, ((and (_apcom x) (_manager x)) -> (True -> (exists z1, (and (and (and (_company z1) (_car z1)) True) (_have x z1)))))) -> (exists x, (and (and (x = _jones) True) (exists z1, (and (and (and (_apcom z1) (_manager z1)) True) (_jones = z1))))) -> (not (exists x, (and (and (x = _jones) True) (exists z1, (and (and (and (_company z1) (_car z1)) True) (_have _jones z1)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 430-434:
+> Theorem t1: (forall x, ((and (_apcom x) (_manager x)) -> (True -> (exists z1, (and (and (and (_company z1) (_car z1)) True) (_have x z1)))))) -> (exists x, (and (and (x = _jones) True) (exists z1, (and (and (and (_apcom z1) (_manager z1)) True) (_jones = z1))))) -> (not (exists x, (and (and (x = _jones) True) (exists z1, (and (and (and (_company z1) (_car z1)) True) (_have _jones z1)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _apcom is declared
+
+Coq < _car is declared
+
+Coq < _company is declared
+
+Coq < _have is declared
+
+Coq < _jones is declared
+
+Coq < _manager is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_apcom x /\ _manager x ->
+True ->
+exists z1 : Entity, ((_company z1 /\ _car z1) /\ True) /\ _have x z1) ->
+(exists x : Entity,
+(x = _jones /\ True) /\
+(exists z1 : Entity, ((_apcom z1 /\ _manager z1) /\ True) /\ _jones = z1)) ->
+~
+(exists x : Entity,
+(x = _jones /\ True) /\
+(exists z1 : Entity,
+((_company z1 /\ _car z1) /\ True) /\ _have _jones z1))
+
+
+Toplevel input, characters 400-404:
+> Theorem t1: (forall x, ((and (_apcom x) (_manager x)) -> (True -> (exists z1, (and (and (and (_company z1) (_car z1)) True) (_have x z1)))))) -> (exists x, (and (and (x = _jones) True) (exists z1, (and (and (and (_apcom z1) (_manager z1)) True) (_jones = z1))))) -> (not (exists x, (and (and (x = _jones) True) (exists z1, (and (and (and (_company z1) (_car z1)) True) (_have _jones z1)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _apcom is declared
+
+Coq < _car is declared
+
+Coq < _company is declared
+
+Coq < _have is declared
+
+Coq < _jones is declared
+
+Coq < _manager is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_apcom x /\ _manager x ->
+True ->
+exists z1 : Entity, ((_company z1 /\ _car z1) /\ True) /\ _have x z1) ->
+(exists x : Entity,
+(x = _jones /\ True) /\
+(exists z1 : Entity, ((_apcom z1 /\ _manager z1) /\ True) /\ _jones = z1)) ->
+exists x : Entity,
+(x = _jones /\ True) /\
+(exists z1 : Entity,
+((_company z1 /\ _car z1) /\ True) /\ _have _jones z1)
+
+No more goals.
+
+Toplevel input, characters 406-423:
+> Theorem t1: (forall x, ((and (_apcom x) (_manager x)) -> (True -> (exists z1, (and (and (and (_company z1) (_car z1)) True) (_have x z1)))))) -> (exists x, (and (and (x = _jones) True) (exists z1, (and (and (and (_apcom z1) (_manager z1)) True) (_jones = z1))))) -> (exists x, (and (and (x = _jones) True) (exists z1, (and (and (and (_company z1) (_car z1)) True) (_have _jones z1))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^^^^^^^^^^^^^^^
+Error: No such goal.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _apcom is declared
+
+Coq < _car is declared
+
+Coq < _company is declared
+
+Coq < _have is declared
+
+Coq < _jones is declared
+
+Coq < _manager is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_apcom x /\ _manager x ->
+True ->
+exists z1 : Entity, ((_company z1 /\ _car z1) /\ True) /\ _have x z1) ->
+(exists x : Entity,
+(x = _jones /\ True) /\
+(exists z1 : Entity, ((_apcom z1 /\ _manager z1) /\ True) /\ _jones = z1)) ->
+~
+(exists x : Entity,
+(x = _jones /\ True) /\
+(exists z1 : Entity,
+((_company z1 /\ _car z1) /\ True) /\ _have _jones z1))
+
+1 goal
+
+H : forall x : Entity,
+_apcom x /\ _manager x ->
+True ->
+exists z1 : Entity, ((_company z1 /\ _car z1) /\ True) /\ _have x z1
+H3 : True
+x0 : Entity
+H4 : _have _jones x0
+H5 : True
+H2 : _company x0
+H6 : _car x0
+H8, H10 : True
+H11 : _manager _jones
+H7 : _apcom _jones
+============================
+False
+
+Toplevel input, characters 416-428:
+> Theorem t1: (forall x, ((and (_apcom x) (_manager x)) -> (True -> (exists z1, (and (and (and (_company z1) (_car z1)) True) (_have x z1)))))) -> (exists x, (and (and (x = _jones) True) (exists z1, (and (and (and (_apcom z1) (_manager z1)) True) (_jones = z1))))) -> (not (exists x, (and (and (x = _jones) True) (exists z1, (and (and (and (_company z1) (_car z1)) True) (_have _jones z1)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 430-434:
+> Theorem t1: (forall x, ((and (_apcom x) (_manager x)) -> (True -> (exists z1, (and (and (and (_company z1) (_car z1)) True) (_have x z1)))))) -> (exists x, (and (and (x = _jones) True) (exists z1, (and (and (and (_apcom z1) (_manager z1)) True) (_jones = z1))))) -> (not (exists x, (and (and (x = _jones) True) (exists z1, (and (and (and (_company z1) (_car z1)) True) (_have _jones z1)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _apcom is declared
+
+Coq < _car is declared
+
+Coq < _company is declared
+
+Coq < _have is declared
+
+Coq < _jones is declared
+
+Coq < _manager is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_apcom x /\ _manager x ->
+True ->
+exists z1 : Entity, ((_company z1 /\ _car z1) /\ True) /\ _have x z1) ->
+(exists x : Entity,
+(x = _jones /\ True) /\
+(exists z1 : Entity, ((_apcom z1 /\ _manager z1) /\ True) /\ _jones = z1)) ->
+exists x : Entity,
+(x = _jones /\ True) /\
+(exists z1 : Entity,
+((_company z1 /\ _car z1) /\ True) /\ _have _jones z1)
+
+No more goals.
+
+Toplevel input, characters 406-423:
+> Theorem t1: (forall x, ((and (_apcom x) (_manager x)) -> (True -> (exists z1, (and (and (and (_company z1) (_car z1)) True) (_have x z1)))))) -> (exists x, (and (and (x = _jones) True) (exists z1, (and (and (and (_apcom z1) (_manager z1)) True) (_jones = z1))))) -> (exists x, (and (and (x = _jones) True) (exists z1, (and (and (and (_company z1) (_car z1)) True) (_have _jones z1))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^^^^^^^^^^^^^^^
+Error: No such goal.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _apcom is declared
+
+Coq < _car is declared
+
+Coq < _company is declared
+
+Coq < _have is declared
+
+Coq < _jones is declared
+
+Coq < _manager is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_apcom x /\ _manager x ->
+True ->
+exists z1 : Entity, ((_company z1 /\ _car z1) /\ True) /\ _have x z1) ->
+(exists x : Entity,
+(x = _jones /\ True) /\
+(exists z1 : Entity, ((_apcom z1 /\ _manager z1) /\ True) /\ _jones = z1)) ->
+~
+(exists x : Entity,
+(x = _jones /\ True) /\
+(exists z1 : Entity,
+((_company z1 /\ _car z1) /\ True) /\ _have _jones z1))
+
+1 goal
+
+H : forall x : Entity,
+_apcom x /\ _manager x ->
+True ->
+exists z1 : Entity, ((_company z1 /\ _car z1) /\ True) /\ _have x z1
+H3 : True
+x0 : Entity
+H4 : _have _jones x0
+H5 : True
+H2 : _company x0
+H6 : _car x0
+H8, H10 : True
+H11 : _manager _jones
+H7 : _apcom _jones
+============================
+False
+
+Toplevel input, characters 416-428:
+> Theorem t1: (forall x, ((and (_apcom x) (_manager x)) -> (True -> (exists z1, (and (and (and (_company z1) (_car z1)) True) (_have x z1)))))) -> (exists x, (and (and (x = _jones) True) (exists z1, (and (and (and (_apcom z1) (_manager z1)) True) (_jones = z1))))) -> (not (exists x, (and (and (x = _jones) True) (exists z1, (and (and (and (_company z1) (_car z1)) True) (_have _jones z1)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 430-434:
+> Theorem t1: (forall x, ((and (_apcom x) (_manager x)) -> (True -> (exists z1, (and (and (and (_company z1) (_car z1)) True) (_have x z1)))))) -> (exists x, (and (and (x = _jones) True) (exists z1, (and (and (and (_apcom z1) (_manager z1)) True) (_jones = z1))))) -> (not (exists x, (and (and (x = _jones) True) (exists z1, (and (and (and (_company z1) (_car z1)) True) (_have _jones z1)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

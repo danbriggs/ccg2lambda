@@ -1,0 +1,616 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _clause is declared
+
+Coq < _contract is declared
+
+Coq < _cross is declared
+
+Coq < _crucial is declared
+
+Coq < _jones is declared
+
+Coq < _out is declared
+
+Coq < _see is declared
+
+Coq < _sign is declared
+
+Coq < _smith is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity,
+((z1 = _jones /\ True) /\ _see _smith _jones) /\
+(_out _jones /\
+(exists z4 : Entity,
+((_crucial z4 /\ _clause z4) /\ True) /\ _cross _jones z4) \/
+(exists z2 : Entity, (_contract z2 /\ True) /\ _sign _jones z2)))) ->
+exists x : Entity,
+(x = _smith /\ True) /\
+((exists z3 : Entity,
+(((z3 = _jones /\ True) /\ _see _smith _jones) /\ _out _jones) /\
+(exists z5 : Entity,
+((_crucial z5 /\ _clause z5) /\ True) /\ _cross _jones z5)) \/
+(exists z1 : Entity,
+((z1 = _jones /\ True) /\ _see _smith _jones) /\
+(exists z2 : Entity, (_contract z2 /\ True) /\ _sign _jones z2)))
+
+No more goals.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _clause is declared
+
+Coq < _contract is declared
+
+Coq < _cross is declared
+
+Coq < _crucial is declared
+
+Coq < _jones is declared
+
+Coq < _out is declared
+
+Coq < _see is declared
+
+Coq < _sign is declared
+
+Coq < _smith is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity,
+((z1 = _jones /\ True) /\ _see _smith _jones) /\
+(_out _jones /\
+(exists z4 : Entity,
+((_crucial z4 /\ _clause z4) /\ True) /\ _cross _jones z4) \/
+(exists z2 : Entity, (_contract z2 /\ True) /\ _sign _jones z2)))) ->
+~
+(exists x : Entity,
+(x = _smith /\ True) /\
+((exists z3 : Entity,
+(((z3 = _jones /\ True) /\ _see _smith _jones) /\ _out _jones) /\
+(exists z5 : Entity,
+((_crucial z5 /\ _clause z5) /\ True) /\ _cross _jones z5)) \/
+(exists z1 : Entity,
+((z1 = _jones /\ True) /\ _see _smith _jones) /\
+(exists z2 : Entity, (_contract z2 /\ True) /\ _sign _jones z2))))
+
+
+Toplevel input, characters 666-670:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (z1 = _jones) True) (_see _smith _jones)) (or (and (_out _jones) (exists z4, (and (and (and (_crucial z4) (_clause z4)) True) (_cross _jones z4)))) (exists z2, (and (and (_contract z2) True) (_sign _jones z2)))))))) -> (not (exists x, (and (and (x = _smith) True) (or (exists z3, (and (and (and (and (z3 = _jones) True) (_see _smith _jones)) (_out _jones)) (exists z5, (and (and (and (_crucial z5) (_clause z5)) True) (_cross _jones z5))))) (exists z1, (and (and (and (z1 = _jones) True) (_see _smith _jones)) (exists z2, (and (and (_contract z2) True) (_sign _jones z2))))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _clause is declared
+
+Coq < _contract is declared
+
+Coq < _cross is declared
+
+Coq < _crucial is declared
+
+Coq < _jones is declared
+
+Coq < _out is declared
+
+Coq < _see is declared
+
+Coq < _sign is declared
+
+Coq < _smith is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity,
+((z1 = _jones /\ True) /\ _see _smith _jones) /\
+(_out _jones /\
+(exists z4 : Entity,
+((_crucial z4 /\ _clause z4) /\ True) /\ _cross _jones z4) \/
+(exists z2 : Entity, (_contract z2 /\ True) /\ _sign _jones z2)))) ->
+exists x : Entity,
+(x = _smith /\ True) /\
+((exists z3 : Entity,
+(((z3 = _jones /\ True) /\ _see _smith _jones) /\ _out _jones) /\
+(exists z5 : Entity,
+((_crucial z5 /\ _clause z5) /\ True) /\ _cross _jones z5)) \/
+(exists z1 : Entity,
+((z1 = _jones /\ True) /\ _see _smith _jones) /\
+(exists z2 : Entity, (_contract z2 /\ True) /\ _sign _jones z2)))
+
+No more goals.
+
+Toplevel input, characters 672-689:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (z1 = _jones) True) (_see _smith _jones)) (or (and (_out _jones) (exists z4, (and (and (and (_crucial z4) (_clause z4)) True) (_cross _jones z4)))) (exists z2, (and (and (_contract z2) True) (_sign _jones z2)))))))) -> (exists x, (and (and (x = _smith) True) (or (exists z3, (and (and (and (and (z3 = _jones) True) (_see _smith _jones)) (_out _jones)) (exists z5, (and (and (and (_crucial z5) (_clause z5)) True) (_cross _jones z5))))) (exists z1, (and (and (and (z1 = _jones) True) (_see _smith _jones)) (exists z2, (and (and (_contract z2) True) (_sign _jones z2)))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^^^^^^^^^^^^^^
+Error: No such goal.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _clause is declared
+
+Coq < _contract is declared
+
+Coq < _cross is declared
+
+Coq < _crucial is declared
+
+Coq < _jones is declared
+
+Coq < _out is declared
+
+Coq < _see is declared
+
+Coq < _sign is declared
+
+Coq < _smith is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity,
+((z1 = _jones /\ True) /\ _see _smith _jones) /\
+(_out _jones /\
+(exists z4 : Entity,
+((_crucial z4 /\ _clause z4) /\ True) /\ _cross _jones z4) \/
+(exists z2 : Entity, (_contract z2 /\ True) /\ _sign _jones z2)))) ->
+exists x : Entity,
+(x = _smith /\ True) /\
+((exists z3 : Entity,
+(((z3 = _jones /\ True) /\ _see _smith _jones) /\ _out _jones) /\
+(exists z5 : Entity,
+((_crucial z5 /\ _clause z5) /\ True) /\ _cross _jones z5)) \/
+(exists z1 : Entity,
+((z1 = _jones /\ True) /\ _see _smith _jones) /\
+(exists z2 : Entity, (_contract z2 /\ True) /\ _sign _jones z2)))
+
+No more goals.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _clause is declared
+
+Coq < _contract is declared
+
+Coq < _cross is declared
+
+Coq < _crucial is declared
+
+Coq < _jones is declared
+
+Coq < _out is declared
+
+Coq < _see is declared
+
+Coq < _sign is declared
+
+Coq < _smith is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity,
+((z1 = _jones /\ True) /\ _see _smith _jones) /\
+(_out _jones /\
+(exists z4 : Entity,
+((_crucial z4 /\ _clause z4) /\ True) /\ _cross _jones z4) \/
+(exists z2 : Entity, (_contract z2 /\ True) /\ _sign _jones z2)))) ->
+~
+(exists x : Entity,
+(x = _smith /\ True) /\
+((exists z3 : Entity,
+(((z3 = _jones /\ True) /\ _see _smith _jones) /\ _out _jones) /\
+(exists z5 : Entity,
+((_crucial z5 /\ _clause z5) /\ True) /\ _cross _jones z5)) \/
+(exists z1 : Entity,
+((z1 = _jones /\ True) /\ _see _smith _jones) /\
+(exists z2 : Entity, (_contract z2 /\ True) /\ _sign _jones z2))))
+
+4 goals
+
+H2, H4 : True
+H6 : _see _smith _jones
+H7 : True
+H5 : _out _jones
+x2 : Entity
+H9 : _cross _jones x2
+H10 : True
+H8 : _crucial x2
+H11 : _clause x2
+H13 : _out _jones
+H14 : _see _smith _jones
+H15 : True
+x4 : Entity
+H16 : _cross _jones x4
+H17 : True
+H12 : _crucial x4
+H18 : _clause x4
+============================
+False
+
+goal 2 is:
+False
+goal 3 is:
+False
+goal 4 is:
+False
+
+Toplevel input, characters 682-694:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (z1 = _jones) True) (_see _smith _jones)) (or (and (_out _jones) (exists z4, (and (and (and (_crucial z4) (_clause z4)) True) (_cross _jones z4)))) (exists z2, (and (and (_contract z2) True) (_sign _jones z2)))))))) -> (not (exists x, (and (and (x = _smith) True) (or (exists z3, (and (and (and (and (z3 = _jones) True) (_see _smith _jones)) (_out _jones)) (exists z5, (and (and (and (_crucial z5) (_clause z5)) True) (_cross _jones z5))))) (exists z1, (and (and (and (z1 = _jones) True) (_see _smith _jones)) (exists z2, (and (and (_contract z2) True) (_sign _jones z2))))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 696-700:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (z1 = _jones) True) (_see _smith _jones)) (or (and (_out _jones) (exists z4, (and (and (and (_crucial z4) (_clause z4)) True) (_cross _jones z4)))) (exists z2, (and (and (_contract z2) True) (_sign _jones z2)))))))) -> (not (exists x, (and (and (x = _smith) True) (or (exists z3, (and (and (and (and (z3 = _jones) True) (_see _smith _jones)) (_out _jones)) (exists z5, (and (and (and (_crucial z5) (_clause z5)) True) (_cross _jones z5))))) (exists z1, (and (and (and (z1 = _jones) True) (_see _smith _jones)) (exists z2, (and (and (_contract z2) True) (_sign _jones z2))))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _clause is declared
+
+Coq < _contract is declared
+
+Coq < _cross is declared
+
+Coq < _crucial is declared
+
+Coq < _jones is declared
+
+Coq < _out is declared
+
+Coq < _see is declared
+
+Coq < _sign is declared
+
+Coq < _smith is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity,
+((z1 = _jones /\ True) /\ _see _smith _jones) /\
+(_out _jones /\
+(exists z4 : Entity,
+((_crucial z4 /\ _clause z4) /\ True) /\ _cross _jones z4) \/
+(exists z2 : Entity, (_contract z2 /\ True) /\ _sign _jones z2)))) ->
+~
+(exists x : Entity,
+(x = _smith /\ True) /\
+((exists z3 : Entity,
+(((z3 = _jones /\ True) /\ _see _smith _jones) /\ _out _jones) /\
+(exists z5 : Entity,
+((_crucial z5 /\ _clause z5) /\ True) /\ _cross _jones z5)) \/
+(exists z1 : Entity,
+((z1 = _jones /\ True) /\ _see _smith _jones) /\
+(exists z2 : Entity, (_contract z2 /\ True) /\ _sign _jones z2))))
+
+
+Toplevel input, characters 666-670:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (z1 = _jones) True) (_see _smith _jones)) (or (and (_out _jones) (exists z4, (and (and (and (_crucial z4) (_clause z4)) True) (_cross _jones z4)))) (exists z2, (and (and (_contract z2) True) (_sign _jones z2)))))))) -> (not (exists x, (and (and (x = _smith) True) (or (exists z3, (and (and (and (and (z3 = _jones) True) (_see _smith _jones)) (_out _jones)) (exists z5, (and (and (and (_crucial z5) (_clause z5)) True) (_cross _jones z5))))) (exists z1, (and (and (and (z1 = _jones) True) (_see _smith _jones)) (exists z2, (and (and (_contract z2) True) (_sign _jones z2))))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _clause is declared
+
+Coq < _contract is declared
+
+Coq < _cross is declared
+
+Coq < _crucial is declared
+
+Coq < _jones is declared
+
+Coq < _out is declared
+
+Coq < _see is declared
+
+Coq < _sign is declared
+
+Coq < _smith is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity,
+((z1 = _jones /\ True) /\ _see _smith _jones) /\
+(_out _jones /\
+(exists z4 : Entity,
+((_crucial z4 /\ _clause z4) /\ True) /\ _cross _jones z4) \/
+(exists z2 : Entity, (_contract z2 /\ True) /\ _sign _jones z2)))) ->
+exists x : Entity,
+(x = _smith /\ True) /\
+((exists z3 : Entity,
+(((z3 = _jones /\ True) /\ _see _smith _jones) /\ _out _jones) /\
+(exists z5 : Entity,
+((_crucial z5 /\ _clause z5) /\ True) /\ _cross _jones z5)) \/
+(exists z1 : Entity,
+((z1 = _jones /\ True) /\ _see _smith _jones) /\
+(exists z2 : Entity, (_contract z2 /\ True) /\ _sign _jones z2)))
+
+No more goals.
+
+Toplevel input, characters 672-689:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (z1 = _jones) True) (_see _smith _jones)) (or (and (_out _jones) (exists z4, (and (and (and (_crucial z4) (_clause z4)) True) (_cross _jones z4)))) (exists z2, (and (and (_contract z2) True) (_sign _jones z2)))))))) -> (exists x, (and (and (x = _smith) True) (or (exists z3, (and (and (and (and (z3 = _jones) True) (_see _smith _jones)) (_out _jones)) (exists z5, (and (and (and (_crucial z5) (_clause z5)) True) (_cross _jones z5))))) (exists z1, (and (and (and (z1 = _jones) True) (_see _smith _jones)) (exists z2, (and (and (_contract z2) True) (_sign _jones z2)))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^^^^^^^^^^^^^^
+Error: No such goal.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _clause is declared
+
+Coq < _contract is declared
+
+Coq < _cross is declared
+
+Coq < _crucial is declared
+
+Coq < _jones is declared
+
+Coq < _out is declared
+
+Coq < _see is declared
+
+Coq < _sign is declared
+
+Coq < _smith is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity,
+((z1 = _jones /\ True) /\ _see _smith _jones) /\
+(_out _jones /\
+(exists z4 : Entity,
+((_crucial z4 /\ _clause z4) /\ True) /\ _cross _jones z4) \/
+(exists z2 : Entity, (_contract z2 /\ True) /\ _sign _jones z2)))) ->
+~
+(exists x : Entity,
+(x = _smith /\ True) /\
+((exists z3 : Entity,
+(((z3 = _jones /\ True) /\ _see _smith _jones) /\ _out _jones) /\
+(exists z5 : Entity,
+((_crucial z5 /\ _clause z5) /\ True) /\ _cross _jones z5)) \/
+(exists z1 : Entity,
+((z1 = _jones /\ True) /\ _see _smith _jones) /\
+(exists z2 : Entity, (_contract z2 /\ True) /\ _sign _jones z2))))
+
+4 goals
+
+H2, H4 : True
+H6 : _see _smith _jones
+H7 : True
+H5 : _out _jones
+x2 : Entity
+H9 : _cross _jones x2
+H10 : True
+H8 : _crucial x2
+H11 : _clause x2
+H13 : _out _jones
+H14 : _see _smith _jones
+H15 : True
+x4 : Entity
+H16 : _cross _jones x4
+H17 : True
+H12 : _crucial x4
+H18 : _clause x4
+============================
+False
+
+goal 2 is:
+False
+goal 3 is:
+False
+goal 4 is:
+False
+
+Toplevel input, characters 682-694:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (z1 = _jones) True) (_see _smith _jones)) (or (and (_out _jones) (exists z4, (and (and (and (_crucial z4) (_clause z4)) True) (_cross _jones z4)))) (exists z2, (and (and (_contract z2) True) (_sign _jones z2)))))))) -> (not (exists x, (and (and (x = _smith) True) (or (exists z3, (and (and (and (and (z3 = _jones) True) (_see _smith _jones)) (_out _jones)) (exists z5, (and (and (and (_crucial z5) (_clause z5)) True) (_cross _jones z5))))) (exists z1, (and (and (and (z1 = _jones) True) (_see _smith _jones)) (exists z2, (and (and (_contract z2) True) (_sign _jones z2))))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 696-700:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (z1 = _jones) True) (_see _smith _jones)) (or (and (_out _jones) (exists z4, (and (and (and (_crucial z4) (_clause z4)) True) (_cross _jones z4)))) (exists z2, (and (and (_contract z2) True) (_sign _jones z2)))))))) -> (not (exists x, (and (and (x = _smith) True) (or (exists z3, (and (and (and (and (z3 = _jones) True) (_see _smith _jones)) (_out _jones)) (exists z5, (and (and (and (_crucial z5) (_clause z5)) True) (_cross _jones z5))))) (exists z1, (and (and (and (z1 = _jones) True) (_see _smith _jones)) (exists z2, (and (and (_contract z2) True) (_sign _jones z2))))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _clause is declared
+
+Coq < _contract is declared
+
+Coq < _cross is declared
+
+Coq < _crucial is declared
+
+Coq < _jones is declared
+
+Coq < _out is declared
+
+Coq < _see is declared
+
+Coq < _sign is declared
+
+Coq < _smith is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity,
+((z1 = _jones /\ True) /\ _see _smith _jones) /\
+(_out _jones /\
+(exists z4 : Entity,
+((_crucial z4 /\ _clause z4) /\ True) /\ _cross _jones z4) \/
+(exists z2 : Entity, (_contract z2 /\ True) /\ _sign _jones z2)))) ->
+exists x : Entity,
+(x = _smith /\ True) /\
+((exists z3 : Entity,
+(((z3 = _jones /\ True) /\ _see _smith _jones) /\ _out _jones) /\
+(exists z5 : Entity,
+((_crucial z5 /\ _clause z5) /\ True) /\ _cross _jones z5)) \/
+(exists z1 : Entity,
+((z1 = _jones /\ True) /\ _see _smith _jones) /\
+(exists z2 : Entity, (_contract z2 /\ True) /\ _sign _jones z2)))
+
+No more goals.
+
+Toplevel input, characters 672-689:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (z1 = _jones) True) (_see _smith _jones)) (or (and (_out _jones) (exists z4, (and (and (and (_crucial z4) (_clause z4)) True) (_cross _jones z4)))) (exists z2, (and (and (_contract z2) True) (_sign _jones z2)))))))) -> (exists x, (and (and (x = _smith) True) (or (exists z3, (and (and (and (and (z3 = _jones) True) (_see _smith _jones)) (_out _jones)) (exists z5, (and (and (and (_crucial z5) (_clause z5)) True) (_cross _jones z5))))) (exists z1, (and (and (and (z1 = _jones) True) (_see _smith _jones)) (exists z2, (and (and (_contract z2) True) (_sign _jones z2)))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^^^^^^^^^^^^^^
+Error: No such goal.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _clause is declared
+
+Coq < _contract is declared
+
+Coq < _cross is declared
+
+Coq < _crucial is declared
+
+Coq < _jones is declared
+
+Coq < _out is declared
+
+Coq < _see is declared
+
+Coq < _sign is declared
+
+Coq < _smith is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity,
+((z1 = _jones /\ True) /\ _see _smith _jones) /\
+(_out _jones /\
+(exists z4 : Entity,
+((_crucial z4 /\ _clause z4) /\ True) /\ _cross _jones z4) \/
+(exists z2 : Entity, (_contract z2 /\ True) /\ _sign _jones z2)))) ->
+~
+(exists x : Entity,
+(x = _smith /\ True) /\
+((exists z3 : Entity,
+(((z3 = _jones /\ True) /\ _see _smith _jones) /\ _out _jones) /\
+(exists z5 : Entity,
+((_crucial z5 /\ _clause z5) /\ True) /\ _cross _jones z5)) \/
+(exists z1 : Entity,
+((z1 = _jones /\ True) /\ _see _smith _jones) /\
+(exists z2 : Entity, (_contract z2 /\ True) /\ _sign _jones z2))))
+
+4 goals
+
+H2, H4 : True
+H6 : _see _smith _jones
+H7 : True
+H5 : _out _jones
+x2 : Entity
+H9 : _cross _jones x2
+H10 : True
+H8 : _crucial x2
+H11 : _clause x2
+H13 : _out _jones
+H14 : _see _smith _jones
+H15 : True
+x4 : Entity
+H16 : _cross _jones x4
+H17 : True
+H12 : _crucial x4
+H18 : _clause x4
+============================
+False
+
+goal 2 is:
+False
+goal 3 is:
+False
+goal 4 is:
+False
+
+Toplevel input, characters 682-694:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (z1 = _jones) True) (_see _smith _jones)) (or (and (_out _jones) (exists z4, (and (and (and (_crucial z4) (_clause z4)) True) (_cross _jones z4)))) (exists z2, (and (and (_contract z2) True) (_sign _jones z2)))))))) -> (not (exists x, (and (and (x = _smith) True) (or (exists z3, (and (and (and (and (z3 = _jones) True) (_see _smith _jones)) (_out _jones)) (exists z5, (and (and (and (_crucial z5) (_clause z5)) True) (_cross _jones z5))))) (exists z1, (and (and (and (z1 = _jones) True) (_see _smith _jones)) (exists z2, (and (and (_contract z2) True) (_sign _jones z2))))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 696-700:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (z1 = _jones) True) (_see _smith _jones)) (or (and (_out _jones) (exists z4, (and (and (and (_crucial z4) (_clause z4)) True) (_cross _jones z4)))) (exists z2, (and (and (_contract z2) True) (_sign _jones z2)))))))) -> (not (exists x, (and (and (x = _smith) True) (or (exists z3, (and (and (and (and (z3 = _jones) True) (_see _smith _jones)) (_out _jones)) (exists z5, (and (and (and (_crucial z5) (_clause z5)) True) (_cross _jones z5))))) (exists z1, (and (and (and (z1 = _jones) True) (_see _smith _jones)) (exists z2, (and (and (_contract z2) True) (_sign _jones z2))))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

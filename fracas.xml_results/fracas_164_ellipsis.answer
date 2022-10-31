@@ -1,0 +1,452 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _and is declared
+
+Coq < _john is declared
+
+Coq < _mary is declared
+
+Coq < _speak is declared
+
+Coq < _speak_e2 is declared
+
+Coq < _speak_e3 is declared
+
+Coq < _sue is declared
+
+Coq < _to is declared
+
+Coq < Toplevel input, characters 142-205:
+> Theorem t1: (exists x, (and (and (and (x = _john) True) (_speak_e2 _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))) -> (fun Q => (Q (fun w => True) (fun x => (and (_and x) (_sue x))))) -> (exists x, (and (and (x = _john) True) (_speak_e3 _john (_sue _john)))).
+>                                                                                                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun Q : forall (x : ?T -> Prop) (x0 : Entity -> Prop), ?T0 =>
+Q (fun _ : ?T => True) (fun x : Entity => _and x /\ _sue x)" has type
+"(forall (x : ?T -> Prop) (x0 : Entity -> Prop), ?T0) ->
+?T0@{x:=fun _ : ?T => True; x0:=fun x : Entity => _and x /\ _sue x}"
+which should be Set, Prop or Type.
+
+Toplevel input, characters 283-288:
+> Theorem t1: (exists x, (and (and (and (x = _john) True) (_speak_e2 _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))) -> (fun Q => (Q (fun w => True) (fun x => (and (_and x) (_sue x))))) -> (exists x, (and (and (x = _john) True) (_speak_e3 _john (_sue _john)))). nltac.
+>                                                                                                                                                                                                                                                                                            ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 290-294:
+> Theorem t1: (exists x, (and (and (and (x = _john) True) (_speak_e2 _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))) -> (fun Q => (Q (fun w => True) (fun x => (and (_and x) (_sue x))))) -> (exists x, (and (and (x = _john) True) (_speak_e3 _john (_sue _john)))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                   ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _and is declared
+
+Coq < _john is declared
+
+Coq < _mary is declared
+
+Coq < _speak is declared
+
+Coq < _speak_e2 is declared
+
+Coq < _speak_e3 is declared
+
+Coq < _sue is declared
+
+Coq < _to is declared
+
+Coq < Toplevel input, characters 142-205:
+> Theorem t1: (exists x, (and (and (and (x = _john) True) (_speak_e2 _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))) -> (fun Q => (Q (fun w => True) (fun x => (and (_and x) (_sue x))))) -> (not (exists x, (and (and (x = _john) True) (_speak_e3 _john (_sue _john))))).
+>                                                                                                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun Q : forall (x : ?T -> Prop) (x0 : Entity -> Prop), ?T0 =>
+Q (fun _ : ?T => True) (fun x : Entity => _and x /\ _sue x)" has type
+"(forall (x : ?T -> Prop) (x0 : Entity -> Prop), ?T0) ->
+?T0@{x:=fun _ : ?T => True; x0:=fun x : Entity => _and x /\ _sue x}"
+which should be Set, Prop or Type.
+
+Toplevel input, characters 289-294:
+> Theorem t1: (exists x, (and (and (and (x = _john) True) (_speak_e2 _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))) -> (fun Q => (Q (fun w => True) (fun x => (and (_and x) (_sue x))))) -> (not (exists x, (and (and (x = _john) True) (_speak_e3 _john (_sue _john))))). nltac.
+>                                                                                                                                                                                                                                                                                                  ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 296-300:
+> Theorem t1: (exists x, (and (and (and (x = _john) True) (_speak_e2 _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))) -> (fun Q => (Q (fun w => True) (fun x => (and (_and x) (_sue x))))) -> (not (exists x, (and (and (x = _john) True) (_speak_e3 _john (_sue _john))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                         ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _and is declared
+
+Coq < _john is declared
+
+Coq < _mary is declared
+
+Coq < _speak is declared
+
+Coq < _speak_e2 is declared
+
+Coq < _speak_e3 is declared
+
+Coq < _sue is declared
+
+Coq < _to is declared
+
+Coq < Toplevel input, characters 142-205:
+> Theorem t1: (exists x, (and (and (and (x = _john) True) (_speak_e2 _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))) -> (fun Q => (Q (fun w => True) (fun x => (and (_and x) (_sue x))))) -> (exists x, (and (and (x = _john) True) (_speak_e3 _john (_sue _john)))).
+>                                                                                                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun Q : forall (x : ?T -> Prop) (x0 : Entity -> Prop), ?T0 =>
+Q (fun _ : ?T => True) (fun x : Entity => _and x /\ _sue x)" has type
+"(forall (x : ?T -> Prop) (x0 : Entity -> Prop), ?T0) ->
+?T0@{x:=fun _ : ?T => True; x0:=fun x : Entity => _and x /\ _sue x}"
+which should be Set, Prop or Type.
+
+Toplevel input, characters 283-289:
+> Theorem t1: (exists x, (and (and (and (x = _john) True) (_speak_e2 _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))) -> (fun Q => (Q (fun w => True) (fun x => (and (_and x) (_sue x))))) -> (exists x, (and (and (x = _john) True) (_speak_e3 _john (_sue _john)))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                            ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 302-305:
+> Theorem t1: (exists x, (and (and (and (x = _john) True) (_speak_e2 _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))) -> (fun Q => (Q (fun w => True) (fun x => (and (_and x) (_sue x))))) -> (exists x, (and (and (x = _john) True) (_speak_e3 _john (_sue _john)))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                               ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 320-324:
+> Theorem t1: (exists x, (and (and (and (x = _john) True) (_speak_e2 _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))) -> (fun Q => (Q (fun w => True) (fun x => (and (_and x) (_sue x))))) -> (exists x, (and (and (x = _john) True) (_speak_e3 _john (_sue _john)))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _and is declared
+
+Coq < _john is declared
+
+Coq < _mary is declared
+
+Coq < _speak is declared
+
+Coq < _speak_e2 is declared
+
+Coq < _speak_e3 is declared
+
+Coq < _sue is declared
+
+Coq < _to is declared
+
+Coq < Toplevel input, characters 142-205:
+> Theorem t1: (exists x, (and (and (and (x = _john) True) (_speak_e2 _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))) -> (fun Q => (Q (fun w => True) (fun x => (and (_and x) (_sue x))))) -> (exists x, (and (and (x = _john) True) (_speak_e3 _john (_sue _john)))).
+>                                                                                                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun Q : forall (x : ?T -> Prop) (x0 : Entity -> Prop), ?T0 =>
+Q (fun _ : ?T => True) (fun x : Entity => _and x /\ _sue x)" has type
+"(forall (x : ?T -> Prop) (x0 : Entity -> Prop), ?T0) ->
+?T0@{x:=fun _ : ?T => True; x0:=fun x : Entity => _and x /\ _sue x}"
+which should be Set, Prop or Type.
+
+Toplevel input, characters 283-288:
+> Theorem t1: (exists x, (and (and (and (x = _john) True) (_speak_e2 _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))) -> (fun Q => (Q (fun w => True) (fun x => (and (_and x) (_sue x))))) -> (exists x, (and (and (x = _john) True) (_speak_e3 _john (_sue _john)))). nltac.
+>                                                                                                                                                                                                                                                                                            ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 290-294:
+> Theorem t1: (exists x, (and (and (and (x = _john) True) (_speak_e2 _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))) -> (fun Q => (Q (fun w => True) (fun x => (and (_and x) (_sue x))))) -> (exists x, (and (and (x = _john) True) (_speak_e3 _john (_sue _john)))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                   ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _and is declared
+
+Coq < _john is declared
+
+Coq < _mary is declared
+
+Coq < _speak is declared
+
+Coq < _speak_e2 is declared
+
+Coq < _speak_e3 is declared
+
+Coq < _sue is declared
+
+Coq < _to is declared
+
+Coq < Toplevel input, characters 142-205:
+> Theorem t1: (exists x, (and (and (and (x = _john) True) (_speak_e2 _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))) -> (fun Q => (Q (fun w => True) (fun x => (and (_and x) (_sue x))))) -> (not (exists x, (and (and (x = _john) True) (_speak_e3 _john (_sue _john))))).
+>                                                                                                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun Q : forall (x : ?T -> Prop) (x0 : Entity -> Prop), ?T0 =>
+Q (fun _ : ?T => True) (fun x : Entity => _and x /\ _sue x)" has type
+"(forall (x : ?T -> Prop) (x0 : Entity -> Prop), ?T0) ->
+?T0@{x:=fun _ : ?T => True; x0:=fun x : Entity => _and x /\ _sue x}"
+which should be Set, Prop or Type.
+
+Toplevel input, characters 289-295:
+> Theorem t1: (exists x, (and (and (and (x = _john) True) (_speak_e2 _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))) -> (fun Q => (Q (fun w => True) (fun x => (and (_and x) (_sue x))))) -> (not (exists x, (and (and (x = _john) True) (_speak_e3 _john (_sue _john))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                  ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 308-311:
+> Theorem t1: (exists x, (and (and (and (x = _john) True) (_speak_e2 _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))) -> (fun Q => (Q (fun w => True) (fun x => (and (_and x) (_sue x))))) -> (not (exists x, (and (and (x = _john) True) (_speak_e3 _john (_sue _john))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                     ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 326-330:
+> Theorem t1: (exists x, (and (and (and (x = _john) True) (_speak_e2 _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))) -> (fun Q => (Q (fun w => True) (fun x => (and (_and x) (_sue x))))) -> (not (exists x, (and (and (x = _john) True) (_speak_e3 _john (_sue _john))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                       ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _and is declared
+
+Coq < _john is declared
+
+Coq < _mary is declared
+
+Coq < _speak is declared
+
+Coq < _speak_e2 is declared
+
+Coq < _speak_e3 is declared
+
+Coq < _sue is declared
+
+Coq < _to is declared
+
+Coq < Toplevel input, characters 142-205:
+> Theorem t1: (exists x, (and (and (and (x = _john) True) (_speak_e2 _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))) -> (fun Q => (Q (fun w => True) (fun x => (and (_and x) (_sue x))))) -> (not (exists x, (and (and (x = _john) True) (_speak_e3 _john (_sue _john))))).
+>                                                                                                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun Q : forall (x : ?T -> Prop) (x0 : Entity -> Prop), ?T0 =>
+Q (fun _ : ?T => True) (fun x : Entity => _and x /\ _sue x)" has type
+"(forall (x : ?T -> Prop) (x0 : Entity -> Prop), ?T0) ->
+?T0@{x:=fun _ : ?T => True; x0:=fun x : Entity => _and x /\ _sue x}"
+which should be Set, Prop or Type.
+
+Toplevel input, characters 289-294:
+> Theorem t1: (exists x, (and (and (and (x = _john) True) (_speak_e2 _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))) -> (fun Q => (Q (fun w => True) (fun x => (and (_and x) (_sue x))))) -> (not (exists x, (and (and (x = _john) True) (_speak_e3 _john (_sue _john))))). nltac.
+>                                                                                                                                                                                                                                                                                                  ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 296-300:
+> Theorem t1: (exists x, (and (and (and (x = _john) True) (_speak_e2 _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))) -> (fun Q => (Q (fun w => True) (fun x => (and (_and x) (_sue x))))) -> (not (exists x, (and (and (x = _john) True) (_speak_e3 _john (_sue _john))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                         ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _and is declared
+
+Coq < _john is declared
+
+Coq < _mary is declared
+
+Coq < _speak is declared
+
+Coq < _speak_e2 is declared
+
+Coq < _speak_e3 is declared
+
+Coq < _sue is declared
+
+Coq < _to is declared
+
+Coq < Toplevel input, characters 142-205:
+> Theorem t1: (exists x, (and (and (and (x = _john) True) (_speak_e2 _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))) -> (fun Q => (Q (fun w => True) (fun x => (and (_and x) (_sue x))))) -> (exists x, (and (and (x = _john) True) (_speak_e3 _john (_sue _john)))).
+>                                                                                                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun Q : forall (x : ?T -> Prop) (x0 : Entity -> Prop), ?T0 =>
+Q (fun _ : ?T => True) (fun x : Entity => _and x /\ _sue x)" has type
+"(forall (x : ?T -> Prop) (x0 : Entity -> Prop), ?T0) ->
+?T0@{x:=fun _ : ?T => True; x0:=fun x : Entity => _and x /\ _sue x}"
+which should be Set, Prop or Type.
+
+Toplevel input, characters 283-289:
+> Theorem t1: (exists x, (and (and (and (x = _john) True) (_speak_e2 _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))) -> (fun Q => (Q (fun w => True) (fun x => (and (_and x) (_sue x))))) -> (exists x, (and (and (x = _john) True) (_speak_e3 _john (_sue _john)))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                            ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 302-305:
+> Theorem t1: (exists x, (and (and (and (x = _john) True) (_speak_e2 _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))) -> (fun Q => (Q (fun w => True) (fun x => (and (_and x) (_sue x))))) -> (exists x, (and (and (x = _john) True) (_speak_e3 _john (_sue _john)))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                               ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 320-324:
+> Theorem t1: (exists x, (and (and (and (x = _john) True) (_speak_e2 _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))) -> (fun Q => (Q (fun w => True) (fun x => (and (_and x) (_sue x))))) -> (exists x, (and (and (x = _john) True) (_speak_e3 _john (_sue _john)))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _and is declared
+
+Coq < _john is declared
+
+Coq < _mary is declared
+
+Coq < _speak is declared
+
+Coq < _speak_e2 is declared
+
+Coq < _speak_e3 is declared
+
+Coq < _sue is declared
+
+Coq < _to is declared
+
+Coq < Toplevel input, characters 142-205:
+> Theorem t1: (exists x, (and (and (and (x = _john) True) (_speak_e2 _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))) -> (fun Q => (Q (fun w => True) (fun x => (and (_and x) (_sue x))))) -> (not (exists x, (and (and (x = _john) True) (_speak_e3 _john (_sue _john))))).
+>                                                                                                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun Q : forall (x : ?T -> Prop) (x0 : Entity -> Prop), ?T0 =>
+Q (fun _ : ?T => True) (fun x : Entity => _and x /\ _sue x)" has type
+"(forall (x : ?T -> Prop) (x0 : Entity -> Prop), ?T0) ->
+?T0@{x:=fun _ : ?T => True; x0:=fun x : Entity => _and x /\ _sue x}"
+which should be Set, Prop or Type.
+
+Toplevel input, characters 289-295:
+> Theorem t1: (exists x, (and (and (and (x = _john) True) (_speak_e2 _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))) -> (fun Q => (Q (fun w => True) (fun x => (and (_and x) (_sue x))))) -> (not (exists x, (and (and (x = _john) True) (_speak_e3 _john (_sue _john))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                  ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 308-311:
+> Theorem t1: (exists x, (and (and (and (x = _john) True) (_speak_e2 _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))) -> (fun Q => (Q (fun w => True) (fun x => (and (_and x) (_sue x))))) -> (not (exists x, (and (and (x = _john) True) (_speak_e3 _john (_sue _john))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                     ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 326-330:
+> Theorem t1: (exists x, (and (and (and (x = _john) True) (_speak_e2 _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))) -> (fun Q => (Q (fun w => True) (fun x => (and (_and x) (_sue x))))) -> (not (exists x, (and (and (x = _john) True) (_speak_e3 _john (_sue _john))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                       ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _and is declared
+
+Coq < _john is declared
+
+Coq < _mary is declared
+
+Coq < _speak is declared
+
+Coq < _speak_e2 is declared
+
+Coq < _speak_e3 is declared
+
+Coq < _sue is declared
+
+Coq < _to is declared
+
+Coq < Toplevel input, characters 142-205:
+> Theorem t1: (exists x, (and (and (and (x = _john) True) (_speak_e2 _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))) -> (fun Q => (Q (fun w => True) (fun x => (and (_and x) (_sue x))))) -> (exists x, (and (and (x = _john) True) (_speak_e3 _john (_sue _john)))).
+>                                                                                                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun Q : forall (x : ?T -> Prop) (x0 : Entity -> Prop), ?T0 =>
+Q (fun _ : ?T => True) (fun x : Entity => _and x /\ _sue x)" has type
+"(forall (x : ?T -> Prop) (x0 : Entity -> Prop), ?T0) ->
+?T0@{x:=fun _ : ?T => True; x0:=fun x : Entity => _and x /\ _sue x}"
+which should be Set, Prop or Type.
+
+Toplevel input, characters 283-289:
+> Theorem t1: (exists x, (and (and (and (x = _john) True) (_speak_e2 _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))) -> (fun Q => (Q (fun w => True) (fun x => (and (_and x) (_sue x))))) -> (exists x, (and (and (x = _john) True) (_speak_e3 _john (_sue _john)))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                            ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 302-305:
+> Theorem t1: (exists x, (and (and (and (x = _john) True) (_speak_e2 _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))) -> (fun Q => (Q (fun w => True) (fun x => (and (_and x) (_sue x))))) -> (exists x, (and (and (x = _john) True) (_speak_e3 _john (_sue _john)))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                               ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 320-324:
+> Theorem t1: (exists x, (and (and (and (x = _john) True) (_speak_e2 _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))) -> (fun Q => (Q (fun w => True) (fun x => (and (_and x) (_sue x))))) -> (exists x, (and (and (x = _john) True) (_speak_e3 _john (_sue _john)))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _and is declared
+
+Coq < _john is declared
+
+Coq < _mary is declared
+
+Coq < _speak is declared
+
+Coq < _speak_e2 is declared
+
+Coq < _speak_e3 is declared
+
+Coq < _sue is declared
+
+Coq < _to is declared
+
+Coq < Toplevel input, characters 142-205:
+> Theorem t1: (exists x, (and (and (and (x = _john) True) (_speak_e2 _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))) -> (fun Q => (Q (fun w => True) (fun x => (and (_and x) (_sue x))))) -> (not (exists x, (and (and (x = _john) True) (_speak_e3 _john (_sue _john))))).
+>                                                                                                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun Q : forall (x : ?T -> Prop) (x0 : Entity -> Prop), ?T0 =>
+Q (fun _ : ?T => True) (fun x : Entity => _and x /\ _sue x)" has type
+"(forall (x : ?T -> Prop) (x0 : Entity -> Prop), ?T0) ->
+?T0@{x:=fun _ : ?T => True; x0:=fun x : Entity => _and x /\ _sue x}"
+which should be Set, Prop or Type.
+
+Toplevel input, characters 289-295:
+> Theorem t1: (exists x, (and (and (and (x = _john) True) (_speak_e2 _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))) -> (fun Q => (Q (fun w => True) (fun x => (and (_and x) (_sue x))))) -> (not (exists x, (and (and (x = _john) True) (_speak_e3 _john (_sue _john))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                  ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 308-311:
+> Theorem t1: (exists x, (and (and (and (x = _john) True) (_speak_e2 _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))) -> (fun Q => (Q (fun w => True) (fun x => (and (_and x) (_sue x))))) -> (not (exists x, (and (and (x = _john) True) (_speak_e3 _john (_sue _john))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                     ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 326-330:
+> Theorem t1: (exists x, (and (and (and (x = _john) True) (_speak_e2 _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))) -> (fun Q => (Q (fun w => True) (fun x => (and (_and x) (_sue x))))) -> (not (exists x, (and (and (x = _john) True) (_speak_e3 _john (_sue _john))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                       ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+unknown
+

@@ -1,0 +1,157 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _british is declared
+
+Coq < _delegate is declared
+
+Coq < _from is declared
+
+Coq < _interesting is declared
+
+Coq < _many is declared
+
+Coq < _obtain is declared
+
+Coq < _result is declared
+
+Coq < _survey is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((_many x /\ _delegate x) /\ True) /\
+(exists z2 : Entity,
+(((_interesting z2 /\ _result z2) /\
+(exists z1 : Entity, (_survey z1 /\ True) /\ _from z2 z1)) /\ True) /\
+_obtain x z2)) ->
+exists x : Entity,
+(((_many x /\ _british x) /\ _delegate x) /\ True) /\
+(exists z2 : Entity,
+(((_interesting z2 /\ _result z2) /\
+(exists z1 : Entity, (_survey z1 /\ True) /\ _from z2 z1)) /\ True) /\
+_obtain x z2)
+
+
+Toplevel input, characters 450-454:
+> Theorem t1: (exists x, (and (and (and (_many x) (_delegate x)) True) (exists z2, (and (and (and (and (_interesting z2) (_result z2)) (exists z1, (and (and (_survey z1) True) (_from z2 z1)))) True) (_obtain x z2))))) -> (exists x, (and (and (and (and (_many x) (_british x)) (_delegate x)) True) (exists z2, (and (and (and (and (_interesting z2) (_result z2)) (exists z1, (and (and (_survey z1) True) (_from z2 z1)))) True) (_obtain x z2))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _british is declared
+
+Coq < _delegate is declared
+
+Coq < _from is declared
+
+Coq < _interesting is declared
+
+Coq < _many is declared
+
+Coq < _obtain is declared
+
+Coq < _result is declared
+
+Coq < _survey is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((_many x /\ _delegate x) /\ True) /\
+(exists z2 : Entity,
+(((_interesting z2 /\ _result z2) /\
+(exists z1 : Entity, (_survey z1 /\ True) /\ _from z2 z1)) /\ True) /\
+_obtain x z2)) ->
+~
+(exists x : Entity,
+(((_many x /\ _british x) /\ _delegate x) /\ True) /\
+(exists z2 : Entity,
+(((_interesting z2 /\ _result z2) /\
+(exists z1 : Entity, (_survey z1 /\ True) /\ _from z2 z1)) /\ True) /\
+_obtain x z2))
+
+
+Toplevel input, characters 456-460:
+> Theorem t1: (exists x, (and (and (and (_many x) (_delegate x)) True) (exists z2, (and (and (and (and (_interesting z2) (_result z2)) (exists z1, (and (and (_survey z1) True) (_from z2 z1)))) True) (_obtain x z2))))) -> (not (exists x, (and (and (and (and (_many x) (_british x)) (_delegate x)) True) (exists z2, (and (and (and (and (_interesting z2) (_result z2)) (exists z1, (and (and (_survey z1) True) (_from z2 z1)))) True) (_obtain x z2)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _british is declared
+
+Coq < _delegate is declared
+
+Coq < _from is declared
+
+Coq < _interesting is declared
+
+Coq < _many is declared
+
+Coq < _obtain is declared
+
+Coq < _result is declared
+
+Coq < _survey is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((_many x /\ _delegate x) /\ True) /\
+(exists z2 : Entity,
+(((_interesting z2 /\ _result z2) /\
+(exists z1 : Entity, (_survey z1 /\ True) /\ _from z2 z1)) /\ True) /\
+_obtain x z2)) ->
+exists x : Entity,
+(((_many x /\ _british x) /\ _delegate x) /\ True) /\
+(exists z2 : Entity,
+(((_interesting z2 /\ _result z2) /\
+(exists z1 : Entity, (_survey z1 /\ True) /\ _from z2 z1)) /\ True) /\
+_obtain x z2)
+
+1 goal
+
+x : Entity
+H1 : True
+H : _many x
+H2 : _delegate x
+x0 : Entity
+H3 : _obtain x x0
+H4 : True
+H0 : _interesting x0
+H6 : _result x0
+x1 : Entity
+H7 : _from x0 x1
+H5 : _survey x1
+H8 : True
+============================
+_british x
+
+Toplevel input, characters 466-478:
+> Theorem t1: (exists x, (and (and (and (_many x) (_delegate x)) True) (exists z2, (and (and (and (and (_interesting z2) (_result z2)) (exists z1, (and (and (_survey z1) True) (_from z2 z1)))) True) (_obtain x z2))))) -> (exists x, (and (and (and (and (_many x) (_british x)) (_delegate x)) True) (exists z2, (and (and (and (and (_interesting z2) (_result z2)) (exists z1, (and (and (_survey z1) True) (_from z2 z1)))) True) (_obtain x z2))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 480-484:
+> Theorem t1: (exists x, (and (and (and (_many x) (_delegate x)) True) (exists z2, (and (and (and (and (_interesting z2) (_result z2)) (exists z1, (and (and (_survey z1) True) (_from z2 z1)))) True) (_obtain x z2))))) -> (exists x, (and (and (and (and (_many x) (_british x)) (_delegate x)) True) (exists z2, (and (and (and (and (_interesting z2) (_result z2)) (exists z1, (and (and (_survey z1) True) (_from z2 z1)))) True) (_obtain x z2))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

@@ -1,0 +1,145 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _birmingham is declared
+
+Coq < _currently is declared
+
+Coq < _factory is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _itel is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _itel /\ True) /\
+(exists z2 : Entity,
+((_factory z2 /\
+(exists z1 : Entity,
+(z1 = _birmingham /\ True) /\ _in z2 _birmingham)) /\ True) /\
+_have _itel z2)) ->
+exists x : Entity,
+((x = _itel /\ True) /\ _currently _itel) /\
+(exists z2 : Entity,
+((_factory z2 /\
+(exists z1 : Entity,
+(z1 = _birmingham /\ True) /\ _in z2 _birmingham)) /\ True) /\
+_have _itel z2)
+
+
+Toplevel input, characters 404-408:
+> Theorem t1: (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (_factory z2) (exists z1, (and (and (z1 = _birmingham) True) (_in z2 _birmingham)))) True) (_have _itel z2))))) -> (exists x, (and (and (and (x = _itel) True) (_currently _itel)) (exists z2, (and (and (and (_factory z2) (exists z1, (and (and (z1 = _birmingham) True) (_in z2 _birmingham)))) True) (_have _itel z2))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                     ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _birmingham is declared
+
+Coq < _currently is declared
+
+Coq < _factory is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _itel is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _itel /\ True) /\
+(exists z2 : Entity,
+((_factory z2 /\
+(exists z1 : Entity,
+(z1 = _birmingham /\ True) /\ _in z2 _birmingham)) /\ True) /\
+_have _itel z2)) ->
+~
+(exists x : Entity,
+((x = _itel /\ True) /\ _currently _itel) /\
+(exists z2 : Entity,
+((_factory z2 /\
+(exists z1 : Entity,
+(z1 = _birmingham /\ True) /\ _in z2 _birmingham)) /\ True) /\
+_have _itel z2))
+
+
+Toplevel input, characters 410-414:
+> Theorem t1: (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (_factory z2) (exists z1, (and (and (z1 = _birmingham) True) (_in z2 _birmingham)))) True) (_have _itel z2))))) -> (not (exists x, (and (and (and (x = _itel) True) (_currently _itel)) (exists z2, (and (and (and (_factory z2) (exists z1, (and (and (z1 = _birmingham) True) (_in z2 _birmingham)))) True) (_have _itel z2)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _birmingham is declared
+
+Coq < _currently is declared
+
+Coq < _factory is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _itel is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _itel /\ True) /\
+(exists z2 : Entity,
+((_factory z2 /\
+(exists z1 : Entity,
+(z1 = _birmingham /\ True) /\ _in z2 _birmingham)) /\ True) /\
+_have _itel z2)) ->
+exists x : Entity,
+((x = _itel /\ True) /\ _currently _itel) /\
+(exists z2 : Entity,
+((_factory z2 /\
+(exists z1 : Entity,
+(z1 = _birmingham /\ True) /\ _in z2 _birmingham)) /\ True) /\
+_have _itel z2)
+
+1 goal
+
+H1 : True
+x0 : Entity
+H2 : _have _itel x0
+H3 : True
+H0 : _factory x0
+H5 : _in x0 _birmingham
+H6 : True
+============================
+_currently _itel
+
+Toplevel input, characters 420-432:
+> Theorem t1: (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (_factory z2) (exists z1, (and (and (z1 = _birmingham) True) (_in z2 _birmingham)))) True) (_have _itel z2))))) -> (exists x, (and (and (and (x = _itel) True) (_currently _itel)) (exists z2, (and (and (and (_factory z2) (exists z1, (and (and (z1 = _birmingham) True) (_in z2 _birmingham)))) True) (_have _itel z2))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                     ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 434-438:
+> Theorem t1: (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (_factory z2) (exists z1, (and (and (z1 = _birmingham) True) (_in z2 _birmingham)))) True) (_have _itel z2))))) -> (exists x, (and (and (and (x = _itel) True) (_currently _itel)) (exists z2, (and (and (and (_factory z2) (exists z1, (and (and (z1 = _birmingham) True) (_in z2 _birmingham)))) True) (_have _itel z2))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

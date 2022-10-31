@@ -1,0 +1,761 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _business is declared
+
+Coq < _chain is declared
+
+Coq < _for is declared
+
+Coq < _in is declared
+
+Coq < _of is declared
+
+Coq < _own is declared
+
+Coq < _smith is declared
+
+Coq < _two is declared
+
+Coq < _year is declared
+
+Coq < 1 goal
+
+============================
+_in (exists x : Entity, ((_two x /\ _year x) /\ True) /\ True)
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_chain z2 /\
+(exists z1 : Entity, (_business z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _own _smith z2)) /\
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_chain z2 /\
+(exists z1 : Entity, (_business z1 /\ True) /\ _of z2 z1)) /\ True) /\
+_own _smith z2)) ->
+exists x : Entity,
+(x = _smith /\ True) /\
+(exists z3 : Entity,
+(((_two z3 /\ _year z3) /\ True) /\ _for _smith z3) /\
+(exists z2 : Entity,
+((_chain z2 /\
+(exists z1 : Entity, (_business z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _own _smith z2))
+
+
+Toplevel input, characters 666-670:
+> Theorem t1: (and (_in (exists x, (and (and (and (_two x) (_year x)) True) True)) (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_chain z2) (exists z1, (and (and (_business z1) True) (_of z2 z1)))) True) (_own _smith z2)))))) (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_chain z2) (exists z1, (and (and (_business z1) True) (_of z2 z1)))) True) (_own _smith z2)))))) -> (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_two z3) (_year z3)) True) (_for _smith z3)) (exists z2, (and (and (and (_chain z2) (exists z1, (and (and (_business z1) True) (_of z2 z1)))) True) (_own _smith z2))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _business is declared
+
+Coq < _chain is declared
+
+Coq < _for is declared
+
+Coq < _in is declared
+
+Coq < _of is declared
+
+Coq < _own is declared
+
+Coq < _smith is declared
+
+Coq < _two is declared
+
+Coq < _year is declared
+
+Coq < 1 goal
+
+============================
+_in (exists x : Entity, ((_two x /\ _year x) /\ True) /\ True)
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_chain z2 /\
+(exists z1 : Entity, (_business z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _own _smith z2)) /\
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_chain z2 /\
+(exists z1 : Entity, (_business z1 /\ True) /\ _of z2 z1)) /\ True) /\
+_own _smith z2)) ->
+~
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z3 : Entity,
+(((_two z3 /\ _year z3) /\ True) /\ _for _smith z3) /\
+(exists z2 : Entity,
+((_chain z2 /\
+(exists z1 : Entity, (_business z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _own _smith z2)))
+
+
+Toplevel input, characters 672-676:
+> Theorem t1: (and (_in (exists x, (and (and (and (_two x) (_year x)) True) True)) (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_chain z2) (exists z1, (and (and (_business z1) True) (_of z2 z1)))) True) (_own _smith z2)))))) (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_chain z2) (exists z1, (and (and (_business z1) True) (_of z2 z1)))) True) (_own _smith z2)))))) -> (not (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_two z3) (_year z3)) True) (_for _smith z3)) (exists z2, (and (and (and (_chain z2) (exists z1, (and (and (_business z1) True) (_of z2 z1)))) True) (_own _smith z2)))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _business is declared
+
+Coq < _chain is declared
+
+Coq < _for is declared
+
+Coq < _in is declared
+
+Coq < _of is declared
+
+Coq < _own is declared
+
+Coq < _smith is declared
+
+Coq < _two is declared
+
+Coq < _year is declared
+
+Coq < 1 goal
+
+============================
+_in (exists x : Entity, ((_two x /\ _year x) /\ True) /\ True)
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_chain z2 /\
+(exists z1 : Entity, (_business z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _own _smith z2)) /\
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_chain z2 /\
+(exists z1 : Entity, (_business z1 /\ True) /\ _of z2 z1)) /\ True) /\
+_own _smith z2)) ->
+exists x : Entity,
+(x = _smith /\ True) /\
+(exists z3 : Entity,
+(((_two z3 /\ _year z3) /\ True) /\ _for _smith z3) /\
+(exists z2 : Entity,
+((_chain z2 /\
+(exists z1 : Entity, (_business z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _own _smith z2))
+
+3 focused goals (shelved: 1)
+
+H0 : _in (exists x : Entity, ((_two x /\ _year x) /\ True) /\ True)
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_chain z2 /\
+(exists z1 : Entity, (_business z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _own _smith z2))
+H2 : True
+x0 : Entity
+H3 : _own _smith x0
+H4 : True
+H1 : _chain x0
+x1 : Entity
+H6 : _of x0 x1
+H5 : _business x1
+H7 : True
+============================
+_two ?z3
+
+goal 2 is:
+_year ?z3
+goal 3 is:
+_for _smith ?z3
+
+Toplevel input, characters 682-694:
+> Theorem t1: (and (_in (exists x, (and (and (and (_two x) (_year x)) True) True)) (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_chain z2) (exists z1, (and (and (_business z1) True) (_of z2 z1)))) True) (_own _smith z2)))))) (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_chain z2) (exists z1, (and (and (_business z1) True) (_of z2 z1)))) True) (_own _smith z2)))))) -> (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_two z3) (_year z3)) True) (_for _smith z3)) (exists z2, (and (and (and (_chain z2) (exists z1, (and (and (_business z1) True) (_of z2 z1)))) True) (_own _smith z2))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 696-700:
+> Theorem t1: (and (_in (exists x, (and (and (and (_two x) (_year x)) True) True)) (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_chain z2) (exists z1, (and (and (_business z1) True) (_of z2 z1)))) True) (_own _smith z2)))))) (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_chain z2) (exists z1, (and (and (_business z1) True) (_of z2 z1)))) True) (_own _smith z2)))))) -> (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_two z3) (_year z3)) True) (_for _smith z3)) (exists z2, (and (and (and (_chain z2) (exists z1, (and (and (_business z1) True) (_of z2 z1)))) True) (_own _smith z2))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _business is declared
+
+Coq < _chain is declared
+
+Coq < _for is declared
+
+Coq < _in is declared
+
+Coq < _of is declared
+
+Coq < _own is declared
+
+Coq < _smith is declared
+
+Coq < _two is declared
+
+Coq < _year is declared
+
+Coq < 1 goal
+
+============================
+_in (exists x : Entity, ((_two x /\ _year x) /\ True) /\ True)
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_chain z2 /\
+(exists z1 : Entity, (_business z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _own _smith z2)) /\
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_chain z2 /\
+(exists z1 : Entity, (_business z1 /\ True) /\ _of z2 z1)) /\ True) /\
+_own _smith z2)) ->
+exists x : Entity,
+(x = _smith /\ True) /\
+(exists z3 : Entity,
+(((_two z3 /\ _year z3) /\ True) /\ _for _smith z3) /\
+(exists z2 : Entity,
+((_chain z2 /\
+(exists z1 : Entity, (_business z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _own _smith z2))
+
+
+Toplevel input, characters 666-670:
+> Theorem t1: (and (_in (exists x, (and (and (and (_two x) (_year x)) True) True)) (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_chain z2) (exists z1, (and (and (_business z1) True) (_of z2 z1)))) True) (_own _smith z2)))))) (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_chain z2) (exists z1, (and (and (_business z1) True) (_of z2 z1)))) True) (_own _smith z2)))))) -> (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_two z3) (_year z3)) True) (_for _smith z3)) (exists z2, (and (and (and (_chain z2) (exists z1, (and (and (_business z1) True) (_of z2 z1)))) True) (_own _smith z2))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _business is declared
+
+Coq < _chain is declared
+
+Coq < _for is declared
+
+Coq < _in is declared
+
+Coq < _of is declared
+
+Coq < _own is declared
+
+Coq < _smith is declared
+
+Coq < _two is declared
+
+Coq < _year is declared
+
+Coq < 1 goal
+
+============================
+_in (exists x : Entity, ((_two x /\ _year x) /\ True) /\ True)
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_chain z2 /\
+(exists z1 : Entity, (_business z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _own _smith z2)) /\
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_chain z2 /\
+(exists z1 : Entity, (_business z1 /\ True) /\ _of z2 z1)) /\ True) /\
+_own _smith z2)) ->
+~
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z3 : Entity,
+(((_two z3 /\ _year z3) /\ True) /\ _for _smith z3) /\
+(exists z2 : Entity,
+((_chain z2 /\
+(exists z1 : Entity, (_business z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _own _smith z2)))
+
+1 goal
+
+H1 : _in (exists x : Entity, ((_two x /\ _year x) /\ True) /\ True)
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_chain z2 /\
+(exists z1 : Entity, (_business z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _own _smith z2))
+H3 : True
+x0 : Entity
+H4 : _own _smith x0
+H5 : True
+H2 : _chain x0
+x1 : Entity
+H7 : _of x0 x1
+H6 : _business x1
+H8, H10 : True
+x3 : Entity
+H12 : _for _smith x3
+H13 : True
+H9 : _two x3
+H14 : _year x3
+x4 : Entity
+H15 : _own _smith x4
+H16 : True
+H11 : _chain x4
+x5 : Entity
+H18 : _of x4 x5
+H17 : _business x5
+H19 : True
+============================
+False
+
+Toplevel input, characters 688-700:
+> Theorem t1: (and (_in (exists x, (and (and (and (_two x) (_year x)) True) True)) (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_chain z2) (exists z1, (and (and (_business z1) True) (_of z2 z1)))) True) (_own _smith z2)))))) (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_chain z2) (exists z1, (and (and (_business z1) True) (_of z2 z1)))) True) (_own _smith z2)))))) -> (not (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_two z3) (_year z3)) True) (_for _smith z3)) (exists z2, (and (and (and (_chain z2) (exists z1, (and (and (_business z1) True) (_of z2 z1)))) True) (_own _smith z2)))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 702-706:
+> Theorem t1: (and (_in (exists x, (and (and (and (_two x) (_year x)) True) True)) (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_chain z2) (exists z1, (and (and (_business z1) True) (_of z2 z1)))) True) (_own _smith z2)))))) (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_chain z2) (exists z1, (and (and (_business z1) True) (_of z2 z1)))) True) (_own _smith z2)))))) -> (not (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_two z3) (_year z3)) True) (_for _smith z3)) (exists z2, (and (and (and (_chain z2) (exists z1, (and (and (_business z1) True) (_of z2 z1)))) True) (_own _smith z2)))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _business is declared
+
+Coq < _chain is declared
+
+Coq < _for is declared
+
+Coq < _in is declared
+
+Coq < _of is declared
+
+Coq < _own is declared
+
+Coq < _smith is declared
+
+Coq < _two is declared
+
+Coq < _year is declared
+
+Coq < 1 goal
+
+============================
+_in (exists x : Entity, ((_two x /\ _year x) /\ True) /\ True)
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_chain z2 /\
+(exists z1 : Entity, (_business z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _own _smith z2)) /\
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_chain z2 /\
+(exists z1 : Entity, (_business z1 /\ True) /\ _of z2 z1)) /\ True) /\
+_own _smith z2)) ->
+~
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z3 : Entity,
+(((_two z3 /\ _year z3) /\ True) /\ _for _smith z3) /\
+(exists z2 : Entity,
+((_chain z2 /\
+(exists z1 : Entity, (_business z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _own _smith z2)))
+
+
+Toplevel input, characters 672-676:
+> Theorem t1: (and (_in (exists x, (and (and (and (_two x) (_year x)) True) True)) (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_chain z2) (exists z1, (and (and (_business z1) True) (_of z2 z1)))) True) (_own _smith z2)))))) (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_chain z2) (exists z1, (and (and (_business z1) True) (_of z2 z1)))) True) (_own _smith z2)))))) -> (not (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_two z3) (_year z3)) True) (_for _smith z3)) (exists z2, (and (and (and (_chain z2) (exists z1, (and (and (_business z1) True) (_of z2 z1)))) True) (_own _smith z2)))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _business is declared
+
+Coq < _chain is declared
+
+Coq < _for is declared
+
+Coq < _in is declared
+
+Coq < _of is declared
+
+Coq < _own is declared
+
+Coq < _smith is declared
+
+Coq < _two is declared
+
+Coq < _year is declared
+
+Coq < 1 goal
+
+============================
+_in (exists x : Entity, ((_two x /\ _year x) /\ True) /\ True)
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_chain z2 /\
+(exists z1 : Entity, (_business z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _own _smith z2)) /\
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_chain z2 /\
+(exists z1 : Entity, (_business z1 /\ True) /\ _of z2 z1)) /\ True) /\
+_own _smith z2)) ->
+exists x : Entity,
+(x = _smith /\ True) /\
+(exists z3 : Entity,
+(((_two z3 /\ _year z3) /\ True) /\ _for _smith z3) /\
+(exists z2 : Entity,
+((_chain z2 /\
+(exists z1 : Entity, (_business z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _own _smith z2))
+
+3 focused goals (shelved: 1)
+
+H0 : _in (exists x : Entity, ((_two x /\ _year x) /\ True) /\ True)
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_chain z2 /\
+(exists z1 : Entity, (_business z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _own _smith z2))
+H2 : True
+x0 : Entity
+H3 : _own _smith x0
+H4 : True
+H1 : _chain x0
+x1 : Entity
+H6 : _of x0 x1
+H5 : _business x1
+H7 : True
+============================
+_two ?z3
+
+goal 2 is:
+_year ?z3
+goal 3 is:
+_for _smith ?z3
+
+Toplevel input, characters 682-694:
+> Theorem t1: (and (_in (exists x, (and (and (and (_two x) (_year x)) True) True)) (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_chain z2) (exists z1, (and (and (_business z1) True) (_of z2 z1)))) True) (_own _smith z2)))))) (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_chain z2) (exists z1, (and (and (_business z1) True) (_of z2 z1)))) True) (_own _smith z2)))))) -> (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_two z3) (_year z3)) True) (_for _smith z3)) (exists z2, (and (and (and (_chain z2) (exists z1, (and (and (_business z1) True) (_of z2 z1)))) True) (_own _smith z2))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 696-700:
+> Theorem t1: (and (_in (exists x, (and (and (and (_two x) (_year x)) True) True)) (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_chain z2) (exists z1, (and (and (_business z1) True) (_of z2 z1)))) True) (_own _smith z2)))))) (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_chain z2) (exists z1, (and (and (_business z1) True) (_of z2 z1)))) True) (_own _smith z2)))))) -> (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_two z3) (_year z3)) True) (_for _smith z3)) (exists z2, (and (and (and (_chain z2) (exists z1, (and (and (_business z1) True) (_of z2 z1)))) True) (_own _smith z2))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _business is declared
+
+Coq < _chain is declared
+
+Coq < _for is declared
+
+Coq < _in is declared
+
+Coq < _of is declared
+
+Coq < _own is declared
+
+Coq < _smith is declared
+
+Coq < _two is declared
+
+Coq < _year is declared
+
+Coq < 1 goal
+
+============================
+_in (exists x : Entity, ((_two x /\ _year x) /\ True) /\ True)
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_chain z2 /\
+(exists z1 : Entity, (_business z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _own _smith z2)) /\
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_chain z2 /\
+(exists z1 : Entity, (_business z1 /\ True) /\ _of z2 z1)) /\ True) /\
+_own _smith z2)) ->
+~
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z3 : Entity,
+(((_two z3 /\ _year z3) /\ True) /\ _for _smith z3) /\
+(exists z2 : Entity,
+((_chain z2 /\
+(exists z1 : Entity, (_business z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _own _smith z2)))
+
+1 goal
+
+H1 : _in (exists x : Entity, ((_two x /\ _year x) /\ True) /\ True)
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_chain z2 /\
+(exists z1 : Entity, (_business z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _own _smith z2))
+H3 : True
+x0 : Entity
+H4 : _own _smith x0
+H5 : True
+H2 : _chain x0
+x1 : Entity
+H7 : _of x0 x1
+H6 : _business x1
+H8, H10 : True
+x3 : Entity
+H12 : _for _smith x3
+H13 : True
+H9 : _two x3
+H14 : _year x3
+x4 : Entity
+H15 : _own _smith x4
+H16 : True
+H11 : _chain x4
+x5 : Entity
+H18 : _of x4 x5
+H17 : _business x5
+H19 : True
+============================
+False
+
+Toplevel input, characters 688-700:
+> Theorem t1: (and (_in (exists x, (and (and (and (_two x) (_year x)) True) True)) (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_chain z2) (exists z1, (and (and (_business z1) True) (_of z2 z1)))) True) (_own _smith z2)))))) (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_chain z2) (exists z1, (and (and (_business z1) True) (_of z2 z1)))) True) (_own _smith z2)))))) -> (not (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_two z3) (_year z3)) True) (_for _smith z3)) (exists z2, (and (and (and (_chain z2) (exists z1, (and (and (_business z1) True) (_of z2 z1)))) True) (_own _smith z2)))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 702-706:
+> Theorem t1: (and (_in (exists x, (and (and (and (_two x) (_year x)) True) True)) (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_chain z2) (exists z1, (and (and (_business z1) True) (_of z2 z1)))) True) (_own _smith z2)))))) (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_chain z2) (exists z1, (and (and (_business z1) True) (_of z2 z1)))) True) (_own _smith z2)))))) -> (not (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_two z3) (_year z3)) True) (_for _smith z3)) (exists z2, (and (and (and (_chain z2) (exists z1, (and (and (_business z1) True) (_of z2 z1)))) True) (_own _smith z2)))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _business is declared
+
+Coq < _chain is declared
+
+Coq < _for is declared
+
+Coq < _in is declared
+
+Coq < _of is declared
+
+Coq < _own is declared
+
+Coq < _smith is declared
+
+Coq < _two is declared
+
+Coq < _year is declared
+
+Coq < 1 goal
+
+============================
+_in (exists x : Entity, ((_two x /\ _year x) /\ True) /\ True)
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_chain z2 /\
+(exists z1 : Entity, (_business z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _own _smith z2)) /\
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_chain z2 /\
+(exists z1 : Entity, (_business z1 /\ True) /\ _of z2 z1)) /\ True) /\
+_own _smith z2)) ->
+exists x : Entity,
+(x = _smith /\ True) /\
+(exists z3 : Entity,
+(((_two z3 /\ _year z3) /\ True) /\ _for _smith z3) /\
+(exists z2 : Entity,
+((_chain z2 /\
+(exists z1 : Entity, (_business z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _own _smith z2))
+
+3 focused goals (shelved: 1)
+
+H0 : _in (exists x : Entity, ((_two x /\ _year x) /\ True) /\ True)
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_chain z2 /\
+(exists z1 : Entity, (_business z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _own _smith z2))
+H2 : True
+x0 : Entity
+H3 : _own _smith x0
+H4 : True
+H1 : _chain x0
+x1 : Entity
+H6 : _of x0 x1
+H5 : _business x1
+H7 : True
+============================
+_two ?z3
+
+goal 2 is:
+_year ?z3
+goal 3 is:
+_for _smith ?z3
+
+Toplevel input, characters 682-694:
+> Theorem t1: (and (_in (exists x, (and (and (and (_two x) (_year x)) True) True)) (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_chain z2) (exists z1, (and (and (_business z1) True) (_of z2 z1)))) True) (_own _smith z2)))))) (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_chain z2) (exists z1, (and (and (_business z1) True) (_of z2 z1)))) True) (_own _smith z2)))))) -> (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_two z3) (_year z3)) True) (_for _smith z3)) (exists z2, (and (and (and (_chain z2) (exists z1, (and (and (_business z1) True) (_of z2 z1)))) True) (_own _smith z2))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 696-700:
+> Theorem t1: (and (_in (exists x, (and (and (and (_two x) (_year x)) True) True)) (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_chain z2) (exists z1, (and (and (_business z1) True) (_of z2 z1)))) True) (_own _smith z2)))))) (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_chain z2) (exists z1, (and (and (_business z1) True) (_of z2 z1)))) True) (_own _smith z2)))))) -> (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_two z3) (_year z3)) True) (_for _smith z3)) (exists z2, (and (and (and (_chain z2) (exists z1, (and (and (_business z1) True) (_of z2 z1)))) True) (_own _smith z2))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _business is declared
+
+Coq < _chain is declared
+
+Coq < _for is declared
+
+Coq < _in is declared
+
+Coq < _of is declared
+
+Coq < _own is declared
+
+Coq < _smith is declared
+
+Coq < _two is declared
+
+Coq < _year is declared
+
+Coq < 1 goal
+
+============================
+_in (exists x : Entity, ((_two x /\ _year x) /\ True) /\ True)
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_chain z2 /\
+(exists z1 : Entity, (_business z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _own _smith z2)) /\
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_chain z2 /\
+(exists z1 : Entity, (_business z1 /\ True) /\ _of z2 z1)) /\ True) /\
+_own _smith z2)) ->
+~
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z3 : Entity,
+(((_two z3 /\ _year z3) /\ True) /\ _for _smith z3) /\
+(exists z2 : Entity,
+((_chain z2 /\
+(exists z1 : Entity, (_business z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _own _smith z2)))
+
+1 goal
+
+H1 : _in (exists x : Entity, ((_two x /\ _year x) /\ True) /\ True)
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_chain z2 /\
+(exists z1 : Entity, (_business z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _own _smith z2))
+H3 : True
+x0 : Entity
+H4 : _own _smith x0
+H5 : True
+H2 : _chain x0
+x1 : Entity
+H7 : _of x0 x1
+H6 : _business x1
+H8, H10 : True
+x3 : Entity
+H12 : _for _smith x3
+H13 : True
+H9 : _two x3
+H14 : _year x3
+x4 : Entity
+H15 : _own _smith x4
+H16 : True
+H11 : _chain x4
+x5 : Entity
+H18 : _of x4 x5
+H17 : _business x5
+H19 : True
+============================
+False
+
+Toplevel input, characters 688-700:
+> Theorem t1: (and (_in (exists x, (and (and (and (_two x) (_year x)) True) True)) (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_chain z2) (exists z1, (and (and (_business z1) True) (_of z2 z1)))) True) (_own _smith z2)))))) (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_chain z2) (exists z1, (and (and (_business z1) True) (_of z2 z1)))) True) (_own _smith z2)))))) -> (not (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_two z3) (_year z3)) True) (_for _smith z3)) (exists z2, (and (and (and (_chain z2) (exists z1, (and (and (_business z1) True) (_of z2 z1)))) True) (_own _smith z2)))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 702-706:
+> Theorem t1: (and (_in (exists x, (and (and (and (_two x) (_year x)) True) True)) (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_chain z2) (exists z1, (and (and (_business z1) True) (_of z2 z1)))) True) (_own _smith z2)))))) (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_chain z2) (exists z1, (and (and (_business z1) True) (_of z2 z1)))) True) (_own _smith z2)))))) -> (not (exists x, (and (and (x = _smith) True) (exists z3, (and (and (and (and (_two z3) (_year z3)) True) (_for _smith z3)) (exists z2, (and (and (and (_chain z2) (exists z1, (and (and (_business z1) True) (_of z2 z1)))) True) (_own _smith z2)))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

@@ -1,0 +1,139 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _authority is declared
+
+Coq < _fat is declared
+
+Coq < _law is declared
+
+Coq < _lecturer is declared
+
+Coq < _legal is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_legal x /\ _authority x ->
+True -> exists z1 : Entity, ((_law z1 /\ _lecturer z1) /\ True) /\ x = z1) ->
+(forall x : Entity,
+_law x /\ _lecturer x ->
+True ->
+exists z1 : Entity, ((_legal z1 /\ _authority z1) /\ True) /\ x = z1) ->
+forall x : Entity,
+(_fat x /\ _legal x) /\ _authority x ->
+True ->
+exists z1 : Entity,
+(((_fat z1 /\ _law z1) /\ _lecturer z1) /\ True) /\ x = z1
+
+No more goals.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _authority is declared
+
+Coq < _fat is declared
+
+Coq < _law is declared
+
+Coq < _lecturer is declared
+
+Coq < _legal is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_legal x /\ _authority x ->
+True -> exists z1 : Entity, ((_law z1 /\ _lecturer z1) /\ True) /\ x = z1) ->
+(forall x : Entity,
+_law x /\ _lecturer x ->
+True ->
+exists z1 : Entity, ((_legal z1 /\ _authority z1) /\ True) /\ x = z1) ->
+~
+(forall x : Entity,
+(_fat x /\ _legal x) /\ _authority x ->
+True ->
+exists z1 : Entity,
+(((_fat z1 /\ _law z1) /\ _lecturer z1) /\ True) /\ x = z1)
+
+
+Toplevel input, characters 450-454:
+> Theorem t1: (forall x, ((and (_legal x) (_authority x)) -> (True -> (exists z1, (and (and (and (_law z1) (_lecturer z1)) True) (x = z1)))))) -> (forall x, ((and (_law x) (_lecturer x)) -> (True -> (exists z1, (and (and (and (_legal z1) (_authority z1)) True) (x = z1)))))) -> (not (forall x, ((and (and (_fat x) (_legal x)) (_authority x)) -> (True -> (exists z1, (and (and (and (and (_fat z1) (_law z1)) (_lecturer z1)) True) (x = z1))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _authority is declared
+
+Coq < _fat is declared
+
+Coq < _law is declared
+
+Coq < _lecturer is declared
+
+Coq < _legal is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_legal x /\ _authority x ->
+True -> exists z1 : Entity, ((_law z1 /\ _lecturer z1) /\ True) /\ x = z1) ->
+(forall x : Entity,
+_law x /\ _lecturer x ->
+True ->
+exists z1 : Entity, ((_legal z1 /\ _authority z1) /\ True) /\ x = z1) ->
+forall x : Entity,
+(_fat x /\ _legal x) /\ _authority x ->
+True ->
+exists z1 : Entity,
+(((_fat z1 /\ _law z1) /\ _lecturer z1) /\ True) /\ x = z1
+
+2 goals
+
+H : forall x : Entity,
+_legal x /\ _authority x ->
+True ->
+exists z1 : Entity, ((_law z1 /\ _lecturer z1) /\ True) /\ x = z1
+H0 : forall x : Entity,
+_law x /\ _lecturer x ->
+True ->
+exists z1 : Entity, ((_legal z1 /\ _authority z1) /\ True) /\ x = z1
+x : Entity
+H2 : True
+H4 : _authority x
+H1 : _fat x
+H5 : _legal x
+============================
+_law x
+
+goal 2 is:
+_lecturer x
+
+Toplevel input, characters 460-472:
+> Theorem t1: (forall x, ((and (_legal x) (_authority x)) -> (True -> (exists z1, (and (and (and (_law z1) (_lecturer z1)) True) (x = z1)))))) -> (forall x, ((and (_law x) (_lecturer x)) -> (True -> (exists z1, (and (and (and (_legal z1) (_authority z1)) True) (x = z1)))))) -> (forall x, ((and (and (_fat x) (_legal x)) (_authority x)) -> (True -> (exists z1, (and (and (and (and (_fat z1) (_law z1)) (_lecturer z1)) True) (x = z1)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 474-478:
+> Theorem t1: (forall x, ((and (_legal x) (_authority x)) -> (True -> (exists z1, (and (and (and (_law z1) (_lecturer z1)) True) (x = z1)))))) -> (forall x, ((and (_law x) (_lecturer x)) -> (True -> (exists z1, (and (and (and (_legal z1) (_authority z1)) True) (x = z1)))))) -> (forall x, ((and (and (_fat x) (_legal x)) (_authority x)) -> (True -> (exists z1, (and (and (and (and (_fat z1) (_law z1)) (_lecturer z1)) True) (x = z1)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

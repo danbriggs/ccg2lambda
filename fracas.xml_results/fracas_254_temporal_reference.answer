@@ -1,0 +1,597 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1992 is declared
+
+Coq < _1993 is declared
+
+Coq < _1996 is declared
+
+Coq < _expand is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _itel is declared
+
+Coq < _now is declared
+
+Coq < _since is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _itel /\ True) /\ _have _itel) /\
+(exists z1 : Entity,
+((_1992 z1 /\ True) /\ _since _itel z1) /\ _expand _itel)) ->
+(exists x : Entity,
+(True /\ _now x) /\ (exists z2 : Entity, (_1996 z2 /\ True) /\ x = z2)) ->
+exists x : Entity,
+(x = _itel /\ True) /\
+(exists z1 : Entity,
+((_1993 z1 /\ True) /\ _in _itel z1) /\ _expand _itel)
+
+
+Toplevel input, characters 375-379:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (exists z1, (and (and (and (_1992 z1) True) (_since _itel z1)) (_expand _itel))))) -> (exists x, (and (and True (_now x)) (exists z2, (and (and (_1996 z2) True) (x = z2))))) -> (exists x, (and (and (x = _itel) True) (exists z1, (and (and (and (_1993 z1) True) (_in _itel z1)) (_expand _itel))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                        ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1992 is declared
+
+Coq < _1993 is declared
+
+Coq < _1996 is declared
+
+Coq < _expand is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _itel is declared
+
+Coq < _now is declared
+
+Coq < _since is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _itel /\ True) /\ _have _itel) /\
+(exists z1 : Entity,
+((_1992 z1 /\ True) /\ _since _itel z1) /\ _expand _itel)) ->
+(exists x : Entity,
+(True /\ _now x) /\ (exists z2 : Entity, (_1996 z2 /\ True) /\ x = z2)) ->
+~
+(exists x : Entity,
+(x = _itel /\ True) /\
+(exists z1 : Entity,
+((_1993 z1 /\ True) /\ _in _itel z1) /\ _expand _itel))
+
+
+Toplevel input, characters 381-385:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (exists z1, (and (and (and (_1992 z1) True) (_since _itel z1)) (_expand _itel))))) -> (exists x, (and (and True (_now x)) (exists z2, (and (and (_1996 z2) True) (x = z2))))) -> (not (exists x, (and (and (x = _itel) True) (exists z1, (and (and (and (_1993 z1) True) (_in _itel z1)) (_expand _itel)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                              ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1992 is declared
+
+Coq < _1993 is declared
+
+Coq < _1996 is declared
+
+Coq < _expand is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _itel is declared
+
+Coq < _now is declared
+
+Coq < _since is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _itel /\ True) /\ _have _itel) /\
+(exists z1 : Entity,
+((_1992 z1 /\ True) /\ _since _itel z1) /\ _expand _itel)) ->
+(exists x : Entity,
+(True /\ _now x) /\ (exists z2 : Entity, (_1996 z2 /\ True) /\ x = z2)) ->
+exists x : Entity,
+(x = _itel /\ True) /\
+(exists z1 : Entity,
+((_1993 z1 /\ True) /\ _in _itel z1) /\ _expand _itel)
+
+2 focused goals (shelved: 1)
+
+H0 : True
+x0 : Entity
+H2 : _now x0
+H1 : _1996 x0
+H4 : True
+H6 : _have _itel
+H7 : True
+x2 : Entity
+H8 : _expand _itel
+H9 : _since _itel x2
+H5 : _1992 x2
+H10 : True
+============================
+_1993 ?z1
+
+goal 2 is:
+_in _itel ?z1
+
+Toplevel input, characters 391-403:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (exists z1, (and (and (and (_1992 z1) True) (_since _itel z1)) (_expand _itel))))) -> (exists x, (and (and True (_now x)) (exists z2, (and (and (_1996 z2) True) (x = z2))))) -> (exists x, (and (and (x = _itel) True) (exists z1, (and (and (and (_1993 z1) True) (_in _itel z1)) (_expand _itel))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 405-409:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (exists z1, (and (and (and (_1992 z1) True) (_since _itel z1)) (_expand _itel))))) -> (exists x, (and (and True (_now x)) (exists z2, (and (and (_1996 z2) True) (x = z2))))) -> (exists x, (and (and (x = _itel) True) (exists z1, (and (and (and (_1993 z1) True) (_in _itel z1)) (_expand _itel))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1992 is declared
+
+Coq < _1993 is declared
+
+Coq < _1996 is declared
+
+Coq < _expand is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _itel is declared
+
+Coq < _now is declared
+
+Coq < _since is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _itel /\ True) /\ _have _itel) /\
+(exists z1 : Entity,
+((_1992 z1 /\ True) /\ _since _itel z1) /\ _expand _itel)) ->
+(exists x : Entity,
+(True /\ _now x) /\ (exists z2 : Entity, (_1996 z2 /\ True) /\ x = z2)) ->
+exists x : Entity,
+(x = _itel /\ True) /\
+(exists z1 : Entity,
+((_1993 z1 /\ True) /\ _in _itel z1) /\ _expand _itel)
+
+
+Toplevel input, characters 375-379:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (exists z1, (and (and (and (_1992 z1) True) (_since _itel z1)) (_expand _itel))))) -> (exists x, (and (and True (_now x)) (exists z2, (and (and (_1996 z2) True) (x = z2))))) -> (exists x, (and (and (x = _itel) True) (exists z1, (and (and (and (_1993 z1) True) (_in _itel z1)) (_expand _itel))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                        ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1992 is declared
+
+Coq < _1993 is declared
+
+Coq < _1996 is declared
+
+Coq < _expand is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _itel is declared
+
+Coq < _now is declared
+
+Coq < _since is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _itel /\ True) /\ _have _itel) /\
+(exists z1 : Entity,
+((_1992 z1 /\ True) /\ _since _itel z1) /\ _expand _itel)) ->
+(exists x : Entity,
+(True /\ _now x) /\ (exists z2 : Entity, (_1996 z2 /\ True) /\ x = z2)) ->
+~
+(exists x : Entity,
+(x = _itel /\ True) /\
+(exists z1 : Entity,
+((_1993 z1 /\ True) /\ _in _itel z1) /\ _expand _itel))
+
+1 goal
+
+H3 : True
+x0 : Entity
+H4 : _expand _itel
+H5 : _in _itel x0
+H2 : _1993 x0
+H6 : True
+H8 : _have _itel
+H9 : True
+x2 : Entity
+H10 : _expand _itel
+H11 : _since _itel x2
+H7 : _1992 x2
+H12, H0 : True
+x4 : Entity
+H14 : _now x4
+H13 : _1996 x4
+H16 : True
+============================
+False
+
+Toplevel input, characters 397-409:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (exists z1, (and (and (and (_1992 z1) True) (_since _itel z1)) (_expand _itel))))) -> (exists x, (and (and True (_now x)) (exists z2, (and (and (_1996 z2) True) (x = z2))))) -> (not (exists x, (and (and (x = _itel) True) (exists z1, (and (and (and (_1993 z1) True) (_in _itel z1)) (_expand _itel)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                              ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 411-415:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (exists z1, (and (and (and (_1992 z1) True) (_since _itel z1)) (_expand _itel))))) -> (exists x, (and (and True (_now x)) (exists z2, (and (and (_1996 z2) True) (x = z2))))) -> (not (exists x, (and (and (x = _itel) True) (exists z1, (and (and (and (_1993 z1) True) (_in _itel z1)) (_expand _itel)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                            ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1992 is declared
+
+Coq < _1993 is declared
+
+Coq < _1996 is declared
+
+Coq < _expand is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _itel is declared
+
+Coq < _now is declared
+
+Coq < _since is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _itel /\ True) /\ _have _itel) /\
+(exists z1 : Entity,
+((_1992 z1 /\ True) /\ _since _itel z1) /\ _expand _itel)) ->
+(exists x : Entity,
+(True /\ _now x) /\ (exists z2 : Entity, (_1996 z2 /\ True) /\ x = z2)) ->
+~
+(exists x : Entity,
+(x = _itel /\ True) /\
+(exists z1 : Entity,
+((_1993 z1 /\ True) /\ _in _itel z1) /\ _expand _itel))
+
+
+Toplevel input, characters 381-385:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (exists z1, (and (and (and (_1992 z1) True) (_since _itel z1)) (_expand _itel))))) -> (exists x, (and (and True (_now x)) (exists z2, (and (and (_1996 z2) True) (x = z2))))) -> (not (exists x, (and (and (x = _itel) True) (exists z1, (and (and (and (_1993 z1) True) (_in _itel z1)) (_expand _itel)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                              ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1992 is declared
+
+Coq < _1993 is declared
+
+Coq < _1996 is declared
+
+Coq < _expand is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _itel is declared
+
+Coq < _now is declared
+
+Coq < _since is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _itel /\ True) /\ _have _itel) /\
+(exists z1 : Entity,
+((_1992 z1 /\ True) /\ _since _itel z1) /\ _expand _itel)) ->
+(exists x : Entity,
+(True /\ _now x) /\ (exists z2 : Entity, (_1996 z2 /\ True) /\ x = z2)) ->
+exists x : Entity,
+(x = _itel /\ True) /\
+(exists z1 : Entity,
+((_1993 z1 /\ True) /\ _in _itel z1) /\ _expand _itel)
+
+2 focused goals (shelved: 1)
+
+H0 : True
+x0 : Entity
+H2 : _now x0
+H1 : _1996 x0
+H4 : True
+H6 : _have _itel
+H7 : True
+x2 : Entity
+H8 : _expand _itel
+H9 : _since _itel x2
+H5 : _1992 x2
+H10 : True
+============================
+_1993 ?z1
+
+goal 2 is:
+_in _itel ?z1
+
+Toplevel input, characters 391-403:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (exists z1, (and (and (and (_1992 z1) True) (_since _itel z1)) (_expand _itel))))) -> (exists x, (and (and True (_now x)) (exists z2, (and (and (_1996 z2) True) (x = z2))))) -> (exists x, (and (and (x = _itel) True) (exists z1, (and (and (and (_1993 z1) True) (_in _itel z1)) (_expand _itel))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 405-409:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (exists z1, (and (and (and (_1992 z1) True) (_since _itel z1)) (_expand _itel))))) -> (exists x, (and (and True (_now x)) (exists z2, (and (and (_1996 z2) True) (x = z2))))) -> (exists x, (and (and (x = _itel) True) (exists z1, (and (and (and (_1993 z1) True) (_in _itel z1)) (_expand _itel))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1992 is declared
+
+Coq < _1993 is declared
+
+Coq < _1996 is declared
+
+Coq < _expand is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _itel is declared
+
+Coq < _now is declared
+
+Coq < _since is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _itel /\ True) /\ _have _itel) /\
+(exists z1 : Entity,
+((_1992 z1 /\ True) /\ _since _itel z1) /\ _expand _itel)) ->
+(exists x : Entity,
+(True /\ _now x) /\ (exists z2 : Entity, (_1996 z2 /\ True) /\ x = z2)) ->
+~
+(exists x : Entity,
+(x = _itel /\ True) /\
+(exists z1 : Entity,
+((_1993 z1 /\ True) /\ _in _itel z1) /\ _expand _itel))
+
+1 goal
+
+H3 : True
+x0 : Entity
+H4 : _expand _itel
+H5 : _in _itel x0
+H2 : _1993 x0
+H6 : True
+H8 : _have _itel
+H9 : True
+x2 : Entity
+H10 : _expand _itel
+H11 : _since _itel x2
+H7 : _1992 x2
+H12, H0 : True
+x4 : Entity
+H14 : _now x4
+H13 : _1996 x4
+H16 : True
+============================
+False
+
+Toplevel input, characters 397-409:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (exists z1, (and (and (and (_1992 z1) True) (_since _itel z1)) (_expand _itel))))) -> (exists x, (and (and True (_now x)) (exists z2, (and (and (_1996 z2) True) (x = z2))))) -> (not (exists x, (and (and (x = _itel) True) (exists z1, (and (and (and (_1993 z1) True) (_in _itel z1)) (_expand _itel)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                              ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 411-415:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (exists z1, (and (and (and (_1992 z1) True) (_since _itel z1)) (_expand _itel))))) -> (exists x, (and (and True (_now x)) (exists z2, (and (and (_1996 z2) True) (x = z2))))) -> (not (exists x, (and (and (x = _itel) True) (exists z1, (and (and (and (_1993 z1) True) (_in _itel z1)) (_expand _itel)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                            ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1992 is declared
+
+Coq < _1993 is declared
+
+Coq < _1996 is declared
+
+Coq < _expand is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _itel is declared
+
+Coq < _now is declared
+
+Coq < _since is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _itel /\ True) /\ _have _itel) /\
+(exists z1 : Entity,
+((_1992 z1 /\ True) /\ _since _itel z1) /\ _expand _itel)) ->
+(exists x : Entity,
+(True /\ _now x) /\ (exists z2 : Entity, (_1996 z2 /\ True) /\ x = z2)) ->
+exists x : Entity,
+(x = _itel /\ True) /\
+(exists z1 : Entity,
+((_1993 z1 /\ True) /\ _in _itel z1) /\ _expand _itel)
+
+2 focused goals (shelved: 1)
+
+H0 : True
+x0 : Entity
+H2 : _now x0
+H1 : _1996 x0
+H4 : True
+H6 : _have _itel
+H7 : True
+x2 : Entity
+H8 : _expand _itel
+H9 : _since _itel x2
+H5 : _1992 x2
+H10 : True
+============================
+_1993 ?z1
+
+goal 2 is:
+_in _itel ?z1
+
+Toplevel input, characters 391-403:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (exists z1, (and (and (and (_1992 z1) True) (_since _itel z1)) (_expand _itel))))) -> (exists x, (and (and True (_now x)) (exists z2, (and (and (_1996 z2) True) (x = z2))))) -> (exists x, (and (and (x = _itel) True) (exists z1, (and (and (and (_1993 z1) True) (_in _itel z1)) (_expand _itel))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 405-409:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (exists z1, (and (and (and (_1992 z1) True) (_since _itel z1)) (_expand _itel))))) -> (exists x, (and (and True (_now x)) (exists z2, (and (and (_1996 z2) True) (x = z2))))) -> (exists x, (and (and (x = _itel) True) (exists z1, (and (and (and (_1993 z1) True) (_in _itel z1)) (_expand _itel))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1992 is declared
+
+Coq < _1993 is declared
+
+Coq < _1996 is declared
+
+Coq < _expand is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _itel is declared
+
+Coq < _now is declared
+
+Coq < _since is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _itel /\ True) /\ _have _itel) /\
+(exists z1 : Entity,
+((_1992 z1 /\ True) /\ _since _itel z1) /\ _expand _itel)) ->
+(exists x : Entity,
+(True /\ _now x) /\ (exists z2 : Entity, (_1996 z2 /\ True) /\ x = z2)) ->
+~
+(exists x : Entity,
+(x = _itel /\ True) /\
+(exists z1 : Entity,
+((_1993 z1 /\ True) /\ _in _itel z1) /\ _expand _itel))
+
+1 goal
+
+H3 : True
+x0 : Entity
+H4 : _expand _itel
+H5 : _in _itel x0
+H2 : _1993 x0
+H6 : True
+H8 : _have _itel
+H9 : True
+x2 : Entity
+H10 : _expand _itel
+H11 : _since _itel x2
+H7 : _1992 x2
+H12, H0 : True
+x4 : Entity
+H14 : _now x4
+H13 : _1996 x4
+H16 : True
+============================
+False
+
+Toplevel input, characters 397-409:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (exists z1, (and (and (and (_1992 z1) True) (_since _itel z1)) (_expand _itel))))) -> (exists x, (and (and True (_now x)) (exists z2, (and (and (_1996 z2) True) (x = z2))))) -> (not (exists x, (and (and (x = _itel) True) (exists z1, (and (and (and (_1993 z1) True) (_in _itel z1)) (_expand _itel)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                              ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 411-415:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (exists z1, (and (and (and (_1992 z1) True) (_since _itel z1)) (_expand _itel))))) -> (exists x, (and (and True (_now x)) (exists z2, (and (and (_1996 z2) True) (x = z2))))) -> (not (exists x, (and (and (x = _itel) True) (exists z1, (and (and (and (_1993 z1) True) (_in _itel z1)) (_expand _itel)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                            ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

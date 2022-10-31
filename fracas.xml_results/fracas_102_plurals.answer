@@ -1,0 +1,673 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _graduate is declared
+
+Coq < _make is declared
+
+Coq < _market is declared
+
+Coq < _poor is declared
+
+Coq < _smith is declared
+
+Coq < _stock is declared
+
+Coq < _stock_dash_market is declared
+
+Coq < _trader is declared
+
+Coq < _university is declared
+
+Coq < _will is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((_university x /\ _graduate x) /\ True) /\
+(exists z1 : Entity,
+(((_poor z1 /\ _stock_dash_market z1) /\ _trader z1) /\ True) /\
+_make x z1)) ->
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity,
+((_university z1 /\ _graduate z1) /\ True) /\ _smith = z1)) ->
+exists x : Entity,
+(x = _smith /\ True) /\
+_will
+(exists z1 : Entity,
+((((_poor z1 /\ _stock z1) /\ _market z1) /\ _trader z1) /\ True) /\
+_make _smith z1)
+
+
+Toplevel input, characters 483-487:
+> Theorem t1: (exists x, (and (and (and (_university x) (_graduate x)) True) (exists z1, (and (and (and (and (_poor z1) (_stock_dash_market z1)) (_trader z1)) True) (_make x z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_university z1) (_graduate z1)) True) (_smith = z1))))) -> (exists x, (and (and (x = _smith) True) (_will (exists z1, (and (and (and (and (and (_poor z1) (_stock z1)) (_market z1)) (_trader z1)) True) (_make _smith z1)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _graduate is declared
+
+Coq < _make is declared
+
+Coq < _market is declared
+
+Coq < _poor is declared
+
+Coq < _smith is declared
+
+Coq < _stock is declared
+
+Coq < _stock_dash_market is declared
+
+Coq < _trader is declared
+
+Coq < _university is declared
+
+Coq < _will is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((_university x /\ _graduate x) /\ True) /\
+(exists z1 : Entity,
+(((_poor z1 /\ _stock_dash_market z1) /\ _trader z1) /\ True) /\
+_make x z1)) ->
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity,
+((_university z1 /\ _graduate z1) /\ True) /\ _smith = z1)) ->
+~
+(exists x : Entity,
+(x = _smith /\ True) /\
+_will
+(exists z1 : Entity,
+((((_poor z1 /\ _stock z1) /\ _market z1) /\ _trader z1) /\ True) /\
+_make _smith z1))
+
+
+Toplevel input, characters 489-493:
+> Theorem t1: (exists x, (and (and (and (_university x) (_graduate x)) True) (exists z1, (and (and (and (and (_poor z1) (_stock_dash_market z1)) (_trader z1)) True) (_make x z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_university z1) (_graduate z1)) True) (_smith = z1))))) -> (not (exists x, (and (and (x = _smith) True) (_will (exists z1, (and (and (and (and (and (_poor z1) (_stock z1)) (_market z1)) (_trader z1)) True) (_make _smith z1))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _graduate is declared
+
+Coq < _make is declared
+
+Coq < _market is declared
+
+Coq < _poor is declared
+
+Coq < _smith is declared
+
+Coq < _stock is declared
+
+Coq < _stock_dash_market is declared
+
+Coq < _trader is declared
+
+Coq < _university is declared
+
+Coq < _will is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((_university x /\ _graduate x) /\ True) /\
+(exists z1 : Entity,
+(((_poor z1 /\ _stock_dash_market z1) /\ _trader z1) /\ True) /\
+_make x z1)) ->
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity,
+((_university z1 /\ _graduate z1) /\ True) /\ _smith = z1)) ->
+exists x : Entity,
+(x = _smith /\ True) /\
+_will
+(exists z1 : Entity,
+((((_poor z1 /\ _stock z1) /\ _market z1) /\ _trader z1) /\ True) /\
+_make _smith z1)
+
+1 goal
+
+H2, H4 : True
+H5 : _graduate _smith
+H1 : _university _smith
+x1 : Entity
+H7 : True
+H : _university x1
+H8 : _graduate x1
+x2 : Entity
+H9 : _make x1 x2
+H10 : True
+H11 : _trader x2
+H6 : _poor x2
+H12 : _stock_dash_market x2
+============================
+_will
+(exists z1 : Entity,
+((((_poor z1 /\ _stock z1) /\ _market z1) /\ _trader z1) /\ True) /\
+_make _smith z1)
+
+Toplevel input, characters 499-511:
+> Theorem t1: (exists x, (and (and (and (_university x) (_graduate x)) True) (exists z1, (and (and (and (and (_poor z1) (_stock_dash_market z1)) (_trader z1)) True) (_make x z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_university z1) (_graduate z1)) True) (_smith = z1))))) -> (exists x, (and (and (x = _smith) True) (_will (exists z1, (and (and (and (and (and (_poor z1) (_stock z1)) (_market z1)) (_trader z1)) True) (_make _smith z1)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 513-517:
+> Theorem t1: (exists x, (and (and (and (_university x) (_graduate x)) True) (exists z1, (and (and (and (and (_poor z1) (_stock_dash_market z1)) (_trader z1)) True) (_make x z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_university z1) (_graduate z1)) True) (_smith = z1))))) -> (exists x, (and (and (x = _smith) True) (_will (exists z1, (and (and (and (and (and (_poor z1) (_stock z1)) (_market z1)) (_trader z1)) True) (_make _smith z1)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _graduate is declared
+
+Coq < _make is declared
+
+Coq < _market is declared
+
+Coq < _poor is declared
+
+Coq < _smith is declared
+
+Coq < _stock is declared
+
+Coq < _stock_dash_market is declared
+
+Coq < _trader is declared
+
+Coq < _university is declared
+
+Coq < _will is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((_university x /\ _graduate x) /\ True) /\
+(exists z1 : Entity,
+(((_poor z1 /\ _stock_dash_market z1) /\ _trader z1) /\ True) /\
+_make x z1)) ->
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity,
+((_university z1 /\ _graduate z1) /\ True) /\ _smith = z1)) ->
+exists x : Entity,
+(x = _smith /\ True) /\
+_will
+(exists z1 : Entity,
+((((_poor z1 /\ _stock z1) /\ _market z1) /\ _trader z1) /\ True) /\
+_make _smith z1)
+
+
+Toplevel input, characters 483-487:
+> Theorem t1: (exists x, (and (and (and (_university x) (_graduate x)) True) (exists z1, (and (and (and (and (_poor z1) (_stock_dash_market z1)) (_trader z1)) True) (_make x z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_university z1) (_graduate z1)) True) (_smith = z1))))) -> (exists x, (and (and (x = _smith) True) (_will (exists z1, (and (and (and (and (and (_poor z1) (_stock z1)) (_market z1)) (_trader z1)) True) (_make _smith z1)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _graduate is declared
+
+Coq < _make is declared
+
+Coq < _market is declared
+
+Coq < _poor is declared
+
+Coq < _smith is declared
+
+Coq < _stock is declared
+
+Coq < _stock_dash_market is declared
+
+Coq < _trader is declared
+
+Coq < _university is declared
+
+Coq < _will is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((_university x /\ _graduate x) /\ True) /\
+(exists z1 : Entity,
+(((_poor z1 /\ _stock_dash_market z1) /\ _trader z1) /\ True) /\
+_make x z1)) ->
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity,
+((_university z1 /\ _graduate z1) /\ True) /\ _smith = z1)) ->
+~
+(exists x : Entity,
+(x = _smith /\ True) /\
+_will
+(exists z1 : Entity,
+((((_poor z1 /\ _stock z1) /\ _market z1) /\ _trader z1) /\ True) /\
+_make _smith z1))
+
+1 goal
+
+H2 : _will
+(exists z1 : Entity,
+((((_poor z1 /\ _stock z1) /\ _market z1) /\ _trader z1) /\ True) /\
+_make _smith z1)
+H3 : True
+x0 : Entity
+H5 : True
+H : _university x0
+H6 : _graduate x0
+x1 : Entity
+H7 : _make x0 x1
+H8 : True
+H9 : _trader x1
+H4 : _poor x1
+H10 : _stock_dash_market x1
+H12, H14 : True
+H15 : _graduate _smith
+H11 : _university _smith
+============================
+False
+
+Toplevel input, characters 505-517:
+> Theorem t1: (exists x, (and (and (and (_university x) (_graduate x)) True) (exists z1, (and (and (and (and (_poor z1) (_stock_dash_market z1)) (_trader z1)) True) (_make x z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_university z1) (_graduate z1)) True) (_smith = z1))))) -> (not (exists x, (and (and (x = _smith) True) (_will (exists z1, (and (and (and (and (and (_poor z1) (_stock z1)) (_market z1)) (_trader z1)) True) (_make _smith z1))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 519-523:
+> Theorem t1: (exists x, (and (and (and (_university x) (_graduate x)) True) (exists z1, (and (and (and (and (_poor z1) (_stock_dash_market z1)) (_trader z1)) True) (_make x z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_university z1) (_graduate z1)) True) (_smith = z1))))) -> (not (exists x, (and (and (x = _smith) True) (_will (exists z1, (and (and (and (and (and (_poor z1) (_stock z1)) (_market z1)) (_trader z1)) True) (_make _smith z1))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _graduate is declared
+
+Coq < _make is declared
+
+Coq < _market is declared
+
+Coq < _poor is declared
+
+Coq < _smith is declared
+
+Coq < _stock is declared
+
+Coq < _stock_dash_market is declared
+
+Coq < _trader is declared
+
+Coq < _university is declared
+
+Coq < _will is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((_university x /\ _graduate x) /\ True) /\
+(exists z1 : Entity,
+(((_poor z1 /\ _stock_dash_market z1) /\ _trader z1) /\ True) /\
+_make x z1)) ->
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity,
+((_university z1 /\ _graduate z1) /\ True) /\ _smith = z1)) ->
+~
+(exists x : Entity,
+(x = _smith /\ True) /\
+_will
+(exists z1 : Entity,
+((((_poor z1 /\ _stock z1) /\ _market z1) /\ _trader z1) /\ True) /\
+_make _smith z1))
+
+
+Toplevel input, characters 489-493:
+> Theorem t1: (exists x, (and (and (and (_university x) (_graduate x)) True) (exists z1, (and (and (and (and (_poor z1) (_stock_dash_market z1)) (_trader z1)) True) (_make x z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_university z1) (_graduate z1)) True) (_smith = z1))))) -> (not (exists x, (and (and (x = _smith) True) (_will (exists z1, (and (and (and (and (and (_poor z1) (_stock z1)) (_market z1)) (_trader z1)) True) (_make _smith z1))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _graduate is declared
+
+Coq < _make is declared
+
+Coq < _market is declared
+
+Coq < _poor is declared
+
+Coq < _smith is declared
+
+Coq < _stock is declared
+
+Coq < _stock_dash_market is declared
+
+Coq < _trader is declared
+
+Coq < _university is declared
+
+Coq < _will is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((_university x /\ _graduate x) /\ True) /\
+(exists z1 : Entity,
+(((_poor z1 /\ _stock_dash_market z1) /\ _trader z1) /\ True) /\
+_make x z1)) ->
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity,
+((_university z1 /\ _graduate z1) /\ True) /\ _smith = z1)) ->
+exists x : Entity,
+(x = _smith /\ True) /\
+_will
+(exists z1 : Entity,
+((((_poor z1 /\ _stock z1) /\ _market z1) /\ _trader z1) /\ True) /\
+_make _smith z1)
+
+1 goal
+
+H2, H4 : True
+H5 : _graduate _smith
+H1 : _university _smith
+x1 : Entity
+H7 : True
+H : _university x1
+H8 : _graduate x1
+x2 : Entity
+H9 : _make x1 x2
+H10 : True
+H11 : _trader x2
+H6 : _poor x2
+H12 : _stock_dash_market x2
+============================
+_will
+(exists z1 : Entity,
+((((_poor z1 /\ _stock z1) /\ _market z1) /\ _trader z1) /\ True) /\
+_make _smith z1)
+
+Toplevel input, characters 499-511:
+> Theorem t1: (exists x, (and (and (and (_university x) (_graduate x)) True) (exists z1, (and (and (and (and (_poor z1) (_stock_dash_market z1)) (_trader z1)) True) (_make x z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_university z1) (_graduate z1)) True) (_smith = z1))))) -> (exists x, (and (and (x = _smith) True) (_will (exists z1, (and (and (and (and (and (_poor z1) (_stock z1)) (_market z1)) (_trader z1)) True) (_make _smith z1)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 513-517:
+> Theorem t1: (exists x, (and (and (and (_university x) (_graduate x)) True) (exists z1, (and (and (and (and (_poor z1) (_stock_dash_market z1)) (_trader z1)) True) (_make x z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_university z1) (_graduate z1)) True) (_smith = z1))))) -> (exists x, (and (and (x = _smith) True) (_will (exists z1, (and (and (and (and (and (_poor z1) (_stock z1)) (_market z1)) (_trader z1)) True) (_make _smith z1)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _graduate is declared
+
+Coq < _make is declared
+
+Coq < _market is declared
+
+Coq < _poor is declared
+
+Coq < _smith is declared
+
+Coq < _stock is declared
+
+Coq < _stock_dash_market is declared
+
+Coq < _trader is declared
+
+Coq < _university is declared
+
+Coq < _will is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((_university x /\ _graduate x) /\ True) /\
+(exists z1 : Entity,
+(((_poor z1 /\ _stock_dash_market z1) /\ _trader z1) /\ True) /\
+_make x z1)) ->
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity,
+((_university z1 /\ _graduate z1) /\ True) /\ _smith = z1)) ->
+~
+(exists x : Entity,
+(x = _smith /\ True) /\
+_will
+(exists z1 : Entity,
+((((_poor z1 /\ _stock z1) /\ _market z1) /\ _trader z1) /\ True) /\
+_make _smith z1))
+
+1 goal
+
+H2 : _will
+(exists z1 : Entity,
+((((_poor z1 /\ _stock z1) /\ _market z1) /\ _trader z1) /\ True) /\
+_make _smith z1)
+H3 : True
+x0 : Entity
+H5 : True
+H : _university x0
+H6 : _graduate x0
+x1 : Entity
+H7 : _make x0 x1
+H8 : True
+H9 : _trader x1
+H4 : _poor x1
+H10 : _stock_dash_market x1
+H12, H14 : True
+H15 : _graduate _smith
+H11 : _university _smith
+============================
+False
+
+Toplevel input, characters 505-517:
+> Theorem t1: (exists x, (and (and (and (_university x) (_graduate x)) True) (exists z1, (and (and (and (and (_poor z1) (_stock_dash_market z1)) (_trader z1)) True) (_make x z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_university z1) (_graduate z1)) True) (_smith = z1))))) -> (not (exists x, (and (and (x = _smith) True) (_will (exists z1, (and (and (and (and (and (_poor z1) (_stock z1)) (_market z1)) (_trader z1)) True) (_make _smith z1))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 519-523:
+> Theorem t1: (exists x, (and (and (and (_university x) (_graduate x)) True) (exists z1, (and (and (and (and (_poor z1) (_stock_dash_market z1)) (_trader z1)) True) (_make x z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_university z1) (_graduate z1)) True) (_smith = z1))))) -> (not (exists x, (and (and (x = _smith) True) (_will (exists z1, (and (and (and (and (and (_poor z1) (_stock z1)) (_market z1)) (_trader z1)) True) (_make _smith z1))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _graduate is declared
+
+Coq < _make is declared
+
+Coq < _market is declared
+
+Coq < _poor is declared
+
+Coq < _smith is declared
+
+Coq < _stock is declared
+
+Coq < _stock_dash_market is declared
+
+Coq < _trader is declared
+
+Coq < _university is declared
+
+Coq < _will is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((_university x /\ _graduate x) /\ True) /\
+(exists z1 : Entity,
+(((_poor z1 /\ _stock_dash_market z1) /\ _trader z1) /\ True) /\
+_make x z1)) ->
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity,
+((_university z1 /\ _graduate z1) /\ True) /\ _smith = z1)) ->
+exists x : Entity,
+(x = _smith /\ True) /\
+_will
+(exists z1 : Entity,
+((((_poor z1 /\ _stock z1) /\ _market z1) /\ _trader z1) /\ True) /\
+_make _smith z1)
+
+1 goal
+
+H2, H4 : True
+H5 : _graduate _smith
+H1 : _university _smith
+x1 : Entity
+H7 : True
+H : _university x1
+H8 : _graduate x1
+x2 : Entity
+H9 : _make x1 x2
+H10 : True
+H11 : _trader x2
+H6 : _poor x2
+H12 : _stock_dash_market x2
+============================
+_will
+(exists z1 : Entity,
+((((_poor z1 /\ _stock z1) /\ _market z1) /\ _trader z1) /\ True) /\
+_make _smith z1)
+
+Toplevel input, characters 499-511:
+> Theorem t1: (exists x, (and (and (and (_university x) (_graduate x)) True) (exists z1, (and (and (and (and (_poor z1) (_stock_dash_market z1)) (_trader z1)) True) (_make x z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_university z1) (_graduate z1)) True) (_smith = z1))))) -> (exists x, (and (and (x = _smith) True) (_will (exists z1, (and (and (and (and (and (_poor z1) (_stock z1)) (_market z1)) (_trader z1)) True) (_make _smith z1)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 513-517:
+> Theorem t1: (exists x, (and (and (and (_university x) (_graduate x)) True) (exists z1, (and (and (and (and (_poor z1) (_stock_dash_market z1)) (_trader z1)) True) (_make x z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_university z1) (_graduate z1)) True) (_smith = z1))))) -> (exists x, (and (and (x = _smith) True) (_will (exists z1, (and (and (and (and (and (_poor z1) (_stock z1)) (_market z1)) (_trader z1)) True) (_make _smith z1)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _graduate is declared
+
+Coq < _make is declared
+
+Coq < _market is declared
+
+Coq < _poor is declared
+
+Coq < _smith is declared
+
+Coq < _stock is declared
+
+Coq < _stock_dash_market is declared
+
+Coq < _trader is declared
+
+Coq < _university is declared
+
+Coq < _will is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((_university x /\ _graduate x) /\ True) /\
+(exists z1 : Entity,
+(((_poor z1 /\ _stock_dash_market z1) /\ _trader z1) /\ True) /\
+_make x z1)) ->
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity,
+((_university z1 /\ _graduate z1) /\ True) /\ _smith = z1)) ->
+~
+(exists x : Entity,
+(x = _smith /\ True) /\
+_will
+(exists z1 : Entity,
+((((_poor z1 /\ _stock z1) /\ _market z1) /\ _trader z1) /\ True) /\
+_make _smith z1))
+
+1 goal
+
+H2 : _will
+(exists z1 : Entity,
+((((_poor z1 /\ _stock z1) /\ _market z1) /\ _trader z1) /\ True) /\
+_make _smith z1)
+H3 : True
+x0 : Entity
+H5 : True
+H : _university x0
+H6 : _graduate x0
+x1 : Entity
+H7 : _make x0 x1
+H8 : True
+H9 : _trader x1
+H4 : _poor x1
+H10 : _stock_dash_market x1
+H12, H14 : True
+H15 : _graduate _smith
+H11 : _university _smith
+============================
+False
+
+Toplevel input, characters 505-517:
+> Theorem t1: (exists x, (and (and (and (_university x) (_graduate x)) True) (exists z1, (and (and (and (and (_poor z1) (_stock_dash_market z1)) (_trader z1)) True) (_make x z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_university z1) (_graduate z1)) True) (_smith = z1))))) -> (not (exists x, (and (and (x = _smith) True) (_will (exists z1, (and (and (and (and (and (_poor z1) (_stock z1)) (_market z1)) (_trader z1)) True) (_make _smith z1))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 519-523:
+> Theorem t1: (exists x, (and (and (and (_university x) (_graduate x)) True) (exists z1, (and (and (and (and (_poor z1) (_stock_dash_market z1)) (_trader z1)) True) (_make x z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (_university z1) (_graduate z1)) True) (_smith = z1))))) -> (not (exists x, (and (and (x = _smith) True) (_will (exists z1, (and (and (and (and (and (_poor z1) (_stock z1)) (_market z1)) (_trader z1)) True) (_make _smith z1))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

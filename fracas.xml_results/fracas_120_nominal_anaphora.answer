@@ -1,0 +1,115 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _attend is declared
+
+Coq < _chair is declared
+
+Coq < _meeting is declared
+
+Coq < _smith is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity, (_meeting z1 /\ True) /\ _attend _smith z1)) ->
+(exists x : Entity, True /\ (exists z1 : Entity, True /\ _chair x z1)) ->
+exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity, (_meeting z1 /\ True) /\ _chair _smith z1)
+
+
+Toplevel input, characters 298-302:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_meeting z1) True) (_attend _smith z1))))) -> (exists x, (and True (exists z1, (and True (_chair x z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_meeting z1) True) (_chair _smith z1))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                           ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _attend is declared
+
+Coq < _chair is declared
+
+Coq < _meeting is declared
+
+Coq < _smith is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity, (_meeting z1 /\ True) /\ _attend _smith z1)) ->
+(exists x : Entity, True /\ (exists z1 : Entity, True /\ _chair x z1)) ->
+~
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity, (_meeting z1 /\ True) /\ _chair _smith z1))
+
+
+Toplevel input, characters 304-308:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_meeting z1) True) (_attend _smith z1))))) -> (exists x, (and True (exists z1, (and True (_chair x z1))))) -> (not (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_meeting z1) True) (_chair _smith z1)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                 ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _attend is declared
+
+Coq < _chair is declared
+
+Coq < _meeting is declared
+
+Coq < _smith is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity, (_meeting z1 /\ True) /\ _attend _smith z1)) ->
+(exists x : Entity, True /\ (exists z1 : Entity, True /\ _chair x z1)) ->
+exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity, (_meeting z1 /\ True) /\ _chair _smith z1)
+
+1 goal
+
+x : Entity
+H0 : True
+x0 : Entity
+H1 : True
+H2 : _chair x x0
+H4 : True
+x2 : Entity
+H5 : _attend _smith x2
+H3 : _meeting x2
+H6 : True
+============================
+_chair _smith x2
+
+Toplevel input, characters 314-326:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_meeting z1) True) (_attend _smith z1))))) -> (exists x, (and True (exists z1, (and True (_chair x z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_meeting z1) True) (_chair _smith z1))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                           ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 328-332:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_meeting z1) True) (_attend _smith z1))))) -> (exists x, (and True (exists z1, (and True (_chair x z1))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_meeting z1) True) (_chair _smith z1))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                         ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

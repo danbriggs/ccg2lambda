@@ -1,0 +1,338 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _jones is declared
+
+Coq < _leave is declared
+
+Coq < _smith is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity, (x = _smith /\ True) /\ _leave _smith) ->
+(exists x : Entity, (x = _jones /\ True) /\ _leave _jones) ->
+_after (exists x : Entity, (x = _jones /\ True) /\ _leave _jones)
+(exists x : Entity, (x = _smith /\ True) /\ _leave _smith) ->
+_before (exists x : Entity, (x = _smith /\ True) /\ _leave _smith)
+(exists x : Entity, (x = _jones /\ True) /\ _leave _jones)
+
+No more goals.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _jones is declared
+
+Coq < _leave is declared
+
+Coq < _smith is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity, (x = _smith /\ True) /\ _leave _smith) ->
+(exists x : Entity, (x = _jones /\ True) /\ _leave _jones) ->
+_after (exists x : Entity, (x = _jones /\ True) /\ _leave _jones)
+(exists x : Entity, (x = _smith /\ True) /\ _leave _smith) ->
+~
+_before (exists x : Entity, (x = _smith /\ True) /\ _leave _smith)
+(exists x : Entity, (x = _jones /\ True) /\ _leave _jones)
+
+
+Toplevel input, characters 402-406:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (_leave _smith))) -> (exists x, (and (and (x = _jones) True) (_leave _jones))) -> (_after (exists x, (and (and (x = _jones) True) (_leave _jones))) (exists x, (and (and (x = _smith) True) (_leave _smith)))) -> (not (_before (exists x, (and (and (x = _smith) True) (_leave _smith))) (exists x, (and (and (x = _jones) True) (_leave _jones))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _jones is declared
+
+Coq < _leave is declared
+
+Coq < _smith is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity, (x = _smith /\ True) /\ _leave _smith) ->
+(exists x : Entity, (x = _jones /\ True) /\ _leave _jones) ->
+_after (exists x : Entity, (x = _jones /\ True) /\ _leave _jones)
+(exists x : Entity, (x = _smith /\ True) /\ _leave _smith) ->
+_before (exists x : Entity, (x = _smith /\ True) /\ _leave _smith)
+(exists x : Entity, (x = _jones /\ True) /\ _leave _jones)
+
+No more goals.
+
+Toplevel input, characters 408-425:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (_leave _smith))) -> (exists x, (and (and (x = _jones) True) (_leave _jones))) -> (_after (exists x, (and (and (x = _jones) True) (_leave _jones))) (exists x, (and (and (x = _smith) True) (_leave _smith)))) -> (_before (exists x, (and (and (x = _smith) True) (_leave _smith))) (exists x, (and (and (x = _jones) True) (_leave _jones)))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                         ^^^^^^^^^^^^^^^^^
+Error: No such goal.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _jones is declared
+
+Coq < _leave is declared
+
+Coq < _smith is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity, (x = _smith /\ True) /\ _leave _smith) ->
+(exists x : Entity, (x = _jones /\ True) /\ _leave _jones) ->
+_after (exists x : Entity, (x = _jones /\ True) /\ _leave _jones)
+(exists x : Entity, (x = _smith /\ True) /\ _leave _smith) ->
+_before (exists x : Entity, (x = _smith /\ True) /\ _leave _smith)
+(exists x : Entity, (x = _jones /\ True) /\ _leave _jones)
+
+No more goals.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _jones is declared
+
+Coq < _leave is declared
+
+Coq < _smith is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity, (x = _smith /\ True) /\ _leave _smith) ->
+(exists x : Entity, (x = _jones /\ True) /\ _leave _jones) ->
+_after (exists x : Entity, (x = _jones /\ True) /\ _leave _jones)
+(exists x : Entity, (x = _smith /\ True) /\ _leave _smith) ->
+~
+_before (exists x : Entity, (x = _smith /\ True) /\ _leave _smith)
+(exists x : Entity, (x = _jones /\ True) /\ _leave _jones)
+
+1 goal
+
+H1 : _after (exists x : Entity, (x = _jones /\ True) /\ _leave _jones)
+(exists x : Entity, (x = _smith /\ True) /\ _leave _smith)
+H2 : _before (exists x : Entity, (x = _smith /\ True) /\ _leave _smith)
+(exists x : Entity, (x = _jones /\ True) /\ _leave _jones)
+H3 : _leave _jones
+H4 : True
+H5 : _leave _smith
+H6 : True
+============================
+False
+
+Toplevel input, characters 418-430:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (_leave _smith))) -> (exists x, (and (and (x = _jones) True) (_leave _jones))) -> (_after (exists x, (and (and (x = _jones) True) (_leave _jones))) (exists x, (and (and (x = _smith) True) (_leave _smith)))) -> (not (_before (exists x, (and (and (x = _smith) True) (_leave _smith))) (exists x, (and (and (x = _jones) True) (_leave _jones))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 432-436:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (_leave _smith))) -> (exists x, (and (and (x = _jones) True) (_leave _jones))) -> (_after (exists x, (and (and (x = _jones) True) (_leave _jones))) (exists x, (and (and (x = _smith) True) (_leave _smith)))) -> (not (_before (exists x, (and (and (x = _smith) True) (_leave _smith))) (exists x, (and (and (x = _jones) True) (_leave _jones))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _jones is declared
+
+Coq < _leave is declared
+
+Coq < _smith is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity, (x = _smith /\ True) /\ _leave _smith) ->
+(exists x : Entity, (x = _jones /\ True) /\ _leave _jones) ->
+_after (exists x : Entity, (x = _jones /\ True) /\ _leave _jones)
+(exists x : Entity, (x = _smith /\ True) /\ _leave _smith) ->
+~
+_before (exists x : Entity, (x = _smith /\ True) /\ _leave _smith)
+(exists x : Entity, (x = _jones /\ True) /\ _leave _jones)
+
+
+Toplevel input, characters 402-406:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (_leave _smith))) -> (exists x, (and (and (x = _jones) True) (_leave _jones))) -> (_after (exists x, (and (and (x = _jones) True) (_leave _jones))) (exists x, (and (and (x = _smith) True) (_leave _smith)))) -> (not (_before (exists x, (and (and (x = _smith) True) (_leave _smith))) (exists x, (and (and (x = _jones) True) (_leave _jones))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _jones is declared
+
+Coq < _leave is declared
+
+Coq < _smith is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity, (x = _smith /\ True) /\ _leave _smith) ->
+(exists x : Entity, (x = _jones /\ True) /\ _leave _jones) ->
+_after (exists x : Entity, (x = _jones /\ True) /\ _leave _jones)
+(exists x : Entity, (x = _smith /\ True) /\ _leave _smith) ->
+_before (exists x : Entity, (x = _smith /\ True) /\ _leave _smith)
+(exists x : Entity, (x = _jones /\ True) /\ _leave _jones)
+
+No more goals.
+
+Toplevel input, characters 408-425:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (_leave _smith))) -> (exists x, (and (and (x = _jones) True) (_leave _jones))) -> (_after (exists x, (and (and (x = _jones) True) (_leave _jones))) (exists x, (and (and (x = _smith) True) (_leave _smith)))) -> (_before (exists x, (and (and (x = _smith) True) (_leave _smith))) (exists x, (and (and (x = _jones) True) (_leave _jones)))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                         ^^^^^^^^^^^^^^^^^
+Error: No such goal.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _jones is declared
+
+Coq < _leave is declared
+
+Coq < _smith is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity, (x = _smith /\ True) /\ _leave _smith) ->
+(exists x : Entity, (x = _jones /\ True) /\ _leave _jones) ->
+_after (exists x : Entity, (x = _jones /\ True) /\ _leave _jones)
+(exists x : Entity, (x = _smith /\ True) /\ _leave _smith) ->
+~
+_before (exists x : Entity, (x = _smith /\ True) /\ _leave _smith)
+(exists x : Entity, (x = _jones /\ True) /\ _leave _jones)
+
+1 goal
+
+H1 : _after (exists x : Entity, (x = _jones /\ True) /\ _leave _jones)
+(exists x : Entity, (x = _smith /\ True) /\ _leave _smith)
+H2 : _before (exists x : Entity, (x = _smith /\ True) /\ _leave _smith)
+(exists x : Entity, (x = _jones /\ True) /\ _leave _jones)
+H3 : _leave _jones
+H4 : True
+H5 : _leave _smith
+H6 : True
+============================
+False
+
+Toplevel input, characters 418-430:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (_leave _smith))) -> (exists x, (and (and (x = _jones) True) (_leave _jones))) -> (_after (exists x, (and (and (x = _jones) True) (_leave _jones))) (exists x, (and (and (x = _smith) True) (_leave _smith)))) -> (not (_before (exists x, (and (and (x = _smith) True) (_leave _smith))) (exists x, (and (and (x = _jones) True) (_leave _jones))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 432-436:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (_leave _smith))) -> (exists x, (and (and (x = _jones) True) (_leave _jones))) -> (_after (exists x, (and (and (x = _jones) True) (_leave _jones))) (exists x, (and (and (x = _smith) True) (_leave _smith)))) -> (not (_before (exists x, (and (and (x = _smith) True) (_leave _smith))) (exists x, (and (and (x = _jones) True) (_leave _jones))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _jones is declared
+
+Coq < _leave is declared
+
+Coq < _smith is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity, (x = _smith /\ True) /\ _leave _smith) ->
+(exists x : Entity, (x = _jones /\ True) /\ _leave _jones) ->
+_after (exists x : Entity, (x = _jones /\ True) /\ _leave _jones)
+(exists x : Entity, (x = _smith /\ True) /\ _leave _smith) ->
+_before (exists x : Entity, (x = _smith /\ True) /\ _leave _smith)
+(exists x : Entity, (x = _jones /\ True) /\ _leave _jones)
+
+No more goals.
+
+Toplevel input, characters 408-425:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (_leave _smith))) -> (exists x, (and (and (x = _jones) True) (_leave _jones))) -> (_after (exists x, (and (and (x = _jones) True) (_leave _jones))) (exists x, (and (and (x = _smith) True) (_leave _smith)))) -> (_before (exists x, (and (and (x = _smith) True) (_leave _smith))) (exists x, (and (and (x = _jones) True) (_leave _jones)))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                         ^^^^^^^^^^^^^^^^^
+Error: No such goal.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _jones is declared
+
+Coq < _leave is declared
+
+Coq < _smith is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity, (x = _smith /\ True) /\ _leave _smith) ->
+(exists x : Entity, (x = _jones /\ True) /\ _leave _jones) ->
+_after (exists x : Entity, (x = _jones /\ True) /\ _leave _jones)
+(exists x : Entity, (x = _smith /\ True) /\ _leave _smith) ->
+~
+_before (exists x : Entity, (x = _smith /\ True) /\ _leave _smith)
+(exists x : Entity, (x = _jones /\ True) /\ _leave _jones)
+
+1 goal
+
+H1 : _after (exists x : Entity, (x = _jones /\ True) /\ _leave _jones)
+(exists x : Entity, (x = _smith /\ True) /\ _leave _smith)
+H2 : _before (exists x : Entity, (x = _smith /\ True) /\ _leave _smith)
+(exists x : Entity, (x = _jones /\ True) /\ _leave _jones)
+H3 : _leave _jones
+H4 : True
+H5 : _leave _smith
+H6 : True
+============================
+False
+
+Toplevel input, characters 418-430:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (_leave _smith))) -> (exists x, (and (and (x = _jones) True) (_leave _jones))) -> (_after (exists x, (and (and (x = _jones) True) (_leave _jones))) (exists x, (and (and (x = _smith) True) (_leave _smith)))) -> (not (_before (exists x, (and (and (x = _smith) True) (_leave _smith))) (exists x, (and (and (x = _jones) True) (_leave _jones))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 432-436:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (_leave _smith))) -> (exists x, (and (and (x = _jones) True) (_leave _jones))) -> (_after (exists x, (and (and (x = _jones) True) (_leave _jones))) (exists x, (and (and (x = _smith) True) (_leave _smith)))) -> (not (_before (exists x, (and (and (x = _smith) True) (_leave _smith))) (exists x, (and (and (x = _jones) True) (_leave _jones))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

@@ -1,0 +1,477 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _chairman is declared
+
+Coq < _for is declared
+
+Coq < _meeting is declared
+
+Coq < _new is declared
+
+Coq < _people is declared
+
+Coq < _vote is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+(exists z1 : Entity,
+(((_people z1 /\ True) /\ x = z1) /\
+(exists z2 : Entity, (_meeting z2 /\ True) /\ _at z1 z2)) /\ True) ->
+_vote x /\
+(exists z4 : Entity, ((_new z4 /\ _chairman z4) /\ True) /\ _for x z4)) ->
+forall x : Entity,
+_people x ->
+(exists z1 : Entity, (_meeting z1 /\ True) /\ _at x z1) /\ True ->
+_vote x /\
+(exists z2 : Entity, ((_new z2 /\ _chairman z2) /\ True) /\ _for x z2)
+
+No more goals.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _chairman is declared
+
+Coq < _for is declared
+
+Coq < _meeting is declared
+
+Coq < _new is declared
+
+Coq < _people is declared
+
+Coq < _vote is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+(exists z1 : Entity,
+(((_people z1 /\ True) /\ x = z1) /\
+(exists z2 : Entity, (_meeting z2 /\ True) /\ _at z1 z2)) /\ True) ->
+_vote x /\
+(exists z4 : Entity, ((_new z4 /\ _chairman z4) /\ True) /\ _for x z4)) ->
+~
+(forall x : Entity,
+_people x ->
+(exists z1 : Entity, (_meeting z1 /\ True) /\ _at x z1) /\ True ->
+_vote x /\
+(exists z2 : Entity, ((_new z2 /\ _chairman z2) /\ True) /\ _for x z2))
+
+
+Toplevel input, characters 449-453:
+> Theorem t1: (forall x, ((exists z1, (and (and (and (and (_people z1) True) (x = z1)) (exists z2, (and (and (_meeting z2) True) (_at z1 z2)))) True)) -> (and (_vote x) (exists z4, (and (and (and (_new z4) (_chairman z4)) True) (_for x z4)))))) -> (not (forall x, ((_people x) -> ((and (exists z1, (and (and (_meeting z1) True) (_at x z1))) True) -> (and (_vote x) (exists z2, (and (and (and (_new z2) (_chairman z2)) True) (_for x z2)))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _chairman is declared
+
+Coq < _for is declared
+
+Coq < _meeting is declared
+
+Coq < _new is declared
+
+Coq < _people is declared
+
+Coq < _vote is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+(exists z1 : Entity,
+(((_people z1 /\ True) /\ x = z1) /\
+(exists z2 : Entity, (_meeting z2 /\ True) /\ _at z1 z2)) /\ True) ->
+_vote x /\
+(exists z4 : Entity, ((_new z4 /\ _chairman z4) /\ True) /\ _for x z4)) ->
+forall x : Entity,
+_people x ->
+(exists z1 : Entity, (_meeting z1 /\ True) /\ _at x z1) /\ True ->
+_vote x /\
+(exists z2 : Entity, ((_new z2 /\ _chairman z2) /\ True) /\ _for x z2)
+
+No more goals.
+
+Toplevel input, characters 455-472:
+> Theorem t1: (forall x, ((exists z1, (and (and (and (and (_people z1) True) (x = z1)) (exists z2, (and (and (_meeting z2) True) (_at z1 z2)))) True)) -> (and (_vote x) (exists z4, (and (and (and (_new z4) (_chairman z4)) True) (_for x z4)))))) -> (forall x, ((_people x) -> ((and (exists z1, (and (and (_meeting z1) True) (_at x z1))) True) -> (and (_vote x) (exists z2, (and (and (and (_new z2) (_chairman z2)) True) (_for x z2))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^^^^^^^^^^^^^^
+Error: No such goal.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _chairman is declared
+
+Coq < _for is declared
+
+Coq < _meeting is declared
+
+Coq < _new is declared
+
+Coq < _people is declared
+
+Coq < _vote is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+(exists z1 : Entity,
+(((_people z1 /\ True) /\ x = z1) /\
+(exists z2 : Entity, (_meeting z2 /\ True) /\ _at z1 z2)) /\ True) ->
+_vote x /\
+(exists z4 : Entity, ((_new z4 /\ _chairman z4) /\ True) /\ _for x z4)) ->
+forall x : Entity,
+_people x ->
+(exists z1 : Entity, (_meeting z1 /\ True) /\ _at x z1) /\ True ->
+_vote x /\
+(exists z2 : Entity, ((_new z2 /\ _chairman z2) /\ True) /\ _for x z2)
+
+No more goals.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _chairman is declared
+
+Coq < _for is declared
+
+Coq < _meeting is declared
+
+Coq < _new is declared
+
+Coq < _people is declared
+
+Coq < _vote is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+(exists z1 : Entity,
+(((_people z1 /\ True) /\ x = z1) /\
+(exists z2 : Entity, (_meeting z2 /\ True) /\ _at z1 z2)) /\ True) ->
+_vote x /\
+(exists z4 : Entity, ((_new z4 /\ _chairman z4) /\ True) /\ _for x z4)) ->
+~
+(forall x : Entity,
+_people x ->
+(exists z1 : Entity, (_meeting z1 /\ True) /\ _at x z1) /\ True ->
+_vote x /\
+(exists z2 : Entity, ((_new z2 /\ _chairman z2) /\ True) /\ _for x z2))
+
+1 goal
+
+H : forall x : Entity,
+(exists z1 : Entity,
+(((_people z1 /\ True) /\ x = z1) /\
+(exists z2 : Entity, (_meeting z2 /\ True) /\ _at z1 z2)) /\ True) ->
+_vote x /\
+(exists z4 : Entity, ((_new z4 /\ _chairman z4) /\ True) /\ _for x z4)
+H0 : forall x : Entity,
+_people x ->
+(exists z1 : Entity, (_meeting z1 /\ True) /\ _at x z1) /\ True ->
+_vote x /\
+(exists z2 : Entity, ((_new z2 /\ _chairman z2) /\ True) /\ _for x z2)
+============================
+False
+
+Toplevel input, characters 465-477:
+> Theorem t1: (forall x, ((exists z1, (and (and (and (and (_people z1) True) (x = z1)) (exists z2, (and (and (_meeting z2) True) (_at z1 z2)))) True)) -> (and (_vote x) (exists z4, (and (and (and (_new z4) (_chairman z4)) True) (_for x z4)))))) -> (not (forall x, ((_people x) -> ((and (exists z1, (and (and (_meeting z1) True) (_at x z1))) True) -> (and (_vote x) (exists z2, (and (and (and (_new z2) (_chairman z2)) True) (_for x z2)))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 479-483:
+> Theorem t1: (forall x, ((exists z1, (and (and (and (and (_people z1) True) (x = z1)) (exists z2, (and (and (_meeting z2) True) (_at z1 z2)))) True)) -> (and (_vote x) (exists z4, (and (and (and (_new z4) (_chairman z4)) True) (_for x z4)))))) -> (not (forall x, ((_people x) -> ((and (exists z1, (and (and (_meeting z1) True) (_at x z1))) True) -> (and (_vote x) (exists z2, (and (and (and (_new z2) (_chairman z2)) True) (_for x z2)))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _chairman is declared
+
+Coq < _for is declared
+
+Coq < _meeting is declared
+
+Coq < _new is declared
+
+Coq < _people is declared
+
+Coq < _vote is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+(exists z1 : Entity,
+(((_people z1 /\ True) /\ x = z1) /\
+(exists z2 : Entity, (_meeting z2 /\ True) /\ _at z1 z2)) /\ True) ->
+_vote x /\
+(exists z4 : Entity, ((_new z4 /\ _chairman z4) /\ True) /\ _for x z4)) ->
+~
+(forall x : Entity,
+_people x ->
+(exists z1 : Entity, (_meeting z1 /\ True) /\ _at x z1) /\ True ->
+_vote x /\
+(exists z2 : Entity, ((_new z2 /\ _chairman z2) /\ True) /\ _for x z2))
+
+
+Toplevel input, characters 449-453:
+> Theorem t1: (forall x, ((exists z1, (and (and (and (and (_people z1) True) (x = z1)) (exists z2, (and (and (_meeting z2) True) (_at z1 z2)))) True)) -> (and (_vote x) (exists z4, (and (and (and (_new z4) (_chairman z4)) True) (_for x z4)))))) -> (not (forall x, ((_people x) -> ((and (exists z1, (and (and (_meeting z1) True) (_at x z1))) True) -> (and (_vote x) (exists z2, (and (and (and (_new z2) (_chairman z2)) True) (_for x z2)))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _chairman is declared
+
+Coq < _for is declared
+
+Coq < _meeting is declared
+
+Coq < _new is declared
+
+Coq < _people is declared
+
+Coq < _vote is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+(exists z1 : Entity,
+(((_people z1 /\ True) /\ x = z1) /\
+(exists z2 : Entity, (_meeting z2 /\ True) /\ _at z1 z2)) /\ True) ->
+_vote x /\
+(exists z4 : Entity, ((_new z4 /\ _chairman z4) /\ True) /\ _for x z4)) ->
+forall x : Entity,
+_people x ->
+(exists z1 : Entity, (_meeting z1 /\ True) /\ _at x z1) /\ True ->
+_vote x /\
+(exists z2 : Entity, ((_new z2 /\ _chairman z2) /\ True) /\ _for x z2)
+
+No more goals.
+
+Toplevel input, characters 455-472:
+> Theorem t1: (forall x, ((exists z1, (and (and (and (and (_people z1) True) (x = z1)) (exists z2, (and (and (_meeting z2) True) (_at z1 z2)))) True)) -> (and (_vote x) (exists z4, (and (and (and (_new z4) (_chairman z4)) True) (_for x z4)))))) -> (forall x, ((_people x) -> ((and (exists z1, (and (and (_meeting z1) True) (_at x z1))) True) -> (and (_vote x) (exists z2, (and (and (and (_new z2) (_chairman z2)) True) (_for x z2))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^^^^^^^^^^^^^^
+Error: No such goal.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _chairman is declared
+
+Coq < _for is declared
+
+Coq < _meeting is declared
+
+Coq < _new is declared
+
+Coq < _people is declared
+
+Coq < _vote is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+(exists z1 : Entity,
+(((_people z1 /\ True) /\ x = z1) /\
+(exists z2 : Entity, (_meeting z2 /\ True) /\ _at z1 z2)) /\ True) ->
+_vote x /\
+(exists z4 : Entity, ((_new z4 /\ _chairman z4) /\ True) /\ _for x z4)) ->
+~
+(forall x : Entity,
+_people x ->
+(exists z1 : Entity, (_meeting z1 /\ True) /\ _at x z1) /\ True ->
+_vote x /\
+(exists z2 : Entity, ((_new z2 /\ _chairman z2) /\ True) /\ _for x z2))
+
+1 goal
+
+H : forall x : Entity,
+(exists z1 : Entity,
+(((_people z1 /\ True) /\ x = z1) /\
+(exists z2 : Entity, (_meeting z2 /\ True) /\ _at z1 z2)) /\ True) ->
+_vote x /\
+(exists z4 : Entity, ((_new z4 /\ _chairman z4) /\ True) /\ _for x z4)
+H0 : forall x : Entity,
+_people x ->
+(exists z1 : Entity, (_meeting z1 /\ True) /\ _at x z1) /\ True ->
+_vote x /\
+(exists z2 : Entity, ((_new z2 /\ _chairman z2) /\ True) /\ _for x z2)
+============================
+False
+
+Toplevel input, characters 465-477:
+> Theorem t1: (forall x, ((exists z1, (and (and (and (and (_people z1) True) (x = z1)) (exists z2, (and (and (_meeting z2) True) (_at z1 z2)))) True)) -> (and (_vote x) (exists z4, (and (and (and (_new z4) (_chairman z4)) True) (_for x z4)))))) -> (not (forall x, ((_people x) -> ((and (exists z1, (and (and (_meeting z1) True) (_at x z1))) True) -> (and (_vote x) (exists z2, (and (and (and (_new z2) (_chairman z2)) True) (_for x z2)))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 479-483:
+> Theorem t1: (forall x, ((exists z1, (and (and (and (and (_people z1) True) (x = z1)) (exists z2, (and (and (_meeting z2) True) (_at z1 z2)))) True)) -> (and (_vote x) (exists z4, (and (and (and (_new z4) (_chairman z4)) True) (_for x z4)))))) -> (not (forall x, ((_people x) -> ((and (exists z1, (and (and (_meeting z1) True) (_at x z1))) True) -> (and (_vote x) (exists z2, (and (and (and (_new z2) (_chairman z2)) True) (_for x z2)))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _chairman is declared
+
+Coq < _for is declared
+
+Coq < _meeting is declared
+
+Coq < _new is declared
+
+Coq < _people is declared
+
+Coq < _vote is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+(exists z1 : Entity,
+(((_people z1 /\ True) /\ x = z1) /\
+(exists z2 : Entity, (_meeting z2 /\ True) /\ _at z1 z2)) /\ True) ->
+_vote x /\
+(exists z4 : Entity, ((_new z4 /\ _chairman z4) /\ True) /\ _for x z4)) ->
+forall x : Entity,
+_people x ->
+(exists z1 : Entity, (_meeting z1 /\ True) /\ _at x z1) /\ True ->
+_vote x /\
+(exists z2 : Entity, ((_new z2 /\ _chairman z2) /\ True) /\ _for x z2)
+
+No more goals.
+
+Toplevel input, characters 455-472:
+> Theorem t1: (forall x, ((exists z1, (and (and (and (and (_people z1) True) (x = z1)) (exists z2, (and (and (_meeting z2) True) (_at z1 z2)))) True)) -> (and (_vote x) (exists z4, (and (and (and (_new z4) (_chairman z4)) True) (_for x z4)))))) -> (forall x, ((_people x) -> ((and (exists z1, (and (and (_meeting z1) True) (_at x z1))) True) -> (and (_vote x) (exists z2, (and (and (and (_new z2) (_chairman z2)) True) (_for x z2))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^^^^^^^^^^^^^^
+Error: No such goal.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _chairman is declared
+
+Coq < _for is declared
+
+Coq < _meeting is declared
+
+Coq < _new is declared
+
+Coq < _people is declared
+
+Coq < _vote is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+(exists z1 : Entity,
+(((_people z1 /\ True) /\ x = z1) /\
+(exists z2 : Entity, (_meeting z2 /\ True) /\ _at z1 z2)) /\ True) ->
+_vote x /\
+(exists z4 : Entity, ((_new z4 /\ _chairman z4) /\ True) /\ _for x z4)) ->
+~
+(forall x : Entity,
+_people x ->
+(exists z1 : Entity, (_meeting z1 /\ True) /\ _at x z1) /\ True ->
+_vote x /\
+(exists z2 : Entity, ((_new z2 /\ _chairman z2) /\ True) /\ _for x z2))
+
+1 goal
+
+H : forall x : Entity,
+(exists z1 : Entity,
+(((_people z1 /\ True) /\ x = z1) /\
+(exists z2 : Entity, (_meeting z2 /\ True) /\ _at z1 z2)) /\ True) ->
+_vote x /\
+(exists z4 : Entity, ((_new z4 /\ _chairman z4) /\ True) /\ _for x z4)
+H0 : forall x : Entity,
+_people x ->
+(exists z1 : Entity, (_meeting z1 /\ True) /\ _at x z1) /\ True ->
+_vote x /\
+(exists z2 : Entity, ((_new z2 /\ _chairman z2) /\ True) /\ _for x z2)
+============================
+False
+
+Toplevel input, characters 465-477:
+> Theorem t1: (forall x, ((exists z1, (and (and (and (and (_people z1) True) (x = z1)) (exists z2, (and (and (_meeting z2) True) (_at z1 z2)))) True)) -> (and (_vote x) (exists z4, (and (and (and (_new z4) (_chairman z4)) True) (_for x z4)))))) -> (not (forall x, ((_people x) -> ((and (exists z1, (and (and (_meeting z1) True) (_at x z1))) True) -> (and (_vote x) (exists z2, (and (and (and (_new z2) (_chairman z2)) True) (_for x z2)))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 479-483:
+> Theorem t1: (forall x, ((exists z1, (and (and (and (and (_people z1) True) (x = z1)) (exists z2, (and (and (_meeting z2) True) (_at z1 z2)))) True)) -> (and (_vote x) (exists z4, (and (and (and (_new z4) (_chairman z4)) True) (_for x z4)))))) -> (not (forall x, ((_people x) -> ((and (exists z1, (and (and (_meeting z1) True) (_at x z1))) True) -> (and (_vote x) (exists z2, (and (and (and (_new z2) (_chairman z2)) True) (_for x z2)))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

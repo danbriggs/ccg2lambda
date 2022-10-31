@@ -1,0 +1,157 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _award is declared
+
+Coq < _award_e2 is declared
+
+Coq < _award_e3 is declared
+
+Coq < _award_e4 is declared
+
+Coq < _company is declared
+
+Coq < _director is declared
+
+Coq < _have is declared
+
+Coq < _large is declared
+
+Coq < _payrise is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((_company x /\ _director x) /\ True) /\
+(exists z2 : Entity,
+((_large z2 /\ _payrise z2) /\ True) /\
+(exists z1 : Entity, True /\ _award_e4 x z2 z1))) ->
+exists x : Entity,
+((((_company x /\ _director x) /\ True) /\ _have x) /\
+(exists z1 : Entity, (_payrise z1 /\ True) /\ _award_e3 x z1)) /\
+_award_e2 x
+
+
+Toplevel input, characters 350-354:
+> Theorem t1: (exists x, (and (and (and (_company x) (_director x)) True) (exists z2, (and (and (and (_large z2) (_payrise z2)) True) (exists z1, (and True (_award_e4 x z2 z1))))))) -> (exists x, (and (and (and (and (and (_company x) (_director x)) True) (_have x)) (exists z1, (and (and (_payrise z1) True) (_award_e3 x z1)))) (_award_e2 x))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                               ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _award is declared
+
+Coq < _award_e2 is declared
+
+Coq < _award_e3 is declared
+
+Coq < _award_e4 is declared
+
+Coq < _company is declared
+
+Coq < _director is declared
+
+Coq < _have is declared
+
+Coq < _large is declared
+
+Coq < _payrise is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((_company x /\ _director x) /\ True) /\
+(exists z2 : Entity,
+((_large z2 /\ _payrise z2) /\ True) /\
+(exists z1 : Entity, True /\ _award_e4 x z2 z1))) ->
+~
+(exists x : Entity,
+((((_company x /\ _director x) /\ True) /\ _have x) /\
+(exists z1 : Entity, (_payrise z1 /\ True) /\ _award_e3 x z1)) /\
+_award_e2 x)
+
+
+Toplevel input, characters 356-360:
+> Theorem t1: (exists x, (and (and (and (_company x) (_director x)) True) (exists z2, (and (and (and (_large z2) (_payrise z2)) True) (exists z1, (and True (_award_e4 x z2 z1))))))) -> (not (exists x, (and (and (and (and (and (_company x) (_director x)) True) (_have x)) (exists z1, (and (and (_payrise z1) True) (_award_e3 x z1)))) (_award_e2 x)))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                     ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _award is declared
+
+Coq < _award_e2 is declared
+
+Coq < _award_e3 is declared
+
+Coq < _award_e4 is declared
+
+Coq < _company is declared
+
+Coq < _director is declared
+
+Coq < _have is declared
+
+Coq < _large is declared
+
+Coq < _payrise is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((_company x /\ _director x) /\ True) /\
+(exists z2 : Entity,
+((_large z2 /\ _payrise z2) /\ True) /\
+(exists z1 : Entity, True /\ _award_e4 x z2 z1))) ->
+exists x : Entity,
+((((_company x /\ _director x) /\ True) /\ _have x) /\
+(exists z1 : Entity, (_payrise z1 /\ True) /\ _award_e3 x z1)) /\
+_award_e2 x
+
+3 goals
+
+x : Entity
+H1 : True
+H : _company x
+H2 : _director x
+x0 : Entity
+H4 : True
+H0 : _large x0
+H5 : _payrise x0
+x1 : Entity
+H3 : True
+H6 : _award_e4 x x0 x1
+============================
+_have x
+
+goal 2 is:
+_award_e3 x x0
+goal 3 is:
+_award_e2 x
+
+Toplevel input, characters 366-378:
+> Theorem t1: (exists x, (and (and (and (_company x) (_director x)) True) (exists z2, (and (and (and (_large z2) (_payrise z2)) True) (exists z1, (and True (_award_e4 x z2 z1))))))) -> (exists x, (and (and (and (and (and (_company x) (_director x)) True) (_have x)) (exists z1, (and (and (_payrise z1) True) (_award_e3 x z1)))) (_award_e2 x))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                               ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 380-384:
+> Theorem t1: (exists x, (and (and (and (_company x) (_director x)) True) (exists z2, (and (and (and (_large z2) (_payrise z2)) True) (exists z1, (and True (_award_e4 x z2 z1))))))) -> (exists x, (and (and (and (and (and (_company x) (_director x)) True) (_have x)) (exists z1, (and (and (_payrise z1) True) (_award_e3 x z1)))) (_award_e2 x))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                             ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

@@ -1,0 +1,181 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _2500 is declared
+
+Coq < _3000 is declared
+
+Coq < _5500 is declared
+
+Coq < _apcom is declared
+
+Coq < _computer is declared
+
+Coq < _exactly is declared
+
+Coq < _itel is declared
+
+Coq < _more is declared
+
+Coq < _sell is declared
+
+Coq < _than is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _itel /\ True) /\
+(exists z2 : Entity,
+((((_3000 z2 /\ _more z2) /\ _computer z2) /\
+(exists z1 : Entity, (z1 = _apcom /\ True) /\ _than z2 _apcom)) /\
+True) /\ _sell _itel z2)) ->
+(exists x : Entity,
+(x = _apcom /\ True) /\
+(exists z1 : Entity,
+(((_exactly z1 /\ _2500 z1) /\ _computer z1) /\ True) /\
+_sell _apcom z1)) ->
+exists x : Entity,
+(x = _itel /\ True) /\
+(exists z1 : Entity,
+((_5500 z1 /\ _computer z1) /\ True) /\ _sell _itel z1)
+
+
+Toplevel input, characters 493-497:
+> Theorem t1: (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (and (and (_3000 z2) (_more z2)) (_computer z2)) (exists z1, (and (and (z1 = _apcom) True) (_than z2 _apcom)))) True) (_sell _itel z2))))) -> (exists x, (and (and (x = _apcom) True) (exists z1, (and (and (and (and (_exactly z1) (_2500 z1)) (_computer z1)) True) (_sell _apcom z1))))) -> (exists x, (and (and (x = _itel) True) (exists z1, (and (and (and (_5500 z1) (_computer z1)) True) (_sell _itel z1))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _2500 is declared
+
+Coq < _3000 is declared
+
+Coq < _5500 is declared
+
+Coq < _apcom is declared
+
+Coq < _computer is declared
+
+Coq < _exactly is declared
+
+Coq < _itel is declared
+
+Coq < _more is declared
+
+Coq < _sell is declared
+
+Coq < _than is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _itel /\ True) /\
+(exists z2 : Entity,
+((((_3000 z2 /\ _more z2) /\ _computer z2) /\
+(exists z1 : Entity, (z1 = _apcom /\ True) /\ _than z2 _apcom)) /\
+True) /\ _sell _itel z2)) ->
+(exists x : Entity,
+(x = _apcom /\ True) /\
+(exists z1 : Entity,
+(((_exactly z1 /\ _2500 z1) /\ _computer z1) /\ True) /\
+_sell _apcom z1)) ->
+~
+(exists x : Entity,
+(x = _itel /\ True) /\
+(exists z1 : Entity,
+((_5500 z1 /\ _computer z1) /\ True) /\ _sell _itel z1))
+
+
+Toplevel input, characters 499-503:
+> Theorem t1: (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (and (and (_3000 z2) (_more z2)) (_computer z2)) (exists z1, (and (and (z1 = _apcom) True) (_than z2 _apcom)))) True) (_sell _itel z2))))) -> (exists x, (and (and (x = _apcom) True) (exists z1, (and (and (and (and (_exactly z1) (_2500 z1)) (_computer z1)) True) (_sell _apcom z1))))) -> (not (exists x, (and (and (x = _itel) True) (exists z1, (and (and (and (_5500 z1) (_computer z1)) True) (_sell _itel z1)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _2500 is declared
+
+Coq < _3000 is declared
+
+Coq < _5500 is declared
+
+Coq < _apcom is declared
+
+Coq < _computer is declared
+
+Coq < _exactly is declared
+
+Coq < _itel is declared
+
+Coq < _more is declared
+
+Coq < _sell is declared
+
+Coq < _than is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _itel /\ True) /\
+(exists z2 : Entity,
+((((_3000 z2 /\ _more z2) /\ _computer z2) /\
+(exists z1 : Entity, (z1 = _apcom /\ True) /\ _than z2 _apcom)) /\
+True) /\ _sell _itel z2)) ->
+(exists x : Entity,
+(x = _apcom /\ True) /\
+(exists z1 : Entity,
+(((_exactly z1 /\ _2500 z1) /\ _computer z1) /\ True) /\
+_sell _apcom z1)) ->
+exists x : Entity,
+(x = _itel /\ True) /\
+(exists z1 : Entity,
+((_5500 z1 /\ _computer z1) /\ True) /\ _sell _itel z1)
+
+1 goal
+
+H2 : True
+x0 : Entity
+H3 : _sell _apcom x0
+H4 : True
+H5 : _computer x0
+H1 : _exactly x0
+H6 : _2500 x0
+H8 : True
+x2 : Entity
+H9 : _sell _itel x2
+H10 : True
+H12 : _computer x2
+H7 : _3000 x2
+H13 : _more x2
+H14 : _than x2 _apcom
+H15 : True
+============================
+_5500 x2
+
+Toplevel input, characters 509-521:
+> Theorem t1: (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (and (and (_3000 z2) (_more z2)) (_computer z2)) (exists z1, (and (and (z1 = _apcom) True) (_than z2 _apcom)))) True) (_sell _itel z2))))) -> (exists x, (and (and (x = _apcom) True) (exists z1, (and (and (and (and (_exactly z1) (_2500 z1)) (_computer z1)) True) (_sell _apcom z1))))) -> (exists x, (and (and (x = _itel) True) (exists z1, (and (and (and (_5500 z1) (_computer z1)) True) (_sell _itel z1))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 523-527:
+> Theorem t1: (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (and (and (_3000 z2) (_more z2)) (_computer z2)) (exists z1, (and (and (z1 = _apcom) True) (_than z2 _apcom)))) True) (_sell _itel z2))))) -> (exists x, (and (and (x = _apcom) True) (exists z1, (and (and (and (and (_exactly z1) (_2500 z1)) (_computer z1)) True) (_sell _apcom z1))))) -> (exists x, (and (and (x = _itel) True) (exists z1, (and (and (and (_5500 z1) (_computer z1)) True) (_sell _itel z1))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

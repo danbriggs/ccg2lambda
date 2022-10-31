@@ -1,0 +1,180 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1994 is declared
+
+Coq < _2 is declared
+
+Coq < _4th is declared
+
+Coq < _8th is declared
+
+Coq < _conference is declared
+
+Coq < _day is declared
+
+Coq < _july is declared
+
+Coq < _last is declared
+
+Coq < _on is declared
+
+Coq < _over is declared
+
+Coq < _start is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(_conference x /\ True) /\
+(exists z1 : Entity,
+((((_1994 z1 /\ _july z1) /\ _4th z1) /\ True) /\ _on x z1) /\
+_start x)) ->
+(exists x : Entity,
+True /\ (exists z1 : Entity, ((_2 z1 /\ _day z1) /\ True) /\ _last x z1)) ->
+exists x : Entity,
+(_conference x /\ True) /\
+(exists z1 : Entity,
+((((_1994 z1 /\ _july z1) /\ _8th z1) /\ True) /\ _on x z1) /\ _over x)
+
+
+Toplevel input, characters 409-413:
+> Theorem t1: (exists x, (and (and (_conference x) True) (exists z1, (and (and (and (and (and (_1994 z1) (_july z1)) (_4th z1)) True) (_on x z1)) (_start x))))) -> (exists x, (and True (exists z1, (and (and (and (_2 z1) (_day z1)) True) (_last x z1))))) -> (exists x, (and (and (_conference x) True) (exists z1, (and (and (and (and (and (_1994 z1) (_july z1)) (_8th z1)) True) (_on x z1)) (_over x))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1994 is declared
+
+Coq < _2 is declared
+
+Coq < _4th is declared
+
+Coq < _8th is declared
+
+Coq < _conference is declared
+
+Coq < _day is declared
+
+Coq < _july is declared
+
+Coq < _last is declared
+
+Coq < _on is declared
+
+Coq < _over is declared
+
+Coq < _start is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(_conference x /\ True) /\
+(exists z1 : Entity,
+((((_1994 z1 /\ _july z1) /\ _4th z1) /\ True) /\ _on x z1) /\
+_start x)) ->
+(exists x : Entity,
+True /\ (exists z1 : Entity, ((_2 z1 /\ _day z1) /\ True) /\ _last x z1)) ->
+~
+(exists x : Entity,
+(_conference x /\ True) /\
+(exists z1 : Entity,
+((((_1994 z1 /\ _july z1) /\ _8th z1) /\ True) /\ _on x z1) /\
+_over x))
+
+
+Toplevel input, characters 415-419:
+> Theorem t1: (exists x, (and (and (_conference x) True) (exists z1, (and (and (and (and (and (_1994 z1) (_july z1)) (_4th z1)) True) (_on x z1)) (_start x))))) -> (exists x, (and True (exists z1, (and (and (and (_2 z1) (_day z1)) True) (_last x z1))))) -> (not (exists x, (and (and (_conference x) True) (exists z1, (and (and (and (and (and (_1994 z1) (_july z1)) (_8th z1)) True) (_on x z1)) (_over x)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1994 is declared
+
+Coq < _2 is declared
+
+Coq < _4th is declared
+
+Coq < _8th is declared
+
+Coq < _conference is declared
+
+Coq < _day is declared
+
+Coq < _july is declared
+
+Coq < _last is declared
+
+Coq < _on is declared
+
+Coq < _over is declared
+
+Coq < _start is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(_conference x /\ True) /\
+(exists z1 : Entity,
+((((_1994 z1 /\ _july z1) /\ _4th z1) /\ True) /\ _on x z1) /\
+_start x)) ->
+(exists x : Entity,
+True /\ (exists z1 : Entity, ((_2 z1 /\ _day z1) /\ True) /\ _last x z1)) ->
+exists x : Entity,
+(_conference x /\ True) /\
+(exists z1 : Entity,
+((((_1994 z1 /\ _july z1) /\ _8th z1) /\ True) /\ _on x z1) /\ _over x)
+
+2 goals
+
+x : Entity
+H0 : True
+x0 : Entity
+H2 : _last x x0
+H3 : True
+H1 : _2 x0
+H4 : _day x0
+x1 : Entity
+H : _conference x1
+H6 : True
+x2 : Entity
+H7 : _start x1
+H8 : _on x1 x2
+H9 : True
+H10 : _4th x2
+H5 : _1994 x2
+H11 : _july x2
+============================
+_8th x2
+
+goal 2 is:
+_over x1
+
+Toplevel input, characters 425-437:
+> Theorem t1: (exists x, (and (and (_conference x) True) (exists z1, (and (and (and (and (and (_1994 z1) (_july z1)) (_4th z1)) True) (_on x z1)) (_start x))))) -> (exists x, (and True (exists z1, (and (and (and (_2 z1) (_day z1)) True) (_last x z1))))) -> (exists x, (and (and (_conference x) True) (exists z1, (and (and (and (and (and (_1994 z1) (_july z1)) (_8th z1)) True) (_on x z1)) (_over x))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 439-443:
+> Theorem t1: (exists x, (and (and (_conference x) True) (exists z1, (and (and (and (and (and (_1994 z1) (_july z1)) (_4th z1)) True) (_on x z1)) (_start x))))) -> (exists x, (and True (exists z1, (and (and (and (_2 z1) (_day z1)) True) (_last x z1))))) -> (exists x, (and (and (_conference x) True) (exists z1, (and (and (and (and (and (_1994 z1) (_july z1)) (_8th z1)) True) (_on x z1)) (_over x))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

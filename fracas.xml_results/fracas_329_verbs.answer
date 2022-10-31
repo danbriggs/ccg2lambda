@@ -1,0 +1,159 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1993 is declared
+
+Coq < _apcom is declared
+
+Coq < _be is declared
+
+Coq < _contract is declared
+
+Coq < _from is declared
+
+Coq < _in is declared
+
+Coq < _itel is declared
+
+Coq < _win is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _itel /\ True) /\ _be _itel) /\
+(exists z4 : Entity,
+((_1993 z4 /\ True) /\ _in _itel z4) /\
+(exists z2 : Entity,
+((z2 = _apcom /\ True) /\ _from _itel _apcom) /\
+(exists z1 : Entity,
+(_contract z1 /\ True) /\ Prog (_win _itel z1))))) ->
+exists x : Entity,
+(x = _itel /\ True) /\
+(exists z2 : Entity,
+((_1993 z2 /\ True) /\ _in _itel z2) /\
+(exists z1 : Entity, (_contract z1 /\ True) /\ _win _itel z1))
+
+
+Toplevel input, characters 447-451:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_be _itel)) (exists z4, (and (and (and (_1993 z4) True) (_in _itel z4)) (exists z2, (and (and (and (z2 = _apcom) True) (_from _itel _apcom)) (exists z1, (and (and (_contract z1) True) (Prog (_win _itel z1)))))))))) -> (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (_1993 z2) True) (_in _itel z2)) (exists z1, (and (and (_contract z1) True) (_win _itel z1))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1993 is declared
+
+Coq < _apcom is declared
+
+Coq < _be is declared
+
+Coq < _contract is declared
+
+Coq < _from is declared
+
+Coq < _in is declared
+
+Coq < _itel is declared
+
+Coq < _win is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _itel /\ True) /\ _be _itel) /\
+(exists z4 : Entity,
+((_1993 z4 /\ True) /\ _in _itel z4) /\
+(exists z2 : Entity,
+((z2 = _apcom /\ True) /\ _from _itel _apcom) /\
+(exists z1 : Entity,
+(_contract z1 /\ True) /\ Prog (_win _itel z1))))) ->
+~
+(exists x : Entity,
+(x = _itel /\ True) /\
+(exists z2 : Entity,
+((_1993 z2 /\ True) /\ _in _itel z2) /\
+(exists z1 : Entity, (_contract z1 /\ True) /\ _win _itel z1)))
+
+
+Toplevel input, characters 453-457:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_be _itel)) (exists z4, (and (and (and (_1993 z4) True) (_in _itel z4)) (exists z2, (and (and (and (z2 = _apcom) True) (_from _itel _apcom)) (exists z1, (and (and (_contract z1) True) (Prog (_win _itel z1)))))))))) -> (not (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (_1993 z2) True) (_in _itel z2)) (exists z1, (and (and (_contract z1) True) (_win _itel z1)))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1993 is declared
+
+Coq < _apcom is declared
+
+Coq < _be is declared
+
+Coq < _contract is declared
+
+Coq < _from is declared
+
+Coq < _in is declared
+
+Coq < _itel is declared
+
+Coq < _win is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _itel /\ True) /\ _be _itel) /\
+(exists z4 : Entity,
+((_1993 z4 /\ True) /\ _in _itel z4) /\
+(exists z2 : Entity,
+((z2 = _apcom /\ True) /\ _from _itel _apcom) /\
+(exists z1 : Entity,
+(_contract z1 /\ True) /\ Prog (_win _itel z1))))) ->
+exists x : Entity,
+(x = _itel /\ True) /\
+(exists z2 : Entity,
+((_1993 z2 /\ True) /\ _in _itel z2) /\
+(exists z1 : Entity, (_contract z1 /\ True) /\ _win _itel z1))
+
+1 goal
+
+H1 : _be _itel
+H2 : True
+x0 : Entity
+H4 : _in _itel x0
+H0 : _1993 x0
+H5 : True
+H7 : _from _itel _apcom
+H8 : True
+x2 : Entity
+H9 : Prog (_win _itel x2)
+H6 : _contract x2
+H10 : True
+============================
+_win _itel x2
+
+Toplevel input, characters 463-475:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_be _itel)) (exists z4, (and (and (and (_1993 z4) True) (_in _itel z4)) (exists z2, (and (and (and (z2 = _apcom) True) (_from _itel _apcom)) (exists z1, (and (and (_contract z1) True) (Prog (_win _itel z1)))))))))) -> (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (_1993 z2) True) (_in _itel z2)) (exists z1, (and (and (_contract z1) True) (_win _itel z1))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 477-481:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_be _itel)) (exists z4, (and (and (and (_1993 z4) True) (_in _itel z4)) (exists z2, (and (and (and (z2 = _apcom) True) (_from _itel _apcom)) (exists z1, (and (and (_contract z1) True) (Prog (_win _itel z1)))))))))) -> (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (_1993 z2) True) (_in _itel z2)) (exists z1, (and (and (_contract z1) True) (_win _itel z1))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

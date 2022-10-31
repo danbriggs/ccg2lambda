@@ -1,0 +1,141 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _agenda is declared
+
+Coq < _chairman is declared
+
+Coq < _item is declared
+
+Coq < _on is declared
+
+Coq < _out is declared
+
+Coq < _read is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((_chairman x /\ True) /\ _out x) /\
+(exists z3 : Entity,
+((_item z3 /\ (exists z2 : Entity, (_agenda z2 /\ True) /\ _on z3 z2)) /\
+True) /\ _read x z3)) ->
+exists x : Entity,
+(_chairman x /\ True) /\
+(exists z3 : Entity,
+(((_agenda z3 /\ True) /\ _on x z3) /\ _out x) /\
+(forall z2 : Entity, _item z2 -> True -> _read x z2))
+
+
+Toplevel input, characters 366-370:
+> Theorem t1: (exists x, (and (and (and (_chairman x) True) (_out x)) (exists z3, (and (and (and (_item z3) (exists z2, (and (and (_agenda z2) True) (_on z3 z2)))) True) (_read x z3))))) -> (exists x, (and (and (_chairman x) True) (exists z3, (and (and (and (and (_agenda z3) True) (_on x z3)) (_out x)) (forall z2, ((_item z2) -> (True -> (_read x z2)))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                               ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _agenda is declared
+
+Coq < _chairman is declared
+
+Coq < _item is declared
+
+Coq < _on is declared
+
+Coq < _out is declared
+
+Coq < _read is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((_chairman x /\ True) /\ _out x) /\
+(exists z3 : Entity,
+((_item z3 /\ (exists z2 : Entity, (_agenda z2 /\ True) /\ _on z3 z2)) /\
+True) /\ _read x z3)) ->
+~
+(exists x : Entity,
+(_chairman x /\ True) /\
+(exists z3 : Entity,
+(((_agenda z3 /\ True) /\ _on x z3) /\ _out x) /\
+(forall z2 : Entity, _item z2 -> True -> _read x z2)))
+
+
+Toplevel input, characters 372-376:
+> Theorem t1: (exists x, (and (and (and (_chairman x) True) (_out x)) (exists z3, (and (and (and (_item z3) (exists z2, (and (and (_agenda z2) True) (_on z3 z2)))) True) (_read x z3))))) -> (not (exists x, (and (and (_chairman x) True) (exists z3, (and (and (and (and (_agenda z3) True) (_on x z3)) (_out x)) (forall z2, ((_item z2) -> (True -> (_read x z2))))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                     ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _agenda is declared
+
+Coq < _chairman is declared
+
+Coq < _item is declared
+
+Coq < _on is declared
+
+Coq < _out is declared
+
+Coq < _read is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((_chairman x /\ True) /\ _out x) /\
+(exists z3 : Entity,
+((_item z3 /\ (exists z2 : Entity, (_agenda z2 /\ True) /\ _on z3 z2)) /\
+True) /\ _read x z3)) ->
+exists x : Entity,
+(_chairman x /\ True) /\
+(exists z3 : Entity,
+(((_agenda z3 /\ True) /\ _on x z3) /\ _out x) /\
+(forall z2 : Entity, _item z2 -> True -> _read x z2))
+
+2 goals
+
+x : Entity
+H1 : _out x
+H : _chairman x
+H2 : True
+x0 : Entity
+H3 : _read x x0
+H4 : True
+H0 : _item x0
+x1 : Entity
+H6 : _on x0 x1
+H5 : _agenda x1
+H7 : True
+============================
+_on x x1
+
+goal 2 is:
+_read x z2
+
+Toplevel input, characters 382-394:
+> Theorem t1: (exists x, (and (and (and (_chairman x) True) (_out x)) (exists z3, (and (and (and (_item z3) (exists z2, (and (and (_agenda z2) True) (_on z3 z2)))) True) (_read x z3))))) -> (exists x, (and (and (_chairman x) True) (exists z3, (and (and (and (and (_agenda z3) True) (_on x z3)) (_out x)) (forall z2, ((_item z2) -> (True -> (_read x z2)))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                               ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 396-400:
+> Theorem t1: (exists x, (and (and (and (_chairman x) True) (_out x)) (exists z3, (and (and (and (_item z3) (exists z2, (and (and (_agenda z2) True) (_on z3 z2)))) True) (_read x z3))))) -> (exists x, (and (and (_chairman x) True) (exists z3, (and (and (and (and (_agenda z3) True) (_on x z3)) (_out x)) (forall z2, ((_item z2) -> (True -> (_read x z2)))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                             ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

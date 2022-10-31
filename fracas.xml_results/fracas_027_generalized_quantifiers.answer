@@ -1,0 +1,154 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _committee is declared
+
+Coq < _few is declared
+
+Coq < _from is declared
+
+Coq < _member is declared
+
+Coq < _people is declared
+
+Coq < _scandinavia is declared
+
+Coq < _sweden is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((_few x /\ _committee x) /\ _member x) /\ True) /\
+(exists z1 : Entity, (z1 = _sweden /\ True) /\ _from x _sweden)) ->
+(forall x : Entity,
+_committee x /\ _member x ->
+True -> exists z1 : Entity, (_people z1 /\ True) /\ x = z1) ->
+(forall x : Entity,
+_people x ->
+(exists z1 : Entity, (z1 = _sweden /\ True) /\ _from x _sweden) /\ True ->
+exists z3 : Entity, (z3 = _scandinavia /\ True) /\ _from x _scandinavia) ->
+exists x : Entity,
+(((_few x /\ _committee x) /\ _member x) /\ True) /\
+(exists z2 : Entity, (z2 = _scandinavia /\ True) /\ _from x _scandinavia)
+
+No more goals.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _committee is declared
+
+Coq < _few is declared
+
+Coq < _from is declared
+
+Coq < _member is declared
+
+Coq < _people is declared
+
+Coq < _scandinavia is declared
+
+Coq < _sweden is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((_few x /\ _committee x) /\ _member x) /\ True) /\
+(exists z1 : Entity, (z1 = _sweden /\ True) /\ _from x _sweden)) ->
+(forall x : Entity,
+_committee x /\ _member x ->
+True -> exists z1 : Entity, (_people z1 /\ True) /\ x = z1) ->
+(forall x : Entity,
+_people x ->
+(exists z1 : Entity, (z1 = _sweden /\ True) /\ _from x _sweden) /\ True ->
+exists z3 : Entity, (z3 = _scandinavia /\ True) /\ _from x _scandinavia) ->
+~
+(exists x : Entity,
+(((_few x /\ _committee x) /\ _member x) /\ True) /\
+(exists z2 : Entity, (z2 = _scandinavia /\ True) /\ _from x _scandinavia))
+
+
+Toplevel input, characters 618-622:
+> Theorem t1: (exists x, (and (and (and (and (_few x) (_committee x)) (_member x)) True) (exists z1, (and (and (z1 = _sweden) True) (_from x _sweden))))) -> (forall x, ((and (_committee x) (_member x)) -> (True -> (exists z1, (and (and (_people z1) True) (x = z1)))))) -> (forall x, ((_people x) -> ((and (exists z1, (and (and (z1 = _sweden) True) (_from x _sweden))) True) -> (exists z3, (and (and (z3 = _scandinavia) True) (_from x _scandinavia)))))) -> (not (exists x, (and (and (and (and (_few x) (_committee x)) (_member x)) True) (exists z2, (and (and (z2 = _scandinavia) True) (_from x _scandinavia)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _committee is declared
+
+Coq < _few is declared
+
+Coq < _from is declared
+
+Coq < _member is declared
+
+Coq < _people is declared
+
+Coq < _scandinavia is declared
+
+Coq < _sweden is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((_few x /\ _committee x) /\ _member x) /\ True) /\
+(exists z1 : Entity, (z1 = _sweden /\ True) /\ _from x _sweden)) ->
+(forall x : Entity,
+_committee x /\ _member x ->
+True -> exists z1 : Entity, (_people z1 /\ True) /\ x = z1) ->
+(forall x : Entity,
+_people x ->
+(exists z1 : Entity, (z1 = _sweden /\ True) /\ _from x _sweden) /\ True ->
+exists z3 : Entity, (z3 = _scandinavia /\ True) /\ _from x _scandinavia) ->
+exists x : Entity,
+(((_few x /\ _committee x) /\ _member x) /\ True) /\
+(exists z2 : Entity, (z2 = _scandinavia /\ True) /\ _from x _scandinavia)
+
+1 goal
+
+H0 : forall x : Entity,
+_committee x /\ _member x ->
+True -> exists z1 : Entity, (_people z1 /\ True) /\ x = z1
+H1 : forall x : Entity,
+_people x ->
+(exists z1 : Entity, (z1 = _sweden /\ True) /\ _from x _sweden) /\
+True ->
+exists z3 : Entity,
+(z3 = _scandinavia /\ True) /\ _from x _scandinavia
+x : Entity
+H3 : True
+H4 : _member x
+H : _few x
+H5 : _committee x
+H6 : _from x _sweden
+H7 : True
+============================
+_from x _scandinavia
+
+Toplevel input, characters 628-640:
+> Theorem t1: (exists x, (and (and (and (and (_few x) (_committee x)) (_member x)) True) (exists z1, (and (and (z1 = _sweden) True) (_from x _sweden))))) -> (forall x, ((and (_committee x) (_member x)) -> (True -> (exists z1, (and (and (_people z1) True) (x = z1)))))) -> (forall x, ((_people x) -> ((and (exists z1, (and (and (z1 = _sweden) True) (_from x _sweden))) True) -> (exists z3, (and (and (z3 = _scandinavia) True) (_from x _scandinavia)))))) -> (exists x, (and (and (and (and (_few x) (_committee x)) (_member x)) True) (exists z2, (and (and (z2 = _scandinavia) True) (_from x _scandinavia))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 642-646:
+> Theorem t1: (exists x, (and (and (and (and (_few x) (_committee x)) (_member x)) True) (exists z1, (and (and (z1 = _sweden) True) (_from x _sweden))))) -> (forall x, ((and (_committee x) (_member x)) -> (True -> (exists z1, (and (and (_people z1) True) (x = z1)))))) -> (forall x, ((_people x) -> ((and (exists z1, (and (and (z1 = _sweden) True) (_from x _sweden))) True) -> (exists z3, (and (and (z3 = _scandinavia) True) (_from x _scandinavia)))))) -> (exists x, (and (and (and (and (_few x) (_committee x)) (_member x)) True) (exists z2, (and (and (z2 = _scandinavia) True) (_from x _scandinavia))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

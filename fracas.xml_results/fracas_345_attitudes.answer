@@ -1,0 +1,613 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _contract is declared
+
+Coq < _copy is declared
+
+Coq < _jones is declared
+
+Coq < _make is declared
+
+Coq < _secretary is declared
+
+Coq < _see is declared
+
+Coq < _sign is declared
+
+Coq < _smith is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(_secretary x /\ True) /\
+(exists z4 : Entity, (_copy z4 /\ True) /\ _make x z4)) /\
+(exists x : Entity,
+((x = _smith /\
+(exists z1 : Entity, (z1 = _jones /\ True) /\ _see _smith _jones)) /\
+True) /\
+(exists z3 : Entity, (_contract z3 /\ True) /\ _sign _smith z3)) ->
+exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity,
+((z1 = _jones /\ True) /\ _see _smith _jones) /\
+(exists z2 : Entity, (_contract z2 /\ True) /\ _sign _jones z2))
+
+
+Toplevel input, characters 479-483:
+> Theorem t1: (and (exists x, (and (and (_secretary x) True) (exists z4, (and (and (_copy z4) True) (_make x z4))))) (exists x, (and (and (and (x = _smith) (exists z1, (and (and (z1 = _jones) True) (_see _smith _jones)))) True) (exists z3, (and (and (_contract z3) True) (_sign _smith z3)))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (z1 = _jones) True) (_see _smith _jones)) (exists z2, (and (and (_contract z2) True) (_sign _jones z2))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _contract is declared
+
+Coq < _copy is declared
+
+Coq < _jones is declared
+
+Coq < _make is declared
+
+Coq < _secretary is declared
+
+Coq < _see is declared
+
+Coq < _sign is declared
+
+Coq < _smith is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(_secretary x /\ True) /\
+(exists z4 : Entity, (_copy z4 /\ True) /\ _make x z4)) /\
+(exists x : Entity,
+((x = _smith /\
+(exists z1 : Entity, (z1 = _jones /\ True) /\ _see _smith _jones)) /\
+True) /\
+(exists z3 : Entity, (_contract z3 /\ True) /\ _sign _smith z3)) ->
+~
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity,
+((z1 = _jones /\ True) /\ _see _smith _jones) /\
+(exists z2 : Entity, (_contract z2 /\ True) /\ _sign _jones z2)))
+
+
+Toplevel input, characters 485-489:
+> Theorem t1: (and (exists x, (and (and (_secretary x) True) (exists z4, (and (and (_copy z4) True) (_make x z4))))) (exists x, (and (and (and (x = _smith) (exists z1, (and (and (z1 = _jones) True) (_see _smith _jones)))) True) (exists z3, (and (and (_contract z3) True) (_sign _smith z3)))))) -> (not (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (z1 = _jones) True) (_see _smith _jones)) (exists z2, (and (and (_contract z2) True) (_sign _jones z2)))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _contract is declared
+
+Coq < _copy is declared
+
+Coq < _jones is declared
+
+Coq < _make is declared
+
+Coq < _secretary is declared
+
+Coq < _see is declared
+
+Coq < _sign is declared
+
+Coq < _smith is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(_secretary x /\ True) /\
+(exists z4 : Entity, (_copy z4 /\ True) /\ _make x z4)) /\
+(exists x : Entity,
+((x = _smith /\
+(exists z1 : Entity, (z1 = _jones /\ True) /\ _see _smith _jones)) /\
+True) /\
+(exists z3 : Entity, (_contract z3 /\ True) /\ _sign _smith z3)) ->
+exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity,
+((z1 = _jones /\ True) /\ _see _smith _jones) /\
+(exists z2 : Entity, (_contract z2 /\ True) /\ _sign _jones z2))
+
+1 goal
+
+H2 : True
+H4 : _see _smith _jones
+H5 : True
+x1 : Entity
+H6 : _sign _smith x1
+H1 : _contract x1
+H7 : True
+x2 : Entity
+H0 : _secretary x2
+H9 : True
+x3 : Entity
+H10 : _make x2 x3
+H8 : _copy x3
+H11 : True
+============================
+_sign _jones x1
+
+Toplevel input, characters 495-507:
+> Theorem t1: (and (exists x, (and (and (_secretary x) True) (exists z4, (and (and (_copy z4) True) (_make x z4))))) (exists x, (and (and (and (x = _smith) (exists z1, (and (and (z1 = _jones) True) (_see _smith _jones)))) True) (exists z3, (and (and (_contract z3) True) (_sign _smith z3)))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (z1 = _jones) True) (_see _smith _jones)) (exists z2, (and (and (_contract z2) True) (_sign _jones z2))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 509-513:
+> Theorem t1: (and (exists x, (and (and (_secretary x) True) (exists z4, (and (and (_copy z4) True) (_make x z4))))) (exists x, (and (and (and (x = _smith) (exists z1, (and (and (z1 = _jones) True) (_see _smith _jones)))) True) (exists z3, (and (and (_contract z3) True) (_sign _smith z3)))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (z1 = _jones) True) (_see _smith _jones)) (exists z2, (and (and (_contract z2) True) (_sign _jones z2))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _contract is declared
+
+Coq < _copy is declared
+
+Coq < _jones is declared
+
+Coq < _make is declared
+
+Coq < _secretary is declared
+
+Coq < _see is declared
+
+Coq < _sign is declared
+
+Coq < _smith is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(_secretary x /\ True) /\
+(exists z4 : Entity, (_copy z4 /\ True) /\ _make x z4)) /\
+(exists x : Entity,
+((x = _smith /\
+(exists z1 : Entity, (z1 = _jones /\ True) /\ _see _smith _jones)) /\
+True) /\
+(exists z3 : Entity, (_contract z3 /\ True) /\ _sign _smith z3)) ->
+exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity,
+((z1 = _jones /\ True) /\ _see _smith _jones) /\
+(exists z2 : Entity, (_contract z2 /\ True) /\ _sign _jones z2))
+
+
+Toplevel input, characters 479-483:
+> Theorem t1: (and (exists x, (and (and (_secretary x) True) (exists z4, (and (and (_copy z4) True) (_make x z4))))) (exists x, (and (and (and (x = _smith) (exists z1, (and (and (z1 = _jones) True) (_see _smith _jones)))) True) (exists z3, (and (and (_contract z3) True) (_sign _smith z3)))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (z1 = _jones) True) (_see _smith _jones)) (exists z2, (and (and (_contract z2) True) (_sign _jones z2))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _contract is declared
+
+Coq < _copy is declared
+
+Coq < _jones is declared
+
+Coq < _make is declared
+
+Coq < _secretary is declared
+
+Coq < _see is declared
+
+Coq < _sign is declared
+
+Coq < _smith is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(_secretary x /\ True) /\
+(exists z4 : Entity, (_copy z4 /\ True) /\ _make x z4)) /\
+(exists x : Entity,
+((x = _smith /\
+(exists z1 : Entity, (z1 = _jones /\ True) /\ _see _smith _jones)) /\
+True) /\
+(exists z3 : Entity, (_contract z3 /\ True) /\ _sign _smith z3)) ->
+~
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity,
+((z1 = _jones /\ True) /\ _see _smith _jones) /\
+(exists z2 : Entity, (_contract z2 /\ True) /\ _sign _jones z2)))
+
+1 goal
+
+H3 : True
+H5 : _see _smith _jones
+H6 : True
+x1 : Entity
+H7 : _sign _smith x1
+H2 : _contract x1
+H8, H10 : True
+H12 : _see _smith _jones
+H13 : True
+x4 : Entity
+H14 : _sign _jones x4
+H11 : _contract x4
+H15 : True
+x5 : Entity
+H1 : _secretary x5
+H17 : True
+x6 : Entity
+H18 : _make x5 x6
+H16 : _copy x6
+H19 : True
+============================
+False
+
+Toplevel input, characters 501-513:
+> Theorem t1: (and (exists x, (and (and (_secretary x) True) (exists z4, (and (and (_copy z4) True) (_make x z4))))) (exists x, (and (and (and (x = _smith) (exists z1, (and (and (z1 = _jones) True) (_see _smith _jones)))) True) (exists z3, (and (and (_contract z3) True) (_sign _smith z3)))))) -> (not (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (z1 = _jones) True) (_see _smith _jones)) (exists z2, (and (and (_contract z2) True) (_sign _jones z2)))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 515-519:
+> Theorem t1: (and (exists x, (and (and (_secretary x) True) (exists z4, (and (and (_copy z4) True) (_make x z4))))) (exists x, (and (and (and (x = _smith) (exists z1, (and (and (z1 = _jones) True) (_see _smith _jones)))) True) (exists z3, (and (and (_contract z3) True) (_sign _smith z3)))))) -> (not (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (z1 = _jones) True) (_see _smith _jones)) (exists z2, (and (and (_contract z2) True) (_sign _jones z2)))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _contract is declared
+
+Coq < _copy is declared
+
+Coq < _jones is declared
+
+Coq < _make is declared
+
+Coq < _secretary is declared
+
+Coq < _see is declared
+
+Coq < _sign is declared
+
+Coq < _smith is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(_secretary x /\ True) /\
+(exists z4 : Entity, (_copy z4 /\ True) /\ _make x z4)) /\
+(exists x : Entity,
+((x = _smith /\
+(exists z1 : Entity, (z1 = _jones /\ True) /\ _see _smith _jones)) /\
+True) /\
+(exists z3 : Entity, (_contract z3 /\ True) /\ _sign _smith z3)) ->
+~
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity,
+((z1 = _jones /\ True) /\ _see _smith _jones) /\
+(exists z2 : Entity, (_contract z2 /\ True) /\ _sign _jones z2)))
+
+
+Toplevel input, characters 485-489:
+> Theorem t1: (and (exists x, (and (and (_secretary x) True) (exists z4, (and (and (_copy z4) True) (_make x z4))))) (exists x, (and (and (and (x = _smith) (exists z1, (and (and (z1 = _jones) True) (_see _smith _jones)))) True) (exists z3, (and (and (_contract z3) True) (_sign _smith z3)))))) -> (not (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (z1 = _jones) True) (_see _smith _jones)) (exists z2, (and (and (_contract z2) True) (_sign _jones z2)))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _contract is declared
+
+Coq < _copy is declared
+
+Coq < _jones is declared
+
+Coq < _make is declared
+
+Coq < _secretary is declared
+
+Coq < _see is declared
+
+Coq < _sign is declared
+
+Coq < _smith is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(_secretary x /\ True) /\
+(exists z4 : Entity, (_copy z4 /\ True) /\ _make x z4)) /\
+(exists x : Entity,
+((x = _smith /\
+(exists z1 : Entity, (z1 = _jones /\ True) /\ _see _smith _jones)) /\
+True) /\
+(exists z3 : Entity, (_contract z3 /\ True) /\ _sign _smith z3)) ->
+exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity,
+((z1 = _jones /\ True) /\ _see _smith _jones) /\
+(exists z2 : Entity, (_contract z2 /\ True) /\ _sign _jones z2))
+
+1 goal
+
+H2 : True
+H4 : _see _smith _jones
+H5 : True
+x1 : Entity
+H6 : _sign _smith x1
+H1 : _contract x1
+H7 : True
+x2 : Entity
+H0 : _secretary x2
+H9 : True
+x3 : Entity
+H10 : _make x2 x3
+H8 : _copy x3
+H11 : True
+============================
+_sign _jones x1
+
+Toplevel input, characters 495-507:
+> Theorem t1: (and (exists x, (and (and (_secretary x) True) (exists z4, (and (and (_copy z4) True) (_make x z4))))) (exists x, (and (and (and (x = _smith) (exists z1, (and (and (z1 = _jones) True) (_see _smith _jones)))) True) (exists z3, (and (and (_contract z3) True) (_sign _smith z3)))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (z1 = _jones) True) (_see _smith _jones)) (exists z2, (and (and (_contract z2) True) (_sign _jones z2))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 509-513:
+> Theorem t1: (and (exists x, (and (and (_secretary x) True) (exists z4, (and (and (_copy z4) True) (_make x z4))))) (exists x, (and (and (and (x = _smith) (exists z1, (and (and (z1 = _jones) True) (_see _smith _jones)))) True) (exists z3, (and (and (_contract z3) True) (_sign _smith z3)))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (z1 = _jones) True) (_see _smith _jones)) (exists z2, (and (and (_contract z2) True) (_sign _jones z2))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _contract is declared
+
+Coq < _copy is declared
+
+Coq < _jones is declared
+
+Coq < _make is declared
+
+Coq < _secretary is declared
+
+Coq < _see is declared
+
+Coq < _sign is declared
+
+Coq < _smith is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(_secretary x /\ True) /\
+(exists z4 : Entity, (_copy z4 /\ True) /\ _make x z4)) /\
+(exists x : Entity,
+((x = _smith /\
+(exists z1 : Entity, (z1 = _jones /\ True) /\ _see _smith _jones)) /\
+True) /\
+(exists z3 : Entity, (_contract z3 /\ True) /\ _sign _smith z3)) ->
+~
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity,
+((z1 = _jones /\ True) /\ _see _smith _jones) /\
+(exists z2 : Entity, (_contract z2 /\ True) /\ _sign _jones z2)))
+
+1 goal
+
+H3 : True
+H5 : _see _smith _jones
+H6 : True
+x1 : Entity
+H7 : _sign _smith x1
+H2 : _contract x1
+H8, H10 : True
+H12 : _see _smith _jones
+H13 : True
+x4 : Entity
+H14 : _sign _jones x4
+H11 : _contract x4
+H15 : True
+x5 : Entity
+H1 : _secretary x5
+H17 : True
+x6 : Entity
+H18 : _make x5 x6
+H16 : _copy x6
+H19 : True
+============================
+False
+
+Toplevel input, characters 501-513:
+> Theorem t1: (and (exists x, (and (and (_secretary x) True) (exists z4, (and (and (_copy z4) True) (_make x z4))))) (exists x, (and (and (and (x = _smith) (exists z1, (and (and (z1 = _jones) True) (_see _smith _jones)))) True) (exists z3, (and (and (_contract z3) True) (_sign _smith z3)))))) -> (not (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (z1 = _jones) True) (_see _smith _jones)) (exists z2, (and (and (_contract z2) True) (_sign _jones z2)))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 515-519:
+> Theorem t1: (and (exists x, (and (and (_secretary x) True) (exists z4, (and (and (_copy z4) True) (_make x z4))))) (exists x, (and (and (and (x = _smith) (exists z1, (and (and (z1 = _jones) True) (_see _smith _jones)))) True) (exists z3, (and (and (_contract z3) True) (_sign _smith z3)))))) -> (not (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (z1 = _jones) True) (_see _smith _jones)) (exists z2, (and (and (_contract z2) True) (_sign _jones z2)))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _contract is declared
+
+Coq < _copy is declared
+
+Coq < _jones is declared
+
+Coq < _make is declared
+
+Coq < _secretary is declared
+
+Coq < _see is declared
+
+Coq < _sign is declared
+
+Coq < _smith is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(_secretary x /\ True) /\
+(exists z4 : Entity, (_copy z4 /\ True) /\ _make x z4)) /\
+(exists x : Entity,
+((x = _smith /\
+(exists z1 : Entity, (z1 = _jones /\ True) /\ _see _smith _jones)) /\
+True) /\
+(exists z3 : Entity, (_contract z3 /\ True) /\ _sign _smith z3)) ->
+exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity,
+((z1 = _jones /\ True) /\ _see _smith _jones) /\
+(exists z2 : Entity, (_contract z2 /\ True) /\ _sign _jones z2))
+
+1 goal
+
+H2 : True
+H4 : _see _smith _jones
+H5 : True
+x1 : Entity
+H6 : _sign _smith x1
+H1 : _contract x1
+H7 : True
+x2 : Entity
+H0 : _secretary x2
+H9 : True
+x3 : Entity
+H10 : _make x2 x3
+H8 : _copy x3
+H11 : True
+============================
+_sign _jones x1
+
+Toplevel input, characters 495-507:
+> Theorem t1: (and (exists x, (and (and (_secretary x) True) (exists z4, (and (and (_copy z4) True) (_make x z4))))) (exists x, (and (and (and (x = _smith) (exists z1, (and (and (z1 = _jones) True) (_see _smith _jones)))) True) (exists z3, (and (and (_contract z3) True) (_sign _smith z3)))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (z1 = _jones) True) (_see _smith _jones)) (exists z2, (and (and (_contract z2) True) (_sign _jones z2))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 509-513:
+> Theorem t1: (and (exists x, (and (and (_secretary x) True) (exists z4, (and (and (_copy z4) True) (_make x z4))))) (exists x, (and (and (and (x = _smith) (exists z1, (and (and (z1 = _jones) True) (_see _smith _jones)))) True) (exists z3, (and (and (_contract z3) True) (_sign _smith z3)))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (z1 = _jones) True) (_see _smith _jones)) (exists z2, (and (and (_contract z2) True) (_sign _jones z2))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _contract is declared
+
+Coq < _copy is declared
+
+Coq < _jones is declared
+
+Coq < _make is declared
+
+Coq < _secretary is declared
+
+Coq < _see is declared
+
+Coq < _sign is declared
+
+Coq < _smith is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(_secretary x /\ True) /\
+(exists z4 : Entity, (_copy z4 /\ True) /\ _make x z4)) /\
+(exists x : Entity,
+((x = _smith /\
+(exists z1 : Entity, (z1 = _jones /\ True) /\ _see _smith _jones)) /\
+True) /\
+(exists z3 : Entity, (_contract z3 /\ True) /\ _sign _smith z3)) ->
+~
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity,
+((z1 = _jones /\ True) /\ _see _smith _jones) /\
+(exists z2 : Entity, (_contract z2 /\ True) /\ _sign _jones z2)))
+
+1 goal
+
+H3 : True
+H5 : _see _smith _jones
+H6 : True
+x1 : Entity
+H7 : _sign _smith x1
+H2 : _contract x1
+H8, H10 : True
+H12 : _see _smith _jones
+H13 : True
+x4 : Entity
+H14 : _sign _jones x4
+H11 : _contract x4
+H15 : True
+x5 : Entity
+H1 : _secretary x5
+H17 : True
+x6 : Entity
+H18 : _make x5 x6
+H16 : _copy x6
+H19 : True
+============================
+False
+
+Toplevel input, characters 501-513:
+> Theorem t1: (and (exists x, (and (and (_secretary x) True) (exists z4, (and (and (_copy z4) True) (_make x z4))))) (exists x, (and (and (and (x = _smith) (exists z1, (and (and (z1 = _jones) True) (_see _smith _jones)))) True) (exists z3, (and (and (_contract z3) True) (_sign _smith z3)))))) -> (not (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (z1 = _jones) True) (_see _smith _jones)) (exists z2, (and (and (_contract z2) True) (_sign _jones z2)))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 515-519:
+> Theorem t1: (and (exists x, (and (and (_secretary x) True) (exists z4, (and (and (_copy z4) True) (_make x z4))))) (exists x, (and (and (and (x = _smith) (exists z1, (and (and (z1 = _jones) True) (_see _smith _jones)))) True) (exists z3, (and (and (_contract z3) True) (_sign _smith z3)))))) -> (not (exists x, (and (and (x = _smith) True) (exists z1, (and (and (and (z1 = _jones) True) (_see _smith _jones)) (exists z2, (and (and (_contract z2) True) (_sign _jones z2)))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

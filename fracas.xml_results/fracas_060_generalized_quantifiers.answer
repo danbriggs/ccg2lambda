@@ -1,0 +1,146 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _committee is declared
+
+Coq < _europe is declared
+
+Coq < _female is declared
+
+Coq < _few is declared
+
+Coq < _from is declared
+
+Coq < _member is declared
+
+Coq < _southern is declared
+
+Coq < 1 goal
+
+============================
+~
+(exists x : Entity,
+((((_few x /\ _female x) /\ _committee x) /\ _member x) /\ True) /\
+(exists z1 : Entity,
+((_southern z1 /\ _europe z1) /\ True) /\ _from x z1)) ->
+~
+(exists x : Entity,
+(((_few x /\ _committee x) /\ _member x) /\ True) /\
+(exists z1 : Entity,
+((_southern z1 /\ _europe z1) /\ True) /\ _from x z1))
+
+
+Toplevel input, characters 361-365:
+> Theorem t1: (not (exists x, (and (and (and (and (and (_few x) (_female x)) (_committee x)) (_member x)) True) (exists z1, (and (and (and (_southern z1) (_europe z1)) True) (_from x z1)))))) -> (not (exists x, (and (and (and (and (_few x) (_committee x)) (_member x)) True) (exists z1, (and (and (and (_southern z1) (_europe z1)) True) (_from x z1)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                          ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _committee is declared
+
+Coq < _europe is declared
+
+Coq < _female is declared
+
+Coq < _few is declared
+
+Coq < _from is declared
+
+Coq < _member is declared
+
+Coq < _southern is declared
+
+Coq < 1 goal
+
+============================
+~
+(exists x : Entity,
+((((_few x /\ _female x) /\ _committee x) /\ _member x) /\ True) /\
+(exists z1 : Entity,
+((_southern z1 /\ _europe z1) /\ True) /\ _from x z1)) ->
+~
+~
+(exists x : Entity,
+(((_few x /\ _committee x) /\ _member x) /\ True) /\
+(exists z1 : Entity,
+((_southern z1 /\ _europe z1) /\ True) /\ _from x z1))
+
+
+Toplevel input, characters 367-371:
+> Theorem t1: (not (exists x, (and (and (and (and (and (_few x) (_female x)) (_committee x)) (_member x)) True) (exists z1, (and (and (and (_southern z1) (_europe z1)) True) (_from x z1)))))) -> (not (not (exists x, (and (and (and (and (_few x) (_committee x)) (_member x)) True) (exists z1, (and (and (and (_southern z1) (_europe z1)) True) (_from x z1))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _committee is declared
+
+Coq < _europe is declared
+
+Coq < _female is declared
+
+Coq < _few is declared
+
+Coq < _from is declared
+
+Coq < _member is declared
+
+Coq < _southern is declared
+
+Coq < 1 goal
+
+============================
+~
+(exists x : Entity,
+((((_few x /\ _female x) /\ _committee x) /\ _member x) /\ True) /\
+(exists z1 : Entity,
+((_southern z1 /\ _europe z1) /\ True) /\ _from x z1)) ->
+~
+(exists x : Entity,
+(((_few x /\ _committee x) /\ _member x) /\ True) /\
+(exists z1 : Entity,
+((_southern z1 /\ _europe z1) /\ True) /\ _from x z1))
+
+1 goal
+
+x : Entity
+H2 : True
+H3 : _member x
+H0 : _few x
+H4 : _committee x
+x0 : Entity
+H5 : _from x x0
+H6 : True
+H1 : _southern x0
+H7 : _europe x0
+H : forall x : Entity,
+((((_few x /\ _female x) /\ _committee x) /\ _member x) /\ True) /\
+(exists z1 : Entity,
+((_southern z1 /\ _europe z1) /\ True) /\ _from x z1) -> False
+============================
+_female x
+
+Toplevel input, characters 377-389:
+> Theorem t1: (not (exists x, (and (and (and (and (and (_few x) (_female x)) (_committee x)) (_member x)) True) (exists z1, (and (and (and (_southern z1) (_europe z1)) True) (_from x z1)))))) -> (not (exists x, (and (and (and (and (_few x) (_committee x)) (_member x)) True) (exists z1, (and (and (and (_southern z1) (_europe z1)) True) (_from x z1)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                          ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 391-395:
+> Theorem t1: (not (exists x, (and (and (and (and (and (_few x) (_female x)) (_committee x)) (_member x)) True) (exists z1, (and (and (and (_southern z1) (_europe z1)) True) (_from x z1)))))) -> (not (exists x, (and (and (and (and (_few x) (_committee x)) (_member x)) True) (exists z1, (and (and (and (_southern z1) (_europe z1)) True) (_from x z1)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

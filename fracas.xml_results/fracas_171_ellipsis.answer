@@ -1,0 +1,402 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _john is declared
+
+Coq < _man is declared
+
+Coq < _many is declared
+
+Coq < _part is declared
+
+Coq < _time is declared
+
+Coq < _want is declared
+
+Coq < _woman is declared
+
+Coq < _work is declared
+
+Coq < Toplevel input, characters 84-97:
+> Theorem t1: (exists x, (and (and (x = _john) True) (_want _john (_know _john (_man (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))) -> (fun F1 F2 => (exists x, (and (and (_woman x) (F1 x)) (F2 x)))) -> (exists x, (and (and (x = _john) True) (_want _john (_know _john (_woman (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))).
+>                                                                                     ^^^^^^^^^^^^^
+Error: The type of this term is a product while it is expected to be Entity.
+
+Toplevel input, characters 549-554:
+> Theorem t1: (exists x, (and (and (x = _john) True) (_want _john (_know _john (_man (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))) -> (fun F1 F2 => (exists x, (and (and (_woman x) (F1 x)) (F2 x)))) -> (exists x, (and (and (x = _john) True) (_want _john (_know _john (_woman (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 556-560:
+> Theorem t1: (exists x, (and (and (x = _john) True) (_want _john (_know _john (_man (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))) -> (fun F1 F2 => (exists x, (and (and (_woman x) (F1 x)) (F2 x)))) -> (exists x, (and (and (x = _john) True) (_want _john (_know _john (_woman (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _john is declared
+
+Coq < _man is declared
+
+Coq < _many is declared
+
+Coq < _part is declared
+
+Coq < _time is declared
+
+Coq < _want is declared
+
+Coq < _woman is declared
+
+Coq < _work is declared
+
+Coq < Toplevel input, characters 84-97:
+> Theorem t1: (exists x, (and (and (x = _john) True) (_want _john (_know _john (_man (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))) -> (fun F1 F2 => (exists x, (and (and (_woman x) (F1 x)) (F2 x)))) -> (not (exists x, (and (and (x = _john) True) (_want _john (_know _john (_woman (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1)))))))))))).
+>                                                                                     ^^^^^^^^^^^^^
+Error: The type of this term is a product while it is expected to be Entity.
+
+Toplevel input, characters 555-560:
+> Theorem t1: (exists x, (and (and (x = _john) True) (_want _john (_know _john (_man (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))) -> (fun F1 F2 => (exists x, (and (and (_woman x) (F1 x)) (F2 x)))) -> (not (exists x, (and (and (x = _john) True) (_want _john (_know _john (_woman (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1)))))))))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 562-566:
+> Theorem t1: (exists x, (and (and (x = _john) True) (_want _john (_know _john (_man (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))) -> (fun F1 F2 => (exists x, (and (and (_woman x) (F1 x)) (F2 x)))) -> (not (exists x, (and (and (x = _john) True) (_want _john (_know _john (_woman (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1)))))))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _john is declared
+
+Coq < _man is declared
+
+Coq < _many is declared
+
+Coq < _part is declared
+
+Coq < _time is declared
+
+Coq < _want is declared
+
+Coq < _woman is declared
+
+Coq < _work is declared
+
+Coq < Toplevel input, characters 84-97:
+> Theorem t1: (exists x, (and (and (x = _john) True) (_want _john (_know _john (_man (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))) -> (fun F1 F2 => (exists x, (and (and (_woman x) (F1 x)) (F2 x)))) -> (exists x, (and (and (x = _john) True) (_want _john (_know _john (_woman (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))).
+>                                                                                     ^^^^^^^^^^^^^
+Error: The type of this term is a product while it is expected to be Entity.
+
+Toplevel input, characters 549-555:
+> Theorem t1: (exists x, (and (and (x = _john) True) (_want _john (_know _john (_man (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))) -> (fun F1 F2 => (exists x, (and (and (_woman x) (F1 x)) (F2 x)))) -> (exists x, (and (and (x = _john) True) (_want _john (_know _john (_woman (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 568-571:
+> Theorem t1: (exists x, (and (and (x = _john) True) (_want _john (_know _john (_man (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))) -> (fun F1 F2 => (exists x, (and (and (_woman x) (F1 x)) (F2 x)))) -> (exists x, (and (and (x = _john) True) (_want _john (_know _john (_woman (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 586-590:
+> Theorem t1: (exists x, (and (and (x = _john) True) (_want _john (_know _john (_man (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))) -> (fun F1 F2 => (exists x, (and (and (_woman x) (F1 x)) (F2 x)))) -> (exists x, (and (and (x = _john) True) (_want _john (_know _john (_woman (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _john is declared
+
+Coq < _man is declared
+
+Coq < _many is declared
+
+Coq < _part is declared
+
+Coq < _time is declared
+
+Coq < _want is declared
+
+Coq < _woman is declared
+
+Coq < _work is declared
+
+Coq < Toplevel input, characters 84-97:
+> Theorem t1: (exists x, (and (and (x = _john) True) (_want _john (_know _john (_man (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))) -> (fun F1 F2 => (exists x, (and (and (_woman x) (F1 x)) (F2 x)))) -> (exists x, (and (and (x = _john) True) (_want _john (_know _john (_woman (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))).
+>                                                                                     ^^^^^^^^^^^^^
+Error: The type of this term is a product while it is expected to be Entity.
+
+Toplevel input, characters 549-554:
+> Theorem t1: (exists x, (and (and (x = _john) True) (_want _john (_know _john (_man (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))) -> (fun F1 F2 => (exists x, (and (and (_woman x) (F1 x)) (F2 x)))) -> (exists x, (and (and (x = _john) True) (_want _john (_know _john (_woman (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 556-560:
+> Theorem t1: (exists x, (and (and (x = _john) True) (_want _john (_know _john (_man (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))) -> (fun F1 F2 => (exists x, (and (and (_woman x) (F1 x)) (F2 x)))) -> (exists x, (and (and (x = _john) True) (_want _john (_know _john (_woman (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _john is declared
+
+Coq < _man is declared
+
+Coq < _many is declared
+
+Coq < _part is declared
+
+Coq < _time is declared
+
+Coq < _want is declared
+
+Coq < _woman is declared
+
+Coq < _work is declared
+
+Coq < Toplevel input, characters 84-97:
+> Theorem t1: (exists x, (and (and (x = _john) True) (_want _john (_know _john (_man (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))) -> (fun F1 F2 => (exists x, (and (and (_woman x) (F1 x)) (F2 x)))) -> (not (exists x, (and (and (x = _john) True) (_want _john (_know _john (_woman (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1)))))))))))).
+>                                                                                     ^^^^^^^^^^^^^
+Error: The type of this term is a product while it is expected to be Entity.
+
+Toplevel input, characters 555-561:
+> Theorem t1: (exists x, (and (and (x = _john) True) (_want _john (_know _john (_man (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))) -> (fun F1 F2 => (exists x, (and (and (_woman x) (F1 x)) (F2 x)))) -> (not (exists x, (and (and (x = _john) True) (_want _john (_know _john (_woman (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1)))))))))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 574-577:
+> Theorem t1: (exists x, (and (and (x = _john) True) (_want _john (_know _john (_man (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))) -> (fun F1 F2 => (exists x, (and (and (_woman x) (F1 x)) (F2 x)))) -> (not (exists x, (and (and (x = _john) True) (_want _john (_know _john (_woman (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1)))))))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 592-596:
+> Theorem t1: (exists x, (and (and (x = _john) True) (_want _john (_know _john (_man (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))) -> (fun F1 F2 => (exists x, (and (and (_woman x) (F1 x)) (F2 x)))) -> (not (exists x, (and (and (x = _john) True) (_want _john (_know _john (_woman (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1)))))))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _john is declared
+
+Coq < _man is declared
+
+Coq < _many is declared
+
+Coq < _part is declared
+
+Coq < _time is declared
+
+Coq < _want is declared
+
+Coq < _woman is declared
+
+Coq < _work is declared
+
+Coq < Toplevel input, characters 84-97:
+> Theorem t1: (exists x, (and (and (x = _john) True) (_want _john (_know _john (_man (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))) -> (fun F1 F2 => (exists x, (and (and (_woman x) (F1 x)) (F2 x)))) -> (not (exists x, (and (and (x = _john) True) (_want _john (_know _john (_woman (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1)))))))))))).
+>                                                                                     ^^^^^^^^^^^^^
+Error: The type of this term is a product while it is expected to be Entity.
+
+Toplevel input, characters 555-560:
+> Theorem t1: (exists x, (and (and (x = _john) True) (_want _john (_know _john (_man (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))) -> (fun F1 F2 => (exists x, (and (and (_woman x) (F1 x)) (F2 x)))) -> (not (exists x, (and (and (x = _john) True) (_want _john (_know _john (_woman (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1)))))))))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 562-566:
+> Theorem t1: (exists x, (and (and (x = _john) True) (_want _john (_know _john (_man (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))) -> (fun F1 F2 => (exists x, (and (and (_woman x) (F1 x)) (F2 x)))) -> (not (exists x, (and (and (x = _john) True) (_want _john (_know _john (_woman (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1)))))))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _john is declared
+
+Coq < _man is declared
+
+Coq < _many is declared
+
+Coq < _part is declared
+
+Coq < _time is declared
+
+Coq < _want is declared
+
+Coq < _woman is declared
+
+Coq < _work is declared
+
+Coq < Toplevel input, characters 84-97:
+> Theorem t1: (exists x, (and (and (x = _john) True) (_want _john (_know _john (_man (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))) -> (fun F1 F2 => (exists x, (and (and (_woman x) (F1 x)) (F2 x)))) -> (exists x, (and (and (x = _john) True) (_want _john (_know _john (_woman (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))).
+>                                                                                     ^^^^^^^^^^^^^
+Error: The type of this term is a product while it is expected to be Entity.
+
+Toplevel input, characters 549-555:
+> Theorem t1: (exists x, (and (and (x = _john) True) (_want _john (_know _john (_man (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))) -> (fun F1 F2 => (exists x, (and (and (_woman x) (F1 x)) (F2 x)))) -> (exists x, (and (and (x = _john) True) (_want _john (_know _john (_woman (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 568-571:
+> Theorem t1: (exists x, (and (and (x = _john) True) (_want _john (_know _john (_man (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))) -> (fun F1 F2 => (exists x, (and (and (_woman x) (F1 x)) (F2 x)))) -> (exists x, (and (and (x = _john) True) (_want _john (_know _john (_woman (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 586-590:
+> Theorem t1: (exists x, (and (and (x = _john) True) (_want _john (_know _john (_man (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))) -> (fun F1 F2 => (exists x, (and (and (_woman x) (F1 x)) (F2 x)))) -> (exists x, (and (and (x = _john) True) (_want _john (_know _john (_woman (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _john is declared
+
+Coq < _man is declared
+
+Coq < _many is declared
+
+Coq < _part is declared
+
+Coq < _time is declared
+
+Coq < _want is declared
+
+Coq < _woman is declared
+
+Coq < _work is declared
+
+Coq < Toplevel input, characters 84-97:
+> Theorem t1: (exists x, (and (and (x = _john) True) (_want _john (_know _john (_man (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))) -> (fun F1 F2 => (exists x, (and (and (_woman x) (F1 x)) (F2 x)))) -> (not (exists x, (and (and (x = _john) True) (_want _john (_know _john (_woman (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1)))))))))))).
+>                                                                                     ^^^^^^^^^^^^^
+Error: The type of this term is a product while it is expected to be Entity.
+
+Toplevel input, characters 555-561:
+> Theorem t1: (exists x, (and (and (x = _john) True) (_want _john (_know _john (_man (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))) -> (fun F1 F2 => (exists x, (and (and (_woman x) (F1 x)) (F2 x)))) -> (not (exists x, (and (and (x = _john) True) (_want _john (_know _john (_woman (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1)))))))))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 574-577:
+> Theorem t1: (exists x, (and (and (x = _john) True) (_want _john (_know _john (_man (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))) -> (fun F1 F2 => (exists x, (and (and (_woman x) (F1 x)) (F2 x)))) -> (not (exists x, (and (and (x = _john) True) (_want _john (_know _john (_woman (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1)))))))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 592-596:
+> Theorem t1: (exists x, (and (and (x = _john) True) (_want _john (_know _john (_man (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))) -> (fun F1 F2 => (exists x, (and (and (_woman x) (F1 x)) (F2 x)))) -> (not (exists x, (and (and (x = _john) True) (_want _john (_know _john (_woman (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1)))))))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _john is declared
+
+Coq < _man is declared
+
+Coq < _many is declared
+
+Coq < _part is declared
+
+Coq < _time is declared
+
+Coq < _want is declared
+
+Coq < _woman is declared
+
+Coq < _work is declared
+
+Coq < Toplevel input, characters 84-97:
+> Theorem t1: (exists x, (and (and (x = _john) True) (_want _john (_know _john (_man (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))) -> (fun F1 F2 => (exists x, (and (and (_woman x) (F1 x)) (F2 x)))) -> (exists x, (and (and (x = _john) True) (_want _john (_know _john (_woman (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))).
+>                                                                                     ^^^^^^^^^^^^^
+Error: The type of this term is a product while it is expected to be Entity.
+
+Toplevel input, characters 549-555:
+> Theorem t1: (exists x, (and (and (x = _john) True) (_want _john (_know _john (_man (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))) -> (fun F1 F2 => (exists x, (and (and (_woman x) (F1 x)) (F2 x)))) -> (exists x, (and (and (x = _john) True) (_want _john (_know _john (_woman (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 568-571:
+> Theorem t1: (exists x, (and (and (x = _john) True) (_want _john (_know _john (_man (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))) -> (fun F1 F2 => (exists x, (and (and (_woman x) (F1 x)) (F2 x)))) -> (exists x, (and (and (x = _john) True) (_want _john (_know _john (_woman (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 586-590:
+> Theorem t1: (exists x, (and (and (x = _john) True) (_want _john (_know _john (_man (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))) -> (fun F1 F2 => (exists x, (and (and (_woman x) (F1 x)) (F2 x)))) -> (exists x, (and (and (x = _john) True) (_want _john (_know _john (_woman (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _john is declared
+
+Coq < _man is declared
+
+Coq < _many is declared
+
+Coq < _part is declared
+
+Coq < _time is declared
+
+Coq < _want is declared
+
+Coq < _woman is declared
+
+Coq < _work is declared
+
+Coq < Toplevel input, characters 84-97:
+> Theorem t1: (exists x, (and (and (x = _john) True) (_want _john (_know _john (_man (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))) -> (fun F1 F2 => (exists x, (and (and (_woman x) (F1 x)) (F2 x)))) -> (not (exists x, (and (and (x = _john) True) (_want _john (_know _john (_woman (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1)))))))))))).
+>                                                                                     ^^^^^^^^^^^^^
+Error: The type of this term is a product while it is expected to be Entity.
+
+Toplevel input, characters 555-561:
+> Theorem t1: (exists x, (and (and (x = _john) True) (_want _john (_know _john (_man (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))) -> (fun F1 F2 => (exists x, (and (and (_woman x) (F1 x)) (F2 x)))) -> (not (exists x, (and (and (x = _john) True) (_want _john (_know _john (_woman (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1)))))))))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 574-577:
+> Theorem t1: (exists x, (and (and (x = _john) True) (_want _john (_know _john (_man (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))) -> (fun F1 F2 => (exists x, (and (and (_woman x) (F1 x)) (F2 x)))) -> (not (exists x, (and (and (x = _john) True) (_want _john (_know _john (_woman (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1)))))))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 592-596:
+> Theorem t1: (exists x, (and (and (x = _john) True) (_want _john (_know _john (_man (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1))))))))))) -> (fun F1 F2 => (exists x, (and (and (_woman x) (F1 x)) (F2 x)))) -> (not (exists x, (and (and (x = _john) True) (_want _john (_know _john (_woman (fun w => True) (fun z2 => (_many z2)) (fun Q2 => (Q2 (fun w => True) (fun z2 => (exists z1, (and (and (and (_part z1) (_time z1)) True) (_work z2 z1)))))))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+unknown
+

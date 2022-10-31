@@ -1,0 +1,468 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _have is declared
+
+Coq < _mary is declared
+
+Coq < _student is declared
+
+Coq < _use is declared
+
+Coq < _workstation is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_student x ->
+True -> exists z1 : Entity, (_workstation z1 /\ True) /\ _use x z1) ->
+(exists x : Entity,
+(x = _mary /\ True) /\
+(exists z1 : Entity, (_student z1 /\ True) /\ _mary = z1)) ->
+exists x : Entity,
+(x = _mary /\ True) /\
+(exists z1 : Entity, (_workstation z1 /\ True) /\ _have _mary z1)
+
+
+Toplevel input, characters 330-334:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_workstation z1) True) (_have _mary z1))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                           ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _have is declared
+
+Coq < _mary is declared
+
+Coq < _student is declared
+
+Coq < _use is declared
+
+Coq < _workstation is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_student x ->
+True -> exists z1 : Entity, (_workstation z1 /\ True) /\ _use x z1) ->
+(exists x : Entity,
+(x = _mary /\ True) /\
+(exists z1 : Entity, (_student z1 /\ True) /\ _mary = z1)) ->
+~
+(exists x : Entity,
+(x = _mary /\ True) /\
+(exists z1 : Entity, (_workstation z1 /\ True) /\ _have _mary z1))
+
+
+Toplevel input, characters 336-340:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (not (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_workstation z1) True) (_have _mary z1)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _have is declared
+
+Coq < _mary is declared
+
+Coq < _student is declared
+
+Coq < _use is declared
+
+Coq < _workstation is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_student x ->
+True -> exists z1 : Entity, (_workstation z1 /\ True) /\ _use x z1) ->
+(exists x : Entity,
+(x = _mary /\ True) /\
+(exists z1 : Entity, (_student z1 /\ True) /\ _mary = z1)) ->
+exists x : Entity,
+(x = _mary /\ True) /\
+(exists z1 : Entity, (_workstation z1 /\ True) /\ _have _mary z1)
+
+2 focused goals (shelved: 1)
+
+H : forall x : Entity,
+_student x ->
+True -> exists z1 : Entity, (_workstation z1 /\ True) /\ _use x z1
+H2 : True
+H1 : _student _mary
+H4 : True
+============================
+_workstation ?z1
+
+goal 2 is:
+_have _mary ?z1
+
+Toplevel input, characters 346-358:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_workstation z1) True) (_have _mary z1))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                           ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 360-364:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_workstation z1) True) (_have _mary z1))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                         ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _have is declared
+
+Coq < _mary is declared
+
+Coq < _student is declared
+
+Coq < _use is declared
+
+Coq < _workstation is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_student x ->
+True -> exists z1 : Entity, (_workstation z1 /\ True) /\ _use x z1) ->
+(exists x : Entity,
+(x = _mary /\ True) /\
+(exists z1 : Entity, (_student z1 /\ True) /\ _mary = z1)) ->
+exists x : Entity,
+(x = _mary /\ True) /\
+(exists z1 : Entity, (_workstation z1 /\ True) /\ _have _mary z1)
+
+
+Toplevel input, characters 330-334:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_workstation z1) True) (_have _mary z1))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                           ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _have is declared
+
+Coq < _mary is declared
+
+Coq < _student is declared
+
+Coq < _use is declared
+
+Coq < _workstation is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_student x ->
+True -> exists z1 : Entity, (_workstation z1 /\ True) /\ _use x z1) ->
+(exists x : Entity,
+(x = _mary /\ True) /\
+(exists z1 : Entity, (_student z1 /\ True) /\ _mary = z1)) ->
+~
+(exists x : Entity,
+(x = _mary /\ True) /\
+(exists z1 : Entity, (_workstation z1 /\ True) /\ _have _mary z1))
+
+1 goal
+
+H : forall x : Entity,
+_student x ->
+True -> exists z1 : Entity, (_workstation z1 /\ True) /\ _use x z1
+H3 : True
+x0 : Entity
+H4 : _have _mary x0
+H2 : _workstation x0
+H5, H7 : True
+H6 : _student _mary
+H9 : True
+============================
+False
+
+Toplevel input, characters 352-364:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (not (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_workstation z1) True) (_have _mary z1)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                 ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 366-370:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (not (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_workstation z1) True) (_have _mary z1)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                               ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _have is declared
+
+Coq < _mary is declared
+
+Coq < _student is declared
+
+Coq < _use is declared
+
+Coq < _workstation is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_student x ->
+True -> exists z1 : Entity, (_workstation z1 /\ True) /\ _use x z1) ->
+(exists x : Entity,
+(x = _mary /\ True) /\
+(exists z1 : Entity, (_student z1 /\ True) /\ _mary = z1)) ->
+~
+(exists x : Entity,
+(x = _mary /\ True) /\
+(exists z1 : Entity, (_workstation z1 /\ True) /\ _have _mary z1))
+
+
+Toplevel input, characters 336-340:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (not (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_workstation z1) True) (_have _mary z1)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _have is declared
+
+Coq < _mary is declared
+
+Coq < _student is declared
+
+Coq < _use is declared
+
+Coq < _workstation is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_student x ->
+True -> exists z1 : Entity, (_workstation z1 /\ True) /\ _use x z1) ->
+(exists x : Entity,
+(x = _mary /\ True) /\
+(exists z1 : Entity, (_student z1 /\ True) /\ _mary = z1)) ->
+exists x : Entity,
+(x = _mary /\ True) /\
+(exists z1 : Entity, (_workstation z1 /\ True) /\ _have _mary z1)
+
+2 focused goals (shelved: 1)
+
+H : forall x : Entity,
+_student x ->
+True -> exists z1 : Entity, (_workstation z1 /\ True) /\ _use x z1
+H2 : True
+H1 : _student _mary
+H4 : True
+============================
+_workstation ?z1
+
+goal 2 is:
+_have _mary ?z1
+
+Toplevel input, characters 346-358:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_workstation z1) True) (_have _mary z1))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                           ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 360-364:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_workstation z1) True) (_have _mary z1))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                         ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _have is declared
+
+Coq < _mary is declared
+
+Coq < _student is declared
+
+Coq < _use is declared
+
+Coq < _workstation is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_student x ->
+True -> exists z1 : Entity, (_workstation z1 /\ True) /\ _use x z1) ->
+(exists x : Entity,
+(x = _mary /\ True) /\
+(exists z1 : Entity, (_student z1 /\ True) /\ _mary = z1)) ->
+~
+(exists x : Entity,
+(x = _mary /\ True) /\
+(exists z1 : Entity, (_workstation z1 /\ True) /\ _have _mary z1))
+
+1 goal
+
+H : forall x : Entity,
+_student x ->
+True -> exists z1 : Entity, (_workstation z1 /\ True) /\ _use x z1
+H3 : True
+x0 : Entity
+H4 : _have _mary x0
+H2 : _workstation x0
+H5, H7 : True
+H6 : _student _mary
+H9 : True
+============================
+False
+
+Toplevel input, characters 352-364:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (not (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_workstation z1) True) (_have _mary z1)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                 ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 366-370:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (not (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_workstation z1) True) (_have _mary z1)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                               ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _have is declared
+
+Coq < _mary is declared
+
+Coq < _student is declared
+
+Coq < _use is declared
+
+Coq < _workstation is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_student x ->
+True -> exists z1 : Entity, (_workstation z1 /\ True) /\ _use x z1) ->
+(exists x : Entity,
+(x = _mary /\ True) /\
+(exists z1 : Entity, (_student z1 /\ True) /\ _mary = z1)) ->
+exists x : Entity,
+(x = _mary /\ True) /\
+(exists z1 : Entity, (_workstation z1 /\ True) /\ _have _mary z1)
+
+2 focused goals (shelved: 1)
+
+H : forall x : Entity,
+_student x ->
+True -> exists z1 : Entity, (_workstation z1 /\ True) /\ _use x z1
+H2 : True
+H1 : _student _mary
+H4 : True
+============================
+_workstation ?z1
+
+goal 2 is:
+_have _mary ?z1
+
+Toplevel input, characters 346-358:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_workstation z1) True) (_have _mary z1))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                           ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 360-364:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_workstation z1) True) (_have _mary z1))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                         ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _have is declared
+
+Coq < _mary is declared
+
+Coq < _student is declared
+
+Coq < _use is declared
+
+Coq < _workstation is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_student x ->
+True -> exists z1 : Entity, (_workstation z1 /\ True) /\ _use x z1) ->
+(exists x : Entity,
+(x = _mary /\ True) /\
+(exists z1 : Entity, (_student z1 /\ True) /\ _mary = z1)) ->
+~
+(exists x : Entity,
+(x = _mary /\ True) /\
+(exists z1 : Entity, (_workstation z1 /\ True) /\ _have _mary z1))
+
+1 goal
+
+H : forall x : Entity,
+_student x ->
+True -> exists z1 : Entity, (_workstation z1 /\ True) /\ _use x z1
+H3 : True
+x0 : Entity
+H4 : _have _mary x0
+H2 : _workstation x0
+H5, H7 : True
+H6 : _student _mary
+H9 : True
+============================
+False
+
+Toplevel input, characters 352-364:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (not (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_workstation z1) True) (_have _mary z1)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                 ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 366-370:
+> Theorem t1: (forall x, ((_student x) -> (True -> (exists z1, (and (and (_workstation z1) True) (_use x z1)))))) -> (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_student z1) True) (_mary = z1))))) -> (not (exists x, (and (and (x = _mary) True) (exists z1, (and (and (_workstation z1) True) (_have _mary z1)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                               ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

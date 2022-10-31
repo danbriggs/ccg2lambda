@@ -1,0 +1,103 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _few is declared
+
+Coq < _great is declared
+
+Coq < _poor is declared
+
+Coq < _tenor is declared
+
+Coq < 1 goal
+
+============================
+~
+(exists x : Entity, (((_few x /\ _great x) /\ _tenor x) /\ True) /\ _poor x) ->
+exists x z2 : Entity,
+(((_great z2 /\ _tenor z2) /\ _poor z2) /\ True) /\ x = z2
+
+
+Toplevel input, characters 199-203:
+> Theorem t1: (not (exists x, (and (and (and (and (_few x) (_great x)) (_tenor x)) True) (_poor x)))) -> (exists x z2, (and (and (and (and (_great z2) (_tenor z2)) (_poor z2)) True) (x = z2))). nltac. Qed.
+>                                                                                                                                                                                                        ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _few is declared
+
+Coq < _great is declared
+
+Coq < _poor is declared
+
+Coq < _tenor is declared
+
+Coq < 1 goal
+
+============================
+~
+(exists x : Entity, (((_few x /\ _great x) /\ _tenor x) /\ True) /\ _poor x) ->
+~
+(exists x z2 : Entity,
+(((_great z2 /\ _tenor z2) /\ _poor z2) /\ True) /\ x = z2)
+
+
+Toplevel input, characters 205-209:
+> Theorem t1: (not (exists x, (and (and (and (and (_few x) (_great x)) (_tenor x)) True) (_poor x)))) -> (not (exists x z2, (and (and (and (and (_great z2) (_tenor z2)) (_poor z2)) True) (x = z2)))). nltac. Qed.
+>                                                                                                                                                                                                              ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _few is declared
+
+Coq < _great is declared
+
+Coq < _poor is declared
+
+Coq < _tenor is declared
+
+Coq < 1 goal
+
+============================
+~
+(exists x : Entity, (((_few x /\ _great x) /\ _tenor x) /\ True) /\ _poor x) ->
+exists x z2 : Entity,
+(((_great z2 /\ _tenor z2) /\ _poor z2) /\ True) /\ x = z2
+
+3 focused goals (shelved: 1)
+
+H : forall x : Entity,
+(((_few x /\ _great x) /\ _tenor x) /\ True) /\ _poor x -> False
+============================
+_great ?x
+
+goal 2 is:
+_tenor ?x
+goal 3 is:
+_poor ?x
+
+Toplevel input, characters 215-227:
+> Theorem t1: (not (exists x, (and (and (and (and (_few x) (_great x)) (_tenor x)) True) (_poor x)))) -> (exists x z2, (and (and (and (and (_great z2) (_tenor z2)) (_poor z2)) True) (x = z2))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                        ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 229-233:
+> Theorem t1: (not (exists x, (and (and (and (and (_few x) (_great x)) (_tenor x)) True) (_poor x)))) -> (exists x z2, (and (and (and (and (_great z2) (_tenor z2)) (_poor z2)) True) (x = z2))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                      ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

@@ -1,0 +1,541 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _answer is declared
+
+Coq < _chairman is declared
+
+Coq < _department is declared
+
+Coq < _helen is declared
+
+Coq < _of is declared
+
+Coq < _person is declared
+
+Coq < _phone is declared
+
+Coq < _see is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _helen /\
+(exists z2 : Entity,
+((_chairman z2 /\
+(exists z1 : Entity, (_department z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _see _helen z2)) /\ True) /\
+(exists z4 : Entity, (_phone z4 /\ True) /\ _answer _helen z4)) ->
+(exists x : Entity,
+((_chairman x /\
+(exists z1 : Entity, (_department z1 /\ True) /\ _of x z1)) /\ True) /\
+(exists z2 : Entity, (_person z2 /\ True) /\ x = z2)) ->
+exists x z4 : Entity, (_phone z4 /\ True) /\ _answer x z4
+
+No more goals.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _answer is declared
+
+Coq < _chairman is declared
+
+Coq < _department is declared
+
+Coq < _helen is declared
+
+Coq < _of is declared
+
+Coq < _person is declared
+
+Coq < _phone is declared
+
+Coq < _see is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _helen /\
+(exists z2 : Entity,
+((_chairman z2 /\
+(exists z1 : Entity, (_department z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _see _helen z2)) /\ True) /\
+(exists z4 : Entity, (_phone z4 /\ True) /\ _answer _helen z4)) ->
+(exists x : Entity,
+((_chairman x /\
+(exists z1 : Entity, (_department z1 /\ True) /\ _of x z1)) /\ True) /\
+(exists z2 : Entity, (_person z2 /\ True) /\ x = z2)) ->
+~ (exists x z4 : Entity, (_phone z4 /\ True) /\ _answer x z4)
+
+
+Toplevel input, characters 487-491:
+> Theorem t1: (exists x, (and (and (and (x = _helen) (exists z2, (and (and (and (_chairman z2) (exists z1, (and (and (_department z1) True) (_of z2 z1)))) True) (_see _helen z2)))) True) (exists z4, (and (and (_phone z4) True) (_answer _helen z4))))) -> (exists x, (and (and (and (_chairman x) (exists z1, (and (and (_department z1) True) (_of x z1)))) True) (exists z2, (and (and (_person z2) True) (x = z2))))) -> (not (exists x z4, (and (and (_phone z4) True) (_answer x z4)))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _answer is declared
+
+Coq < _chairman is declared
+
+Coq < _department is declared
+
+Coq < _helen is declared
+
+Coq < _of is declared
+
+Coq < _person is declared
+
+Coq < _phone is declared
+
+Coq < _see is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _helen /\
+(exists z2 : Entity,
+((_chairman z2 /\
+(exists z1 : Entity, (_department z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _see _helen z2)) /\ True) /\
+(exists z4 : Entity, (_phone z4 /\ True) /\ _answer _helen z4)) ->
+(exists x : Entity,
+((_chairman x /\
+(exists z1 : Entity, (_department z1 /\ True) /\ _of x z1)) /\ True) /\
+(exists z2 : Entity, (_person z2 /\ True) /\ x = z2)) ->
+exists x z4 : Entity, (_phone z4 /\ True) /\ _answer x z4
+
+No more goals.
+
+Toplevel input, characters 493-510:
+> Theorem t1: (exists x, (and (and (and (x = _helen) (exists z2, (and (and (and (_chairman z2) (exists z1, (and (and (_department z1) True) (_of z2 z1)))) True) (_see _helen z2)))) True) (exists z4, (and (and (_phone z4) True) (_answer _helen z4))))) -> (exists x, (and (and (and (_chairman x) (exists z1, (and (and (_department z1) True) (_of x z1)))) True) (exists z2, (and (and (_person z2) True) (x = z2))))) -> (exists x z4, (and (and (_phone z4) True) (_answer x z4))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^^^^^^^^^^^^^^^^^
+Error: No such goal.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _answer is declared
+
+Coq < _chairman is declared
+
+Coq < _department is declared
+
+Coq < _helen is declared
+
+Coq < _of is declared
+
+Coq < _person is declared
+
+Coq < _phone is declared
+
+Coq < _see is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _helen /\
+(exists z2 : Entity,
+((_chairman z2 /\
+(exists z1 : Entity, (_department z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _see _helen z2)) /\ True) /\
+(exists z4 : Entity, (_phone z4 /\ True) /\ _answer _helen z4)) ->
+(exists x : Entity,
+((_chairman x /\
+(exists z1 : Entity, (_department z1 /\ True) /\ _of x z1)) /\ True) /\
+(exists z2 : Entity, (_person z2 /\ True) /\ x = z2)) ->
+exists x z4 : Entity, (_phone z4 /\ True) /\ _answer x z4
+
+No more goals.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _answer is declared
+
+Coq < _chairman is declared
+
+Coq < _department is declared
+
+Coq < _helen is declared
+
+Coq < _of is declared
+
+Coq < _person is declared
+
+Coq < _phone is declared
+
+Coq < _see is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _helen /\
+(exists z2 : Entity,
+((_chairman z2 /\
+(exists z1 : Entity, (_department z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _see _helen z2)) /\ True) /\
+(exists z4 : Entity, (_phone z4 /\ True) /\ _answer _helen z4)) ->
+(exists x : Entity,
+((_chairman x /\
+(exists z1 : Entity, (_department z1 /\ True) /\ _of x z1)) /\ True) /\
+(exists z2 : Entity, (_person z2 /\ True) /\ x = z2)) ->
+~ (exists x z4 : Entity, (_phone z4 /\ True) /\ _answer x z4)
+
+1 goal
+
+x, x0 : Entity
+H2 : _answer x x0
+H1 : _phone x0
+H3, H5 : True
+x2 : Entity
+H7 : _see _helen x2
+H8 : True
+H6 : _chairman x2
+x3 : Entity
+H10 : _of x2 x3
+H9 : _department x3
+H11 : True
+x4 : Entity
+H12 : _answer _helen x4
+H4 : _phone x4
+H13, H15 : True
+x7 : Entity
+H0 : _chairman x7
+x6 : Entity
+H17 : _of x7 x6
+H16 : _department x6
+H18 : True
+H14 : _person x7
+H20 : True
+============================
+False
+
+Toplevel input, characters 503-515:
+> Theorem t1: (exists x, (and (and (and (x = _helen) (exists z2, (and (and (and (_chairman z2) (exists z1, (and (and (_department z1) True) (_of z2 z1)))) True) (_see _helen z2)))) True) (exists z4, (and (and (_phone z4) True) (_answer _helen z4))))) -> (exists x, (and (and (and (_chairman x) (exists z1, (and (and (_department z1) True) (_of x z1)))) True) (exists z2, (and (and (_person z2) True) (x = z2))))) -> (not (exists x z4, (and (and (_phone z4) True) (_answer x z4)))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 517-521:
+> Theorem t1: (exists x, (and (and (and (x = _helen) (exists z2, (and (and (and (_chairman z2) (exists z1, (and (and (_department z1) True) (_of z2 z1)))) True) (_see _helen z2)))) True) (exists z4, (and (and (_phone z4) True) (_answer _helen z4))))) -> (exists x, (and (and (and (_chairman x) (exists z1, (and (and (_department z1) True) (_of x z1)))) True) (exists z2, (and (and (_person z2) True) (x = z2))))) -> (not (exists x z4, (and (and (_phone z4) True) (_answer x z4)))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _answer is declared
+
+Coq < _chairman is declared
+
+Coq < _department is declared
+
+Coq < _helen is declared
+
+Coq < _of is declared
+
+Coq < _person is declared
+
+Coq < _phone is declared
+
+Coq < _see is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _helen /\
+(exists z2 : Entity,
+((_chairman z2 /\
+(exists z1 : Entity, (_department z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _see _helen z2)) /\ True) /\
+(exists z4 : Entity, (_phone z4 /\ True) /\ _answer _helen z4)) ->
+(exists x : Entity,
+((_chairman x /\
+(exists z1 : Entity, (_department z1 /\ True) /\ _of x z1)) /\ True) /\
+(exists z2 : Entity, (_person z2 /\ True) /\ x = z2)) ->
+~ (exists x z4 : Entity, (_phone z4 /\ True) /\ _answer x z4)
+
+
+Toplevel input, characters 487-491:
+> Theorem t1: (exists x, (and (and (and (x = _helen) (exists z2, (and (and (and (_chairman z2) (exists z1, (and (and (_department z1) True) (_of z2 z1)))) True) (_see _helen z2)))) True) (exists z4, (and (and (_phone z4) True) (_answer _helen z4))))) -> (exists x, (and (and (and (_chairman x) (exists z1, (and (and (_department z1) True) (_of x z1)))) True) (exists z2, (and (and (_person z2) True) (x = z2))))) -> (not (exists x z4, (and (and (_phone z4) True) (_answer x z4)))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _answer is declared
+
+Coq < _chairman is declared
+
+Coq < _department is declared
+
+Coq < _helen is declared
+
+Coq < _of is declared
+
+Coq < _person is declared
+
+Coq < _phone is declared
+
+Coq < _see is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _helen /\
+(exists z2 : Entity,
+((_chairman z2 /\
+(exists z1 : Entity, (_department z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _see _helen z2)) /\ True) /\
+(exists z4 : Entity, (_phone z4 /\ True) /\ _answer _helen z4)) ->
+(exists x : Entity,
+((_chairman x /\
+(exists z1 : Entity, (_department z1 /\ True) /\ _of x z1)) /\ True) /\
+(exists z2 : Entity, (_person z2 /\ True) /\ x = z2)) ->
+exists x z4 : Entity, (_phone z4 /\ True) /\ _answer x z4
+
+No more goals.
+
+Toplevel input, characters 493-510:
+> Theorem t1: (exists x, (and (and (and (x = _helen) (exists z2, (and (and (and (_chairman z2) (exists z1, (and (and (_department z1) True) (_of z2 z1)))) True) (_see _helen z2)))) True) (exists z4, (and (and (_phone z4) True) (_answer _helen z4))))) -> (exists x, (and (and (and (_chairman x) (exists z1, (and (and (_department z1) True) (_of x z1)))) True) (exists z2, (and (and (_person z2) True) (x = z2))))) -> (exists x z4, (and (and (_phone z4) True) (_answer x z4))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^^^^^^^^^^^^^^^^^
+Error: No such goal.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _answer is declared
+
+Coq < _chairman is declared
+
+Coq < _department is declared
+
+Coq < _helen is declared
+
+Coq < _of is declared
+
+Coq < _person is declared
+
+Coq < _phone is declared
+
+Coq < _see is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _helen /\
+(exists z2 : Entity,
+((_chairman z2 /\
+(exists z1 : Entity, (_department z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _see _helen z2)) /\ True) /\
+(exists z4 : Entity, (_phone z4 /\ True) /\ _answer _helen z4)) ->
+(exists x : Entity,
+((_chairman x /\
+(exists z1 : Entity, (_department z1 /\ True) /\ _of x z1)) /\ True) /\
+(exists z2 : Entity, (_person z2 /\ True) /\ x = z2)) ->
+~ (exists x z4 : Entity, (_phone z4 /\ True) /\ _answer x z4)
+
+1 goal
+
+x, x0 : Entity
+H2 : _answer x x0
+H1 : _phone x0
+H3, H5 : True
+x2 : Entity
+H7 : _see _helen x2
+H8 : True
+H6 : _chairman x2
+x3 : Entity
+H10 : _of x2 x3
+H9 : _department x3
+H11 : True
+x4 : Entity
+H12 : _answer _helen x4
+H4 : _phone x4
+H13, H15 : True
+x7 : Entity
+H0 : _chairman x7
+x6 : Entity
+H17 : _of x7 x6
+H16 : _department x6
+H18 : True
+H14 : _person x7
+H20 : True
+============================
+False
+
+Toplevel input, characters 503-515:
+> Theorem t1: (exists x, (and (and (and (x = _helen) (exists z2, (and (and (and (_chairman z2) (exists z1, (and (and (_department z1) True) (_of z2 z1)))) True) (_see _helen z2)))) True) (exists z4, (and (and (_phone z4) True) (_answer _helen z4))))) -> (exists x, (and (and (and (_chairman x) (exists z1, (and (and (_department z1) True) (_of x z1)))) True) (exists z2, (and (and (_person z2) True) (x = z2))))) -> (not (exists x z4, (and (and (_phone z4) True) (_answer x z4)))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 517-521:
+> Theorem t1: (exists x, (and (and (and (x = _helen) (exists z2, (and (and (and (_chairman z2) (exists z1, (and (and (_department z1) True) (_of z2 z1)))) True) (_see _helen z2)))) True) (exists z4, (and (and (_phone z4) True) (_answer _helen z4))))) -> (exists x, (and (and (and (_chairman x) (exists z1, (and (and (_department z1) True) (_of x z1)))) True) (exists z2, (and (and (_person z2) True) (x = z2))))) -> (not (exists x z4, (and (and (_phone z4) True) (_answer x z4)))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _answer is declared
+
+Coq < _chairman is declared
+
+Coq < _department is declared
+
+Coq < _helen is declared
+
+Coq < _of is declared
+
+Coq < _person is declared
+
+Coq < _phone is declared
+
+Coq < _see is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _helen /\
+(exists z2 : Entity,
+((_chairman z2 /\
+(exists z1 : Entity, (_department z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _see _helen z2)) /\ True) /\
+(exists z4 : Entity, (_phone z4 /\ True) /\ _answer _helen z4)) ->
+(exists x : Entity,
+((_chairman x /\
+(exists z1 : Entity, (_department z1 /\ True) /\ _of x z1)) /\ True) /\
+(exists z2 : Entity, (_person z2 /\ True) /\ x = z2)) ->
+exists x z4 : Entity, (_phone z4 /\ True) /\ _answer x z4
+
+No more goals.
+
+Toplevel input, characters 493-510:
+> Theorem t1: (exists x, (and (and (and (x = _helen) (exists z2, (and (and (and (_chairman z2) (exists z1, (and (and (_department z1) True) (_of z2 z1)))) True) (_see _helen z2)))) True) (exists z4, (and (and (_phone z4) True) (_answer _helen z4))))) -> (exists x, (and (and (and (_chairman x) (exists z1, (and (and (_department z1) True) (_of x z1)))) True) (exists z2, (and (and (_person z2) True) (x = z2))))) -> (exists x z4, (and (and (_phone z4) True) (_answer x z4))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^^^^^^^^^^^^^^^^^
+Error: No such goal.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _answer is declared
+
+Coq < _chairman is declared
+
+Coq < _department is declared
+
+Coq < _helen is declared
+
+Coq < _of is declared
+
+Coq < _person is declared
+
+Coq < _phone is declared
+
+Coq < _see is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _helen /\
+(exists z2 : Entity,
+((_chairman z2 /\
+(exists z1 : Entity, (_department z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _see _helen z2)) /\ True) /\
+(exists z4 : Entity, (_phone z4 /\ True) /\ _answer _helen z4)) ->
+(exists x : Entity,
+((_chairman x /\
+(exists z1 : Entity, (_department z1 /\ True) /\ _of x z1)) /\ True) /\
+(exists z2 : Entity, (_person z2 /\ True) /\ x = z2)) ->
+~ (exists x z4 : Entity, (_phone z4 /\ True) /\ _answer x z4)
+
+1 goal
+
+x, x0 : Entity
+H2 : _answer x x0
+H1 : _phone x0
+H3, H5 : True
+x2 : Entity
+H7 : _see _helen x2
+H8 : True
+H6 : _chairman x2
+x3 : Entity
+H10 : _of x2 x3
+H9 : _department x3
+H11 : True
+x4 : Entity
+H12 : _answer _helen x4
+H4 : _phone x4
+H13, H15 : True
+x7 : Entity
+H0 : _chairman x7
+x6 : Entity
+H17 : _of x7 x6
+H16 : _department x6
+H18 : True
+H14 : _person x7
+H20 : True
+============================
+False
+
+Toplevel input, characters 503-515:
+> Theorem t1: (exists x, (and (and (and (x = _helen) (exists z2, (and (and (and (_chairman z2) (exists z1, (and (and (_department z1) True) (_of z2 z1)))) True) (_see _helen z2)))) True) (exists z4, (and (and (_phone z4) True) (_answer _helen z4))))) -> (exists x, (and (and (and (_chairman x) (exists z1, (and (and (_department z1) True) (_of x z1)))) True) (exists z2, (and (and (_person z2) True) (x = z2))))) -> (not (exists x z4, (and (and (_phone z4) True) (_answer x z4)))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 517-521:
+> Theorem t1: (exists x, (and (and (and (x = _helen) (exists z2, (and (and (and (_chairman z2) (exists z1, (and (and (_department z1) True) (_of z2 z1)))) True) (_see _helen z2)))) True) (exists z4, (and (and (_phone z4) True) (_answer _helen z4))))) -> (exists x, (and (and (and (_chairman x) (exists z1, (and (and (_department z1) True) (_of x z1)))) True) (exists z2, (and (and (_person z2) True) (x = z2))))) -> (not (exists x z4, (and (and (_phone z4) True) (_answer x z4)))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

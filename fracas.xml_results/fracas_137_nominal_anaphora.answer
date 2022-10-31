@@ -1,0 +1,1095 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _100 is declared
+
+Coq < _150 is declared
+
+Coq < _99 is declared
+
+Coq < _company is declared
+
+Coq < _computer is declared
+
+Coq < _contract is declared
+
+Coq < _for is declared
+
+Coq < _have is declared
+
+Coq < _icm is declared
+
+Coq < _of is declared
+
+Coq < _one is declared
+
+Coq < _other is declared
+
+Coq < _own is declared
+
+Coq < _service is declared
+
+Coq < 1 goal
+
+============================
+(exists x z1 : Entity, ((_100 z1 /\ _company z1) /\ True) /\ x = z1) ->
+(exists x : Entity,
+((x = _icm /\ True) /\
+(exists z3 : Entity,
+((_150 z3 /\ _computer z3) /\ True) /\ _own _icm z3)) /\
+(exists z2 : Entity,
+((_one z2 /\ (exists z1 : Entity, (_company z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _icm = z2)) ->
+(exists x : Entity,
+True /\
+~
+(exists z3 : Entity,
+(((_service z3 /\ _contract z3) /\
+(exists z2 : Entity,
+((exists z1 : Entity, (_computer z1 /\ True) /\ _of z2 z1) /\
+True) /\ _for z3 z2)) /\ True) /\ _have x z3)) ->
+(forall x : Entity,
+(exists z2 : Entity,
+(((_other z2 /\ _99 z2) /\ _company z2) /\ True) /\ _of x z2) /\ True ->
+exists z3 : Entity, ((_one z3 /\ _computer z3) /\ True) /\ _own x z3) ->
+(exists x : Entity,
+True /\
+(exists z7 : Entity,
+(((_service z7 /\ _contract z7) /\
+(exists z6 : Entity, True /\ _for z7 z6)) /\ True) /\
+_have x z7)) ->
+most x;
+(_company x /\ (exists z8 : Entity, (_computer z8 /\ True) /\ _own x z8)) /\
+True,
+(exists z11 : Entity,
+(((_service z11 /\ _contract z11) /\
+(exists z10 : Entity, True /\ _for z11 z10)) /\ True) /\
+_have x z11)
+
+
+Toplevel input, characters 1132-1136:
+> Theorem t1: (exists x z1, (and (and (and (_100 z1) (_company z1)) True) (x = z1))) -> (exists x, (and (and (and (x = _icm) True) (exists z3, (and (and (and (_150 z3) (_computer z3)) True) (_own _icm z3)))) (exists z2, (and (and (and (_one z2) (exists z1, (and (and (_company z1) True) (_of z2 z1)))) True) (_icm = z2))))) -> (exists x, (and True (not (exists z3, (and (and (and (and (_service z3) (_contract z3)) (exists z2, (and (and (exists z1, (and (and (_computer z1) True) (_of z2 z1))) True) (_for z3 z2)))) True) (_have x z3)))))) -> (forall x, ((and (exists z2, (and (and (and (and (_other z2) (_99 z2)) (_company z2)) True) (_of x z2))) True) -> (exists z3, (and (and (and (_one z3) (_computer z3)) True) (_own x z3))))) -> (exists x, (and True (exists z7, (and (and (and (and (_service z7) (_contract z7)) (exists z6, (and True (_for z7 z6)))) True) (_have x z7))))) -> (Most (fun x => (and (and (_company x) (exists z8, (and (and (_computer z8) True) (_own x z8)))) True)) (fun x => (exists z11, (and (and (and (and (_service z11) (_contract z11)) (exists z10, (and True (_for z11 z10)))) True) (_have x z11))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _100 is declared
+
+Coq < _150 is declared
+
+Coq < _99 is declared
+
+Coq < _company is declared
+
+Coq < _computer is declared
+
+Coq < _contract is declared
+
+Coq < _for is declared
+
+Coq < _have is declared
+
+Coq < _icm is declared
+
+Coq < _of is declared
+
+Coq < _one is declared
+
+Coq < _other is declared
+
+Coq < _own is declared
+
+Coq < _service is declared
+
+Coq < 1 goal
+
+============================
+(exists x z1 : Entity, ((_100 z1 /\ _company z1) /\ True) /\ x = z1) ->
+(exists x : Entity,
+((x = _icm /\ True) /\
+(exists z3 : Entity,
+((_150 z3 /\ _computer z3) /\ True) /\ _own _icm z3)) /\
+(exists z2 : Entity,
+((_one z2 /\ (exists z1 : Entity, (_company z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _icm = z2)) ->
+(exists x : Entity,
+True /\
+~
+(exists z3 : Entity,
+(((_service z3 /\ _contract z3) /\
+(exists z2 : Entity,
+((exists z1 : Entity, (_computer z1 /\ True) /\ _of z2 z1) /\
+True) /\ _for z3 z2)) /\ True) /\ _have x z3)) ->
+(forall x : Entity,
+(exists z2 : Entity,
+(((_other z2 /\ _99 z2) /\ _company z2) /\ True) /\ _of x z2) /\ True ->
+exists z3 : Entity, ((_one z3 /\ _computer z3) /\ True) /\ _own x z3) ->
+(exists x : Entity,
+True /\
+(exists z7 : Entity,
+(((_service z7 /\ _contract z7) /\
+(exists z6 : Entity, True /\ _for z7 z6)) /\ True) /\
+_have x z7)) ->
+~
+most x;
+(_company x /\ (exists z8 : Entity, (_computer z8 /\ True) /\ _own x z8)) /\
+True,
+(exists z11 : Entity,
+(((_service z11 /\ _contract z11) /\
+(exists z10 : Entity, True /\ _for z11 z10)) /\ True) /\
+_have x z11)
+
+
+Toplevel input, characters 1138-1142:
+> Theorem t1: (exists x z1, (and (and (and (_100 z1) (_company z1)) True) (x = z1))) -> (exists x, (and (and (and (x = _icm) True) (exists z3, (and (and (and (_150 z3) (_computer z3)) True) (_own _icm z3)))) (exists z2, (and (and (and (_one z2) (exists z1, (and (and (_company z1) True) (_of z2 z1)))) True) (_icm = z2))))) -> (exists x, (and True (not (exists z3, (and (and (and (and (_service z3) (_contract z3)) (exists z2, (and (and (exists z1, (and (and (_computer z1) True) (_of z2 z1))) True) (_for z3 z2)))) True) (_have x z3)))))) -> (forall x, ((and (exists z2, (and (and (and (and (_other z2) (_99 z2)) (_company z2)) True) (_of x z2))) True) -> (exists z3, (and (and (and (_one z3) (_computer z3)) True) (_own x z3))))) -> (exists x, (and True (exists z7, (and (and (and (and (_service z7) (_contract z7)) (exists z6, (and True (_for z7 z6)))) True) (_have x z7))))) -> (not (Most (fun x => (and (and (_company x) (exists z8, (and (and (_computer z8) True) (_own x z8)))) True)) (fun x => (exists z11, (and (and (and (and (_service z11) (_contract z11)) (exists z10, (and True (_for z11 z10)))) True) (_have x z11)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _100 is declared
+
+Coq < _150 is declared
+
+Coq < _99 is declared
+
+Coq < _company is declared
+
+Coq < _computer is declared
+
+Coq < _contract is declared
+
+Coq < _for is declared
+
+Coq < _have is declared
+
+Coq < _icm is declared
+
+Coq < _of is declared
+
+Coq < _one is declared
+
+Coq < _other is declared
+
+Coq < _own is declared
+
+Coq < _service is declared
+
+Coq < 1 goal
+
+============================
+(exists x z1 : Entity, ((_100 z1 /\ _company z1) /\ True) /\ x = z1) ->
+(exists x : Entity,
+((x = _icm /\ True) /\
+(exists z3 : Entity,
+((_150 z3 /\ _computer z3) /\ True) /\ _own _icm z3)) /\
+(exists z2 : Entity,
+((_one z2 /\ (exists z1 : Entity, (_company z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _icm = z2)) ->
+(exists x : Entity,
+True /\
+~
+(exists z3 : Entity,
+(((_service z3 /\ _contract z3) /\
+(exists z2 : Entity,
+((exists z1 : Entity, (_computer z1 /\ True) /\ _of z2 z1) /\
+True) /\ _for z3 z2)) /\ True) /\ _have x z3)) ->
+(forall x : Entity,
+(exists z2 : Entity,
+(((_other z2 /\ _99 z2) /\ _company z2) /\ True) /\ _of x z2) /\ True ->
+exists z3 : Entity, ((_one z3 /\ _computer z3) /\ True) /\ _own x z3) ->
+(exists x : Entity,
+True /\
+(exists z7 : Entity,
+(((_service z7 /\ _contract z7) /\
+(exists z6 : Entity, True /\ _for z7 z6)) /\ True) /\
+_have x z7)) ->
+most x;
+(_company x /\ (exists z8 : Entity, (_computer z8 /\ True) /\ _own x z8)) /\
+True,
+(exists z11 : Entity,
+(((_service z11 /\ _contract z11) /\
+(exists z10 : Entity, True /\ _for z11 z10)) /\ True) /\
+_have x z11)
+
+1 goal
+
+H2 : forall x : Entity,
+(exists z2 : Entity,
+(((_other z2 /\ _99 z2) /\ _company z2) /\ True) /\ _of x z2) /\
+True ->
+exists z3 : Entity, ((_one z3 /\ _computer z3) /\ True) /\ _own x z3
+x : Entity
+H3 : True
+x0 : Entity
+H5 : _have x x0
+H6 : True
+H4 : _service x0
+H8 : _contract x0
+x1 : Entity
+H7 : True
+H9 : _for x0 x1
+x2 : Entity
+H1 : True
+x4 : Entity
+H12 : True
+H : _100 x4
+H13 : _company x4
+H16 : True
+x6 : Entity
+H17 : _own _icm x6
+H18 : True
+H15 : _150 x6
+H19 : _computer x6
+H21 : True
+H14 : _one _icm
+x8 : Entity
+H23 : _of _icm x8
+H22 : _company x8
+H24 : True
+H10 : forall x : Entity,
+(((_service x /\ _contract x) /\
+(exists z2 : Entity,
+((exists z1 : Entity, (_computer z1 /\ True) /\ _of z2 z1) /\
+True) /\ _for x z2)) /\ True) /\ _have x2 x -> False
+============================
+most x3;
+(_company x3 /\ (exists z8 : Entity, (_computer z8 /\ True) /\ _own x3 z8)) /\
+True,
+(exists z11 : Entity,
+(((_service z11 /\ _contract z11) /\
+(exists z10 : Entity, True /\ _for z11 z10)) /\ True) /\
+_have x3 z11)
+
+Toplevel input, characters 1148-1160:
+> Theorem t1: (exists x z1, (and (and (and (_100 z1) (_company z1)) True) (x = z1))) -> (exists x, (and (and (and (x = _icm) True) (exists z3, (and (and (and (_150 z3) (_computer z3)) True) (_own _icm z3)))) (exists z2, (and (and (and (_one z2) (exists z1, (and (and (_company z1) True) (_of z2 z1)))) True) (_icm = z2))))) -> (exists x, (and True (not (exists z3, (and (and (and (and (_service z3) (_contract z3)) (exists z2, (and (and (exists z1, (and (and (_computer z1) True) (_of z2 z1))) True) (_for z3 z2)))) True) (_have x z3)))))) -> (forall x, ((and (exists z2, (and (and (and (and (_other z2) (_99 z2)) (_company z2)) True) (_of x z2))) True) -> (exists z3, (and (and (and (_one z3) (_computer z3)) True) (_own x z3))))) -> (exists x, (and True (exists z7, (and (and (and (and (_service z7) (_contract z7)) (exists z6, (and True (_for z7 z6)))) True) (_have x z7))))) -> (Most (fun x => (and (and (_company x) (exists z8, (and (and (_computer z8) True) (_own x z8)))) True)) (fun x => (exists z11, (and (and (and (and (_service z11) (_contract z11)) (exists z10, (and True (_for z11 z10)))) True) (_have x z11))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 1162-1166:
+> Theorem t1: (exists x z1, (and (and (and (_100 z1) (_company z1)) True) (x = z1))) -> (exists x, (and (and (and (x = _icm) True) (exists z3, (and (and (and (_150 z3) (_computer z3)) True) (_own _icm z3)))) (exists z2, (and (and (and (_one z2) (exists z1, (and (and (_company z1) True) (_of z2 z1)))) True) (_icm = z2))))) -> (exists x, (and True (not (exists z3, (and (and (and (and (_service z3) (_contract z3)) (exists z2, (and (and (exists z1, (and (and (_computer z1) True) (_of z2 z1))) True) (_for z3 z2)))) True) (_have x z3)))))) -> (forall x, ((and (exists z2, (and (and (and (and (_other z2) (_99 z2)) (_company z2)) True) (_of x z2))) True) -> (exists z3, (and (and (and (_one z3) (_computer z3)) True) (_own x z3))))) -> (exists x, (and True (exists z7, (and (and (and (and (_service z7) (_contract z7)) (exists z6, (and True (_for z7 z6)))) True) (_have x z7))))) -> (Most (fun x => (and (and (_company x) (exists z8, (and (and (_computer z8) True) (_own x z8)))) True)) (fun x => (exists z11, (and (and (and (and (_service z11) (_contract z11)) (exists z10, (and True (_for z11 z10)))) True) (_have x z11))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _100 is declared
+
+Coq < _150 is declared
+
+Coq < _99 is declared
+
+Coq < _company is declared
+
+Coq < _computer is declared
+
+Coq < _contract is declared
+
+Coq < _for is declared
+
+Coq < _have is declared
+
+Coq < _icm is declared
+
+Coq < _of is declared
+
+Coq < _one is declared
+
+Coq < _other is declared
+
+Coq < _own is declared
+
+Coq < _service is declared
+
+Coq < 1 goal
+
+============================
+(exists x z1 : Entity, ((_100 z1 /\ _company z1) /\ True) /\ x = z1) ->
+(exists x : Entity,
+((x = _icm /\ True) /\
+(exists z3 : Entity,
+((_150 z3 /\ _computer z3) /\ True) /\ _own _icm z3)) /\
+(exists z2 : Entity,
+((_one z2 /\ (exists z1 : Entity, (_company z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _icm = z2)) ->
+(exists x : Entity,
+True /\
+~
+(exists z3 : Entity,
+(((_service z3 /\ _contract z3) /\
+(exists z2 : Entity,
+((exists z1 : Entity, (_computer z1 /\ True) /\ _of z2 z1) /\
+True) /\ _for z3 z2)) /\ True) /\ _have x z3)) ->
+(forall x : Entity,
+(exists z2 : Entity,
+(((_other z2 /\ _99 z2) /\ _company z2) /\ True) /\ _of x z2) /\ True ->
+exists z3 : Entity, ((_one z3 /\ _computer z3) /\ True) /\ _own x z3) ->
+(exists x : Entity,
+True /\
+(exists z7 : Entity,
+(((_service z7 /\ _contract z7) /\
+(exists z6 : Entity, True /\ _for z7 z6)) /\ True) /\
+_have x z7)) ->
+most x;
+(_company x /\ (exists z8 : Entity, (_computer z8 /\ True) /\ _own x z8)) /\
+True,
+(exists z11 : Entity,
+(((_service z11 /\ _contract z11) /\
+(exists z10 : Entity, True /\ _for z11 z10)) /\ True) /\
+_have x z11)
+
+
+Toplevel input, characters 1132-1136:
+> Theorem t1: (exists x z1, (and (and (and (_100 z1) (_company z1)) True) (x = z1))) -> (exists x, (and (and (and (x = _icm) True) (exists z3, (and (and (and (_150 z3) (_computer z3)) True) (_own _icm z3)))) (exists z2, (and (and (and (_one z2) (exists z1, (and (and (_company z1) True) (_of z2 z1)))) True) (_icm = z2))))) -> (exists x, (and True (not (exists z3, (and (and (and (and (_service z3) (_contract z3)) (exists z2, (and (and (exists z1, (and (and (_computer z1) True) (_of z2 z1))) True) (_for z3 z2)))) True) (_have x z3)))))) -> (forall x, ((and (exists z2, (and (and (and (and (_other z2) (_99 z2)) (_company z2)) True) (_of x z2))) True) -> (exists z3, (and (and (and (_one z3) (_computer z3)) True) (_own x z3))))) -> (exists x, (and True (exists z7, (and (and (and (and (_service z7) (_contract z7)) (exists z6, (and True (_for z7 z6)))) True) (_have x z7))))) -> (Most (fun x => (and (and (_company x) (exists z8, (and (and (_computer z8) True) (_own x z8)))) True)) (fun x => (exists z11, (and (and (and (and (_service z11) (_contract z11)) (exists z10, (and True (_for z11 z10)))) True) (_have x z11))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _100 is declared
+
+Coq < _150 is declared
+
+Coq < _99 is declared
+
+Coq < _company is declared
+
+Coq < _computer is declared
+
+Coq < _contract is declared
+
+Coq < _for is declared
+
+Coq < _have is declared
+
+Coq < _icm is declared
+
+Coq < _of is declared
+
+Coq < _one is declared
+
+Coq < _other is declared
+
+Coq < _own is declared
+
+Coq < _service is declared
+
+Coq < 1 goal
+
+============================
+(exists x z1 : Entity, ((_100 z1 /\ _company z1) /\ True) /\ x = z1) ->
+(exists x : Entity,
+((x = _icm /\ True) /\
+(exists z3 : Entity,
+((_150 z3 /\ _computer z3) /\ True) /\ _own _icm z3)) /\
+(exists z2 : Entity,
+((_one z2 /\ (exists z1 : Entity, (_company z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _icm = z2)) ->
+(exists x : Entity,
+True /\
+~
+(exists z3 : Entity,
+(((_service z3 /\ _contract z3) /\
+(exists z2 : Entity,
+((exists z1 : Entity, (_computer z1 /\ True) /\ _of z2 z1) /\
+True) /\ _for z3 z2)) /\ True) /\ _have x z3)) ->
+(forall x : Entity,
+(exists z2 : Entity,
+(((_other z2 /\ _99 z2) /\ _company z2) /\ True) /\ _of x z2) /\ True ->
+exists z3 : Entity, ((_one z3 /\ _computer z3) /\ True) /\ _own x z3) ->
+(exists x : Entity,
+True /\
+(exists z7 : Entity,
+(((_service z7 /\ _contract z7) /\
+(exists z6 : Entity, True /\ _for z7 z6)) /\ True) /\
+_have x z7)) ->
+~
+most x;
+(_company x /\ (exists z8 : Entity, (_computer z8 /\ True) /\ _own x z8)) /\
+True,
+(exists z11 : Entity,
+(((_service z11 /\ _contract z11) /\
+(exists z10 : Entity, True /\ _for z11 z10)) /\ True) /\
+_have x z11)
+
+1 goal
+
+H2 : forall x : Entity,
+(exists z2 : Entity,
+(((_other z2 /\ _99 z2) /\ _company z2) /\ True) /\ _of x z2) /\
+True ->
+exists z3 : Entity, ((_one z3 /\ _computer z3) /\ True) /\ _own x z3
+H4 : most x;
+(_company x /\
+(exists z8 : Entity, (_computer z8 /\ True) /\ _own x z8)) /\ True,
+(exists z11 : Entity,
+(((_service z11 /\ _contract z11) /\
+(exists z10 : Entity, True /\ _for z11 z10)) /\ True) /\
+_have x z11)
+x : Entity
+H3 : True
+x0 : Entity
+H6 : _have x x0
+H7 : True
+H5 : _service x0
+H9 : _contract x0
+x1 : Entity
+H8 : True
+H10 : _for x0 x1
+x3 : Entity
+H12 : True
+H : _100 x3
+H13 : _company x3
+x4 : Entity
+H1, H17 : True
+x6 : Entity
+H18 : _own _icm x6
+H19 : True
+H16 : _150 x6
+H20 : _computer x6
+H22 : True
+H15 : _one _icm
+x8 : Entity
+H24 : _of _icm x8
+H23 : _company x8
+H25 : True
+H14 : forall x : Entity,
+(((_service x /\ _contract x) /\
+(exists z2 : Entity,
+((exists z1 : Entity, (_computer z1 /\ True) /\ _of z2 z1) /\
+True) /\ _for x z2)) /\ True) /\ _have x4 x -> False
+============================
+False
+
+Toplevel input, characters 1154-1166:
+> Theorem t1: (exists x z1, (and (and (and (_100 z1) (_company z1)) True) (x = z1))) -> (exists x, (and (and (and (x = _icm) True) (exists z3, (and (and (and (_150 z3) (_computer z3)) True) (_own _icm z3)))) (exists z2, (and (and (and (_one z2) (exists z1, (and (and (_company z1) True) (_of z2 z1)))) True) (_icm = z2))))) -> (exists x, (and True (not (exists z3, (and (and (and (and (_service z3) (_contract z3)) (exists z2, (and (and (exists z1, (and (and (_computer z1) True) (_of z2 z1))) True) (_for z3 z2)))) True) (_have x z3)))))) -> (forall x, ((and (exists z2, (and (and (and (and (_other z2) (_99 z2)) (_company z2)) True) (_of x z2))) True) -> (exists z3, (and (and (and (_one z3) (_computer z3)) True) (_own x z3))))) -> (exists x, (and True (exists z7, (and (and (and (and (_service z7) (_contract z7)) (exists z6, (and True (_for z7 z6)))) True) (_have x z7))))) -> (not (Most (fun x => (and (and (_company x) (exists z8, (and (and (_computer z8) True) (_own x z8)))) True)) (fun x => (exists z11, (and (and (and (and (_service z11) (_contract z11)) (exists z10, (and True (_for z11 z10)))) True) (_have x z11)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 1168-1172:
+> Theorem t1: (exists x z1, (and (and (and (_100 z1) (_company z1)) True) (x = z1))) -> (exists x, (and (and (and (x = _icm) True) (exists z3, (and (and (and (_150 z3) (_computer z3)) True) (_own _icm z3)))) (exists z2, (and (and (and (_one z2) (exists z1, (and (and (_company z1) True) (_of z2 z1)))) True) (_icm = z2))))) -> (exists x, (and True (not (exists z3, (and (and (and (and (_service z3) (_contract z3)) (exists z2, (and (and (exists z1, (and (and (_computer z1) True) (_of z2 z1))) True) (_for z3 z2)))) True) (_have x z3)))))) -> (forall x, ((and (exists z2, (and (and (and (and (_other z2) (_99 z2)) (_company z2)) True) (_of x z2))) True) -> (exists z3, (and (and (and (_one z3) (_computer z3)) True) (_own x z3))))) -> (exists x, (and True (exists z7, (and (and (and (and (_service z7) (_contract z7)) (exists z6, (and True (_for z7 z6)))) True) (_have x z7))))) -> (not (Most (fun x => (and (and (_company x) (exists z8, (and (and (_computer z8) True) (_own x z8)))) True)) (fun x => (exists z11, (and (and (and (and (_service z11) (_contract z11)) (exists z10, (and True (_for z11 z10)))) True) (_have x z11)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _100 is declared
+
+Coq < _150 is declared
+
+Coq < _99 is declared
+
+Coq < _company is declared
+
+Coq < _computer is declared
+
+Coq < _contract is declared
+
+Coq < _for is declared
+
+Coq < _have is declared
+
+Coq < _icm is declared
+
+Coq < _of is declared
+
+Coq < _one is declared
+
+Coq < _other is declared
+
+Coq < _own is declared
+
+Coq < _service is declared
+
+Coq < 1 goal
+
+============================
+(exists x z1 : Entity, ((_100 z1 /\ _company z1) /\ True) /\ x = z1) ->
+(exists x : Entity,
+((x = _icm /\ True) /\
+(exists z3 : Entity,
+((_150 z3 /\ _computer z3) /\ True) /\ _own _icm z3)) /\
+(exists z2 : Entity,
+((_one z2 /\ (exists z1 : Entity, (_company z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _icm = z2)) ->
+(exists x : Entity,
+True /\
+~
+(exists z3 : Entity,
+(((_service z3 /\ _contract z3) /\
+(exists z2 : Entity,
+((exists z1 : Entity, (_computer z1 /\ True) /\ _of z2 z1) /\
+True) /\ _for z3 z2)) /\ True) /\ _have x z3)) ->
+(forall x : Entity,
+(exists z2 : Entity,
+(((_other z2 /\ _99 z2) /\ _company z2) /\ True) /\ _of x z2) /\ True ->
+exists z3 : Entity, ((_one z3 /\ _computer z3) /\ True) /\ _own x z3) ->
+(exists x : Entity,
+True /\
+(exists z7 : Entity,
+(((_service z7 /\ _contract z7) /\
+(exists z6 : Entity, True /\ _for z7 z6)) /\ True) /\
+_have x z7)) ->
+~
+most x;
+(_company x /\ (exists z8 : Entity, (_computer z8 /\ True) /\ _own x z8)) /\
+True,
+(exists z11 : Entity,
+(((_service z11 /\ _contract z11) /\
+(exists z10 : Entity, True /\ _for z11 z10)) /\ True) /\
+_have x z11)
+
+
+Toplevel input, characters 1138-1142:
+> Theorem t1: (exists x z1, (and (and (and (_100 z1) (_company z1)) True) (x = z1))) -> (exists x, (and (and (and (x = _icm) True) (exists z3, (and (and (and (_150 z3) (_computer z3)) True) (_own _icm z3)))) (exists z2, (and (and (and (_one z2) (exists z1, (and (and (_company z1) True) (_of z2 z1)))) True) (_icm = z2))))) -> (exists x, (and True (not (exists z3, (and (and (and (and (_service z3) (_contract z3)) (exists z2, (and (and (exists z1, (and (and (_computer z1) True) (_of z2 z1))) True) (_for z3 z2)))) True) (_have x z3)))))) -> (forall x, ((and (exists z2, (and (and (and (and (_other z2) (_99 z2)) (_company z2)) True) (_of x z2))) True) -> (exists z3, (and (and (and (_one z3) (_computer z3)) True) (_own x z3))))) -> (exists x, (and True (exists z7, (and (and (and (and (_service z7) (_contract z7)) (exists z6, (and True (_for z7 z6)))) True) (_have x z7))))) -> (not (Most (fun x => (and (and (_company x) (exists z8, (and (and (_computer z8) True) (_own x z8)))) True)) (fun x => (exists z11, (and (and (and (and (_service z11) (_contract z11)) (exists z10, (and True (_for z11 z10)))) True) (_have x z11)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _100 is declared
+
+Coq < _150 is declared
+
+Coq < _99 is declared
+
+Coq < _company is declared
+
+Coq < _computer is declared
+
+Coq < _contract is declared
+
+Coq < _for is declared
+
+Coq < _have is declared
+
+Coq < _icm is declared
+
+Coq < _of is declared
+
+Coq < _one is declared
+
+Coq < _other is declared
+
+Coq < _own is declared
+
+Coq < _service is declared
+
+Coq < 1 goal
+
+============================
+(exists x z1 : Entity, ((_100 z1 /\ _company z1) /\ True) /\ x = z1) ->
+(exists x : Entity,
+((x = _icm /\ True) /\
+(exists z3 : Entity,
+((_150 z3 /\ _computer z3) /\ True) /\ _own _icm z3)) /\
+(exists z2 : Entity,
+((_one z2 /\ (exists z1 : Entity, (_company z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _icm = z2)) ->
+(exists x : Entity,
+True /\
+~
+(exists z3 : Entity,
+(((_service z3 /\ _contract z3) /\
+(exists z2 : Entity,
+((exists z1 : Entity, (_computer z1 /\ True) /\ _of z2 z1) /\
+True) /\ _for z3 z2)) /\ True) /\ _have x z3)) ->
+(forall x : Entity,
+(exists z2 : Entity,
+(((_other z2 /\ _99 z2) /\ _company z2) /\ True) /\ _of x z2) /\ True ->
+exists z3 : Entity, ((_one z3 /\ _computer z3) /\ True) /\ _own x z3) ->
+(exists x : Entity,
+True /\
+(exists z7 : Entity,
+(((_service z7 /\ _contract z7) /\
+(exists z6 : Entity, True /\ _for z7 z6)) /\ True) /\
+_have x z7)) ->
+most x;
+(_company x /\ (exists z8 : Entity, (_computer z8 /\ True) /\ _own x z8)) /\
+True,
+(exists z11 : Entity,
+(((_service z11 /\ _contract z11) /\
+(exists z10 : Entity, True /\ _for z11 z10)) /\ True) /\
+_have x z11)
+
+1 goal
+
+H2 : forall x : Entity,
+(exists z2 : Entity,
+(((_other z2 /\ _99 z2) /\ _company z2) /\ True) /\ _of x z2) /\
+True ->
+exists z3 : Entity, ((_one z3 /\ _computer z3) /\ True) /\ _own x z3
+x : Entity
+H3 : True
+x0 : Entity
+H5 : _have x x0
+H6 : True
+H4 : _service x0
+H8 : _contract x0
+x1 : Entity
+H7 : True
+H9 : _for x0 x1
+x2 : Entity
+H1 : True
+x4 : Entity
+H12 : True
+H : _100 x4
+H13 : _company x4
+H16 : True
+x6 : Entity
+H17 : _own _icm x6
+H18 : True
+H15 : _150 x6
+H19 : _computer x6
+H21 : True
+H14 : _one _icm
+x8 : Entity
+H23 : _of _icm x8
+H22 : _company x8
+H24 : True
+H10 : forall x : Entity,
+(((_service x /\ _contract x) /\
+(exists z2 : Entity,
+((exists z1 : Entity, (_computer z1 /\ True) /\ _of z2 z1) /\
+True) /\ _for x z2)) /\ True) /\ _have x2 x -> False
+============================
+most x3;
+(_company x3 /\ (exists z8 : Entity, (_computer z8 /\ True) /\ _own x3 z8)) /\
+True,
+(exists z11 : Entity,
+(((_service z11 /\ _contract z11) /\
+(exists z10 : Entity, True /\ _for z11 z10)) /\ True) /\
+_have x3 z11)
+
+Toplevel input, characters 1148-1160:
+> Theorem t1: (exists x z1, (and (and (and (_100 z1) (_company z1)) True) (x = z1))) -> (exists x, (and (and (and (x = _icm) True) (exists z3, (and (and (and (_150 z3) (_computer z3)) True) (_own _icm z3)))) (exists z2, (and (and (and (_one z2) (exists z1, (and (and (_company z1) True) (_of z2 z1)))) True) (_icm = z2))))) -> (exists x, (and True (not (exists z3, (and (and (and (and (_service z3) (_contract z3)) (exists z2, (and (and (exists z1, (and (and (_computer z1) True) (_of z2 z1))) True) (_for z3 z2)))) True) (_have x z3)))))) -> (forall x, ((and (exists z2, (and (and (and (and (_other z2) (_99 z2)) (_company z2)) True) (_of x z2))) True) -> (exists z3, (and (and (and (_one z3) (_computer z3)) True) (_own x z3))))) -> (exists x, (and True (exists z7, (and (and (and (and (_service z7) (_contract z7)) (exists z6, (and True (_for z7 z6)))) True) (_have x z7))))) -> (Most (fun x => (and (and (_company x) (exists z8, (and (and (_computer z8) True) (_own x z8)))) True)) (fun x => (exists z11, (and (and (and (and (_service z11) (_contract z11)) (exists z10, (and True (_for z11 z10)))) True) (_have x z11))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 1162-1166:
+> Theorem t1: (exists x z1, (and (and (and (_100 z1) (_company z1)) True) (x = z1))) -> (exists x, (and (and (and (x = _icm) True) (exists z3, (and (and (and (_150 z3) (_computer z3)) True) (_own _icm z3)))) (exists z2, (and (and (and (_one z2) (exists z1, (and (and (_company z1) True) (_of z2 z1)))) True) (_icm = z2))))) -> (exists x, (and True (not (exists z3, (and (and (and (and (_service z3) (_contract z3)) (exists z2, (and (and (exists z1, (and (and (_computer z1) True) (_of z2 z1))) True) (_for z3 z2)))) True) (_have x z3)))))) -> (forall x, ((and (exists z2, (and (and (and (and (_other z2) (_99 z2)) (_company z2)) True) (_of x z2))) True) -> (exists z3, (and (and (and (_one z3) (_computer z3)) True) (_own x z3))))) -> (exists x, (and True (exists z7, (and (and (and (and (_service z7) (_contract z7)) (exists z6, (and True (_for z7 z6)))) True) (_have x z7))))) -> (Most (fun x => (and (and (_company x) (exists z8, (and (and (_computer z8) True) (_own x z8)))) True)) (fun x => (exists z11, (and (and (and (and (_service z11) (_contract z11)) (exists z10, (and True (_for z11 z10)))) True) (_have x z11))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _100 is declared
+
+Coq < _150 is declared
+
+Coq < _99 is declared
+
+Coq < _company is declared
+
+Coq < _computer is declared
+
+Coq < _contract is declared
+
+Coq < _for is declared
+
+Coq < _have is declared
+
+Coq < _icm is declared
+
+Coq < _of is declared
+
+Coq < _one is declared
+
+Coq < _other is declared
+
+Coq < _own is declared
+
+Coq < _service is declared
+
+Coq < 1 goal
+
+============================
+(exists x z1 : Entity, ((_100 z1 /\ _company z1) /\ True) /\ x = z1) ->
+(exists x : Entity,
+((x = _icm /\ True) /\
+(exists z3 : Entity,
+((_150 z3 /\ _computer z3) /\ True) /\ _own _icm z3)) /\
+(exists z2 : Entity,
+((_one z2 /\ (exists z1 : Entity, (_company z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _icm = z2)) ->
+(exists x : Entity,
+True /\
+~
+(exists z3 : Entity,
+(((_service z3 /\ _contract z3) /\
+(exists z2 : Entity,
+((exists z1 : Entity, (_computer z1 /\ True) /\ _of z2 z1) /\
+True) /\ _for z3 z2)) /\ True) /\ _have x z3)) ->
+(forall x : Entity,
+(exists z2 : Entity,
+(((_other z2 /\ _99 z2) /\ _company z2) /\ True) /\ _of x z2) /\ True ->
+exists z3 : Entity, ((_one z3 /\ _computer z3) /\ True) /\ _own x z3) ->
+(exists x : Entity,
+True /\
+(exists z7 : Entity,
+(((_service z7 /\ _contract z7) /\
+(exists z6 : Entity, True /\ _for z7 z6)) /\ True) /\
+_have x z7)) ->
+~
+most x;
+(_company x /\ (exists z8 : Entity, (_computer z8 /\ True) /\ _own x z8)) /\
+True,
+(exists z11 : Entity,
+(((_service z11 /\ _contract z11) /\
+(exists z10 : Entity, True /\ _for z11 z10)) /\ True) /\
+_have x z11)
+
+1 goal
+
+H2 : forall x : Entity,
+(exists z2 : Entity,
+(((_other z2 /\ _99 z2) /\ _company z2) /\ True) /\ _of x z2) /\
+True ->
+exists z3 : Entity, ((_one z3 /\ _computer z3) /\ True) /\ _own x z3
+H4 : most x;
+(_company x /\
+(exists z8 : Entity, (_computer z8 /\ True) /\ _own x z8)) /\ True,
+(exists z11 : Entity,
+(((_service z11 /\ _contract z11) /\
+(exists z10 : Entity, True /\ _for z11 z10)) /\ True) /\
+_have x z11)
+x : Entity
+H3 : True
+x0 : Entity
+H6 : _have x x0
+H7 : True
+H5 : _service x0
+H9 : _contract x0
+x1 : Entity
+H8 : True
+H10 : _for x0 x1
+x3 : Entity
+H12 : True
+H : _100 x3
+H13 : _company x3
+x4 : Entity
+H1, H17 : True
+x6 : Entity
+H18 : _own _icm x6
+H19 : True
+H16 : _150 x6
+H20 : _computer x6
+H22 : True
+H15 : _one _icm
+x8 : Entity
+H24 : _of _icm x8
+H23 : _company x8
+H25 : True
+H14 : forall x : Entity,
+(((_service x /\ _contract x) /\
+(exists z2 : Entity,
+((exists z1 : Entity, (_computer z1 /\ True) /\ _of z2 z1) /\
+True) /\ _for x z2)) /\ True) /\ _have x4 x -> False
+============================
+False
+
+Toplevel input, characters 1154-1166:
+> Theorem t1: (exists x z1, (and (and (and (_100 z1) (_company z1)) True) (x = z1))) -> (exists x, (and (and (and (x = _icm) True) (exists z3, (and (and (and (_150 z3) (_computer z3)) True) (_own _icm z3)))) (exists z2, (and (and (and (_one z2) (exists z1, (and (and (_company z1) True) (_of z2 z1)))) True) (_icm = z2))))) -> (exists x, (and True (not (exists z3, (and (and (and (and (_service z3) (_contract z3)) (exists z2, (and (and (exists z1, (and (and (_computer z1) True) (_of z2 z1))) True) (_for z3 z2)))) True) (_have x z3)))))) -> (forall x, ((and (exists z2, (and (and (and (and (_other z2) (_99 z2)) (_company z2)) True) (_of x z2))) True) -> (exists z3, (and (and (and (_one z3) (_computer z3)) True) (_own x z3))))) -> (exists x, (and True (exists z7, (and (and (and (and (_service z7) (_contract z7)) (exists z6, (and True (_for z7 z6)))) True) (_have x z7))))) -> (not (Most (fun x => (and (and (_company x) (exists z8, (and (and (_computer z8) True) (_own x z8)))) True)) (fun x => (exists z11, (and (and (and (and (_service z11) (_contract z11)) (exists z10, (and True (_for z11 z10)))) True) (_have x z11)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 1168-1172:
+> Theorem t1: (exists x z1, (and (and (and (_100 z1) (_company z1)) True) (x = z1))) -> (exists x, (and (and (and (x = _icm) True) (exists z3, (and (and (and (_150 z3) (_computer z3)) True) (_own _icm z3)))) (exists z2, (and (and (and (_one z2) (exists z1, (and (and (_company z1) True) (_of z2 z1)))) True) (_icm = z2))))) -> (exists x, (and True (not (exists z3, (and (and (and (and (_service z3) (_contract z3)) (exists z2, (and (and (exists z1, (and (and (_computer z1) True) (_of z2 z1))) True) (_for z3 z2)))) True) (_have x z3)))))) -> (forall x, ((and (exists z2, (and (and (and (and (_other z2) (_99 z2)) (_company z2)) True) (_of x z2))) True) -> (exists z3, (and (and (and (_one z3) (_computer z3)) True) (_own x z3))))) -> (exists x, (and True (exists z7, (and (and (and (and (_service z7) (_contract z7)) (exists z6, (and True (_for z7 z6)))) True) (_have x z7))))) -> (not (Most (fun x => (and (and (_company x) (exists z8, (and (and (_computer z8) True) (_own x z8)))) True)) (fun x => (exists z11, (and (and (and (and (_service z11) (_contract z11)) (exists z10, (and True (_for z11 z10)))) True) (_have x z11)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _100 is declared
+
+Coq < _150 is declared
+
+Coq < _99 is declared
+
+Coq < _company is declared
+
+Coq < _computer is declared
+
+Coq < _contract is declared
+
+Coq < _for is declared
+
+Coq < _have is declared
+
+Coq < _icm is declared
+
+Coq < _of is declared
+
+Coq < _one is declared
+
+Coq < _other is declared
+
+Coq < _own is declared
+
+Coq < _service is declared
+
+Coq < 1 goal
+
+============================
+(exists x z1 : Entity, ((_100 z1 /\ _company z1) /\ True) /\ x = z1) ->
+(exists x : Entity,
+((x = _icm /\ True) /\
+(exists z3 : Entity,
+((_150 z3 /\ _computer z3) /\ True) /\ _own _icm z3)) /\
+(exists z2 : Entity,
+((_one z2 /\ (exists z1 : Entity, (_company z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _icm = z2)) ->
+(exists x : Entity,
+True /\
+~
+(exists z3 : Entity,
+(((_service z3 /\ _contract z3) /\
+(exists z2 : Entity,
+((exists z1 : Entity, (_computer z1 /\ True) /\ _of z2 z1) /\
+True) /\ _for z3 z2)) /\ True) /\ _have x z3)) ->
+(forall x : Entity,
+(exists z2 : Entity,
+(((_other z2 /\ _99 z2) /\ _company z2) /\ True) /\ _of x z2) /\ True ->
+exists z3 : Entity, ((_one z3 /\ _computer z3) /\ True) /\ _own x z3) ->
+(exists x : Entity,
+True /\
+(exists z7 : Entity,
+(((_service z7 /\ _contract z7) /\
+(exists z6 : Entity, True /\ _for z7 z6)) /\ True) /\
+_have x z7)) ->
+most x;
+(_company x /\ (exists z8 : Entity, (_computer z8 /\ True) /\ _own x z8)) /\
+True,
+(exists z11 : Entity,
+(((_service z11 /\ _contract z11) /\
+(exists z10 : Entity, True /\ _for z11 z10)) /\ True) /\
+_have x z11)
+
+1 goal
+
+H2 : forall x : Entity,
+(exists z2 : Entity,
+(((_other z2 /\ _99 z2) /\ _company z2) /\ True) /\ _of x z2) /\
+True ->
+exists z3 : Entity, ((_one z3 /\ _computer z3) /\ True) /\ _own x z3
+x : Entity
+H3 : True
+x0 : Entity
+H5 : _have x x0
+H6 : True
+H4 : _service x0
+H8 : _contract x0
+x1 : Entity
+H7 : True
+H9 : _for x0 x1
+x2 : Entity
+H1 : True
+x4 : Entity
+H12 : True
+H : _100 x4
+H13 : _company x4
+H16 : True
+x6 : Entity
+H17 : _own _icm x6
+H18 : True
+H15 : _150 x6
+H19 : _computer x6
+H21 : True
+H14 : _one _icm
+x8 : Entity
+H23 : _of _icm x8
+H22 : _company x8
+H24 : True
+H10 : forall x : Entity,
+(((_service x /\ _contract x) /\
+(exists z2 : Entity,
+((exists z1 : Entity, (_computer z1 /\ True) /\ _of z2 z1) /\
+True) /\ _for x z2)) /\ True) /\ _have x2 x -> False
+============================
+most x3;
+(_company x3 /\ (exists z8 : Entity, (_computer z8 /\ True) /\ _own x3 z8)) /\
+True,
+(exists z11 : Entity,
+(((_service z11 /\ _contract z11) /\
+(exists z10 : Entity, True /\ _for z11 z10)) /\ True) /\
+_have x3 z11)
+
+Toplevel input, characters 1148-1160:
+> Theorem t1: (exists x z1, (and (and (and (_100 z1) (_company z1)) True) (x = z1))) -> (exists x, (and (and (and (x = _icm) True) (exists z3, (and (and (and (_150 z3) (_computer z3)) True) (_own _icm z3)))) (exists z2, (and (and (and (_one z2) (exists z1, (and (and (_company z1) True) (_of z2 z1)))) True) (_icm = z2))))) -> (exists x, (and True (not (exists z3, (and (and (and (and (_service z3) (_contract z3)) (exists z2, (and (and (exists z1, (and (and (_computer z1) True) (_of z2 z1))) True) (_for z3 z2)))) True) (_have x z3)))))) -> (forall x, ((and (exists z2, (and (and (and (and (_other z2) (_99 z2)) (_company z2)) True) (_of x z2))) True) -> (exists z3, (and (and (and (_one z3) (_computer z3)) True) (_own x z3))))) -> (exists x, (and True (exists z7, (and (and (and (and (_service z7) (_contract z7)) (exists z6, (and True (_for z7 z6)))) True) (_have x z7))))) -> (Most (fun x => (and (and (_company x) (exists z8, (and (and (_computer z8) True) (_own x z8)))) True)) (fun x => (exists z11, (and (and (and (and (_service z11) (_contract z11)) (exists z10, (and True (_for z11 z10)))) True) (_have x z11))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 1162-1166:
+> Theorem t1: (exists x z1, (and (and (and (_100 z1) (_company z1)) True) (x = z1))) -> (exists x, (and (and (and (x = _icm) True) (exists z3, (and (and (and (_150 z3) (_computer z3)) True) (_own _icm z3)))) (exists z2, (and (and (and (_one z2) (exists z1, (and (and (_company z1) True) (_of z2 z1)))) True) (_icm = z2))))) -> (exists x, (and True (not (exists z3, (and (and (and (and (_service z3) (_contract z3)) (exists z2, (and (and (exists z1, (and (and (_computer z1) True) (_of z2 z1))) True) (_for z3 z2)))) True) (_have x z3)))))) -> (forall x, ((and (exists z2, (and (and (and (and (_other z2) (_99 z2)) (_company z2)) True) (_of x z2))) True) -> (exists z3, (and (and (and (_one z3) (_computer z3)) True) (_own x z3))))) -> (exists x, (and True (exists z7, (and (and (and (and (_service z7) (_contract z7)) (exists z6, (and True (_for z7 z6)))) True) (_have x z7))))) -> (Most (fun x => (and (and (_company x) (exists z8, (and (and (_computer z8) True) (_own x z8)))) True)) (fun x => (exists z11, (and (and (and (and (_service z11) (_contract z11)) (exists z10, (and True (_for z11 z10)))) True) (_have x z11))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _100 is declared
+
+Coq < _150 is declared
+
+Coq < _99 is declared
+
+Coq < _company is declared
+
+Coq < _computer is declared
+
+Coq < _contract is declared
+
+Coq < _for is declared
+
+Coq < _have is declared
+
+Coq < _icm is declared
+
+Coq < _of is declared
+
+Coq < _one is declared
+
+Coq < _other is declared
+
+Coq < _own is declared
+
+Coq < _service is declared
+
+Coq < 1 goal
+
+============================
+(exists x z1 : Entity, ((_100 z1 /\ _company z1) /\ True) /\ x = z1) ->
+(exists x : Entity,
+((x = _icm /\ True) /\
+(exists z3 : Entity,
+((_150 z3 /\ _computer z3) /\ True) /\ _own _icm z3)) /\
+(exists z2 : Entity,
+((_one z2 /\ (exists z1 : Entity, (_company z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _icm = z2)) ->
+(exists x : Entity,
+True /\
+~
+(exists z3 : Entity,
+(((_service z3 /\ _contract z3) /\
+(exists z2 : Entity,
+((exists z1 : Entity, (_computer z1 /\ True) /\ _of z2 z1) /\
+True) /\ _for z3 z2)) /\ True) /\ _have x z3)) ->
+(forall x : Entity,
+(exists z2 : Entity,
+(((_other z2 /\ _99 z2) /\ _company z2) /\ True) /\ _of x z2) /\ True ->
+exists z3 : Entity, ((_one z3 /\ _computer z3) /\ True) /\ _own x z3) ->
+(exists x : Entity,
+True /\
+(exists z7 : Entity,
+(((_service z7 /\ _contract z7) /\
+(exists z6 : Entity, True /\ _for z7 z6)) /\ True) /\
+_have x z7)) ->
+~
+most x;
+(_company x /\ (exists z8 : Entity, (_computer z8 /\ True) /\ _own x z8)) /\
+True,
+(exists z11 : Entity,
+(((_service z11 /\ _contract z11) /\
+(exists z10 : Entity, True /\ _for z11 z10)) /\ True) /\
+_have x z11)
+
+1 goal
+
+H2 : forall x : Entity,
+(exists z2 : Entity,
+(((_other z2 /\ _99 z2) /\ _company z2) /\ True) /\ _of x z2) /\
+True ->
+exists z3 : Entity, ((_one z3 /\ _computer z3) /\ True) /\ _own x z3
+H4 : most x;
+(_company x /\
+(exists z8 : Entity, (_computer z8 /\ True) /\ _own x z8)) /\ True,
+(exists z11 : Entity,
+(((_service z11 /\ _contract z11) /\
+(exists z10 : Entity, True /\ _for z11 z10)) /\ True) /\
+_have x z11)
+x : Entity
+H3 : True
+x0 : Entity
+H6 : _have x x0
+H7 : True
+H5 : _service x0
+H9 : _contract x0
+x1 : Entity
+H8 : True
+H10 : _for x0 x1
+x3 : Entity
+H12 : True
+H : _100 x3
+H13 : _company x3
+x4 : Entity
+H1, H17 : True
+x6 : Entity
+H18 : _own _icm x6
+H19 : True
+H16 : _150 x6
+H20 : _computer x6
+H22 : True
+H15 : _one _icm
+x8 : Entity
+H24 : _of _icm x8
+H23 : _company x8
+H25 : True
+H14 : forall x : Entity,
+(((_service x /\ _contract x) /\
+(exists z2 : Entity,
+((exists z1 : Entity, (_computer z1 /\ True) /\ _of z2 z1) /\
+True) /\ _for x z2)) /\ True) /\ _have x4 x -> False
+============================
+False
+
+Toplevel input, characters 1154-1166:
+> Theorem t1: (exists x z1, (and (and (and (_100 z1) (_company z1)) True) (x = z1))) -> (exists x, (and (and (and (x = _icm) True) (exists z3, (and (and (and (_150 z3) (_computer z3)) True) (_own _icm z3)))) (exists z2, (and (and (and (_one z2) (exists z1, (and (and (_company z1) True) (_of z2 z1)))) True) (_icm = z2))))) -> (exists x, (and True (not (exists z3, (and (and (and (and (_service z3) (_contract z3)) (exists z2, (and (and (exists z1, (and (and (_computer z1) True) (_of z2 z1))) True) (_for z3 z2)))) True) (_have x z3)))))) -> (forall x, ((and (exists z2, (and (and (and (and (_other z2) (_99 z2)) (_company z2)) True) (_of x z2))) True) -> (exists z3, (and (and (and (_one z3) (_computer z3)) True) (_own x z3))))) -> (exists x, (and True (exists z7, (and (and (and (and (_service z7) (_contract z7)) (exists z6, (and True (_for z7 z6)))) True) (_have x z7))))) -> (not (Most (fun x => (and (and (_company x) (exists z8, (and (and (_computer z8) True) (_own x z8)))) True)) (fun x => (exists z11, (and (and (and (and (_service z11) (_contract z11)) (exists z10, (and True (_for z11 z10)))) True) (_have x z11)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 1168-1172:
+> Theorem t1: (exists x z1, (and (and (and (_100 z1) (_company z1)) True) (x = z1))) -> (exists x, (and (and (and (x = _icm) True) (exists z3, (and (and (and (_150 z3) (_computer z3)) True) (_own _icm z3)))) (exists z2, (and (and (and (_one z2) (exists z1, (and (and (_company z1) True) (_of z2 z1)))) True) (_icm = z2))))) -> (exists x, (and True (not (exists z3, (and (and (and (and (_service z3) (_contract z3)) (exists z2, (and (and (exists z1, (and (and (_computer z1) True) (_of z2 z1))) True) (_for z3 z2)))) True) (_have x z3)))))) -> (forall x, ((and (exists z2, (and (and (and (and (_other z2) (_99 z2)) (_company z2)) True) (_of x z2))) True) -> (exists z3, (and (and (and (_one z3) (_computer z3)) True) (_own x z3))))) -> (exists x, (and True (exists z7, (and (and (and (and (_service z7) (_contract z7)) (exists z6, (and True (_for z7 z6)))) True) (_have x z7))))) -> (not (Most (fun x => (and (and (_company x) (exists z8, (and (and (_computer z8) True) (_own x z8)))) True)) (fun x => (exists z11, (and (and (and (and (_service z11) (_contract z11)) (exists z10, (and True (_for z11 z10)))) True) (_have x z11)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

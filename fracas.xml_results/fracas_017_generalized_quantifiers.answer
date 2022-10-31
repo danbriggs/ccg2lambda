@@ -1,0 +1,464 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _for is declared
+
+Coq < _irishman is declared
+
+Coq < _literature is declared
+
+Coq < _nobel is declared
+
+Coq < _prize is declared
+
+Coq < _win is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(_irishman x /\ True) /\
+(exists z2 : Entity,
+(((_nobel z2 /\ _prize z2) /\
+(exists z1 : Entity, (_literature z1 /\ True) /\ _for z2 z1)) /\
+True) /\ _win x z2)) ->
+exists x : Entity,
+(_irishman x /\ True) /\
+(exists z1 : Entity, ((_nobel z1 /\ _prize z1) /\ True) /\ _win x z1)
+
+No more goals.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _for is declared
+
+Coq < _irishman is declared
+
+Coq < _literature is declared
+
+Coq < _nobel is declared
+
+Coq < _prize is declared
+
+Coq < _win is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(_irishman x /\ True) /\
+(exists z2 : Entity,
+(((_nobel z2 /\ _prize z2) /\
+(exists z1 : Entity, (_literature z1 /\ True) /\ _for z2 z1)) /\
+True) /\ _win x z2)) ->
+~
+(exists x : Entity,
+(_irishman x /\ True) /\
+(exists z1 : Entity, ((_nobel z1 /\ _prize z1) /\ True) /\ _win x z1))
+
+
+Toplevel input, characters 325-329:
+> Theorem t1: (exists x, (and (and (_irishman x) True) (exists z2, (and (and (and (and (_nobel z2) (_prize z2)) (exists z1, (and (and (_literature z1) True) (_for z2 z1)))) True) (_win x z2))))) -> (not (exists x, (and (and (_irishman x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                      ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _for is declared
+
+Coq < _irishman is declared
+
+Coq < _literature is declared
+
+Coq < _nobel is declared
+
+Coq < _prize is declared
+
+Coq < _win is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(_irishman x /\ True) /\
+(exists z2 : Entity,
+(((_nobel z2 /\ _prize z2) /\
+(exists z1 : Entity, (_literature z1 /\ True) /\ _for z2 z1)) /\
+True) /\ _win x z2)) ->
+exists x : Entity,
+(_irishman x /\ True) /\
+(exists z1 : Entity, ((_nobel z1 /\ _prize z1) /\ True) /\ _win x z1)
+
+No more goals.
+
+Toplevel input, characters 331-348:
+> Theorem t1: (exists x, (and (and (_irishman x) True) (exists z2, (and (and (and (and (_nobel z2) (_prize z2)) (exists z1, (and (and (_literature z1) True) (_for z2 z1)))) True) (_win x z2))))) -> (exists x, (and (and (_irishman x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                            ^^^^^^^^^^^^^^^^^
+Error: No such goal.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _for is declared
+
+Coq < _irishman is declared
+
+Coq < _literature is declared
+
+Coq < _nobel is declared
+
+Coq < _prize is declared
+
+Coq < _win is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(_irishman x /\ True) /\
+(exists z2 : Entity,
+(((_nobel z2 /\ _prize z2) /\
+(exists z1 : Entity, (_literature z1 /\ True) /\ _for z2 z1)) /\
+True) /\ _win x z2)) ->
+exists x : Entity,
+(_irishman x /\ True) /\
+(exists z1 : Entity, ((_nobel z1 /\ _prize z1) /\ True) /\ _win x z1)
+
+No more goals.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _for is declared
+
+Coq < _irishman is declared
+
+Coq < _literature is declared
+
+Coq < _nobel is declared
+
+Coq < _prize is declared
+
+Coq < _win is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(_irishman x /\ True) /\
+(exists z2 : Entity,
+(((_nobel z2 /\ _prize z2) /\
+(exists z1 : Entity, (_literature z1 /\ True) /\ _for z2 z1)) /\
+True) /\ _win x z2)) ->
+~
+(exists x : Entity,
+(_irishman x /\ True) /\
+(exists z1 : Entity, ((_nobel z1 /\ _prize z1) /\ True) /\ _win x z1))
+
+1 goal
+
+x : Entity
+H0 : _irishman x
+H2 : True
+x0 : Entity
+H3 : _win x x0
+H4 : True
+H1 : _nobel x0
+H5 : _prize x0
+x1 : Entity
+H : _irishman x1
+H7 : True
+x2 : Entity
+H8 : _win x1 x2
+H9 : True
+H6 : _nobel x2
+H11 : _prize x2
+x3 : Entity
+H12 : _for x2 x3
+H10 : _literature x3
+H13 : True
+============================
+False
+
+Toplevel input, characters 341-353:
+> Theorem t1: (exists x, (and (and (_irishman x) True) (exists z2, (and (and (and (and (_nobel z2) (_prize z2)) (exists z1, (and (and (_literature z1) True) (_for z2 z1)))) True) (_win x z2))))) -> (not (exists x, (and (and (_irishman x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                      ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 355-359:
+> Theorem t1: (exists x, (and (and (_irishman x) True) (exists z2, (and (and (and (and (_nobel z2) (_prize z2)) (exists z1, (and (and (_literature z1) True) (_for z2 z1)))) True) (_win x z2))))) -> (not (exists x, (and (and (_irishman x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                    ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _for is declared
+
+Coq < _irishman is declared
+
+Coq < _literature is declared
+
+Coq < _nobel is declared
+
+Coq < _prize is declared
+
+Coq < _win is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(_irishman x /\ True) /\
+(exists z2 : Entity,
+(((_nobel z2 /\ _prize z2) /\
+(exists z1 : Entity, (_literature z1 /\ True) /\ _for z2 z1)) /\
+True) /\ _win x z2)) ->
+~
+(exists x : Entity,
+(_irishman x /\ True) /\
+(exists z1 : Entity, ((_nobel z1 /\ _prize z1) /\ True) /\ _win x z1))
+
+
+Toplevel input, characters 325-329:
+> Theorem t1: (exists x, (and (and (_irishman x) True) (exists z2, (and (and (and (and (_nobel z2) (_prize z2)) (exists z1, (and (and (_literature z1) True) (_for z2 z1)))) True) (_win x z2))))) -> (not (exists x, (and (and (_irishman x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                      ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _for is declared
+
+Coq < _irishman is declared
+
+Coq < _literature is declared
+
+Coq < _nobel is declared
+
+Coq < _prize is declared
+
+Coq < _win is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(_irishman x /\ True) /\
+(exists z2 : Entity,
+(((_nobel z2 /\ _prize z2) /\
+(exists z1 : Entity, (_literature z1 /\ True) /\ _for z2 z1)) /\
+True) /\ _win x z2)) ->
+exists x : Entity,
+(_irishman x /\ True) /\
+(exists z1 : Entity, ((_nobel z1 /\ _prize z1) /\ True) /\ _win x z1)
+
+No more goals.
+
+Toplevel input, characters 331-348:
+> Theorem t1: (exists x, (and (and (_irishman x) True) (exists z2, (and (and (and (and (_nobel z2) (_prize z2)) (exists z1, (and (and (_literature z1) True) (_for z2 z1)))) True) (_win x z2))))) -> (exists x, (and (and (_irishman x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                            ^^^^^^^^^^^^^^^^^
+Error: No such goal.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _for is declared
+
+Coq < _irishman is declared
+
+Coq < _literature is declared
+
+Coq < _nobel is declared
+
+Coq < _prize is declared
+
+Coq < _win is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(_irishman x /\ True) /\
+(exists z2 : Entity,
+(((_nobel z2 /\ _prize z2) /\
+(exists z1 : Entity, (_literature z1 /\ True) /\ _for z2 z1)) /\
+True) /\ _win x z2)) ->
+~
+(exists x : Entity,
+(_irishman x /\ True) /\
+(exists z1 : Entity, ((_nobel z1 /\ _prize z1) /\ True) /\ _win x z1))
+
+1 goal
+
+x : Entity
+H0 : _irishman x
+H2 : True
+x0 : Entity
+H3 : _win x x0
+H4 : True
+H1 : _nobel x0
+H5 : _prize x0
+x1 : Entity
+H : _irishman x1
+H7 : True
+x2 : Entity
+H8 : _win x1 x2
+H9 : True
+H6 : _nobel x2
+H11 : _prize x2
+x3 : Entity
+H12 : _for x2 x3
+H10 : _literature x3
+H13 : True
+============================
+False
+
+Toplevel input, characters 341-353:
+> Theorem t1: (exists x, (and (and (_irishman x) True) (exists z2, (and (and (and (and (_nobel z2) (_prize z2)) (exists z1, (and (and (_literature z1) True) (_for z2 z1)))) True) (_win x z2))))) -> (not (exists x, (and (and (_irishman x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                      ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 355-359:
+> Theorem t1: (exists x, (and (and (_irishman x) True) (exists z2, (and (and (and (and (_nobel z2) (_prize z2)) (exists z1, (and (and (_literature z1) True) (_for z2 z1)))) True) (_win x z2))))) -> (not (exists x, (and (and (_irishman x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                    ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _for is declared
+
+Coq < _irishman is declared
+
+Coq < _literature is declared
+
+Coq < _nobel is declared
+
+Coq < _prize is declared
+
+Coq < _win is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(_irishman x /\ True) /\
+(exists z2 : Entity,
+(((_nobel z2 /\ _prize z2) /\
+(exists z1 : Entity, (_literature z1 /\ True) /\ _for z2 z1)) /\
+True) /\ _win x z2)) ->
+exists x : Entity,
+(_irishman x /\ True) /\
+(exists z1 : Entity, ((_nobel z1 /\ _prize z1) /\ True) /\ _win x z1)
+
+No more goals.
+
+Toplevel input, characters 331-348:
+> Theorem t1: (exists x, (and (and (_irishman x) True) (exists z2, (and (and (and (and (_nobel z2) (_prize z2)) (exists z1, (and (and (_literature z1) True) (_for z2 z1)))) True) (_win x z2))))) -> (exists x, (and (and (_irishman x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                            ^^^^^^^^^^^^^^^^^
+Error: No such goal.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _for is declared
+
+Coq < _irishman is declared
+
+Coq < _literature is declared
+
+Coq < _nobel is declared
+
+Coq < _prize is declared
+
+Coq < _win is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(_irishman x /\ True) /\
+(exists z2 : Entity,
+(((_nobel z2 /\ _prize z2) /\
+(exists z1 : Entity, (_literature z1 /\ True) /\ _for z2 z1)) /\
+True) /\ _win x z2)) ->
+~
+(exists x : Entity,
+(_irishman x /\ True) /\
+(exists z1 : Entity, ((_nobel z1 /\ _prize z1) /\ True) /\ _win x z1))
+
+1 goal
+
+x : Entity
+H0 : _irishman x
+H2 : True
+x0 : Entity
+H3 : _win x x0
+H4 : True
+H1 : _nobel x0
+H5 : _prize x0
+x1 : Entity
+H : _irishman x1
+H7 : True
+x2 : Entity
+H8 : _win x1 x2
+H9 : True
+H6 : _nobel x2
+H11 : _prize x2
+x3 : Entity
+H12 : _for x2 x3
+H10 : _literature x3
+H13 : True
+============================
+False
+
+Toplevel input, characters 341-353:
+> Theorem t1: (exists x, (and (and (_irishman x) True) (exists z2, (and (and (and (and (_nobel z2) (_prize z2)) (exists z1, (and (and (_literature z1) True) (_for z2 z1)))) True) (_win x z2))))) -> (not (exists x, (and (and (_irishman x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                      ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 355-359:
+> Theorem t1: (exists x, (and (and (_irishman x) True) (exists z2, (and (and (and (and (_nobel z2) (_prize z2)) (exists z1, (and (and (_literature z1) True) (_for z2 z1)))) True) (_win x z2))))) -> (not (exists x, (and (and (_irishman x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                    ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

@@ -1,0 +1,402 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _jones is declared
+
+Coq < _shore is declared
+
+Coq < _smith is declared
+
+Coq < _swam is declared
+
+Coq < _to is declared
+
+Coq < Toplevel input, characters 13-149:
+> Theorem t1: (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_jones x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z3, (and (and (and (_shore z3) (exists z2, (and (and (and (and (_jones z2) (_swam z2)) (exists z1, (and (and (_shore z1) True) (_to z2 z1)))) True) (_before z3 z2)))) True) (_to x z3)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (and (_jones x) (_swam x)) (exists z2, (and (and (_shore z2) True) (_to x z2)))) (exists z4, (and (and (and (and (_smith z4) (_swam z4)) (exists z3, (and (and (_shore z3) True) (_to z4 z3)))) True) (_after x z4)))) (F1 x)) (F2 x)))).
+>              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun F1 F2 : Entity -> Prop =>
+exists x : Entity,
+(((_smith x /\ _swam x) /\
+(exists z1 : Entity, (_shore z1 /\ True) /\ _to x z1)) /\
+F1 x) /\ F2 x" has type "(Entity -> Prop) -> (Entity -> Prop) -> Prop"
+which should be Set, Prop or Type.
+
+Toplevel input, characters 858-863:
+> Theorem t1: (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_jones x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z3, (and (and (and (_shore z3) (exists z2, (and (and (and (and (_jones z2) (_swam z2)) (exists z1, (and (and (_shore z1) True) (_to z2 z1)))) True) (_before z3 z2)))) True) (_to x z3)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (and (_jones x) (_swam x)) (exists z2, (and (and (_shore z2) True) (_to x z2)))) (exists z4, (and (and (and (and (_smith z4) (_swam z4)) (exists z3, (and (and (_shore z3) True) (_to z4 z3)))) True) (_after x z4)))) (F1 x)) (F2 x)))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 865-869:
+> Theorem t1: (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_jones x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z3, (and (and (and (_shore z3) (exists z2, (and (and (and (and (_jones z2) (_swam z2)) (exists z1, (and (and (_shore z1) True) (_to z2 z1)))) True) (_before z3 z2)))) True) (_to x z3)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (and (_jones x) (_swam x)) (exists z2, (and (and (_shore z2) True) (_to x z2)))) (exists z4, (and (and (and (and (_smith z4) (_swam z4)) (exists z3, (and (and (_shore z3) True) (_to z4 z3)))) True) (_after x z4)))) (F1 x)) (F2 x)))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _jones is declared
+
+Coq < _shore is declared
+
+Coq < _smith is declared
+
+Coq < _swam is declared
+
+Coq < _to is declared
+
+Coq < Toplevel input, characters 13-149:
+> Theorem t1: (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_jones x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z3, (and (and (and (_shore z3) (exists z2, (and (and (and (and (_jones z2) (_swam z2)) (exists z1, (and (and (_shore z1) True) (_to z2 z1)))) True) (_before z3 z2)))) True) (_to x z3)))) (F1 x)) (F2 x)))) -> (not (fun F1 F2 => (exists x, (and (and (and (and (and (_jones x) (_swam x)) (exists z2, (and (and (_shore z2) True) (_to x z2)))) (exists z4, (and (and (and (and (_smith z4) (_swam z4)) (exists z3, (and (and (_shore z3) True) (_to z4 z3)))) True) (_after x z4)))) (F1 x)) (F2 x))))).
+>              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun F1 F2 : Entity -> Prop =>
+exists x : Entity,
+(((_smith x /\ _swam x) /\
+(exists z1 : Entity, (_shore z1 /\ True) /\ _to x z1)) /\
+F1 x) /\ F2 x" has type "(Entity -> Prop) -> (Entity -> Prop) -> Prop"
+which should be Set, Prop or Type.
+
+Toplevel input, characters 864-869:
+> Theorem t1: (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_jones x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z3, (and (and (and (_shore z3) (exists z2, (and (and (and (and (_jones z2) (_swam z2)) (exists z1, (and (and (_shore z1) True) (_to z2 z1)))) True) (_before z3 z2)))) True) (_to x z3)))) (F1 x)) (F2 x)))) -> (not (fun F1 F2 => (exists x, (and (and (and (and (and (_jones x) (_swam x)) (exists z2, (and (and (_shore z2) True) (_to x z2)))) (exists z4, (and (and (and (and (_smith z4) (_swam z4)) (exists z3, (and (and (_shore z3) True) (_to z4 z3)))) True) (_after x z4)))) (F1 x)) (F2 x))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 871-875:
+> Theorem t1: (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_jones x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z3, (and (and (and (_shore z3) (exists z2, (and (and (and (and (_jones z2) (_swam z2)) (exists z1, (and (and (_shore z1) True) (_to z2 z1)))) True) (_before z3 z2)))) True) (_to x z3)))) (F1 x)) (F2 x)))) -> (not (fun F1 F2 => (exists x, (and (and (and (and (and (_jones x) (_swam x)) (exists z2, (and (and (_shore z2) True) (_to x z2)))) (exists z4, (and (and (and (and (_smith z4) (_swam z4)) (exists z3, (and (and (_shore z3) True) (_to z4 z3)))) True) (_after x z4)))) (F1 x)) (F2 x))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _jones is declared
+
+Coq < _shore is declared
+
+Coq < _smith is declared
+
+Coq < _swam is declared
+
+Coq < _to is declared
+
+Coq < Toplevel input, characters 13-149:
+> Theorem t1: (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_jones x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z3, (and (and (and (_shore z3) (exists z2, (and (and (and (and (_jones z2) (_swam z2)) (exists z1, (and (and (_shore z1) True) (_to z2 z1)))) True) (_before z3 z2)))) True) (_to x z3)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (and (_jones x) (_swam x)) (exists z2, (and (and (_shore z2) True) (_to x z2)))) (exists z4, (and (and (and (and (_smith z4) (_swam z4)) (exists z3, (and (and (_shore z3) True) (_to z4 z3)))) True) (_after x z4)))) (F1 x)) (F2 x)))).
+>              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun F1 F2 : Entity -> Prop =>
+exists x : Entity,
+(((_smith x /\ _swam x) /\
+(exists z1 : Entity, (_shore z1 /\ True) /\ _to x z1)) /\
+F1 x) /\ F2 x" has type "(Entity -> Prop) -> (Entity -> Prop) -> Prop"
+which should be Set, Prop or Type.
+
+Toplevel input, characters 858-864:
+> Theorem t1: (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_jones x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z3, (and (and (and (_shore z3) (exists z2, (and (and (and (and (_jones z2) (_swam z2)) (exists z1, (and (and (_shore z1) True) (_to z2 z1)))) True) (_before z3 z2)))) True) (_to x z3)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (and (_jones x) (_swam x)) (exists z2, (and (and (_shore z2) True) (_to x z2)))) (exists z4, (and (and (and (and (_smith z4) (_swam z4)) (exists z3, (and (and (_shore z3) True) (_to z4 z3)))) True) (_after x z4)))) (F1 x)) (F2 x)))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 877-880:
+> Theorem t1: (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_jones x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z3, (and (and (and (_shore z3) (exists z2, (and (and (and (and (_jones z2) (_swam z2)) (exists z1, (and (and (_shore z1) True) (_to z2 z1)))) True) (_before z3 z2)))) True) (_to x z3)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (and (_jones x) (_swam x)) (exists z2, (and (and (_shore z2) True) (_to x z2)))) (exists z4, (and (and (and (and (_smith z4) (_swam z4)) (exists z3, (and (and (_shore z3) True) (_to z4 z3)))) True) (_after x z4)))) (F1 x)) (F2 x)))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 895-899:
+> Theorem t1: (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_jones x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z3, (and (and (and (_shore z3) (exists z2, (and (and (and (and (_jones z2) (_swam z2)) (exists z1, (and (and (_shore z1) True) (_to z2 z1)))) True) (_before z3 z2)))) True) (_to x z3)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (and (_jones x) (_swam x)) (exists z2, (and (and (_shore z2) True) (_to x z2)))) (exists z4, (and (and (and (and (_smith z4) (_swam z4)) (exists z3, (and (and (_shore z3) True) (_to z4 z3)))) True) (_after x z4)))) (F1 x)) (F2 x)))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _jones is declared
+
+Coq < _shore is declared
+
+Coq < _smith is declared
+
+Coq < _swam is declared
+
+Coq < _to is declared
+
+Coq < Toplevel input, characters 13-149:
+> Theorem t1: (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_jones x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z3, (and (and (and (_shore z3) (exists z2, (and (and (and (and (_jones z2) (_swam z2)) (exists z1, (and (and (_shore z1) True) (_to z2 z1)))) True) (_before z3 z2)))) True) (_to x z3)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (and (_jones x) (_swam x)) (exists z2, (and (and (_shore z2) True) (_to x z2)))) (exists z4, (and (and (and (and (_smith z4) (_swam z4)) (exists z3, (and (and (_shore z3) True) (_to z4 z3)))) True) (_after x z4)))) (F1 x)) (F2 x)))).
+>              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun F1 F2 : Entity -> Prop =>
+exists x : Entity,
+(((_smith x /\ _swam x) /\
+(exists z1 : Entity, (_shore z1 /\ True) /\ _to x z1)) /\
+F1 x) /\ F2 x" has type "(Entity -> Prop) -> (Entity -> Prop) -> Prop"
+which should be Set, Prop or Type.
+
+Toplevel input, characters 858-863:
+> Theorem t1: (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_jones x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z3, (and (and (and (_shore z3) (exists z2, (and (and (and (and (_jones z2) (_swam z2)) (exists z1, (and (and (_shore z1) True) (_to z2 z1)))) True) (_before z3 z2)))) True) (_to x z3)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (and (_jones x) (_swam x)) (exists z2, (and (and (_shore z2) True) (_to x z2)))) (exists z4, (and (and (and (and (_smith z4) (_swam z4)) (exists z3, (and (and (_shore z3) True) (_to z4 z3)))) True) (_after x z4)))) (F1 x)) (F2 x)))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 865-869:
+> Theorem t1: (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_jones x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z3, (and (and (and (_shore z3) (exists z2, (and (and (and (and (_jones z2) (_swam z2)) (exists z1, (and (and (_shore z1) True) (_to z2 z1)))) True) (_before z3 z2)))) True) (_to x z3)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (and (_jones x) (_swam x)) (exists z2, (and (and (_shore z2) True) (_to x z2)))) (exists z4, (and (and (and (and (_smith z4) (_swam z4)) (exists z3, (and (and (_shore z3) True) (_to z4 z3)))) True) (_after x z4)))) (F1 x)) (F2 x)))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _jones is declared
+
+Coq < _shore is declared
+
+Coq < _smith is declared
+
+Coq < _swam is declared
+
+Coq < _to is declared
+
+Coq < Toplevel input, characters 13-149:
+> Theorem t1: (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_jones x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z3, (and (and (and (_shore z3) (exists z2, (and (and (and (and (_jones z2) (_swam z2)) (exists z1, (and (and (_shore z1) True) (_to z2 z1)))) True) (_before z3 z2)))) True) (_to x z3)))) (F1 x)) (F2 x)))) -> (not (fun F1 F2 => (exists x, (and (and (and (and (and (_jones x) (_swam x)) (exists z2, (and (and (_shore z2) True) (_to x z2)))) (exists z4, (and (and (and (and (_smith z4) (_swam z4)) (exists z3, (and (and (_shore z3) True) (_to z4 z3)))) True) (_after x z4)))) (F1 x)) (F2 x))))).
+>              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun F1 F2 : Entity -> Prop =>
+exists x : Entity,
+(((_smith x /\ _swam x) /\
+(exists z1 : Entity, (_shore z1 /\ True) /\ _to x z1)) /\
+F1 x) /\ F2 x" has type "(Entity -> Prop) -> (Entity -> Prop) -> Prop"
+which should be Set, Prop or Type.
+
+Toplevel input, characters 864-870:
+> Theorem t1: (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_jones x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z3, (and (and (and (_shore z3) (exists z2, (and (and (and (and (_jones z2) (_swam z2)) (exists z1, (and (and (_shore z1) True) (_to z2 z1)))) True) (_before z3 z2)))) True) (_to x z3)))) (F1 x)) (F2 x)))) -> (not (fun F1 F2 => (exists x, (and (and (and (and (and (_jones x) (_swam x)) (exists z2, (and (and (_shore z2) True) (_to x z2)))) (exists z4, (and (and (and (and (_smith z4) (_swam z4)) (exists z3, (and (and (_shore z3) True) (_to z4 z3)))) True) (_after x z4)))) (F1 x)) (F2 x))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 883-886:
+> Theorem t1: (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_jones x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z3, (and (and (and (_shore z3) (exists z2, (and (and (and (and (_jones z2) (_swam z2)) (exists z1, (and (and (_shore z1) True) (_to z2 z1)))) True) (_before z3 z2)))) True) (_to x z3)))) (F1 x)) (F2 x)))) -> (not (fun F1 F2 => (exists x, (and (and (and (and (and (_jones x) (_swam x)) (exists z2, (and (and (_shore z2) True) (_to x z2)))) (exists z4, (and (and (and (and (_smith z4) (_swam z4)) (exists z3, (and (and (_shore z3) True) (_to z4 z3)))) True) (_after x z4)))) (F1 x)) (F2 x))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 901-905:
+> Theorem t1: (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_jones x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z3, (and (and (and (_shore z3) (exists z2, (and (and (and (and (_jones z2) (_swam z2)) (exists z1, (and (and (_shore z1) True) (_to z2 z1)))) True) (_before z3 z2)))) True) (_to x z3)))) (F1 x)) (F2 x)))) -> (not (fun F1 F2 => (exists x, (and (and (and (and (and (_jones x) (_swam x)) (exists z2, (and (and (_shore z2) True) (_to x z2)))) (exists z4, (and (and (and (and (_smith z4) (_swam z4)) (exists z3, (and (and (_shore z3) True) (_to z4 z3)))) True) (_after x z4)))) (F1 x)) (F2 x))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _jones is declared
+
+Coq < _shore is declared
+
+Coq < _smith is declared
+
+Coq < _swam is declared
+
+Coq < _to is declared
+
+Coq < Toplevel input, characters 13-149:
+> Theorem t1: (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_jones x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z3, (and (and (and (_shore z3) (exists z2, (and (and (and (and (_jones z2) (_swam z2)) (exists z1, (and (and (_shore z1) True) (_to z2 z1)))) True) (_before z3 z2)))) True) (_to x z3)))) (F1 x)) (F2 x)))) -> (not (fun F1 F2 => (exists x, (and (and (and (and (and (_jones x) (_swam x)) (exists z2, (and (and (_shore z2) True) (_to x z2)))) (exists z4, (and (and (and (and (_smith z4) (_swam z4)) (exists z3, (and (and (_shore z3) True) (_to z4 z3)))) True) (_after x z4)))) (F1 x)) (F2 x))))).
+>              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun F1 F2 : Entity -> Prop =>
+exists x : Entity,
+(((_smith x /\ _swam x) /\
+(exists z1 : Entity, (_shore z1 /\ True) /\ _to x z1)) /\
+F1 x) /\ F2 x" has type "(Entity -> Prop) -> (Entity -> Prop) -> Prop"
+which should be Set, Prop or Type.
+
+Toplevel input, characters 864-869:
+> Theorem t1: (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_jones x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z3, (and (and (and (_shore z3) (exists z2, (and (and (and (and (_jones z2) (_swam z2)) (exists z1, (and (and (_shore z1) True) (_to z2 z1)))) True) (_before z3 z2)))) True) (_to x z3)))) (F1 x)) (F2 x)))) -> (not (fun F1 F2 => (exists x, (and (and (and (and (and (_jones x) (_swam x)) (exists z2, (and (and (_shore z2) True) (_to x z2)))) (exists z4, (and (and (and (and (_smith z4) (_swam z4)) (exists z3, (and (and (_shore z3) True) (_to z4 z3)))) True) (_after x z4)))) (F1 x)) (F2 x))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 871-875:
+> Theorem t1: (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_jones x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z3, (and (and (and (_shore z3) (exists z2, (and (and (and (and (_jones z2) (_swam z2)) (exists z1, (and (and (_shore z1) True) (_to z2 z1)))) True) (_before z3 z2)))) True) (_to x z3)))) (F1 x)) (F2 x)))) -> (not (fun F1 F2 => (exists x, (and (and (and (and (and (_jones x) (_swam x)) (exists z2, (and (and (_shore z2) True) (_to x z2)))) (exists z4, (and (and (and (and (_smith z4) (_swam z4)) (exists z3, (and (and (_shore z3) True) (_to z4 z3)))) True) (_after x z4)))) (F1 x)) (F2 x))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _jones is declared
+
+Coq < _shore is declared
+
+Coq < _smith is declared
+
+Coq < _swam is declared
+
+Coq < _to is declared
+
+Coq < Toplevel input, characters 13-149:
+> Theorem t1: (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_jones x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z3, (and (and (and (_shore z3) (exists z2, (and (and (and (and (_jones z2) (_swam z2)) (exists z1, (and (and (_shore z1) True) (_to z2 z1)))) True) (_before z3 z2)))) True) (_to x z3)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (and (_jones x) (_swam x)) (exists z2, (and (and (_shore z2) True) (_to x z2)))) (exists z4, (and (and (and (and (_smith z4) (_swam z4)) (exists z3, (and (and (_shore z3) True) (_to z4 z3)))) True) (_after x z4)))) (F1 x)) (F2 x)))).
+>              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun F1 F2 : Entity -> Prop =>
+exists x : Entity,
+(((_smith x /\ _swam x) /\
+(exists z1 : Entity, (_shore z1 /\ True) /\ _to x z1)) /\
+F1 x) /\ F2 x" has type "(Entity -> Prop) -> (Entity -> Prop) -> Prop"
+which should be Set, Prop or Type.
+
+Toplevel input, characters 858-864:
+> Theorem t1: (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_jones x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z3, (and (and (and (_shore z3) (exists z2, (and (and (and (and (_jones z2) (_swam z2)) (exists z1, (and (and (_shore z1) True) (_to z2 z1)))) True) (_before z3 z2)))) True) (_to x z3)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (and (_jones x) (_swam x)) (exists z2, (and (and (_shore z2) True) (_to x z2)))) (exists z4, (and (and (and (and (_smith z4) (_swam z4)) (exists z3, (and (and (_shore z3) True) (_to z4 z3)))) True) (_after x z4)))) (F1 x)) (F2 x)))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 877-880:
+> Theorem t1: (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_jones x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z3, (and (and (and (_shore z3) (exists z2, (and (and (and (and (_jones z2) (_swam z2)) (exists z1, (and (and (_shore z1) True) (_to z2 z1)))) True) (_before z3 z2)))) True) (_to x z3)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (and (_jones x) (_swam x)) (exists z2, (and (and (_shore z2) True) (_to x z2)))) (exists z4, (and (and (and (and (_smith z4) (_swam z4)) (exists z3, (and (and (_shore z3) True) (_to z4 z3)))) True) (_after x z4)))) (F1 x)) (F2 x)))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 895-899:
+> Theorem t1: (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_jones x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z3, (and (and (and (_shore z3) (exists z2, (and (and (and (and (_jones z2) (_swam z2)) (exists z1, (and (and (_shore z1) True) (_to z2 z1)))) True) (_before z3 z2)))) True) (_to x z3)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (and (_jones x) (_swam x)) (exists z2, (and (and (_shore z2) True) (_to x z2)))) (exists z4, (and (and (and (and (_smith z4) (_swam z4)) (exists z3, (and (and (_shore z3) True) (_to z4 z3)))) True) (_after x z4)))) (F1 x)) (F2 x)))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _jones is declared
+
+Coq < _shore is declared
+
+Coq < _smith is declared
+
+Coq < _swam is declared
+
+Coq < _to is declared
+
+Coq < Toplevel input, characters 13-149:
+> Theorem t1: (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_jones x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z3, (and (and (and (_shore z3) (exists z2, (and (and (and (and (_jones z2) (_swam z2)) (exists z1, (and (and (_shore z1) True) (_to z2 z1)))) True) (_before z3 z2)))) True) (_to x z3)))) (F1 x)) (F2 x)))) -> (not (fun F1 F2 => (exists x, (and (and (and (and (and (_jones x) (_swam x)) (exists z2, (and (and (_shore z2) True) (_to x z2)))) (exists z4, (and (and (and (and (_smith z4) (_swam z4)) (exists z3, (and (and (_shore z3) True) (_to z4 z3)))) True) (_after x z4)))) (F1 x)) (F2 x))))).
+>              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun F1 F2 : Entity -> Prop =>
+exists x : Entity,
+(((_smith x /\ _swam x) /\
+(exists z1 : Entity, (_shore z1 /\ True) /\ _to x z1)) /\
+F1 x) /\ F2 x" has type "(Entity -> Prop) -> (Entity -> Prop) -> Prop"
+which should be Set, Prop or Type.
+
+Toplevel input, characters 864-870:
+> Theorem t1: (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_jones x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z3, (and (and (and (_shore z3) (exists z2, (and (and (and (and (_jones z2) (_swam z2)) (exists z1, (and (and (_shore z1) True) (_to z2 z1)))) True) (_before z3 z2)))) True) (_to x z3)))) (F1 x)) (F2 x)))) -> (not (fun F1 F2 => (exists x, (and (and (and (and (and (_jones x) (_swam x)) (exists z2, (and (and (_shore z2) True) (_to x z2)))) (exists z4, (and (and (and (and (_smith z4) (_swam z4)) (exists z3, (and (and (_shore z3) True) (_to z4 z3)))) True) (_after x z4)))) (F1 x)) (F2 x))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 883-886:
+> Theorem t1: (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_jones x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z3, (and (and (and (_shore z3) (exists z2, (and (and (and (and (_jones z2) (_swam z2)) (exists z1, (and (and (_shore z1) True) (_to z2 z1)))) True) (_before z3 z2)))) True) (_to x z3)))) (F1 x)) (F2 x)))) -> (not (fun F1 F2 => (exists x, (and (and (and (and (and (_jones x) (_swam x)) (exists z2, (and (and (_shore z2) True) (_to x z2)))) (exists z4, (and (and (and (and (_smith z4) (_swam z4)) (exists z3, (and (and (_shore z3) True) (_to z4 z3)))) True) (_after x z4)))) (F1 x)) (F2 x))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 901-905:
+> Theorem t1: (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_jones x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z3, (and (and (and (_shore z3) (exists z2, (and (and (and (and (_jones z2) (_swam z2)) (exists z1, (and (and (_shore z1) True) (_to z2 z1)))) True) (_before z3 z2)))) True) (_to x z3)))) (F1 x)) (F2 x)))) -> (not (fun F1 F2 => (exists x, (and (and (and (and (and (_jones x) (_swam x)) (exists z2, (and (and (_shore z2) True) (_to x z2)))) (exists z4, (and (and (and (and (_smith z4) (_swam z4)) (exists z3, (and (and (_shore z3) True) (_to z4 z3)))) True) (_after x z4)))) (F1 x)) (F2 x))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _jones is declared
+
+Coq < _shore is declared
+
+Coq < _smith is declared
+
+Coq < _swam is declared
+
+Coq < _to is declared
+
+Coq < Toplevel input, characters 13-149:
+> Theorem t1: (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_jones x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z3, (and (and (and (_shore z3) (exists z2, (and (and (and (and (_jones z2) (_swam z2)) (exists z1, (and (and (_shore z1) True) (_to z2 z1)))) True) (_before z3 z2)))) True) (_to x z3)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (and (_jones x) (_swam x)) (exists z2, (and (and (_shore z2) True) (_to x z2)))) (exists z4, (and (and (and (and (_smith z4) (_swam z4)) (exists z3, (and (and (_shore z3) True) (_to z4 z3)))) True) (_after x z4)))) (F1 x)) (F2 x)))).
+>              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun F1 F2 : Entity -> Prop =>
+exists x : Entity,
+(((_smith x /\ _swam x) /\
+(exists z1 : Entity, (_shore z1 /\ True) /\ _to x z1)) /\
+F1 x) /\ F2 x" has type "(Entity -> Prop) -> (Entity -> Prop) -> Prop"
+which should be Set, Prop or Type.
+
+Toplevel input, characters 858-864:
+> Theorem t1: (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_jones x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z3, (and (and (and (_shore z3) (exists z2, (and (and (and (and (_jones z2) (_swam z2)) (exists z1, (and (and (_shore z1) True) (_to z2 z1)))) True) (_before z3 z2)))) True) (_to x z3)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (and (_jones x) (_swam x)) (exists z2, (and (and (_shore z2) True) (_to x z2)))) (exists z4, (and (and (and (and (_smith z4) (_swam z4)) (exists z3, (and (and (_shore z3) True) (_to z4 z3)))) True) (_after x z4)))) (F1 x)) (F2 x)))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 877-880:
+> Theorem t1: (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_jones x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z3, (and (and (and (_shore z3) (exists z2, (and (and (and (and (_jones z2) (_swam z2)) (exists z1, (and (and (_shore z1) True) (_to z2 z1)))) True) (_before z3 z2)))) True) (_to x z3)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (and (_jones x) (_swam x)) (exists z2, (and (and (_shore z2) True) (_to x z2)))) (exists z4, (and (and (and (and (_smith z4) (_swam z4)) (exists z3, (and (and (_shore z3) True) (_to z4 z3)))) True) (_after x z4)))) (F1 x)) (F2 x)))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 895-899:
+> Theorem t1: (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_jones x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z3, (and (and (and (_shore z3) (exists z2, (and (and (and (and (_jones z2) (_swam z2)) (exists z1, (and (and (_shore z1) True) (_to z2 z1)))) True) (_before z3 z2)))) True) (_to x z3)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (and (_jones x) (_swam x)) (exists z2, (and (and (_shore z2) True) (_to x z2)))) (exists z4, (and (and (and (and (_smith z4) (_swam z4)) (exists z3, (and (and (_shore z3) True) (_to z4 z3)))) True) (_after x z4)))) (F1 x)) (F2 x)))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _jones is declared
+
+Coq < _shore is declared
+
+Coq < _smith is declared
+
+Coq < _swam is declared
+
+Coq < _to is declared
+
+Coq < Toplevel input, characters 13-149:
+> Theorem t1: (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_jones x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z3, (and (and (and (_shore z3) (exists z2, (and (and (and (and (_jones z2) (_swam z2)) (exists z1, (and (and (_shore z1) True) (_to z2 z1)))) True) (_before z3 z2)))) True) (_to x z3)))) (F1 x)) (F2 x)))) -> (not (fun F1 F2 => (exists x, (and (and (and (and (and (_jones x) (_swam x)) (exists z2, (and (and (_shore z2) True) (_to x z2)))) (exists z4, (and (and (and (and (_smith z4) (_swam z4)) (exists z3, (and (and (_shore z3) True) (_to z4 z3)))) True) (_after x z4)))) (F1 x)) (F2 x))))).
+>              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun F1 F2 : Entity -> Prop =>
+exists x : Entity,
+(((_smith x /\ _swam x) /\
+(exists z1 : Entity, (_shore z1 /\ True) /\ _to x z1)) /\
+F1 x) /\ F2 x" has type "(Entity -> Prop) -> (Entity -> Prop) -> Prop"
+which should be Set, Prop or Type.
+
+Toplevel input, characters 864-870:
+> Theorem t1: (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_jones x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z3, (and (and (and (_shore z3) (exists z2, (and (and (and (and (_jones z2) (_swam z2)) (exists z1, (and (and (_shore z1) True) (_to z2 z1)))) True) (_before z3 z2)))) True) (_to x z3)))) (F1 x)) (F2 x)))) -> (not (fun F1 F2 => (exists x, (and (and (and (and (and (_jones x) (_swam x)) (exists z2, (and (and (_shore z2) True) (_to x z2)))) (exists z4, (and (and (and (and (_smith z4) (_swam z4)) (exists z3, (and (and (_shore z3) True) (_to z4 z3)))) True) (_after x z4)))) (F1 x)) (F2 x))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 883-886:
+> Theorem t1: (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_jones x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z3, (and (and (and (_shore z3) (exists z2, (and (and (and (and (_jones z2) (_swam z2)) (exists z1, (and (and (_shore z1) True) (_to z2 z1)))) True) (_before z3 z2)))) True) (_to x z3)))) (F1 x)) (F2 x)))) -> (not (fun F1 F2 => (exists x, (and (and (and (and (and (_jones x) (_swam x)) (exists z2, (and (and (_shore z2) True) (_to x z2)))) (exists z4, (and (and (and (and (_smith z4) (_swam z4)) (exists z3, (and (and (_shore z3) True) (_to z4 z3)))) True) (_after x z4)))) (F1 x)) (F2 x))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 901-905:
+> Theorem t1: (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_jones x) (_swam x)) (exists z1, (and (and (_shore z1) True) (_to x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (and (_smith x) (_swam x)) (exists z3, (and (and (and (_shore z3) (exists z2, (and (and (and (and (_jones z2) (_swam z2)) (exists z1, (and (and (_shore z1) True) (_to z2 z1)))) True) (_before z3 z2)))) True) (_to x z3)))) (F1 x)) (F2 x)))) -> (not (fun F1 F2 => (exists x, (and (and (and (and (and (_jones x) (_swam x)) (exists z2, (and (and (_shore z2) True) (_to x z2)))) (exists z4, (and (and (and (and (_smith z4) (_swam z4)) (exists z3, (and (and (_shore z3) True) (_to z4 z3)))) True) (_after x z4)))) (F1 x)) (F2 x))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+unknown
+

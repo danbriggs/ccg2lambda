@@ -1,0 +1,671 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _appoint is declared
+
+Coq < _appoint_e2 is declared
+
+Coq < _appoint_e3 is declared
+
+Coq < _by is declared
+
+Coq < _chairman is declared
+
+Coq < _committee is declared
+
+Coq < _have is declared
+
+Coq < _member is declared
+
+Coq < _of is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_committee x ->
+True -> exists z1 : Entity, (_chairman z1 /\ True) /\ _have x z1) ->
+(exists x : Entity,
+True /\ (exists z1 : Entity, (_member z1 /\ True) /\ _appoint_e3 x z1)) ->
+forall x : Entity,
+_committee x ->
+True ->
+exists z5 : Entity,
+((_chairman z5 /\
+(exists z2 : Entity,
+(((_member z2 /\
+(exists z1 : Entity, (_committee z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _by z5 z2) /\ _appoint_e2 z5)) /\ True) /\
+_have x z5
+
+
+Toplevel input, characters 459-463:
+> Theorem t1: (forall x, ((_committee x) -> (True -> (exists z1, (and (and (_chairman z1) True) (_have x z1)))))) -> (exists x, (and True (exists z1, (and (and (_member z1) True) (_appoint_e3 x z1))))) -> (forall x, ((_committee x) -> (True -> (exists z5, (and (and (and (_chairman z5) (exists z2, (and (and (and (and (_member z2) (exists z1, (and (and (_committee z1) True) (_of z2 z1)))) True) (_by z5 z2)) (_appoint_e2 z5)))) True) (_have x z5)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _appoint is declared
+
+Coq < _appoint_e2 is declared
+
+Coq < _appoint_e3 is declared
+
+Coq < _by is declared
+
+Coq < _chairman is declared
+
+Coq < _committee is declared
+
+Coq < _have is declared
+
+Coq < _member is declared
+
+Coq < _of is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_committee x ->
+True -> exists z1 : Entity, (_chairman z1 /\ True) /\ _have x z1) ->
+(exists x : Entity,
+True /\ (exists z1 : Entity, (_member z1 /\ True) /\ _appoint_e3 x z1)) ->
+~
+(forall x : Entity,
+_committee x ->
+True ->
+exists z5 : Entity,
+((_chairman z5 /\
+(exists z2 : Entity,
+(((_member z2 /\
+(exists z1 : Entity, (_committee z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _by z5 z2) /\ _appoint_e2 z5)) /\ True) /\
+_have x z5)
+
+
+Toplevel input, characters 465-469:
+> Theorem t1: (forall x, ((_committee x) -> (True -> (exists z1, (and (and (_chairman z1) True) (_have x z1)))))) -> (exists x, (and True (exists z1, (and (and (_member z1) True) (_appoint_e3 x z1))))) -> (not (forall x, ((_committee x) -> (True -> (exists z5, (and (and (and (_chairman z5) (exists z2, (and (and (and (and (_member z2) (exists z1, (and (and (_committee z1) True) (_of z2 z1)))) True) (_by z5 z2)) (_appoint_e2 z5)))) True) (_have x z5))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _appoint is declared
+
+Coq < _appoint_e2 is declared
+
+Coq < _appoint_e3 is declared
+
+Coq < _by is declared
+
+Coq < _chairman is declared
+
+Coq < _committee is declared
+
+Coq < _have is declared
+
+Coq < _member is declared
+
+Coq < _of is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_committee x ->
+True -> exists z1 : Entity, (_chairman z1 /\ True) /\ _have x z1) ->
+(exists x : Entity,
+True /\ (exists z1 : Entity, (_member z1 /\ True) /\ _appoint_e3 x z1)) ->
+forall x : Entity,
+_committee x ->
+True ->
+exists z5 : Entity,
+((_chairman z5 /\
+(exists z2 : Entity,
+(((_member z2 /\
+(exists z1 : Entity, (_committee z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _by z5 z2) /\ _appoint_e2 z5)) /\ True) /\
+_have x z5
+
+5 focused goals (shelved: 1)
+
+H : forall x : Entity,
+_committee x ->
+True -> exists z1 : Entity, (_chairman z1 /\ True) /\ _have x z1
+x : Entity
+H1 : _committee x
+H2 : True
+x0 : Entity
+H0 : True
+x1 : Entity
+H4 : _appoint_e3 x0 x1
+H3 : _member x1
+H5 : True
+============================
+_chairman ?z5
+
+goal 2 is:
+_of x1 x
+goal 3 is:
+_by ?z5 x1
+goal 4 is:
+_appoint_e2 ?z5
+goal 5 is:
+_have x ?z5
+
+Toplevel input, characters 475-487:
+> Theorem t1: (forall x, ((_committee x) -> (True -> (exists z1, (and (and (_chairman z1) True) (_have x z1)))))) -> (exists x, (and True (exists z1, (and (and (_member z1) True) (_appoint_e3 x z1))))) -> (forall x, ((_committee x) -> (True -> (exists z5, (and (and (and (_chairman z5) (exists z2, (and (and (and (and (_member z2) (exists z1, (and (and (_committee z1) True) (_of z2 z1)))) True) (_by z5 z2)) (_appoint_e2 z5)))) True) (_have x z5)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 489-493:
+> Theorem t1: (forall x, ((_committee x) -> (True -> (exists z1, (and (and (_chairman z1) True) (_have x z1)))))) -> (exists x, (and True (exists z1, (and (and (_member z1) True) (_appoint_e3 x z1))))) -> (forall x, ((_committee x) -> (True -> (exists z5, (and (and (and (_chairman z5) (exists z2, (and (and (and (and (_member z2) (exists z1, (and (and (_committee z1) True) (_of z2 z1)))) True) (_by z5 z2)) (_appoint_e2 z5)))) True) (_have x z5)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _appoint is declared
+
+Coq < _appoint_e2 is declared
+
+Coq < _appoint_e3 is declared
+
+Coq < _by is declared
+
+Coq < _chairman is declared
+
+Coq < _committee is declared
+
+Coq < _have is declared
+
+Coq < _member is declared
+
+Coq < _of is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_committee x ->
+True -> exists z1 : Entity, (_chairman z1 /\ True) /\ _have x z1) ->
+(exists x : Entity,
+True /\ (exists z1 : Entity, (_member z1 /\ True) /\ _appoint_e3 x z1)) ->
+forall x : Entity,
+_committee x ->
+True ->
+exists z5 : Entity,
+((_chairman z5 /\
+(exists z2 : Entity,
+(((_member z2 /\
+(exists z1 : Entity, (_committee z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _by z5 z2) /\ _appoint_e2 z5)) /\ True) /\
+_have x z5
+
+
+Toplevel input, characters 459-463:
+> Theorem t1: (forall x, ((_committee x) -> (True -> (exists z1, (and (and (_chairman z1) True) (_have x z1)))))) -> (exists x, (and True (exists z1, (and (and (_member z1) True) (_appoint_e3 x z1))))) -> (forall x, ((_committee x) -> (True -> (exists z5, (and (and (and (_chairman z5) (exists z2, (and (and (and (and (_member z2) (exists z1, (and (and (_committee z1) True) (_of z2 z1)))) True) (_by z5 z2)) (_appoint_e2 z5)))) True) (_have x z5)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _appoint is declared
+
+Coq < _appoint_e2 is declared
+
+Coq < _appoint_e3 is declared
+
+Coq < _by is declared
+
+Coq < _chairman is declared
+
+Coq < _committee is declared
+
+Coq < _have is declared
+
+Coq < _member is declared
+
+Coq < _of is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_committee x ->
+True -> exists z1 : Entity, (_chairman z1 /\ True) /\ _have x z1) ->
+(exists x : Entity,
+True /\ (exists z1 : Entity, (_member z1 /\ True) /\ _appoint_e3 x z1)) ->
+~
+(forall x : Entity,
+_committee x ->
+True ->
+exists z5 : Entity,
+((_chairman z5 /\
+(exists z2 : Entity,
+(((_member z2 /\
+(exists z1 : Entity, (_committee z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _by z5 z2) /\ _appoint_e2 z5)) /\ True) /\
+_have x z5)
+
+1 goal
+
+H : forall x : Entity,
+_committee x ->
+True -> exists z1 : Entity, (_chairman z1 /\ True) /\ _have x z1
+H1 : forall x : Entity,
+_committee x ->
+True ->
+exists z5 : Entity,
+((_chairman z5 /\
+(exists z2 : Entity,
+(((_member z2 /\
+(exists z1 : Entity, (_committee z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _by z5 z2) /\ _appoint_e2 z5)) /\ True) /\
+_have x z5
+x : Entity
+H0 : True
+x0 : Entity
+H3 : _appoint_e3 x x0
+H2 : _member x0
+H4 : True
+============================
+False
+
+Toplevel input, characters 481-493:
+> Theorem t1: (forall x, ((_committee x) -> (True -> (exists z1, (and (and (_chairman z1) True) (_have x z1)))))) -> (exists x, (and True (exists z1, (and (and (_member z1) True) (_appoint_e3 x z1))))) -> (not (forall x, ((_committee x) -> (True -> (exists z5, (and (and (and (_chairman z5) (exists z2, (and (and (and (and (_member z2) (exists z1, (and (and (_committee z1) True) (_of z2 z1)))) True) (_by z5 z2)) (_appoint_e2 z5)))) True) (_have x z5))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 495-499:
+> Theorem t1: (forall x, ((_committee x) -> (True -> (exists z1, (and (and (_chairman z1) True) (_have x z1)))))) -> (exists x, (and True (exists z1, (and (and (_member z1) True) (_appoint_e3 x z1))))) -> (not (forall x, ((_committee x) -> (True -> (exists z5, (and (and (and (_chairman z5) (exists z2, (and (and (and (and (_member z2) (exists z1, (and (and (_committee z1) True) (_of z2 z1)))) True) (_by z5 z2)) (_appoint_e2 z5)))) True) (_have x z5))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _appoint is declared
+
+Coq < _appoint_e2 is declared
+
+Coq < _appoint_e3 is declared
+
+Coq < _by is declared
+
+Coq < _chairman is declared
+
+Coq < _committee is declared
+
+Coq < _have is declared
+
+Coq < _member is declared
+
+Coq < _of is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_committee x ->
+True -> exists z1 : Entity, (_chairman z1 /\ True) /\ _have x z1) ->
+(exists x : Entity,
+True /\ (exists z1 : Entity, (_member z1 /\ True) /\ _appoint_e3 x z1)) ->
+~
+(forall x : Entity,
+_committee x ->
+True ->
+exists z5 : Entity,
+((_chairman z5 /\
+(exists z2 : Entity,
+(((_member z2 /\
+(exists z1 : Entity, (_committee z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _by z5 z2) /\ _appoint_e2 z5)) /\ True) /\
+_have x z5)
+
+
+Toplevel input, characters 465-469:
+> Theorem t1: (forall x, ((_committee x) -> (True -> (exists z1, (and (and (_chairman z1) True) (_have x z1)))))) -> (exists x, (and True (exists z1, (and (and (_member z1) True) (_appoint_e3 x z1))))) -> (not (forall x, ((_committee x) -> (True -> (exists z5, (and (and (and (_chairman z5) (exists z2, (and (and (and (and (_member z2) (exists z1, (and (and (_committee z1) True) (_of z2 z1)))) True) (_by z5 z2)) (_appoint_e2 z5)))) True) (_have x z5))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _appoint is declared
+
+Coq < _appoint_e2 is declared
+
+Coq < _appoint_e3 is declared
+
+Coq < _by is declared
+
+Coq < _chairman is declared
+
+Coq < _committee is declared
+
+Coq < _have is declared
+
+Coq < _member is declared
+
+Coq < _of is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_committee x ->
+True -> exists z1 : Entity, (_chairman z1 /\ True) /\ _have x z1) ->
+(exists x : Entity,
+True /\ (exists z1 : Entity, (_member z1 /\ True) /\ _appoint_e3 x z1)) ->
+forall x : Entity,
+_committee x ->
+True ->
+exists z5 : Entity,
+((_chairman z5 /\
+(exists z2 : Entity,
+(((_member z2 /\
+(exists z1 : Entity, (_committee z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _by z5 z2) /\ _appoint_e2 z5)) /\ True) /\
+_have x z5
+
+5 focused goals (shelved: 1)
+
+H : forall x : Entity,
+_committee x ->
+True -> exists z1 : Entity, (_chairman z1 /\ True) /\ _have x z1
+x : Entity
+H1 : _committee x
+H2 : True
+x0 : Entity
+H0 : True
+x1 : Entity
+H4 : _appoint_e3 x0 x1
+H3 : _member x1
+H5 : True
+============================
+_chairman ?z5
+
+goal 2 is:
+_of x1 x
+goal 3 is:
+_by ?z5 x1
+goal 4 is:
+_appoint_e2 ?z5
+goal 5 is:
+_have x ?z5
+
+Toplevel input, characters 475-487:
+> Theorem t1: (forall x, ((_committee x) -> (True -> (exists z1, (and (and (_chairman z1) True) (_have x z1)))))) -> (exists x, (and True (exists z1, (and (and (_member z1) True) (_appoint_e3 x z1))))) -> (forall x, ((_committee x) -> (True -> (exists z5, (and (and (and (_chairman z5) (exists z2, (and (and (and (and (_member z2) (exists z1, (and (and (_committee z1) True) (_of z2 z1)))) True) (_by z5 z2)) (_appoint_e2 z5)))) True) (_have x z5)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 489-493:
+> Theorem t1: (forall x, ((_committee x) -> (True -> (exists z1, (and (and (_chairman z1) True) (_have x z1)))))) -> (exists x, (and True (exists z1, (and (and (_member z1) True) (_appoint_e3 x z1))))) -> (forall x, ((_committee x) -> (True -> (exists z5, (and (and (and (_chairman z5) (exists z2, (and (and (and (and (_member z2) (exists z1, (and (and (_committee z1) True) (_of z2 z1)))) True) (_by z5 z2)) (_appoint_e2 z5)))) True) (_have x z5)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _appoint is declared
+
+Coq < _appoint_e2 is declared
+
+Coq < _appoint_e3 is declared
+
+Coq < _by is declared
+
+Coq < _chairman is declared
+
+Coq < _committee is declared
+
+Coq < _have is declared
+
+Coq < _member is declared
+
+Coq < _of is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_committee x ->
+True -> exists z1 : Entity, (_chairman z1 /\ True) /\ _have x z1) ->
+(exists x : Entity,
+True /\ (exists z1 : Entity, (_member z1 /\ True) /\ _appoint_e3 x z1)) ->
+~
+(forall x : Entity,
+_committee x ->
+True ->
+exists z5 : Entity,
+((_chairman z5 /\
+(exists z2 : Entity,
+(((_member z2 /\
+(exists z1 : Entity, (_committee z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _by z5 z2) /\ _appoint_e2 z5)) /\ True) /\
+_have x z5)
+
+1 goal
+
+H : forall x : Entity,
+_committee x ->
+True -> exists z1 : Entity, (_chairman z1 /\ True) /\ _have x z1
+H1 : forall x : Entity,
+_committee x ->
+True ->
+exists z5 : Entity,
+((_chairman z5 /\
+(exists z2 : Entity,
+(((_member z2 /\
+(exists z1 : Entity, (_committee z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _by z5 z2) /\ _appoint_e2 z5)) /\ True) /\
+_have x z5
+x : Entity
+H0 : True
+x0 : Entity
+H3 : _appoint_e3 x x0
+H2 : _member x0
+H4 : True
+============================
+False
+
+Toplevel input, characters 481-493:
+> Theorem t1: (forall x, ((_committee x) -> (True -> (exists z1, (and (and (_chairman z1) True) (_have x z1)))))) -> (exists x, (and True (exists z1, (and (and (_member z1) True) (_appoint_e3 x z1))))) -> (not (forall x, ((_committee x) -> (True -> (exists z5, (and (and (and (_chairman z5) (exists z2, (and (and (and (and (_member z2) (exists z1, (and (and (_committee z1) True) (_of z2 z1)))) True) (_by z5 z2)) (_appoint_e2 z5)))) True) (_have x z5))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 495-499:
+> Theorem t1: (forall x, ((_committee x) -> (True -> (exists z1, (and (and (_chairman z1) True) (_have x z1)))))) -> (exists x, (and True (exists z1, (and (and (_member z1) True) (_appoint_e3 x z1))))) -> (not (forall x, ((_committee x) -> (True -> (exists z5, (and (and (and (_chairman z5) (exists z2, (and (and (and (and (_member z2) (exists z1, (and (and (_committee z1) True) (_of z2 z1)))) True) (_by z5 z2)) (_appoint_e2 z5)))) True) (_have x z5))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _appoint is declared
+
+Coq < _appoint_e2 is declared
+
+Coq < _appoint_e3 is declared
+
+Coq < _by is declared
+
+Coq < _chairman is declared
+
+Coq < _committee is declared
+
+Coq < _have is declared
+
+Coq < _member is declared
+
+Coq < _of is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_committee x ->
+True -> exists z1 : Entity, (_chairman z1 /\ True) /\ _have x z1) ->
+(exists x : Entity,
+True /\ (exists z1 : Entity, (_member z1 /\ True) /\ _appoint_e3 x z1)) ->
+forall x : Entity,
+_committee x ->
+True ->
+exists z5 : Entity,
+((_chairman z5 /\
+(exists z2 : Entity,
+(((_member z2 /\
+(exists z1 : Entity, (_committee z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _by z5 z2) /\ _appoint_e2 z5)) /\ True) /\
+_have x z5
+
+5 focused goals (shelved: 1)
+
+H : forall x : Entity,
+_committee x ->
+True -> exists z1 : Entity, (_chairman z1 /\ True) /\ _have x z1
+x : Entity
+H1 : _committee x
+H2 : True
+x0 : Entity
+H0 : True
+x1 : Entity
+H4 : _appoint_e3 x0 x1
+H3 : _member x1
+H5 : True
+============================
+_chairman ?z5
+
+goal 2 is:
+_of x1 x
+goal 3 is:
+_by ?z5 x1
+goal 4 is:
+_appoint_e2 ?z5
+goal 5 is:
+_have x ?z5
+
+Toplevel input, characters 475-487:
+> Theorem t1: (forall x, ((_committee x) -> (True -> (exists z1, (and (and (_chairman z1) True) (_have x z1)))))) -> (exists x, (and True (exists z1, (and (and (_member z1) True) (_appoint_e3 x z1))))) -> (forall x, ((_committee x) -> (True -> (exists z5, (and (and (and (_chairman z5) (exists z2, (and (and (and (and (_member z2) (exists z1, (and (and (_committee z1) True) (_of z2 z1)))) True) (_by z5 z2)) (_appoint_e2 z5)))) True) (_have x z5)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 489-493:
+> Theorem t1: (forall x, ((_committee x) -> (True -> (exists z1, (and (and (_chairman z1) True) (_have x z1)))))) -> (exists x, (and True (exists z1, (and (and (_member z1) True) (_appoint_e3 x z1))))) -> (forall x, ((_committee x) -> (True -> (exists z5, (and (and (and (_chairman z5) (exists z2, (and (and (and (and (_member z2) (exists z1, (and (and (_committee z1) True) (_of z2 z1)))) True) (_by z5 z2)) (_appoint_e2 z5)))) True) (_have x z5)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _appoint is declared
+
+Coq < _appoint_e2 is declared
+
+Coq < _appoint_e3 is declared
+
+Coq < _by is declared
+
+Coq < _chairman is declared
+
+Coq < _committee is declared
+
+Coq < _have is declared
+
+Coq < _member is declared
+
+Coq < _of is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity,
+_committee x ->
+True -> exists z1 : Entity, (_chairman z1 /\ True) /\ _have x z1) ->
+(exists x : Entity,
+True /\ (exists z1 : Entity, (_member z1 /\ True) /\ _appoint_e3 x z1)) ->
+~
+(forall x : Entity,
+_committee x ->
+True ->
+exists z5 : Entity,
+((_chairman z5 /\
+(exists z2 : Entity,
+(((_member z2 /\
+(exists z1 : Entity, (_committee z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _by z5 z2) /\ _appoint_e2 z5)) /\ True) /\
+_have x z5)
+
+1 goal
+
+H : forall x : Entity,
+_committee x ->
+True -> exists z1 : Entity, (_chairman z1 /\ True) /\ _have x z1
+H1 : forall x : Entity,
+_committee x ->
+True ->
+exists z5 : Entity,
+((_chairman z5 /\
+(exists z2 : Entity,
+(((_member z2 /\
+(exists z1 : Entity, (_committee z1 /\ True) /\ _of z2 z1)) /\
+True) /\ _by z5 z2) /\ _appoint_e2 z5)) /\ True) /\
+_have x z5
+x : Entity
+H0 : True
+x0 : Entity
+H3 : _appoint_e3 x x0
+H2 : _member x0
+H4 : True
+============================
+False
+
+Toplevel input, characters 481-493:
+> Theorem t1: (forall x, ((_committee x) -> (True -> (exists z1, (and (and (_chairman z1) True) (_have x z1)))))) -> (exists x, (and True (exists z1, (and (and (_member z1) True) (_appoint_e3 x z1))))) -> (not (forall x, ((_committee x) -> (True -> (exists z5, (and (and (and (_chairman z5) (exists z2, (and (and (and (and (_member z2) (exists z1, (and (and (_committee z1) True) (_of z2 z1)))) True) (_by z5 z2)) (_appoint_e2 z5)))) True) (_have x z5))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 495-499:
+> Theorem t1: (forall x, ((_committee x) -> (True -> (exists z1, (and (and (_chairman z1) True) (_have x z1)))))) -> (exists x, (and True (exists z1, (and (and (_member z1) True) (_appoint_e3 x z1))))) -> (not (forall x, ((_committee x) -> (True -> (exists z5, (and (and (and (_chairman z5) (exists z2, (and (and (and (and (_member z2) (exists z1, (and (and (_committee z1) True) (_of z2 z1)))) True) (_by z5 z2)) (_appoint_e2 z5)))) True) (_have x z5))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

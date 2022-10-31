@@ -1,0 +1,511 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _apcom is declared
+
+Coq < _itel is declared
+
+Coq < _lose is declared
+
+Coq < _lose_e2 is declared
+
+Coq < _lose_e3 is declared
+
+Coq < _more is declared
+
+Coq < _order is declared
+
+Coq < _win is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _itel /\ True) /\
+(exists z1 : Entity, ((_more z1 /\ _order z1) /\ True) /\ _win _itel z1)) /\
+(exists z2 : Entity, (z2 = _apcom /\ True) /\ _lose_e2 _apcom)) ->
+exists x : Entity,
+(x = _apcom /\ True) /\
+(exists z1 : Entity, (_order z1 /\ True) /\ _lose_e3 _apcom z1)
+
+
+Toplevel input, characters 312-316:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (exists z1, (and (and (and (_more z1) (_order z1)) True) (_win _itel z1)))) (exists z2, (and (and (z2 = _apcom) True) (_lose_e2 _apcom))))) -> (exists x, (and (and (x = _apcom) True) (exists z1, (and (and (_order z1) True) (_lose_e3 _apcom z1))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                         ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _apcom is declared
+
+Coq < _itel is declared
+
+Coq < _lose is declared
+
+Coq < _lose_e2 is declared
+
+Coq < _lose_e3 is declared
+
+Coq < _more is declared
+
+Coq < _order is declared
+
+Coq < _win is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _itel /\ True) /\
+(exists z1 : Entity, ((_more z1 /\ _order z1) /\ True) /\ _win _itel z1)) /\
+(exists z2 : Entity, (z2 = _apcom /\ True) /\ _lose_e2 _apcom)) ->
+~
+(exists x : Entity,
+(x = _apcom /\ True) /\
+(exists z1 : Entity, (_order z1 /\ True) /\ _lose_e3 _apcom z1))
+
+
+Toplevel input, characters 318-322:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (exists z1, (and (and (and (_more z1) (_order z1)) True) (_win _itel z1)))) (exists z2, (and (and (z2 = _apcom) True) (_lose_e2 _apcom))))) -> (not (exists x, (and (and (x = _apcom) True) (exists z1, (and (and (_order z1) True) (_lose_e3 _apcom z1)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                               ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _apcom is declared
+
+Coq < _itel is declared
+
+Coq < _lose is declared
+
+Coq < _lose_e2 is declared
+
+Coq < _lose_e3 is declared
+
+Coq < _more is declared
+
+Coq < _order is declared
+
+Coq < _win is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _itel /\ True) /\
+(exists z1 : Entity, ((_more z1 /\ _order z1) /\ True) /\ _win _itel z1)) /\
+(exists z2 : Entity, (z2 = _apcom /\ True) /\ _lose_e2 _apcom)) ->
+exists x : Entity,
+(x = _apcom /\ True) /\
+(exists z1 : Entity, (_order z1 /\ True) /\ _lose_e3 _apcom z1)
+
+1 goal
+
+H2 : True
+x0 : Entity
+H3 : _win _itel x0
+H4 : True
+H1 : _more x0
+H5 : _order x0
+H6 : _lose_e2 _apcom
+H7 : True
+============================
+_lose_e3 _apcom x0
+
+Toplevel input, characters 328-340:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (exists z1, (and (and (and (_more z1) (_order z1)) True) (_win _itel z1)))) (exists z2, (and (and (z2 = _apcom) True) (_lose_e2 _apcom))))) -> (exists x, (and (and (x = _apcom) True) (exists z1, (and (and (_order z1) True) (_lose_e3 _apcom z1))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                         ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 342-346:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (exists z1, (and (and (and (_more z1) (_order z1)) True) (_win _itel z1)))) (exists z2, (and (and (z2 = _apcom) True) (_lose_e2 _apcom))))) -> (exists x, (and (and (x = _apcom) True) (exists z1, (and (and (_order z1) True) (_lose_e3 _apcom z1))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                       ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _apcom is declared
+
+Coq < _itel is declared
+
+Coq < _lose is declared
+
+Coq < _lose_e2 is declared
+
+Coq < _lose_e3 is declared
+
+Coq < _more is declared
+
+Coq < _order is declared
+
+Coq < _win is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _itel /\ True) /\
+(exists z1 : Entity, ((_more z1 /\ _order z1) /\ True) /\ _win _itel z1)) /\
+(exists z2 : Entity, (z2 = _apcom /\ True) /\ _lose_e2 _apcom)) ->
+exists x : Entity,
+(x = _apcom /\ True) /\
+(exists z1 : Entity, (_order z1 /\ True) /\ _lose_e3 _apcom z1)
+
+
+Toplevel input, characters 312-316:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (exists z1, (and (and (and (_more z1) (_order z1)) True) (_win _itel z1)))) (exists z2, (and (and (z2 = _apcom) True) (_lose_e2 _apcom))))) -> (exists x, (and (and (x = _apcom) True) (exists z1, (and (and (_order z1) True) (_lose_e3 _apcom z1))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                         ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _apcom is declared
+
+Coq < _itel is declared
+
+Coq < _lose is declared
+
+Coq < _lose_e2 is declared
+
+Coq < _lose_e3 is declared
+
+Coq < _more is declared
+
+Coq < _order is declared
+
+Coq < _win is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _itel /\ True) /\
+(exists z1 : Entity, ((_more z1 /\ _order z1) /\ True) /\ _win _itel z1)) /\
+(exists z2 : Entity, (z2 = _apcom /\ True) /\ _lose_e2 _apcom)) ->
+~
+(exists x : Entity,
+(x = _apcom /\ True) /\
+(exists z1 : Entity, (_order z1 /\ True) /\ _lose_e3 _apcom z1))
+
+1 goal
+
+H2 : True
+x0 : Entity
+H3 : _lose_e3 _apcom x0
+H1 : _order x0
+H4, H7 : True
+x2 : Entity
+H8 : _win _itel x2
+H9 : True
+H6 : _more x2
+H10 : _order x2
+H11 : _lose_e2 _apcom
+H12 : True
+============================
+False
+
+Toplevel input, characters 334-346:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (exists z1, (and (and (and (_more z1) (_order z1)) True) (_win _itel z1)))) (exists z2, (and (and (z2 = _apcom) True) (_lose_e2 _apcom))))) -> (not (exists x, (and (and (x = _apcom) True) (exists z1, (and (and (_order z1) True) (_lose_e3 _apcom z1)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                               ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 348-352:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (exists z1, (and (and (and (_more z1) (_order z1)) True) (_win _itel z1)))) (exists z2, (and (and (z2 = _apcom) True) (_lose_e2 _apcom))))) -> (not (exists x, (and (and (x = _apcom) True) (exists z1, (and (and (_order z1) True) (_lose_e3 _apcom z1)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                             ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _apcom is declared
+
+Coq < _itel is declared
+
+Coq < _lose is declared
+
+Coq < _lose_e2 is declared
+
+Coq < _lose_e3 is declared
+
+Coq < _more is declared
+
+Coq < _order is declared
+
+Coq < _win is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _itel /\ True) /\
+(exists z1 : Entity, ((_more z1 /\ _order z1) /\ True) /\ _win _itel z1)) /\
+(exists z2 : Entity, (z2 = _apcom /\ True) /\ _lose_e2 _apcom)) ->
+~
+(exists x : Entity,
+(x = _apcom /\ True) /\
+(exists z1 : Entity, (_order z1 /\ True) /\ _lose_e3 _apcom z1))
+
+
+Toplevel input, characters 318-322:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (exists z1, (and (and (and (_more z1) (_order z1)) True) (_win _itel z1)))) (exists z2, (and (and (z2 = _apcom) True) (_lose_e2 _apcom))))) -> (not (exists x, (and (and (x = _apcom) True) (exists z1, (and (and (_order z1) True) (_lose_e3 _apcom z1)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                               ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _apcom is declared
+
+Coq < _itel is declared
+
+Coq < _lose is declared
+
+Coq < _lose_e2 is declared
+
+Coq < _lose_e3 is declared
+
+Coq < _more is declared
+
+Coq < _order is declared
+
+Coq < _win is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _itel /\ True) /\
+(exists z1 : Entity, ((_more z1 /\ _order z1) /\ True) /\ _win _itel z1)) /\
+(exists z2 : Entity, (z2 = _apcom /\ True) /\ _lose_e2 _apcom)) ->
+exists x : Entity,
+(x = _apcom /\ True) /\
+(exists z1 : Entity, (_order z1 /\ True) /\ _lose_e3 _apcom z1)
+
+1 goal
+
+H2 : True
+x0 : Entity
+H3 : _win _itel x0
+H4 : True
+H1 : _more x0
+H5 : _order x0
+H6 : _lose_e2 _apcom
+H7 : True
+============================
+_lose_e3 _apcom x0
+
+Toplevel input, characters 328-340:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (exists z1, (and (and (and (_more z1) (_order z1)) True) (_win _itel z1)))) (exists z2, (and (and (z2 = _apcom) True) (_lose_e2 _apcom))))) -> (exists x, (and (and (x = _apcom) True) (exists z1, (and (and (_order z1) True) (_lose_e3 _apcom z1))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                         ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 342-346:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (exists z1, (and (and (and (_more z1) (_order z1)) True) (_win _itel z1)))) (exists z2, (and (and (z2 = _apcom) True) (_lose_e2 _apcom))))) -> (exists x, (and (and (x = _apcom) True) (exists z1, (and (and (_order z1) True) (_lose_e3 _apcom z1))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                       ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _apcom is declared
+
+Coq < _itel is declared
+
+Coq < _lose is declared
+
+Coq < _lose_e2 is declared
+
+Coq < _lose_e3 is declared
+
+Coq < _more is declared
+
+Coq < _order is declared
+
+Coq < _win is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _itel /\ True) /\
+(exists z1 : Entity, ((_more z1 /\ _order z1) /\ True) /\ _win _itel z1)) /\
+(exists z2 : Entity, (z2 = _apcom /\ True) /\ _lose_e2 _apcom)) ->
+~
+(exists x : Entity,
+(x = _apcom /\ True) /\
+(exists z1 : Entity, (_order z1 /\ True) /\ _lose_e3 _apcom z1))
+
+1 goal
+
+H2 : True
+x0 : Entity
+H3 : _lose_e3 _apcom x0
+H1 : _order x0
+H4, H7 : True
+x2 : Entity
+H8 : _win _itel x2
+H9 : True
+H6 : _more x2
+H10 : _order x2
+H11 : _lose_e2 _apcom
+H12 : True
+============================
+False
+
+Toplevel input, characters 334-346:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (exists z1, (and (and (and (_more z1) (_order z1)) True) (_win _itel z1)))) (exists z2, (and (and (z2 = _apcom) True) (_lose_e2 _apcom))))) -> (not (exists x, (and (and (x = _apcom) True) (exists z1, (and (and (_order z1) True) (_lose_e3 _apcom z1)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                               ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 348-352:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (exists z1, (and (and (and (_more z1) (_order z1)) True) (_win _itel z1)))) (exists z2, (and (and (z2 = _apcom) True) (_lose_e2 _apcom))))) -> (not (exists x, (and (and (x = _apcom) True) (exists z1, (and (and (_order z1) True) (_lose_e3 _apcom z1)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                             ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _apcom is declared
+
+Coq < _itel is declared
+
+Coq < _lose is declared
+
+Coq < _lose_e2 is declared
+
+Coq < _lose_e3 is declared
+
+Coq < _more is declared
+
+Coq < _order is declared
+
+Coq < _win is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _itel /\ True) /\
+(exists z1 : Entity, ((_more z1 /\ _order z1) /\ True) /\ _win _itel z1)) /\
+(exists z2 : Entity, (z2 = _apcom /\ True) /\ _lose_e2 _apcom)) ->
+exists x : Entity,
+(x = _apcom /\ True) /\
+(exists z1 : Entity, (_order z1 /\ True) /\ _lose_e3 _apcom z1)
+
+1 goal
+
+H2 : True
+x0 : Entity
+H3 : _win _itel x0
+H4 : True
+H1 : _more x0
+H5 : _order x0
+H6 : _lose_e2 _apcom
+H7 : True
+============================
+_lose_e3 _apcom x0
+
+Toplevel input, characters 328-340:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (exists z1, (and (and (and (_more z1) (_order z1)) True) (_win _itel z1)))) (exists z2, (and (and (z2 = _apcom) True) (_lose_e2 _apcom))))) -> (exists x, (and (and (x = _apcom) True) (exists z1, (and (and (_order z1) True) (_lose_e3 _apcom z1))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                         ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 342-346:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (exists z1, (and (and (and (_more z1) (_order z1)) True) (_win _itel z1)))) (exists z2, (and (and (z2 = _apcom) True) (_lose_e2 _apcom))))) -> (exists x, (and (and (x = _apcom) True) (exists z1, (and (and (_order z1) True) (_lose_e3 _apcom z1))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                       ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _apcom is declared
+
+Coq < _itel is declared
+
+Coq < _lose is declared
+
+Coq < _lose_e2 is declared
+
+Coq < _lose_e3 is declared
+
+Coq < _more is declared
+
+Coq < _order is declared
+
+Coq < _win is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+((x = _itel /\ True) /\
+(exists z1 : Entity, ((_more z1 /\ _order z1) /\ True) /\ _win _itel z1)) /\
+(exists z2 : Entity, (z2 = _apcom /\ True) /\ _lose_e2 _apcom)) ->
+~
+(exists x : Entity,
+(x = _apcom /\ True) /\
+(exists z1 : Entity, (_order z1 /\ True) /\ _lose_e3 _apcom z1))
+
+1 goal
+
+H2 : True
+x0 : Entity
+H3 : _lose_e3 _apcom x0
+H1 : _order x0
+H4, H7 : True
+x2 : Entity
+H8 : _win _itel x2
+H9 : True
+H6 : _more x2
+H10 : _order x2
+H11 : _lose_e2 _apcom
+H12 : True
+============================
+False
+
+Toplevel input, characters 334-346:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (exists z1, (and (and (and (_more z1) (_order z1)) True) (_win _itel z1)))) (exists z2, (and (and (z2 = _apcom) True) (_lose_e2 _apcom))))) -> (not (exists x, (and (and (x = _apcom) True) (exists z1, (and (and (_order z1) True) (_lose_e3 _apcom z1)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                               ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 348-352:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (exists z1, (and (and (and (_more z1) (_order z1)) True) (_win _itel z1)))) (exists z2, (and (and (z2 = _apcom) True) (_lose_e2 _apcom))))) -> (not (exists x, (and (and (x = _apcom) True) (exists z1, (and (and (_order z1) True) (_lose_e3 _apcom z1)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                             ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

@@ -1,0 +1,472 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _friday is declared
+
+Coq < _friday_e2 is declared
+
+Coq < _john is declared
+
+Coq < _mary is declared
+
+Coq < _on is declared
+
+Coq < _on_e3 is declared
+
+Coq < _on_t3 is declared
+
+Coq < _speak is declared
+
+Coq < _thursday is declared
+
+Coq < _to is declared
+
+Coq < Toplevel input, characters 217-296:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _thursday) True) (_on_e3 _john _thursday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))) -> (fun X0 => (and (_on_t3 (exists x, (and (and (_friday_e2 x) True) True)) X0) X0)) -> (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _friday) True) (_on_e3 _john _friday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))).
+>                                                                                                                                                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun X0 : Prop =>
+_on_t3 (exists x : Entity, (_friday_e2 x /\ True) /\ True) X0 /\ X0"
+has type "Prop -> Prop" which should be Set, Prop or Type.
+
+Toplevel input, characters 499-504:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _thursday) True) (_on_e3 _john _thursday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))) -> (fun X0 => (and (_on_t3 (exists x, (and (and (_friday_e2 x) True) True)) X0) X0)) -> (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _friday) True) (_on_e3 _john _friday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 506-510:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _thursday) True) (_on_e3 _john _thursday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))) -> (fun X0 => (and (_on_t3 (exists x, (and (and (_friday_e2 x) True) True)) X0) X0)) -> (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _friday) True) (_on_e3 _john _friday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _friday is declared
+
+Coq < _friday_e2 is declared
+
+Coq < _john is declared
+
+Coq < _mary is declared
+
+Coq < _on is declared
+
+Coq < _on_e3 is declared
+
+Coq < _on_t3 is declared
+
+Coq < _speak is declared
+
+Coq < _thursday is declared
+
+Coq < _to is declared
+
+Coq < Toplevel input, characters 217-296:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _thursday) True) (_on_e3 _john _thursday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))) -> (fun X0 => (and (_on_t3 (exists x, (and (and (_friday_e2 x) True) True)) X0) X0)) -> (not (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _friday) True) (_on_e3 _john _friday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary)))))))).
+>                                                                                                                                                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun X0 : Prop =>
+_on_t3 (exists x : Entity, (_friday_e2 x /\ True) /\ True) X0 /\ X0"
+has type "Prop -> Prop" which should be Set, Prop or Type.
+
+Toplevel input, characters 505-510:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _thursday) True) (_on_e3 _john _thursday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))) -> (fun X0 => (and (_on_t3 (exists x, (and (and (_friday_e2 x) True) True)) X0) X0)) -> (not (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _friday) True) (_on_e3 _john _friday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary)))))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 512-516:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _thursday) True) (_on_e3 _john _thursday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))) -> (fun X0 => (and (_on_t3 (exists x, (and (and (_friday_e2 x) True) True)) X0) X0)) -> (not (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _friday) True) (_on_e3 _john _friday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary)))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _friday is declared
+
+Coq < _friday_e2 is declared
+
+Coq < _john is declared
+
+Coq < _mary is declared
+
+Coq < _on is declared
+
+Coq < _on_e3 is declared
+
+Coq < _on_t3 is declared
+
+Coq < _speak is declared
+
+Coq < _thursday is declared
+
+Coq < _to is declared
+
+Coq < Toplevel input, characters 217-296:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _thursday) True) (_on_e3 _john _thursday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))) -> (fun X0 => (and (_on_t3 (exists x, (and (and (_friday_e2 x) True) True)) X0) X0)) -> (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _friday) True) (_on_e3 _john _friday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))).
+>                                                                                                                                                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun X0 : Prop =>
+_on_t3 (exists x : Entity, (_friday_e2 x /\ True) /\ True) X0 /\ X0"
+has type "Prop -> Prop" which should be Set, Prop or Type.
+
+Toplevel input, characters 499-505:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _thursday) True) (_on_e3 _john _thursday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))) -> (fun X0 => (and (_on_t3 (exists x, (and (and (_friday_e2 x) True) True)) X0) X0)) -> (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _friday) True) (_on_e3 _john _friday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 518-521:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _thursday) True) (_on_e3 _john _thursday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))) -> (fun X0 => (and (_on_t3 (exists x, (and (and (_friday_e2 x) True) True)) X0) X0)) -> (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _friday) True) (_on_e3 _john _friday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 536-540:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _thursday) True) (_on_e3 _john _thursday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))) -> (fun X0 => (and (_on_t3 (exists x, (and (and (_friday_e2 x) True) True)) X0) X0)) -> (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _friday) True) (_on_e3 _john _friday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _friday is declared
+
+Coq < _friday_e2 is declared
+
+Coq < _john is declared
+
+Coq < _mary is declared
+
+Coq < _on is declared
+
+Coq < _on_e3 is declared
+
+Coq < _on_t3 is declared
+
+Coq < _speak is declared
+
+Coq < _thursday is declared
+
+Coq < _to is declared
+
+Coq < Toplevel input, characters 217-296:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _thursday) True) (_on_e3 _john _thursday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))) -> (fun X0 => (and (_on_t3 (exists x, (and (and (_friday_e2 x) True) True)) X0) X0)) -> (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _friday) True) (_on_e3 _john _friday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))).
+>                                                                                                                                                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun X0 : Prop =>
+_on_t3 (exists x : Entity, (_friday_e2 x /\ True) /\ True) X0 /\ X0"
+has type "Prop -> Prop" which should be Set, Prop or Type.
+
+Toplevel input, characters 499-504:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _thursday) True) (_on_e3 _john _thursday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))) -> (fun X0 => (and (_on_t3 (exists x, (and (and (_friday_e2 x) True) True)) X0) X0)) -> (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _friday) True) (_on_e3 _john _friday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 506-510:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _thursday) True) (_on_e3 _john _thursday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))) -> (fun X0 => (and (_on_t3 (exists x, (and (and (_friday_e2 x) True) True)) X0) X0)) -> (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _friday) True) (_on_e3 _john _friday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _friday is declared
+
+Coq < _friday_e2 is declared
+
+Coq < _john is declared
+
+Coq < _mary is declared
+
+Coq < _on is declared
+
+Coq < _on_e3 is declared
+
+Coq < _on_t3 is declared
+
+Coq < _speak is declared
+
+Coq < _thursday is declared
+
+Coq < _to is declared
+
+Coq < Toplevel input, characters 217-296:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _thursday) True) (_on_e3 _john _thursday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))) -> (fun X0 => (and (_on_t3 (exists x, (and (and (_friday_e2 x) True) True)) X0) X0)) -> (not (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _friday) True) (_on_e3 _john _friday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary)))))))).
+>                                                                                                                                                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun X0 : Prop =>
+_on_t3 (exists x : Entity, (_friday_e2 x /\ True) /\ True) X0 /\ X0"
+has type "Prop -> Prop" which should be Set, Prop or Type.
+
+Toplevel input, characters 505-511:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _thursday) True) (_on_e3 _john _thursday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))) -> (fun X0 => (and (_on_t3 (exists x, (and (and (_friday_e2 x) True) True)) X0) X0)) -> (not (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _friday) True) (_on_e3 _john _friday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary)))))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 524-527:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _thursday) True) (_on_e3 _john _thursday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))) -> (fun X0 => (and (_on_t3 (exists x, (and (and (_friday_e2 x) True) True)) X0) X0)) -> (not (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _friday) True) (_on_e3 _john _friday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary)))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 542-546:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _thursday) True) (_on_e3 _john _thursday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))) -> (fun X0 => (and (_on_t3 (exists x, (and (and (_friday_e2 x) True) True)) X0) X0)) -> (not (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _friday) True) (_on_e3 _john _friday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary)))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _friday is declared
+
+Coq < _friday_e2 is declared
+
+Coq < _john is declared
+
+Coq < _mary is declared
+
+Coq < _on is declared
+
+Coq < _on_e3 is declared
+
+Coq < _on_t3 is declared
+
+Coq < _speak is declared
+
+Coq < _thursday is declared
+
+Coq < _to is declared
+
+Coq < Toplevel input, characters 217-296:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _thursday) True) (_on_e3 _john _thursday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))) -> (fun X0 => (and (_on_t3 (exists x, (and (and (_friday_e2 x) True) True)) X0) X0)) -> (not (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _friday) True) (_on_e3 _john _friday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary)))))))).
+>                                                                                                                                                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun X0 : Prop =>
+_on_t3 (exists x : Entity, (_friday_e2 x /\ True) /\ True) X0 /\ X0"
+has type "Prop -> Prop" which should be Set, Prop or Type.
+
+Toplevel input, characters 505-510:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _thursday) True) (_on_e3 _john _thursday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))) -> (fun X0 => (and (_on_t3 (exists x, (and (and (_friday_e2 x) True) True)) X0) X0)) -> (not (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _friday) True) (_on_e3 _john _friday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary)))))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 512-516:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _thursday) True) (_on_e3 _john _thursday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))) -> (fun X0 => (and (_on_t3 (exists x, (and (and (_friday_e2 x) True) True)) X0) X0)) -> (not (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _friday) True) (_on_e3 _john _friday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary)))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _friday is declared
+
+Coq < _friday_e2 is declared
+
+Coq < _john is declared
+
+Coq < _mary is declared
+
+Coq < _on is declared
+
+Coq < _on_e3 is declared
+
+Coq < _on_t3 is declared
+
+Coq < _speak is declared
+
+Coq < _thursday is declared
+
+Coq < _to is declared
+
+Coq < Toplevel input, characters 217-296:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _thursday) True) (_on_e3 _john _thursday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))) -> (fun X0 => (and (_on_t3 (exists x, (and (and (_friday_e2 x) True) True)) X0) X0)) -> (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _friday) True) (_on_e3 _john _friday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))).
+>                                                                                                                                                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun X0 : Prop =>
+_on_t3 (exists x : Entity, (_friday_e2 x /\ True) /\ True) X0 /\ X0"
+has type "Prop -> Prop" which should be Set, Prop or Type.
+
+Toplevel input, characters 499-505:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _thursday) True) (_on_e3 _john _thursday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))) -> (fun X0 => (and (_on_t3 (exists x, (and (and (_friday_e2 x) True) True)) X0) X0)) -> (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _friday) True) (_on_e3 _john _friday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 518-521:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _thursday) True) (_on_e3 _john _thursday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))) -> (fun X0 => (and (_on_t3 (exists x, (and (and (_friday_e2 x) True) True)) X0) X0)) -> (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _friday) True) (_on_e3 _john _friday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 536-540:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _thursday) True) (_on_e3 _john _thursday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))) -> (fun X0 => (and (_on_t3 (exists x, (and (and (_friday_e2 x) True) True)) X0) X0)) -> (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _friday) True) (_on_e3 _john _friday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _friday is declared
+
+Coq < _friday_e2 is declared
+
+Coq < _john is declared
+
+Coq < _mary is declared
+
+Coq < _on is declared
+
+Coq < _on_e3 is declared
+
+Coq < _on_t3 is declared
+
+Coq < _speak is declared
+
+Coq < _thursday is declared
+
+Coq < _to is declared
+
+Coq < Toplevel input, characters 217-296:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _thursday) True) (_on_e3 _john _thursday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))) -> (fun X0 => (and (_on_t3 (exists x, (and (and (_friday_e2 x) True) True)) X0) X0)) -> (not (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _friday) True) (_on_e3 _john _friday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary)))))))).
+>                                                                                                                                                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun X0 : Prop =>
+_on_t3 (exists x : Entity, (_friday_e2 x /\ True) /\ True) X0 /\ X0"
+has type "Prop -> Prop" which should be Set, Prop or Type.
+
+Toplevel input, characters 505-511:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _thursday) True) (_on_e3 _john _thursday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))) -> (fun X0 => (and (_on_t3 (exists x, (and (and (_friday_e2 x) True) True)) X0) X0)) -> (not (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _friday) True) (_on_e3 _john _friday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary)))))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 524-527:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _thursday) True) (_on_e3 _john _thursday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))) -> (fun X0 => (and (_on_t3 (exists x, (and (and (_friday_e2 x) True) True)) X0) X0)) -> (not (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _friday) True) (_on_e3 _john _friday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary)))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 542-546:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _thursday) True) (_on_e3 _john _thursday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))) -> (fun X0 => (and (_on_t3 (exists x, (and (and (_friday_e2 x) True) True)) X0) X0)) -> (not (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _friday) True) (_on_e3 _john _friday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary)))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _friday is declared
+
+Coq < _friday_e2 is declared
+
+Coq < _john is declared
+
+Coq < _mary is declared
+
+Coq < _on is declared
+
+Coq < _on_e3 is declared
+
+Coq < _on_t3 is declared
+
+Coq < _speak is declared
+
+Coq < _thursday is declared
+
+Coq < _to is declared
+
+Coq < Toplevel input, characters 217-296:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _thursday) True) (_on_e3 _john _thursday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))) -> (fun X0 => (and (_on_t3 (exists x, (and (and (_friday_e2 x) True) True)) X0) X0)) -> (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _friday) True) (_on_e3 _john _friday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))).
+>                                                                                                                                                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun X0 : Prop =>
+_on_t3 (exists x : Entity, (_friday_e2 x /\ True) /\ True) X0 /\ X0"
+has type "Prop -> Prop" which should be Set, Prop or Type.
+
+Toplevel input, characters 499-505:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _thursday) True) (_on_e3 _john _thursday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))) -> (fun X0 => (and (_on_t3 (exists x, (and (and (_friday_e2 x) True) True)) X0) X0)) -> (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _friday) True) (_on_e3 _john _friday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 518-521:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _thursday) True) (_on_e3 _john _thursday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))) -> (fun X0 => (and (_on_t3 (exists x, (and (and (_friday_e2 x) True) True)) X0) X0)) -> (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _friday) True) (_on_e3 _john _friday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 536-540:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _thursday) True) (_on_e3 _john _thursday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))) -> (fun X0 => (and (_on_t3 (exists x, (and (and (_friday_e2 x) True) True)) X0) X0)) -> (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _friday) True) (_on_e3 _john _friday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _friday is declared
+
+Coq < _friday_e2 is declared
+
+Coq < _john is declared
+
+Coq < _mary is declared
+
+Coq < _on is declared
+
+Coq < _on_e3 is declared
+
+Coq < _on_t3 is declared
+
+Coq < _speak is declared
+
+Coq < _thursday is declared
+
+Coq < _to is declared
+
+Coq < Toplevel input, characters 217-296:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _thursday) True) (_on_e3 _john _thursday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))) -> (fun X0 => (and (_on_t3 (exists x, (and (and (_friday_e2 x) True) True)) X0) X0)) -> (not (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _friday) True) (_on_e3 _john _friday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary)))))))).
+>                                                                                                                                                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun X0 : Prop =>
+_on_t3 (exists x : Entity, (_friday_e2 x /\ True) /\ True) X0 /\ X0"
+has type "Prop -> Prop" which should be Set, Prop or Type.
+
+Toplevel input, characters 505-511:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _thursday) True) (_on_e3 _john _thursday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))) -> (fun X0 => (and (_on_t3 (exists x, (and (and (_friday_e2 x) True) True)) X0) X0)) -> (not (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _friday) True) (_on_e3 _john _friday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary)))))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 524-527:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _thursday) True) (_on_e3 _john _thursday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))) -> (fun X0 => (and (_on_t3 (exists x, (and (and (_friday_e2 x) True) True)) X0) X0)) -> (not (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _friday) True) (_on_e3 _john _friday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary)))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 542-546:
+> Theorem t1: (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _thursday) True) (_on_e3 _john _thursday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary))))))) -> (fun X0 => (and (_on_t3 (exists x, (and (and (_friday_e2 x) True) True)) X0) X0)) -> (not (exists x, (and (and (x = _john) True) (exists z2, (and (and (and (and (z2 = _friday) True) (_on_e3 _john _friday)) (_speak _john)) (exists z1, (and (and (z1 = _mary) True) (_to _john _mary)))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+unknown
+

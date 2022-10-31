@@ -1,0 +1,133 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1993 is declared
+
+Coq < _build is declared
+
+Coq < _finish is declared
+
+Coq < _in is declared
+
+Coq < _itel is declared
+
+Coq < _mtalk is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _itel /\ True) /\
+(exists z2 : Entity,
+((_1993 z2 /\ True) /\ _in _itel z2) /\
+(exists z1 : Entity, (z1 = _mtalk /\ True) /\ _build _itel _mtalk))) ->
+exists x : Entity,
+(x = _itel /\ True) /\
+(exists z2 : Entity,
+((_1993 z2 /\ True) /\ _in _itel z2) /\
+(exists z1 : Entity, (z1 = _mtalk /\ True) /\ _finish _itel _mtalk))
+
+
+Toplevel input, characters 362-366:
+> Theorem t1: (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (_1993 z2) True) (_in _itel z2)) (exists z1, (and (and (z1 = _mtalk) True) (_build _itel _mtalk))))))) -> (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (_1993 z2) True) (_in _itel z2)) (exists z1, (and (and (z1 = _mtalk) True) (_finish _itel _mtalk))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                           ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1993 is declared
+
+Coq < _build is declared
+
+Coq < _finish is declared
+
+Coq < _in is declared
+
+Coq < _itel is declared
+
+Coq < _mtalk is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _itel /\ True) /\
+(exists z2 : Entity,
+((_1993 z2 /\ True) /\ _in _itel z2) /\
+(exists z1 : Entity, (z1 = _mtalk /\ True) /\ _build _itel _mtalk))) ->
+~
+(exists x : Entity,
+(x = _itel /\ True) /\
+(exists z2 : Entity,
+((_1993 z2 /\ True) /\ _in _itel z2) /\
+(exists z1 : Entity, (z1 = _mtalk /\ True) /\ _finish _itel _mtalk)))
+
+
+Toplevel input, characters 368-372:
+> Theorem t1: (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (_1993 z2) True) (_in _itel z2)) (exists z1, (and (and (z1 = _mtalk) True) (_build _itel _mtalk))))))) -> (not (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (_1993 z2) True) (_in _itel z2)) (exists z1, (and (and (z1 = _mtalk) True) (_finish _itel _mtalk)))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1993 is declared
+
+Coq < _build is declared
+
+Coq < _finish is declared
+
+Coq < _in is declared
+
+Coq < _itel is declared
+
+Coq < _mtalk is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _itel /\ True) /\
+(exists z2 : Entity,
+((_1993 z2 /\ True) /\ _in _itel z2) /\
+(exists z1 : Entity, (z1 = _mtalk /\ True) /\ _build _itel _mtalk))) ->
+exists x : Entity,
+(x = _itel /\ True) /\
+(exists z2 : Entity,
+((_1993 z2 /\ True) /\ _in _itel z2) /\
+(exists z1 : Entity, (z1 = _mtalk /\ True) /\ _finish _itel _mtalk))
+
+1 goal
+
+H1 : True
+x0 : Entity
+H3 : _in _itel x0
+H0 : _1993 x0
+H4 : True
+H5 : _build _itel _mtalk
+H6 : True
+============================
+_finish _itel _mtalk
+
+Toplevel input, characters 378-390:
+> Theorem t1: (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (_1993 z2) True) (_in _itel z2)) (exists z1, (and (and (z1 = _mtalk) True) (_build _itel _mtalk))))))) -> (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (_1993 z2) True) (_in _itel z2)) (exists z1, (and (and (z1 = _mtalk) True) (_finish _itel _mtalk))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                           ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 392-396:
+> Theorem t1: (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (_1993 z2) True) (_in _itel z2)) (exists z1, (and (and (z1 = _mtalk) True) (_build _itel _mtalk))))))) -> (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (_1993 z2) True) (_in _itel z2)) (exists z1, (and (and (z1 = _mtalk) True) (_finish _itel _mtalk))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                         ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

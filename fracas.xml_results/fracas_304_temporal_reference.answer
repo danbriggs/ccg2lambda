@@ -1,0 +1,446 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _for is declared
+
+Coq < _hour is declared
+
+Coq < _report is declared
+
+Coq < _smith is declared
+
+Coq < _two is declared
+
+Coq < _write is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_report z2 /\
+(exists z1 : Entity, ((_two z1 /\ _hour z1) /\ True) /\ _for z2 z1)) /\
+True) /\ _write _smith z2)) ->
+exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ _write _smith z1)
+
+No more goals.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _for is declared
+
+Coq < _hour is declared
+
+Coq < _report is declared
+
+Coq < _smith is declared
+
+Coq < _two is declared
+
+Coq < _write is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_report z2 /\
+(exists z1 : Entity, ((_two z1 /\ _hour z1) /\ True) /\ _for z2 z1)) /\
+True) /\ _write _smith z2)) ->
+~
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ _write _smith z1))
+
+
+Toplevel input, characters 313-317:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_report z2) (exists z1, (and (and (and (_two z1) (_hour z1)) True) (_for z2 z1)))) True) (_write _smith z2))))) -> (not (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_report z1) True) (_write _smith z1)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                          ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _for is declared
+
+Coq < _hour is declared
+
+Coq < _report is declared
+
+Coq < _smith is declared
+
+Coq < _two is declared
+
+Coq < _write is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_report z2 /\
+(exists z1 : Entity, ((_two z1 /\ _hour z1) /\ True) /\ _for z2 z1)) /\
+True) /\ _write _smith z2)) ->
+exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ _write _smith z1)
+
+No more goals.
+
+Toplevel input, characters 319-336:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_report z2) (exists z1, (and (and (and (_two z1) (_hour z1)) True) (_for z2 z1)))) True) (_write _smith z2))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_report z1) True) (_write _smith z1))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                ^^^^^^^^^^^^^^^^^
+Error: No such goal.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _for is declared
+
+Coq < _hour is declared
+
+Coq < _report is declared
+
+Coq < _smith is declared
+
+Coq < _two is declared
+
+Coq < _write is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_report z2 /\
+(exists z1 : Entity, ((_two z1 /\ _hour z1) /\ True) /\ _for z2 z1)) /\
+True) /\ _write _smith z2)) ->
+exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ _write _smith z1)
+
+No more goals.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _for is declared
+
+Coq < _hour is declared
+
+Coq < _report is declared
+
+Coq < _smith is declared
+
+Coq < _two is declared
+
+Coq < _write is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_report z2 /\
+(exists z1 : Entity, ((_two z1 /\ _hour z1) /\ True) /\ _for z2 z1)) /\
+True) /\ _write _smith z2)) ->
+~
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ _write _smith z1))
+
+1 goal
+
+H2 : True
+x0 : Entity
+H3 : _write _smith x0
+H1 : _report x0
+H4, H6 : True
+x2 : Entity
+H7 : _write _smith x2
+H8 : True
+H5 : _report x2
+x3 : Entity
+H10 : _for x2 x3
+H11 : True
+H9 : _two x3
+H12 : _hour x3
+============================
+False
+
+Toplevel input, characters 329-341:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_report z2) (exists z1, (and (and (and (_two z1) (_hour z1)) True) (_for z2 z1)))) True) (_write _smith z2))))) -> (not (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_report z1) True) (_write _smith z1)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                          ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 343-347:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_report z2) (exists z1, (and (and (and (_two z1) (_hour z1)) True) (_for z2 z1)))) True) (_write _smith z2))))) -> (not (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_report z1) True) (_write _smith z1)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                        ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _for is declared
+
+Coq < _hour is declared
+
+Coq < _report is declared
+
+Coq < _smith is declared
+
+Coq < _two is declared
+
+Coq < _write is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_report z2 /\
+(exists z1 : Entity, ((_two z1 /\ _hour z1) /\ True) /\ _for z2 z1)) /\
+True) /\ _write _smith z2)) ->
+~
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ _write _smith z1))
+
+
+Toplevel input, characters 313-317:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_report z2) (exists z1, (and (and (and (_two z1) (_hour z1)) True) (_for z2 z1)))) True) (_write _smith z2))))) -> (not (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_report z1) True) (_write _smith z1)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                          ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _for is declared
+
+Coq < _hour is declared
+
+Coq < _report is declared
+
+Coq < _smith is declared
+
+Coq < _two is declared
+
+Coq < _write is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_report z2 /\
+(exists z1 : Entity, ((_two z1 /\ _hour z1) /\ True) /\ _for z2 z1)) /\
+True) /\ _write _smith z2)) ->
+exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ _write _smith z1)
+
+No more goals.
+
+Toplevel input, characters 319-336:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_report z2) (exists z1, (and (and (and (_two z1) (_hour z1)) True) (_for z2 z1)))) True) (_write _smith z2))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_report z1) True) (_write _smith z1))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                ^^^^^^^^^^^^^^^^^
+Error: No such goal.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _for is declared
+
+Coq < _hour is declared
+
+Coq < _report is declared
+
+Coq < _smith is declared
+
+Coq < _two is declared
+
+Coq < _write is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_report z2 /\
+(exists z1 : Entity, ((_two z1 /\ _hour z1) /\ True) /\ _for z2 z1)) /\
+True) /\ _write _smith z2)) ->
+~
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ _write _smith z1))
+
+1 goal
+
+H2 : True
+x0 : Entity
+H3 : _write _smith x0
+H1 : _report x0
+H4, H6 : True
+x2 : Entity
+H7 : _write _smith x2
+H8 : True
+H5 : _report x2
+x3 : Entity
+H10 : _for x2 x3
+H11 : True
+H9 : _two x3
+H12 : _hour x3
+============================
+False
+
+Toplevel input, characters 329-341:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_report z2) (exists z1, (and (and (and (_two z1) (_hour z1)) True) (_for z2 z1)))) True) (_write _smith z2))))) -> (not (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_report z1) True) (_write _smith z1)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                          ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 343-347:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_report z2) (exists z1, (and (and (and (_two z1) (_hour z1)) True) (_for z2 z1)))) True) (_write _smith z2))))) -> (not (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_report z1) True) (_write _smith z1)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                        ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _for is declared
+
+Coq < _hour is declared
+
+Coq < _report is declared
+
+Coq < _smith is declared
+
+Coq < _two is declared
+
+Coq < _write is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_report z2 /\
+(exists z1 : Entity, ((_two z1 /\ _hour z1) /\ True) /\ _for z2 z1)) /\
+True) /\ _write _smith z2)) ->
+exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ _write _smith z1)
+
+No more goals.
+
+Toplevel input, characters 319-336:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_report z2) (exists z1, (and (and (and (_two z1) (_hour z1)) True) (_for z2 z1)))) True) (_write _smith z2))))) -> (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_report z1) True) (_write _smith z1))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                ^^^^^^^^^^^^^^^^^
+Error: No such goal.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _for is declared
+
+Coq < _hour is declared
+
+Coq < _report is declared
+
+Coq < _smith is declared
+
+Coq < _two is declared
+
+Coq < _write is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z2 : Entity,
+((_report z2 /\
+(exists z1 : Entity, ((_two z1 /\ _hour z1) /\ True) /\ _for z2 z1)) /\
+True) /\ _write _smith z2)) ->
+~
+(exists x : Entity,
+(x = _smith /\ True) /\
+(exists z1 : Entity, (_report z1 /\ True) /\ _write _smith z1))
+
+1 goal
+
+H2 : True
+x0 : Entity
+H3 : _write _smith x0
+H1 : _report x0
+H4, H6 : True
+x2 : Entity
+H7 : _write _smith x2
+H8 : True
+H5 : _report x2
+x3 : Entity
+H10 : _for x2 x3
+H11 : True
+H9 : _two x3
+H12 : _hour x3
+============================
+False
+
+Toplevel input, characters 329-341:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_report z2) (exists z1, (and (and (and (_two z1) (_hour z1)) True) (_for z2 z1)))) True) (_write _smith z2))))) -> (not (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_report z1) True) (_write _smith z1)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                          ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 343-347:
+> Theorem t1: (exists x, (and (and (x = _smith) True) (exists z2, (and (and (and (_report z2) (exists z1, (and (and (and (_two z1) (_hour z1)) True) (_for z2 z1)))) True) (_write _smith z2))))) -> (not (exists x, (and (and (x = _smith) True) (exists z1, (and (and (_report z1) True) (_write _smith z1)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                        ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

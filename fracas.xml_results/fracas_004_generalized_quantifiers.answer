@@ -1,0 +1,347 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _great is declared
+
+Coq < _italian is declared
+
+Coq < _tenor is declared
+
+Coq < _want is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity, _italian x /\ _tenor x -> True -> _want x (_great x)) ->
+(exists x : Entity, ((_italian x /\ _tenor x) /\ True) /\ _great x) ->
+exists x z3 : Entity,
+(((_italian z3 /\ _tenor z3) /\ _want z3 (_great z3)) /\ True) /\ x = z3
+
+No more goals.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _great is declared
+
+Coq < _italian is declared
+
+Coq < _tenor is declared
+
+Coq < _want is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity, _italian x /\ _tenor x -> True -> _want x (_great x)) ->
+(exists x : Entity, ((_italian x /\ _tenor x) /\ True) /\ _great x) ->
+~
+(exists x z3 : Entity,
+(((_italian z3 /\ _tenor z3) /\ _want z3 (_great z3)) /\ True) /\ x = z3)
+
+
+Toplevel input, characters 282-286:
+> Theorem t1: (forall x, ((and (_italian x) (_tenor x)) -> (True -> (_want x (_great x))))) -> (exists x, (and (and (and (_italian x) (_tenor x)) True) (_great x))) -> (not (exists x z3, (and (and (and (and (_italian z3) (_tenor z3)) (_want z3 (_great z3))) True) (x = z3)))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                           ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _great is declared
+
+Coq < _italian is declared
+
+Coq < _tenor is declared
+
+Coq < _want is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity, _italian x /\ _tenor x -> True -> _want x (_great x)) ->
+(exists x : Entity, ((_italian x /\ _tenor x) /\ True) /\ _great x) ->
+exists x z3 : Entity,
+(((_italian z3 /\ _tenor z3) /\ _want z3 (_great z3)) /\ True) /\ x = z3
+
+No more goals.
+
+Toplevel input, characters 288-305:
+> Theorem t1: (forall x, ((and (_italian x) (_tenor x)) -> (True -> (_want x (_great x))))) -> (exists x, (and (and (and (_italian x) (_tenor x)) True) (_great x))) -> (exists x z3, (and (and (and (and (_italian z3) (_tenor z3)) (_want z3 (_great z3))) True) (x = z3))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                 ^^^^^^^^^^^^^^^^^
+Error: No such goal.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _great is declared
+
+Coq < _italian is declared
+
+Coq < _tenor is declared
+
+Coq < _want is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity, _italian x /\ _tenor x -> True -> _want x (_great x)) ->
+(exists x : Entity, ((_italian x /\ _tenor x) /\ True) /\ _great x) ->
+exists x z3 : Entity,
+(((_italian z3 /\ _tenor z3) /\ _want z3 (_great z3)) /\ True) /\ x = z3
+
+No more goals.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _great is declared
+
+Coq < _italian is declared
+
+Coq < _tenor is declared
+
+Coq < _want is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity, _italian x /\ _tenor x -> True -> _want x (_great x)) ->
+(exists x : Entity, ((_italian x /\ _tenor x) /\ True) /\ _great x) ->
+~
+(exists x z3 : Entity,
+(((_italian z3 /\ _tenor z3) /\ _want z3 (_great z3)) /\ True) /\ x = z3)
+
+1 goal
+
+H : forall x : Entity, _italian x /\ _tenor x -> True -> _want x (_great x)
+x0 : Entity
+H3 : True
+H4 : _want x0 (_great x0)
+H1 : _italian x0
+H5 : _tenor x0
+x1 : Entity
+H6 : _great x1
+H7 : True
+H0 : _italian x1
+H8 : _tenor x1
+============================
+False
+
+Toplevel input, characters 298-310:
+> Theorem t1: (forall x, ((and (_italian x) (_tenor x)) -> (True -> (_want x (_great x))))) -> (exists x, (and (and (and (_italian x) (_tenor x)) True) (_great x))) -> (not (exists x z3, (and (and (and (and (_italian z3) (_tenor z3)) (_want z3 (_great z3))) True) (x = z3)))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                           ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 312-316:
+> Theorem t1: (forall x, ((and (_italian x) (_tenor x)) -> (True -> (_want x (_great x))))) -> (exists x, (and (and (and (_italian x) (_tenor x)) True) (_great x))) -> (not (exists x z3, (and (and (and (and (_italian z3) (_tenor z3)) (_want z3 (_great z3))) True) (x = z3)))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                         ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _great is declared
+
+Coq < _italian is declared
+
+Coq < _tenor is declared
+
+Coq < _want is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity, _italian x /\ _tenor x -> True -> _want x (_great x)) ->
+(exists x : Entity, ((_italian x /\ _tenor x) /\ True) /\ _great x) ->
+~
+(exists x z3 : Entity,
+(((_italian z3 /\ _tenor z3) /\ _want z3 (_great z3)) /\ True) /\ x = z3)
+
+
+Toplevel input, characters 282-286:
+> Theorem t1: (forall x, ((and (_italian x) (_tenor x)) -> (True -> (_want x (_great x))))) -> (exists x, (and (and (and (_italian x) (_tenor x)) True) (_great x))) -> (not (exists x z3, (and (and (and (and (_italian z3) (_tenor z3)) (_want z3 (_great z3))) True) (x = z3)))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                           ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _great is declared
+
+Coq < _italian is declared
+
+Coq < _tenor is declared
+
+Coq < _want is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity, _italian x /\ _tenor x -> True -> _want x (_great x)) ->
+(exists x : Entity, ((_italian x /\ _tenor x) /\ True) /\ _great x) ->
+exists x z3 : Entity,
+(((_italian z3 /\ _tenor z3) /\ _want z3 (_great z3)) /\ True) /\ x = z3
+
+No more goals.
+
+Toplevel input, characters 288-305:
+> Theorem t1: (forall x, ((and (_italian x) (_tenor x)) -> (True -> (_want x (_great x))))) -> (exists x, (and (and (and (_italian x) (_tenor x)) True) (_great x))) -> (exists x z3, (and (and (and (and (_italian z3) (_tenor z3)) (_want z3 (_great z3))) True) (x = z3))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                 ^^^^^^^^^^^^^^^^^
+Error: No such goal.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _great is declared
+
+Coq < _italian is declared
+
+Coq < _tenor is declared
+
+Coq < _want is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity, _italian x /\ _tenor x -> True -> _want x (_great x)) ->
+(exists x : Entity, ((_italian x /\ _tenor x) /\ True) /\ _great x) ->
+~
+(exists x z3 : Entity,
+(((_italian z3 /\ _tenor z3) /\ _want z3 (_great z3)) /\ True) /\ x = z3)
+
+1 goal
+
+H : forall x : Entity, _italian x /\ _tenor x -> True -> _want x (_great x)
+x0 : Entity
+H3 : True
+H4 : _want x0 (_great x0)
+H1 : _italian x0
+H5 : _tenor x0
+x1 : Entity
+H6 : _great x1
+H7 : True
+H0 : _italian x1
+H8 : _tenor x1
+============================
+False
+
+Toplevel input, characters 298-310:
+> Theorem t1: (forall x, ((and (_italian x) (_tenor x)) -> (True -> (_want x (_great x))))) -> (exists x, (and (and (and (_italian x) (_tenor x)) True) (_great x))) -> (not (exists x z3, (and (and (and (and (_italian z3) (_tenor z3)) (_want z3 (_great z3))) True) (x = z3)))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                           ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 312-316:
+> Theorem t1: (forall x, ((and (_italian x) (_tenor x)) -> (True -> (_want x (_great x))))) -> (exists x, (and (and (and (_italian x) (_tenor x)) True) (_great x))) -> (not (exists x z3, (and (and (and (and (_italian z3) (_tenor z3)) (_want z3 (_great z3))) True) (x = z3)))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                         ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _great is declared
+
+Coq < _italian is declared
+
+Coq < _tenor is declared
+
+Coq < _want is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity, _italian x /\ _tenor x -> True -> _want x (_great x)) ->
+(exists x : Entity, ((_italian x /\ _tenor x) /\ True) /\ _great x) ->
+exists x z3 : Entity,
+(((_italian z3 /\ _tenor z3) /\ _want z3 (_great z3)) /\ True) /\ x = z3
+
+No more goals.
+
+Toplevel input, characters 288-305:
+> Theorem t1: (forall x, ((and (_italian x) (_tenor x)) -> (True -> (_want x (_great x))))) -> (exists x, (and (and (and (_italian x) (_tenor x)) True) (_great x))) -> (exists x z3, (and (and (and (and (_italian z3) (_tenor z3)) (_want z3 (_great z3))) True) (x = z3))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                 ^^^^^^^^^^^^^^^^^
+Error: No such goal.
+
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _great is declared
+
+Coq < _italian is declared
+
+Coq < _tenor is declared
+
+Coq < _want is declared
+
+Coq < 1 goal
+
+============================
+(forall x : Entity, _italian x /\ _tenor x -> True -> _want x (_great x)) ->
+(exists x : Entity, ((_italian x /\ _tenor x) /\ True) /\ _great x) ->
+~
+(exists x z3 : Entity,
+(((_italian z3 /\ _tenor z3) /\ _want z3 (_great z3)) /\ True) /\ x = z3)
+
+1 goal
+
+H : forall x : Entity, _italian x /\ _tenor x -> True -> _want x (_great x)
+x0 : Entity
+H3 : True
+H4 : _want x0 (_great x0)
+H1 : _italian x0
+H5 : _tenor x0
+x1 : Entity
+H6 : _great x1
+H7 : True
+H0 : _italian x1
+H8 : _tenor x1
+============================
+False
+
+Toplevel input, characters 298-310:
+> Theorem t1: (forall x, ((and (_italian x) (_tenor x)) -> (True -> (_want x (_great x))))) -> (exists x, (and (and (and (_italian x) (_tenor x)) True) (_great x))) -> (not (exists x z3, (and (and (and (and (_italian z3) (_tenor z3)) (_want z3 (_great z3))) True) (x = z3)))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                           ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 312-316:
+> Theorem t1: (forall x, ((and (_italian x) (_tenor x)) -> (True -> (_want x (_great x))))) -> (exists x, (and (and (and (_italian x) (_tenor x)) True) (_great x))) -> (not (exists x z3, (and (and (and (and (_italian z3) (_tenor z3)) (_want z3 (_great z3))) True) (x = z3)))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                         ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+

@@ -1,0 +1,462 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _desk is declared
+
+Coq < _from is declared
+
+Coq < _have is declared
+
+Coq < _itel is declared
+
+Coq < _most is declared
+
+Coq < _need is declared
+
+Coq < _of is declared
+
+Coq < _on is declared
+
+Coq < _report is declared
+
+Coq < _send is declared
+
+Coq < _smith is declared
+
+Coq < Toplevel input, characters 79-222:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (_most (fun z3 => (and (exists z2, (and (and (and (_report z2) (exists z1, (and (and (z1 = _smith) True) (_need _smith z2)))) True) (_of z3 z2))) True)) (fun y => (_send _itel y))))) -> (exists x, (and True (exists z1, (and (and (_desk z1) True) (_on x z1))))) -> (exists x z4, (and (and (and (and (_report z4) (exists z1, (and (and (z1 = _itel) True) (_from z4 _itel)))) (exists z3, (and (and (and (exists z2, (and (and (z2 = _smith) True) (Rel z3 _smith))) (_desk z3)) True) (_on z4 z3)))) True) (x = z4))).
+>                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The type of this term is a product while it is expected to be Entity.
+
+Toplevel input, characters 581-586:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (_most (fun z3 => (and (exists z2, (and (and (and (_report z2) (exists z1, (and (and (z1 = _smith) True) (_need _smith z2)))) True) (_of z3 z2))) True)) (fun y => (_send _itel y))))) -> (exists x, (and True (exists z1, (and (and (_desk z1) True) (_on x z1))))) -> (exists x z4, (and (and (and (and (_report z4) (exists z1, (and (and (z1 = _itel) True) (_from z4 _itel)))) (exists z3, (and (and (and (exists z2, (and (and (z2 = _smith) True) (Rel z3 _smith))) (_desk z3)) True) (_on z4 z3)))) True) (x = z4))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 588-592:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (_most (fun z3 => (and (exists z2, (and (and (and (_report z2) (exists z1, (and (and (z1 = _smith) True) (_need _smith z2)))) True) (_of z3 z2))) True)) (fun y => (_send _itel y))))) -> (exists x, (and True (exists z1, (and (and (_desk z1) True) (_on x z1))))) -> (exists x z4, (and (and (and (and (_report z4) (exists z1, (and (and (z1 = _itel) True) (_from z4 _itel)))) (exists z3, (and (and (and (exists z2, (and (and (z2 = _smith) True) (Rel z3 _smith))) (_desk z3)) True) (_on z4 z3)))) True) (x = z4))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _desk is declared
+
+Coq < _from is declared
+
+Coq < _have is declared
+
+Coq < _itel is declared
+
+Coq < _most is declared
+
+Coq < _need is declared
+
+Coq < _of is declared
+
+Coq < _on is declared
+
+Coq < _report is declared
+
+Coq < _send is declared
+
+Coq < _smith is declared
+
+Coq < Toplevel input, characters 79-222:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (_most (fun z3 => (and (exists z2, (and (and (and (_report z2) (exists z1, (and (and (z1 = _smith) True) (_need _smith z2)))) True) (_of z3 z2))) True)) (fun y => (_send _itel y))))) -> (exists x, (and True (exists z1, (and (and (_desk z1) True) (_on x z1))))) -> (not (exists x z4, (and (and (and (and (_report z4) (exists z1, (and (and (z1 = _itel) True) (_from z4 _itel)))) (exists z3, (and (and (and (exists z2, (and (and (z2 = _smith) True) (Rel z3 _smith))) (_desk z3)) True) (_on z4 z3)))) True) (x = z4)))).
+>                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The type of this term is a product while it is expected to be Entity.
+
+Toplevel input, characters 587-592:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (_most (fun z3 => (and (exists z2, (and (and (and (_report z2) (exists z1, (and (and (z1 = _smith) True) (_need _smith z2)))) True) (_of z3 z2))) True)) (fun y => (_send _itel y))))) -> (exists x, (and True (exists z1, (and (and (_desk z1) True) (_on x z1))))) -> (not (exists x z4, (and (and (and (and (_report z4) (exists z1, (and (and (z1 = _itel) True) (_from z4 _itel)))) (exists z3, (and (and (and (exists z2, (and (and (z2 = _smith) True) (Rel z3 _smith))) (_desk z3)) True) (_on z4 z3)))) True) (x = z4)))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 594-598:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (_most (fun z3 => (and (exists z2, (and (and (and (_report z2) (exists z1, (and (and (z1 = _smith) True) (_need _smith z2)))) True) (_of z3 z2))) True)) (fun y => (_send _itel y))))) -> (exists x, (and True (exists z1, (and (and (_desk z1) True) (_on x z1))))) -> (not (exists x z4, (and (and (and (and (_report z4) (exists z1, (and (and (z1 = _itel) True) (_from z4 _itel)))) (exists z3, (and (and (and (exists z2, (and (and (z2 = _smith) True) (Rel z3 _smith))) (_desk z3)) True) (_on z4 z3)))) True) (x = z4)))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _desk is declared
+
+Coq < _from is declared
+
+Coq < _have is declared
+
+Coq < _itel is declared
+
+Coq < _most is declared
+
+Coq < _need is declared
+
+Coq < _of is declared
+
+Coq < _on is declared
+
+Coq < _report is declared
+
+Coq < _send is declared
+
+Coq < _smith is declared
+
+Coq < Toplevel input, characters 79-222:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (_most (fun z3 => (and (exists z2, (and (and (and (_report z2) (exists z1, (and (and (z1 = _smith) True) (_need _smith z2)))) True) (_of z3 z2))) True)) (fun y => (_send _itel y))))) -> (exists x, (and True (exists z1, (and (and (_desk z1) True) (_on x z1))))) -> (exists x z4, (and (and (and (and (_report z4) (exists z1, (and (and (z1 = _itel) True) (_from z4 _itel)))) (exists z3, (and (and (and (exists z2, (and (and (z2 = _smith) True) (Rel z3 _smith))) (_desk z3)) True) (_on z4 z3)))) True) (x = z4))).
+>                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The type of this term is a product while it is expected to be Entity.
+
+Toplevel input, characters 581-587:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (_most (fun z3 => (and (exists z2, (and (and (and (_report z2) (exists z1, (and (and (z1 = _smith) True) (_need _smith z2)))) True) (_of z3 z2))) True)) (fun y => (_send _itel y))))) -> (exists x, (and True (exists z1, (and (and (_desk z1) True) (_on x z1))))) -> (exists x z4, (and (and (and (and (_report z4) (exists z1, (and (and (z1 = _itel) True) (_from z4 _itel)))) (exists z3, (and (and (and (exists z2, (and (and (z2 = _smith) True) (Rel z3 _smith))) (_desk z3)) True) (_on z4 z3)))) True) (x = z4))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 600-603:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (_most (fun z3 => (and (exists z2, (and (and (and (_report z2) (exists z1, (and (and (z1 = _smith) True) (_need _smith z2)))) True) (_of z3 z2))) True)) (fun y => (_send _itel y))))) -> (exists x, (and True (exists z1, (and (and (_desk z1) True) (_on x z1))))) -> (exists x z4, (and (and (and (and (_report z4) (exists z1, (and (and (z1 = _itel) True) (_from z4 _itel)))) (exists z3, (and (and (and (exists z2, (and (and (z2 = _smith) True) (Rel z3 _smith))) (_desk z3)) True) (_on z4 z3)))) True) (x = z4))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 618-622:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (_most (fun z3 => (and (exists z2, (and (and (and (_report z2) (exists z1, (and (and (z1 = _smith) True) (_need _smith z2)))) True) (_of z3 z2))) True)) (fun y => (_send _itel y))))) -> (exists x, (and True (exists z1, (and (and (_desk z1) True) (_on x z1))))) -> (exists x z4, (and (and (and (and (_report z4) (exists z1, (and (and (z1 = _itel) True) (_from z4 _itel)))) (exists z3, (and (and (and (exists z2, (and (and (z2 = _smith) True) (Rel z3 _smith))) (_desk z3)) True) (_on z4 z3)))) True) (x = z4))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _desk is declared
+
+Coq < _from is declared
+
+Coq < _have is declared
+
+Coq < _itel is declared
+
+Coq < _most is declared
+
+Coq < _need is declared
+
+Coq < _of is declared
+
+Coq < _on is declared
+
+Coq < _report is declared
+
+Coq < _send is declared
+
+Coq < _smith is declared
+
+Coq < Toplevel input, characters 79-222:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (_most (fun z3 => (and (exists z2, (and (and (and (_report z2) (exists z1, (and (and (z1 = _smith) True) (_need _smith z2)))) True) (_of z3 z2))) True)) (fun y => (_send _itel y))))) -> (exists x, (and True (exists z1, (and (and (_desk z1) True) (_on x z1))))) -> (exists x z4, (and (and (and (and (_report z4) (exists z1, (and (and (z1 = _itel) True) (_from z4 _itel)))) (exists z3, (and (and (and (exists z2, (and (and (z2 = _smith) True) (Rel z3 _smith))) (_desk z3)) True) (_on z4 z3)))) True) (x = z4))).
+>                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The type of this term is a product while it is expected to be Entity.
+
+Toplevel input, characters 581-586:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (_most (fun z3 => (and (exists z2, (and (and (and (_report z2) (exists z1, (and (and (z1 = _smith) True) (_need _smith z2)))) True) (_of z3 z2))) True)) (fun y => (_send _itel y))))) -> (exists x, (and True (exists z1, (and (and (_desk z1) True) (_on x z1))))) -> (exists x z4, (and (and (and (and (_report z4) (exists z1, (and (and (z1 = _itel) True) (_from z4 _itel)))) (exists z3, (and (and (and (exists z2, (and (and (z2 = _smith) True) (Rel z3 _smith))) (_desk z3)) True) (_on z4 z3)))) True) (x = z4))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 588-592:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (_most (fun z3 => (and (exists z2, (and (and (and (_report z2) (exists z1, (and (and (z1 = _smith) True) (_need _smith z2)))) True) (_of z3 z2))) True)) (fun y => (_send _itel y))))) -> (exists x, (and True (exists z1, (and (and (_desk z1) True) (_on x z1))))) -> (exists x z4, (and (and (and (and (_report z4) (exists z1, (and (and (z1 = _itel) True) (_from z4 _itel)))) (exists z3, (and (and (and (exists z2, (and (and (z2 = _smith) True) (Rel z3 _smith))) (_desk z3)) True) (_on z4 z3)))) True) (x = z4))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _desk is declared
+
+Coq < _from is declared
+
+Coq < _have is declared
+
+Coq < _itel is declared
+
+Coq < _most is declared
+
+Coq < _need is declared
+
+Coq < _of is declared
+
+Coq < _on is declared
+
+Coq < _report is declared
+
+Coq < _send is declared
+
+Coq < _smith is declared
+
+Coq < Toplevel input, characters 79-222:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (_most (fun z3 => (and (exists z2, (and (and (and (_report z2) (exists z1, (and (and (z1 = _smith) True) (_need _smith z2)))) True) (_of z3 z2))) True)) (fun y => (_send _itel y))))) -> (exists x, (and True (exists z1, (and (and (_desk z1) True) (_on x z1))))) -> (not (exists x z4, (and (and (and (and (_report z4) (exists z1, (and (and (z1 = _itel) True) (_from z4 _itel)))) (exists z3, (and (and (and (exists z2, (and (and (z2 = _smith) True) (Rel z3 _smith))) (_desk z3)) True) (_on z4 z3)))) True) (x = z4)))).
+>                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The type of this term is a product while it is expected to be Entity.
+
+Toplevel input, characters 587-593:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (_most (fun z3 => (and (exists z2, (and (and (and (_report z2) (exists z1, (and (and (z1 = _smith) True) (_need _smith z2)))) True) (_of z3 z2))) True)) (fun y => (_send _itel y))))) -> (exists x, (and True (exists z1, (and (and (_desk z1) True) (_on x z1))))) -> (not (exists x z4, (and (and (and (and (_report z4) (exists z1, (and (and (z1 = _itel) True) (_from z4 _itel)))) (exists z3, (and (and (and (exists z2, (and (and (z2 = _smith) True) (Rel z3 _smith))) (_desk z3)) True) (_on z4 z3)))) True) (x = z4)))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 606-609:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (_most (fun z3 => (and (exists z2, (and (and (and (_report z2) (exists z1, (and (and (z1 = _smith) True) (_need _smith z2)))) True) (_of z3 z2))) True)) (fun y => (_send _itel y))))) -> (exists x, (and True (exists z1, (and (and (_desk z1) True) (_on x z1))))) -> (not (exists x z4, (and (and (and (and (_report z4) (exists z1, (and (and (z1 = _itel) True) (_from z4 _itel)))) (exists z3, (and (and (and (exists z2, (and (and (z2 = _smith) True) (Rel z3 _smith))) (_desk z3)) True) (_on z4 z3)))) True) (x = z4)))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 624-628:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (_most (fun z3 => (and (exists z2, (and (and (and (_report z2) (exists z1, (and (and (z1 = _smith) True) (_need _smith z2)))) True) (_of z3 z2))) True)) (fun y => (_send _itel y))))) -> (exists x, (and True (exists z1, (and (and (_desk z1) True) (_on x z1))))) -> (not (exists x z4, (and (and (and (and (_report z4) (exists z1, (and (and (z1 = _itel) True) (_from z4 _itel)))) (exists z3, (and (and (and (exists z2, (and (and (z2 = _smith) True) (Rel z3 _smith))) (_desk z3)) True) (_on z4 z3)))) True) (x = z4)))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _desk is declared
+
+Coq < _from is declared
+
+Coq < _have is declared
+
+Coq < _itel is declared
+
+Coq < _most is declared
+
+Coq < _need is declared
+
+Coq < _of is declared
+
+Coq < _on is declared
+
+Coq < _report is declared
+
+Coq < _send is declared
+
+Coq < _smith is declared
+
+Coq < Toplevel input, characters 79-222:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (_most (fun z3 => (and (exists z2, (and (and (and (_report z2) (exists z1, (and (and (z1 = _smith) True) (_need _smith z2)))) True) (_of z3 z2))) True)) (fun y => (_send _itel y))))) -> (exists x, (and True (exists z1, (and (and (_desk z1) True) (_on x z1))))) -> (not (exists x z4, (and (and (and (and (_report z4) (exists z1, (and (and (z1 = _itel) True) (_from z4 _itel)))) (exists z3, (and (and (and (exists z2, (and (and (z2 = _smith) True) (Rel z3 _smith))) (_desk z3)) True) (_on z4 z3)))) True) (x = z4)))).
+>                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The type of this term is a product while it is expected to be Entity.
+
+Toplevel input, characters 587-592:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (_most (fun z3 => (and (exists z2, (and (and (and (_report z2) (exists z1, (and (and (z1 = _smith) True) (_need _smith z2)))) True) (_of z3 z2))) True)) (fun y => (_send _itel y))))) -> (exists x, (and True (exists z1, (and (and (_desk z1) True) (_on x z1))))) -> (not (exists x z4, (and (and (and (and (_report z4) (exists z1, (and (and (z1 = _itel) True) (_from z4 _itel)))) (exists z3, (and (and (and (exists z2, (and (and (z2 = _smith) True) (Rel z3 _smith))) (_desk z3)) True) (_on z4 z3)))) True) (x = z4)))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 594-598:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (_most (fun z3 => (and (exists z2, (and (and (and (_report z2) (exists z1, (and (and (z1 = _smith) True) (_need _smith z2)))) True) (_of z3 z2))) True)) (fun y => (_send _itel y))))) -> (exists x, (and True (exists z1, (and (and (_desk z1) True) (_on x z1))))) -> (not (exists x z4, (and (and (and (and (_report z4) (exists z1, (and (and (z1 = _itel) True) (_from z4 _itel)))) (exists z3, (and (and (and (exists z2, (and (and (z2 = _smith) True) (Rel z3 _smith))) (_desk z3)) True) (_on z4 z3)))) True) (x = z4)))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _desk is declared
+
+Coq < _from is declared
+
+Coq < _have is declared
+
+Coq < _itel is declared
+
+Coq < _most is declared
+
+Coq < _need is declared
+
+Coq < _of is declared
+
+Coq < _on is declared
+
+Coq < _report is declared
+
+Coq < _send is declared
+
+Coq < _smith is declared
+
+Coq < Toplevel input, characters 79-222:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (_most (fun z3 => (and (exists z2, (and (and (and (_report z2) (exists z1, (and (and (z1 = _smith) True) (_need _smith z2)))) True) (_of z3 z2))) True)) (fun y => (_send _itel y))))) -> (exists x, (and True (exists z1, (and (and (_desk z1) True) (_on x z1))))) -> (exists x z4, (and (and (and (and (_report z4) (exists z1, (and (and (z1 = _itel) True) (_from z4 _itel)))) (exists z3, (and (and (and (exists z2, (and (and (z2 = _smith) True) (Rel z3 _smith))) (_desk z3)) True) (_on z4 z3)))) True) (x = z4))).
+>                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The type of this term is a product while it is expected to be Entity.
+
+Toplevel input, characters 581-587:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (_most (fun z3 => (and (exists z2, (and (and (and (_report z2) (exists z1, (and (and (z1 = _smith) True) (_need _smith z2)))) True) (_of z3 z2))) True)) (fun y => (_send _itel y))))) -> (exists x, (and True (exists z1, (and (and (_desk z1) True) (_on x z1))))) -> (exists x z4, (and (and (and (and (_report z4) (exists z1, (and (and (z1 = _itel) True) (_from z4 _itel)))) (exists z3, (and (and (and (exists z2, (and (and (z2 = _smith) True) (Rel z3 _smith))) (_desk z3)) True) (_on z4 z3)))) True) (x = z4))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 600-603:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (_most (fun z3 => (and (exists z2, (and (and (and (_report z2) (exists z1, (and (and (z1 = _smith) True) (_need _smith z2)))) True) (_of z3 z2))) True)) (fun y => (_send _itel y))))) -> (exists x, (and True (exists z1, (and (and (_desk z1) True) (_on x z1))))) -> (exists x z4, (and (and (and (and (_report z4) (exists z1, (and (and (z1 = _itel) True) (_from z4 _itel)))) (exists z3, (and (and (and (exists z2, (and (and (z2 = _smith) True) (Rel z3 _smith))) (_desk z3)) True) (_on z4 z3)))) True) (x = z4))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 618-622:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (_most (fun z3 => (and (exists z2, (and (and (and (_report z2) (exists z1, (and (and (z1 = _smith) True) (_need _smith z2)))) True) (_of z3 z2))) True)) (fun y => (_send _itel y))))) -> (exists x, (and True (exists z1, (and (and (_desk z1) True) (_on x z1))))) -> (exists x z4, (and (and (and (and (_report z4) (exists z1, (and (and (z1 = _itel) True) (_from z4 _itel)))) (exists z3, (and (and (and (exists z2, (and (and (z2 = _smith) True) (Rel z3 _smith))) (_desk z3)) True) (_on z4 z3)))) True) (x = z4))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _desk is declared
+
+Coq < _from is declared
+
+Coq < _have is declared
+
+Coq < _itel is declared
+
+Coq < _most is declared
+
+Coq < _need is declared
+
+Coq < _of is declared
+
+Coq < _on is declared
+
+Coq < _report is declared
+
+Coq < _send is declared
+
+Coq < _smith is declared
+
+Coq < Toplevel input, characters 79-222:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (_most (fun z3 => (and (exists z2, (and (and (and (_report z2) (exists z1, (and (and (z1 = _smith) True) (_need _smith z2)))) True) (_of z3 z2))) True)) (fun y => (_send _itel y))))) -> (exists x, (and True (exists z1, (and (and (_desk z1) True) (_on x z1))))) -> (not (exists x z4, (and (and (and (and (_report z4) (exists z1, (and (and (z1 = _itel) True) (_from z4 _itel)))) (exists z3, (and (and (and (exists z2, (and (and (z2 = _smith) True) (Rel z3 _smith))) (_desk z3)) True) (_on z4 z3)))) True) (x = z4)))).
+>                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The type of this term is a product while it is expected to be Entity.
+
+Toplevel input, characters 587-593:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (_most (fun z3 => (and (exists z2, (and (and (and (_report z2) (exists z1, (and (and (z1 = _smith) True) (_need _smith z2)))) True) (_of z3 z2))) True)) (fun y => (_send _itel y))))) -> (exists x, (and True (exists z1, (and (and (_desk z1) True) (_on x z1))))) -> (not (exists x z4, (and (and (and (and (_report z4) (exists z1, (and (and (z1 = _itel) True) (_from z4 _itel)))) (exists z3, (and (and (and (exists z2, (and (and (z2 = _smith) True) (Rel z3 _smith))) (_desk z3)) True) (_on z4 z3)))) True) (x = z4)))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 606-609:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (_most (fun z3 => (and (exists z2, (and (and (and (_report z2) (exists z1, (and (and (z1 = _smith) True) (_need _smith z2)))) True) (_of z3 z2))) True)) (fun y => (_send _itel y))))) -> (exists x, (and True (exists z1, (and (and (_desk z1) True) (_on x z1))))) -> (not (exists x z4, (and (and (and (and (_report z4) (exists z1, (and (and (z1 = _itel) True) (_from z4 _itel)))) (exists z3, (and (and (and (exists z2, (and (and (z2 = _smith) True) (Rel z3 _smith))) (_desk z3)) True) (_on z4 z3)))) True) (x = z4)))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 624-628:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (_most (fun z3 => (and (exists z2, (and (and (and (_report z2) (exists z1, (and (and (z1 = _smith) True) (_need _smith z2)))) True) (_of z3 z2))) True)) (fun y => (_send _itel y))))) -> (exists x, (and True (exists z1, (and (and (_desk z1) True) (_on x z1))))) -> (not (exists x z4, (and (and (and (and (_report z4) (exists z1, (and (and (z1 = _itel) True) (_from z4 _itel)))) (exists z3, (and (and (and (exists z2, (and (and (z2 = _smith) True) (Rel z3 _smith))) (_desk z3)) True) (_on z4 z3)))) True) (x = z4)))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _desk is declared
+
+Coq < _from is declared
+
+Coq < _have is declared
+
+Coq < _itel is declared
+
+Coq < _most is declared
+
+Coq < _need is declared
+
+Coq < _of is declared
+
+Coq < _on is declared
+
+Coq < _report is declared
+
+Coq < _send is declared
+
+Coq < _smith is declared
+
+Coq < Toplevel input, characters 79-222:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (_most (fun z3 => (and (exists z2, (and (and (and (_report z2) (exists z1, (and (and (z1 = _smith) True) (_need _smith z2)))) True) (_of z3 z2))) True)) (fun y => (_send _itel y))))) -> (exists x, (and True (exists z1, (and (and (_desk z1) True) (_on x z1))))) -> (exists x z4, (and (and (and (and (_report z4) (exists z1, (and (and (z1 = _itel) True) (_from z4 _itel)))) (exists z3, (and (and (and (exists z2, (and (and (z2 = _smith) True) (Rel z3 _smith))) (_desk z3)) True) (_on z4 z3)))) True) (x = z4))).
+>                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The type of this term is a product while it is expected to be Entity.
+
+Toplevel input, characters 581-587:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (_most (fun z3 => (and (exists z2, (and (and (and (_report z2) (exists z1, (and (and (z1 = _smith) True) (_need _smith z2)))) True) (_of z3 z2))) True)) (fun y => (_send _itel y))))) -> (exists x, (and True (exists z1, (and (and (_desk z1) True) (_on x z1))))) -> (exists x z4, (and (and (and (and (_report z4) (exists z1, (and (and (z1 = _itel) True) (_from z4 _itel)))) (exists z3, (and (and (and (exists z2, (and (and (z2 = _smith) True) (Rel z3 _smith))) (_desk z3)) True) (_on z4 z3)))) True) (x = z4))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 600-603:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (_most (fun z3 => (and (exists z2, (and (and (and (_report z2) (exists z1, (and (and (z1 = _smith) True) (_need _smith z2)))) True) (_of z3 z2))) True)) (fun y => (_send _itel y))))) -> (exists x, (and True (exists z1, (and (and (_desk z1) True) (_on x z1))))) -> (exists x z4, (and (and (and (and (_report z4) (exists z1, (and (and (z1 = _itel) True) (_from z4 _itel)))) (exists z3, (and (and (and (exists z2, (and (and (z2 = _smith) True) (Rel z3 _smith))) (_desk z3)) True) (_on z4 z3)))) True) (x = z4))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 618-622:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (_most (fun z3 => (and (exists z2, (and (and (and (_report z2) (exists z1, (and (and (z1 = _smith) True) (_need _smith z2)))) True) (_of z3 z2))) True)) (fun y => (_send _itel y))))) -> (exists x, (and True (exists z1, (and (and (_desk z1) True) (_on x z1))))) -> (exists x z4, (and (and (and (and (_report z4) (exists z1, (and (and (z1 = _itel) True) (_from z4 _itel)))) (exists z3, (and (and (and (exists z2, (and (and (z2 = _smith) True) (Rel z3 _smith))) (_desk z3)) True) (_on z4 z3)))) True) (x = z4))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _desk is declared
+
+Coq < _from is declared
+
+Coq < _have is declared
+
+Coq < _itel is declared
+
+Coq < _most is declared
+
+Coq < _need is declared
+
+Coq < _of is declared
+
+Coq < _on is declared
+
+Coq < _report is declared
+
+Coq < _send is declared
+
+Coq < _smith is declared
+
+Coq < Toplevel input, characters 79-222:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (_most (fun z3 => (and (exists z2, (and (and (and (_report z2) (exists z1, (and (and (z1 = _smith) True) (_need _smith z2)))) True) (_of z3 z2))) True)) (fun y => (_send _itel y))))) -> (exists x, (and True (exists z1, (and (and (_desk z1) True) (_on x z1))))) -> (not (exists x z4, (and (and (and (and (_report z4) (exists z1, (and (and (z1 = _itel) True) (_from z4 _itel)))) (exists z3, (and (and (and (exists z2, (and (and (z2 = _smith) True) (Rel z3 _smith))) (_desk z3)) True) (_on z4 z3)))) True) (x = z4)))).
+>                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The type of this term is a product while it is expected to be Entity.
+
+Toplevel input, characters 587-593:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (_most (fun z3 => (and (exists z2, (and (and (and (_report z2) (exists z1, (and (and (z1 = _smith) True) (_need _smith z2)))) True) (_of z3 z2))) True)) (fun y => (_send _itel y))))) -> (exists x, (and True (exists z1, (and (and (_desk z1) True) (_on x z1))))) -> (not (exists x z4, (and (and (and (and (_report z4) (exists z1, (and (and (z1 = _itel) True) (_from z4 _itel)))) (exists z3, (and (and (and (exists z2, (and (and (z2 = _smith) True) (Rel z3 _smith))) (_desk z3)) True) (_on z4 z3)))) True) (x = z4)))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 606-609:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (_most (fun z3 => (and (exists z2, (and (and (and (_report z2) (exists z1, (and (and (z1 = _smith) True) (_need _smith z2)))) True) (_of z3 z2))) True)) (fun y => (_send _itel y))))) -> (exists x, (and True (exists z1, (and (and (_desk z1) True) (_on x z1))))) -> (not (exists x z4, (and (and (and (and (_report z4) (exists z1, (and (and (z1 = _itel) True) (_from z4 _itel)))) (exists z3, (and (and (and (exists z2, (and (and (z2 = _smith) True) (Rel z3 _smith))) (_desk z3)) True) (_on z4 z3)))) True) (x = z4)))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 624-628:
+> Theorem t1: (exists x, (and (and (and (x = _itel) True) (_have _itel)) (_most (fun z3 => (and (exists z2, (and (and (and (_report z2) (exists z1, (and (and (z1 = _smith) True) (_need _smith z2)))) True) (_of z3 z2))) True)) (fun y => (_send _itel y))))) -> (exists x, (and True (exists z1, (and (and (_desk z1) True) (_on x z1))))) -> (not (exists x z4, (and (and (and (and (_report z4) (exists z1, (and (and (z1 = _itel) True) (_from z4 _itel)))) (exists z3, (and (and (and (exists z2, (and (and (z2 = _smith) True) (Rel z3 _smith))) (_desk z3)) True) (_on z4 z3)))) True) (x = z4)))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+unknown
+

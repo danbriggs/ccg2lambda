@@ -1,0 +1,422 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1994 is declared
+
+Coq < _in is declared
+
+Coq < _in_e3 is declared
+
+Coq < _itel is declared
+
+Coq < _july is declared
+
+Coq < _month is declared
+
+Coq < _progress is declared
+
+Coq < _report is declared
+
+Coq < _send is declared
+
+Coq < Toplevel input, characters 75-219:
+> Theorem t1: (and (_in (exists x, (and (and (_1994 x) True) True)) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) -> (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (and (_1994 z2) (_july z2)) True) (_in_e3 _itel z2)) (exists z3, (and (and (_report z3) True) (exists z1, (and (and (_progress z1) True) (_send _itel z3 z1))))))))).
+>                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The type of this term is a product while it is expected to be Entity.
+
+Toplevel input, characters 761-766:
+> Theorem t1: (and (_in (exists x, (and (and (_1994 x) True) True)) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) -> (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (and (_1994 z2) (_july z2)) True) (_in_e3 _itel z2)) (exists z3, (and (and (_report z3) True) (exists z1, (and (and (_progress z1) True) (_send _itel z3 z1))))))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 768-772:
+> Theorem t1: (and (_in (exists x, (and (and (_1994 x) True) True)) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) -> (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (and (_1994 z2) (_july z2)) True) (_in_e3 _itel z2)) (exists z3, (and (and (_report z3) True) (exists z1, (and (and (_progress z1) True) (_send _itel z3 z1))))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1994 is declared
+
+Coq < _in is declared
+
+Coq < _in_e3 is declared
+
+Coq < _itel is declared
+
+Coq < _july is declared
+
+Coq < _month is declared
+
+Coq < _progress is declared
+
+Coq < _report is declared
+
+Coq < _send is declared
+
+Coq < Toplevel input, characters 75-219:
+> Theorem t1: (and (_in (exists x, (and (and (_1994 x) True) True)) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) -> (not (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (and (_1994 z2) (_july z2)) True) (_in_e3 _itel z2)) (exists z3, (and (and (_report z3) True) (exists z1, (and (and (_progress z1) True) (_send _itel z3 z1)))))))))).
+>                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The type of this term is a product while it is expected to be Entity.
+
+Toplevel input, characters 767-772:
+> Theorem t1: (and (_in (exists x, (and (and (_1994 x) True) True)) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) -> (not (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (and (_1994 z2) (_july z2)) True) (_in_e3 _itel z2)) (exists z3, (and (and (_report z3) True) (exists z1, (and (and (_progress z1) True) (_send _itel z3 z1)))))))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 774-778:
+> Theorem t1: (and (_in (exists x, (and (and (_1994 x) True) True)) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) -> (not (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (and (_1994 z2) (_july z2)) True) (_in_e3 _itel z2)) (exists z3, (and (and (_report z3) True) (exists z1, (and (and (_progress z1) True) (_send _itel z3 z1)))))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1994 is declared
+
+Coq < _in is declared
+
+Coq < _in_e3 is declared
+
+Coq < _itel is declared
+
+Coq < _july is declared
+
+Coq < _month is declared
+
+Coq < _progress is declared
+
+Coq < _report is declared
+
+Coq < _send is declared
+
+Coq < Toplevel input, characters 75-219:
+> Theorem t1: (and (_in (exists x, (and (and (_1994 x) True) True)) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) -> (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (and (_1994 z2) (_july z2)) True) (_in_e3 _itel z2)) (exists z3, (and (and (_report z3) True) (exists z1, (and (and (_progress z1) True) (_send _itel z3 z1))))))))).
+>                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The type of this term is a product while it is expected to be Entity.
+
+Toplevel input, characters 761-767:
+> Theorem t1: (and (_in (exists x, (and (and (_1994 x) True) True)) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) -> (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (and (_1994 z2) (_july z2)) True) (_in_e3 _itel z2)) (exists z3, (and (and (_report z3) True) (exists z1, (and (and (_progress z1) True) (_send _itel z3 z1))))))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 780-783:
+> Theorem t1: (and (_in (exists x, (and (and (_1994 x) True) True)) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) -> (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (and (_1994 z2) (_july z2)) True) (_in_e3 _itel z2)) (exists z3, (and (and (_report z3) True) (exists z1, (and (and (_progress z1) True) (_send _itel z3 z1))))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 798-802:
+> Theorem t1: (and (_in (exists x, (and (and (_1994 x) True) True)) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) -> (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (and (_1994 z2) (_july z2)) True) (_in_e3 _itel z2)) (exists z3, (and (and (_report z3) True) (exists z1, (and (and (_progress z1) True) (_send _itel z3 z1))))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1994 is declared
+
+Coq < _in is declared
+
+Coq < _in_e3 is declared
+
+Coq < _itel is declared
+
+Coq < _july is declared
+
+Coq < _month is declared
+
+Coq < _progress is declared
+
+Coq < _report is declared
+
+Coq < _send is declared
+
+Coq < Toplevel input, characters 75-219:
+> Theorem t1: (and (_in (exists x, (and (and (_1994 x) True) True)) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) -> (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (and (_1994 z2) (_july z2)) True) (_in_e3 _itel z2)) (exists z3, (and (and (_report z3) True) (exists z1, (and (and (_progress z1) True) (_send _itel z3 z1))))))))).
+>                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The type of this term is a product while it is expected to be Entity.
+
+Toplevel input, characters 761-766:
+> Theorem t1: (and (_in (exists x, (and (and (_1994 x) True) True)) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) -> (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (and (_1994 z2) (_july z2)) True) (_in_e3 _itel z2)) (exists z3, (and (and (_report z3) True) (exists z1, (and (and (_progress z1) True) (_send _itel z3 z1))))))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 768-772:
+> Theorem t1: (and (_in (exists x, (and (and (_1994 x) True) True)) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) -> (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (and (_1994 z2) (_july z2)) True) (_in_e3 _itel z2)) (exists z3, (and (and (_report z3) True) (exists z1, (and (and (_progress z1) True) (_send _itel z3 z1))))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1994 is declared
+
+Coq < _in is declared
+
+Coq < _in_e3 is declared
+
+Coq < _itel is declared
+
+Coq < _july is declared
+
+Coq < _month is declared
+
+Coq < _progress is declared
+
+Coq < _report is declared
+
+Coq < _send is declared
+
+Coq < Toplevel input, characters 75-219:
+> Theorem t1: (and (_in (exists x, (and (and (_1994 x) True) True)) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) -> (not (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (and (_1994 z2) (_july z2)) True) (_in_e3 _itel z2)) (exists z3, (and (and (_report z3) True) (exists z1, (and (and (_progress z1) True) (_send _itel z3 z1)))))))))).
+>                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The type of this term is a product while it is expected to be Entity.
+
+Toplevel input, characters 767-773:
+> Theorem t1: (and (_in (exists x, (and (and (_1994 x) True) True)) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) -> (not (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (and (_1994 z2) (_july z2)) True) (_in_e3 _itel z2)) (exists z3, (and (and (_report z3) True) (exists z1, (and (and (_progress z1) True) (_send _itel z3 z1)))))))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 786-789:
+> Theorem t1: (and (_in (exists x, (and (and (_1994 x) True) True)) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) -> (not (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (and (_1994 z2) (_july z2)) True) (_in_e3 _itel z2)) (exists z3, (and (and (_report z3) True) (exists z1, (and (and (_progress z1) True) (_send _itel z3 z1)))))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 804-808:
+> Theorem t1: (and (_in (exists x, (and (and (_1994 x) True) True)) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) -> (not (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (and (_1994 z2) (_july z2)) True) (_in_e3 _itel z2)) (exists z3, (and (and (_report z3) True) (exists z1, (and (and (_progress z1) True) (_send _itel z3 z1)))))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1994 is declared
+
+Coq < _in is declared
+
+Coq < _in_e3 is declared
+
+Coq < _itel is declared
+
+Coq < _july is declared
+
+Coq < _month is declared
+
+Coq < _progress is declared
+
+Coq < _report is declared
+
+Coq < _send is declared
+
+Coq < Toplevel input, characters 75-219:
+> Theorem t1: (and (_in (exists x, (and (and (_1994 x) True) True)) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) -> (not (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (and (_1994 z2) (_july z2)) True) (_in_e3 _itel z2)) (exists z3, (and (and (_report z3) True) (exists z1, (and (and (_progress z1) True) (_send _itel z3 z1)))))))))).
+>                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The type of this term is a product while it is expected to be Entity.
+
+Toplevel input, characters 767-772:
+> Theorem t1: (and (_in (exists x, (and (and (_1994 x) True) True)) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) -> (not (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (and (_1994 z2) (_july z2)) True) (_in_e3 _itel z2)) (exists z3, (and (and (_report z3) True) (exists z1, (and (and (_progress z1) True) (_send _itel z3 z1)))))))))). nltac.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 774-778:
+> Theorem t1: (and (_in (exists x, (and (and (_1994 x) True) True)) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) -> (not (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (and (_1994 z2) (_july z2)) True) (_in_e3 _itel z2)) (exists z3, (and (and (_report z3) True) (exists z1, (and (and (_progress z1) True) (_send _itel z3 z1)))))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1994 is declared
+
+Coq < _in is declared
+
+Coq < _in_e3 is declared
+
+Coq < _itel is declared
+
+Coq < _july is declared
+
+Coq < _month is declared
+
+Coq < _progress is declared
+
+Coq < _report is declared
+
+Coq < _send is declared
+
+Coq < Toplevel input, characters 75-219:
+> Theorem t1: (and (_in (exists x, (and (and (_1994 x) True) True)) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) -> (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (and (_1994 z2) (_july z2)) True) (_in_e3 _itel z2)) (exists z3, (and (and (_report z3) True) (exists z1, (and (and (_progress z1) True) (_send _itel z3 z1))))))))).
+>                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The type of this term is a product while it is expected to be Entity.
+
+Toplevel input, characters 761-767:
+> Theorem t1: (and (_in (exists x, (and (and (_1994 x) True) True)) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) -> (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (and (_1994 z2) (_july z2)) True) (_in_e3 _itel z2)) (exists z3, (and (and (_report z3) True) (exists z1, (and (and (_progress z1) True) (_send _itel z3 z1))))))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 780-783:
+> Theorem t1: (and (_in (exists x, (and (and (_1994 x) True) True)) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) -> (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (and (_1994 z2) (_july z2)) True) (_in_e3 _itel z2)) (exists z3, (and (and (_report z3) True) (exists z1, (and (and (_progress z1) True) (_send _itel z3 z1))))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 798-802:
+> Theorem t1: (and (_in (exists x, (and (and (_1994 x) True) True)) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) -> (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (and (_1994 z2) (_july z2)) True) (_in_e3 _itel z2)) (exists z3, (and (and (_report z3) True) (exists z1, (and (and (_progress z1) True) (_send _itel z3 z1))))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1994 is declared
+
+Coq < _in is declared
+
+Coq < _in_e3 is declared
+
+Coq < _itel is declared
+
+Coq < _july is declared
+
+Coq < _month is declared
+
+Coq < _progress is declared
+
+Coq < _report is declared
+
+Coq < _send is declared
+
+Coq < Toplevel input, characters 75-219:
+> Theorem t1: (and (_in (exists x, (and (and (_1994 x) True) True)) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) -> (not (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (and (_1994 z2) (_july z2)) True) (_in_e3 _itel z2)) (exists z3, (and (and (_report z3) True) (exists z1, (and (and (_progress z1) True) (_send _itel z3 z1)))))))))).
+>                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The type of this term is a product while it is expected to be Entity.
+
+Toplevel input, characters 767-773:
+> Theorem t1: (and (_in (exists x, (and (and (_1994 x) True) True)) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) -> (not (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (and (_1994 z2) (_july z2)) True) (_in_e3 _itel z2)) (exists z3, (and (and (_report z3) True) (exists z1, (and (and (_progress z1) True) (_send _itel z3 z1)))))))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 786-789:
+> Theorem t1: (and (_in (exists x, (and (and (_1994 x) True) True)) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) -> (not (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (and (_1994 z2) (_july z2)) True) (_in_e3 _itel z2)) (exists z3, (and (and (_report z3) True) (exists z1, (and (and (_progress z1) True) (_send _itel z3 z1)))))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 804-808:
+> Theorem t1: (and (_in (exists x, (and (and (_1994 x) True) True)) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) -> (not (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (and (_1994 z2) (_july z2)) True) (_in_e3 _itel z2)) (exists z3, (and (and (_report z3) True) (exists z1, (and (and (_progress z1) True) (_send _itel z3 z1)))))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1994 is declared
+
+Coq < _in is declared
+
+Coq < _in_e3 is declared
+
+Coq < _itel is declared
+
+Coq < _july is declared
+
+Coq < _month is declared
+
+Coq < _progress is declared
+
+Coq < _report is declared
+
+Coq < _send is declared
+
+Coq < Toplevel input, characters 75-219:
+> Theorem t1: (and (_in (exists x, (and (and (_1994 x) True) True)) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) -> (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (and (_1994 z2) (_july z2)) True) (_in_e3 _itel z2)) (exists z3, (and (and (_report z3) True) (exists z1, (and (and (_progress z1) True) (_send _itel z3 z1))))))))).
+>                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The type of this term is a product while it is expected to be Entity.
+
+Toplevel input, characters 761-767:
+> Theorem t1: (and (_in (exists x, (and (and (_1994 x) True) True)) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) -> (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (and (_1994 z2) (_july z2)) True) (_in_e3 _itel z2)) (exists z3, (and (and (_report z3) True) (exists z1, (and (and (_progress z1) True) (_send _itel z3 z1))))))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 780-783:
+> Theorem t1: (and (_in (exists x, (and (and (_1994 x) True) True)) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) -> (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (and (_1994 z2) (_july z2)) True) (_in_e3 _itel z2)) (exists z3, (and (and (_report z3) True) (exists z1, (and (and (_progress z1) True) (_send _itel z3 z1))))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 798-802:
+> Theorem t1: (and (_in (exists x, (and (and (_1994 x) True) True)) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) -> (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (and (_1994 z2) (_july z2)) True) (_in_e3 _itel z2)) (exists z3, (and (and (_report z3) True) (exists z1, (and (and (_progress z1) True) (_send _itel z3 z1))))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _1994 is declared
+
+Coq < _in is declared
+
+Coq < _in_e3 is declared
+
+Coq < _itel is declared
+
+Coq < _july is declared
+
+Coq < _month is declared
+
+Coq < _progress is declared
+
+Coq < _report is declared
+
+Coq < _send is declared
+
+Coq < Toplevel input, characters 75-219:
+> Theorem t1: (and (_in (exists x, (and (and (_1994 x) True) True)) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) -> (not (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (and (_1994 z2) (_july z2)) True) (_in_e3 _itel z2)) (exists z3, (and (and (_report z3) True) (exists z1, (and (and (_progress z1) True) (_send _itel z3 z1)))))))))).
+>                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The type of this term is a product while it is expected to be Entity.
+
+Toplevel input, characters 767-773:
+> Theorem t1: (and (_in (exists x, (and (and (_1994 x) True) True)) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) -> (not (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (and (_1994 z2) (_july z2)) True) (_in_e3 _itel z2)) (exists z3, (and (and (_report z3) True) (exists z1, (and (and (_progress z1) True) (_send _itel z3 z1)))))))))). repeat nltac_base.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 786-789:
+> Theorem t1: (and (_in (exists x, (and (and (_1994 x) True) True)) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) -> (not (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (and (_1994 z2) (_july z2)) True) (_in_e3 _itel z2)) (exists z3, (and (and (_report z3) True) (exists z1, (and (and (_progress z1) True) (_send _itel z3 z1)))))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^
+Error: Syntax error: illegal begin of toplevel:vernac_toplevel.
+
+Toplevel input, characters 804-808:
+> Theorem t1: (and (_in (exists x, (and (and (_1994 x) True) True)) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) (_month (fun Q3 => (Q3 (fun w => True) (fun x1 => (exists x, (and (and (_report x) True) (exists z1, (and (and (_progress z1) True) (_send x1 x z1)))))))) (fun F1 F2 => (exists x, (and (and (x = _itel) (F1 _itel)) (F2 _itel)))))) -> (not (exists x, (and (and (x = _itel) True) (exists z2, (and (and (and (and (_1994 z2) (_july z2)) True) (_in_e3 _itel z2)) (exists z3, (and (and (_report z3) True) (exists z1, (and (and (_progress z1) True) (_send _itel z3 z1)))))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^^^^
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined!
+unknown
+

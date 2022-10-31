@@ -1,0 +1,709 @@
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _employ is declared
+
+Coq < _ever is declared
+
+Coq < _graduate is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _jones is declared
+
+Coq < _march is declared
+
+Coq < _past is declared
+
+Coq < _since is declared
+
+Coq < _time is declared
+
+Coq < _unemploy is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((((x = _jones /\ True) /\ _have _jones) /\ _since _jones) /\
+_ever _jones) /\ _employ _jones) /\
+(exists z1 : Entity,
+((z1 = _march /\ True) /\ _in _jones _march) /\ _graduate _jones)) ->
+(exists x : Entity,
+((x = _jones /\ True) /\ _have _jones) /\
+(exists z1 : Entity,
+((_past z1 /\ True) /\ _in _jones z1) /\ _unemploy _jones)) ->
+exists x : Entity,
+(x = _jones /\ True) /\
+_before (exists z3 : Entity, True /\ _graduate z3)
+(exists z1 : Entity,
+((_time z1 /\ True) /\ _at _jones z1) /\ _unemploy _jones)
+
+
+Toplevel input, characters 562-566:
+> Theorem t1: (exists x, (and (and (and (and (and (and (x = _jones) True) (_have _jones)) (_since _jones)) (_ever _jones)) (_employ _jones)) (exists z1, (and (and (and (z1 = _march) True) (_in _jones _march)) (_graduate _jones))))) -> (exists x, (and (and (and (x = _jones) True) (_have _jones)) (exists z1, (and (and (and (_past z1) True) (_in _jones z1)) (_unemploy _jones))))) -> (exists x, (and (and (x = _jones) True) (_before (exists z3, (and True (_graduate z3))) (exists z1, (and (and (and (_time z1) True) (_at _jones z1)) (_unemploy _jones)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _employ is declared
+
+Coq < _ever is declared
+
+Coq < _graduate is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _jones is declared
+
+Coq < _march is declared
+
+Coq < _past is declared
+
+Coq < _since is declared
+
+Coq < _time is declared
+
+Coq < _unemploy is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((((x = _jones /\ True) /\ _have _jones) /\ _since _jones) /\
+_ever _jones) /\ _employ _jones) /\
+(exists z1 : Entity,
+((z1 = _march /\ True) /\ _in _jones _march) /\ _graduate _jones)) ->
+(exists x : Entity,
+((x = _jones /\ True) /\ _have _jones) /\
+(exists z1 : Entity,
+((_past z1 /\ True) /\ _in _jones z1) /\ _unemploy _jones)) ->
+~
+(exists x : Entity,
+(x = _jones /\ True) /\
+_before (exists z3 : Entity, True /\ _graduate z3)
+(exists z1 : Entity,
+((_time z1 /\ True) /\ _at _jones z1) /\ _unemploy _jones))
+
+
+Toplevel input, characters 568-572:
+> Theorem t1: (exists x, (and (and (and (and (and (and (x = _jones) True) (_have _jones)) (_since _jones)) (_ever _jones)) (_employ _jones)) (exists z1, (and (and (and (z1 = _march) True) (_in _jones _march)) (_graduate _jones))))) -> (exists x, (and (and (and (x = _jones) True) (_have _jones)) (exists z1, (and (and (and (_past z1) True) (_in _jones z1)) (_unemploy _jones))))) -> (not (exists x, (and (and (x = _jones) True) (_before (exists z3, (and True (_graduate z3))) (exists z1, (and (and (and (_time z1) True) (_at _jones z1)) (_unemploy _jones))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _employ is declared
+
+Coq < _ever is declared
+
+Coq < _graduate is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _jones is declared
+
+Coq < _march is declared
+
+Coq < _past is declared
+
+Coq < _since is declared
+
+Coq < _time is declared
+
+Coq < _unemploy is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((((x = _jones /\ True) /\ _have _jones) /\ _since _jones) /\
+_ever _jones) /\ _employ _jones) /\
+(exists z1 : Entity,
+((z1 = _march /\ True) /\ _in _jones _march) /\ _graduate _jones)) ->
+(exists x : Entity,
+((x = _jones /\ True) /\ _have _jones) /\
+(exists z1 : Entity,
+((_past z1 /\ True) /\ _in _jones z1) /\ _unemploy _jones)) ->
+exists x : Entity,
+(x = _jones /\ True) /\
+_before (exists z3 : Entity, True /\ _graduate z3)
+(exists z1 : Entity,
+((_time z1 /\ True) /\ _at _jones z1) /\ _unemploy _jones)
+
+1 goal
+
+H2 : _have _jones
+H3 : True
+x0 : Entity
+H4 : _unemploy _jones
+H5 : _in _jones x0
+H1 : _past x0
+H6 : True
+H8 : _employ _jones
+H9 : _ever _jones
+H10 : _since _jones
+H11 : _have _jones
+H12 : True
+H13 : _graduate _jones
+H14 : _in _jones _march
+H15 : True
+============================
+_before (exists z3 : Entity, True /\ _graduate z3)
+(exists z1 : Entity,
+((_time z1 /\ True) /\ _at _jones z1) /\ _unemploy _jones)
+
+Toplevel input, characters 578-590:
+> Theorem t1: (exists x, (and (and (and (and (and (and (x = _jones) True) (_have _jones)) (_since _jones)) (_ever _jones)) (_employ _jones)) (exists z1, (and (and (and (z1 = _march) True) (_in _jones _march)) (_graduate _jones))))) -> (exists x, (and (and (and (x = _jones) True) (_have _jones)) (exists z1, (and (and (and (_past z1) True) (_in _jones z1)) (_unemploy _jones))))) -> (exists x, (and (and (x = _jones) True) (_before (exists z3, (and True (_graduate z3))) (exists z1, (and (and (and (_time z1) True) (_at _jones z1)) (_unemploy _jones)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 592-596:
+> Theorem t1: (exists x, (and (and (and (and (and (and (x = _jones) True) (_have _jones)) (_since _jones)) (_ever _jones)) (_employ _jones)) (exists z1, (and (and (and (z1 = _march) True) (_in _jones _march)) (_graduate _jones))))) -> (exists x, (and (and (and (x = _jones) True) (_have _jones)) (exists z1, (and (and (and (_past z1) True) (_in _jones z1)) (_unemploy _jones))))) -> (exists x, (and (and (x = _jones) True) (_before (exists z3, (and True (_graduate z3))) (exists z1, (and (and (and (_time z1) True) (_at _jones z1)) (_unemploy _jones)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _employ is declared
+
+Coq < _ever is declared
+
+Coq < _graduate is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _jones is declared
+
+Coq < _march is declared
+
+Coq < _past is declared
+
+Coq < _since is declared
+
+Coq < _time is declared
+
+Coq < _unemploy is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((((x = _jones /\ True) /\ _have _jones) /\ _since _jones) /\
+_ever _jones) /\ _employ _jones) /\
+(exists z1 : Entity,
+((z1 = _march /\ True) /\ _in _jones _march) /\ _graduate _jones)) ->
+(exists x : Entity,
+((x = _jones /\ True) /\ _have _jones) /\
+(exists z1 : Entity,
+((_past z1 /\ True) /\ _in _jones z1) /\ _unemploy _jones)) ->
+exists x : Entity,
+(x = _jones /\ True) /\
+_before (exists z3 : Entity, True /\ _graduate z3)
+(exists z1 : Entity,
+((_time z1 /\ True) /\ _at _jones z1) /\ _unemploy _jones)
+
+
+Toplevel input, characters 562-566:
+> Theorem t1: (exists x, (and (and (and (and (and (and (x = _jones) True) (_have _jones)) (_since _jones)) (_ever _jones)) (_employ _jones)) (exists z1, (and (and (and (z1 = _march) True) (_in _jones _march)) (_graduate _jones))))) -> (exists x, (and (and (and (x = _jones) True) (_have _jones)) (exists z1, (and (and (and (_past z1) True) (_in _jones z1)) (_unemploy _jones))))) -> (exists x, (and (and (x = _jones) True) (_before (exists z3, (and True (_graduate z3))) (exists z1, (and (and (and (_time z1) True) (_at _jones z1)) (_unemploy _jones)))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _employ is declared
+
+Coq < _ever is declared
+
+Coq < _graduate is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _jones is declared
+
+Coq < _march is declared
+
+Coq < _past is declared
+
+Coq < _since is declared
+
+Coq < _time is declared
+
+Coq < _unemploy is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((((x = _jones /\ True) /\ _have _jones) /\ _since _jones) /\
+_ever _jones) /\ _employ _jones) /\
+(exists z1 : Entity,
+((z1 = _march /\ True) /\ _in _jones _march) /\ _graduate _jones)) ->
+(exists x : Entity,
+((x = _jones /\ True) /\ _have _jones) /\
+(exists z1 : Entity,
+((_past z1 /\ True) /\ _in _jones z1) /\ _unemploy _jones)) ->
+~
+(exists x : Entity,
+(x = _jones /\ True) /\
+_before (exists z3 : Entity, True /\ _graduate z3)
+(exists z1 : Entity,
+((_time z1 /\ True) /\ _at _jones z1) /\ _unemploy _jones))
+
+1 goal
+
+H2 : _before (exists z3 : Entity, True /\ _graduate z3)
+(exists z1 : Entity,
+((_time z1 /\ True) /\ _at _jones z1) /\ _unemploy _jones)
+H3 : True
+H5 : _employ _jones
+H6 : _ever _jones
+H7 : _since _jones
+H8 : _have _jones
+H9 : True
+H10 : _graduate _jones
+H11 : _in _jones _march
+H12 : True
+H14 : _have _jones
+H15 : True
+x3 : Entity
+H16 : _unemploy _jones
+H17 : _in _jones x3
+H13 : _past x3
+H18 : True
+============================
+False
+
+Toplevel input, characters 584-596:
+> Theorem t1: (exists x, (and (and (and (and (and (and (x = _jones) True) (_have _jones)) (_since _jones)) (_ever _jones)) (_employ _jones)) (exists z1, (and (and (and (z1 = _march) True) (_in _jones _march)) (_graduate _jones))))) -> (exists x, (and (and (and (x = _jones) True) (_have _jones)) (exists z1, (and (and (and (_past z1) True) (_in _jones z1)) (_unemploy _jones))))) -> (not (exists x, (and (and (x = _jones) True) (_before (exists z3, (and True (_graduate z3))) (exists z1, (and (and (and (_time z1) True) (_at _jones z1)) (_unemploy _jones))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 598-602:
+> Theorem t1: (exists x, (and (and (and (and (and (and (x = _jones) True) (_have _jones)) (_since _jones)) (_ever _jones)) (_employ _jones)) (exists z1, (and (and (and (z1 = _march) True) (_in _jones _march)) (_graduate _jones))))) -> (exists x, (and (and (and (x = _jones) True) (_have _jones)) (exists z1, (and (and (and (_past z1) True) (_in _jones z1)) (_unemploy _jones))))) -> (not (exists x, (and (and (x = _jones) True) (_before (exists z3, (and True (_graduate z3))) (exists z1, (and (and (and (_time z1) True) (_at _jones z1)) (_unemploy _jones))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _employ is declared
+
+Coq < _ever is declared
+
+Coq < _graduate is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _jones is declared
+
+Coq < _march is declared
+
+Coq < _past is declared
+
+Coq < _since is declared
+
+Coq < _time is declared
+
+Coq < _unemploy is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((((x = _jones /\ True) /\ _have _jones) /\ _since _jones) /\
+_ever _jones) /\ _employ _jones) /\
+(exists z1 : Entity,
+((z1 = _march /\ True) /\ _in _jones _march) /\ _graduate _jones)) ->
+(exists x : Entity,
+((x = _jones /\ True) /\ _have _jones) /\
+(exists z1 : Entity,
+((_past z1 /\ True) /\ _in _jones z1) /\ _unemploy _jones)) ->
+~
+(exists x : Entity,
+(x = _jones /\ True) /\
+_before (exists z3 : Entity, True /\ _graduate z3)
+(exists z1 : Entity,
+((_time z1 /\ True) /\ _at _jones z1) /\ _unemploy _jones))
+
+
+Toplevel input, characters 568-572:
+> Theorem t1: (exists x, (and (and (and (and (and (and (x = _jones) True) (_have _jones)) (_since _jones)) (_ever _jones)) (_employ _jones)) (exists z1, (and (and (and (z1 = _march) True) (_in _jones _march)) (_graduate _jones))))) -> (exists x, (and (and (and (x = _jones) True) (_have _jones)) (exists z1, (and (and (and (_past z1) True) (_in _jones z1)) (_unemploy _jones))))) -> (not (exists x, (and (and (x = _jones) True) (_before (exists z3, (and True (_graduate z3))) (exists z1, (and (and (and (_time z1) True) (_at _jones z1)) (_unemploy _jones))))))). nltac. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _employ is declared
+
+Coq < _ever is declared
+
+Coq < _graduate is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _jones is declared
+
+Coq < _march is declared
+
+Coq < _past is declared
+
+Coq < _since is declared
+
+Coq < _time is declared
+
+Coq < _unemploy is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((((x = _jones /\ True) /\ _have _jones) /\ _since _jones) /\
+_ever _jones) /\ _employ _jones) /\
+(exists z1 : Entity,
+((z1 = _march /\ True) /\ _in _jones _march) /\ _graduate _jones)) ->
+(exists x : Entity,
+((x = _jones /\ True) /\ _have _jones) /\
+(exists z1 : Entity,
+((_past z1 /\ True) /\ _in _jones z1) /\ _unemploy _jones)) ->
+exists x : Entity,
+(x = _jones /\ True) /\
+_before (exists z3 : Entity, True /\ _graduate z3)
+(exists z1 : Entity,
+((_time z1 /\ True) /\ _at _jones z1) /\ _unemploy _jones)
+
+1 goal
+
+H2 : _have _jones
+H3 : True
+x0 : Entity
+H4 : _unemploy _jones
+H5 : _in _jones x0
+H1 : _past x0
+H6 : True
+H8 : _employ _jones
+H9 : _ever _jones
+H10 : _since _jones
+H11 : _have _jones
+H12 : True
+H13 : _graduate _jones
+H14 : _in _jones _march
+H15 : True
+============================
+_before (exists z3 : Entity, True /\ _graduate z3)
+(exists z1 : Entity,
+((_time z1 /\ True) /\ _at _jones z1) /\ _unemploy _jones)
+
+Toplevel input, characters 578-590:
+> Theorem t1: (exists x, (and (and (and (and (and (and (x = _jones) True) (_have _jones)) (_since _jones)) (_ever _jones)) (_employ _jones)) (exists z1, (and (and (and (z1 = _march) True) (_in _jones _march)) (_graduate _jones))))) -> (exists x, (and (and (and (x = _jones) True) (_have _jones)) (exists z1, (and (and (and (_past z1) True) (_in _jones z1)) (_unemploy _jones))))) -> (exists x, (and (and (x = _jones) True) (_before (exists z3, (and True (_graduate z3))) (exists z1, (and (and (and (_time z1) True) (_at _jones z1)) (_unemploy _jones)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 592-596:
+> Theorem t1: (exists x, (and (and (and (and (and (and (x = _jones) True) (_have _jones)) (_since _jones)) (_ever _jones)) (_employ _jones)) (exists z1, (and (and (and (z1 = _march) True) (_in _jones _march)) (_graduate _jones))))) -> (exists x, (and (and (and (x = _jones) True) (_have _jones)) (exists z1, (and (and (and (_past z1) True) (_in _jones z1)) (_unemploy _jones))))) -> (exists x, (and (and (x = _jones) True) (_before (exists z3, (and True (_graduate z3))) (exists z1, (and (and (and (_time z1) True) (_at _jones z1)) (_unemploy _jones)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _employ is declared
+
+Coq < _ever is declared
+
+Coq < _graduate is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _jones is declared
+
+Coq < _march is declared
+
+Coq < _past is declared
+
+Coq < _since is declared
+
+Coq < _time is declared
+
+Coq < _unemploy is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((((x = _jones /\ True) /\ _have _jones) /\ _since _jones) /\
+_ever _jones) /\ _employ _jones) /\
+(exists z1 : Entity,
+((z1 = _march /\ True) /\ _in _jones _march) /\ _graduate _jones)) ->
+(exists x : Entity,
+((x = _jones /\ True) /\ _have _jones) /\
+(exists z1 : Entity,
+((_past z1 /\ True) /\ _in _jones z1) /\ _unemploy _jones)) ->
+~
+(exists x : Entity,
+(x = _jones /\ True) /\
+_before (exists z3 : Entity, True /\ _graduate z3)
+(exists z1 : Entity,
+((_time z1 /\ True) /\ _at _jones z1) /\ _unemploy _jones))
+
+1 goal
+
+H2 : _before (exists z3 : Entity, True /\ _graduate z3)
+(exists z1 : Entity,
+((_time z1 /\ True) /\ _at _jones z1) /\ _unemploy _jones)
+H3 : True
+H5 : _employ _jones
+H6 : _ever _jones
+H7 : _since _jones
+H8 : _have _jones
+H9 : True
+H10 : _graduate _jones
+H11 : _in _jones _march
+H12 : True
+H14 : _have _jones
+H15 : True
+x3 : Entity
+H16 : _unemploy _jones
+H17 : _in _jones x3
+H13 : _past x3
+H18 : True
+============================
+False
+
+Toplevel input, characters 584-596:
+> Theorem t1: (exists x, (and (and (and (and (and (and (x = _jones) True) (_have _jones)) (_since _jones)) (_ever _jones)) (_employ _jones)) (exists z1, (and (and (and (z1 = _march) True) (_in _jones _march)) (_graduate _jones))))) -> (exists x, (and (and (and (x = _jones) True) (_have _jones)) (exists z1, (and (and (and (_past z1) True) (_in _jones z1)) (_unemploy _jones))))) -> (not (exists x, (and (and (x = _jones) True) (_before (exists z3, (and True (_graduate z3))) (exists z1, (and (and (and (_time z1) True) (_at _jones z1)) (_unemploy _jones))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 598-602:
+> Theorem t1: (exists x, (and (and (and (and (and (and (x = _jones) True) (_have _jones)) (_since _jones)) (_ever _jones)) (_employ _jones)) (exists z1, (and (and (and (z1 = _march) True) (_in _jones _march)) (_graduate _jones))))) -> (exists x, (and (and (and (x = _jones) True) (_have _jones)) (exists z1, (and (and (and (_past z1) True) (_in _jones z1)) (_unemploy _jones))))) -> (not (exists x, (and (and (x = _jones) True) (_before (exists z3, (and True (_graduate z3))) (exists z1, (and (and (and (_time z1) True) (_at _jones z1)) (_unemploy _jones))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _employ is declared
+
+Coq < _ever is declared
+
+Coq < _graduate is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _jones is declared
+
+Coq < _march is declared
+
+Coq < _past is declared
+
+Coq < _since is declared
+
+Coq < _time is declared
+
+Coq < _unemploy is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((((x = _jones /\ True) /\ _have _jones) /\ _since _jones) /\
+_ever _jones) /\ _employ _jones) /\
+(exists z1 : Entity,
+((z1 = _march /\ True) /\ _in _jones _march) /\ _graduate _jones)) ->
+(exists x : Entity,
+((x = _jones /\ True) /\ _have _jones) /\
+(exists z1 : Entity,
+((_past z1 /\ True) /\ _in _jones z1) /\ _unemploy _jones)) ->
+exists x : Entity,
+(x = _jones /\ True) /\
+_before (exists z3 : Entity, True /\ _graduate z3)
+(exists z1 : Entity,
+((_time z1 /\ True) /\ _at _jones z1) /\ _unemploy _jones)
+
+1 goal
+
+H2 : _have _jones
+H3 : True
+x0 : Entity
+H4 : _unemploy _jones
+H5 : _in _jones x0
+H1 : _past x0
+H6 : True
+H8 : _employ _jones
+H9 : _ever _jones
+H10 : _since _jones
+H11 : _have _jones
+H12 : True
+H13 : _graduate _jones
+H14 : _in _jones _march
+H15 : True
+============================
+_before (exists z3 : Entity, True /\ _graduate z3)
+(exists z1 : Entity,
+((_time z1 /\ True) /\ _at _jones z1) /\ _unemploy _jones)
+
+Toplevel input, characters 578-590:
+> Theorem t1: (exists x, (and (and (and (and (and (and (x = _jones) True) (_have _jones)) (_since _jones)) (_ever _jones)) (_employ _jones)) (exists z1, (and (and (and (z1 = _march) True) (_in _jones _march)) (_graduate _jones))))) -> (exists x, (and (and (and (x = _jones) True) (_have _jones)) (exists z1, (and (and (and (_past z1) True) (_in _jones z1)) (_unemploy _jones))))) -> (exists x, (and (and (x = _jones) True) (_before (exists z3, (and True (_graduate z3))) (exists z1, (and (and (and (_time z1) True) (_at _jones z1)) (_unemploy _jones)))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 592-596:
+> Theorem t1: (exists x, (and (and (and (and (and (and (x = _jones) True) (_have _jones)) (_since _jones)) (_ever _jones)) (_employ _jones)) (exists z1, (and (and (and (z1 = _march) True) (_in _jones _march)) (_graduate _jones))))) -> (exists x, (and (and (and (x = _jones) True) (_have _jones)) (exists z1, (and (and (and (_past z1) True) (_in _jones z1)) (_unemploy _jones))))) -> (exists x, (and (and (x = _jones) True) (_before (exists z3, (and True (_graduate z3))) (exists z1, (and (and (and (_time z1) True) (_at _jones z1)) (_unemploy _jones)))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+Welcome to Coq 8.15.0
+
+Coq <
+Coq < _at is declared
+
+Coq < _employ is declared
+
+Coq < _ever is declared
+
+Coq < _graduate is declared
+
+Coq < _have is declared
+
+Coq < _in is declared
+
+Coq < _jones is declared
+
+Coq < _march is declared
+
+Coq < _past is declared
+
+Coq < _since is declared
+
+Coq < _time is declared
+
+Coq < _unemploy is declared
+
+Coq < 1 goal
+
+============================
+(exists x : Entity,
+(((((x = _jones /\ True) /\ _have _jones) /\ _since _jones) /\
+_ever _jones) /\ _employ _jones) /\
+(exists z1 : Entity,
+((z1 = _march /\ True) /\ _in _jones _march) /\ _graduate _jones)) ->
+(exists x : Entity,
+((x = _jones /\ True) /\ _have _jones) /\
+(exists z1 : Entity,
+((_past z1 /\ True) /\ _in _jones z1) /\ _unemploy _jones)) ->
+~
+(exists x : Entity,
+(x = _jones /\ True) /\
+_before (exists z3 : Entity, True /\ _graduate z3)
+(exists z1 : Entity,
+((_time z1 /\ True) /\ _at _jones z1) /\ _unemploy _jones))
+
+1 goal
+
+H2 : _before (exists z3 : Entity, True /\ _graduate z3)
+(exists z1 : Entity,
+((_time z1 /\ True) /\ _at _jones z1) /\ _unemploy _jones)
+H3 : True
+H5 : _employ _jones
+H6 : _ever _jones
+H7 : _since _jones
+H8 : _have _jones
+H9 : True
+H10 : _graduate _jones
+H11 : _in _jones _march
+H12 : True
+H14 : _have _jones
+H15 : True
+x3 : Entity
+H16 : _unemploy _jones
+H17 : _in _jones x3
+H13 : _past x3
+H18 : True
+============================
+False
+
+Toplevel input, characters 584-596:
+> Theorem t1: (exists x, (and (and (and (and (and (and (x = _jones) True) (_have _jones)) (_since _jones)) (_ever _jones)) (_employ _jones)) (exists z1, (and (and (and (z1 = _march) True) (_in _jones _march)) (_graduate _jones))))) -> (exists x, (and (and (and (x = _jones) True) (_have _jones)) (exists z1, (and (and (and (_past z1) True) (_in _jones z1)) (_unemploy _jones))))) -> (not (exists x, (and (and (x = _jones) True) (_before (exists z3, (and True (_graduate z3))) (exists z1, (and (and (and (_time z1) True) (_at _jones z1)) (_unemploy _jones))))))). repeat nltac_base. try substitution.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^^^^^^^^^^^^
+Error: The reference substitution was not found in the current environment.
+
+Toplevel input, characters 598-602:
+> Theorem t1: (exists x, (and (and (and (and (and (and (x = _jones) True) (_have _jones)) (_since _jones)) (_ever _jones)) (_employ _jones)) (exists z1, (and (and (and (z1 = _march) True) (_in _jones _march)) (_graduate _jones))))) -> (exists x, (and (and (and (x = _jones) True) (_have _jones)) (exists z1, (and (and (and (_past z1) True) (_in _jones z1)) (_unemploy _jones))))) -> (not (exists x, (and (and (x = _jones) True) (_before (exists z3, (and True (_graduate z3))) (exists z1, (and (and (and (_time z1) True) (_at _jones z1)) (_unemploy _jones))))))). repeat nltac_base. try substitution. Qed.
+>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^^
+Error:  (in proof t1): Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined!
+unknown
+
